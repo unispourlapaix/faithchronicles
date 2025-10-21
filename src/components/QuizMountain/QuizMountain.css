@@ -1,0 +1,221 @@
+/* QuizMountain.css - 100% créé par Claude (Dreamer Unisona) */
+
+.quiz-mountain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container de la montagne */
+.mountain-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16;
+  background: linear-gradient(to bottom, #e8f5f3, #d0ede8);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.mountain-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Statistiques du quiz */
+.quiz-stats {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.points {
+  color: #3498db;
+  background: #ebf3fd;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.percentage {
+  color: #27ae60;
+  background: #e8f5e8;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.level {
+  color: #8e44ad;
+  background: #f4ecf7;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+/* Barre de progression */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #27ae60);
+  border-radius: 4px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-20px); }
+  100% { transform: translateX(20px); }
+}
+
+/* Position actuelle */
+.waypoint {
+  text-align: center;
+  font-size: 13px;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* Badge de completion */
+.completion-badge {
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Animation de célébration pour l'agneau */
+@keyframes celebration {
+  0%, 100% { 
+    transform: translate(202px, 200px) scale(1) rotate(0deg); 
+  }
+  25% { 
+    transform: translate(202px, 180px) scale(1.2) rotate(-10deg); 
+  }
+  50% { 
+    transform: translate(202px, 200px) scale(1.4) rotate(0deg); 
+  }
+  75% { 
+    transform: translate(202px, 185px) scale(1.2) rotate(10deg); 
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .quiz-mountain {
+    margin: 0 16px;
+  }
+  
+  .mountain-container {
+    border-radius: 8px;
+  }
+  
+  .quiz-stats {
+    padding: 12px;
+    margin-top: 8px;
+  }
+  
+  .stats-row {
+    font-size: 12px;
+  }
+  
+  .points, .percentage, .level {
+    padding: 2px 6px;
+    font-size: 11px;
+  }
+  
+  .waypoint {
+    font-size: 12px;
+  }
+}
+
+/* États hover et focus pour accessibilité */
+.quiz-mountain:focus-within {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* Animation d'entrée */
+.quiz-mountain {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Thème sombre (optionnel) */
+.quiz-mountain.dark {
+  .quiz-stats {
+    background: #2c3e50;
+    color: white;
+  }
+  
+  .progress-bar {
+    background: #34495e;
+  }
+  
+  .waypoint {
+    color: #bdc3c7;
+  }
+}
+
+/* Variant compact */
+.quiz-mountain.compact {
+  .mountain-container {
+    aspect-ratio: 1;
+  }
+  
+  .quiz-stats {
+    padding: 8px;
+  }
+  
+  .stats-row {
+    font-size: 12px;
+  }
+}
