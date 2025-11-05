@@ -232,6 +232,7 @@ export const uiTranslations = {
   
   bible: {
     readerTitle: "📖 Bible Reader",
+    johnReaderTitle: "Bible Reader - Gospel of John",
     loading: "Loading Scriptures...",
     menu: "Menu",
     strong: "Strong",
@@ -248,6 +249,19 @@ export const uiTranslations = {
     usage: "Biblical usage",
     etymology: "Etymology",
     close: "Close",
+    share: "Share",
+    shareVerse: "Share this verse",
+    shareSelection: "Share selection",
+    search: "Search...",
+    definitionNotFound: "Definition not found",
+    definitionLoading: "Definition loading...",
+    imageFeatureComing: "🎨 Image feature coming soon!",
+    copyError: "Copy error:",
+    error: "❌ Error",
+    errorLoading: "Loading error",
+    retry: "Retry",
+    readerInDevelopment: "John Bible Reader in development...",
+    verseCopied: "Verse copied to clipboard!",
     moreReferences: "and {{count}} other references",
     copyright: "📖 Louis Segond 1910 - Public domain • Strong numbers included"
   },
@@ -280,6 +294,240 @@ export const uiTranslations = {
     loveGod: "Love God with all your heart",
     loveNeighbor: "Love your neighbor as yourself",
     lovePriority: "Love becomes a priority"
+  },
+
+  unity: {
+    title: "Unity that Produces Peace",
+    author: "By Emmanuel",
+    subtitle: "Every religion has its reasons, our borders come from the past",
+    description: "Reflection module on spiritual unity and peace between traditions",
+    
+    // Navigation
+    nav: {
+      intro: "Intro",
+      religions: "Religions",
+      common: "Common Ground",
+      humility: "Humility"
+    },
+
+    // Introduction
+    intro: {
+      emmanuelSays: "Emmanuel says:",
+      ourBordersFromPast: "Our borders come from the past",
+      bordersDescription: "Every religion has its reasons. Our divisions are not divine will, but the fruit of history, geography, culture.",
+      divisionWork: "Division, isolation through barriers and borders of fear, is the work of our perilous past.",
+      sharedHumanity: "We were born into different traditions, but we share the same humanity.",
+      
+      revelationTitle: "A revelation that opens eyes",
+      surprisedLearning: "I was surprised one day to learn that Jews are also children of God.",
+      angelMichael: "That angel Michael is a great messenger for Muslims.",
+      jesusNames: "That Jesus, Isa, Yeshua are known in various ways, even in the Christian faith.",
+      diverseTribes: "For there are diverse tribes, diverse churches, diverse families.",
+      sameRealities: "We speak of the same realities with different names. This should bring us together, not divide us.",
+      
+      respectTitle: "Respect: foundation of humility, guardian of peace",
+      respectFoundation: "Even if brotherhood is not objectively applicable, respect is the foundation of humility, guardian of peace.",
+      understandingProcess: "Understanding and respecting other religions is a process of humility. It doesn't mean giving up your faith, but accepting that others also seek truth.",
+      
+      whatBindsUs: "What truly binds us",
+      seekingRelation: "Every religion seeks relationship. Every person seeks peace.",
+      loveOfGod: "This relationship that binds us all is God's love.",
+      universalLink: "Love is the universal link that transcends all borders, all languages, all traditions.",
+      
+      inclusionTitle: "Inclusion: even vaster than religious diversity",
+      vastInclusion: "Religious diversity is vast, but even vaster is the inclusion of others where they are called by God.",
+      respectDifferences: "Respect for differences in color, gender, inclusion makes us uniquely human, loved by God.",
+      jesusCommand: "Jesus said: 'Love one another.'",
+      
+      communitySpirit: "Breaking with communitarian spirit",
+      communityTerror: "Communitarianism is the terror of disguised hatred of evil. It transforms faith into tribal identity, into a wall that separates, into a weapon that hurts.",
+      pridePolitics: "Our party spirits push us toward politics of pride:",
+      prideQuotes: "I'm right to hurt you. I'm right period. I'm right to wage good war.",
+      watchHeart: "Beware of the heart of the problem, the root of our own evil.",
+      refuseDivision: "Let's refuse this drift that divides humanity in God's name.",
+      
+      freedomTitle: "To be free, make others free",
+      freedomOthers: "To be free, we must know how to make others free too.",
+      defendFreedom: "My freedom to believe has value only if I defend everyone's. Oppressing others is condemning myself to servitude.",
+      
+      changeHeartTitle: "Change your heart: be a true lantern",
+      recognizeDecency: "Recognize that decency is not the same for everyone.",
+      changeYourself: "Change yourself first, gradually. Change your heart, transform your life, be a true lantern.",
+      beExample: "Don't urinate on the lawn, for it will perish... Don't impose your rules on others, but become a living example through your transformation.",
+      
+      childrenPeaceTitle: "Our children will live in peace in diversity",
+      avoidPursuit: "Avoid pursuing words for words.",
+      peaceChoice: "If we choose respect today, our children of the future will live in peace in diversity. Peace begins with us, now, in our words and actions.",
+      
+      discernTitle: "Discern: man or God?",
+      manSpeaks: "Too often, it's the human heart that speaks and divides.",
+      seeFruits: "We see it by the fruit of words and statements: theft, destruction, wars. Beware of word manipulation to compete for one's own pride.",
+      
+      lookPeaceTitle: "Look toward peace and love",
+      lookPeaceAll: "Look toward peace for all, look toward God's love for others.",
+      godSpeaks: "When words produce peace, reconciliation, unity: it's God speaking. When they produce division, hatred, war: it's human pride.",
+      
+      watchWordsTitle: "Watch our words",
+      watchShares: "Watch our shares, watch our harmful contrary words toward others.",
+      disqualify: "These evils disqualify us. The fruits of our words reveal who speaks in us: God or our own pride?",
+      
+      wisdomMaturityTitle: "Wisdom and maturity facing our nature",
+      useScriptures: "Using scriptures (laws) to harm is our habit, an almost natural and mischievous process.",
+      hateSin: "Faced with our sinful nature, we abhor evil and people who do evil.",
+      separateActs: "But through wisdom and maturity, we must separate acts from our human poverty.",
+      compassionNature: "Recognize our animal nature that needs compassion and grace, while protecting ourselves according to contexts.",
+      
+      denounceLeadersTitle: "Denounce corrupt spiritual leaders",
+      watchLeaders: "Beware of spiritual leaders or rulers who seek to keep their drift and dishonesty secret.",
+      noJustice: "Without justice, no example. Without knowledge, other victims perish through our silence.",
+      silenceComplicity: "Silence in the face of injustice is complicity. Truth must be told to protect others."
+    },
+
+    // Religions
+    religions: {
+      title: "Diverse Religions, One Humanity",
+      intro: "Christians, Muslims, Jews, Hindus, Buddhists... and many others: all seek truth",
+      theirGod: "Their God:",
+      theGood: "The Good:",
+      theEvil: "The Evil:",
+      theAngels: "The Angels:",
+      theUnity: "Unity:",
+      values: "Values:",
+      
+      christianity: {
+        name: "Christianity",
+        godText: "One unique God, Creator Father",
+        goodText: "Love of neighbor, forgiveness, peace",
+        evilText: "Hatred, selfishness, violence",
+        angelsText: "God's messengers (Gabriel, Michael...)",
+        unityText: "One God for all people",
+        values: "Love,Forgiveness,Peace,Humility,Justice"
+      },
+      islam: {
+        name: "Islam",
+        godText: "Allah, the Unique and Merciful",
+        goodText: "Justice, charity, peace",
+        evilText: "Oppression, lies, division",
+        angelsText: "Angels of light (Jibril, Mikail...)",
+        unityText: "There is no god but Allah",
+        values: "Peace,Justice,Charity,Respect,Mercy"
+      },
+      judaism: {
+        name: "Judaism",
+        godText: "YHWH, the Eternal One",
+        goodText: "Justice, compassion, life",
+        evilText: "Oppression, slander, hatred",
+        angelsText: "Heavenly messengers (Malakhim)",
+        unityText: "Hear O Israel, the Eternal is One",
+        values: "Justice,Life,Memory,Peace,Study"
+      },
+      hinduism: {
+        name: "Hinduism",
+        godText: "Brahman, the supreme reality",
+        goodText: "Non-violence (ahimsa), righteous duty",
+        evilText: "Violence, spiritual ignorance",
+        angelsText: "Devas, benevolent celestial beings",
+        unityText: "All is One in Brahman",
+        values: "Non-violence,Truth,Compassion,Purity,Harmony"
+      },
+      buddhism: {
+        name: "Buddhism",
+        godText: "No creator god, but respect for the sacred",
+        goodText: "Compassion, wisdom, peace",
+        evilText: "Suffering caused by ignorance",
+        angelsText: "Bodhisattvas, awakened beings",
+        unityText: "Buddha nature in everyone",
+        values: "Compassion,Wisdom,Peace,Non-violence,Awakening"
+      }
+    },
+
+    // Common values
+    common: {
+      title: "Common Ground",
+      intro: "The Good, the Evil, Angels, One God, Relationship, Inclusion: what unites humanity",
+      
+      goodTitle: "The Good",
+      goodDescription: "All religions teach love, justice and compassion",
+      goodExamples: "Love your neighbor as yourself|Do good without distinction|Protect the weak and oppressed|Speak truth with kindness|Share what you have",
+      
+      evilTitle: "The Evil",
+      evilDescription: "All condemn violence, lies and oppression",
+      evilExamples: "Kill without justice|Steal and exploit|Lie and slander|Despise and humiliate|Divide and hate",
+      
+      angelsTitle: "Angels and Spiritual Beings",
+      angelsDescription: "Almost all recognize benevolent celestial messengers",
+      angelsExamples: "Messenger angels of God|Spiritual guides|Beings of light|Celestial protectors|Bodhisattvas and Devas",
+      
+      godTitle: "One God (or Supreme Reality)",
+      godDescription: "The majority believe in a unique source, a creator or ultimate reality",
+      godExamples: "Christianity, Islam, Judaism: One God|Hinduism: Brahman, the supreme One|Buddhism: Universal Buddha nature|All seek ultimate truth|All aspire to unity and peace",
+      
+      relationTitle: "Relationship and Peace",
+      relationDescription: "What truly unites all religions and all people",
+      relationExamples: "Every religion seeks relationship with the divine|Every person seeks peace|This relationship that binds us all is God's love|Love is the universal link|Peace is our common aspiration",
+      
+      inclusionTitle: "Inclusion: Loved by God",
+      inclusionDescription: "Religious diversity is vast, but inclusion is even vaster",
+      inclusionExamples: "Inclusion of others where they are called by God|Respect for differences in color|Respect for differences in gender|Inclusion makes us uniquely human, loved by God|Jesus said: 'Love one another'",
+      
+      finalQuote: "I was surprised one day to learn that Jews are also children of God, that angel Michael is a great messenger for Muslims, that Jesus, Isa, Yeshua are known in various ways even in the Christian faith. For there are diverse tribes, diverse churches, diverse families.",
+      finalQuote2: "We speak of the same realities with different names.",
+      quoteAuthor: "Emmanuel, Unity that Produces Peace"
+    },
+
+    // Humility process
+    humility: {
+      title: "7 Steps toward Humility and Peace",
+      intro: "The process to overcome communitarianism and become a true lantern",
+      
+      step: "Step",
+      action: "Action:",
+      
+      step1Title: "Recognize: our borders come from the past",
+      step1Description: "Division, isolation through barriers and borders of fear, is the work of our perilous past. Our divisions are not God's will.",
+      step1Action: "Accept that my tradition is mine alone, and I am part of God's desired diversity",
+      
+      step2Title: "Respect: foundation of humility, guardian of peace",
+      step2Description: "Even if brotherhood is not objectively applicable, respect is the foundation.",
+      step2Action: "Respect all beliefs, even without understanding everything",
+      
+      step3Title: "Understand without judging",
+      step3Description: "Today, understanding others is a necessary process of humility.",
+      step3Action: "Truly listen to what others believe, without judgment",
+      
+      step4Title: "Change yourself first: be a true lantern",
+      step4Description: "Recognize that decency is not the same for everyone. Change your heart gradually, transform your life, become a true light.",
+      step4Action: "Don't impose my rules on others, but be a living example through my transformation",
+      
+      step5Title: "Break with communitarian spirit",
+      step5Description: "Our party spirits push us toward politics of pride: 'I'm right to hurt you, I'm right period.' Beware of the heart of the problem, the root of our own evil.",
+      step5Action: "Refuse divisive speeches in my own community",
+      
+      step6Title: "To be free, make others free",
+      step6Description: "My freedom depends on that which I grant to others.",
+      step6Action: "Defend freedom of conscience for all, not just mine",
+      
+      step7Title: "Avoid pursuing words for words",
+      step7Description: "Don't respond to hatred with hatred, to insults with insults.",
+      step7Action: "Choose peace so our children live in peace in diversity",
+      
+      discernFruits: "Discern by the Fruits",
+      humanHeart: "The human heart that divides",
+      lookGodLove: "Look toward God's love",
+      watchOurWords: "Watch our Words",
+      
+      prideFruits: "Fruits of human pride",
+      godFruits: "Fruits of God's love",
+      
+      finalQuote: "Even if brotherhood is not objectively applicable, respect is the foundation of humility, guardian of peace. Avoid pursuing words for words, and our children of the future will live in peace in diversity.",
+      author: "Emmanuel"
+    },
+
+    // Footer
+    footer: {
+      quote: "Respect is the foundation of humility, guardian of peace. Our children will live in peace in diversity if we choose respect today.",
+      author: "Emmanuel, Unity that Produces Peace"
+    }
   },
 
   footer: {
@@ -346,7 +594,14 @@ export const uiTranslations = {
 
   pseudoSetup: {
     title: "Choose your player username",
-    confirm: "Confirm Username"
+    profileConfig: "Profile Configuration",
+    connectedWith: "Connected with",
+    playerPseudo: "Player Username",
+    pseudoPlaceholder: "Your username...",
+    pseudoRequirements: "2-20 characters • Displayed in leaderboards",
+    suggestions: "Suggestions",
+    confirm: "Confirm Username",
+    errorConfig: "Configuration error"
   },
 
   navigation: {

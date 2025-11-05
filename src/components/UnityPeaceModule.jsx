@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './UnityPeaceModule.css';
+import useTranslation from '../hooks/useTranslation';
 
 /**
  * MODULE ÉDUCATIF : L'UNITÉ QUI PRODUIT LA PAIX
@@ -14,6 +15,7 @@ import './UnityPeaceModule.css';
  */
 
 const UnityPeaceModule = () => {
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState('intro');
   const [selectedReligion, setSelectedReligion] = useState(null);
 
