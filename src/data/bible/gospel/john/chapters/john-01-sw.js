@@ -1,0 +1,889 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Kiswahili (Swahili Union Version)
+// ============================================================================
+// Chapitre 1
+
+export const johnChapter1SW = {
+  chapter: 1,
+  title: "Jean 1",
+  version: "Swahili Union Version",
+  language: "sw",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Hapo mwanzo kulikuwako Neno, na Neno alikuwako pamoja na Mungu, na Neno alikuwa Mungu.",
+    "strong": [
+{
+                  "text": "commencement",
+                  "strong": "G746",
+                  "start": 3,
+                  "end": 15
+            },
+            {
+                  "text": "Parole",
+                  "strong": "G3056",
+                  "start": 25,
+                  "end": 31
+            },
+            {
+                  "text": "Parole",
+                  "strong": "G3056",
+                  "start": 39,
+                  "end": 45
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 52,
+                  "end": 56
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 57,
+                  "end": 61
+            },
+            {
+                  "text": "Parole",
+                  "strong": "G3056",
+                  "start": 69,
+                  "end": 75
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 82,
+                  "end": 86
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Yeye alikuwako mwanzoni pamoja na Mungu.",
+    "strong": [
+{
+                  "text": "commencement",
+                  "strong": "G746",
+                  "start": 14,
+                  "end": 26
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 32,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Vitu vyote vilifanywa kwa yeye; wala pasipo yeye hapakufanywa cho chote kilichofanywa.",
+    "strong": [
+{
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Ndani yake kulikuwa na uzima; na uzima huo ulikuwa nuru ya wanadamu.",
+    "strong": []
+  },
+  {
+    "number": 5,
+    "text": "Na nuru ingʼaa gizani; wala giza halikuishinda.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 16,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Kulikuwa na mtu aliyetumwa na Mungu, jina lake Yohana.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 12,
+                  "end": 17
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 28,
+                  "end": 32
+            },
+            {
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 48,
+                  "end": 52
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Huyu alikuja kwa ushuhuda, kushuhudia habari za nuru ile, ili wote wapate kuamini kwa yeye.",
+    "strong": [
+{
+                  "text": "rendre",
+                  "strong": "G1743",
+                  "start": 36,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Yeye hakuwa nuru, bali alikuja ashuhudie nuru.",
+    "strong": [
+{
+                  "text": "rendre",
+                  "strong": "G1743",
+                  "start": 46,
+                  "end": 52
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Nuru ya kweli, yenye kuwaangazia kila mtu, ilikuwa inakuja ulimwenguni.",
+    "strong": [
+{
+                  "text": "Cette",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 57,
+                  "end": 61
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 65,
+                  "end": 70
+            },
+            {
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 80,
+                  "end": 84
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 85,
+                  "end": 90
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Alikuwa ulimwenguni, na ulimwengu ulifanywa kwa yeye, wala ulimwengu haukumjua.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 19,
+                  "end": 24
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 65,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Alikuja kwake wenyewe, na wake hawakumpokea.",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "Bali wote waliompokea, aliwapa uwezo wa kuwa watoto wa Mungu, yaani, wale waaminio jina lake;",
+    "strong": [
+{
+                  "text": "devenir",
+                  "strong": "G1096",
+                  "start": 92,
+                  "end": 99
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 111,
+                  "end": 115
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "wale ambao hawakuzaliwa kwa damu, wala kwa mapenzi ya mwili, wala kwa mapenzi ya mtu, bali kwa Mungu.",
+    "strong": [
+{
+                  "text": "chair",
+                  "strong": "G4561",
+                  "start": 55,
+                  "end": 60
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 84,
+                  "end": 89
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 99,
+                  "end": 103
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Na Neno akawa mwili, akakaa kati yetu (na tuliona utukufu wake, utukufu kama wa pekee wa Baba), akiwa amejaa neema na kweli.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 6,
+                  "end": 12
+            },
+            {
+                  "text": "chair",
+                  "strong": "G4561",
+                  "start": 25,
+                  "end": 30
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 137,
+                  "end": 142
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 156,
+                  "end": 160
+            },
+            {
+                  "text": "unique",
+                  "strong": "G1520",
+                  "start": 161,
+                  "end": 167
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Yohana alishuhudia habari zake, akapaza sauti, akisema, Huyu ndiye niliyesema, Yeye ajaye baada yangu amekuwa mbele yangu; maana alikuwa kabla yangu.",
+    "strong": [
+{
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 0,
+                  "end": 4
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Maana sisi sote tumepokea katika wingi wake, naam, neema juu ya neema.",
+    "strong": []
+  },
+  {
+    "number": 17,
+    "text": "Maana torati ilitolewa kwa Mose; neema na kweli zilikuja kwa Yesu Kristo.",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 79,
+                  "end": 85
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Hakuna mtu aliyemwona Mungu wakati wo wote; Mwana pekee, aliye katika kifua cha Baba, ndiye aliyemfunua.",
+    "strong": [
+{
+                  "text": "Personne",
+                  "strong": "G3762",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 23,
+                  "end": 27
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 32,
+                  "end": 36
+            },
+            {
+                  "text": "unique",
+                  "strong": "G1520",
+                  "start": 37,
+                  "end": 43
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 53,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Na huu ndio ushuhuda wa Yohana, walipomtuma Wayahudi kutoka Yerusalemu makuhani na Walawi, ili wamwulize, Wewe ni nani?",
+    "strong": [
+{
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 23,
+                  "end": 27
+            },
+            {
+                  "text": "demander",
+                  "strong": "G154",
+                  "start": 115,
+                  "end": 123
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Naye akakiri, wala hakukana; lakini akakiri, akisema, Mimi si Kristo.",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 64,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Wakamwuliza, Basi ni nani? Wewe ni Eliya? Akasema, Mimi si yeye. Wewe ni yule nabii? Akajibu, La.",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "Basi wakamwambia, Wewe ni nani? ili tuwape jibu wale waliotutuma. Wewe wajisemaje mwenyewe?",
+    "strong": []
+  },
+  {
+    "number": 23,
+    "text": "Akasema, Mimi ni sauti ya mtu apigaye kelele jangwani, Nyoosheni njia ya Bwana, kama alivyosema nabii Isaya.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 77,
+                  "end": 83
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 87,
+                  "end": 95
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 97,
+                  "end": 102
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Nao walikuwa wametumwa kutoka kwa Mafarisayo.",
+    "strong": []
+  },
+  {
+    "number": 25,
+    "text": "Wakamwuliza, wakamwambia, Basi mbona wabatiza, kama wewe si Kristo, wala si Eliya, wala si yule nabii?",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 22,
+                  "end": 27
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 83,
+                  "end": 89
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Yohana akawajibu, akisema, Mimi nabatiza kwa maji; lakini katikati yenu amesimama yeye msiyemjua;",
+    "strong": [
+{
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 0,
+                  "end": 4
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "ndiye yeye ajaye baada yangu, ambaye sifai kufungua kamba ya kiatu chake.",
+    "strong": []
+  },
+  {
+    "number": 28,
+    "text": "Haya yalitendeka Bethania, ng'ambo ya Yordani, mahali alipokuwa Yohana akibatiza.",
+    "strong": [
+{
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 60,
+                  "end": 64
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Kesho yake akaona Yesu anakuja kwake, akasema, Tazama, Mwanakondoo wa Mungu, aondoaye dhambi ya ulimwengu!",
+    "strong": [
+{
+                  "text": "Agneau",
+                  "strong": "G721",
+                  "start": 60,
+                  "end": 66
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 70,
+                  "end": 74
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 96,
+                  "end": 101
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "Huyu ndiye niliyesema habari zake, Baada yangu anakuja mtu aliyekuwa mbele yangu; maana alikuwa kabla yangu.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 46,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Nami sikumjua; bali ili afunuliwe kwa Israeli, kwa sababu hiyo nikaja mimi, nikibatiza kwa maji.",
+    "strong": [
+{
+                  "text": "baptiser",
+                  "strong": "G907",
+                  "start": 88,
+                  "end": 96
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "Yohana akashuhudia, akisema, Nimeuona Roho akishuka kama njiwa kutoka mbinguni, akakaa juu yake.",
+    "strong": [
+{
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "Esprit",
+                  "strong": "G4151",
+                  "start": 37,
+                  "end": 43
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 57,
+                  "end": 61
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 62,
+                  "end": 67
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Nami sikumjua; bali yeye aliyenituma mimi kubatiza kwa maji, ndiye aliyeniambia, Yeye utakayemwona Roho akishuka na kukaa juu yake, ndiye huyo abatizaye kwa Roho Mtakatifu.",
+    "strong": [
+{
+                  "text": "baptiser",
+                  "strong": "G907",
+                  "start": 52,
+                  "end": 60
+            },
+            {
+                  "text": "Esprit",
+                  "strong": "G4151",
+                  "start": 112,
+                  "end": 118
+            },
+            {
+                  "text": "Esprit",
+                  "strong": "G4151",
+                  "start": 176,
+                  "end": 182
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Nami nimeshuhudia, ya kuwa huyu ndiye Mwana wa Mungu.",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 50,
+                  "end": 54
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 58,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Kesho yake tena Yohana alikuwa amesimama na wanafunzi wake wawili;",
+    "strong": [
+{
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 14,
+                  "end": 18
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 36,
+                  "end": 40
+            },
+            {
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 41,
+                  "end": 45
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "akamtazama Yesu akitembea, akasema, Tazama, Mwanakondoo wa Mungu!",
+    "strong": [
+{
+                  "text": "Agneau",
+                  "strong": "G721",
+                  "start": 53,
+                  "end": 59
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 63,
+                  "end": 67
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Nao wale wanafunzi wawili wakamsikia akisema hayo, wakamfuata Yesu.",
+    "strong": [
+{
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 4,
+                  "end": 8
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "Yesu akageuka, akawaona wakimfuata, akawambia, Mnatafuta nini? Wakamwambia, Rabi (maana yake, akitafsiriwa, ni Mwalimu), unakaa wapi?",
+    "strong": []
+  },
+  {
+    "number": 39,
+    "text": "Akawambia, Njoni mkaone. Wakaja, wakaona mahali akapo; wakakaa naye siku hiyo; ilikuwa yapata saa kumi.",
+    "strong": [
+{
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 109,
+                  "end": 113
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Mmoja wa wale wawili waliomsikia Yohana na kumfuata, alikuwa Andrea, ndugu wa Simoni Petro.",
+    "strong": [
+{
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 45,
+                  "end": 49
+            },
+            {
+                  "text": "Jean",
+                  "strong": "G2491",
+                  "start": 85,
+                  "end": 89
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Huyu akamkuta ndugu yake Simoni wa kwanza, akamwambia, Tumemkuta Masihi (maana yake, akitafsiriwa, ni Kristo).",
+    "strong": [
+{
+                  "text": "premier",
+                  "strong": "G4413",
+                  "start": 28,
+                  "end": 35
+            },
+            {
+                  "text": "Messie",
+                  "strong": "G5547",
+                  "start": 89,
+                  "end": 95
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 113,
+                  "end": 119
+            }
+      ]
+  },
+  {
+    "number": 42,
+    "text": "Akamletea Yesu. Yesu akamtazama, akasema, Wewe ni Simoni, mwana wa Yona; wewe utaitwa Kefa (maana yake, akitafsiriwa, ni Petro).",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 73,
+                  "end": 77
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "Kesho yake akataka kwenda Galilaya, akamkuta Filipo; Yesu akamwambia, Nifuate.",
+    "strong": [
+{
+                  "text": "rendre",
+                  "strong": "G1743",
+                  "start": 30,
+                  "end": 36
+            },
+            {
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 65,
+                  "end": 73
+            }
+      ]
+  },
+  {
+    "number": 44,
+    "text": "Filipo alikuwa wa Bethsaida, mji wa Andrea na Petro.",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 0,
+                  "end": 8
+            }
+      ]
+  },
+  {
+    "number": 45,
+    "text": "Filipo akamkuta Nathanaeli, akamwambia, Tumemkuta yeye ambaye Mose aliandika habari zake katika torati, na manabii nao; yaani, Yesu wa Nazareti, mwana wa Yusufu.",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 87,
+                  "end": 91
+            },
+            {
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 151,
+                  "end": 155
+            }
+      ]
+  },
+  {
+    "number": 46,
+    "text": "Nathanaeli akamwambia, Je, kutoka Nazareti chochote chema chaweza kutoka? Filipo akamwambia, Njoo uone.",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 67,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 47,
+    "text": "Yesu akamwona Nathanaeli anakuja kwake, akasema habari zake, Tazama, Israeli wa kweli, ambaye ndani yake hamna udanganyifu.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 78,
+                  "end": 82
+            }
+      ]
+  },
+  {
+    "number": 48,
+    "text": "Nathanaeli akamwambia, Wewe umenijuaje? Yesu akajibu, akamwambia, Kabla Filipo hajakuita, ulipokuwa chini ya mtini, nilikuona.",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 69,
+                  "end": 77
+            }
+      ]
+  },
+  {
+    "number": 49,
+    "text": "Nathanaeli akajibu, akamwambia, Rabi, wewe ni Mwana wa Mungu; wewe ni Mfalme wa Israeli.",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 55,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 50,
+    "text": "Yesu akajibu, akamwambia, Je, kwa sababu nilikuambia, Nilikuona chini ya mtini, unaamini? Utaona mambo makuu kuliko haya.",
+    "strong": []
+  },
+  {
+    "number": 51,
+    "text": "Akamwambia, Amin, amin, nawaambia, Mtaziona mbingu zimefunguliwa, na malaika wa Mungu wanapanda na kushuka juu ya Mwana wa Adamu.",
+    "strong": [
+{
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 62,
+                  "end": 66
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 90,
+                  "end": 94
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 122,
+                  "end": 126
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 132,
+                  "end": 137
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter1SW;

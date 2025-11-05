@@ -1,0 +1,909 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Français (Louis Segond 1910)
+// ============================================================================
+// Chapitre 11
+
+export const johnChapter11RC = {
+  chapter: 11,
+  title: "Lazaro Alamuka",
+  version: "Biblia ya Lingala",
+  language: "rc",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Nzokande, ezalaki na moto moko ya bokono, Lazaro ya Betani, ya mboka ya Maria mpe Marta ndeko na ye ya mwasi.",
+    "strong": [
+            {
+                  "text": "moto",
+                  "strong": "G444",
+                  "start": 21,
+                  "end": 25
+            },
+            {
+                  "text": "malade",
+                  "strong": "G772",
+                  "start": 20,
+                  "end": 26
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "(Ezalaki Maria oyo apakoli Nkolo mafuta mpe asukolaki makolo na ye na nsuki na ye, oyo ndeko na ye Lazaro azalaki na bokono.)",
+    "strong": [
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 27,
+                  "end": 32
+            },
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 81,
+                  "end": 85
+            },
+            {
+                  "text": "malade",
+                  "strong": "G772",
+                  "start": 137,
+                  "end": 143
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Bongo bandeko na ye ya basi batindaki epai na ye, koloba: Nkolo, tala, ye oyo olingaka azali na bokono.",
+    "strong": [
+            {
+                  "text": "koloba",
+                  "strong": "H559",
+                  "start": 50,
+                  "end": 56
+            },
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 58,
+                  "end": 63
+            },
+            {
+                  "text": "malade",
+                  "strong": "G772",
+                  "start": 75,
+                  "end": 81
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Ntango Yesu ayokaki, alobaki: Bokono oyo ezali mpo na liwa te, kasi mpo na nkembo ya Nzambe, mpo ete Mwana ya Nzambe akonzama nkembo na yango.",
+    "strong": [
+            {
+                  "text": "avoir",
+                  "strong": "G1372",
+                  "start": 6,
+                  "end": 11
+            },
+            {
+                  "text": "Cette",
+                  "strong": "G3778",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 54,
+                  "end": 58
+            },
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 85,
+                  "end": 91
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 124,
+                  "end": 128
+            },
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 85,
+                  "end": 91
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Nzokande, Yesu alingaki Marta, mpe ndeko na ye ya mwasi, mpe Lazaro.",
+    "strong": []
+  },
+  {
+    "number": 6,
+    "text": "Bongo ntango ayokaki ete azali na bokono, afandaki nanu mikolo mibale na esika azalaki.",
+    "strong": [
+            {
+                  "text": "malade",
+                  "strong": "G772",
+                  "start": 44,
+                  "end": 50
+            },
+            {
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 61,
+                  "end": 65
+            },
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 31,
+                  "end": 33
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Nsima ya yango, alobaki na bayekoli: Tokende lisusu na Yuda.",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "Bayekoli balobaki na ye: Rabi, sikawa Bayuda bazalaki koluka kobamba yo mabanga, mpe ozali kokende lisusu kuna?",
+    "strong": [
+            {
+                  "text": "nyonso",
+                  "strong": "G3956",
+                  "start": 43,
+                  "end": 47
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Yesu azongisaki: Ezali te bangonga zomi na mibale ya mokolo? Soki moto atambolaka na mokolo, akobeta libaku te, pamba te amonaka pole ya mokili oyo.",
+    "strong": [
+            {
+                  "text": "mokolo",
+                  "strong": "H3117",
+                  "start": 53,
+                  "end": 59
+            },
+            {
+                  "text": "mokolo",
+                  "strong": "H3117",
+                  "start": 53,
+                  "end": 59
+            },
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 137,
+                  "end": 143
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Kasi soki moto atambolaka na butu, akobeta libaku, pamba te pole ezali kati na ye te.",
+    "strong": [
+            {
+                  "text": "butu",
+                  "strong": "G3571",
+                  "start": 29,
+                  "end": 33
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Alobaki makambo oyo, mpe nsima ya yango alobaki na bango: Lazaro, molingami na biso, azali kolala; kasi nakei kolamwisa ye.",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "Bongo bayekoli na ye balobaki: Nkolo, soki azali kolala, akobika.",
+    "strong": [
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 31,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Nzokande, Yesu alobaki na tina ya liwa na ye; kasi bakanisaki ete alobaki na tina ya kopema ya pongi.",
+    "strong": [
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 34,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Bongo Yesu alobaki na bango polele: Lazaro akufaki.",
+    "strong": [
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 45,
+                  "end": 49
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Mpe nasepeli mpo na bino ete nazalaki kuna te, mpo ete bondima; kasi tokende epai na ye.",
+    "strong": []
+  },
+  {
+    "number": 16,
+    "text": "Bongo Toma, oyo babengaka Didime, alobaki na bayekoli baninga na ye: Biso mpe tokende, mpo ete tokufa elongo na ye.",
+    "strong": [
+            {
+                  "text": "Thomas",
+                  "strong": "G2381",
+                  "start": 9,
+                  "end": 15
+            },
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 102,
+                  "end": 111
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Bongo ntango Yesu akómaki, amonaki ete Lazaro azalaki na sik'oyo na lilita mikolo minei.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 30,
+                  "end": 32
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Nzokande, Betani ezalaki pene ya Yelusaleme, pene ya kilomita misato.",
+    "strong": [
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 4,
+                  "end": 9
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Mpe Bayuda mingi bayaki epai ya Marta mpe Maria, mpo na kobondisa bango na tina ya ndeko na bango ya mobali.",
+    "strong": [
+            {
+                  "text": "beaucoup",
+                  "strong": "G4183",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 78,
+                  "end": 82
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Bongo Marta, ntango ayokaki ete Yesu azali koya, akendaki kokutana na ye; kasi Maria afandaki na ndako.",
+    "strong": [
+            {
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 109,
+                  "end": 115
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Marta alobaki na Yesu: Nkolo, soki ozalaki awa, ndeko na ngai ya mobali alingaki kufa te.",
+    "strong": [
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 23,
+                  "end": 28
+            },
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 76,
+                  "end": 80
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Kasi sikawa mpe nayebi ete, nyonso oyo okosenga na Nzambe, Nzambe akopesa yo.",
+    "strong": [
+            {
+                  "text": "nyonso",
+                  "strong": "G3956",
+                  "start": 28,
+                  "end": 34
+            },
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 51,
+                  "end": 57
+            },
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 51,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Yesu alobaki na ye: Ndeko na yo ya mobali akolamuka.",
+    "strong": []
+  },
+  {
+    "number": 24,
+    "text": "Marta alobaki na ye: Nayebi ete akolamuka na kosekwa, na mokolo ya suka.",
+    "strong": [
+            {
+                  "text": "mokolo",
+                  "strong": "H3117",
+                  "start": 57,
+                  "end": 63
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Yesu alobaki na ye: Ngai nazali kosekwa mpe bomoi; ye oyo andimi na ngai, ata akufa, akozala na bomoi;",
+    "strong": [
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 101,
+                  "end": 105
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "mpe moto nyonso oyo azali na bomoi mpe andimi na ngai akokufa te seko na seko. Ondimi yango?",
+    "strong": []
+  },
+  {
+    "number": 27,
+    "text": "Alobaki na ye: Iyo, Nkolo; nandimi ete yo ozali Klisto, Mwana ya Nzambe, oyo azalaki koya na mokili.",
+    "strong": [
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "Klisto",
+                  "strong": "G5547",
+                  "start": 48,
+                  "end": 54
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 62,
+                  "end": 66
+            },
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 65,
+                  "end": 71
+            },
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 8,
+                  "end": 10
+            },
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 93,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Mpe ntango alobaki yango, akendaki, mpe abengaki na nkuku Maria ndeko na ye, koloba: Molakisi azali awa, mpe azali kobenga yo.",
+    "strong": []
+  },
+  {
+    "number": 29,
+    "text": "Mwasi yango, ntango ayokaki, alamwaki noki, mpe ayaki epai na ye.",
+    "strong": []
+  },
+  {
+    "number": 30,
+    "text": "Nzokande, Yesu akómaki nanu te na mboka, kasi azalaki nanu na esika epai Marta akutanaki na ye.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 23,
+                  "end": 25
+            },
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 23,
+                  "end": 25
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Bongo Bayuda oyo bazalaki na ndako elongo na ye mpe bazalaki kobondisa ye, ntango bamonaki Maria alamwaki noki mpe abimaki, balandaki ye, koloba: Azali kokende na lilita, mpo na kolela kuna.",
+    "strong": [
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 35,
+                  "end": 44
+            },
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 26,
+                  "end": 28
+            },
+            {
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 41,
+                  "end": 47
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "Bongo Maria, ntango akómaki epai Yesu azalaki, mpe amonaki ye, akweyaki na makolo na ye, koloba na ye: Nkolo, soki ozalaki awa, ndeko na ngai ya mobali alingaki kufa te.",
+    "strong": [
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 103,
+                  "end": 108
+            },
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 156,
+                  "end": 160
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Yesu, yango wana, ntango amonaki ye azali kolela, mpe Bayuda oyo bayaki elongo na ye bazali kolela mpe, aningamaki na molimo, mpe aminyokolaki;",
+    "strong": [
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 72,
+                  "end": 81
+            },
+            {
+                  "text": "Molimo",
+                  "strong": "G4151",
+                  "start": 87,
+                  "end": 93
+            },
+            {
+                  "text": "nyonso",
+                  "strong": "G3956",
+                  "start": 102,
+                  "end": 106
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Mpe alobaki: Botiaki ye wapi? Balobaki na ye: Nkolo, yaka mpe mona.",
+    "strong": [
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 46,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Yesu alelaki.",
+    "strong": []
+  },
+  {
+    "number": 36,
+    "text": "Bongo Bayuda balobaki: Tala ndenge azalaki kolinga ye!",
+    "strong": [
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 33,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Mpe basusu kati na bango balobaki: Moto oyo afungolaki miso ya mokuf miso, alingaki kosala te ete moto oyo akufa te?",
+    "strong": [
+            {
+                  "text": "kosala",
+                  "strong": "G1080",
+                  "start": 84,
+                  "end": 90
+            },
+            {
+                  "text": "moto",
+                  "strong": "G444",
+                  "start": 98,
+                  "end": 102
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "Yesu, yango wana, lisusu aningamaki kati na ye moko, ayaki na lilita. Ezalaki lidusu, mpe libanga ezalaki etyami likolo.",
+    "strong": [
+            {
+                  "text": "lisusu",
+                  "strong": "G2537",
+                  "start": 18,
+                  "end": 24
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "Yesu alobaki: Bolongola libanga. Marta, ndeko ya moto oyo akufaki, alobaki na ye: Nkolo, solo yango, nsolo ezali sikawa, pamba te azali na mikolo minei.",
+    "strong": [
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 46,
+                  "end": 50
+            },
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 82,
+                  "end": 87
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Yesu alobaki na ye: Nalobi yo te ete, soki ondimi, okomona nkembo ya Nzambe?",
+    "strong": [
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 69,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Bongo balongolaki libanga na esika epai moto oyo akufaki atyamaki. Mpe Yesu atombolaki miso na likolo, mpe alobaki: Tata, nazali kopesa yo matondi mpo ete oyokaki ngai.",
+    "strong": []
+  },
+  {
+    "number": 42,
+    "text": "Mpe ngai nayebaki ete oyokaka ngai ntango nyonso, kasi nalobi yango mpo na ebele ya bato oyo batelemi zingazinga, mpo ete bandima ete yo nde otindaki ngai.",
+    "strong": [
+            {
+                  "text": "toujours",
+                  "strong": "H5769",
+                  "start": 37,
+                  "end": 45
+            },
+            {
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 77,
+                  "end": 82
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "Mpe ntango alobaki makambo oyo, agangaki na mongongo monene: Lazaro, bima!",
+    "strong": []
+  },
+  {
+    "number": 44,
+    "text": "Mpe moto oyo akufaki abimaki, maboko mpe makolo ekangami na bilamba ya bakufi, mpe elongi na ye ezipami na lipo. Yesu alobaki na bango: Bofungola ye, mpe botika ye akende.",
+    "strong": [
+            {
+                  "text": "liwa",
+                  "strong": "H6757",
+                  "start": 6,
+                  "end": 10
+            },
+            {
+                  "text": "kokende",
+                  "strong": "G4198",
+                  "start": 134,
+                  "end": 139
+            }
+      ]
+  },
+  {
+    "number": 45,
+    "text": "Bongo Bayuda mingi oyo bayaki epai ya Maria, mpe bamonaki makambo oyo Yesu asalaki, bandimaki na ye.",
+    "strong": []
+  },
+  {
+    "number": 46,
+    "text": "Kasi basusu kati na bango bakendaki epai ya Bafarisai, mpe bayebisaki bango makambo oyo Yesu asalaki.",
+    "strong": []
+  },
+  {
+    "number": 47,
+    "text": "Bongo banganga-nzambe mpe Bafarisai basangisaki likita, mpe balobaki: Tosalaka nini? pamba te moto oyo azali kosala bilembo mingi.",
+    "strong": [
+            {
+                  "text": "moto",
+                  "strong": "G444",
+                  "start": 94,
+                  "end": 98
+            },
+            {
+                  "text": "beaucoup",
+                  "strong": "G4183",
+                  "start": 128,
+                  "end": 136
+            }
+      ]
+  },
+  {
+    "number": 48,
+    "text": "Soki totiki ye boye, bato nyonso bakondima na ye, mpe Baroma bakoya mpe bakobotola biso esika mpe ekolo.",
+    "strong": [
+            {
+                  "text": "kosala",
+                  "strong": "G1080",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "nation",
+                  "strong": "G1484",
+                  "start": 107,
+                  "end": 113
+            }
+      ]
+  },
+  {
+    "number": 49,
+    "text": "Mpe moko kati na bango, Kaifo, oyo azalaki nganga-nzambe monene ya mobu wana, alobaki na bango: Bino boyebi eloko te,",
+    "strong": [
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 54,
+                  "end": 59
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 98,
+                  "end": 102
+            }
+      ]
+  },
+  {
+    "number": 50,
+    "text": "mpe bokanisi te ete ezali malamu mpo na biso ete moto moko akufa mpo na bato, mpe ekolo mobimba ebeba te.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 37,
+                  "end": 39
+            },
+            {
+                  "text": "seul",
+                  "strong": "G3439",
+                  "start": 60,
+                  "end": 64
+            },
+            {
+                  "text": "moto",
+                  "strong": "G444",
+                  "start": 49,
+                  "end": 53
+            },
+            {
+                  "text": "bato",
+                  "strong": "G1484",
+                  "start": 72,
+                  "end": 76
+            },
+            {
+                  "text": "nation",
+                  "strong": "G1484",
+                  "start": 103,
+                  "end": 109
+            }
+      ]
+  },
+  {
+    "number": 51,
+    "text": "Nzokande, alobaki yango na ye moko te, kasi azalaki nganga-nzambe monene ya mobu wana, asakolaki ete Yesu akokufa mpo na ekolo;",
+    "strong": [
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 71,
+                  "end": 76
+            },
+            {
+                  "text": "nation",
+                  "strong": "G1484",
+                  "start": 133,
+                  "end": 139
+            }
+      ]
+  },
+  {
+    "number": 52,
+    "text": "mpe mpo na ekolo kaka te, kasi mpo na kosangisa mpe bana ya Nzambe oyo bapanzami.",
+    "strong": [
+            {
+                  "text": "nation",
+                  "strong": "G1484",
+                  "start": 26,
+                  "end": 32
+            },
+            {
+                  "text": "seul",
+                  "strong": "G3439",
+                  "start": 79,
+                  "end": 83
+            },
+            {
+                  "text": "corps",
+                  "strong": "G4561",
+                  "start": 84,
+                  "end": 89
+            },
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 60,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 53,
+    "text": "Bongo banda mokolo wana bazalaki komeka kozwa toli ya koboma ye.",
+    "strong": [
+            {
+                  "text": "mokolo",
+                  "strong": "H3117",
+                  "start": 12,
+                  "end": 18
+            },
+            {
+                  "text": "kosala",
+                  "strong": "G1080",
+                  "start": 34,
+                  "end": 39
+            }
+      ]
+  },
+  {
+    "number": 54,
+    "text": "Yesu, yango wana, atambolaki lisusu polele te kati na Bayuda, kasi alongwaki kuna, akendaki na etuka oyo ezali pene ya esobe, na engumba oyo babengaka Efraymi, mpe afandaki kuna elongo na bayekoli.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 14,
+                  "end": 16
+            },
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 14,
+                  "end": 16
+            },
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 178,
+                  "end": 187
+            }
+      ]
+  },
+  {
+    "number": 55,
+    "text": "Mpe Paska ya Bayuda ezalaki pene, mpe mingi bamataki na Yelusaleme na mboka liboso ya Paska, mpo na komipetola.",
+    "strong": [
+            {
+                  "text": "beaucoup",
+                  "strong": "G4183",
+                  "start": 36,
+                  "end": 44
+            },
+            {
+                  "text": "pays",
+                  "strong": "H776",
+                  "start": 56,
+                  "end": 60
+            }
+      ]
+  },
+  {
+    "number": 56,
+    "text": "Bongo bazalaki koluka Yesu, mpe bazalaki koloba kati na bango moko ntango batelemaki na Tempelo: Bokanisi nini? ete akoya te na feti?",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 53,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 57,
+    "text": "Nzokande, banganga-nzambe mpe Bafarisai bapesaki mitindo ete, soki moto moko ayebi esika azali, ayebisa, mpo ete bakanga ye.",
+    "strong": [
+            {
+                  "text": "ordre",
+                  "strong": "G1785",
+                  "start": 68,
+                  "end": 73
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter11RC;

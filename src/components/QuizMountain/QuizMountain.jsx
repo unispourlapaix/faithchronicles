@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './QuizMountain.css';
 import FaithChroniclesProgress from './FaithChroniclesProgress';
+import { useTranslation } from '../../hooks/useTranslation.js';
 
 /**
  * Composant QuizMountain pour React
@@ -20,20 +21,21 @@ const QuizMountain = ({
   const [percentage, setPercentage] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
   const [status, setStatus] = useState("progress");
+  const { t } = useTranslation();
   
   const svgRef = useRef(null);
   const controllerRef = useRef(null);
   
   // Positions des waypoints
   const waypoints = [
-    {x: 80, y: 600, label: "Départ"},
+    {x: 80, y: 600, label: t('mountain.waypoints.start')},
     {x: 140, y: 600, label: "Base"}, 
     {x: 202, y: 580, label: "Sentier"},
-    {x: 264, y: 560, label: "Première pente"},
+    {x: 264, y: 560, label: t('mountain.waypoints.firstSlope')},
     {x: 280, y: 520, label: "Mi-parcours"},
     {x: 255, y: 480, label: "Falaise"},
     {x: 202, y: 440, label: "Plateau"},
-    {x: 149, y: 400, label: "Dernière pente"},
+    {x: 149, y: 400, label: t('mountain.waypoints.lastSlope')},
     {x: 180, y: 350, label: "Avant-sommet"},
     {x: 202, y: 200, label: "SOMMET! 🏔️"}
   ];
@@ -125,7 +127,7 @@ const QuizMountain = ({
 
     triggerDefeat() {
       // Déclenche l'animation de défaite
-      console.log(`💔 Défaite... J.C. redescend`);
+      console.log(`💔 ${t('console.defeatAnimation')}`);
       return this.updateFromChapter(0, "defeat");
     }
 

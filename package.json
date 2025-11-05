@@ -1,8 +1,11 @@
 {
   "name": "faithchronicles",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.67.0",
+    "@supabase/supabase-js": "^2.76.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
@@ -14,6 +17,7 @@
     "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -22,7 +26,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "add-strong": "node scripts/addStrongToTranslations.js",
+    "add-strong:fr": "node scripts/addStrongToTranslations.js fr",
+    "add-strong:all": "node scripts/addStrongToTranslations.js",
+    "download:bible": "node scripts/downloadFromGetBible.js",
+    "download:uk": "node scripts/downloadFromGetBible.js uk",
+    "download:he": "node scripts/downloadFromGetBible.js he"
   },
   "eslintConfig": {
     "extends": [

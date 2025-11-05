@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Footer Height</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-white flex flex-col fixed inset-0 overflow-hidden">
+        <!-- Header simulé -->
+        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-2 flex-shrink-0">
+            <div class="text-sm opacity-90">Jean 1/21 • Louis Segond 1910</div>
+        </div>
+        
+        <!-- Navigation simulée -->
+        <div class="bg-gray-50 p-3 border-b flex-shrink-0">
+            <div class="text-sm">Navigation</div>
+        </div>
+        
+        <!-- Contenu -->
+        <div class="flex-1 overflow-y-auto flex flex-col bg-blue-50">
+            <div class="p-3 flex-1">
+                <div class="flex-1 pb-4">
+                    <div class="text-center text-gray-500">
+                        Zone de contenu (flex-1)
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-gray-50 p-2 border-t flex-shrink-0" id="footer">
+            <div class="text-center text-xs text-gray-500">
+                Louis Segond 1910 • Ch. 1/21
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mesure de la hauteur du footer et sa position
+        window.addEventListener('load', function() {
+            const footer = document.getElementById('footer');
+            const footerRect = footer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            console.log('=== MESURES FOOTER ===');
+            console.log('Hauteur de l\'écran:', windowHeight + 'px');
+            console.log('Position du footer:');
+            console.log('- Top:', footerRect.top + 'px');
+            console.log('- Bottom:', footerRect.bottom + 'px');
+            console.log('- Hauteur du footer:', footerRect.height + 'px');
+            console.log('Distance du bas de l\'écran:', (windowHeight - footerRect.bottom) + 'px');
+            
+            // Affichage visuel
+            document.body.innerHTML += `
+                <div style="position: fixed; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 12px; z-index: 1000;">
+                    📏 MESURES FOOTER:<br>
+                    • Hauteur écran: ${windowHeight}px<br>
+                    • Footer top: ${Math.round(footerRect.top)}px<br>
+                    • Footer height: ${Math.round(footerRect.height)}px<br>
+                    • Distance du bas: ${Math.round(windowHeight - footerRect.bottom)}px<br>
+                    • Padding: p-2 = 8px<br>
+                    • Text: text-xs = 12px
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

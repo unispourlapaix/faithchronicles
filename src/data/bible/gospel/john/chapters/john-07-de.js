@@ -1,0 +1,1030 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Deutsch (Luther 1545)
+// ============================================================================
+// Chapitre 7
+
+export const johnChapter7DE = {
+  chapter: 7,
+  title: "Jean 7",
+  version: "Luther 1545",
+  language: "de",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Danach zog Jesus umher in Galiläa; denn er wollte nicht in Judäa umherziehen, darum daß ihm die Juden nach dem Leben stellten.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 11,
+                  "end": 16
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 50,
+                  "end": 55
+            },
+            {
+                  "text": "Leben",
+                  "strong": "G2222",
+                  "start": 111,
+                  "end": 116
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Es war aber nahe der Juden Fest, die Laubhütten.",
+    "strong": []
+  },
+  {
+    "number": 3,
+    "text": "Da sprachen seine Brüder zu ihm: Mache dich auf von dannen und gehe nach Judäa, auf daß auch deine Jünger sehen die Werke, die du tust.",
+    "strong": [
+            {
+                  "text": "sehen",
+                  "strong": "G1492",
+                  "start": 106,
+                  "end": 111
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Niemand tut etwas im Verborgenen und will doch frei offenbar sein. Tust du solches, so offenbare dich vor der Welt.",
+    "strong": [
+            {
+                  "text": "Niemand",
+                  "strong": "G3762",
+                  "start": 0,
+                  "end": 7
+            },
+            {
+                  "text": "frei",
+                  "strong": "G1658",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "sein",
+                  "strong": "G1510",
+                  "start": 61,
+                  "end": 65
+            },
+            {
+                  "text": "Welt",
+                  "strong": "G2889",
+                  "start": 110,
+                  "end": 114
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Denn auch seine Brüder glaubten nicht an ihn.",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 32,
+                  "end": 37
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Da spricht Jesus zu ihnen: Meine Zeit ist noch nicht hier; eure Zeit aber ist allewege.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 11,
+                  "end": 16
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 47,
+                  "end": 52
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Die Welt kann euch nicht hassen; mich aber hasset sie, denn ich zeuge von ihr, daß ihre Werke böse sind.",
+    "strong": [
+            {
+                  "text": "Welt",
+                  "strong": "G2889",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 19,
+                  "end": 24
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Gehet ihr hinauf auf dieses Fest; ich will noch nicht hinaufgehen auf dieses Fest, denn meine Zeit ist noch nicht erfüllet.",
+    "strong": [
+            {
+                  "text": "dieses",
+                  "strong": "G3778",
+                  "start": 21,
+                  "end": 27
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 48,
+                  "end": 53
+            },
+            {
+                  "text": "dieses",
+                  "strong": "G3778",
+                  "start": 70,
+                  "end": 76
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 108,
+                  "end": 113
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Da er aber das zu ihnen gesagt, blieb er in Galiläa.",
+    "strong": [
+{
+                  "text": "avoir",
+                  "strong": "G1372",
+                  "start": 11,
+                  "end": 16
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Als aber seine Brüder waren hinaufgegangen, da ging er auch hinauf zu dem Fest, nicht offenbarlich, sondern wie heimlich.",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 80,
+                  "end": 85
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Da suchten ihn die Juden am Fest und sprachen: Wo ist der?",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "Und es war ein groß Gemurmel unter dem Volk. Etliche sprachen: Er ist fromm; die andern aber sprachen: Nein, sondern er verführet das Volk.",
+    "strong": [
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "Nein",
+                  "strong": "G3756",
+                  "start": 103,
+                  "end": 107
+            },
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 134,
+                  "end": 138
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Niemand aber redete frei von ihm um der Furcht willen vor den Juden.",
+    "strong": [
+            {
+                  "text": "Niemand",
+                  "strong": "G3762",
+                  "start": 0,
+                  "end": 7
+            },
+            {
+                  "text": "frei",
+                  "strong": "G1658",
+                  "start": 20,
+                  "end": 24
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Aber mitten im Fest ging Jesus hinauf in den Tempel und lehrete.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 25,
+                  "end": 30
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Und die Juden verwunderten sich und sprachen: Wie kann dieser die Schrift, so er sie doch nicht gelernet hat?",
+    "strong": [
+            {
+                  "text": "sich",
+                  "strong": "G1372",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "dieser",
+                  "strong": "G3778",
+                  "start": 55,
+                  "end": 61
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 90,
+                  "end": 95
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Jesus antwortete ihnen und sprach: Meine Lehre ist nicht mein, sondern des, der mich gesandt hat.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 51,
+                  "end": 56
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "So jemand will des Willen tun, der wird innewerden, ob diese Lehre von Gott sei, oder ob ich von mir selbst rede.",
+    "strong": [
+            {
+                  "text": "diese",
+                  "strong": "G3778",
+                  "start": 55,
+                  "end": 60
+            },
+            {
+                  "text": "Gott",
+                  "strong": "G2316",
+                  "start": 71,
+                  "end": 75
+            },
+            {
+                  "text": "rede",
+                  "strong": "G3056",
+                  "start": 108,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Wer von sich selbst redet, der suchet seine eigene Ehre; wer aber suchet die Ehre des, der ihn gesandt hat, der ist wahrhaftig, und ist keine Ungerechtigkeit an ihm.",
+    "strong": [
+            {
+                  "text": "sich",
+                  "strong": "G1372",
+                  "start": 8,
+                  "end": 12
+            },
+            {
+                  "text": "Ungerechtigkeit",
+                  "strong": "G93",
+                  "start": 142,
+                  "end": 157
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Hat euch nicht Mose das Gesetz gegeben? Und niemand unter euch tut das Gesetz. Warum suchet ihr mich zu töten?",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 9,
+                  "end": 14
+            },
+            {
+                  "text": "Mose",
+                  "strong": "G3475",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "Gesetz",
+                  "strong": "G3551",
+                  "start": 24,
+                  "end": 30
+            },
+            {
+                  "text": "niemand",
+                  "strong": "G3762",
+                  "start": 44,
+                  "end": 51
+            },
+            {
+                  "text": "Gesetz",
+                  "strong": "G3551",
+                  "start": 71,
+                  "end": 77
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Das Volk antwortete und sprach: Du hast den Teufel; wer suchet dich zu töten?",
+    "strong": [
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 4,
+                  "end": 8
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Jesus antwortete und sprach zu ihnen: Ein einzig Werk hab' ich getan, und es wundert euch alle.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "einzig",
+                  "strong": "G1520",
+                  "start": 42,
+                  "end": 48
+            },
+            {
+                  "text": "Werk",
+                  "strong": "G2041",
+                  "start": 49,
+                  "end": 53
+            },
+            {
+                  "text": "alle",
+                  "strong": "G3956",
+                  "start": 90,
+                  "end": 94
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Mose hat euch darum gegeben die Beschneidung, nicht daß sie von Mose kommt, sondern von den Vätern, und ihr beschneidet den Menschen am Sabbat.",
+    "strong": [
+            {
+                  "text": "Mose",
+                  "strong": "G3475",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 46,
+                  "end": 51
+            },
+            {
+                  "text": "Mose",
+                  "strong": "G3475",
+                  "start": 64,
+                  "end": 68
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "So ein Mensch die Beschneidung annimmt am Sabbat, auf daß nicht das Gesetz Moses gebrochen werde, zürnet ihr denn über mich, daß ich den ganzen Menschen habe am Sabbat gesund gemacht?",
+    "strong": [
+            {
+                  "text": "Mensch",
+                  "strong": "G444",
+                  "start": 7,
+                  "end": 13
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 58,
+                  "end": 63
+            },
+            {
+                  "text": "Gesetz",
+                  "strong": "G3551",
+                  "start": 68,
+                  "end": 74
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Richtet nicht nach dem Ansehen, sondern richtet ein recht Gericht!",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "Gericht",
+                  "strong": "G2920",
+                  "start": 58,
+                  "end": 65
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Da sprachen etliche von Jerusalem: Ist das nicht der, den sie suchten zu töten?",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 43,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Und siehe zu, er redet frei, und sie sagen ihm nichts. Erkennen unsere Obersten nun gewiß, daß er gewiß Christus sei?",
+    "strong": [
+            {
+                  "text": "frei",
+                  "strong": "G1658",
+                  "start": 23,
+                  "end": 27
+            },
+            {
+                  "text": "sagen",
+                  "strong": "H559",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "nichts",
+                  "strong": "G3762",
+                  "start": 47,
+                  "end": 53
+            },
+            {
+                  "text": "Erkennen",
+                  "strong": "G1097",
+                  "start": 55,
+                  "end": 63
+            },
+            {
+                  "text": "Christus",
+                  "strong": "G5547",
+                  "start": 104,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Doch wir wissen, von wannen dieser ist; wenn aber Christus kommen wird, so wird niemand wissen, von wannen er ist.",
+    "strong": [
+            {
+                  "text": "wissen",
+                  "strong": "G1097",
+                  "start": 9,
+                  "end": 15
+            },
+            {
+                  "text": "dieser",
+                  "strong": "G3778",
+                  "start": 28,
+                  "end": 34
+            },
+            {
+                  "text": "Christus",
+                  "strong": "G5547",
+                  "start": 50,
+                  "end": 58
+            },
+            {
+                  "text": "niemand",
+                  "strong": "G3762",
+                  "start": 80,
+                  "end": 87
+            },
+            {
+                  "text": "wissen",
+                  "strong": "G1097",
+                  "start": 88,
+                  "end": 94
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Da rief Jesus im Tempel, lehrete und sprach: Ja, ihr kennet mich und wisset, von wannen ich bin; und von mir selbst bin ich nicht kommen, sondern es ist ein Wahrhaftiger, der mich gesandt hat, welchen ihr nicht kennet.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 124,
+                  "end": 129
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 205,
+                  "end": 210
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Ich kenne ihn aber; denn ich bin von ihm, und er hat mich gesandt.",
+    "strong": []
+  },
+  {
+    "number": 30,
+    "text": "Da suchten sie ihn zu greifen; aber niemand legte die Hand an ihn, denn seine Stunde war noch nicht kommen.",
+    "strong": [
+            {
+                  "text": "niemand",
+                  "strong": "G3762",
+                  "start": 36,
+                  "end": 43
+            },
+            {
+                  "text": "Hand",
+                  "strong": "G5495",
+                  "start": 54,
+                  "end": 58
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 94,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Aber viele vom Volk glaubten an ihn und sprachen: Wenn Christus kommen wird, wird er auch mehr Zeichen tun, denn dieser tut?",
+    "strong": [
+            {
+                  "text": "viele",
+                  "strong": "G4183",
+                  "start": 5,
+                  "end": 10
+            },
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "Christus",
+                  "strong": "G5547",
+                  "start": 55,
+                  "end": 63
+            },
+            {
+                  "text": "Zeichen",
+                  "strong": "G4592",
+                  "start": 95,
+                  "end": 102
+            },
+            {
+                  "text": "dieser",
+                  "strong": "G3778",
+                  "start": 113,
+                  "end": 119
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "Und es kam vor die Pharisäer, daß das Volk solches von ihm murmelte. Da sandten die Pharisäer und Hohenpriester Knechte aus, daß sie ihn griffen.",
+    "strong": [
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 38,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Da sprach Jesus zu ihnen: Ich bin noch eine kleine Zeit bei euch, und dann gehe ich hin zu dem, der mich gesandt hat.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 10,
+                  "end": 15
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Ihr werdet mich suchen und nicht finden; und wo ich bin, da könnet ihr nicht hinkommen.",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 27,
+                  "end": 32
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 71,
+                  "end": 76
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Da sprachen die Juden untereinander: Wo will dieser hingehen, daß wir ihn nicht finden sollen? Will er unter die Griechen gehen, die hin und her zerstreuet liegen, und die Griechen lehren?",
+    "strong": [
+            {
+                  "text": "dieser",
+                  "strong": "G3778",
+                  "start": 45,
+                  "end": 51
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 74,
+                  "end": 79
+            },
+            {
+                  "text": "gehen",
+                  "strong": "G622",
+                  "start": 122,
+                  "end": 127
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "Was ist das für eine Rede, daß er saget: Ihr werdet mich suchen und nicht finden; und wo ich bin, da könnet ihr nicht hinkommen?",
+    "strong": [
+            {
+                  "text": "Rede",
+                  "strong": "G3056",
+                  "start": 21,
+                  "end": 25
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 68,
+                  "end": 73
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 112,
+                  "end": 117
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Aber am letzten Tage des Festes, der am herrlichsten war, trat Jesus auf, rief und sprach: Wen da dürstet, der komme zu mir und trinke!",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 63,
+                  "end": 68
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "Wer an mich glaubet, wie die Schrift sagt, von des Leibe werden Ströme des lebendigen Wassers fließen.",
+    "strong": [
+            {
+                  "text": "werden",
+                  "strong": "G1096",
+                  "start": 57,
+                  "end": 63
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "Das sagte er aber von dem Geist, welchen empfangen sollten, die an ihn glaubten; denn der Heilige Geist war noch nicht da, denn Jesus war noch nicht verkläret.",
+    "strong": [
+            {
+                  "text": "Geist",
+                  "strong": "G4151",
+                  "start": 26,
+                  "end": 31
+            },
+            {
+                  "text": "empfangen",
+                  "strong": "G3880",
+                  "start": 41,
+                  "end": 50
+            },
+            {
+                  "text": "Geist",
+                  "strong": "G4151",
+                  "start": 98,
+                  "end": 103
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 113,
+                  "end": 118
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 128,
+                  "end": 133
+            },
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 143,
+                  "end": 148
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Viele nun vom Volk, die diese Rede höreten, sprachen: Dieser ist ein rechter Prophet.",
+    "strong": [
+            {
+                  "text": "Viele",
+                  "strong": "G4183",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 14,
+                  "end": 18
+            },
+            {
+                  "text": "diese",
+                  "strong": "G3778",
+                  "start": 24,
+                  "end": 29
+            },
+            {
+                  "text": "Rede",
+                  "strong": "G3056",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "Dieser",
+                  "strong": "G3778",
+                  "start": 54,
+                  "end": 60
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Die andern sprachen: Er ist Christus. Etliche aber sprachen: Soll Christus aus Galiläa kommen?",
+    "strong": [
+            {
+                  "text": "Christus",
+                  "strong": "G5547",
+                  "start": 28,
+                  "end": 36
+            },
+            {
+                  "text": "Christus",
+                  "strong": "G5547",
+                  "start": 66,
+                  "end": 74
+            }
+      ]
+  },
+  {
+    "number": 42,
+    "text": "Spricht nicht die Schrift, von dem Samen Davids und aus dem Flecken Bethlehem, da David war, solle Christus kommen?",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "Christus",
+                  "strong": "G5547",
+                  "start": 99,
+                  "end": 107
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "Also ward eine Zwietracht unter dem Volk über ihm.",
+    "strong": [
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 36,
+                  "end": 40
+            }
+      ]
+  },
+  {
+    "number": 44,
+    "text": "Es wollten aber etliche ihn greifen; aber niemand legte die Hand an ihn.",
+    "strong": [
+            {
+                  "text": "niemand",
+                  "strong": "G3762",
+                  "start": 42,
+                  "end": 49
+            },
+            {
+                  "text": "Hand",
+                  "strong": "G5495",
+                  "start": 60,
+                  "end": 64
+            }
+      ]
+  },
+  {
+    "number": 45,
+    "text": "Die Knechte kamen zu den Hohenpriestern und Pharisäern; und sie sprachen zu ihnen: Warum habt ihr ihn nicht gebracht?",
+    "strong": [
+            {
+                  "text": "nicht",
+                  "strong": "G3756",
+                  "start": 102,
+                  "end": 107
+            }
+      ]
+  },
+  {
+    "number": 46,
+    "text": "Die Knechte antworteten: Es hat nie kein Mensch also geredet wie dieser Mensch.",
+    "strong": [
+            {
+                  "text": "Mensch",
+                  "strong": "G444",
+                  "start": 41,
+                  "end": 47
+            },
+            {
+                  "text": "dieser",
+                  "strong": "G3778",
+                  "start": 65,
+                  "end": 71
+            },
+            {
+                  "text": "Mensch",
+                  "strong": "G444",
+                  "start": 72,
+                  "end": 78
+            }
+      ]
+  },
+  {
+    "number": 47,
+    "text": "Da antworteten ihnen die Pharisäer: Seid ihr auch verführet?",
+    "strong": []
+  },
+  {
+    "number": 48,
+    "text": "Glaubt auch irgendein Oberster oder Pharisäer an ihn?",
+    "strong": []
+  },
+  {
+    "number": 49,
+    "text": "Sondern das Volk, das nichts vom Gesetz weiß, ist verflucht.",
+    "strong": [
+            {
+                  "text": "Volk",
+                  "strong": "G1484",
+                  "start": 12,
+                  "end": 16
+            },
+            {
+                  "text": "nichts",
+                  "strong": "G3762",
+                  "start": 22,
+                  "end": 28
+            },
+            {
+                  "text": "Gesetz",
+                  "strong": "G3551",
+                  "start": 33,
+                  "end": 39
+            }
+      ]
+  },
+  {
+    "number": 50,
+    "text": "Spricht zu ihnen Nikodemus, der bei der Nacht zu ihm kam, welcher einer unter ihnen war:",
+    "strong": [
+            {
+                  "text": "Nikodemus",
+                  "strong": "G3530",
+                  "start": 17,
+                  "end": 26
+            },
+            {
+                  "text": "Nacht",
+                  "strong": "G3571",
+                  "start": 40,
+                  "end": 45
+            }
+      ]
+  },
+  {
+    "number": 51,
+    "text": "Richtet unser Gesetz auch einen Menschen, ehe man ihn verhöret und erkennet, was er tut?",
+    "strong": [
+            {
+                  "text": "Gesetz",
+                  "strong": "G3551",
+                  "start": 14,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 52,
+    "text": "Sie antworteten und sprachen zu ihm: Bist du auch ein Galiläer? Forsche und siehe, aus Galiläa stehet kein Prophet auf.",
+    "strong": []
+  },
+  {
+    "number": 53,
+    "text": "Und ein jeglicher ging also heim.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 24,
+                  "end": 28
+            },
+            {
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 32,
+                  "end": 38
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter7DE;

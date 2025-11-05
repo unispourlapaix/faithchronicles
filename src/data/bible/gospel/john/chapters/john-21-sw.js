@@ -1,0 +1,431 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Kiswahili (Swahili Union Version)
+// ============================================================================
+// Chapitre 21
+
+export const johnChapter21SW = {
+  chapter: 21,
+  title: "Jean 21",
+  version: "Swahili Union Version",
+  language: "sw",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Baada ya mambo haya, Yesu akajifunua tena kwa wanafunzi wake penye bahari ya Tiberiya; naye akajifunua hivi;",
+    "strong": []
+  },
+  {
+    "number": 2,
+    "text": "walikuwamo pamoja Simoni Petro, na Tomaso aitwaye Pacha, na Nathanaeli wa Kana ya Galilaya, na wana wa Zebedayo, na wengine wawili wa wanafunzi wake.",
+    "strong": [
+{
+                  "text": "Thomas",
+                  "strong": "G2381",
+                  "start": 14,
+                  "end": 20
+            },
+            {
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 72,
+                  "end": 76
+            },
+            {
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 92,
+                  "end": 96
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Simoni Petro akawaambia, Naenda kuvua samaki. Wakamwambia, Sisi nao tunakwenda pamoja nawe. Wakatoka, wakaingia katika chombo; na usiku ule hawakupata cho chote.",
+    "strong": [
+{
+                  "text": "cher",
+                  "strong": "G27",
+                  "start": 33,
+                  "end": 37
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 73,
+                  "end": 77
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 110,
+                  "end": 114
+            },
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 130,
+                  "end": 135
+            },
+            {
+                  "text": "nuit",
+                  "strong": "G3571",
+                  "start": 136,
+                  "end": 140
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 159,
+                  "end": 163
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Ilipokuwa mapema asubuhi, Yesu akasimama ukingoni; hata hivyo wale wanafunzi hawakumjua kuwa ni Yesu.",
+    "strong": []
+  },
+  {
+    "number": 5,
+    "text": "Yesu basi akawaambia, Watoto, hamna cho chote cha kula? Wakamjibu, Hapana.",
+    "strong": [
+{
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 37,
+                  "end": 41
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Akawaambia, Tupeni wavu upande wa kuume wa chombo, nanyi mtapata. Basi wakautupa, wasiweze tena kuuvuta kwa sababu ya wingi wa samaki.",
+    "strong": []
+  },
+  {
+    "number": 7,
+    "text": "Yule mwanafunzi basi aliyempenda Yesu akamwambia Petro, Ni Bwana. Simoni Petro basi aliposikia kwamba ni Bwana, akajifunga kwa kanzu yake (kwa kuwa alikuwa uchi), akaruka baharini.",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 9,
+                  "end": 17
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 58,
+                  "end": 66
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 122,
+                  "end": 130
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 193,
+                  "end": 197
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Lakini wale wanafunzi wengine wakaja kwa chombo (maana hawakuwa mbali na nchi, bali yapata dhiraa mia mbili), wakiuvuta ule wavu wa samaki.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "terre",
+                  "strong": "H776",
+                  "start": 110,
+                  "end": 115
+            },
+            {
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 130,
+                  "end": 134
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Basi waliposhuka nchi, wakaona makaa ya moto yameandaliwa pale, na samaki amewekwa juu yake, na mkate.",
+    "strong": [
+{
+                  "text": "terre",
+                  "strong": "H776",
+                  "start": 30,
+                  "end": 35
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 98,
+                  "end": 102
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Yesu akawaambia, Leteni baadhi ya samaki mliowavua sasa.",
+    "strong": [
+{
+                  "text": "prendre",
+                  "strong": "G3880",
+                  "start": 56,
+                  "end": 63
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Simoni Petro akapanda, akaufuta wavu nchi, ukiwa umejaa samaki wakubwa, mia na hamsini na watatu; na hata walikuwa wengi hivyo, ule wavu haukuraruka.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 19,
+                  "end": 23
+            },
+            {
+                  "text": "terre",
+                  "strong": "H776",
+                  "start": 45,
+                  "end": 50
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Yesu akawaambia, Njooni mkale chakula. Wala hakuna hata mmoja wa wanafunzi aliyethubutu kumwuliza, Wewe u nani? wakijua ya kuwa ni Bwana.",
+    "strong": [
+{
+                  "text": "aucun",
+                  "strong": "G3762",
+                  "start": 34,
+                  "end": 39
+            },
+            {
+                  "text": "demander",
+                  "strong": "G154",
+                  "start": 66,
+                  "end": 74
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 110,
+                  "end": 118
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Yesu basi akaja, akatwaa mkate, akawapa, na samaki vivyo hivyo.",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 26,
+                  "end": 30
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Hii ndiyo mara ya tatu Yesu kujifunua kwa wanafunzi wake, baada ya kufufuliwa katika wafu.",
+    "strong": []
+  },
+  {
+    "number": 15,
+    "text": "Basi walipokwisha kula chakula, Yesu akamwambia Simoni Petro, Simoni mwana wa Yona, wanipenda zaidi ya hawa? Akamwambia, Naam, Bwana; wewe unajua kwamba ninakupenda. Akamwambia, Ulisha wanakondoo wangu.",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 60,
+                  "end": 64
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 138,
+                  "end": 146
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Akamwambia tena mara ya pili, Simoni mwana wa Yona, wanipenda? Akamwambia, Naam, Bwana; wewe unajua kwamba ninakupenda. Akamwambia, Utunze kondoo wangu.",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 36,
+                  "end": 40
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 89,
+                  "end": 97
+            },
+            {
+                  "text": "brebis",
+                  "strong": "G4263",
+                  "start": 146,
+                  "end": 152
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Akamwambia mara ya tatu, Simoni mwana wa Yona, wanipenda? Petro akahuzunika kwa sababu alimwambia mara ya tatu, Wanipenda? Akamwambia, Bwana, wewe unajua mambo yote; wewe unajua kwamba ninakupenda. Yesu akamwambia, Ulisha kondoo wangu.",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 42,
+                  "end": 46
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 171,
+                  "end": 179
+            },
+            {
+                  "text": "brebis",
+                  "strong": "G4263",
+                  "start": 251,
+                  "end": 257
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Amin, amin, nakuambia, Ulipokuwa mdogo, ulijifunga mwenyewe, ukatembea upendapo; lakini utakapokuwa mzee, utanyoosha mikono yako, na mtu mwingine atakufunga, atakupeleka usipopatako.",
+    "strong": []
+  },
+  {
+    "number": 19,
+    "text": "Hayo alinena akionyesha kifo gani angekufa, akamtukuza Mungu. Naye aliposema hayo, akamwambia, Nifuate.",
+    "strong": [
+{
+                  "text": "mort",
+                  "strong": "H6757",
+                  "start": 37,
+                  "end": 41
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 62,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Petro alipogeuka, akamwona yule mwanafunzi aliyempenda Yesu akimfuata; ambaye pia alikuwa ameegama kifuani mwake chakula cha jioni, akasema, Bwana, ni nani akusalitiye?",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 49,
+                  "end": 57
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 161,
+                  "end": 169
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Petro basi alipomwona yeye, akamwambia Yesu, Bwana, na huyu je?",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 47,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Yesu akamwambia, Kama ninataka yeye akae mpaka nijao, itakushuhulikia nini wewe? Nifuate wewe mwenyewe.",
+    "strong": [
+{
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 32,
+                  "end": 39
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Basi neno hili likaenea kati ya ndugu, kwamba yule mwanafunzi hatafi; hata hivyo Yesu hakumwambia ya kuwa hatafi, bali, Kama ninataka yeye akae mpaka nijao, itakushuhulikia nini wewe?",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 51,
+                  "end": 59
+            },
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 168,
+                  "end": 175
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Huyu ndiye yule mwanafunzi ashuhudiaye mambo haya, na aliyeyaandika haya; nasi tunajua ya kuwa ushuhuda wake ni wa kweli.",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 9,
+                  "end": 17
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Na kuna mambo mengine mengi pia Yesu aliyoyafanya, ambayo kama yangaliandikwa kila moja, nadhani ya kuwa hata ulimwengu wenyewe usingaliweza kuvichukua vitabu vingalivyoandikwa.",
+    "strong": [
+{
+                  "text": "beaucoup",
+                  "strong": "G4183",
+                  "start": 20,
+                  "end": 28
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 99,
+                  "end": 104
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter21SW;

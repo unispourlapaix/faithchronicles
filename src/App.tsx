@@ -1,12 +1,15 @@
 import React from 'react';
+import { TranslationProvider } from './hooks/useTranslation';
 import FaithChronicles from './components/FaithChronicles';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <FaithChronicles />
-    </div>
+    <TranslationProvider>
+      <div className="App">
+        <FaithChronicles />
+      </div>
+    </TranslationProvider>
   );
 }
 

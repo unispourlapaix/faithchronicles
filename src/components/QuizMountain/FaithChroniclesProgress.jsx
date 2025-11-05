@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from '../../hooks/useTranslation.js';
 
 const FaithChroniclesProgress = ({ 
   chapter = 1, 
   chapter8Unlocked = false, 
   status = "progress" 
 }) => {
+  const { t } = useTranslation();
   const getLambPosition = () => {
     const positions = [
       { x: 180, y: 570 }, { x: 140, y: 550 }, { x: 180, y: 530 }, { x: 220, y: 510 },
@@ -539,7 +541,7 @@ const FaithChroniclesProgress = ({
           </span>
           <span className="text-sm text-gray-500">
             {status === "victory" ? "Victoire!" : 
-             status === "defeat" ? "Défaite" : 
+             status === "defeat" ? t('mountain.status.defeat') : 
              "En progression"}
           </span>
         </div>

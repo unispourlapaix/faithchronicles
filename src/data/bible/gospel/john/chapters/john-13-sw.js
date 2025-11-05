@@ -1,0 +1,560 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Kiswahili (Swahili Union Version)
+// ============================================================================
+// Chapitre 13
+
+export const johnChapter13SW = {
+  chapter: 13,
+  title: "Jean 13",
+  version: "Swahili Union Version",
+  language: "sw",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Basi kabla ya sikukuu ya Pasaka, Yesu alipojua ya kuwa saa yake imekuja ya kuondoka katika ulimwengu huu, kwenda kwa Baba, alikuwa amewapenda wake waliomo katika ulimwengu, akawapenda hata mwisho.",
+    "strong": [
+{
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 81,
+                  "end": 86
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 132,
+                  "end": 136
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 140,
+                  "end": 145
+            },
+            {
+                  "text": "amour",
+                  "strong": "G25",
+                  "start": 167,
+                  "end": 172
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Wakati wa chakula cha jioni, ibilisi amekwisha kutia moyoni mwa Yuda Iskariote, mwana wa Simoni, kumsaliti,",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 83,
+                  "end": 87
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Yesu alipojua ya kuwa Baba amempa vitu vyote mikononi, na ya kuwa alitoka kwa Mungu, naye anaenda kwa Mungu,",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 93,
+                  "end": 97
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 122,
+                  "end": 126
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "akainuka kutoka chakula cha jioni, akavua mavazi yake; akatwaa kitambaa, akajifunga.",
+    "strong": [
+{
+                  "text": "table",
+                  "strong": "H7979",
+                  "start": 11,
+                  "end": 16
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Kisha akamimina maji katika sinia, akaanza kuwaosha wanafunzi miguu, na kuwafutia kwa kitambaa alichokuwa amejifunga nacho.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 105,
+                  "end": 109
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Basi akamjia Simoni Petro. Naye akamwambia, Bwana, wewe unaniosha mimi miguu?",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 53,
+                  "end": 61
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Yesu akajibu, akamwambia, Lile nifanyalo wewe hujui sasa, lakini utafahamu baadaye.",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "Petro akamwambia, Hutaniosha mimi miguu kamwe. Yesu akamjibu, Kama sikuniosha, hauna sehemu nami.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 119,
+                  "end": 123
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Simoni Petro akamwambia, Bwana, si miguu yangu tu, bali mikono nayo, na kichwa nao.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 22,
+                  "end": 30
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Yesu akamwambia, Yeye aliyeoga, hahitaji kunawishwa ila miguu tu, bali yu safi kabisa; nanyi ni wasafi, lakini si wote.",
+    "strong": [
+{
+                  "text": "besoin",
+                  "strong": "H2637",
+                  "start": 38,
+                  "end": 44
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Maana alimjua yule atakayemsaliti; kwa sababu hiyo alisema, Si wote ninyi ni wasafi.",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "Basi alipokwisha kuwaosha miguu, akavaa mavazi yake, akaketi tena, akawaambia, Mnajua nililowatendea?",
+    "strong": [
+{
+                  "text": "table",
+                  "strong": "H7979",
+                  "start": 84,
+                  "end": 89
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Ninyi mniita Mwalimu na Bwana; nanyi mnasema vema; maana ndivyo nilivyo.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 25,
+                  "end": 33
+            },
+            {
+                  "text": "bien",
+                  "strong": "H2896",
+                  "start": 49,
+                  "end": 53
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Basi kama mimi, Bwana na Mwalimu, nimekuosheni miguu, nanyi nao yapasa kuwashana miguu ninyi kwa ninyi.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 43,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Maana nimewapeni kielelezo, ili ninyi nao mfanye kama nilivyowatendeeni ninyi.",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 55,
+                  "end": 60
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Amin, amin, nawaambia, Mtumwa si mkuu kuliko bwana wake; wala yeye aliyetumwa si mkuu kuliko yeye aliyemtuma.",
+    "strong": [
+{
+                  "text": "serviteur",
+                  "strong": "G1401",
+                  "start": 41,
+                  "end": 50
+            },
+            {
+                  "text": "grand",
+                  "strong": "G3173",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "seigneur",
+                  "strong": "G2962",
+                  "start": 80,
+                  "end": 88
+            },
+            {
+                  "text": "grand",
+                  "strong": "G3173",
+                  "start": 107,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Kama ninyi mnajua mambo haya, heri yenu mkiyatenda.",
+    "strong": []
+  },
+  {
+    "number": 18,
+    "text": "Sisemi habari za ninyi nyote; mimi nawajua niliowachagua; bali ili maandiko yatimie, Alaye mkate pamoja nami amenirushia kisigino.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 133,
+                  "end": 137
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 145,
+                  "end": 149
+            },
+            {
+                  "text": "contre",
+                  "strong": "G2596",
+                  "start": 167,
+                  "end": 173
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Tangu sasa ninawaambieni kabla hayajatokea, ili yatakapotokea, mwamini ya kuwa mimi ndimi.",
+    "strong": []
+  },
+  {
+    "number": 20,
+    "text": "Amin, amin, nawaambia, Yeye ampokeyaye yeyote nimtumaye, ananipokea mimi; naye anipokeaye mimi, anamkubali yeye aliyenituma.",
+    "strong": []
+  },
+  {
+    "number": 21,
+    "text": "Yesu aliposema hayo, alifadhaika rohoni, akashuhudia, akasema, Amin, amin, nawaambia, Mmoja wenu atanisaliti.",
+    "strong": [
+{
+                  "text": "esprit",
+                  "strong": "G4151",
+                  "start": 44,
+                  "end": 50
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Basi wanafunzi wakatazamana, wakiwa na mashaka juu ya nani aliyesema.",
+    "strong": []
+  },
+  {
+    "number": 23,
+    "text": "Kulikuwa na mmoja wa wanafunzi wake, yeye aliyempenda Yesu, aliyeunama kifuani mwa Yesu.",
+    "strong": []
+  },
+  {
+    "number": 24,
+    "text": "Basi huyo Simoni Petro akamwashiria, ili amuulize ni nani aliyesema habari zake.",
+    "strong": [
+{
+                  "text": "signe",
+                  "strong": "G4592",
+                  "start": 21,
+                  "end": 26
+            },
+            {
+                  "text": "demander",
+                  "strong": "G154",
+                  "start": 30,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Naye akajiegemeza kifuani mwa Yesu, akamwambia, Bwana, ni nani?",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 6,
+                  "end": 14
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 66,
+                  "end": 74
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Yesu akajibu, Ni yule nitakayempa hicho kipande baada ya kutichovya. Akachovya kipande, akampa Yuda Iskariote, mwana wa Simoni.",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 115,
+                  "end": 119
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Baada ya kile kipande ndipo shetani alipoingia ndani yake. Basi Yesu akamwambia, Ufanyalo, ufanye upesi.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Basi hakuna mtu wa wale walioketi chakulani aliyefahamu kwa nini alisema naye hayo.",
+    "strong": [
+{
+                  "text": "aucun",
+                  "strong": "G3762",
+                  "start": 5,
+                  "end": 10
+            },
+            {
+                  "text": "table",
+                  "strong": "H7979",
+                  "start": 33,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Maana wengine walidhani, kwa sababu Yuda alikuwa na mfuko, ya kuwa Yesu alisema naye, Nunua vitu vitunavyohitajika kwa ajili ya sikukuu; au awape maskini kitu.",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "dire",
+                  "strong": "H559",
+                  "start": 79,
+                  "end": 83
+            },
+            {
+                  "text": "besoin",
+                  "strong": "H2637",
+                  "start": 111,
+                  "end": 117
+            },
+            {
+                  "text": "donner",
+                  "strong": "G1325",
+                  "start": 159,
+                  "end": 165
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "Basi yule alipokwisha kupokea kile kipande, akatoka mara; nayo ilikuwa ni usiku.",
+    "strong": [
+{
+                  "text": "nuit",
+                  "strong": "G3571",
+                  "start": 58,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Basi alipotoka, Yesu akasema, Sasa Mwana wa Adamu ametukuzwa, na Mungu ametukuzwa ndani yake;",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 51,
+                  "end": 55
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 61,
+                  "end": 66
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 86,
+                  "end": 90
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "na Mungu amekwisha kutukuzwa ndani yake, Mungu naye atamtukuza ndani yake mwenyewe, naam, atamtukuza mara.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 3,
+                  "end": 7
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 31,
+                  "end": 35
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Watoto wadogo, bado ni kitambo kidogo nikiwa pamoja nanyi; mtanitafuta; na kama nilivyowaambia Wayahudi, Ninyi hamwezi kuja huko niendako mimi, na ninyi nawaambia sasa.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 53,
+                  "end": 57
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 88,
+                  "end": 93
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Ninawapeni amri mpya, mpendane ninyi kwa ninyi; kama nilivyowapenda ninyi, nanyi nao mpendane ninyi kwa ninyi.",
+    "strong": [
+{
+                  "text": "commandement",
+                  "strong": "G1785",
+                  "start": 17,
+                  "end": 29
+            },
+            {
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 30,
+                  "end": 37
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 70,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Kwa hili watu wote watajua ya kuwa ninyi ni wanafunzi wangu, kama mkiwa na upendo ninyi kwa ninyi.",
+    "strong": [
+{
+                  "text": "ceci",
+                  "strong": "G3778",
+                  "start": 2,
+                  "end": 6
+            },
+            {
+                  "text": "amour",
+                  "strong": "G25",
+                  "start": 71,
+                  "end": 76
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "Simoni Petro akamwambia, Bwana, unaenda wapi? Yesu akamjibu, Huko niendako wewe huwezi kunifuata sasa; lakini utanifuata baadaye.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 22,
+                  "end": 30
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Petro akamwambia, Bwana, kwa nini siwezi kukufuata sasa? Nitatoa uzima wangu kwa ajili yako.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 0,
+                  "end": 8
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "Yesu akamjibu, Je, utatoa uzima wako kwa ajili yangu? Amin, amin, nakuambia, Jogoo hatawika mpaka uwe umenikataa mara tatu.",
+    "strong": []
+  }
+]
+};
+
+export default johnChapter13SW;

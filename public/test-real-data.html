@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST - Vos vraies données FAITHCHRONICLES</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; }
+        .user-card { background: #f9f9f9; margin: 10px 0; padding: 15px; border-radius: 5px; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        button { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 TEST - Vos vraies données FAITHCHRONICLES</h1>
+        
+        <button onclick="testRealData()">🎮 Tester données réelles</button>
+        <button onclick="testUsersTable()">👥 Tester table users</button>
+        
+        <div id="results"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        const SUPABASE_URL = 'https://dmszyxowetilvsanqsxm.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtc3p5eG93ZXRpbHZzYW5xc3htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk2OTQ0MTUsImV4cCI6MjA0NTI3MDQxNX0.gdKBKHZiYGmNfFV6vGdJ4J6EiZwjrLdA_lSaXPJqBGk';
+        
+        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        
+        function addResult(message, type = 'info') {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `user-card ${type}`;
+            div.innerHTML = message;
+            results.appendChild(div);
+        }
+        
+        async function testRealData() {
+            addResult('🔍 Test des données réelles FAITHCHRONICLES...', 'info');
+            
+            try {
+                // Test 1: faithchronicles_profiles seul
+                const { data: profiles, error: profilesError } = await supabase
+                    .from('faithchronicles_profiles')
+                    .select('*');
+                
+                if (profilesError) throw profilesError;
+                
+                addResult(`✅ faithchronicles_profiles: ${profiles?.length || 0} profils trouvés`, 'success');
+                profiles?.forEach(profile => {
+                    addResult(`   👤 ${profile.username} (${profile.id})`, 'info');
+                });
+                
+                // Test 2: game_progress seul
+                const { data: progress, error: progressError } = await supabase
+                    .from('faithchronicles_game_progress')
+                    .select('*')
+                    .order('wisdom_points', { ascending: false });
+                
+                if (progressError) throw progressError;
+                
+                addResult(`✅ faithchronicles_game_progress: ${progress?.length || 0} progressions trouvées`, 'success');
+                progress?.forEach(prog => {
+                    addResult(`   🎮 UserID: ${prog.user_id.slice(0, 8)}... - ${prog.wisdom_points} points de sagesse`, 'info');
+                });
+                
+                // Test 3: JOIN des deux
+                const { data: joined, error: joinError } = await supabase
+                    .from('faithchronicles_game_progress')
+                    .select(`
+                        wisdom_points,
+                        current_level,
+                        user_id,
+                        faithchronicles_profiles!inner (username)
+                    `)
+                    .order('wisdom_points', { ascending: false });
+                
+                if (joinError) {
+                    addResult(`⚠️ JOIN impossible: ${joinError.message}`, 'error');
+                } else {
+                    addResult(`✅ JOIN réussi: ${joined?.length || 0} entrées jointes`, 'success');
+                    joined?.forEach((entry, index) => {
+                        addResult(`   🏆 ${index + 1}. ${entry.faithchronicles_profiles.username} - ${entry.wisdom_points} points`, 'success');
+                    });
+                }
+                
+            } catch (error) {
+                addResult(`❌ Erreur: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testUsersTable() {
+            addResult('🔍 Test de la table users globale...', 'info');
+            
+            try {
+                const { data: users, error: usersError } = await supabase
+                    .from('users')
+                    .select('*');
+                
+                if (usersError) throw usersError;
+                
+                addResult(`✅ Table users: ${users?.length || 0} utilisateurs trouvés`, 'success');
+                users?.forEach(user => {
+                    addResult(`   ✨ ${user.pseudo} (${user.email}) - ${user.avatar}`, 'info');
+                });
+                
+                if (users && users.length > 0) {
+                    addResult('💡 Votre pseudo est bien dans la table users globale !', 'success');
+                } else {
+                    addResult('⚠️ Table users vide - le problème est là !', 'error');
+                }
+                
+            } catch (error) {
+                addResult(`❌ Erreur table users: ${error.message}`, 'error');
+            }
+        }
+        
+        // Auto-test au chargement
+        window.onload = () => {
+            addResult('🚀 Page de diagnostic chargée. Cliquez sur les boutons pour tester !', 'info');
+        };
+    </script>
+</body>
+</html>

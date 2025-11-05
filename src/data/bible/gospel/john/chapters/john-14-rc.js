@@ -1,0 +1,489 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Français (Louis Segond 1910)
+// ============================================================================
+// Chapitre 14
+
+export const johnChapter14RC = {
+  chapter: 14,
+  title: "Nzela, Bosolo mpe Bomoi",
+  version: "Biblia ya Lingala",
+  language: "rc",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Tika motema na bino enyokwama te; bondima na Nzambe, bondima mpe na ngai.",
+    "strong": [
+            {
+                  "text": "Nzambe",
+                  "strong": "G2316",
+                  "start": 45,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Na ndako ya Tata na ngai ezali na bandako mingi; soki ezalaki bongo te, mbele nalingaki koloba na bino. Nakei kobongisa esika mpo na bino.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 17,
+                  "end": 19
+            },
+            {
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 34,
+                  "end": 40
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Mpe soki nakei mpe nabongisi esika mpo na bino, nakozonga mpe nakokamata bino na ngai moko, mpo ete epai nazali, bino mpe bozala.",
+    "strong": [
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 107,
+                  "end": 111
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Mpe epai nakei, boyebi nzela.",
+    "strong": [
+            {
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 43,
+                  "end": 49
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Toma alobaki na ye: Nkolo, toyebi te epai okei, mpe ndenge nini tokoki koyeba nzela?",
+    "strong": [
+            {
+                  "text": "Thomas",
+                  "strong": "G2381",
+                  "start": 0,
+                  "end": 6
+            },
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "savoir",
+                  "strong": "G1097",
+                  "start": 76,
+                  "end": 82
+            },
+            {
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 86,
+                  "end": 92
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Yesu alobaki na ye: Ngai nazali nzela, bosolo, mpe bomoi; moto moko ayaka te epai ya Tata, longola na nzela na ngai.",
+    "strong": [
+            {
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 26,
+                  "end": 32
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Soki boyebaki ngai, mbele boyebaki mpe Tata na ngai; mpe banda sikawa boyebi ye, mpe bomoni ye.",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "Filipo alobaki na ye: Nkolo, lakisa biso Tata, mpe ekoki biso.",
+    "strong": [
+            {
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 22,
+                  "end": 27
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Yesu alobaki na ye: Nazali na bino ntango molai boye, mpe oyebi ngai te, Filipo? Ye oyo amoni ngai amoni Tata; bongo ndenge nini olobi: Lakisa biso Tata?",
+    "strong": [
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 83,
+                  "end": 91
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Ondimi te ete nazali kati na Tata, mpe Tata azali kati na ngai? Maloba oyo nalobi na bino nalobi na ngai moko te, kasi Tata oyo afandaka kati na ngai, ye nde azali kosala misala na ye.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 14,
+                  "end": 16
+            },
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 144,
+                  "end": 151
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Yamba ngai ete nazali kati na Tata, mpe Tata azali kati na ngai; soki te, yamba ngai mpo na misala yango wana.",
+    "strong": [
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 15,
+                  "end": 17
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Amen, amen, nalobi na bino, ye oyo andimi na ngai, misala oyo ngai nasalaka ye mpe akosala yango, mpe akosala minene koleka yango, pamba te nakei epai ya Tata.",
+    "strong": []
+  },
+  {
+    "number": 13,
+    "text": "Mpe nyonso oyo bokosenga na nkombo na ngai, nakosala yango, mpo ete Tata akonzama nkembo na Mwana.",
+    "strong": [
+            {
+                  "text": "nyonso",
+                  "strong": "G3956",
+                  "start": 4,
+                  "end": 10
+            },
+            {
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 25,
+                  "end": 27
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 95,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Soki bokosenga eloko na nkombo na ngai, nakosala yango.",
+    "strong": []
+  },
+  {
+    "number": 15,
+    "text": "Soki bolingi ngai, bobatela mibeko na ngai.",
+    "strong": []
+  },
+  {
+    "number": 16,
+    "text": "Mpe ngai nakosenga Tata, mpe akopesa bino Mosungi mosusu, mpo ete afanda na bino seko na seko,",
+    "strong": [
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 80,
+                  "end": 87
+            },
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 102,
+                  "end": 106
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Molimo ya bosolo, oyo mokili ekoki koyamba te, pamba te emonanaka ye te, mpe eyebaka ye te; kasi bino boyebi ye, pamba te afandaka elongo na bino, mpe akozala kati na bino.",
+    "strong": [
+            {
+                  "text": "Molimo",
+                  "strong": "G4151",
+                  "start": 0,
+                  "end": 6
+            },
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 22,
+                  "end": 28
+            },
+            {
+                  "text": "kozwa",
+                  "strong": "G3880",
+                  "start": 41,
+                  "end": 49
+            },
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 142,
+                  "end": 149
+            },
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 131,
+                  "end": 140
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Nakotika bino te lokola bana bitike; nakoya epai na bino.",
+    "strong": []
+  },
+  {
+    "number": 19,
+    "text": "Nanu mwa ntango moke, mpe mokili ekomona ngai lisusu te, kasi bino bokomona ngai; pamba te nazali na bomoi, bino mpe bokozala na bomoi.",
+    "strong": [
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 26,
+                  "end": 32
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Na mokolo wana bokoyeba ete nazali kati na Tata na ngai, mpe bino kati na ngai, mpe ngai kati na bino.",
+    "strong": [
+            {
+                  "text": "mokolo",
+                  "strong": "H3117",
+                  "start": 3,
+                  "end": 9
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Ye oyo azali na mibeko na ngai mpe azali kobatela yango, ye nde alingaka ngai; mpe ye oyo alingaka ngai akolingama na Tata na ngai, mpe ngai nakolinga ye, mpe nakomimonisa na ye.",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "Yuda (te Iskariote) alobaki na ye: Nkolo, mpo na nini okomimonisa na biso, mpe na mokili te?",
+    "strong": [
+            {
+                  "text": "Nkolo",
+                  "strong": "G2962",
+                  "start": 35,
+                  "end": 40
+            },
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 82,
+                  "end": 88
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Yesu azongisaki mpe alobaki na ye: Soki moto moko alingi ngai, akobatela liloba na ngai, mpe Tata na ngai akolinga ye, mpe tokoya epai na ye, mpe tokosala ndako kati na ye.",
+    "strong": [
+            {
+                  "text": "liloba",
+                  "strong": "G3056",
+                  "start": 73,
+                  "end": 79
+            },
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 128,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Ye oyo alingi ngai te azali kobatela te maloba na ngai; mpe liloba oyo bozali koyoka ezali ya ngai te, kasi ya Tata oyo atindaki ngai.",
+    "strong": [
+            {
+                  "text": "liloba",
+                  "strong": "G3056",
+                  "start": 60,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Makambo oyo nalobi na bino, ntango nazali nanu elongo na bino.",
+    "strong": [
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 41,
+                  "end": 48
+            },
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 47,
+                  "end": 56
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Kasi Mosungi, Molimo Mosantu, oyo Tata akotinda na nkombo na ngai, ye nde akolakisa bino nyonso, mpe akokundola bino makambo nyonso oyo nalobi na bino.",
+    "strong": [
+            {
+                  "text": "Molimo",
+                  "strong": "G4151",
+                  "start": 14,
+                  "end": 20
+            },
+            {
+                  "text": "nyonso",
+                  "strong": "G3956",
+                  "start": 89,
+                  "end": 95
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Kimia natiki bino; kimia na ngai napesi bino; te ndenge mokili epesaka ngai napesaka bino. Tika motema na bino enyokwama te, mpe ebanga te.",
+    "strong": [
+            {
+                  "text": "paix",
+                  "strong": "G1515",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "paix",
+                  "strong": "G1515",
+                  "start": 41,
+                  "end": 45
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 68,
+                  "end": 73
+            },
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 56,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Boyokaki ete nalobi na bino: Nakokende, mpe nakoya epai na bino. Soki bolingaki ngai, mbele bosepelaki mpo ete nalobaki: Nakei epai ya Tata, pamba te Tata azali monene koleka ngai.",
+    "strong": [
+            {
+                  "text": "monene",
+                  "strong": "G3173",
+                  "start": 161,
+                  "end": 167
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Mpe sikawa nalobi na bino liboso ekosalema, mpo ete, ntango ekosalema, bondima.",
+    "strong": []
+  },
+  {
+    "number": 30,
+    "text": "Nakoloba lisusu mingi na bino te, pamba te mokambi ya mokili oyo azali koya, mpe azali na eloko moko kati na ngai te.",
+    "strong": [
+            {
+                  "text": "elongo na",
+                  "strong": "G1848",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 54,
+                  "end": 60
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 74,
+                  "end": 78
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Kasi mpo ete mokili eyeba ete nalingaka Tata, mpe ndenge Tata atindaki ngai, ndenge wana nde nasalaka. Bolamuka, tokende awa.",
+    "strong": [
+            {
+                  "text": "mokili",
+                  "strong": "G2889",
+                  "start": 13,
+                  "end": 19
+            },
+            {
+                  "text": "selon",
+                  "strong": "G2531",
+                  "start": 63,
+                  "end": 68
+            },
+            {
+                  "text": "ordre",
+                  "strong": "G1785",
+                  "start": 71,
+                  "end": 76
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter14RC;

@@ -1,0 +1,864 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 7
+
+export const johnChapter7EN = {
+  chapter: 7,
+  title: "Jean 7",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "After these things, Jesus was walking in Galilee, for he wouldn't walk in Judea, because the Jews sought to kill him.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 6,
+                  "end": 11
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "walk",
+                  "strong": "G4198",
+                  "start": 66,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Now the feast of the Jews, the Feast of Booths, was at hand.",
+    "strong": [
+            {
+                  "text": "hand",
+                  "strong": "G5495",
+                  "start": 55,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "His brothers therefore said to him, \"Depart from here, and go into Judea, that your disciples also may see your works which you do.",
+    "strong": []
+  },
+  {
+    "number": 4,
+    "text": "For no one does anything in secret, and himself seeks to be known openly. If you do these things, reveal yourself to the world.\"",
+    "strong": [
+{
+                  "text": "Personne",
+                  "strong": "G3762",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 100,
+                  "end": 105
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "For even his brothers didn't believe in him.",
+    "strong": [
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 29,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Jesus therefore said to them, \"My time has not yet come, but your time is always ready.",
+    "strong": [
+{
+                  "text": "toujours",
+                  "strong": "H5769",
+                  "start": 70,
+                  "end": 78
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "The world can't hate you, but it hates me, because I testify about it, that its works are evil.",
+    "strong": [
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 4,
+                  "end": 9
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 71,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "You go up to the feast. I am not yet going up to this feast, because my time is not yet fulfilled.\"",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 16,
+                  "end": 21
+            },
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 65,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Having said these things to them, he stayed in Galilee.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 12,
+                  "end": 17
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "But when his brothers had gone up to the feast, then he also went up, not publicly, but as it were in secret.",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 94,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "The Jews therefore sought him at the feast, and said, \"Where is he?\"",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "There was much murmuring among the multitudes concerning him. Some said, \"He is a good man.\" Others said, \"Not so, but he leads the multitude astray.\"",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 19,
+                  "end": 24
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 79,
+                  "end": 84
+            },
+            {
+                  "text": "bien",
+                  "strong": "H2896",
+                  "start": 88,
+                  "end": 92
+            },
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 130,
+                  "end": 139
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Yet no one spoke openly of him for fear of the Jews.",
+    "strong": [
+            {
+                  "text": "fear",
+                  "strong": "H3372",
+                  "start": 35,
+                  "end": 39
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "But when it was now the midst of the feast, Jesus went up into the temple and taught.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 44,
+                  "end": 49
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "The Jews therefore marveled, saying, \"How does this man know letters, having never been educated?\"",
+    "strong": []
+  },
+  {
+    "number": 16,
+    "text": "Jesus therefore answered them, \"My teaching is not mine, but his who sent me.",
+    "strong": []
+  },
+  {
+    "number": 17,
+    "text": "If anyone desires to do his will, he will know about the teaching, whether it is from God, or if I am speaking from myself.",
+    "strong": [
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "He who speaks from himself seeks his own glory, but he who seeks the glory of him who sent him is true, and no unrighteousness is in him.",
+    "strong": [
+            {
+                  "text": "glory",
+                  "strong": "G2744",
+                  "start": 41,
+                  "end": 46
+            },
+            {
+                  "text": "glory",
+                  "strong": "G2744",
+                  "start": 69,
+                  "end": 74
+            },
+            {
+                  "text": "unrighteousness",
+                  "strong": "G93",
+                  "start": 111,
+                  "end": 126
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Didn't Moses give you the law, and yet none of you keeps the law? Why do you seek to kill me?\"",
+    "strong": [
+{
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 100,
+                  "end": 105
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "The multitude answered, \"You have a demon! Who seeks to kill you?\"",
+    "strong": [
+{
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 3,
+                  "end": 8
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 63,
+                  "end": 68
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Jesus answered them, \"I did one work, and you all marvel because of it.",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "Moses has given you circumcision (not that it is of Moses, but of the fathers), and on the Sabbath you circumcise a boy.",
+    "strong": [
+            {
+                  "text": "Moses",
+                  "strong": "G3475",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 38,
+                  "end": 42
+            },
+            {
+                  "text": "Moses",
+                  "strong": "G3475",
+                  "start": 52,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "If a boy receives circumcision on the Sabbath, that the law of Moses may not be broken, are you angry with me, because I made a man completely healthy on the Sabbath?",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "Moses",
+                  "strong": "G3475",
+                  "start": 63,
+                  "end": 68
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 102,
+                  "end": 106
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Don't judge according to appearance, but judge righteous judgment.\"",
+    "strong": [
+{
+                  "text": "selon",
+                  "strong": "G2531",
+                  "start": 13,
+                  "end": 18
+            },
+            {
+                  "text": "selon",
+                  "strong": "G2531",
+                  "start": 43,
+                  "end": 48
+            },
+            {
+                  "text": "justice",
+                  "strong": "G2920",
+                  "start": 52,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Therefore some of them of Jerusalem said, \"Isn't this he whom they seek to kill?",
+    "strong": [
+{
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 83,
+                  "end": 88
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Behold, he speaks openly, and they say nothing to him. Can it be that the rulers indeed know that this is truly the Christ?",
+    "strong": [
+            {
+                  "text": "nothing",
+                  "strong": "G3762",
+                  "start": 39,
+                  "end": 46
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 65,
+                  "end": 69
+            },
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 88,
+                  "end": 92
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 93,
+                  "end": 97
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 98,
+                  "end": 102
+            },
+            {
+                  "text": "truly",
+                  "strong": "G281",
+                  "start": 106,
+                  "end": 111
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 116,
+                  "end": 122
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "However we know where this man comes from, but when the Christ comes, no one will know where he comes from.\"",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 53,
+                  "end": 59
+            },
+            {
+                  "text": "personne",
+                  "strong": "G3762",
+                  "start": 79,
+                  "end": 87
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Jesus therefore cried out in the temple, teaching and saying, \"You both know me, and know where I am from. I have not come of myself, but he who sent me is true, whom you don't know.",
+    "strong": [
+{
+                  "text": "enseignant",
+                  "strong": "G1320",
+                  "start": 10,
+                  "end": 20
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 21,
+                  "end": 25
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "I know him, because I am from him, and he sent me.\"",
+    "strong": []
+  },
+  {
+    "number": 30,
+    "text": "They sought therefore to take him; but no one laid a hand on him, because his hour had not yet come.",
+    "strong": [
+            {
+                  "text": "take",
+                  "strong": "G3880",
+                  "start": 25,
+                  "end": 29
+            },
+            {
+                  "text": "hand",
+                  "strong": "G5495",
+                  "start": 53,
+                  "end": 57
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 95,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "But of the multitude, many believed in him. They said, \"When the Christ comes, he won't do more signs than those which this man has done, will he?\"",
+    "strong": [
+{
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 19,
+                  "end": 24
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 61,
+                  "end": 67
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "The Pharisees heard the multitude murmuring these things concerning him, and the chief priests and the Pharisees sent officers to arrest him.",
+    "strong": [
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 24,
+                  "end": 33
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 44,
+                  "end": 49
+            },
+            {
+                  "text": "chief",
+                  "strong": "G4413",
+                  "start": 81,
+                  "end": 86
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Then Jesus said, \"I will be with you a little while longer, then I go to him who sent me.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 26,
+                  "end": 30
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "You will seek me, and won't find me; and where I am, you can't come.\"",
+    "strong": []
+  },
+  {
+    "number": 35,
+    "text": "The Jews therefore said among themselves, \"Where will this man go that we won't find him? Will he go to the Dispersion among the Greeks, and teach the Greeks?",
+    "strong": []
+  },
+  {
+    "number": 36,
+    "text": "What is this word that he said, 'You will seek me, and won't find me; and where I am, you can't come'?\"",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 13,
+                  "end": 18
+            },
+            {
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 19,
+                  "end": 25
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Now on the last and greatest day of the feast, Jesus stood and cried out, \"If anyone is thirsty, let him come to me and drink!",
+    "strong": [
+{
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "grand",
+                  "strong": "G3173",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "soif",
+                  "strong": "G1372",
+                  "start": 92,
+                  "end": 96
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "He who believes in me, as the Scripture has said, from within him will flow rivers of living water.\"",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 70,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "But he said this about the Spirit, which those believing in him were to receive. For the Holy Spirit was not yet given, because Jesus wasn't yet glorified.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 12,
+                  "end": 16
+            },
+            {
+                  "text": "Spirit",
+                  "strong": "G4151",
+                  "start": 27,
+                  "end": 33
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 35,
+                  "end": 40
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 72,
+                  "end": 79
+            },
+            {
+                  "text": "Spirit",
+                  "strong": "G4151",
+                  "start": 94,
+                  "end": 100
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 128,
+                  "end": 133
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Many of the multitude therefore, when they heard these words, said, \"This is truly the prophet.\"",
+    "strong": [
+{
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 15,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Others said, \"This is the Christ.\" But some said, \"What, does the Christ come out of Galilee?",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 28,
+                  "end": 34
+            },
+            {
+                  "text": "bien",
+                  "strong": "H2896",
+                  "start": 65,
+                  "end": 69
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 102,
+                  "end": 108
+            }
+      ]
+  },
+  {
+    "number": 42,
+    "text": "Hasn't the Scripture said that the Christ comes of the seed of David, and from Bethlehem, the village where David was?\"",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 114,
+                  "end": 120
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "So there arose a division in the multitude because of him.",
+    "strong": [
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 33,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 44,
+    "text": "Some of them would have arrested him, but no one laid hands on him.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 19,
+                  "end": 23
+            }
+      ]
+  },
+  {
+    "number": 45,
+    "text": "The officers therefore came to the chief priests and Pharisees, and they said to them, \"Why didn't you bring him?\"",
+    "strong": [
+{
+                  "text": "amen",
+                  "strong": "G281",
+                  "start": 139,
+                  "end": 143
+            }
+      ]
+  },
+  {
+    "number": 46,
+    "text": "The officers answered, \"No man ever spoke like this man!\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 34,
+                  "end": 39
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 50,
+                  "end": 55
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 60,
+                  "end": 65
+            }
+      ]
+  },
+  {
+    "number": 47,
+    "text": "The Pharisees therefore answered them, \"You aren't also led astray, are you?",
+    "strong": []
+  },
+  {
+    "number": 48,
+    "text": "Have any of the rulers believed in him, or of the Pharisees?",
+    "strong": [
+            {
+                  "text": "Have",
+                  "strong": "G4100",
+                  "start": 0,
+                  "end": 4
+            }
+      ]
+  },
+  {
+    "number": 49,
+    "text": "But this multitude that doesn't know the law is accursed.\"",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 5,
+                  "end": 10
+            },
+            {
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 11,
+                  "end": 16
+            }
+      ]
+  },
+  {
+    "number": 50,
+    "text": "Nicodemus (he who came to him by night, being one of them) said to them,",
+    "strong": [
+            {
+                  "text": "Nicodemus",
+                  "strong": "G3530",
+                  "start": 0,
+                  "end": 9
+            },
+            {
+                  "text": "night",
+                  "strong": "G3571",
+                  "start": 33,
+                  "end": 38
+            },
+            {
+                  "text": "being",
+                  "strong": "G444",
+                  "start": 40,
+                  "end": 45
+            }
+      ]
+  },
+  {
+    "number": 51,
+    "text": "\"Does our law judge a man, unless it first hears from him personally and knows what he does?\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 29,
+                  "end": 34
+            }
+      ]
+  },
+  {
+    "number": 52,
+    "text": "They answered him, \"Are you also from Galilee? Search, and see that no prophet has arisen out of Galilee.\"",
+    "strong": []
+  },
+  {
+    "number": 53,
+    "text": "Everyone went to his own house,",
+    "strong": [
+            {
+                  "text": "house",
+                  "strong": "H1004",
+                  "start": 25,
+                  "end": 30
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter7EN;

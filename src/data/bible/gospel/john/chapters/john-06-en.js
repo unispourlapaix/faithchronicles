@@ -1,0 +1,1419 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 6
+
+export const johnChapter6EN = {
+  chapter: 6,
+  title: "Jean 6",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "After these things, Jesus went away to the other side of the sea of Galilee, which is also called the Sea of Tiberias.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 6,
+                  "end": 11
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 77,
+                  "end": 82
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "A great multitude followed him, because they saw his signs which he did on those who were sick.",
+    "strong": [
+            {
+                  "text": "great",
+                  "strong": "G3173",
+                  "start": 2,
+                  "end": 7
+            },
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 8,
+                  "end": 17
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 59,
+                  "end": 64
+            },
+            {
+                  "text": "sick",
+                  "strong": "G772",
+                  "start": 90,
+                  "end": 94
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Jesus went up into the mountain, and he sat there with his disciples.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "mountain",
+                  "strong": "G3735",
+                  "start": 23,
+                  "end": 31
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 50,
+                  "end": 54
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Now the Passover, the feast of the Jews, was at hand.",
+    "strong": [
+            {
+                  "text": "hand",
+                  "strong": "G5495",
+                  "start": 48,
+                  "end": 52
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Jesus therefore lifting up his eyes, and seeing that a great multitude was coming to him, said to Philip, \"Where are we to buy bread, that these may eat?\"",
+    "strong": [
+{
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 77,
+                  "end": 85
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "This he said to test him, for he himself knew what he would do.",
+    "strong": [
+            {
+                  "text": "This",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 4
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Philip answered him, \"Two hundred denarii worth of bread is not sufficient for them, that everyone of them may receive a little.\"",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 51,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "One of his disciples, Andrew, Simon Peter's brother, said to him,",
+    "strong": []
+  },
+  {
+    "number": 9,
+    "text": "\"There is a boy here who has five barley loaves and two fish, but what are these among so many?\"",
+    "strong": [
+{
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 54,
+                  "end": 58
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Jesus said, \"Have the people sit down.\" Now there was much grass in that place. So the men sat down, in number about five thousand.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 42,
+                  "end": 46
+            },
+            {
+                  "text": "beaucoup",
+                  "strong": "G4183",
+                  "start": 55,
+                  "end": 63
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Jesus took the loaves; and having given thanks, he distributed to the disciples, and the disciples to those who were sitting down; likewise also of the fish as much as they desired.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "down",
+                  "strong": "H7257",
+                  "start": 125,
+                  "end": 129
+            },
+            {
+                  "text": "much",
+                  "strong": "G4183",
+                  "start": 160,
+                  "end": 164
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "When they were filled, he said to his disciples, \"Gather up the broken pieces which are left over, that nothing be lost.\"",
+    "strong": [
+{
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 97,
+                  "end": 101
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "So they gathered them up, and filled twelve baskets with broken pieces from the five barley loaves, which were left over by those who had eaten.",
+    "strong": [
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 52,
+                  "end": 56
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 100,
+                  "end": 105
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "When therefore the people saw the sign which Jesus did, they said, \"This is truly the prophet who comes into the world.\"",
+    "strong": [
+{
+                  "text": "miracle",
+                  "strong": "G1411",
+                  "start": 22,
+                  "end": 29
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 111,
+                  "end": 115
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 119,
+                  "end": 124
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Jesus therefore, perceiving that they were about to come and take him by force, to make him king, withdrew again to the mountain by himself.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 28,
+                  "end": 32
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 52,
+                  "end": 56
+            },
+            {
+                  "text": "take",
+                  "strong": "G3880",
+                  "start": 61,
+                  "end": 65
+            },
+            {
+                  "text": "make",
+                  "strong": "G1743",
+                  "start": 83,
+                  "end": 87
+            },
+            {
+                  "text": "mountain",
+                  "strong": "G3735",
+                  "start": 120,
+                  "end": 128
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "When evening came, his disciples went down to the sea,",
+    "strong": [
+            {
+                  "text": "down",
+                  "strong": "H7257",
+                  "start": 38,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "and they entered into the boat, and were going over the sea to Capernaum. It was now dark, and Jesus had not come to them.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 95,
+                  "end": 100
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 109,
+                  "end": 113
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "The sea was tossed by a great wind blowing.",
+    "strong": [
+            {
+                  "text": "great",
+                  "strong": "G3173",
+                  "start": 24,
+                  "end": 29
+            },
+            {
+                  "text": "wind",
+                  "strong": "G4151",
+                  "start": 30,
+                  "end": 34
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "When therefore they had rowed about twenty-five or thirty stadia, they saw Jesus walking on the sea, and drawing near to the boat; and they were afraid.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 75,
+                  "end": 80
+            },
+            {
+                  "text": "afraid",
+                  "strong": "H3372",
+                  "start": 145,
+                  "end": 151
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "But he said to them, \"It is I. Don't be afraid.\"",
+    "strong": [
+{
+                  "text": "peur",
+                  "strong": "H3372",
+                  "start": 43,
+                  "end": 47
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "They were willing therefore to receive him into the boat. Immediately the boat was at the land where they were going.",
+    "strong": [
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 31,
+                  "end": 38
+            },
+            {
+                  "text": "land",
+                  "strong": "H776",
+                  "start": 90,
+                  "end": 94
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "On the next day, the multitude that stood on the other side of the sea saw that there was no other boat there, except the one in which his disciples had embarked, and that Jesus hadn't entered with his disciples into the boat, but his disciples had gone away alone.",
+    "strong": [
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 21,
+                  "end": 30
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 31,
+                  "end": 35
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 75,
+                  "end": 79
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 129,
+                  "end": 134
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 167,
+                  "end": 171
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 172,
+                  "end": 177
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 193,
+                  "end": 197
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "However boats from Tiberias came near to the place where they ate the bread after the Lord had given thanks.",
+    "strong": [
+            {
+                  "text": "place",
+                  "strong": "G5087",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "bread",
+                  "strong": "G740",
+                  "start": 70,
+                  "end": 75
+            },
+            {
+                  "text": "Lord",
+                  "strong": "G2962",
+                  "start": 86,
+                  "end": 90
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "When the multitude therefore saw that Jesus wasn't there, nor his disciples, they themselves got into the boats, and came to Capernaum, seeking Jesus.",
+    "strong": [
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 9,
+                  "end": 18
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 33,
+                  "end": 37
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 38,
+                  "end": 43
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 144,
+                  "end": 149
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "When they found him on the other side of the sea, they asked him, \"Rabbi, when did you come here?\"",
+    "strong": []
+  },
+  {
+    "number": 26,
+    "text": "Jesus answered them, \"Most certainly I tell you, you seek me, not because you saw signs, but because you ate of the loaves, and were filled.",
+    "strong": []
+  },
+  {
+    "number": 27,
+    "text": "Don't work for the food which perishes, but for the food which remains to eternal life, which the Son of Man will give to you. For God the Father has sealed him.\"",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 108,
+                  "end": 112
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 118,
+                  "end": 123
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 169,
+                  "end": 173
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "They said therefore to him, \"What must we do, that we may work the works of God?\"",
+    "strong": [
+{
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 44,
+                  "end": 49
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 64,
+                  "end": 68
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Jesus answered them, \"This is the work of God, that you believe in him whom he has sent.\"",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 32,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "They said therefore to him, \"What then do you do for a sign, that we may see, and believe you? What work do you do?",
+    "strong": [
+{
+                  "text": "miracle",
+                  "strong": "G1411",
+                  "start": 5,
+                  "end": 12
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Our fathers ate the manna in the wilderness. As it is written, 'He gave them bread out of heaven to eat.'\"",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "selon",
+                  "strong": "G2531",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 86,
+                  "end": 90
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 94,
+                  "end": 98
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "Jesus therefore said to them, \"Most certainly, I tell you, it wasn't Moses who gave you the bread out of heaven, but my Father gives you the true bread out of heaven.",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 83,
+                  "end": 87
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 91,
+                  "end": 95
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 130,
+                  "end": 134
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 138,
+                  "end": 142
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "For the bread of God is that which comes down out of heaven, and gives life to the world.\"",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 7,
+                  "end": 11
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 48,
+                  "end": 52
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 76,
+                  "end": 81
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "They said therefore to him, \"Lord, always give us this bread.\"",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 16,
+                  "end": 24
+            },
+            {
+                  "text": "toujours",
+                  "strong": "H5769",
+                  "start": 37,
+                  "end": 45
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 49,
+                  "end": 53
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Jesus said to them, \"I am the bread of life. He who comes to me will not be hungry, and he who believes in me will never be thirsty.",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "soif",
+                  "strong": "G1372",
+                  "start": 122,
+                  "end": 126
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "But I told you that you have seen me, and yet you don't believe.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 24,
+                  "end": 28
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 56,
+                  "end": 63
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "All those whom the Father gives me will come to me. Him who comes to me I will in no way throw out.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 19,
+                  "end": 25
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 40,
+                  "end": 44
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "For I have come down from heaven, not to do my own will, but the will of him who sent me.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 6,
+                  "end": 10
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "down",
+                  "strong": "H7257",
+                  "start": 16,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "This is the will of my Father who sent me, that of all he has given to me I should lose nothing, but should raise him up at the last day.",
+    "strong": [
+            {
+                  "text": "This",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 23,
+                  "end": 29
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 43,
+                  "end": 47
+            },
+            {
+                  "text": "lose",
+                  "strong": "G622",
+                  "start": 83,
+                  "end": 87
+            },
+            {
+                  "text": "nothing",
+                  "strong": "G3762",
+                  "start": 88,
+                  "end": 95
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "This is the will of the one who sent me, that everyone who sees the Son, and believes in him, should have eternal life; and I will raise him up at the last day.\"",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 52,
+                  "end": 56
+            },
+            {
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 129,
+                  "end": 133
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "The Jews therefore murmured concerning him, because he said, \"I am the bread which came down out of heaven.\"",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 69,
+                  "end": 73
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 94,
+                  "end": 98
+            }
+      ]
+  },
+  {
+    "number": 42,
+    "text": "They said, \"Isn't this Jesus, the son of Joseph, whose father and mother we know? How then does he say, 'I have come down out of heaven?'\"",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 43,
+                  "end": 47
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 142,
+                  "end": 146
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "Therefore Jesus answered them, \"Don't murmur among yourselves.",
+    "strong": []
+  },
+  {
+    "number": 44,
+    "text": "No one can come to me unless the Father who sent me draws him, and I will raise him up in the last day.",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 33,
+                  "end": 39
+            }
+      ]
+  },
+  {
+    "number": 45,
+    "text": "It is written in the prophets, 'They will all be taught by God.' Therefore everyone who hears from the Father, and has learned, comes to me.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 103,
+                  "end": 109
+            },
+            {
+                  "text": "learned",
+                  "strong": "G4680",
+                  "start": 119,
+                  "end": 126
+            }
+      ]
+  },
+  {
+    "number": 46,
+    "text": "Not that anyone has seen the Father, except he who is from God. He has seen the Father.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 29,
+                  "end": 35
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 80,
+                  "end": 86
+            }
+      ]
+  },
+  {
+    "number": 47,
+    "text": "Most certainly, I tell you, he who believes in me has eternal life.",
+    "strong": [
+            {
+                  "text": "eternal",
+                  "strong": "G166",
+                  "start": 54,
+                  "end": 61
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 62,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 48,
+    "text": "I am the bread of life.",
+    "strong": [
+            {
+                  "text": "bread",
+                  "strong": "G740",
+                  "start": 9,
+                  "end": 14
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 18,
+                  "end": 22
+            }
+      ]
+  },
+  {
+    "number": 49,
+    "text": "Your fathers ate the manna in the wilderness, and they died.",
+    "strong": [
+            {
+                  "text": "wilderness",
+                  "strong": "G2048",
+                  "start": 34,
+                  "end": 44
+            }
+      ]
+  },
+  {
+    "number": 50,
+    "text": "This is the bread which comes down out of heaven, that anyone may eat of it and not die.",
+    "strong": [
+            {
+                  "text": "This",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "bread",
+                  "strong": "G740",
+                  "start": 12,
+                  "end": 17
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 18,
+                  "end": 23
+            },
+            {
+                  "text": "down",
+                  "strong": "H7257",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 50,
+                  "end": 54
+            }
+      ]
+  },
+  {
+    "number": 51,
+    "text": "I am the living bread which came down out of heaven. If anyone eats of this bread, he will live forever. Yes, the bread which I will give for the life of the world is my flesh.\"",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 43,
+                  "end": 47
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 74,
+                  "end": 78
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 110,
+                  "end": 114
+            },
+            {
+                  "text": "chair",
+                  "strong": "G4561",
+                  "start": 141,
+                  "end": 146
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 179,
+                  "end": 184
+            }
+      ]
+  },
+  {
+    "number": 52,
+    "text": "The Jews therefore contended with one another, saying, \"How can this man give us his flesh to eat?\"",
+    "strong": [
+{
+                  "text": "donner",
+                  "strong": "G1325",
+                  "start": 73,
+                  "end": 79
+            },
+            {
+                  "text": "chair",
+                  "strong": "G4561",
+                  "start": 83,
+                  "end": 88
+            }
+      ]
+  },
+  {
+    "number": 53,
+    "text": "Jesus therefore said to them, \"Most certainly I tell you, unless you eat the flesh of the Son of Man and drink his blood, you don't have life in yourselves.",
+    "strong": [
+{
+                  "text": "chair",
+                  "strong": "G4561",
+                  "start": 75,
+                  "end": 80
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 84,
+                  "end": 88
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 94,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 54,
+    "text": "He who eats my flesh and drinks my blood has eternal life, and I will raise him up at the last day.",
+    "strong": [
+            {
+                  "text": "flesh",
+                  "strong": "G4561",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "eternal",
+                  "strong": "G166",
+                  "start": 45,
+                  "end": 52
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 53,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 55,
+    "text": "For my flesh is food indeed, and my blood is drink indeed.",
+    "strong": [
+            {
+                  "text": "flesh",
+                  "strong": "G4561",
+                  "start": 7,
+                  "end": 12
+            }
+      ]
+  },
+  {
+    "number": 56,
+    "text": "He who eats my flesh and drinks my blood lives in me, and I in him.",
+    "strong": [
+            {
+                  "text": "flesh",
+                  "strong": "G4561",
+                  "start": 15,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 57,
+    "text": "As the living Father sent me, and I live because of the Father; so he who feeds on me, he will also live because of me.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 14,
+                  "end": 20
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 56,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 58,
+    "text": "This is the bread which came down out of heaven—not as our fathers ate the manna, and died. He who eats this bread will live forever.\"",
+    "strong": [
+{
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 13,
+                  "end": 17
+            },
+            {
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 38,
+                  "end": 42
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 60,
+                  "end": 65
+            },
+            {
+                  "text": "pain",
+                  "strong": "G740",
+                  "start": 140,
+                  "end": 144
+            }
+      ]
+  },
+  {
+    "number": 59,
+    "text": "He said these things in the synagogue, as he taught in Capernaum.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 8,
+                  "end": 13
+            }
+      ]
+  },
+  {
+    "number": 60,
+    "text": "Therefore many of his disciples, when they heard this, said, \"This is a hard saying! Who can listen to it?\"",
+    "strong": [
+{
+                  "text": "avoir",
+                  "strong": "G1372",
+                  "start": 36,
+                  "end": 41
+            },
+            {
+                  "text": "Cette",
+                  "strong": "G3778",
+                  "start": 59,
+                  "end": 64
+            },
+            {
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 65,
+                  "end": 71
+            }
+      ]
+  },
+  {
+    "number": 61,
+    "text": "But Jesus knowing in himself that his disciples murmured at this, said to them, \"Does this cause you to stumble?",
+    "strong": []
+  },
+  {
+    "number": 62,
+    "text": "Then what if you would see the Son of Man ascending to where he was before?",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 20,
+                  "end": 24
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 30,
+                  "end": 35
+            }
+      ]
+  },
+  {
+    "number": 63,
+    "text": "It is the spirit who gives life. The flesh profits nothing. The words that I speak to you are spirit, and are life.",
+    "strong": [
+            {
+                  "text": "spirit",
+                  "strong": "G4151",
+                  "start": 10,
+                  "end": 16
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "flesh",
+                  "strong": "G4561",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "nothing",
+                  "strong": "G3762",
+                  "start": 51,
+                  "end": 58
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 70,
+                  "end": 74
+            },
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 77,
+                  "end": 82
+            },
+            {
+                  "text": "spirit",
+                  "strong": "G4151",
+                  "start": 94,
+                  "end": 100
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 110,
+                  "end": 114
+            }
+      ]
+  },
+  {
+    "number": 64,
+    "text": "But there are some of you who don't believe.\" For Jesus knew from the beginning who they were who didn't believe, and who it was who would betray him.",
+    "strong": [
+{
+                  "text": "commencement",
+                  "strong": "G746",
+                  "start": 85,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 65,
+    "text": "He said, \"For this cause have I said to you that no one can come to me, unless it is given to him by my Father.\"",
+    "strong": []
+  },
+  {
+    "number": 66,
+    "text": "At this, many of his disciples went back, and walked no more with him.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 3,
+                  "end": 7
+            },
+            {
+                  "text": "many",
+                  "strong": "G4183",
+                  "start": 9,
+                  "end": 13
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 61,
+                  "end": 65
+            }
+      ]
+  },
+  {
+    "number": 67,
+    "text": "Jesus said therefore to the twelve, \"You don't also want to go away, do you?\"",
+    "strong": [
+{
+                  "text": "aller",
+                  "strong": "G4198",
+                  "start": 68,
+                  "end": 73
+            }
+      ]
+  },
+  {
+    "number": 68,
+    "text": "Simon Peter answered him, \"Lord, to whom would we go? You have the words of eternal life.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 27,
+                  "end": 35
+            }
+      ]
+  },
+  {
+    "number": 69,
+    "text": "We have come to believe and know that you are the Christ, the Son of the living God.\"",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 51,
+                  "end": 57
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 71,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 70,
+    "text": "Jesus answered them, \"Didn't I choose you, the twelve, and one of you is a devil?\"",
+    "strong": []
+  },
+  {
+    "number": 71,
+    "text": "Now he spoke of Judas, the son of Simon Iscariot, for it was he who would betray him, being one of the twelve.",
+    "strong": [
+            {
+                  "text": "being",
+                  "strong": "G444",
+                  "start": 86,
+                  "end": 91
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter6EN;

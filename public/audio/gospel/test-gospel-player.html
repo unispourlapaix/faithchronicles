@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Gospel Player - Faith Chronicles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .control-panel {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .info {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .status {
+            background: rgba(0,0,0,0.3);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎵 Faith Chronicles - Test Gospel Player</h1>
+    
+    <div class="info">
+        <h3>Système Audio Gospel Autonome</h3>
+        <p>Ce test vérifie le bon fonctionnement du lecteur de musique gospel automatique intégré dans Faith Chronicles.</p>
+    </div>
+
+    <div class="control-panel">
+        <h3>Contrôles Gospel</h3>
+        <button onclick="testStart()">▶️ Démarrer Gospel</button>
+        <button onclick="testToggle()">⏯️ Toggle (Pause/Play)</button>
+        <button onclick="testStop()">⏹️ Arrêter</button>
+        <button onclick="checkStatus()">📊 Vérifier Statut</button>
+    </div>
+
+    <div class="status" id="status">
+        Statut: En attente de test...
+    </div>
+
+    <div class="info">
+        <h3>Playlist Gospel Active:</h3>
+        <ul>
+            <li>Il calme mon âme</li>
+            <li>Avec sa Paix</li>
+            <li>Voici l'Agneau de Dieu</li>
+            <li>Chante Alléluia</li>
+            <li>Notre Dieu est si grand</li>
+            <li>J'ai décidé de suivre Jésus</li>
+        </ul>
+    </div>
+
+    <!-- Gospel Player Script -->
+    <script src="faith-gospel-player.js"></script>
+
+    <script>
+        function updateStatus(message) {
+            document.getElementById('status').textContent = 'Statut: ' + message;
+        }
+
+        function testStart() {
+            if (window.faithAudio) {
+                window.faithAudio.start();
+                updateStatus('Démarrage de la musique gospel demandé');
+            } else {
+                updateStatus('ERREUR: faithAudio non disponible');
+            }
+        }
+
+        function testToggle() {
+            if (window.faithAudio) {
+                window.faithAudio.toggle();
+                updateStatus('Toggle musique gospel');
+            } else {
+                updateStatus('ERREUR: faithAudio non disponible');
+            }
+        }
+
+        function testStop() {
+            if (window.faithAudio) {
+                window.faithAudio.stop();
+                updateStatus('Arrêt de la musique gospel');
+            } else {
+                updateStatus('ERREUR: faithAudio non disponible');
+            }
+        }
+
+        function checkStatus() {
+            if (window.faithGospelPlayer) {
+                const player = window.faithGospelPlayer;
+                const status = `Player: ${player.userStarted ? 'Démarré' : 'Pas démarré'}, ` +
+                              `En cours: ${player.isPlaying ? 'OUI' : 'NON'}, ` +
+                              `Index: ${player.currentIndex}`;
+                updateStatus(status);
+            } else {
+                updateStatus('ERREUR: faithGospelPlayer non disponible');
+            }
+        }
+
+        // Test automatique au chargement
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                if (window.faithAudio && window.faithGospelPlayer) {
+                    updateStatus('✅ Gospel Player chargé correctement - Prêt pour les tests');
+                } else {
+                    updateStatus('❌ Erreur de chargement du Gospel Player');
+                }
+            }, 1000);
+        });
+
+        // Log des événements
+        console.log('🎵 Page de test du Gospel Player chargée');
+    </script>
+</body>
+</html>

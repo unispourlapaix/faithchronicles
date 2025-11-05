@@ -1,35 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Lock, ChevronLeft, ChevronRight } from 'lucide-react';
+import useTranslation from '../../hooks/useTranslation';
+import useChapterData from '../../hooks/useChapterData';
 
 const LevelSelectScreen = ({ 
-  levelStars, unlockedLevels, setCurrentScreen, setCurrentLevel, moduleManager 
+  levelStars, unlockedLevels, setCurrentScreen, setCurrentLevel, moduleManager, audio 
 }) => {
+  const { t } = useTranslation();
+  const { getChapter, getLevel } = useChapterData();
   const [currentChapter, setCurrentChapter] = useState(1);
   const [chapterData, setChapterData] = useState(null);
 
   // Configuration des chapitres
   const chapters = {
-    1: { name: "La Genèse", icon: "🌱", levels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] },
-    2: { name: "L'Exode", icon: "🌊", levels: [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26] },
-    3: { name: "Jésus-Christ", icon: "✝️", levels: [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39] },
-    4: { name: "Crucifixion/Résurrection", icon: "🕊️", levels: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52] },
-    5: { name: "Église primitive", icon: "🔥", levels: [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65] },
-    6: { name: "Missions de Paul", icon: "⛵", levels: [66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78] },
-    7: { name: "Lettres/Apocalypse", icon: "📜", levels: [79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91] },
-    8: { name: "Niveau Bonus", icon: "🏆", levels: [92] }
+    1: { name: t('chapters.1'), icon: "🌱", levels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] },
+    2: { name: t('chapters.2'), icon: "🌊", levels: [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26] },
+    3: { name: t('chapters.3'), icon: "✝️", levels: [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39] },
+    4: { name: t('chapters.4'), icon: "🕊️", levels: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52] },
+    5: { name: t('chapters.5'), icon: "🔥", levels: [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65] },
+    6: { name: t('chapters.6'), icon: "⛵", levels: [66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78] },
+    7: { name: t('chapters.7'), icon: "📜", levels: [79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91] },
+    8: { name: t('chapters.8'), icon: "🏆", levels: [92] }
   };
 
   useEffect(() => {
-    const loadChapterData = async () => {
-      try {
-        const data = await moduleManager.loadChapter(currentChapter);
-        setChapterData(data);
-      } catch (error) {
-        console.error("Erreur chargement chapitre:", error);
-      }
-    };
-    loadChapterData();
-  }, [currentChapter, moduleManager]);
+    try {
+      const data = getChapter(currentChapter);
+      setChapterData(data);
+    } catch (error) {
+      console.error("Erreur chargement chapitre:", error);
+    }
+  }, [currentChapter, getChapter]);
 
   const getTotalStars = () => {
     return Object.values(levelStars).reduce((total, stars) => total + stars, 0);
@@ -50,16 +51,19 @@ const LevelSelectScreen = ({
 
   const handleSelectLevel = async (level) => {
     if (unlockedLevels.includes(level)) {
+      audio?.sounds?.buttonClick(); // Son de sélection de niveau
       setCurrentLevel(level);
       
       try {
-        const levelData = await moduleManager.getLevel(level);
+        const levelData = getLevel(level);
         if (levelData) {
           setCurrentScreen('challenge');
         }
       } catch (error) {
         console.error("Erreur chargement niveau:", error);
       }
+    } else {
+      audio?.sounds?.wrongAnswer(); // Son pour niveau verrouillé
     }
   };
 
@@ -72,7 +76,10 @@ const LevelSelectScreen = ({
       {/* Navigation des chapitres */}
       <div className="flex items-center justify-between mb-4">
         <button
-          onClick={() => setCurrentChapter(Math.max(1, currentChapter - 1))}
+          onClick={() => {
+            audio?.sounds?.cheube(); // Son de navigation
+            setCurrentChapter(Math.max(1, currentChapter - 1));
+          }}
           disabled={currentChapter === 1}
           className={`p-2 rounded-full ${currentChapter === 1 ? 'text-gray-400' : 'text-blue-600 hover:bg-blue-100'}`}
         >
@@ -82,13 +89,16 @@ const LevelSelectScreen = ({
         <div className="text-center flex-1">
           <h2 className="text-2xl font-bold text-black flex items-center justify-center gap-2">
             <span className="text-2xl">{currentChapterInfo.icon}</span>
-            Chapitre {currentChapter}
+            {t('messages.chapter')} {currentChapter}
           </h2>
           <p className="text-lg text-gray-700 font-semibold">{currentChapterInfo.name}</p>
         </div>
 
         <button
-          onClick={() => setCurrentChapter(Math.min(getAvailableChapters().length, currentChapter + 1))}
+          onClick={() => {
+            audio?.sounds?.cheube(); // Son de navigation
+            setCurrentChapter(Math.min(getAvailableChapters().length, currentChapter + 1));
+          }}
           disabled={currentChapter === getAvailableChapters().length}
           className={`p-2 rounded-full ${currentChapter === getAvailableChapters().length ? 'text-gray-400' : 'text-blue-600 hover:bg-blue-100'}`}
         >
@@ -130,7 +140,7 @@ const LevelSelectScreen = ({
       {/* Statistiques */}
       <div className="text-center mb-6">
         <div className="text-sm text-gray-600">
-          Étoiles du chapitre : {chapterStars}/{maxChapterStars}
+          {t('messages.chapterStars')} : {chapterStars}/{maxChapterStars}
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
           <div 
@@ -139,7 +149,7 @@ const LevelSelectScreen = ({
           ></div>
         </div>
         <div className="text-xs text-green-600 italic mt-2">
-          Total global : {getTotalStars()}/273 étoiles
+          {t('messages.totalGlobal')} : {getTotalStars()}/273 {t('labels.stars').toLowerCase()}
         </div>
       </div>
       
@@ -171,7 +181,14 @@ const LevelSelectScreen = ({
                     {[1, 2, 3].map((star) => (
                       <span
                         key={star}
-                        className={`text-xs ${star <= stars ? 'text-yellow-400' : 'text-gray-300'}`}
+                        className={`text-xs cursor-pointer transition-all hover:scale-110 ${star <= stars ? 'text-yellow-400' : 'text-gray-300'}`}
+                        onClick={(e) => {
+                          e.stopPropagation(); // Empêche le clic sur le bouton niveau
+                          if (star <= stars) {
+                            audio?.sounds?.picth(); // Son cristallin pour les étoiles obtenues
+                          }
+                        }}
+                        title={star <= stars ? `Étoile ${star} obtenue` : `Étoile ${star} non obtenue`}
                       >
                         {star <= stars ? '★' : '☆'}
                       </span>
@@ -187,10 +204,13 @@ const LevelSelectScreen = ({
       </div>
       
       <button 
-        onClick={() => setCurrentScreen('menu')}
+        onClick={() => {
+          audio?.sounds?.wrash();
+          setCurrentScreen('menu');
+        }}
         className="mt-6 w-full py-3 bg-white text-black rounded-full font-semibold shadow-lg border-2 border-gray-200 hover:scale-105 active:scale-95 transition-all"
       >
-        Retour au Menu
+        {t('messages.backToMenu')}
       </button>
     </div>
   );

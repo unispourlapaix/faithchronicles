@@ -1,0 +1,772 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 16
+
+export const johnChapter16EN = {
+  chapter: 16,
+  title: "Jean 16",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "\"These things have I spoken to you, so that you wouldn't be caused to stumble.",
+    "strong": []
+  },
+  {
+    "number": 2,
+    "text": "They will put you out of the synagogues. Yes, the time comes that whoever kills you will think that he offers service to God.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 61,
+                  "end": 65
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 95,
+                  "end": 99
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "They will do these things because they have not known the Father, nor me.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 13,
+                  "end": 18
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 58,
+                  "end": 64
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "But I have told you these things, so that when the time comes, you may remember that I told you about them. I didn't tell you these things from the beginning, because I was with you.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 6,
+                  "end": 10
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 37,
+                  "end": 41
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 80,
+                  "end": 84
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 126,
+                  "end": 131
+            },
+            {
+                  "text": "beginning",
+                  "strong": "G746",
+                  "start": 148,
+                  "end": 157
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 173,
+                  "end": 177
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "But now I am going to him who sent me, and none of you asks me, 'Where are you going?'",
+    "strong": [
+            {
+                  "text": "none",
+                  "strong": "G3762",
+                  "start": 43,
+                  "end": 47
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "But because I have told you these things, sorrow has filled your heart.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 14,
+                  "end": 18
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 28,
+                  "end": 33
+            },
+            {
+                  "text": "heart",
+                  "strong": "G2588",
+                  "start": 65,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Nevertheless I tell you the truth: It is to your advantage that I go away, for if I don't go away, the Counselor won't come to you. But if I go, I will send him to you.",
+    "strong": [
+            {
+                  "text": "truth",
+                  "strong": "G225",
+                  "start": 28,
+                  "end": 33
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 59,
+                  "end": 63
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 119,
+                  "end": 123
+            },
+            {
+                  "text": "send",
+                  "strong": "G649",
+                  "start": 152,
+                  "end": 156
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "When he has come, he will convict the world about sin, about righteousness, and about judgment;",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 12,
+                  "end": 16
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 38,
+                  "end": 43
+            },
+            {
+                  "text": "righteousness",
+                  "strong": "H6664",
+                  "start": 61,
+                  "end": 74
+            },
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 86,
+                  "end": 94
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "about sin, because they don't believe in me;",
+    "strong": [
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 30,
+                  "end": 37
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "about righteousness, because I am going to my Father, and you won't see me any more;",
+    "strong": [
+            {
+                  "text": "righteousness",
+                  "strong": "H6664",
+                  "start": 6,
+                  "end": 19
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 46,
+                  "end": 52
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "about judgment, because the prince of this world has been judged.",
+    "strong": [
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 6,
+                  "end": 14
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 38,
+                  "end": 42
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 43,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "\"I have yet many things to tell you, but you can't bear them now.",
+    "strong": [
+{
+                  "text": "beaucoup",
+                  "strong": "G4183",
+                  "start": 12,
+                  "end": 20
+            },
+            {
+                  "text": "dire",
+                  "strong": "H559",
+                  "start": 38,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "However when he, the Spirit of truth, has come, he will guide you into all truth, for he will not speak from himself; but whatever he hears, he will speak. He will declare to you things that are coming.",
+    "strong": [
+            {
+                  "text": "Spirit",
+                  "strong": "G4151",
+                  "start": 21,
+                  "end": 27
+            },
+            {
+                  "text": "truth",
+                  "strong": "G225",
+                  "start": 31,
+                  "end": 36
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 42,
+                  "end": 46
+            },
+            {
+                  "text": "guide",
+                  "strong": "H5148",
+                  "start": 56,
+                  "end": 61
+            },
+            {
+                  "text": "truth",
+                  "strong": "G225",
+                  "start": 75,
+                  "end": 80
+            },
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 98,
+                  "end": 103
+            },
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 149,
+                  "end": 154
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 186,
+                  "end": 190
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "He will glorify me, for he will take from what is mine, and will declare it to you.",
+    "strong": [
+            {
+                  "text": "take",
+                  "strong": "G3880",
+                  "start": 32,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "All things whatever the Father has are mine; therefore I said that he takes of mine, and will declare it to you.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 24,
+                  "end": 30
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 62,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "A little while, and you will not see me. Again a little while, and you will see me.\"",
+    "strong": []
+  },
+  {
+    "number": 17,
+    "text": "Some of his disciples therefore said to one another, \"What is this that he says to us, 'A little while, and you won't see me, and again a little while, and you will see me;' and, 'Because I go to the Father?'\"",
+    "strong": []
+  },
+  {
+    "number": 18,
+    "text": "They said therefore, \"What is this that he says, 'A little while?' We don't know what he is saying.\"",
+    "strong": []
+  },
+  {
+    "number": 19,
+    "text": "Therefore Jesus perceived that they wanted to ask him, and he said to them, \"Do you inquire among yourselves concerning this, that I said, 'A little while, and you won't see me, and again a little while, and you will see me?'",
+    "strong": [
+{
+                  "text": "interroger",
+                  "strong": "G2065",
+                  "start": 33,
+                  "end": 43
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Most certainly I tell you, that you will weep and lament, but the world will rejoice. You will be sorrowful, but your sorrow will be turned into joy.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "rejoice",
+                  "strong": "G5463",
+                  "start": 77,
+                  "end": 84
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "A woman, when she gives birth, has sorrow, because her time has come. But when she has delivered the child, she doesn't remember the anguish any more, for the joy that a human being is born into the world.",
+    "strong": [
+            {
+                  "text": "birth",
+                  "strong": "G36",
+                  "start": 24,
+                  "end": 29
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 64,
+                  "end": 68
+            },
+            {
+                  "text": "child",
+                  "strong": "G5040",
+                  "start": 101,
+                  "end": 106
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 163,
+                  "end": 167
+            },
+            {
+                  "text": "human",
+                  "strong": "G444",
+                  "start": 170,
+                  "end": 175
+            },
+            {
+                  "text": "being",
+                  "strong": "G444",
+                  "start": 176,
+                  "end": 181
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 199,
+                  "end": 204
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Therefore you now have sorrow, but I will see you again, and your heart will rejoice, and no one will take your joy away from you.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "heart",
+                  "strong": "G2588",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "rejoice",
+                  "strong": "G5463",
+                  "start": 77,
+                  "end": 84
+            },
+            {
+                  "text": "take",
+                  "strong": "G3880",
+                  "start": 102,
+                  "end": 106
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "\"In that day you will ask me no questions. Most certainly I tell you, whatever you may ask of the Father in my name, he will give it to you.",
+    "strong": [
+{
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 6,
+                  "end": 10
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 47,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Until now, you have asked nothing in my name. Ask, and you will receive, that your joy may be made full.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "nothing",
+                  "strong": "G3762",
+                  "start": 26,
+                  "end": 33
+            },
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 40,
+                  "end": 44
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 64,
+                  "end": 71
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 73,
+                  "end": 77
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "I have spoken these things to you in figures of speech. But the time is coming when I will no more speak to you in figures of speech, but will tell you plainly about the Father.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 2,
+                  "end": 6
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 14,
+                  "end": 19
+            },
+            {
+                  "text": "speech",
+                  "strong": "G3056",
+                  "start": 48,
+                  "end": 54
+            },
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 99,
+                  "end": 104
+            },
+            {
+                  "text": "speech",
+                  "strong": "G3056",
+                  "start": 126,
+                  "end": 132
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 170,
+                  "end": 176
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "In that day you will ask in my name; and I don't say to you, that I will pray to the Father for you,",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 3,
+                  "end": 7
+            },
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 31,
+                  "end": 35
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 61,
+                  "end": 65
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 85,
+                  "end": 91
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "for the Father himself loves you, because you have loved me, and have believed that I came from God.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 8,
+                  "end": 14
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 46,
+                  "end": 50
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 65,
+                  "end": 69
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 79,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "I came from the Father, and have come into the world. Again, I leave the world, and go to the Father.\"",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 47,
+                  "end": 52
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 78,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "His disciples said to him, \"Behold, now you speak plainly, and speak no figures of speech.",
+    "strong": []
+  },
+  {
+    "number": 30,
+    "text": "Now we know that you know all things, and don't need for anyone to question you. By this we believe that you came from God.\"",
+    "strong": [
+{
+                  "text": "besoin",
+                  "strong": "H2637",
+                  "start": 69,
+                  "end": 75
+            },
+            {
+                  "text": "personne",
+                  "strong": "G3762",
+                  "start": 80,
+                  "end": 88
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 149,
+                  "end": 153
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Jesus answered them, \"Do you now believe?",
+    "strong": []
+  },
+  {
+    "number": 32,
+    "text": "Behold, the time is coming, yes, and has now come, that you will be scattered, everyone to his own place, and you will leave me alone. Yet I am not alone, because the Father is with me.",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 45,
+                  "end": 49
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 51,
+                  "end": 55
+            },
+            {
+                  "text": "place",
+                  "strong": "G5087",
+                  "start": 99,
+                  "end": 104
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 167,
+                  "end": 173
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 177,
+                  "end": 181
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "I have told you these things, that in me you may have peace. In the world you have trouble; but cheer up! I have overcome the world.\"",
+    "strong": [
+{
+                  "text": "paix",
+                  "strong": "G1515",
+                  "start": 49,
+                  "end": 53
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 90,
+                  "end": 94
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 98,
+                  "end": 103
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 141,
+                  "end": 146
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter16EN;

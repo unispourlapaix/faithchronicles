@@ -2,11 +2,34 @@
 // MODULE MANAGER - Gestionnaire de chargement des chapitres
 // ============================================================================
 
+import { 
+  chapter1Genesis,
+  chapter2Exodus,
+  chapter3Jesus,
+  chapter4CrucifixionResurrection,
+  chapter5EarlyChurch,
+  chapter6PaulMissions,
+  chapter7FinalLetters,
+  chapter8Bonus
+} from '../data/chapters/index.js';
+
 class ModuleManager {
   constructor() {
     this.loadedChapters = new Map();
     this.currentLanguage = 'fr';
     this.cache = new Map();
+    
+    // Pré-charger tous les chapitres pour éviter les imports dynamiques
+    this.chapters = {
+      1: chapter1Genesis,
+      2: chapter2Exodus,
+      3: chapter3Jesus,
+      4: chapter4CrucifixionResurrection,
+      5: chapter5EarlyChurch,
+      6: chapter6PaulMissions,
+      7: chapter7FinalLetters,
+      8: chapter8Bonus
+    };
   }
 
   async loadChapter(chapterId) {
@@ -17,33 +40,12 @@ class ModuleManager {
     }
 
     try {
-      let chapterData;
+      console.log(`📚 Chargement chapitre ${chapterId}...`);
       
-      if (chapterId === 1) {
-        const { chapter1Genesis } = await import('../data/chapters/chapter1_genesis.js');
-        chapterData = chapter1Genesis;
-      } else if (chapterId === 2) {
-        const { chapter2Exodus } = await import('../data/chapters/chapter2_exodus.js');
-        chapterData = chapter2Exodus;
-      } else if (chapterId === 3) {
-        const { chapter3Jesus } = await import('../data/chapters/chapter3_jesus.js');
-        chapterData = chapter3Jesus;
-      } else if (chapterId === 4) {
-        const { chapter4CrucifixionResurrection } = await import('../data/chapters/chapter4_crucifixion_resurrection.js');
-        chapterData = chapter4CrucifixionResurrection;
-      } else if (chapterId === 5) {
-        const { chapter5EarlyChurch } = await import('../data/chapters/chapter5_early_church.js');
-        chapterData = chapter5EarlyChurch;
-      } else if (chapterId === 6) {
-        const { chapter6PaulMissions } = await import('../data/chapters/chapter6_paul_missions.js');
-        chapterData = chapter6PaulMissions;
-      } else if (chapterId === 7) {
-        const { chapter7FinalLetters } = await import('../data/chapters/chapter7_final_letters.js');
-        chapterData = chapter7FinalLetters;
-      } else if (chapterId === 8) {
-        const { chapter8Bonus } = await import('../data/chapters/chapter8_bonus.js');
-        chapterData = chapter8Bonus;
-      } else {
+      // Utiliser les chapitres pré-chargés au lieu d'imports dynamiques
+      let chapterData = this.chapters[chapterId];
+      
+      if (!chapterData) {
         console.warn(`Chapitre ${chapterId} pas encore implémenté`);
         return null;
       }
@@ -54,10 +56,12 @@ class ModuleManager {
           chapterData = this.mergeTranslation(chapterData, translation);
         }
       } catch (e) {
-        console.warn(`Pas de traduction pour chapitre ${chapterId}`);
+        // Pas de traduction disponible - utilisation du français par défaut
+        console.log(`ℹ️ Chapitre ${chapterId}: utilisation de la version française`);
       }
 
       this.cache.set(cacheKey, chapterData);
+      console.log(`✅ Chapitre ${chapterId} chargé avec succès`);
       return chapterData;
       
     } catch (error) {
@@ -75,18 +79,48 @@ class ModuleManager {
     else if (levelId >= 40 && levelId <= 52) chapterId = 4; // Crucifixion/Résurrection
     else if (levelId >= 53 && levelId <= 65) chapterId = 5; // Église primitive
     else if (levelId >= 66 && levelId <= 78) chapterId = 6; // Missions de Paul
-    else if (levelId >= 79 && levelId <= 91) chapterId = 7; // Lettres/Apocalypse
-    else if (levelId === 92) chapterId = 8; // Niveau Bonus
-    
+    else if (levelId >= 79 && levelId <= 91) chapterId = 7; // Lettres finales
+    else if (levelId >= 92 && levelId <= 100) chapterId = 8; // Bonus
+    else return null;
+
     const chapter = await this.loadChapter(chapterId);
     if (!chapter) return null;
-    return chapter.levels[levelId] || null;
+
+    // Les niveaux dans les chapitres utilisent l'ID global, pas local
+    const level = chapter.levels[levelId];
+
+    if (!level) {
+      console.error(`Niveau ${levelId} non trouvé dans chapitre ${chapterId}`);
+      console.log('Niveaux disponibles:', Object.keys(chapter.levels));
+      return null;
+    }
+
+    return {
+      ...level,
+      chapterInfo: {
+        id: chapter.id,
+        name: chapter.name,
+        icon: chapter.icon,
+        description: chapter.description
+      }
+    };
   }
 
-  async loadTranslation(chapterId) {
+  async loadTranslation(chapterId, getChapter) {
+    // Utiliser la fonction getChapter du hook useTranslation si disponible
+    if (getChapter) {
+      return getChapter(chapterId);
+    }
+    
+    // Le français est la langue source - pas besoin de traduction
+    if (this.currentLanguage === 'fr') {
+      return null;
+    }
+    
+    // Fallback vers l'ancien système
     try {
-      const { translations } = await import(`../data/translations/${this.currentLanguage}/chapter${chapterId}.js`);
-      return translations;
+      const response = await import(`../data/translations/${this.currentLanguage}/interface_chapter${chapterId}.js`);
+      return response.default;
     } catch (error) {
       return null;
     }
@@ -94,13 +128,24 @@ class ModuleManager {
 
   mergeTranslation(chapterData, translation) {
     if (!translation) return chapterData;
-    const merged = JSON.parse(JSON.stringify(chapterData));
-    Object.keys(translation.levels || {}).forEach(levelId => {
-      if (merged.levels[levelId]) {
-        Object.assign(merged.levels[levelId], translation.levels[levelId]);
-      }
-    });
-    return merged;
+    
+    return {
+      ...chapterData,
+      name: translation.name || chapterData.name,
+      description: translation.description || chapterData.description,
+      levels: chapterData.levels.map((level, index) => ({
+        ...level,
+        title: translation.levels?.[index]?.title || level.title,
+        questions: level.questions.map((question, qIndex) => ({
+          ...question,
+          question: translation.levels?.[index]?.questions?.[qIndex]?.question || question.question,
+          answers: question.answers.map((answer, aIndex) => 
+            translation.levels?.[index]?.questions?.[qIndex]?.answers?.[aIndex] || answer
+          ),
+          explanation: translation.levels?.[index]?.questions?.[qIndex]?.explanation || question.explanation
+        }))
+      }))
+    };
   }
 
   setLanguage(language) {
@@ -109,15 +154,14 @@ class ModuleManager {
   }
 
   async preloadChapters(chapterIds = [1]) {
-    const promises = chapterIds.map(id => this.loadChapter(id));
-    await Promise.allSettled(promises);
+    for (const id of chapterIds) {
+      await this.loadChapter(id);
+    }
   }
 
   clearCache() {
     this.cache.clear();
-    this.loadedChapters.clear();
   }
 }
 
 export const moduleManager = new ModuleManager();
-export default ModuleManager;

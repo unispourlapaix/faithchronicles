@@ -1,27 +1,36 @@
 import React, { useRef, useEffect } from 'react';
 import QuizMountain, { useQuizMountain } from '../QuizMountain';
+import useTranslation from '../../hooks/useTranslation';
 
 const VictoryScreen = ({ 
   currentLevel, levelStars, score, combo, unlockedLevels, setCurrentLevel, 
   setQuestionsAnswered, setLives, setCurrentScreen 
 }) => {
+  const { t } = useTranslation();
   const mountainRef = useRef();
   const mountain = useQuizMountain(mountainRef);
+  const processedChapters = useRef(new Set()); // Suivre les chapitres déjà traités
 
   useEffect(() => {
     // Logique de progression basée sur les événements du jeu
     const currentChapter = Math.min(8, Math.ceil(currentLevel / 13) || 1);
     
+    // Ne traiter chaque chapitre qu'une seule fois
+    if (processedChapters.current.has(currentChapter)) {
+      return;
+    }
+    
     if (currentLevel >= 91) {
       // Dernier niveau du chapitre 7 = VICTOIRE
       console.log('🏆 Victoire finale ! Animation au sommet');
       mountain.triggerVictory();
+      processedChapters.current.add(currentChapter);
       
       // Débloquer chapitre 8 si 273 étoiles atteintes
       const totalStars = Object.values(levelStars).reduce((total, stars) => total + stars, 0);
       if (totalStars >= 273) {
         setTimeout(() => {
-          console.log('✨ 273 étoiles atteintes ! Déblocage chapitre 8');
+          console.log(`✨ 273 ${t('console.starsUnlocked')} 8`);
           mountain.unlockChapter8();
         }, 2000); // 2 secondes après la victoire
       }
@@ -29,6 +38,7 @@ const VictoryScreen = ({
       // Progression normale de chapitre
       console.log(`🏔️ Chapitre ${currentChapter} terminé`);
       mountain.completeChapter(currentChapter);
+      processedChapters.current.add(currentChapter);
     }
   }, [currentLevel, mountain, levelStars]);
 
@@ -36,12 +46,12 @@ const VictoryScreen = ({
     <div className="relative z-10 p-8 h-full flex flex-col justify-center items-center">
       <div className="text-center">
         <h2 className="text-xl font-bold text-black mb-3 flex items-center justify-center gap-2">
-          🏆 <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Connaissance Maîtrisée !</span> 🏆
+          🏆 <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">{t('labels.knowledgeMastered')}</span> 🏆
         </h2>
         <div className="bg-white rounded-lg p-2 mb-3 shadow-lg border border-blue-100">
           <div className="flex justify-between items-center text-xs">
             <div className="flex items-center gap-2">
-              <span className="font-medium text-gray-700">Niv.{currentLevel}</span>
+              <span className="font-medium text-gray-700">{t('labels.level')}.{currentLevel}</span>
               <div className="flex gap-0.5">
                 {[1, 2, 3].map((star) => (
                   <span
@@ -53,13 +63,13 @@ const VictoryScreen = ({
                 ))}
               </div>
               <span className="text-gray-600">
-                {(levelStars[currentLevel] || 3) === 3 ? "✨ Parfait" : 
-                 (levelStars[currentLevel] || 3) === 2 ? "⭐ Bien" :
-                 "⭐ Début"}
+                {(levelStars[currentLevel] || 3) === 3 ? t('messages.perfect') : 
+                 (levelStars[currentLevel] || 3) === 2 ? t('messages.good') :
+                 t('messages.start')}
               </span>
               {currentLevel >= 91 && (
                 <span className="text-xs bg-gold-100 text-gold-700 px-2 py-1 rounded-full font-bold">
-                  🎺 NIVEAU SECRET DÉBLOQUÉ!
+                  {t('messages.secretLevel')}
                 </span>
               )}
             </div>
@@ -98,7 +108,7 @@ const VictoryScreen = ({
             onClick={() => setCurrentScreen('levelSelect')}
             className="flex-1 py-2 bg-white text-black rounded-lg font-semibold shadow-lg border border-gray-200 hover:scale-105 active:scale-95 transition-all"
           >
-            Retour
+            {t('messages.returnToLevels')}
           </button>
           <button 
             onClick={() => {
@@ -126,9 +136,9 @@ const VictoryScreen = ({
           >
             {currentLevel >= 91 ? 
               <span className="flex items-center justify-center gap-1">
-                🏆 Chapitre Secret
+                {t('messages.secretChapter')}
               </span> : 
-              (unlockedLevels.includes(currentLevel + 1) ? 'Suivant' : 'Niveaux')
+              (unlockedLevels.includes(currentLevel + 1) ? t('messages.next') : t('labels.level'))
             }
           </button>
         </div>

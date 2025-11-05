@@ -1,9 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import QuizMountain, { useQuizMountain } from '../QuizMountain';
+import useTranslation from '../../hooks/useTranslation';
 
 const MountainVictoryScreen = ({ 
   currentLevel, levelStars, score, combo, setCurrentScreen 
 }) => {
+  const { t } = useTranslation();
   const mountainRef = useRef();
   const mountain = useQuizMountain(mountainRef);
   const [showSkipButton, setShowSkipButton] = useState(false);
@@ -29,6 +31,10 @@ const MountainVictoryScreen = ({
   }, [levelStars, currentLevel, mountain]);
 
   const handleContinue = () => {
+    // Son tok pour le bouton continuer
+    if (window.faithSounds && window.faithSounds.tok) {
+      window.faithSounds.tok();
+    }
     setCurrentScreen('victory');
   };
 
@@ -41,8 +47,8 @@ const MountainVictoryScreen = ({
       {/* Header avec informations */}
       <div className="text-center p-6 bg-white/90 backdrop-blur-sm">
         <div className="text-4xl mb-2">🏔️</div>
-        <h2 className="text-2xl font-bold text-gray-800">Ascension Spirituelle</h2>
-        <p className="text-gray-600">Niveau {currentLevel} • {levelStars[currentLevel] || 3} étoiles obtenues</p>
+        <h2 className="text-2xl font-bold text-gray-800">{t('mountain.spiritualAscension')}</h2>
+        <p className="text-gray-600">{t('mountain.levelProgress', { level: currentLevel, stars: levelStars[currentLevel] || 3 })}</p>
       </div>
 
       {/* QuizMountain en grand format */}
@@ -69,15 +75,15 @@ const MountainVictoryScreen = ({
           <div className="flex justify-center items-center gap-4 text-sm">
             <div className="flex items-center gap-2">
               <span className="text-blue-600">📈</span>
-              <span>Score: {score}</span>
+              <span>{t('labels.score')}: {score}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-yellow-500">⭐</span>
-              <span>Étoiles: {levelStars[currentLevel] || 3}</span>
+              <span>{t('labels.stars')}: {levelStars[currentLevel] || 3}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-purple-600">⚡</span>
-              <span>Combo: x{combo}</span>
+              <span>{t('mountain.combo')}: x{combo}</span>
             </div>
           </div>
         </div>
@@ -87,7 +93,7 @@ const MountainVictoryScreen = ({
           {(levelStars[currentLevel] === 3 || !levelStars[currentLevel]) && (
             <div className="p-3 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl border border-yellow-200">
               <p className="text-sm text-orange-800 font-medium">
-                ✨ "Car mes pensées ne sont pas vos pensées" - L'agneau gravit vers la sagesse parfaite
+                ✨ {t('mountain.perfectMessage')}
               </p>
             </div>
           )}
@@ -95,7 +101,7 @@ const MountainVictoryScreen = ({
           {levelStars[currentLevel] === 2 && (
             <div className="p-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200">
               <p className="text-sm text-blue-800 font-medium">
-                ⭐ "Cherchez et vous trouverez" - La montée continue vers la vérité
+                ⭐ {t('mountain.goodMessage')}
               </p>
             </div>
           )}
@@ -103,7 +109,7 @@ const MountainVictoryScreen = ({
           {levelStars[currentLevel] === 1 && (
             <div className="p-3 bg-gradient-to-r from-green-50 to-teal-50 rounded-xl border border-green-200">
               <p className="text-sm text-green-800 font-medium">
-                🌱 "La foi, même petite comme un grain de sénevé" - Premier pas vers la lumière
+                🌱 {t('mountain.startMessage')}
               </p>
             </div>
           )}
@@ -117,7 +123,7 @@ const MountainVictoryScreen = ({
               className="flex-1 py-3 bg-gray-100 text-gray-700 rounded-full font-semibold 
                          hover:bg-gray-200 active:scale-95 transition-all duration-200"
             >
-              Passer l'animation
+              {t('mountain.skipAnimation')}
             </button>
           )}
           
@@ -129,7 +135,7 @@ const MountainVictoryScreen = ({
                          ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:shadow-lg active:scale-95' 
                          : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
           >
-            {animationComplete ? '🏆 Continuer' : 'Continuer'}
+            {animationComplete ? '🏆 ' + t('buttons.continue') : t('buttons.continue')}
           </button>
         </div>
       </div>

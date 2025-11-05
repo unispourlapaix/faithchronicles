@@ -1,49 +1,62 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
+import useTranslation from '../../hooks/useTranslation';
+import useChapterData from '../../hooks/useChapterData';
 
 const ChallengeScreen = ({ 
   currentLevel, lives, levelStars, setSelectedCard, setQuestionDifficulty, 
   setSelectedAnswer, setIsAnswering, setQuestionsAnswered, moduleManager, 
-  setCurrentQuestion, setCurrentScreen 
+  setCurrentQuestion, setCurrentScreen, audio 
 }) => {
+  const { t } = useTranslation();
+  const { getLevel } = useChapterData();
 
   const cards = [
     { 
       id: 1, 
-      name: 'FOI', 
+      name: t('cards.faith'), 
       icon: '✨', 
-      knowledge: '+50% points',
+      knowledge: t('cards.faithKnowledge'),
       bonus: 'pointMultiplier',
       multiplier: 1.5,
-      description: 'Maximum de points de sagesse obtenus',
+      description: t('cards.faithDesc'),
       color: 'from-yellow-400 to-orange-500',
       glow: 'shadow-yellow-500/50'
     },
     { 
       id: 2, 
-      name: 'COURAGE', 
+      name: t('cards.courage'), 
       icon: '⚔️', 
-      knowledge: 'Seconde chance',
+      knowledge: t('cards.courageKnowledge'),
       bonus: 'secondChance',
       multiplier: 1.0,
-      description: 'Points normaux mais seconde chance',
+      description: t('cards.courageDesc'),
       color: 'from-red-400 to-red-600',
       glow: 'shadow-red-500/50'
     },
     { 
       id: 3, 
-      name: 'SAGESSE', 
+      name: t('cards.wisdom'), 
       icon: '📜', 
-      knowledge: 'Indice + bonus',
+      knowledge: t('cards.wisdomKnowledge'),
       bonus: 'hint',
       multiplier: 1.25,
-      description: 'Indice révélé et +25% points',
+      description: t('cards.wisdomDesc'),
       color: 'from-blue-400 to-purple-600',
       glow: 'shadow-purple-500/50'
     }
   ];
 
   const handleSelectCard = async (card) => {
+    // Jouer le son correspondant à la carte choisie
+    if (card.name === t('cards.faith')) {
+      audio?.sounds?.faith();
+    } else if (card.name === t('cards.courage')) {
+      audio?.sounds?.courage();
+    } else if (card.name === t('cards.wisdom')) {
+      audio?.sounds?.wisdom();
+    }
+    
     setSelectedCard(card);
     setQuestionDifficulty('easy');
     setSelectedAnswer(null);
@@ -51,9 +64,9 @@ const ChallengeScreen = ({
     setQuestionsAnswered(0);
     
     try {
-      const levelData = await moduleManager.getLevel(currentLevel);
-      if (levelData && levelData.questions && levelData.questions.easy) {
-        setCurrentQuestion(levelData.questions.easy);
+      const levelData = getLevel(currentLevel);
+      if (levelData && levelData.easy) {
+        setCurrentQuestion(levelData.easy);
         setCurrentScreen('question');
       }
     } catch (error) {
@@ -65,7 +78,7 @@ const ChallengeScreen = ({
     <div className="relative z-10 p-6 h-full flex flex-col justify-between">
       <div>
         <div className="flex justify-between items-center mb-6">
-          <div className="text-sm text-black">NIVEAU {currentLevel}</div>
+          <div className="text-sm text-black">{t('labels.level')} {currentLevel}</div>
           <div className="flex gap-0.5">
             {[1, 2, 3].map((star) => {
               const currentStars = levelStars[currentLevel] || 0;
@@ -90,28 +103,28 @@ const ChallengeScreen = ({
         </div>
         
         <h2 className="text-2xl font-bold text-center mb-4 text-black">
-          Chargement du niveau...
+          {t('challenge.loading')}
         </h2>
         
         <div className="p-6 bg-white rounded-3xl shadow-xl mb-6 border-2 border-gray-100">
           <p className="text-black text-center italic mb-2">
-            🕊️ Que la paix repose dans ta maison
+            {t('challenge.peace')}
           </p>
           <div className="text-xs text-center text-gray-700 mt-3">
-            💡 3 questions de connaissance t'attendent
+            {t('challenge.questionsAwaiting')}
           </div>
           <div className="text-xs text-center text-gray-500 italic mt-2">
-            "Chaque étoile est une étape vers la lumière divine"
+            "{t('challenge.starsQuote')}"
           </div>
         </div>
       </div>
 
       <div>
         <div className="text-center mb-2 text-lg font-bold text-black">
-          ✨ Choisis ta carte de connaissance
+          {t('cards.chooseCard')}
         </div>
         <div className="text-center mb-4 text-xs text-gray-700">
-          Elle t'accompagnera pour les 3 questions de ce niveau
+          {t('messages.cardHelp')}
         </div>
         <div className="grid grid-cols-3 gap-3">
           {cards.map((card, index) => (
@@ -160,32 +173,35 @@ const ChallengeScreen = ({
         </div>
         <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl border-2 border-blue-100 shadow-lg">
           <p className="text-xs text-center text-black font-bold mb-2">
-            ✨ Effets des cartes de connaissance :
+            {t('cards.cardEffects')}
           </p>
           <div className="space-y-1 text-[10px] text-center">
             <div className="flex items-center justify-center gap-1">
-              <span className="text-yellow-600">✨ FOI:</span>
-              <span className="text-gray-700">+50% points de sagesse - Maximum de récompense</span>
+              <span className="text-yellow-600">✨ {t('cards.faith')}:</span>
+              <span className="text-gray-700">{t('cards.faithEffect')}</span>
             </div>
             <div className="flex items-center justify-center gap-1">
-              <span className="text-red-600">⚔️ COURAGE:</span>
-              <span className="text-gray-700">Points normaux mais seconde chance sur erreur</span>
+              <span className="text-red-600">⚔️ {t('cards.courage')}:</span>
+              <span className="text-gray-700">{t('cards.courageEffect')}</span>
             </div>
             <div className="flex items-center justify-center gap-1">
-              <span className="text-blue-600">📜 SAGESSE:</span>
-              <span className="text-gray-700">+25% points + indice révélé pour chaque question</span>
+              <span className="text-blue-600">📜 {t('cards.wisdom')}:</span>
+              <span className="text-gray-700">{t('cards.wisdomEffect')}</span>
             </div>
           </div>
           <div className="text-xs text-center text-gray-500 italic mt-2 border-t border-blue-200 pt-2">
-            "Choisis avec sagesse, car ton choix t'accompagnera tout au long du niveau"
+            "{t('cards.chooseWisely')}"
           </div>
         </div>
         
         <button 
-          onClick={() => setCurrentScreen('levelSelect')}
+          onClick={() => {
+            audio?.sounds?.wrash();
+            setCurrentScreen('levelSelect');
+          }}
           className="mt-6 w-full py-3 bg-white text-black rounded-full font-semibold shadow-lg border-2 border-gray-200 hover:scale-105 active:scale-95 transition-all"
         >
-          Retour
+          {t('buttons.back')}
         </button>
       </div>
     </div>

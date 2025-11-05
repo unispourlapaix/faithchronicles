@@ -1,0 +1,613 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Kiswahili (Swahili Union Version)
+// ============================================================================
+// Chapitre 18
+
+export const johnChapter18SW = {
+  chapter: 18,
+  title: "Jean 18",
+  version: "Swahili Union Version",
+  language: "sw",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Yesu aliposema hayo, akatoka pamoja na wanafunzi wake, akavuka kijito cha Kedroni, palipokuwa na bustani, ambayo aliingia yeye na wanafunzi wake.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 41,
+                  "end": 45
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 124,
+                  "end": 128
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Na Yuda naye, yeye aliyemsaliti, alijua mahali pale; maana Yesu alikuwa amekutana huko mara nyingi pamoja na wanafunzi wake.",
+    "strong": []
+  },
+  {
+    "number": 3,
+    "text": "Basi Yuda, akishapokea ile kikosi cha askari, na maakida wa makuhani wakuu na Mafarisayo, alifika huko pamoja na taa na mienge na silaha.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 123,
+                  "end": 127
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Yesu basi, akijua mambo yote yaliyomjilia, akatoka, akawaambia, Mnamtafuta nani?",
+    "strong": [
+{
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "arriver",
+                  "strong": "G1096",
+                  "start": 38,
+                  "end": 45
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Wakamjibu, Yesu wa Nazareti. Yesu akawaambia, Mimi ndiye. Na Yuda naye, yeye aliyemsaliti, alikuwa amesimama pamoja nao.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 99,
+                  "end": 103
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Basi alipowaambia, Mimi ndiye, wakarudi nyuma, wakaanguka chini.",
+    "strong": [
+{
+                  "text": "terre",
+                  "strong": "H776",
+                  "start": 71,
+                  "end": 76
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Kisha akawaomba tena, Mnamtafuta nani? Wakasema, Yesu wa Nazareti.",
+    "strong": [
+{
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 19,
+                  "end": 26
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Yesu akajibu, Nimewaambia ya kuwa mimi ndiye; basi ikiwa mnanitafuta mimi, waacheni hawa waende zao;",
+    "strong": [
+{
+                  "text": "aller",
+                  "strong": "G4198",
+                  "start": 91,
+                  "end": 96
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "ili litimie lile neno alilosema, Wale ulionipa sikumpoteza hata mmoja wao.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 37,
+                  "end": 43
+            },
+            {
+                  "text": "aucun",
+                  "strong": "G3762",
+                  "start": 76,
+                  "end": 81
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Simoni Petro basi, akiwa na upanga, akaufuta, akampiga mtumwa wa kuhani mkuu, akamkata sikio lake la kuume. Na jina la yule mtumwa aliitwa Malko.",
+    "strong": [
+{
+                  "text": "serviteur",
+                  "strong": "G1401",
+                  "start": 53,
+                  "end": 62
+            },
+            {
+                  "text": "serviteur",
+                  "strong": "G1401",
+                  "start": 125,
+                  "end": 134
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Yesu akamwambia Petro, Uweke upanga wako alani mwake; kikombe nilichopewa na Baba, je, nisikinywi?",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 36,
+                  "end": 40
+            },
+            {
+                  "text": "coupe",
+                  "strong": "H3563",
+                  "start": 74,
+                  "end": 79
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Basi ile kikosi cha askari, na yule jemadari wa maelfu, na maakida wa Wayahudi, wakamkamata Yesu, wakamfunga,",
+    "strong": []
+  },
+  {
+    "number": 13,
+    "text": "wakampeleka kwa Anasi kwanza; maana alikuwa mkwewe Kayafa, aliyekuwa kuhani mkuu mwaka ule.",
+    "strong": [
+{
+                  "text": "beau",
+                  "strong": "G2570",
+                  "start": 52,
+                  "end": 56
+            },
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 107,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Kayafa ndiye aliyewashauri Wayahudi, kwamba ni afadhali mtu mmoja afie kwa ajili ya watu.",
+    "strong": [
+{
+                  "text": "seul",
+                  "strong": "G3439",
+                  "start": 84,
+                  "end": 88
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 89,
+                  "end": 94
+            },
+            {
+                  "text": "peuple",
+                  "strong": "G1484",
+                  "start": 109,
+                  "end": 115
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Simoni Petro akamfuata Yesu, na mwanafunzi mwingine. Na yule mwanafunzi alikuwa amjulikana kuhani mkuu, akaingia pamoja na Yesu katika ua wa kuhani mkuu;",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 14,
+                  "end": 18
+            },
+            {
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 28,
+                  "end": 36
+            },
+            {
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 56,
+                  "end": 64
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 117,
+                  "end": 121
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 128,
+                  "end": 132
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "lakini Petro alikuwa amesimama nje mlangoni. Basi yule mwanafunzi mwingine, aliyekuwa amjulikana kuhani mkuu, akatoka, akasema na yule mwanamke aliyekuwa mlangoni, akamingiza Petro.",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 51,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Basi yule mjakazi aliyekuwa mlangoni akamwambia Petro, Wala wewe si mmoja wa wanafunzi wa mtu huyu? Akasema, Mimi si yeye.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 90,
+                  "end": 95
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Na watumwa na maakida walikuwa wamesimama, wakiwa wamewasha moto wa makaa, kwa sababu ilikuwa baridi, nao walikuwa wakijiotea; Petro naye alikuwa amesimama pamoja nao akijiotea.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 144,
+                  "end": 148
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Basi kuhani mkuu akamwomba Yesu habari za wanafunzi wake, na habari za mafundisho yake.",
+    "strong": []
+  },
+  {
+    "number": 20,
+    "text": "Yesu akamjibu, Mimi nimesema ulimwenguni waziwazi; mimi nimefundisha sikuzote katika sinagogi na hekaluni, Wayahudi wote wanakokusanyika; wala sikuzungumza cho chote kwa siri.",
+    "strong": [
+{
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 46,
+                  "end": 51
+            },
+            {
+                  "text": "toujours",
+                  "strong": "H5769",
+                  "start": 58,
+                  "end": 66
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 76,
+                  "end": 80
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 97,
+                  "end": 101
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 156,
+                  "end": 160
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Mbona waniuliza mimi? Waomba wale waliosikia niliwaambiayo; tazama, hao wanajua niliyosema.",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "Alipokuwa amesema haya, mmoja wa maakida aliyekuwa amesimama karibu akampiga Yesu kofi, akisema, Je, unamjibu kuhani mkuu hivyo?",
+    "strong": []
+  },
+  {
+    "number": 23,
+    "text": "Yesu akamjibu, Kama nalisema baya, ushuhudie ule ubaya; lakini kama ni vyema, mbona wanipiga?",
+    "strong": [
+{
+                  "text": "voir",
+                  "strong": "G1492",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "bien",
+                  "strong": "H2896",
+                  "start": 79,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Basi Anasi akamtuma akiwa amefungwa kwa Kayafa kuhani mkuu.",
+    "strong": []
+  },
+  {
+    "number": 25,
+    "text": "Na Simoni Petro alikuwa amesimama akijiotea. Basi wakamwambia, Wala wewe si mmoja wa wanafunzi wake? Akakataa, akasema, Mimi si yeye.",
+    "strong": []
+  },
+  {
+    "number": 26,
+    "text": "Mmoja wa watumwa wa kuhani mkuu, aliyekuwa jamaa wa yule ambaye Petro alimkata sikio, akasema, Mimi sikukuona pamoja naye bustanini?",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 121,
+                  "end": 125
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 130,
+                  "end": 134
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Tena Petro akakataa; na mara jogoo akawika.",
+    "strong": [
+{
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 17,
+                  "end": 24
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Basi wakampeleka Yesu kutoka kwa Kayafa mpaka jumba la baraza; na ilikuwa mapema asubuhi; nao wenyewe hawakuingia ndani ya jumba la baraza, ili wasijipate unajisi, bali wapate kula Pasaka.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 101,
+                  "end": 105
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Pilato basi akatoka nje kwao, akasema, Mnaleta shauri gani juu ya mtu huyu?",
+    "strong": [
+{
+                  "text": "aller",
+                  "strong": "G4198",
+                  "start": 24,
+                  "end": 29
+            },
+            {
+                  "text": "contre",
+                  "strong": "G2596",
+                  "start": 78,
+                  "end": 84
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 89,
+                  "end": 94
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "Wakajibu, wakamwambia, Kama huyu asingalikuwa mtenda mabaya, asingalikuwa tumemkabidhi kwako.",
+    "strong": []
+  },
+  {
+    "number": 31,
+    "text": "Pilato basi akawaambia, Mchukueni ninyi, mkamhukumu yeye kwa sheria yenu. Wayahudi wakamwambia, Hairuhusiwi kwetu kumwua mtu yeyote;",
+    "strong": [
+{
+                  "text": "selon",
+                  "strong": "G2531",
+                  "start": 60,
+                  "end": 65
+            },
+            {
+                  "text": "personne",
+                  "strong": "G3762",
+                  "start": 135,
+                  "end": 143
+            },
+            {
+                  "text": "mort",
+                  "strong": "H6757",
+                  "start": 146,
+                  "end": 150
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "ili litimie lile neno la Yesu alilonena, akionyesha kifo gani angekufa.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 32,
+                  "end": 38
+            },
+            {
+                  "text": "mort",
+                  "strong": "H6757",
+                  "start": 89,
+                  "end": 93
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Pilato basi akaingia tena ndani ya jumba la baraza, akamwita Yesu, akamwambia, Je, wewe ni Mfalme wa Wayahudi?",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 14,
+                  "end": 18
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Yesu akajibu, Je, unasema hili kwa mamlaka yako mwenyewe, au wengine walikuambia habari zangu?",
+    "strong": []
+  },
+  {
+    "number": 35,
+    "text": "Pilato akajibu, Je, mimi ni Myahudi? Taifa lako na makuhani wakuu wamekukabidhi kwangu; umefanya nini?",
+    "strong": [
+{
+                  "text": "Juif",
+                  "strong": "G2453",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "nation",
+                  "strong": "G1484",
+                  "start": 39,
+                  "end": 45
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "Yesu akajibu, Ufalme wangu si wa ulimwengu huu; kama ufalme wangu ungalikuwa wa ulimwengu huu, watumwa wangu wangalipigana, ili nisikabidhiwe kwa Wayahudi; lakini sasa ufalme wangu si wa hapa.",
+    "strong": [
+{
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 28,
+                  "end": 33
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 78,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Pilato basi akamwambia, Je, basi wewe ni mfalme? Yesu akajibu, Wewe wasema ya kuwa mimi ni mfalme. Mimi kwa ajili ya hili nimezaliwa, na kwa ajili ya hili nimekuja ulimwenguni, ili nishuhudie kweli. Kila mwenye kweli husikia sauti yangu.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 99,
+                  "end": 103
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 107,
+                  "end": 112
+            },
+            {
+                  "text": "rendre",
+                  "strong": "G1743",
+                  "start": 118,
+                  "end": 124
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "Pilato akamwambia, Kweli ni nini? Baada ya kusema hili, akatoka tena kwa Wayahudi, akawaambia, Mimi sipati hatia yo yote ndani yake.",
+    "strong": [
+{
+                  "text": "avoir",
+                  "strong": "G1372",
+                  "start": 47,
+                  "end": 52
+            },
+            {
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 76,
+                  "end": 83
+            },
+            {
+                  "text": "aller",
+                  "strong": "G4198",
+                  "start": 89,
+                  "end": 94
+            },
+            {
+                  "text": "aucun",
+                  "strong": "G3762",
+                  "start": 140,
+                  "end": 145
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "Lakini mna desturi, kwamba nikuwafungulie mmoja wakati wa Pasaka; je, mnapenda nikuwafungulie Mfalme wa Wayahudi?",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 6,
+                  "end": 11
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Basi wakapiga kelele tena, wakisema, Si huyu, bali Baraba. Na Baraba alikuwa mnyangʼanyi.",
+    "strong": [
+{
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 9,
+                  "end": 16
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter18SW;

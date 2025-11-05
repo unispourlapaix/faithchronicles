@@ -1,0 +1,547 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Español (Reina-Valera 1909)
+// ============================================================================
+// Chapitre 15
+
+export const johnChapter15ES = {
+  chapter: 15,
+  title: "Jean 15",
+  version: "Reina-Valera 1909",
+  language: "es",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Yo soy la vid verdadera, y mi Padre es el labrador.",
+    "strong": [
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 30,
+                  "end": 35
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Todo pámpano que en mí no lleva fruto, le quitará: y todo aquel que lleva fruto, le limpiará, para que lleve más fruto.",
+    "strong": [
+            {
+                  "text": "Todo",
+                  "strong": "G3956",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "todo",
+                  "strong": "G3956",
+                  "start": 53,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Ya vosotros sois limpios por la palabra que os he hablado.",
+    "strong": [
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 32,
+                  "end": 39
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Estad en mí, y yo en vosotros. Como el pámpano no puede llevar fruto de sí mismo, si no estuviere en la vid; así ni vosotros, si no estuviereis en mí.",
+    "strong": [
+            {
+                  "text": "Como",
+                  "strong": "G2531",
+                  "start": 31,
+                  "end": 35
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Yo soy la vid, vosotros los pámpanos: el que está en mí, y yo en él, éste lleva mucho fruto; porque sin mí nada podéis hacer.",
+    "strong": [
+            {
+                  "text": "mucho",
+                  "strong": "G4183",
+                  "start": 80,
+                  "end": 85
+            },
+            {
+                  "text": "nada",
+                  "strong": "G3762",
+                  "start": 107,
+                  "end": 111
+            },
+            {
+                  "text": "hacer",
+                  "strong": "G1080",
+                  "start": 119,
+                  "end": 124
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "El que en mí no estuviere, será echado fuera como mal pámpano, y se secará; y los cogen, y los echan en el fuego, y arden.",
+    "strong": [
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 45,
+                  "end": 49
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Si estuviereis en mí, y mis palabras estuvieren en vosotros, pedid todo lo que quisiereis, y os será hecho.",
+    "strong": [
+            {
+                  "text": "todo",
+                  "strong": "G3956",
+                  "start": 67,
+                  "end": 71
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "En esto es glorificado mi Padre, en que llevéis mucho fruto, y seáis así mis discípulos.",
+    "strong": [
+            {
+                  "text": "esto",
+                  "strong": "G3778",
+                  "start": 3,
+                  "end": 7
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 26,
+                  "end": 31
+            },
+            {
+                  "text": "mucho",
+                  "strong": "G4183",
+                  "start": 48,
+                  "end": 53
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Como el Padre me amó, también yo os he amado: estad en mi amor.",
+    "strong": [
+            {
+                  "text": "Como",
+                  "strong": "G2531",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "amado",
+                  "strong": "G27",
+                  "start": 39,
+                  "end": 44
+            },
+            {
+                  "text": "amor",
+                  "strong": "G25",
+                  "start": 58,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Si guardareis mis mandamientos, estaréis en mi amor; como yo también he guardado los mandamientos de mi Padre, y estoy en su amor.",
+    "strong": [
+            {
+                  "text": "estar",
+                  "strong": "G5463",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "amor",
+                  "strong": "G25",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 53,
+                  "end": 57
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 104,
+                  "end": 109
+            },
+            {
+                  "text": "amor",
+                  "strong": "G25",
+                  "start": 125,
+                  "end": 129
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Estas cosas os he hablado, para que mi gozo esté en vosotros, y vuestro gozo sea cumplido.",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "Este es mi mandamiento: Que os améis los unos á los otros, como yo os he amado.",
+    "strong": [
+            {
+                  "text": "Este",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "mandamiento",
+                  "strong": "G1785",
+                  "start": 11,
+                  "end": 22
+            },
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 59,
+                  "end": 63
+            },
+            {
+                  "text": "amado",
+                  "strong": "G27",
+                  "start": 73,
+                  "end": 78
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Nadie tiene mayor amor que este, que ponga alguno su vida por sus amigos.",
+    "strong": [
+            {
+                  "text": "Nadie",
+                  "strong": "G3762",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "amor",
+                  "strong": "G25",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "este",
+                  "strong": "G3778",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "vida",
+                  "strong": "G2222",
+                  "start": 53,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Vosotros sois mis amigos, si hiciereis las cosas que yo os mando.",
+    "strong": []
+  },
+  {
+    "number": 15,
+    "text": "Ya no os llamaré siervos, porque el siervo no sabe lo que hace su señor: mas os he llamado amigos, porque todas las cosas que oí de mi Padre, os he hecho notorias.",
+    "strong": [
+            {
+                  "text": "llamar",
+                  "strong": "H7121",
+                  "start": 9,
+                  "end": 15
+            },
+            {
+                  "text": "siervo",
+                  "strong": "G1401",
+                  "start": 36,
+                  "end": 42
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 135,
+                  "end": 140
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "No me elegisteis vosotros á mí, mas yo os elegí á vosotros; y os he puesto para que vayáis y llevéis fruto, y vuestro fruto permanezca: para que todo lo que pidiereis del Padre en mi nombre, él os lo dé.",
+    "strong": [
+            {
+                  "text": "todo",
+                  "strong": "G3956",
+                  "start": 145,
+                  "end": 149
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 171,
+                  "end": 176
+            },
+            {
+                  "text": "nombre",
+                  "strong": "G3686",
+                  "start": 183,
+                  "end": 189
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Esto os mando: Que os améis los unos á los otros.",
+    "strong": [
+            {
+                  "text": "Esto",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 4
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Si el mundo os aborrece, sabed que á mí me aborreció antes que á vosotros.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 6,
+                  "end": 11
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Si fuerais del mundo, el mundo amaría lo suyo; mas porque no sois del mundo, antes yo os elegí del mundo, por eso os aborrece el mundo.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 25,
+                  "end": 30
+            },
+            {
+                  "text": "amar",
+                  "strong": "G25",
+                  "start": 31,
+                  "end": 35
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 70,
+                  "end": 75
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 99,
+                  "end": 104
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 129,
+                  "end": 134
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Acordaos de la palabra que yo os he dicho: No es el siervo mayor que su señor. Si á mí me han perseguido, también á vosotros perseguirán: si han guardado mi palabra, también guardarán la vuestra.",
+    "strong": [
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 15,
+                  "end": 22
+            },
+            {
+                  "text": "siervo",
+                  "strong": "G1401",
+                  "start": 52,
+                  "end": 58
+            },
+            {
+                  "text": "perseguir",
+                  "strong": "H7291",
+                  "start": 125,
+                  "end": 134
+            },
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 157,
+                  "end": 164
+            },
+            {
+                  "text": "guardar",
+                  "strong": "G5432",
+                  "start": 174,
+                  "end": 181
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Mas todo esto os harán por causa de mi nombre, porque no conocen al que me ha enviado.",
+    "strong": [
+            {
+                  "text": "todo",
+                  "strong": "G3956",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "esto",
+                  "strong": "G3778",
+                  "start": 9,
+                  "end": 13
+            },
+            {
+                  "text": "nombre",
+                  "strong": "G3686",
+                  "start": 39,
+                  "end": 45
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Si no hubiera venido, ni les hubiera hablado, no tendrían pecado, mas ahora no tienen excusa de su pecado.",
+    "strong": []
+  },
+  {
+    "number": 23,
+    "text": "El que me aborrece, también á mi Padre aborrece.",
+    "strong": [
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 33,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Si no hubiese hecho entre ellos obras cuales ningún otro ha hecho, no tendrían pecado; mas ahora, y las han visto, y me aborrecen á mí y á mi Padre.",
+    "strong": [
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 142,
+                  "end": 147
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Mas para que se cumpla la palabra que está escrita en su ley: Que sin causa me aborrecieron.",
+    "strong": [
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 26,
+                  "end": 33
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Empero cuando viniere el Consolador, el cual yo os enviaré del Padre, el Espíritu de verdad, el cual procede del Padre, él dará testimonio de mí.",
+    "strong": [
+            {
+                  "text": "enviar",
+                  "strong": "G649",
+                  "start": 51,
+                  "end": 57
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 63,
+                  "end": 68
+            },
+            {
+                  "text": "verdad",
+                  "strong": "G225",
+                  "start": 85,
+                  "end": 91
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 113,
+                  "end": 118
+            },
+            {
+                  "text": "testimonio",
+                  "strong": "G3141",
+                  "start": 128,
+                  "end": 138
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Y vosotros daréis testimonio, porque estáis conmigo desde el principio.",
+    "strong": [
+            {
+                  "text": "testimonio",
+                  "strong": "G3141",
+                  "start": 18,
+                  "end": 28
+            },
+            {
+                  "text": "principio",
+                  "strong": "G746",
+                  "start": 61,
+                  "end": 70
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter15ES;

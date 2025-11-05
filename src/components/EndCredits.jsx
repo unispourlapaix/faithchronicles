@@ -1,38 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from '../hooks/useTranslation.js';
 
 const EndCredits = ({ onComplete }) => {
   const [currentLine, setCurrentLine] = useState(0);
   const [showFinalMessage, setShowFinalMessage] = useState(false);
+  const { t } = useTranslation();
 
-  const creditLines = [
-    { text: "Tu es arrivé en haut de la montagne", delay: 2000 },
-    { text: "Tu as appris beaucoup de choses", delay: 2000 },
-    { text: "Ta foi grandit chaque jour", delay: 2000 },
-    { text: "Tu vis de belles choses avec Dieu", delay: 2000 },
-    { text: "Les difficultés t'aident à grandir", delay: 2000 },
-    { text: "Elles montrent ce qui est important", delay: 2000 },
-    { text: "Sois humble comme un petit enfant", delay: 2000 },
-    { text: "Dieu aime ton cœur simple", delay: 2000 },
-    { text: "Dans le calme tu entends Dieu", delay: 2000 },
-    { text: "Le jeûne libère ton esprit", delay: 2000 },
-    { text: "Prie et Dieu te guidera", delay: 2000 },
-    { text: "L'orgueil cache la vérité", delay: 2000 },
-    { text: "La grâce de Dieu est magnifique", delay: 2000 },
-    { text: "Elle vient du cœur de Dieu", delay: 2000 },
-    { text: "La vraie foi te rend libre", delay: 2000 },
-    { text: "Elle t'unit à Dieu pour toujours", delay: 2000 },
-    { text: "L'amour peut tout changer", delay: 2000 },
-    { text: "Il peut faire des miracles", delay: 2000 },
-    { text: "Répète avec moi", delay: 2000 },
-    { text: "Jésus, je te donne mon cœur", delay: 3000 },
-    { text: "Tu es mon roi, mon sauveur", delay: 3000 },
-    { text: "Viens transformer ma vie", delay: 3000 },
-    { text: "Le chemin continue maintenant", delay: 2000 },
-    { text: "Partage cette belle lumière", delay: 2000 },
-    { text: "Vers la vie qui ne finit jamais", delay: 2000 },
-    { text: "Garde l'amour dans ton cœur", delay: 3000 },
-    { text: "Comme un trésor précieux", delay: 3000 }
-  ];
+  const creditLines = t('endCredits.lines');
 
   useEffect(() => {
     if (currentLine < creditLines.length) {
@@ -126,22 +100,22 @@ const EndCredits = ({ onComplete }) => {
         <div className="fixed inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 flex flex-col items-center justify-center animate-pulse z-[60]">
           <div className="text-center transform animate-bounce">
             <div className="text-2xl font-black text-white mb-3 drop-shadow-2xl">
-              BRAVO !
+              {t('endCredits.finalMessages.congratulations')}
             </div>
             <div className="text-lg font-bold text-white mb-3 drop-shadow-lg">
-              ON EST FIER DE TOI
+              {t('endCredits.finalMessages.proud')}
             </div>
             <div className="text-base font-semibold text-white mb-4 drop-shadow-lg">
-              COURAGE VALEUREUX
+              {t('endCredits.finalMessages.courage')}
             </div>
             <div className="text-base font-medium text-white mb-4 drop-shadow-md">
-              PORTEUR DE PAIX
+              {t('endCredits.finalMessages.peace')}
             </div>
             <div className="text-base font-medium text-white mb-6 drop-shadow-md">
-              ENFANT DE DIEU
+              {t('endCredits.finalMessages.child')}
             </div>
             <div className="text-lg font-bold text-white animate-pulse drop-shadow-xl">
-              QUE DIEU TE BÉNISSE
+              {t('endCredits.finalMessages.blessing')}
             </div>
           </div>
           
@@ -156,7 +130,7 @@ const EndCredits = ({ onComplete }) => {
             }}
             className="mt-8 px-6 py-3 bg-white text-purple-900 rounded-full font-bold text-base shadow-2xl hover:bg-yellow-100 transition-all transform hover:scale-110 active:scale-95 cursor-pointer relative z-[70]"
           >
-            Continuer
+            {t('endCredits.finalMessages.continue')}
           </button>
         </div>
       )}

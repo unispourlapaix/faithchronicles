@@ -1,0 +1,556 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Kiswahili (Swahili Union Version)
+// ============================================================================
+// Chapitre 9
+
+export const johnChapter9SW = {
+  chapter: 9,
+  title: "Jean 9",
+  version: "Swahili Union Version",
+  language: "sw",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Alipopita, akaona mtu aliyekuwa kipofu tangu kuzaliwa kwake.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 26,
+                  "end": 31
+            },
+            {
+                  "text": "naissance",
+                  "strong": "G36",
+                  "start": 43,
+                  "end": 52
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Wanafunzi wake wakamwuliza, wakisema, Rabi, ni nani aliyetenda dhambi, huyu au wazazi wake, hata azaliwe kipofu?",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 25,
+                  "end": 30
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 65,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Yesu akajibu, Si huyu aliyetenda dhambi, wala wazazi wake; bali ni ili matendo ya Mungu yadhihirishwe ndani yake.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 99,
+                  "end": 103
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Ni lazima tuyatende matendo yake yeye aliyenituma, mchana ungalipo; usiku unakuja, ambapo hakuna mtu awezaye kufanya kazi.",
+    "strong": [
+{
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "nuit",
+                  "strong": "G3571",
+                  "start": 84,
+                  "end": 88
+            },
+            {
+                  "text": "personne",
+                  "strong": "G3762",
+                  "start": 99,
+                  "end": 107
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Ninapokuwa ulimwenguni, mimi ni nuru ya ulimwengu.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 20,
+                  "end": 24
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 28,
+                  "end": 33
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 57,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Aliposema hayo, alitemea mate ardhini, akafanya tope kwa mate, akampaka yule kipofu macho yale tope,",
+    "strong": [
+{
+                  "text": "avoir",
+                  "strong": "G1372",
+                  "start": 6,
+                  "end": 11
+            },
+            {
+                  "text": "terre",
+                  "strong": "H776",
+                  "start": 34,
+                  "end": 39
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 59,
+                  "end": 63
+            },
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 92,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "akamwambia, Nenda, ukaoge katika bwawa la Siloamu (yaani, Aliyetumwa). Basi akaenda, akaoga, akarudi, naye anaona.",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "Basi jirani, na wale waliokuwa wamemwona hapo awali ya kuwa alikuwa kipofu, wakasema, Si huyu aliyekuwa ameketi akiomba?",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 51,
+                  "end": 56
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Wengine wakasema, Ndiye huyu; wengine wakasema, Anafanana naye; lakini yeye alisema, Mimi ndimi.",
+    "strong": []
+  },
+  {
+    "number": 10,
+    "text": "Basi wakamwambia, Macho yako yalifunguliwaje?",
+    "strong": []
+  },
+  {
+    "number": 11,
+    "text": "Akajibu, Mtu aitwaye Yesu alifanya tope, akanipaka macho, akaniambia, Nenda Siloamu, ukaoge. Basi nikaenda, nikaoga, nikapata kuona.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "oint",
+                  "strong": "G5547",
+                  "start": 62,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Wakamwambia, Yuko wapi? Akasema, Sijui.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 27,
+                  "end": 32
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Wakamwelekeza kwa Mafarisayo, yule aliyekuwa kipofu hapo awali.",
+    "strong": []
+  },
+  {
+    "number": 14,
+    "text": "Siku ile Yesu aliyofanya tope na kuyafungua macho yake ilikuwa Sabato.",
+    "strong": [
+{
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 15,
+                  "end": 19
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Basi Mafarisayo nao wakamwuliza tena aliwezaje kuona. Akawaambia, Alitia tope machoni pangu; nikaoga, naona.",
+    "strong": [
+{
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 3,
+                  "end": 10
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Basi wengine wa Mafarisayo wakasema, Mtu huyu si wa Mungu, kwa sababu haitunzi Sabato. Wengine wakasema, Mtu mwenye dhambi awezaje kutenda ishara kama hizi? Kukawa na mgawanyiko katikati yao.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 49,
+                  "end": 54
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 71,
+                  "end": 75
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 137,
+                  "end": 142
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 159,
+                  "end": 164
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Wakamwambia tena yule aliyekuwa kipofu, Wewe wamwambiani huyo, kwa kuwa amekufungua macho? Akasema, Ni nabii.",
+    "strong": []
+  },
+  {
+    "number": 18,
+    "text": "Basi Wayahudi hawakusadiki habari zake, ya kuwa alikuwa kipofu, naye aliponya, mpaka walipowaita wazazi wa yule aliyeponya,",
+    "strong": []
+  },
+  {
+    "number": 19,
+    "text": "wakawauliza, wakisema, Huyu ni mwanenu, msemaye ya kuwa alizaliwa kipofu? Basi aliponaje sasa?",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 50,
+                  "end": 54
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Wazazi wake wakawajibu, wakasema, Tunajua ya kuwa huyu ni mwana wetu, na ya kuwa alizaliwa kipofu;",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 53,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "lakini jinsi anavyoona sasa, hatujui; au ni nani aliyefungua macho yake, sisi hatujui; mwulizeni yeye; ana umri wake; atasema habari zake mwenyewe.",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "Wazazi wake wakasema hayo, kwa sababu waliwaogopaWayahudi; maana Wayahudi walikwisha kupatana, ya kuwa mtu yeyote akimkiri yeye kuwa ni Kristo, afukuzwe nje ya sinagogi.",
+    "strong": [
+{
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 142,
+                  "end": 148
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Kwa sababu hiyo wazazi wake wakasema, Ana umri wake; mwulizeni yeye.",
+    "strong": []
+  },
+  {
+    "number": 24,
+    "text": "Basi wakamwita mara ya pili yule mtu aliyekuwa kipofu, wakamwambia, Mpe Mungu utukufu; sisi tunajua ya kuwa mtu huyu ni mwenye dhambi.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 108,
+                  "end": 112
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 134,
+                  "end": 139
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Basi akajibu, Kama yeye ni mwenye dhambi, sijui; kitu kimoja najua, ya kuwa nilikuwa kipofu, sasa naona.",
+    "strong": []
+  },
+  {
+    "number": 26,
+    "text": "Wakamwambia tena, Alikufanyaje? Alifunguaje macho yako?",
+    "strong": []
+  },
+  {
+    "number": 27,
+    "text": "Akawajibu, Nimekwisha kuwaambia, nanyi hamkusikia; mnataka kusikia tena kwa nini? Je, nanyi mnataka kuwa wanafunzi wake?",
+    "strong": [
+{
+                  "text": "devenir",
+                  "strong": "G1096",
+                  "start": 126,
+                  "end": 133
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Wakamtukana, wakasema, Wewe u mwanafunzi wake yeye; bali sisi ni wanafunzi wa Mose.",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 50,
+                  "end": 58
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Sisi tunajua ya kuwa Mungu alinena na Mose; lakini huyu, hatujui atoka wapi.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 16,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "Yule mtu akajibu, akawaambia, Jambo la ajabu ni hili, kwamba ninyi hamjui atoka wapi, naye amenifungua macho.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 4,
+                  "end": 9
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Tunajua ya kuwa Mungu hawasikii wenye dhambi; bali mtu akimcha Mungu, na kufanya mapenzi yake, huyo ndiye asikiaye.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 16,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "Tangu ulimwengu kuanza haikusikilizwa ya kuwa mtu amefungua macho ya kipofu aliyezaliwa.",
+    "strong": [
+{
+                  "text": "dire",
+                  "strong": "H559",
+                  "start": 22,
+                  "end": 26
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Kama mtu huyu asingalikuwa kutoka kwa Mungu, asingeweza kufanya cho chote.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 7,
+                  "end": 12
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 51,
+                  "end": 55
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 56,
+                  "end": 61
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Wakajibu, wakamwambia, Wewe ulizaliwa kabisa katika dhambi, nawe unatufundisha? Wakamfukuza nje.",
+    "strong": [
+{
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Yesu akasikia ya kuwa wamemfukuza nje; naye alipomkuta, akamwambia, Je, wewe wamwamini Mwana wa Mungu?",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 85,
+                  "end": 89
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 93,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "Akajibu, akasema, Ni nani, Bwana, ili nimwamini?",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 28,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Yesu akamwambia, Umemwona, tena ndiye huyo asemaye nawe.",
+    "strong": []
+  },
+  {
+    "number": 38,
+    "text": "Naye akasema, Ninaamini, Bwana; akamsujudia.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 21,
+                  "end": 29
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "Yesu akasema, Mimi nimekuja ulimwenguni huu kwa ajili ya hukumu, ili wale wasioona waone, na wale waonawo wafanywe vipofu.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "jugement",
+                  "strong": "G2920",
+                  "start": 51,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Wale Mafarisayo waliokuwa pamoja naye wakasikia maneno hayo, wakamwambia, Je, sisi nasi ni vipofu?",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 32,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Yesu akawaambia, Kama ningalikuwa vipofu, msingalikuwa na dhambi; lakini sasa mnasema, Tunaona; kwa hiyo dhambi yenu inabaki.",
+    "strong": []
+  }
+]
+};
+
+export default johnChapter9SW;

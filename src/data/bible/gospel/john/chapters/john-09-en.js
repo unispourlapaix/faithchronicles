@@ -1,0 +1,587 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 9
+
+export const johnChapter9EN = {
+  chapter: 9,
+  title: "Jean 9",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "As he passed by, he saw a man blind from birth.",
+    "strong": [
+            {
+                  "text": "birth",
+                  "strong": "G36",
+                  "start": 41,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "His disciples asked him, \"Rabbi, who sinned, this man or his parents, that he was born blind?\"",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 25,
+                  "end": 30
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 65,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Jesus answered, \"Neither did this man sin, nor his parents; but, that the works of God might be revealed in him.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 99,
+                  "end": 103
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "I must work the works of him who sent me, while it is day. The night is coming, when no one can work.",
+    "strong": [
+            {
+                  "text": "work",
+                  "strong": "G2041",
+                  "start": 7,
+                  "end": 11
+            },
+            {
+                  "text": "night",
+                  "strong": "G3571",
+                  "start": 63,
+                  "end": 68
+            },
+            {
+                  "text": "work",
+                  "strong": "G2041",
+                  "start": 96,
+                  "end": 100
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "While I am in the world, I am the light of the world.\"",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 20,
+                  "end": 24
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 28,
+                  "end": 33
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 57,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "When he had said this, he spat on the ground, made mud with the saliva, anointed the blind man's eyes with the mud,",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 17,
+                  "end": 21
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 55,
+                  "end": 59
+            },
+            {
+                  "text": "anointed",
+                  "strong": "G5547",
+                  "start": 72,
+                  "end": 80
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 102,
+                  "end": 106
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "and said to him, \"Go, wash in the pool of Siloam\" (which means \"Sent\"). So he went away, washed, and came back seeing.",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "The neighbors therefore, and those who saw that he was blind before, said, \"Isn't this he who sat and begged?\"",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 51,
+                  "end": 56
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Others were saying, \"It is he.\" Still others were saying, \"He looks like him.\" He said, \"I am he.\"",
+    "strong": []
+  },
+  {
+    "number": 10,
+    "text": "They therefore were asking him, \"How were your eyes opened?\"",
+    "strong": []
+  },
+  {
+    "number": 11,
+    "text": "He answered, \"A man called Jesus made mud, anointed my eyes, and said to me, 'Go to the pool of Siloam, and wash.' So I went away and washed, and I received sight.\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "oint",
+                  "strong": "G5547",
+                  "start": 62,
+                  "end": 66
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Then they asked him, \"Where is he?\" He said, \"I don't know.\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 27,
+                  "end": 32
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "They brought him who had been blind to the Pharisees.",
+    "strong": []
+  },
+  {
+    "number": 14,
+    "text": "It was a Sabbath when Jesus made the mud and opened his eyes.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 22,
+                  "end": 27
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Again therefore the Pharisees also asked him how he received his sight. He said to them, \"He put mud on my eyes, I washed, and I see.\"",
+    "strong": [
+{
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 3,
+                  "end": 10
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Some therefore of the Pharisees said, \"This man is not from God, because he doesn't keep the Sabbath.\" Others said, \"How can a man who is a sinner do such signs?\" There was division among them.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 49,
+                  "end": 54
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 71,
+                  "end": 75
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 137,
+                  "end": 142
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 159,
+                  "end": 164
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Therefore they asked the blind man again, \"What do you say about him, because he opened your eyes?\" He said, \"He is a prophet.\"",
+    "strong": []
+  },
+  {
+    "number": 18,
+    "text": "The Jews therefore did not believe concerning him, that he had been blind, and had received his sight, until they called the parents of him who had received his sight,",
+    "strong": [
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 27,
+                  "end": 34
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 51,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "and asked them, \"Is this your son, who you say was born blind? How then does he now see?\"",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 50,
+                  "end": 54
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "His parents answered them, \"We know that this is our son, and that he was born blind;",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 53,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "but how he now sees, we don't know; or who opened his eyes, we don't know. He is of age. Ask him. He will speak for himself.\"",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "His parents said these things because they feared the Jews; for the Jews had already agreed that if any man would confess him as Christ, he would be put out of the synagogue.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 17,
+                  "end": 22
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 92,
+                  "end": 96
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 129,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Therefore his parents said, \"He is of age. Ask him.\"",
+    "strong": []
+  },
+  {
+    "number": 24,
+    "text": "So they called the man who was blind a second time, and said to him, \"Give glory to God. We know that this man is a sinner.\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 108,
+                  "end": 112
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 134,
+                  "end": 139
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "He therefore answered, \"I don't know if he is a sinner. One thing I do know: that though I was blind, now I see.\"",
+    "strong": []
+  },
+  {
+    "number": 26,
+    "text": "They said to him again, \"What did he do to you? How did he open your eyes?\"",
+    "strong": []
+  },
+  {
+    "number": 27,
+    "text": "He answered them, \"I told you already, and you didn't listen. Why do you want to hear it again? You don't also want to become his disciples, do you?\"",
+    "strong": [
+{
+                  "text": "devenir",
+                  "strong": "G1096",
+                  "start": 126,
+                  "end": 133
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "They insulted him and said, \"You are his disciple, but we are disciples of Moses.",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 50,
+                  "end": 58
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "We know that God has spoken to Moses. But as for this man, we don't know where he comes from.\"",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 16,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "The man answered them, \"How amazing! You don't know where he comes from, yet he opened my eyes.",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 4,
+                  "end": 9
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "We know that God doesn't listen to sinners, but if anyone is a worshiper of God, and does his will, he listens to him.",
+    "strong": [
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 3,
+                  "end": 7
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 8,
+                  "end": 12
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "Since the world began it has never been heard of that anyone opened the eyes of someone born blind.",
+    "strong": [
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 10,
+                  "end": 15
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 49,
+                  "end": 53
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "If this man were not from God, he could do nothing.\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 7,
+                  "end": 12
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 51,
+                  "end": 55
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 56,
+                  "end": 61
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "They answered him, \"You were altogether born in sins, and do you teach us?\" Then they threw him out.",
+    "strong": [
+{
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Jesus heard that they had thrown him out, and finding him, he said, \"Do you believe in the Son of God?\"",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 85,
+                  "end": 89
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 93,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "He answered, \"Who is he, Lord, that I may believe in him?\"",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 28,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Jesus said to him, \"You have both seen him, and it is he who speaks with you.\"",
+    "strong": []
+  },
+  {
+    "number": 38,
+    "text": "He said, \"Lord, I believe!\" and he worshiped him.",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 21,
+                  "end": 29
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "Jesus said, \"I came into this world for judgment, that those who don't see may see; and that those who see may become blind.\"",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "jugement",
+                  "strong": "G2920",
+                  "start": 51,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Those of the Pharisees who were with him heard these things, and said to him, \"Are we also blind?\"",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 32,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Jesus said to them, \"If you were blind, you would have no sin; but now you say, 'We see.' Therefore your sin remains.",
+    "strong": []
+  }
+]
+};
+
+export default johnChapter9EN;

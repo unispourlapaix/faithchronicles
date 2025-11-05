@@ -1,0 +1,561 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Español (Reina-Valera 1909)
+// ============================================================================
+// Chapitre 17
+
+export const johnChapter17ES = {
+  chapter: 17,
+  title: "Jean 17",
+  version: "Reina-Valera 1909",
+  language: "es",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Estas cosas habló Jesús, y levantados los ojos al cielo, dijo: Padre, la hora es llegada; glorifica á tu Hijo, para que también tu Hijo te glorifique á ti;",
+    "strong": [
+            {
+                  "text": "cielo",
+                  "strong": "H8064",
+                  "start": 50,
+                  "end": 55
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 63,
+                  "end": 68
+            },
+            {
+                  "text": "Hijo",
+                  "strong": "G5207",
+                  "start": 105,
+                  "end": 109
+            },
+            {
+                  "text": "Hijo",
+                  "strong": "G5207",
+                  "start": 131,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Como le has dado la potestad de toda carne, para que dé vida eterna á todos los que le diste.",
+    "strong": [
+            {
+                  "text": "Como",
+                  "strong": "G2531",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "carne",
+                  "strong": "G4561",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "vida",
+                  "strong": "G2222",
+                  "start": 56,
+                  "end": 60
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Esta empero es la vida eterna: que te conozcan el solo Dios verdadero, y á Jesucristo, al cual has enviado.",
+    "strong": [
+            {
+                  "text": "Esta",
+                  "strong": "G3778",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "vida",
+                  "strong": "G2222",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "Dios",
+                  "strong": "G2316",
+                  "start": 55,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Yo te he glorificado en la tierra: he acabado la obra que me diste que hiciese.",
+    "strong": [
+            {
+                  "text": "tierra",
+                  "strong": "H776",
+                  "start": 27,
+                  "end": 33
+            },
+            {
+                  "text": "obra",
+                  "strong": "G2041",
+                  "start": 49,
+                  "end": 53
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Ahora pues, Padre, glorifícame tú cerca de ti mismo con aquella gloria que tuve cerca de ti antes que el mundo fuese.",
+    "strong": [
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 12,
+                  "end": 17
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 105,
+                  "end": 110
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "He manifestado tu nombre á los hombres que del mundo me diste: tuyos eran, y me los diste, y guardaron tu palabra.",
+    "strong": [
+            {
+                  "text": "nombre",
+                  "strong": "G3686",
+                  "start": 18,
+                  "end": 24
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 47,
+                  "end": 52
+            },
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 106,
+                  "end": 113
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Ahora han conocido que todas las cosas que me diste, son de ti;",
+    "strong": [
+{
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 29,
+                  "end": 33
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Porque las palabras que me diste, les he dado; y ellos las recibieron, y han conocido verdaderamente que salí de ti, y han creído que tú me enviaste.",
+    "strong": []
+  },
+  {
+    "number": 9,
+    "text": "Yo ruego por ellos: no ruego por el mundo, sino por los que me diste; porque tuyos son:",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 36,
+                  "end": 41
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Y todas mis cosas son tus cosas, y tus cosas son mis cosas: y he sido glorificado en ellas.",
+    "strong": [
+{
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 3,
+                  "end": 7
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Y ya no estoy en el mundo; mas éstos están en el mundo, y yo á ti vengo. Padre santo, á los que me has dado, guárdalos por tu nombre, para que sean una cosa, como también nosotros.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 49,
+                  "end": 54
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 73,
+                  "end": 78
+            },
+            {
+                  "text": "nombre",
+                  "strong": "G3686",
+                  "start": 126,
+                  "end": 132
+            },
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 158,
+                  "end": 162
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Cuando estaba con ellos en el mundo, yo los guardaba en tu nombre; á los que me diste, yo los guardé, y ninguno de ellos se perdió, sino el hijo de perdición; para que la Escritura se cumpliese.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 30,
+                  "end": 35
+            },
+            {
+                  "text": "nombre",
+                  "strong": "G3686",
+                  "start": 59,
+                  "end": 65
+            },
+            {
+                  "text": "ninguno",
+                  "strong": "G3762",
+                  "start": 104,
+                  "end": 111
+            },
+            {
+                  "text": "hijo",
+                  "strong": "G5207",
+                  "start": 140,
+                  "end": 144
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Mas ahora vengo á ti; y hablo esto en el mundo, para que tengan mi gozo cumplido en sí mismos.",
+    "strong": [
+            {
+                  "text": "esto",
+                  "strong": "G3778",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 41,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Yo les he dado tu palabra; y el mundo los aborreció, porque no son del mundo, como tampoco yo soy del mundo.",
+    "strong": [
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 18,
+                  "end": 25
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 71,
+                  "end": 76
+            },
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 78,
+                  "end": 82
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 102,
+                  "end": 107
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "No ruego que los quites del mundo, sino que los guardes del mal.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 28,
+                  "end": 33
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "No son del mundo, como tampoco yo soy del mundo.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 11,
+                  "end": 16
+            },
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 42,
+                  "end": 47
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Santifícalos en tu verdad: tu palabra es verdad.",
+    "strong": [
+            {
+                  "text": "verdad",
+                  "strong": "G225",
+                  "start": 19,
+                  "end": 25
+            },
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 30,
+                  "end": 37
+            },
+            {
+                  "text": "verdad",
+                  "strong": "G225",
+                  "start": 41,
+                  "end": 47
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Como tú me enviaste al mundo, también los he enviado al mundo.",
+    "strong": [
+            {
+                  "text": "Como",
+                  "strong": "G2531",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 23,
+                  "end": 28
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 56,
+                  "end": 61
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Y por ellos yo me santifico á mí mismo, para que también ellos sean santificados en verdad.",
+    "strong": [
+            {
+                  "text": "verdad",
+                  "strong": "G225",
+                  "start": 84,
+                  "end": 90
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Mas no ruego solamente por éstos, sino también por los que han de creer en mí por la palabra de ellos.",
+    "strong": [
+            {
+                  "text": "creer",
+                  "strong": "G4100",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "palabra",
+                  "strong": "G3056",
+                  "start": 85,
+                  "end": 92
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Para que todos sean una cosa; como tú, oh Padre, en mí, y yo en ti, que también ellos sean en nosotros una cosa: para que el mundo crea que tú me enviaste.",
+    "strong": [
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 42,
+                  "end": 47
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 125,
+                  "end": 130
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Y yo, la gloria que me diste les he dado; para que sean una cosa, como también nosotros somos una cosa.",
+    "strong": [
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 66,
+                  "end": 70
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Yo en ellos, y tú en mí, para que sean consumadamente una cosa; que el mundo conozca que tú me enviaste, y que los has amado, como también á mí me has amado.",
+    "strong": [
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 71,
+                  "end": 76
+            },
+            {
+                  "text": "amado",
+                  "strong": "G27",
+                  "start": 119,
+                  "end": 124
+            },
+            {
+                  "text": "como",
+                  "strong": "G2531",
+                  "start": 126,
+                  "end": 130
+            },
+            {
+                  "text": "amado",
+                  "strong": "G27",
+                  "start": 151,
+                  "end": 156
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Padre, aquellos que me has dado, quiero que donde yo estoy, ellos estén también conmigo; para que vean mi gloria que me has dado: por cuanto me has amado desde antes de la constitución del mundo.",
+    "strong": [
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "amado",
+                  "strong": "G27",
+                  "start": 148,
+                  "end": 153
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 189,
+                  "end": 194
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Padre justo, el mundo no te ha conocido, mas yo te he conocido; y éstos han conocido que tú me enviaste;",
+    "strong": [
+            {
+                  "text": "Padre",
+                  "strong": "G3962",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 16,
+                  "end": 21
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "Y yo les he manifestado tu nombre, y manifestaré lo aún; para que el amor con que me has amado, esté en ellos, y yo en ellos.",
+    "strong": [
+            {
+                  "text": "nombre",
+                  "strong": "G3686",
+                  "start": 27,
+                  "end": 33
+            },
+            {
+                  "text": "amor",
+                  "strong": "G25",
+                  "start": 69,
+                  "end": 73
+            },
+            {
+                  "text": "amado",
+                  "strong": "G27",
+                  "start": 89,
+                  "end": 94
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter17ES;

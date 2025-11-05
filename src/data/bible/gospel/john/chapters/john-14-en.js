@@ -1,0 +1,812 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 14
+
+export const johnChapter14EN = {
+  chapter: 14,
+  title: "Jean 14",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "\"Don't let your heart be troubled. Believe in God. Believe also in me.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 46,
+                  "end": 50
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "In my Father's house are many homes. If it weren't so, I would have told you. I am going to prepare a place for you.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 6,
+                  "end": 12
+            },
+            {
+                  "text": "house",
+                  "strong": "H1004",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "many",
+                  "strong": "G4183",
+                  "start": 25,
+                  "end": 29
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 63,
+                  "end": 67
+            },
+            {
+                  "text": "place",
+                  "strong": "G5087",
+                  "start": 102,
+                  "end": 107
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "If I go and prepare a place for you, I will come again, and will receive you to myself; that where I am, you may be there also.",
+    "strong": [
+            {
+                  "text": "place",
+                  "strong": "G5087",
+                  "start": 22,
+                  "end": 27
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 44,
+                  "end": 48
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 65,
+                  "end": 72
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 88,
+                  "end": 92
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Where I go, you know, and you know the way.\"",
+    "strong": [
+{
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 43,
+                  "end": 49
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Thomas said to him, \"Lord, we don't know where you are going. How can we know the way?\"",
+    "strong": [
+{
+                  "text": "Thomas",
+                  "strong": "G2381",
+                  "start": 0,
+                  "end": 6
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 16,
+                  "end": 24
+            },
+            {
+                  "text": "savoir",
+                  "strong": "G1097",
+                  "start": 76,
+                  "end": 82
+            },
+            {
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 86,
+                  "end": 92
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Jesus said to him, \"I am the way, the truth, and the life. No one comes to the Father, except through me.",
+    "strong": [
+{
+                  "text": "chemin",
+                  "strong": "G3598",
+                  "start": 26,
+                  "end": 32
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "If you had known me, you would have known my Father also. From now on, you know him, and have seen him.\"",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "Philip said to him, \"Lord, show us the Father, and that will be enough for us.\"",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 0,
+                  "end": 8
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 18,
+                  "end": 26
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Jesus said to him, \"Have I been with you such a long time, and do you not know me, Philip? He who has seen me has seen the Father. How do you say, 'Show us the Father?'",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 83,
+                  "end": 91
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Don't you believe that I am in the Father, and the Father in me? The words that I tell you, I speak not from myself; but the Father who lives in me does his works.",
+    "strong": [
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 10,
+                  "end": 17
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 35,
+                  "end": 41
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 51,
+                  "end": 57
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 75,
+                  "end": 79
+            },
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 94,
+                  "end": 99
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 125,
+                  "end": 131
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Believe me that I am in the Father, and the Father in me; or else believe me for the very works' sake.",
+    "strong": [
+            {
+                  "text": "Believe",
+                  "strong": "G4100",
+                  "start": 0,
+                  "end": 7
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 11,
+                  "end": 15
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 28,
+                  "end": 34
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 44,
+                  "end": 50
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 66,
+                  "end": 73
+            },
+            {
+                  "text": "very",
+                  "strong": "H3966",
+                  "start": 85,
+                  "end": 89
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Most certainly I tell you, he who believes in me, the works that I do, he will do also; and he will do greater works than these, because I am going to my Father.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 60,
+                  "end": 64
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 122,
+                  "end": 127
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 154,
+                  "end": 160
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Whatever you will ask in my name, that will I do, that the Father may be glorified in the Son.",
+    "strong": [
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 28,
+                  "end": 32
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 34,
+                  "end": 38
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 50,
+                  "end": 54
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 59,
+                  "end": 65
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "If you will ask anything in my name, I will do it.",
+    "strong": [
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 31,
+                  "end": 35
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "If you love me, keep my commandments.",
+    "strong": [
+            {
+                  "text": "love",
+                  "strong": "G25",
+                  "start": 7,
+                  "end": 11
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "I will pray to the Father, and he will give you another Counselor, that he may be with you forever,—",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 19,
+                  "end": 25
+            },
+            {
+                  "text": "give",
+                  "strong": "G1325",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 67,
+                  "end": 71
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 82,
+                  "end": 86
+            },
+            {
+                  "text": "forever",
+                  "strong": "H5769",
+                  "start": 91,
+                  "end": 98
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "the Spirit of truth, whom the world can't receive; for it doesn't see him, neither knows him. You know him, for he lives with you, and will be in you.",
+    "strong": [
+            {
+                  "text": "Spirit",
+                  "strong": "G4151",
+                  "start": 4,
+                  "end": 10
+            },
+            {
+                  "text": "truth",
+                  "strong": "G225",
+                  "start": 14,
+                  "end": 19
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 30,
+                  "end": 35
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 42,
+                  "end": 49
+            },
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 98,
+                  "end": 102
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 121,
+                  "end": 125
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "I will not leave you orphans. I will come to you.",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 37,
+                  "end": 41
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Yet a little while, and the world will see me no more; but you will see me. Because I live, you will live also.",
+    "strong": [
+            {
+                  "text": "little",
+                  "strong": "G5040",
+                  "start": 6,
+                  "end": 12
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 28,
+                  "end": 33
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "In that day you will know that I am in my Father, and you in me, and I in you.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 3,
+                  "end": 7
+            },
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 21,
+                  "end": 25
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 42,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "One who has my commandments, and keeps them, that person is one who loves me. One who loves me will be loved by my Father, and I will love him, and will reveal myself to him.\"",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "Judas (not Iscariot) said to him, \"Lord, what has happened that you are about to reveal yourself to us, and not to the world?\"",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 35,
+                  "end": 43
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 100,
+                  "end": 105
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Jesus answered him, \"If a man loves me, he will keep my word. My Father will love him, and we will come to him, and make our home with him.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 55,
+                  "end": 61
+            },
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 128,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "He who doesn't love me doesn't keep my words. The word which you hear isn't mine, but the Father's who sent me.",
+    "strong": [
+            {
+                  "text": "love",
+                  "strong": "G25",
+                  "start": 15,
+                  "end": 19
+            },
+            {
+                  "text": "word",
+                  "strong": "G3056",
+                  "start": 50,
+                  "end": 54
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 55,
+                  "end": 60
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 90,
+                  "end": 96
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "I have said these things to you, while still living with you.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 2,
+                  "end": 6
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 12,
+                  "end": 17
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 52,
+                  "end": 56
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "But the Counselor, the Holy Spirit, whom the Father will send in my name, he will teach you all things, and will remind you of all that I said to you.",
+    "strong": [
+            {
+                  "text": "Spirit",
+                  "strong": "G4151",
+                  "start": 28,
+                  "end": 34
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 45,
+                  "end": 51
+            },
+            {
+                  "text": "send",
+                  "strong": "G649",
+                  "start": 57,
+                  "end": 61
+            },
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 68,
+                  "end": 72
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 131,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Peace I leave with you. My peace I give to you; not as the world gives, give I to you. Don't let your heart be troubled, neither let it be fearful.",
+    "strong": [
+            {
+                  "text": "Peace",
+                  "strong": "G1515",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 14,
+                  "end": 18
+            },
+            {
+                  "text": "peace",
+                  "strong": "G1515",
+                  "start": 27,
+                  "end": 32
+            },
+            {
+                  "text": "give",
+                  "strong": "G1325",
+                  "start": 35,
+                  "end": 39
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 59,
+                  "end": 64
+            },
+            {
+                  "text": "give",
+                  "strong": "G1325",
+                  "start": 72,
+                  "end": 76
+            },
+            {
+                  "text": "heart",
+                  "strong": "G2588",
+                  "start": 102,
+                  "end": 107
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "You heard how I told you, 'I go away, and I come to you.' If you loved me, you would have rejoiced, because I said 'I am going to my Father;' for the Father is greater than I.",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 44,
+                  "end": 48
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 85,
+                  "end": 89
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 133,
+                  "end": 139
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 150,
+                  "end": 156
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Now I have told you before it happens so that, when it happens, you may believe.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 6,
+                  "end": 10
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 41,
+                  "end": 45
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 72,
+                  "end": 79
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "I will no more speak much with you, for the prince of the world comes, and he has nothing in me.",
+    "strong": [
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "much",
+                  "strong": "G4183",
+                  "start": 21,
+                  "end": 25
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 58,
+                  "end": 63
+            },
+            {
+                  "text": "nothing",
+                  "strong": "G3762",
+                  "start": 82,
+                  "end": 89
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "But that the world may know that I love the Father, and as the Father commanded me, even so I do. Arise, let us go from here.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 13,
+                  "end": 18
+            },
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 23,
+                  "end": 27
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 28,
+                  "end": 32
+            },
+            {
+                  "text": "love",
+                  "strong": "G25",
+                  "start": 35,
+                  "end": 39
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 44,
+                  "end": 50
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 63,
+                  "end": 69
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter14EN;

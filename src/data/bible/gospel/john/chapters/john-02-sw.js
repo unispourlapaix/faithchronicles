@@ -1,0 +1,299 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Kiswahili (Swahili Union Version)
+// ============================================================================
+// Chapitre 2
+
+export const johnChapter2SW = {
+  chapter: 2,
+  title: "Jean 2",
+  version: "Swahili Union Version",
+  language: "sw",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Siku ya tatu kulikuwa na arusi huko Kana ya Galilaya; mama yake Yesu alikuwako pale.",
+    "strong": []
+  },
+  {
+    "number": 2,
+    "text": "Naye Yesu nao wanafunzi wake nao waliitwa arusini.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 36,
+                  "end": 40
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Divai ilipoisha, mama yake Yesu akamwambia, Hawana divai.",
+    "strong": []
+  },
+  {
+    "number": 4,
+    "text": "Yesu akamwambia, Mama, una nini nami? Saa yangu haijafika bado.",
+    "strong": []
+  },
+  {
+    "number": 5,
+    "text": "Mama yake akawaambia watumishi, Lo lote atakalowaambia, fanyeni.",
+    "strong": []
+  },
+  {
+    "number": 6,
+    "text": "Kulikuwa na mitungi ya mawe sita iliyowekwa pale, sawasawa na utakaso wa Wayahudi, kila moja likichukua vibaba viwili au vitatu.",
+    "strong": [
+{
+                  "text": "deux",
+                  "strong": "G1417",
+                  "start": 97,
+                  "end": 101
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Yesu akawaambia, Ijazeni mitungi hiyo maji. Wakaijaza mpaka juu.",
+    "strong": []
+  },
+  {
+    "number": 8,
+    "text": "Akawaambia, Tekeni sasa, mkampelekee mkuu wa karamu. Wakampelekea.",
+    "strong": []
+  },
+  {
+    "number": 9,
+    "text": "Yule mkuu wa karamu alipoionja ile maji iliyokuwa imekuwa divai (wala hakujua ilitoka wapi; lakini wale watumishi walioteka maji walijua), mkuu wa karamu akamwita bwana arusi,",
+    "strong": [
+{
+                  "text": "bien",
+                  "strong": "H2896",
+                  "start": 158,
+                  "end": 162
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "akamwambia, Kila mtu huweka divai njema kwanza; na divai duni baada ya watu kunywa vizuri; wewe umeiweka njema mpaka sasa.",
+    "strong": [
+{
+                  "text": "Tout",
+                  "strong": "G3956",
+                  "start": 12,
+                  "end": 16
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 17,
+                  "end": 22
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Yohana alisema ishara hii ya kwanza akaifanya huko Kana ya Galilaya, akaufunua utukufu wake; nao wanafunzi wake wakamwamini.",
+    "strong": [
+{
+                  "text": "premier",
+                  "strong": "G4413",
+                  "start": 31,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Baada ya hayo akashuka mpaka Kapernaumu, yeye na mama yake, na ndugu zake, na wanafunzi wake; nao wakakaa pale siku si nyingi.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 38,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "Na Pasaka ya Wayahudi ilikuwa imekaribia, Yesu akapanda kwenda Yerusalemu.",
+    "strong": []
+  },
+  {
+    "number": 14,
+    "text": "Akakuta hekaluni wale wauza ngʼombe na kondoo na njiwa, na wale wabadirishana fedha, wameketi.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 10,
+                  "end": 14
+            },
+            {
+                  "text": "brebis",
+                  "strong": "G4263",
+                  "start": 51,
+                  "end": 57
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "Alipofanya mjeledi wa kamba, akawafukuza wote hekaluni, pamoja na kondoo na ngʼombe; akazimwaga fedha za wabadirishana, na kuzipindua meza zao;",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 20,
+                  "end": 24
+            },
+            {
+                  "text": "brebis",
+                  "strong": "G4263",
+                  "start": 81,
+                  "end": 87
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "akawaambia wale wauza njiwa, Ondoeni vitu hivi; msiifanye nyumba ya Baba yangu nyumba ya biashara.",
+    "strong": [
+{
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 72,
+                  "end": 78
+            },
+            {
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 95,
+                  "end": 101
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Wanafunzi wake wakakumbuka ya kuwa imeandikwa, Wivu wa nyumba yako utanila.",
+    "strong": [
+{
+                  "text": "maison",
+                  "strong": "G3609",
+                  "start": 59,
+                  "end": 65
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "Basi Wayahudi wakajibu, wakamwambia, Je, unatuonyesha ishara gani, kwa kuwa unafanya mambo haya?",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 22,
+                  "end": 28
+            },
+            {
+                  "text": "miracle",
+                  "strong": "G1411",
+                  "start": 47,
+                  "end": 54
+            },
+            {
+                  "text": "agir",
+                  "strong": "G4160",
+                  "start": 77,
+                  "end": 81
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Yesu akawajibu, akawaambia, Bomoeni hekalu hili, nami nitalijenga kwa siku tatu.",
+    "strong": []
+  },
+  {
+    "number": 20,
+    "text": "Wayahudi wakasema, Hekalu hili lilijengwa kwa miaka arobaini na sita, nawe utalijenga kwa siku tatu?",
+    "strong": []
+  },
+  {
+    "number": 21,
+    "text": "Bali yeye alinena habari ya hekalu la mwili wake.",
+    "strong": [
+{
+                  "text": "corps",
+                  "strong": "G4561",
+                  "start": 33,
+                  "end": 38
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Basi alipofufuliwa katika wafu, wanafunzi wake wakakumbuka ya kuwa alikuwa amesema hayo; wakasadiki maandiko, na neno alilonena Yesu.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 138,
+                  "end": 144
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Alipokuwa Yerusalemu katika sikukuu ya Pasaka, wengi wakaamini jina lake, walipoyaona ishara zake alizozifanya.",
+    "strong": []
+  },
+  {
+    "number": 24,
+    "text": "Lakini Yesu mwenyewe hakuwaamini wao, kwa sababu aliwajua watu wote,",
+    "strong": []
+  },
+  {
+    "number": 25,
+    "text": "wala hakuhitaji mtu yeyote ashuhudie habari za mtu; kwa maana yeye mwenyewe alijua yaliomo ndani ya mtu.",
+    "strong": [
+{
+                  "text": "besoin",
+                  "strong": "H2637",
+                  "start": 27,
+                  "end": 33
+            },
+            {
+                  "text": "aucun",
+                  "strong": "G3762",
+                  "start": 64,
+                  "end": 69
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 70,
+                  "end": 75
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 113,
+                  "end": 117
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 120,
+                  "end": 125
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter2SW;

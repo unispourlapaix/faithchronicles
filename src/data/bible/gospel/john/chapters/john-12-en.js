@@ -1,0 +1,1105 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 12
+
+export const johnChapter12EN = {
+  chapter: 12,
+  title: "Jean 12",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Then six days before the Passover, Jesus came to Bethany, where Lazarus was, who had been dead, whom he raised from the dead.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 35,
+                  "end": 40
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "So they made him a supper there. Martha served, but Lazarus was one of those who sat at the table with him.",
+    "strong": [
+            {
+                  "text": "table",
+                  "strong": "H7979",
+                  "start": 92,
+                  "end": 97
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 98,
+                  "end": 102
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Mary, therefore, took a pound of ointment of pure nard, very precious, and anointed the feet of Jesus, and wiped his feet with her hair. The house was filled with the fragrance of the ointment.",
+    "strong": [
+            {
+                  "text": "very",
+                  "strong": "H3966",
+                  "start": 56,
+                  "end": 60
+            },
+            {
+                  "text": "anointed",
+                  "strong": "G5547",
+                  "start": 75,
+                  "end": 83
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 96,
+                  "end": 101
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 122,
+                  "end": 126
+            },
+            {
+                  "text": "house",
+                  "strong": "H1004",
+                  "start": 141,
+                  "end": 146
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 158,
+                  "end": 162
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Then Judas Iscariot, Simon's son, one of his disciples, who would betray him, said,",
+    "strong": [
+{
+                  "text": "fils",
+                  "strong": "G5207",
+                  "start": 37,
+                  "end": 41
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "\"Why wasn't this ointment sold for three hundred denarii, and given to the poor?\"",
+    "strong": [
+{
+                  "text": "donner",
+                  "strong": "G1325",
+                  "start": 68,
+                  "end": 74
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Now he said this, not because he cared for the poor, but because he was a thief, and having the money box, used to steal what was put into it.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 12,
+                  "end": 16
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "But Jesus said, \"Leave her alone. She has kept this for the day of my burial.",
+    "strong": [
+{
+                  "text": "garder",
+                  "strong": "G5432",
+                  "start": 26,
+                  "end": 32
+            },
+            {
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 51,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "For you always have the poor with you, but you don't always have me.\"",
+    "strong": [
+{
+                  "text": "toujours",
+                  "strong": "H5769",
+                  "start": 10,
+                  "end": 18
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 31,
+                  "end": 35
+            },
+            {
+                  "text": "toujours",
+                  "strong": "H5769",
+                  "start": 66,
+                  "end": 74
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "A large crowd therefore of the Jews learned that he was there, and they came, not for Jesus' sake only, but that they might see Lazarus also, whom he had raised from the dead.",
+    "strong": [
+            {
+                  "text": "large",
+                  "strong": "G3173",
+                  "start": 2,
+                  "end": 7
+            },
+            {
+                  "text": "crowd",
+                  "strong": "G3793",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "learned",
+                  "strong": "G4680",
+                  "start": 36,
+                  "end": 43
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 44,
+                  "end": 48
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 86,
+                  "end": 91
+            },
+            {
+                  "text": "only",
+                  "strong": "G3439",
+                  "start": 98,
+                  "end": 102
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 108,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "But the chief priests conspired to put Lazarus to death also,",
+    "strong": [
+            {
+                  "text": "chief",
+                  "strong": "G4413",
+                  "start": 8,
+                  "end": 13
+            },
+            {
+                  "text": "death",
+                  "strong": "H6757",
+                  "start": 50,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "because on account of him many of the Jews went away and believed in Jesus.",
+    "strong": [
+            {
+                  "text": "many",
+                  "strong": "G4183",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 69,
+                  "end": 74
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "On the next day a great multitude had come to the feast. When they heard that Jesus was coming to Jerusalem,",
+    "strong": [
+            {
+                  "text": "great",
+                  "strong": "G3173",
+                  "start": 18,
+                  "end": 23
+            },
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 24,
+                  "end": 33
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 38,
+                  "end": 42
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 73,
+                  "end": 77
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 78,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "they took the branches of the palm trees, and went out to meet him, and cried out, \"Hosanna! Blessed is he who comes in the name of the Lord, the King of Israel!\"",
+    "strong": [
+{
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 120,
+                  "end": 128
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Jesus, having found a young donkey, sat on it. As it is written,",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "\"Don't be afraid, daughter of Zion. Behold, your King comes, sitting on a donkey's colt.\"",
+    "strong": [
+{
+                  "text": "petit",
+                  "strong": "G5040",
+                  "start": 67,
+                  "end": 72
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "His disciples didn't understand these things at first, but when Jesus was glorified, then they remembered that these things were written about him, and that they had done these things to him.",
+    "strong": [
+            {
+                  "text": "understand",
+                  "strong": "G1097",
+                  "start": 21,
+                  "end": 31
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "first",
+                  "strong": "G4413",
+                  "start": 48,
+                  "end": 53
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 64,
+                  "end": 69
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 106,
+                  "end": 110
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 111,
+                  "end": 116
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 152,
+                  "end": 156
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 171,
+                  "end": 176
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "The multitude therefore that was with him when he called Lazarus out of the tomb, and raised him from the dead, was testifying about it.",
+    "strong": [
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 4,
+                  "end": 13
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 24,
+                  "end": 28
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 33,
+                  "end": 37
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "For this cause also the multitude went and met him, because they heard that he had done this sign.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 24,
+                  "end": 33
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 71,
+                  "end": 75
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 88,
+                  "end": 92
+            },
+            {
+                  "text": "sign",
+                  "strong": "G4592",
+                  "start": 93,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "The Pharisees therefore said among themselves, \"See how you accomplish nothing. Behold, the world has gone after him.\"",
+    "strong": [
+{
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 80,
+                  "end": 84
+            },
+            {
+                  "text": "monde",
+                  "strong": "G2889",
+                  "start": 96,
+                  "end": 101
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Now there were certain Greeks among those that went up to worship at the feast.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "These, therefore, came to Philip, who was from Bethsaida of Galilee, and asked him, saying, \"Sir, we want to see Jesus.\"",
+    "strong": [
+{
+                  "text": "Philippe",
+                  "strong": "G5376",
+                  "start": 16,
+                  "end": 24
+            },
+            {
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 65,
+                  "end": 69
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 80,
+                  "end": 88
+            },
+            {
+                  "text": "voir",
+                  "strong": "G1492",
+                  "start": 105,
+                  "end": 109
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "Philip came and told Andrew, and in turn, Andrew came with Philip, and they told Jesus.",
+    "strong": [
+            {
+                  "text": "Philip",
+                  "strong": "G5376",
+                  "start": 0,
+                  "end": 6
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 54,
+                  "end": 58
+            },
+            {
+                  "text": "Philip",
+                  "strong": "G5376",
+                  "start": 59,
+                  "end": 65
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 81,
+                  "end": 86
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Jesus answered them, \"The time has come for the Son of Man to be glorified.",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 45,
+                  "end": 49
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 55,
+                  "end": 60
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Most certainly I tell you, unless a grain of wheat falls into the earth and dies, it remains by itself alone. But if it dies, it bears much fruit.",
+    "strong": [
+            {
+                  "text": "earth",
+                  "strong": "H776",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "much",
+                  "strong": "G4183",
+                  "start": 135,
+                  "end": 139
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "He who loves his life will lose it. He who hates his life in this world will keep it to eternal life.",
+    "strong": [
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 17,
+                  "end": 21
+            },
+            {
+                  "text": "lose",
+                  "strong": "G622",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 53,
+                  "end": 57
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 61,
+                  "end": 65
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "eternal",
+                  "strong": "G166",
+                  "start": 88,
+                  "end": 95
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 96,
+                  "end": 100
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "If anyone serves me, let him follow me. Where I am, there will my servant also be. If anyone serves me, the Father will honor him.",
+    "strong": [
+            {
+                  "text": "servant",
+                  "strong": "G1401",
+                  "start": 66,
+                  "end": 73
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 108,
+                  "end": 114
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "\"Now my soul is troubled. What shall I say? 'Father, save me from this time?' But for this cause I came to this time.",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 75,
+                  "end": 80
+            },
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 137,
+                  "end": 142
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Father, glorify your name!\" Then there came a voice out of the sky, saying, \"I have both glorified it, and will glorify it again.\"",
+    "strong": [
+{
+                  "text": "ciel",
+                  "strong": "H8064",
+                  "start": 44,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "The multitude therefore, who stood by and heard it, said that it had thundered. Others said, \"An angel has spoken to him.\"",
+    "strong": [
+{
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 3,
+                  "end": 8
+            },
+            {
+                  "text": "ange",
+                  "strong": "G32",
+                  "start": 99,
+                  "end": 103
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "Jesus answered, \"This voice hasn't come for my sake, but for your sakes.",
+    "strong": [
+{
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 43,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Now is the judgment of this world. Now the prince of this world will be cast out.",
+    "strong": [
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 11,
+                  "end": 19
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 23,
+                  "end": 27
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 28,
+                  "end": 33
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 53,
+                  "end": 57
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 58,
+                  "end": 63
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "And I, if I am lifted up from the earth, will draw all people to myself.\"",
+    "strong": [
+{
+                  "text": "terre",
+                  "strong": "H776",
+                  "start": 38,
+                  "end": 43
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "But he said this, signifying by what kind of death he should die.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 12,
+                  "end": 16
+            },
+            {
+                  "text": "death",
+                  "strong": "H6757",
+                  "start": 45,
+                  "end": 50
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "The multitude answered him, \"We have heard out of the law that the Christ remains forever. How do you say, 'The Son of Man must be lifted up?' Who is this Son of Man?\"",
+    "strong": [
+{
+                  "text": "foule",
+                  "strong": "G3793",
+                  "start": 3,
+                  "end": 8
+            },
+            {
+                  "text": "Christ",
+                  "strong": "G5547",
+                  "start": 59,
+                  "end": 65
+            },
+            {
+                  "text": "demeure",
+                  "strong": "H1004",
+                  "start": 66,
+                  "end": 73
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 125,
+                  "end": 129
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 135,
+                  "end": 140
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 164,
+                  "end": 168
+            },
+            {
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 174,
+                  "end": 179
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Jesus therefore said to them, \"Yet a little while the light is with you. Walk while you have the light, that darkness doesn't overtake you. He who walks in the darkness doesn't know where he is going.",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 187,
+                  "end": 191
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "While you have the light, believe in the light, that you may become children of light.\" Jesus said these things, and he departed and hid himself from them.",
+    "strong": []
+  },
+  {
+    "number": 37,
+    "text": "But though he had done so many signs before them, yet they didn't believe in him,",
+    "strong": [
+            {
+                  "text": "many",
+                  "strong": "G4183",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 66,
+                  "end": 73
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "that the word of Isaiah the prophet might be fulfilled, which he spoke, \"Lord, who has believed our report? To whom has the arm of the Lord been revealed?\"",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 24,
+                  "end": 30
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 67,
+                  "end": 75
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 128,
+                  "end": 136
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "For this cause they couldn't believe, for Isaiah said again,",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 29,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "\"He has blinded their eyes and he hardened their heart, lest they should see with their eyes, and perceive with their heart, and would turn, and I would heal them.\"",
+    "strong": [
+{
+                  "text": "peur",
+                  "strong": "H3372",
+                  "start": 55,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "Isaiah said these things when he saw his glory, and spoke of him.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 12,
+                  "end": 17
+            },
+            {
+                  "text": "glory",
+                  "strong": "G2744",
+                  "start": 41,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 42,
+    "text": "Nevertheless even of the rulers many believed in him, but because of the Pharisees they didn't confess it, so that they wouldn't be put out of the synagogue,",
+    "strong": [
+            {
+                  "text": "many",
+                  "strong": "G4183",
+                  "start": 32,
+                  "end": 36
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 110,
+                  "end": 114
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "for they loved men's praise more than God's praise.",
+    "strong": [
+{
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 60,
+                  "end": 64
+            }
+      ]
+  },
+  {
+    "number": 44,
+    "text": "Jesus cried out and said, \"Whoever believes in me, believes not in me, but in him who sent me.",
+    "strong": []
+  },
+  {
+    "number": 45,
+    "text": "He who sees me sees him who sent me.",
+    "strong": []
+  },
+  {
+    "number": 46,
+    "text": "I have come as a light into the world, that whoever believes in me may not remain in the darkness.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 2,
+                  "end": 6
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 7,
+                  "end": 11
+            },
+            {
+                  "text": "light",
+                  "strong": "G5457",
+                  "start": 17,
+                  "end": 22
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 32,
+                  "end": 37
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "darkness",
+                  "strong": "H6757",
+                  "start": 89,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 47,
+    "text": "If anyone listens to my sayings, and doesn't believe, I don't judge him. For I came not to judge the world, but to save the world.",
+    "strong": [
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 45,
+                  "end": 52
+            },
+            {
+                  "text": "judge",
+                  "strong": "G2919",
+                  "start": 62,
+                  "end": 67
+            },
+            {
+                  "text": "judge",
+                  "strong": "G2919",
+                  "start": 91,
+                  "end": 96
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 101,
+                  "end": 106
+            },
+            {
+                  "text": "save",
+                  "strong": "G4982",
+                  "start": 115,
+                  "end": 119
+            },
+            {
+                  "text": "world",
+                  "strong": "G2889",
+                  "start": 124,
+                  "end": 129
+            }
+      ]
+  },
+  {
+    "number": 48,
+    "text": "He who rejects me, and doesn't receive my sayings, has one who judges him. The word that I spoke, the same will judge him in the last day.",
+    "strong": [
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 31,
+                  "end": 38
+            },
+            {
+                  "text": "word",
+                  "strong": "G3056",
+                  "start": 79,
+                  "end": 83
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 84,
+                  "end": 88
+            },
+            {
+                  "text": "judge",
+                  "strong": "G2919",
+                  "start": 112,
+                  "end": 117
+            }
+      ]
+  },
+  {
+    "number": 49,
+    "text": "For I spoke not from myself, but the Father who sent me, he gave me a commandment, what I should say, and what I should speak.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 37,
+                  "end": 43
+            },
+            {
+                  "text": "commandment",
+                  "strong": "G1785",
+                  "start": 70,
+                  "end": 81
+            },
+            {
+                  "text": "speak",
+                  "strong": "H559",
+                  "start": 120,
+                  "end": 125
+            }
+      ]
+  },
+  {
+    "number": 50,
+    "text": "I know that his commandment is eternal life. The things therefore which I speak, even as the Father has said to me, so I speak.\"",
+    "strong": [
+{
+                  "text": "commandement",
+                  "strong": "G1785",
+                  "start": 19,
+                  "end": 31
+            },
+            {
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 103,
+                  "end": 108
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter12EN;

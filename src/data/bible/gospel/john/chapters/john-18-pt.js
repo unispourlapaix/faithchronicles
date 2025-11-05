@@ -1,0 +1,661 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - Português (Almeida 1911)
+// ============================================================================
+// Chapitre 18
+
+export const johnChapter18PT = {
+  chapter: 18,
+  title: "Jean 18",
+  version: "Almeida 1911",
+  language: "pt",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "Tendo Jesus dito isto, saiu com os seus discípulos para além do ribeiro de Cedrom, onde havia um horto, no qual ele entrou e seus discípulos.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 6,
+                  "end": 11
+            },
+            {
+                  "text": "isto",
+                  "strong": "G3778",
+                  "start": 17,
+                  "end": 21
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "E Judas, que o traía, também conhecia aquele lugar, porque Jesus muitas vezes se ajuntava ali com os seus discípulos.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 59,
+                  "end": 64
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "Judas, pois, tendo recebido a coorte e oficiais dos principais sacerdotes e fariseus, veio para ali com lanternas, e archotes e armas.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 123,
+                  "end": 127
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "Sabendo, pois, Jesus todas as coisas que sobre ele haviam de vir, adiantou-se, e disse-lhes: A quem buscais?",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 15,
+                  "end": 20
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "Responderam-lhe: A Jesus Nazareno. Disse-lhes Jesus: Sou eu. E Judas, que o traía, estava com eles.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 19,
+                  "end": 24
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 46,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "Quando, pois, lhes disse: Sou eu, recuaram, e caíram por terra.",
+    "strong": [
+            {
+                  "text": "terra",
+                  "strong": "H776",
+                  "start": 57,
+                  "end": 62
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "Tornou-lhes, pois, a perguntar: A quem buscais? E eles disseram: A Jesus Nazareno.",
+    "strong": [
+            {
+                  "text": "perguntar",
+                  "strong": "G2065",
+                  "start": 21,
+                  "end": 30
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 67,
+                  "end": 72
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Jesus respondeu: Já vos disse que sou eu; se, pois, me buscais a mim, deixai ir estes.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            }
+      ]
+  },
+  {
+    "number": 9,
+    "text": "Para que se cumprisse a palavra que tinha dito: Dos que me deste nenhum deles perdi.",
+    "strong": [
+            {
+                  "text": "palavra",
+                  "strong": "G3056",
+                  "start": 24,
+                  "end": 31
+            },
+            {
+                  "text": "nenhum",
+                  "strong": "G3762",
+                  "start": 65,
+                  "end": 71
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "Então Simão Pedro, que tinha espada, desembainhou-a, e feriu o servo do sumo sacerdote, cortando-lhe a orelha direita. E o nome do servo era Malco.",
+    "strong": [
+            {
+                  "text": "servo",
+                  "strong": "G1401",
+                  "start": 63,
+                  "end": 68
+            },
+            {
+                  "text": "nome",
+                  "strong": "G3686",
+                  "start": 123,
+                  "end": 127
+            },
+            {
+                  "text": "servo",
+                  "strong": "G1401",
+                  "start": 131,
+                  "end": 136
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "Mas Jesus disse a Pedro: Põe a tua espada na bainha; não beberei eu o cálice que o Pai me deu?",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 4,
+                  "end": 9
+            }
+      ]
+  },
+  {
+    "number": 12,
+    "text": "Então a coorte, e o tribuno, e os servos dos judeus prenderam a Jesus, e o maniataram.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 64,
+                  "end": 69
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "E conduziram-no primeiramente a Anás; porque era sogro de Caifás, que era o sumo sacerdote naquele ano.",
+    "strong": [
+{
+                  "text": "beau",
+                  "strong": "G2570",
+                  "start": 52,
+                  "end": 56
+            },
+            {
+                  "text": "cette",
+                  "strong": "G3778",
+                  "start": 107,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "E Caifás era o que tinha aconselhado aos judeus que convinha que um homem morresse pelo povo.",
+    "strong": [
+            {
+                  "text": "homem",
+                  "strong": "G444",
+                  "start": 68,
+                  "end": 73
+            },
+            {
+                  "text": "povo",
+                  "strong": "G1484",
+                  "start": 88,
+                  "end": 92
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "E Simão Pedro e outro discípulo seguiam a Jesus. E este discípulo era conhecido do sumo sacerdote, e entrou com Jesus na sala do sumo sacerdote.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 42,
+                  "end": 47
+            },
+            {
+                  "text": "este",
+                  "strong": "G3778",
+                  "start": 51,
+                  "end": 55
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 112,
+                  "end": 117
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "Mas Pedro estava fora, à porta. Saiu, pois, o outro discípulo que era conhecido do sumo sacerdote, e falou à porteira, e conduziu a Pedro para dentro.",
+    "strong": [
+{
+                  "text": "disciple",
+                  "strong": "G3101",
+                  "start": 51,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "Então a porteira disse a Pedro: Não és tu também dos discípulos deste homem? Disse ele: Não sou.",
+    "strong": [
+            {
+                  "text": "homem",
+                  "strong": "G444",
+                  "start": 70,
+                  "end": 75
+            }
+      ]
+  },
+  {
+    "number": 18,
+    "text": "E estavam ali os servos e os oficiais, que tinham feito brasas, e se aquentavam, porque fazia frio; e com eles estava Pedro, aquentando-se também.",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 144,
+                  "end": 148
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "E o sumo sacerdote interrogou a Jesus acerca dos seus discípulos e da sua doutrina.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 32,
+                  "end": 37
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "Jesus lhe respondeu: Eu falei abertamente ao mundo; eu sempre ensinei na sinagoga e no templo, onde os judeus sempre se ajuntam, e nada disse em oculto.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 0,
+                  "end": 5
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "sempre",
+                  "strong": "H5769",
+                  "start": 55,
+                  "end": 61
+            },
+            {
+                  "text": "sempre",
+                  "strong": "H5769",
+                  "start": 110,
+                  "end": 116
+            },
+            {
+                  "text": "nada",
+                  "strong": "G3762",
+                  "start": 131,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "Para que me perguntas a mim? Pergunta aos que ouviram o que é que lhes ensinei; eis que eles sabem o que eu lhes tenho dito.",
+    "strong": []
+  },
+  {
+    "number": 22,
+    "text": "E, tendo dito isto, um dos serventuários que ali estavam, deu uma bofetada em Jesus, dizendo: Assim respondes ao sumo sacerdote?",
+    "strong": [
+            {
+                  "text": "isto",
+                  "strong": "G3778",
+                  "start": 14,
+                  "end": 18
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 78,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "Respondeu-lhe Jesus: Se falei mal, dá testemunho do mal; e, se bem, por que me feres?",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 14,
+                  "end": 19
+            },
+            {
+                  "text": "testemunho",
+                  "strong": "G3141",
+                  "start": 38,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "Anás mandou-o, pois, maniatado ao sumo sacerdote Caifás.",
+    "strong": []
+  },
+  {
+    "number": 25,
+    "text": "E Simão Pedro estava em pé, aquentando-se. Disseram-lhe, pois: Não és tu também dos seus discípulos? Ele negou, e disse: Não sou.",
+    "strong": []
+  },
+  {
+    "number": 26,
+    "text": "Um dos servos do sumo sacerdote, parente daquele a quem Pedro cortara a orelha, disse: Não te vi eu no horto com ele?",
+    "strong": [
+{
+                  "text": "avec",
+                  "strong": "G1848",
+                  "start": 121,
+                  "end": 125
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 130,
+                  "end": 134
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "Pedro, pois, negou outra vez, e logo o galo cantou.",
+    "strong": [
+{
+                  "text": "nouveau",
+                  "strong": "G2537",
+                  "start": 17,
+                  "end": 24
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Depois conduziram Jesus da casa de Caifás para a audiência. E era pela manhã cedo. E não entraram na audiência, para não se contaminarem, mas para poderem comer a páscoa.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 18,
+                  "end": 23
+            },
+            {
+                  "text": "casa",
+                  "strong": "G3609",
+                  "start": 27,
+                  "end": 31
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "Então Pilatos veio ter com eles fora, e disse: Que acusação trazeis contra este homem?",
+    "strong": [
+            {
+                  "text": "contra",
+                  "strong": "G2596",
+                  "start": 68,
+                  "end": 74
+            },
+            {
+                  "text": "este",
+                  "strong": "G3778",
+                  "start": 75,
+                  "end": 79
+            },
+            {
+                  "text": "homem",
+                  "strong": "G444",
+                  "start": 80,
+                  "end": 85
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "Responderam, e disseram-lhe: Se este não fosse malfeitor, não to entregaríamos.",
+    "strong": [
+            {
+                  "text": "este",
+                  "strong": "G3778",
+                  "start": 32,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "Disse-lhes, pois, Pilatos: Levai-o vós, e julgai-o segundo a vossa lei. Disseram-lhe, pois, os judeus: A nós não nos é lícito matar pessoa alguma.",
+    "strong": [
+            {
+                  "text": "segundo",
+                  "strong": "G1208",
+                  "start": 51,
+                  "end": 58
+            },
+            {
+                  "text": "pessoa",
+                  "strong": "H5315",
+                  "start": 132,
+                  "end": 138
+            }
+      ]
+  },
+  {
+    "number": 32,
+    "text": "(Para que se cumprisse a palavra que Jesus tinha dito, significando de que morte havia de morrer.)",
+    "strong": [
+            {
+                  "text": "palavra",
+                  "strong": "G3056",
+                  "start": 25,
+                  "end": 32
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 37,
+                  "end": 42
+            },
+            {
+                  "text": "morte",
+                  "strong": "H6757",
+                  "start": 75,
+                  "end": 80
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "Tornou, pois, Pilatos a entrar na audiência, e chamou a Jesus, e disse-lhe: Tu és o Rei dos Judeus?",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 56,
+                  "end": 61
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "Respondeu-lhe Jesus: Tu dizes isto de ti mesmo, ou disseram-to outros de mim?",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 14,
+                  "end": 19
+            },
+            {
+                  "text": "isto",
+                  "strong": "G3778",
+                  "start": 30,
+                  "end": 34
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "Pilatos respondeu: Porventura sou eu judeu? A tua nação e os principais dos sacerdotes entregaram-te a mim. Que fizeste?",
+    "strong": [
+            {
+                  "text": "judeu",
+                  "strong": "G2453",
+                  "start": 37,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "Respondeu Jesus: O meu reino não é deste mundo; se o meu reino fosse deste mundo, pelejariam os meus servos, para que eu não fosse entregue aos judeus; mas agora o meu reino não é daqui.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 10,
+                  "end": 15
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 41,
+                  "end": 46
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 75,
+                  "end": 80
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "Disse-lhe, pois, Pilatos: Logo tu és rei? Jesus respondeu: Tu dizes que eu sou rei. Eu para isso nasci, e para isso vim ao mundo, a fim de dar testemunho da verdade. Todo aquele que é da verdade ouve a minha voz.",
+    "strong": [
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 42,
+                  "end": 47
+            },
+            {
+                  "text": "mundo",
+                  "strong": "G2889",
+                  "start": 123,
+                  "end": 128
+            },
+            {
+                  "text": "testemunho",
+                  "strong": "G3141",
+                  "start": 143,
+                  "end": 153
+            },
+            {
+                  "text": "verdade",
+                  "strong": "G225",
+                  "start": 157,
+                  "end": 164
+            },
+            {
+                  "text": "verdade",
+                  "strong": "G225",
+                  "start": 187,
+                  "end": 194
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "Disse-lhe Pilatos: Que é a verdade? E, dito isto, tornou a ir ter com os judeus, e disse-lhes: Não acho nele crime algum.",
+    "strong": [
+            {
+                  "text": "verdade",
+                  "strong": "G225",
+                  "start": 27,
+                  "end": 34
+            },
+            {
+                  "text": "isto",
+                  "strong": "G3778",
+                  "start": 44,
+                  "end": 48
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "Mas vós tendes por costume que eu vos solte alguém pela páscoa. Quereis, pois, que vos solte o Rei dos Judeus?",
+    "strong": [
+{
+                  "text": "comme",
+                  "strong": "G2531",
+                  "start": 6,
+                  "end": 11
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Então todos tornaram a clamar, dizendo: Este não, mas Barrabás. E Barrabás era um salteador.",
+    "strong": [
+            {
+                  "text": "Este",
+                  "strong": "G3778",
+                  "start": 40,
+                  "end": 44
+            }
+      ]
+  }
+]
+};
+
+export default johnChapter18PT;

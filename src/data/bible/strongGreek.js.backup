@@ -1,0 +1,25 @@
+﻿// ============================================================================
+// DICTIONNAIRE STRONG GREC - FICHIER DE COMPATIBILITÉ
+//  Ce fichier redirige vers la nouvelle structure modulaire
+// Voir: src/data/bible/strong/README.md
+// ============================================================================
+
+// Import depuis la nouvelle structure
+import { strongGreek } from './strong/index.js';
+
+// Export pour compatibilité avec l'ancien code
+export { strongGreek };
+export default strongGreek;
+
+// ============================================================================
+// MIGRATION RECOMMANDÉE :
+// ============================================================================
+// Ancien : import { strongGreek } from './data/bible/strongGreek.js';
+// Nouveau : import { strongGreek } from './data/bible/strong/index.js';
+//
+// Avantages :
+//  Séparation base (grec) / traductions (français, anglais, etc.)
+//  IDs courts (m, d, u, e) pour réduire la taille
+//  Multilingue facile : ajouter une langue = 1 fichier
+//  Base partagée (217 entrées) + Traductions séparées
+// ============================================================================

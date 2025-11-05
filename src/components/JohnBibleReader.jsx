@@ -357,15 +357,14 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
     const fullText = `${content.text}\n${content.hashtags}\n${content.url}`;
     try {
       await navigator.clipboard.writeText(fullText);
-      alert('✅ Verset copié dans le presse-papiers !');
+      alert(`✅ ${t('bible.verseCopied')}`);
     } catch (err) {
-      console.error('Erreur lors de la copie:', err);
+      console.error(t('bible.copyError'), err);
     }
   };
 
   const downloadImage = (verse) => {
-    // Cette fonction générerait une image avec le verset
-    alert('🎨 Fonctionnalité d\'image à venir !');
+    alert(t('bible.imageFeatureComing'));
   };
 
   const getStrongInfo = (strongNumbers) => {
@@ -380,7 +379,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
         return {
           number: num,
           word: '?',
-          meaning: 'Définition non trouvée',
+          meaning: t('bible.definitionNotFound'),
           transliteration: '?'
         };
       }
@@ -388,7 +387,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
       return {
         number: num,
         word: strongData.word,
-        meaning: strongData.meaning || strongData.definition || 'Définition à charger...',
+        meaning: strongData.meaning || strongData.definition || t('bible.definitionLoading'),
         transliteration: strongData.transliteration,
         pronunciation: strongData.pronunciation,
         definition: strongData.definition,
@@ -523,7 +522,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
                 setSearchText(e.target.value);
                 handleSearch(e.target.value);
               }}
-              placeholder="Rechercher..."
+              placeholder={t('bible.search')}
               className="flex-1 px-2 py-1 rounded text-gray-800 text-sm placeholder:text-gray-500"
               autoFocus
             />
@@ -582,7 +581,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
         <div className="p-2 sm:p-4">
         {error ? (
           <div className="text-center py-4">
-            <div className="text-red-500 mb-2 text-sm">❌ Erreur</div>
+            <div className="text-red-500 mb-2 text-sm">{t('bible.error')}</div>
             <p className="text-gray-600 text-xs mb-3">{error}</p>
             <button
               onClick={() => loadChapter(currentChapter)}

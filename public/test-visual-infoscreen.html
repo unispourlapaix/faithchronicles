@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Visuel InfoScreen - Emmanuel Artist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f0f9ff, white);
+        }
+        .creator-section {
+            background: white;
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e7ff;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .center-content {
+            text-align: center;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 40px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        .name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #8b5cf6;
+            margin-bottom: 8px;
+        }
+        .description {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 16px;
+        }
+        .artist-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            background: linear-gradient(to right, #8b5cf6, #3b82f6);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .artist-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .artist-link:active {
+            transform: scale(0.95);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .sub-description {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 8px;
+        }
+        .test-info {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-ok { background: #10b981; }
+        .status-warning { background: #f59e0b; }
+        .status-error { background: #ef4444; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #1f2937;">🔍 Test Visuel - InfoScreen Emmanuel Artist</h1>
+    
+    <div class="test-info">
+        <h3>📋 Test d'affichage du module Emmanuel Artist</h3>
+        <p>Vérification de l'affichage du lien dans la section Créateur de l'InfoScreen.</p>
+        
+        <div style="margin: 15px 0;">
+            <div><span class="status-indicator status-ok"></span>Fichier déplacé vers public/</div>
+            <div><span class="status-indicator status-ok"></span>URL accessible : /emmanuel-artist-module.html</div>
+            <div><span class="status-indicator status-warning"></span>Test d'affichage en cours...</div>
+        </div>
+    </div>
+
+    <!-- Reproduction fidèle de la section Créateur -->
+    <div class="creator-section">
+        <div class="center-content">
+            <div class="avatar">
+                ❤️
+            </div>
+            <h2 class="title">Créé avec ❤️</h2>
+            <p class="name">Emmanuel Payet</p>
+            <p class="description">Développeur passionné de spiritualité</p>
+            
+            <!-- Lien vers le module artiste -->
+            <div style="margin-top: 16px;">
+                <a
+                    href="/emmanuel-artist-module.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="artist-link"
+                    onclick="playTestSound()"
+                >
+                    <span class="pulse">🎨</span>
+                    <span>Emmanuel Artist Module</span>
+                    <span style="font-size: 12px;">↗️</span>
+                </a>
+                <p class="sub-description">
+                    <span style="margin-right: 4px;">🌟</span>
+                    Portfolio artistique et créations numériques
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-info">
+        <h3>🧪 Tests à effectuer :</h3>
+        <ol style="margin: 10px 0; padding-left: 20px;">
+            <li>✅ <strong>Affichage correct</strong> : Le bouton apparaît-il bien ?</li>
+            <li>🔗 <strong>Lien fonctionnel</strong> : Cliquer ouvre-t-il le module ?</li>
+            <li>🎨 <strong>Animation</strong> : L'icône pulse-t-elle ?</li>
+            <li>↗️ <strong>Nouvelle fenêtre</strong> : S'ouvre-t-il dans un nouvel onglet ?</li>
+            <li>🎵 <strong>Son</strong> : Y a-t-il un feedback audio ?</li>
+        </ol>
+        
+        <div style="text-align: center; margin: 15px 0;">
+            <button onclick="testDirectAccess()" style="background: #3b82f6; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                🔗 Test accès direct au module
+            </button>
+        </div>
+        
+        <div id="test-result" style="margin-top: 15px; font-weight: 600;"></div>
+    </div>
+
+    <script>
+        function playTestSound() {
+            const result = document.getElementById('test-result');
+            result.innerHTML = '🎵 Son starEarned() déclenché (simulation)';
+            result.style.color = '#10b981';
+        }
+
+        function testDirectAccess() {
+            const result = document.getElementById('test-result');
+            result.innerHTML = '🔍 Test d\'accès direct...';
+            result.style.color = '#f59e0b';
+            
+            // Test d'accès au module
+            window.open('/emmanuel-artist-module.html', '_blank', 'noopener,noreferrer');
+            
+            setTimeout(() => {
+                result.innerHTML = '✅ Module ouvert avec succès !';
+                result.style.color = '#10b981';
+            }, 1000);
+        }
+
+        // Vérification au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🎨 Test InfoScreen Emmanuel Artist chargé');
+            console.log('📁 URL du module : /emmanuel-artist-module.html');
+            console.log('🔗 Base URL : ' + window.location.origin);
+            
+            // Test de disponibilité du module
+            fetch('/emmanuel-artist-module.html')
+                .then(response => {
+                    const result = document.getElementById('test-result');
+                    if (response.ok) {
+                        result.innerHTML = '✅ Module Emmanuel Artist accessible !';
+                        result.style.color = '#10b981';
+                    } else {
+                        result.innerHTML = '❌ Module non accessible (erreur ' + response.status + ')';
+                        result.style.color = '#ef4444';
+                    }
+                })
+                .catch(error => {
+                    const result = document.getElementById('test-result');
+                    result.innerHTML = '❌ Erreur de connexion au module';
+                    result.style.color = '#ef4444';
+                    console.error('Erreur test module:', error);
+                });
+        });
+    </script>
+</body>
+</html>

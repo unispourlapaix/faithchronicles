@@ -1,0 +1,1150 @@
+// ============================================================================
+// ÉVANGILE DE JEAN - English (World English Bible)
+// ============================================================================
+// Chapitre 5
+
+export const johnChapter5EN = {
+  chapter: 5,
+  title: "Jean 5",
+  version: "World English Bible",
+  language: "en",
+  direction: "ltr",
+  verses: [
+  {
+    "number": 1,
+    "text": "After these things, there was a feast of the Jews, and Jesus went up to Jerusalem.",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 6,
+                  "end": 11
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 55,
+                  "end": 60
+            }
+      ]
+  },
+  {
+    "number": 2,
+    "text": "Now in Jerusalem by the sheep gate, there is a pool, which is called in Hebrew, \"Bethesda,\" having five porches.",
+    "strong": [
+{
+                  "text": "brebis",
+                  "strong": "G4263",
+                  "start": 38,
+                  "end": 44
+            }
+      ]
+  },
+  {
+    "number": 3,
+    "text": "In these lay a great multitude of those who were sick, blind, lame, or paralyzed, waiting for the moving of the water;",
+    "strong": [
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 3,
+                  "end": 8
+            },
+            {
+                  "text": "great",
+                  "strong": "G3173",
+                  "start": 15,
+                  "end": 20
+            },
+            {
+                  "text": "multitude",
+                  "strong": "G3793",
+                  "start": 21,
+                  "end": 30
+            },
+            {
+                  "text": "sick",
+                  "strong": "G772",
+                  "start": 49,
+                  "end": 53
+            },
+            {
+                  "text": "water",
+                  "strong": "H4325",
+                  "start": 112,
+                  "end": 117
+            }
+      ]
+  },
+  {
+    "number": 4,
+    "text": "for an angel went down at certain times into the pool, and stirred up the water. Whoever stepped in first after the stirring of the water was made whole of whatever disease he had.",
+    "strong": [
+            {
+                  "text": "angel",
+                  "strong": "G32",
+                  "start": 7,
+                  "end": 12
+            },
+            {
+                  "text": "down",
+                  "strong": "H7257",
+                  "start": 18,
+                  "end": 22
+            },
+            {
+                  "text": "water",
+                  "strong": "H4325",
+                  "start": 74,
+                  "end": 79
+            },
+            {
+                  "text": "first",
+                  "strong": "G4413",
+                  "start": 100,
+                  "end": 105
+            },
+            {
+                  "text": "water",
+                  "strong": "H4325",
+                  "start": 132,
+                  "end": 137
+            }
+      ]
+  },
+  {
+    "number": 5,
+    "text": "A certain man was there, who had been sick for thirty-eight years.",
+    "strong": [
+            {
+                  "text": "sick",
+                  "strong": "G772",
+                  "start": 38,
+                  "end": 42
+            }
+      ]
+  },
+  {
+    "number": 6,
+    "text": "When Jesus saw him lying there, and knew that he had been sick for a long time, he asked him, \"Do you want to be made well?\"",
+    "strong": [
+{
+                  "text": "malade",
+                  "strong": "G772",
+                  "start": 49,
+                  "end": 55
+            }
+      ]
+  },
+  {
+    "number": 7,
+    "text": "The sick man answered him, \"Sir, I have no one to put me into the pool when the water is stirred up, but while I'm coming, another steps down before me.\"",
+    "strong": [
+{
+                  "text": "malade",
+                  "strong": "G772",
+                  "start": 3,
+                  "end": 9
+            },
+            {
+                  "text": "Seigneur",
+                  "strong": "G2962",
+                  "start": 24,
+                  "end": 32
+            },
+            {
+                  "text": "personne",
+                  "strong": "G3762",
+                  "start": 42,
+                  "end": 50
+            },
+            {
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 65,
+                  "end": 69
+            }
+      ]
+  },
+  {
+    "number": 8,
+    "text": "Jesus said to him, \"Arise, take up your mat, and walk.\"",
+    "strong": []
+  },
+  {
+    "number": 9,
+    "text": "Immediately, the man was made well, and took up his mat and walked. Now it was the Sabbath on that day.",
+    "strong": [
+            {
+                  "text": "well",
+                  "strong": "H2896",
+                  "start": 30,
+                  "end": 34
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 94,
+                  "end": 98
+            }
+      ]
+  },
+  {
+    "number": 10,
+    "text": "So the Jews said to him who was cured, \"It is the Sabbath. It is not lawful for you to carry the mat.\"",
+    "strong": [
+{
+                  "text": "jour",
+                  "strong": "H3117",
+                  "start": 11,
+                  "end": 15
+            }
+      ]
+  },
+  {
+    "number": 11,
+    "text": "He answered them, \"He who made me well, the same said to me, 'Take up your mat, and walk.'\"",
+    "strong": []
+  },
+  {
+    "number": 12,
+    "text": "Then they asked him, \"Who is the man who said to you, 'Take up your mat, and walk'?\"",
+    "strong": [
+{
+                  "text": "homme",
+                  "strong": "G444",
+                  "start": 31,
+                  "end": 36
+            }
+      ]
+  },
+  {
+    "number": 13,
+    "text": "But he who was healed didn't know who it was, for Jesus had withdrawn, a crowd being in the place.",
+    "strong": [
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 50,
+                  "end": 55
+            },
+            {
+                  "text": "crowd",
+                  "strong": "G3793",
+                  "start": 73,
+                  "end": 78
+            },
+            {
+                  "text": "being",
+                  "strong": "G444",
+                  "start": 79,
+                  "end": 84
+            },
+            {
+                  "text": "place",
+                  "strong": "G5087",
+                  "start": 92,
+                  "end": 97
+            }
+      ]
+  },
+  {
+    "number": 14,
+    "text": "Afterward Jesus found him in the temple, and said to him, \"Behold, you are made well. Sin no more, so that nothing worse happens to you.\"",
+    "strong": [
+{
+                  "text": "dans",
+                  "strong": "H6887",
+                  "start": 24,
+                  "end": 28
+            },
+            {
+                  "text": "peur",
+                  "strong": "H3372",
+                  "start": 94,
+                  "end": 98
+            }
+      ]
+  },
+  {
+    "number": 15,
+    "text": "The man went away, and told the Jews that it was Jesus who had made him well.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 37,
+                  "end": 41
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 49,
+                  "end": 54
+            },
+            {
+                  "text": "well",
+                  "strong": "H2896",
+                  "start": 72,
+                  "end": 76
+            }
+      ]
+  },
+  {
+    "number": 16,
+    "text": "For this cause the Jews persecuted Jesus, and sought to kill him, because he did these things on the Sabbath.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "Jesus",
+                  "strong": "G2424",
+                  "start": 35,
+                  "end": 40
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 81,
+                  "end": 86
+            }
+      ]
+  },
+  {
+    "number": 17,
+    "text": "But Jesus answered them, \"My Father is still working, so I am working, too.\"",
+    "strong": []
+  },
+  {
+    "number": 18,
+    "text": "For this cause therefore the Jews sought all the more to kill him, because he not only broke the Sabbath, but also called God his own Father, making himself equal with God.",
+    "strong": [
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "only",
+                  "strong": "G3439",
+                  "start": 82,
+                  "end": 86
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 134,
+                  "end": 140
+            },
+            {
+                  "text": "with",
+                  "strong": "G25",
+                  "start": 163,
+                  "end": 167
+            }
+      ]
+  },
+  {
+    "number": 19,
+    "text": "Jesus therefore answered them, \"Most certainly, I tell you, the Son can do nothing of himself, but what he sees the Father doing. For whatever things he does, these the Son also does likewise.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 21,
+                  "end": 27
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 83,
+                  "end": 87
+            },
+            {
+                  "text": "rien",
+                  "strong": "G3762",
+                  "start": 96,
+                  "end": 100
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 101,
+                  "end": 106
+            },
+            {
+                  "text": "faire",
+                  "strong": "G1080",
+                  "start": 149,
+                  "end": 154
+            },
+            {
+                  "text": "tout",
+                  "strong": "G3956",
+                  "start": 167,
+                  "end": 171
+            },
+            {
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 196,
+                  "end": 200
+            }
+      ]
+  },
+  {
+    "number": 20,
+    "text": "For the Father has affection for the Son, and shows him all things that he himself does. He will show him greater works than these, that you may marvel.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 8,
+                  "end": 14
+            },
+            {
+                  "text": "affection",
+                  "strong": "H160",
+                  "start": 19,
+                  "end": 28
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 67,
+                  "end": 71
+            },
+            {
+                  "text": "show",
+                  "strong": "G1166",
+                  "start": 97,
+                  "end": 101
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 125,
+                  "end": 130
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 132,
+                  "end": 136
+            },
+            {
+                  "text": "marvel",
+                  "strong": "G2296",
+                  "start": 145,
+                  "end": 151
+            }
+      ]
+  },
+  {
+    "number": 21,
+    "text": "For as the Father raises the dead and gives them life, even so the Son also gives life to whom he desires.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 11,
+                  "end": 17
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 49,
+                  "end": 53
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 82,
+                  "end": 86
+            }
+      ]
+  },
+  {
+    "number": 22,
+    "text": "For the Father judges no one, but he has given all judgment to the Son,",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 8,
+                  "end": 14
+            },
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 51,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 23,
+    "text": "that all may honor the Son, even as they honor the Father. He who doesn't honor the Son doesn't honor the Father who sent him.",
+    "strong": [
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 0,
+                  "end": 4
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 51,
+                  "end": 57
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 106,
+                  "end": 112
+            }
+      ]
+  },
+  {
+    "number": 24,
+    "text": "\"Most certainly I tell you, he who hears my word, and believes him who sent me, has eternal life, and doesn't come into judgment, but has passed out of death into life.",
+    "strong": [
+{
+                  "text": "parole",
+                  "strong": "G3056",
+                  "start": 58,
+                  "end": 64
+            },
+            {
+                  "text": "jugement",
+                  "strong": "G2920",
+                  "start": 143,
+                  "end": 151
+            },
+            {
+                  "text": "mort",
+                  "strong": "H6757",
+                  "start": 177,
+                  "end": 181
+            }
+      ]
+  },
+  {
+    "number": 25,
+    "text": "Most certainly, I tell you, the hour comes, and now is, when the dead will hear the Son of God's voice; and those who hear will live.",
+    "strong": [
+{
+                  "text": "Fils",
+                  "strong": "G5207",
+                  "start": 112,
+                  "end": 116
+            },
+            {
+                  "text": "Dieu",
+                  "strong": "G2316",
+                  "start": 120,
+                  "end": 124
+            }
+      ]
+  },
+  {
+    "number": 26,
+    "text": "For as the Father has life in himself, even so he gave to the Son also to have life in himself.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 11,
+                  "end": 17
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 22,
+                  "end": 26
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 74,
+                  "end": 78
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 79,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 27,
+    "text": "He also gave him authority to execute judgment, because he is a son of man.",
+    "strong": [
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 38,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 28,
+    "text": "Don't marvel at this, for the hour comes, in which all that are in the tombs will hear his voice,",
+    "strong": [
+            {
+                  "text": "marvel",
+                  "strong": "G2296",
+                  "start": 6,
+                  "end": 12
+            },
+            {
+                  "text": "this",
+                  "strong": "G3778",
+                  "start": 16,
+                  "end": 20
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 45,
+                  "end": 50
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 55,
+                  "end": 59
+            }
+      ]
+  },
+  {
+    "number": 29,
+    "text": "and will come out; those who have done good, to the resurrection of life; and those who have done evil, to the resurrection of judgment.",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 9,
+                  "end": 13
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "good",
+                  "strong": "G2570",
+                  "start": 39,
+                  "end": 43
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 68,
+                  "end": 72
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 88,
+                  "end": 92
+            },
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 127,
+                  "end": 135
+            }
+      ]
+  },
+  {
+    "number": 30,
+    "text": "I can of myself do nothing. As I hear, I judge, and my judgment is righteous; because I don't seek my own will, but the will of my Father who sent me.",
+    "strong": [
+            {
+                  "text": "nothing",
+                  "strong": "G3762",
+                  "start": 19,
+                  "end": 26
+            },
+            {
+                  "text": "judge",
+                  "strong": "G2919",
+                  "start": 41,
+                  "end": 46
+            },
+            {
+                  "text": "judgment",
+                  "strong": "G2920",
+                  "start": 55,
+                  "end": 63
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 131,
+                  "end": 137
+            }
+      ]
+  },
+  {
+    "number": 31,
+    "text": "\"If I testify about myself, my witness is not valid.",
+    "strong": []
+  },
+  {
+    "number": 32,
+    "text": "It is another who testifies about me. I know that the testimony which he testifies about me is true.",
+    "strong": [
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 40,
+                  "end": 44
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 45,
+                  "end": 49
+            },
+            {
+                  "text": "testimony",
+                  "strong": "G3141",
+                  "start": 54,
+                  "end": 63
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 64,
+                  "end": 69
+            }
+      ]
+  },
+  {
+    "number": 33,
+    "text": "You have sent to John, and he has testified to the truth.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 4,
+                  "end": 8
+            },
+            {
+                  "text": "John",
+                  "strong": "G2491",
+                  "start": 17,
+                  "end": 21
+            },
+            {
+                  "text": "truth",
+                  "strong": "G225",
+                  "start": 51,
+                  "end": 56
+            }
+      ]
+  },
+  {
+    "number": 34,
+    "text": "But the testimony which I receive is not from man. However, I say these things that you may be saved.",
+    "strong": [
+            {
+                  "text": "testimony",
+                  "strong": "G3141",
+                  "start": 8,
+                  "end": 17
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 18,
+                  "end": 23
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 26,
+                  "end": 33
+            },
+            {
+                  "text": "these",
+                  "strong": "G3778",
+                  "start": 66,
+                  "end": 71
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 79,
+                  "end": 83
+            }
+      ]
+  },
+  {
+    "number": 35,
+    "text": "He was the burning and shining lamp, and you were willing to rejoice for a while in his light.",
+    "strong": [
+            {
+                  "text": "rejoice",
+                  "strong": "G5463",
+                  "start": 61,
+                  "end": 68
+            },
+            {
+                  "text": "light",
+                  "strong": "G5457",
+                  "start": 88,
+                  "end": 93
+            }
+      ]
+  },
+  {
+    "number": 36,
+    "text": "But the testimony which I have is greater than that of John, for the works which the Father gave me to accomplish, the very works that I do, testify about me, that the Father has sent me.",
+    "strong": [
+            {
+                  "text": "testimony",
+                  "strong": "G3141",
+                  "start": 8,
+                  "end": 17
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 18,
+                  "end": 23
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 26,
+                  "end": 30
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 47,
+                  "end": 51
+            },
+            {
+                  "text": "John",
+                  "strong": "G2491",
+                  "start": 55,
+                  "end": 59
+            },
+            {
+                  "text": "which",
+                  "strong": "G4138",
+                  "start": 75,
+                  "end": 80
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 85,
+                  "end": 91
+            },
+            {
+                  "text": "accomplish",
+                  "strong": "G4160",
+                  "start": 103,
+                  "end": 113
+            },
+            {
+                  "text": "very",
+                  "strong": "H3966",
+                  "start": 119,
+                  "end": 123
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 130,
+                  "end": 134
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 159,
+                  "end": 163
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 168,
+                  "end": 174
+            }
+      ]
+  },
+  {
+    "number": 37,
+    "text": "The Father himself, who sent me, has testified about me. You have neither heard his voice at any time, nor seen his form.",
+    "strong": [
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 4,
+                  "end": 10
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 61,
+                  "end": 65
+            }
+      ]
+  },
+  {
+    "number": 38,
+    "text": "You don't have his word living in you; because you don't believe him whom he sent.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 10,
+                  "end": 14
+            },
+            {
+                  "text": "word",
+                  "strong": "G3056",
+                  "start": 19,
+                  "end": 23
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 57,
+                  "end": 64
+            }
+      ]
+  },
+  {
+    "number": 39,
+    "text": "\"You search the Scriptures, because you think that in them you have eternal life; and these are they which testify about me.",
+    "strong": [
+{
+                  "text": "avoir",
+                  "strong": "G1372",
+                  "start": 49,
+                  "end": 54
+            }
+      ]
+  },
+  {
+    "number": 40,
+    "text": "Yet you will not come to me, that you may have life.",
+    "strong": [
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 17,
+                  "end": 21
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 29,
+                  "end": 33
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 42,
+                  "end": 46
+            },
+            {
+                  "text": "life",
+                  "strong": "G2222",
+                  "start": 47,
+                  "end": 51
+            }
+      ]
+  },
+  {
+    "number": 41,
+    "text": "I don't receive glory from men.",
+    "strong": [
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 8,
+                  "end": 15
+            },
+            {
+                  "text": "glory",
+                  "strong": "G2744",
+                  "start": 16,
+                  "end": 21
+            }
+      ]
+  },
+  {
+    "number": 42,
+    "text": "But I know you, that you don't have God's love in yourselves.",
+    "strong": [
+            {
+                  "text": "know",
+                  "strong": "G1097",
+                  "start": 6,
+                  "end": 10
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 16,
+                  "end": 20
+            },
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 31,
+                  "end": 35
+            },
+            {
+                  "text": "love",
+                  "strong": "G25",
+                  "start": 42,
+                  "end": 46
+            }
+      ]
+  },
+  {
+    "number": 43,
+    "text": "I have come in my Father's name, and you don't receive me. If another comes in his own name, you will receive him.",
+    "strong": [
+            {
+                  "text": "have",
+                  "strong": "G4100",
+                  "start": 2,
+                  "end": 6
+            },
+            {
+                  "text": "come",
+                  "strong": "G1096",
+                  "start": 7,
+                  "end": 11
+            },
+            {
+                  "text": "Father",
+                  "strong": "G3962",
+                  "start": 18,
+                  "end": 24
+            },
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 27,
+                  "end": 31
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 47,
+                  "end": 54
+            },
+            {
+                  "text": "name",
+                  "strong": "G3686",
+                  "start": 87,
+                  "end": 91
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 102,
+                  "end": 109
+            }
+      ]
+  },
+  {
+    "number": 44,
+    "text": "How can you believe, who receive glory from one another, and you don't seek the glory that comes from the only God?",
+    "strong": [
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 12,
+                  "end": 19
+            },
+            {
+                  "text": "receive",
+                  "strong": "G3880",
+                  "start": 25,
+                  "end": 32
+            },
+            {
+                  "text": "glory",
+                  "strong": "G2744",
+                  "start": 33,
+                  "end": 38
+            },
+            {
+                  "text": "glory",
+                  "strong": "G2744",
+                  "start": 80,
+                  "end": 85
+            },
+            {
+                  "text": "that",
+                  "strong": "G4138",
+                  "start": 86,
+                  "end": 90
+            },
+            {
+                  "text": "only",
+                  "strong": "G3439",
+                  "start": 106,
+                  "end": 110
+            }
+      ]
+  },
+  {
+    "number": 45,
+    "text": "\"Don't think that I will accuse you to the Father. There is one who accuses you, even Moses, on whom you have set your hope.",
+    "strong": []
+  },
+  {
+    "number": 46,
+    "text": "For if you believed Moses, you would believe me; for he wrote about me.",
+    "strong": [
+            {
+                  "text": "Moses",
+                  "strong": "G3475",
+                  "start": 20,
+                  "end": 25
+            },
+            {
+                  "text": "believe",
+                  "strong": "G4100",
+                  "start": 37,
+                  "end": 44
+            }
+      ]
+  },
+  {
+    "number": 47,
+    "text": "But if you don't believe his writings, how will you believe my words?\"",
+    "strong": []
+  }
+]
+};
+
+export default johnChapter5EN;
