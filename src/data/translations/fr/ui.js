@@ -433,7 +433,8 @@ export const uiTranslations = {
       inclusionTitle: "L'Inclusion : Aimés de Dieu",
       inclusionDescription: "La diversité religieuse est vaste, mais encore plus vaste est l'inclusion",
       
-      finalQuote: "Nous parlons des mêmes réalités avec des noms différents.",
+      finalQuote: "J'ai été surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu, que l'ange Michel est un grand messager pour les musulmans, que Jésus, Isa, Yeshua sont connus de diverses manières même dans la foi chrétienne. Car il existe diverses tribus, diverses églises, diverses familles.",
+      finalQuote2: "Nous parlons des mêmes réalités avec des noms différents.",
       quoteAuthor: "Emmanuel, L'Unité qui Produit la Paix"
     },
 

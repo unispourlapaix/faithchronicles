@@ -296,114 +296,108 @@ const UnityPeaceModule = () => {
             </div>
 
             <div className="intro-card success">
-              <h3>🌈 L'inclusion : plus vaste encore que la diversité religieuse</h3>
+              <h3>🌈 {t('unity.intro.inclusionTitle')}</h3>
               <p>
-                <strong>La diversité religieuse est vaste, mais encore plus vaste est l'inclusion des autres là où ils sont appelés par Dieu.</strong>
+                <strong>{t('unity.intro.vastInclusion')}</strong>
                 <br />
-                Le respect des différences de couleur, de genres, l'inclusion nous rend humains uniques, aimés de Dieu.
+                {t('unity.intro.respectDifferences')}
                 <br /><br />
-                <em>Jésus a dit : "Aimez-vous les uns les autres."</em>
+                <em>{t('unity.intro.jesusCommand')}</em>
               </p>
             </div>
 
             <div className="intro-card danger">
-              <h3>⚠️ Rompre avec l'esprit communautariste</h3>
+              <h3>⚠️ {t('unity.intro.communitySpirit')}</h3>
               <p>
-                Le communautarisme est le terrot de la haine du mal déguisé. 
-                Il transforme la foi en identité tribale, en mur qui sépare, en arme qui blesse. 
+                {t('unity.intro.communityTerror')}
                 <br /><br />
-                <strong>Nos esprits de parti nous poussent à la politique de l'orgueil :</strong>
+                <strong>{t('unity.intro.pridePolitics')}</strong>
                 <br />
-                "J'ai raison de te faire mal. J'ai raison un point c'est tout. J'ai raison de faire bonne guerre."
+                {t('unity.intro.prideQuotes')}
                 <br /><br />
-                <em>Prenez garde au cœur du problème, à la racine de notre propre mal.</em>
+                <em>{t('unity.intro.watchHeart')}</em>
                 <br />
-                Refusons cette dérive qui divise l'humanité au nom de Dieu.
+                {t('unity.intro.refuseDivision')}
               </p>
             </div>
 
             <div className="intro-card success">
-              <h3>🔓 Pour être libres, rendre libres les autres</h3>
+              <h3>🔓 {t('unity.intro.freedomTitle')}</h3>
               <p>
-                <strong>Pour être libres, il faut savoir rendre libres les autres aussi.</strong>
+                <strong>{t('unity.intro.freedomOthers')}</strong>
                 <br />
-                Ma liberté de croire n'a de valeur que si je défends celle de tous. 
-                Opprimer l'autre, c'est me condamner moi-même à la servitude.
+                {t('unity.intro.defendFreedom')}
               </p>
             </div>
 
             <div className="intro-card success">
-              <h3>� Change ton cœur : sois une vraie lanterne</h3>
+              <h3>💡 {t('unity.intro.changeHeartTitle')}</h3>
               <p>
-                <strong>Reconnaître que la bienséance n'est pas la même pour chacun.</strong>
+                <strong>{t('unity.intro.recognizeDecency')}</strong>
                 <br />
-                Changement de toi d'abord, progressivement. Change ton cœur, transforme ta vie, sois une vraie lanterne.
+                {t('unity.intro.changeYourself')}
                 <br /><br />
-                <em>Tu feras pas pipi sur le gazon, car il périra... Ne pas imposer tes règles aux autres, mais devenir un exemple vivant par ta transformation.</em>
+                <em>{t('unity.intro.beExample')}</em>
               </p>
             </div>
 
             <div className="intro-card success">
-              <h3>�🌍 Nos enfants vivront en paix dans la diversité</h3>
+              <h3>👶🌍 {t('unity.intro.childrenPeaceTitle')}</h3>
               <p>
-                <strong>Éviter la poursuite des mots pour mots.</strong>
+                <strong>{t('unity.intro.avoidPursuit')}</strong>
                 <br />
-                Si nous choisissons le respect aujourd'hui, nos enfants du futur vivront en paix dans la diversité.
-                La paix commence par nous, maintenant, dans nos paroles et nos actes.
+                {t('unity.intro.peaceChoice')}
               </p>
             </div>
 
             <div className="intro-card warning">
-              <h3>💬 Discerner : l'homme ou Dieu ?</h3>
+              <h3>💬 {t('unity.intro.discernTitle')}</h3>
               <p>
-                <strong>Trop de fois, c'est le cœur de l'homme qui parle et divise.</strong>
+                <strong>{t('unity.intro.manSpeaks')}</strong>
                 <br />
-                On le voit par le fruit des paroles et des mots : le vol, la destruction, les guerres.
-                Prenez garde à la manipulation des mots pour concourir à son propre orgueil.
+                {t('unity.intro.seeFruits')}
               </p>
             </div>
 
             <div className="intro-card success">
-              <h3>👁️ Regarder à la paix et à l'amour</h3>
+              <h3>👁️ {t('unity.intro.lookPeaceTitle')}</h3>
               <p>
-                <strong>Regarder à la paix pour tous, regarder à l'amour de Dieu pour les autres.</strong>
+                <strong>{t('unity.intro.lookPeaceAll')}</strong>
                 <br />
-                Quand les mots produisent la paix, la réconciliation, l'unité : c'est Dieu qui parle.
-                Quand ils produisent la division, la haine, la guerre : c'est l'orgueil de l'homme.
+                {t('unity.intro.godSpeaks')}
               </p>
             </div>
 
             <div className="intro-card warning">
-              <h3>🚨 Veiller à nos mots</h3>
+              <h3>🚨 {t('unity.intro.watchWordsTitle')}</h3>
               <p>
-                <strong>Veiller à nos partages, veiller à nos mots contraires néfastes envers les autres.</strong>
+                <strong>{t('unity.intro.watchShares')}</strong>
                 <br />
-                Ces maux nous disqualifient nous-mêmes. Les fruits de nos paroles révèlent qui parle en nous :
-                Dieu ou notre propre orgueil ?
+                {t('unity.intro.disqualify')}
               </p>
             </div>
 
             <div className="intro-card warning">
-              <h3>📖 Sagesse et maturité face à notre nature</h3>
+              <h3>📖 {t('unity.intro.wisdomMaturityTitle')}</h3>
               <p>
-                <strong>Utiliser les écritures (les lois) pour faire mal est notre habitude, un processus presque naturel et espiègle.</strong>
+                <strong>{t('unity.intro.useScriptures')}</strong>
                 <br />
-                Face à notre nature pécheresse, nous avons en horreur le mal et les personnes qui font le mal.
+                {t('unity.intro.hateSin')}
                 <br /><br />
-                <em>Mais par sagesse et maturité, il faut séparer les actes de notre pauvreté humaine.</em>
+                <em>{t('unity.intro.separateActs')}</em>
                 <br />
-                Reconnaître notre nature animale qui a besoin de compassion et de grâce, tout en se protégeant selon les contextes.
+                {t('unity.intro.compassionNature')}
               </p>
             </div>
 
             <div className="intro-card danger">
-              <h3>⚠️ Dénoncer les leaders spirituels corrompus</h3>
+              <h3>⚠️ {t('unity.intro.denounceLeadersTitle')}</h3>
               <p>
-                <strong>Prenez garde aux leaders spirituels ou dirigeants qui cherchent à garder en secret leur dérive et malhonnêteté.</strong>
+                <strong>{t('unity.intro.watchLeaders')}</strong>
                 <br />
-                Sans justice, pas d'exemple. Sans connaissance, d'autres victimes périssent par notre silence.
+                {t('unity.intro.noJustice')}
                 <br /><br />
-                <em>Le silence face à l'injustice est une complicité. La vérité doit être dite pour protéger les autres.</em>
+                <em>{t('unity.intro.silenceComplicity')}</em>
               </p>
             </div>
           </section>
@@ -412,9 +406,9 @@ const UnityPeaceModule = () => {
         {/* SECTION RELIGIONS */}
         {activeSection === 'religions' && (
           <section className="religions-section">
-            <h2>Diverses Religions, une Humanité</h2>
+            <h2>{t('unity.religions.title')}</h2>
             <p className="section-intro">
-              Chrétiens, Musulmans, Juifs, Hindous, Bouddhistes... et bien d'autres : tous cherchent la vérité
+              {t('unity.religions.intro')}
             </p>
 
             <div className="religions-grid">
@@ -433,23 +427,23 @@ const UnityPeaceModule = () => {
                   {selectedReligion === key && (
                     <div className="religion-details">
                       <div className="fondement-item">
-                        <strong>Leur Dieu :</strong> {religion.fondements.dieu}
+                        <strong>{t('unity.religions.theirGod')}</strong> {religion.fondements.dieu}
                       </div>
                       <div className="fondement-item">
-                        <strong>Le Bien :</strong> {religion.fondements.bien}
+                        <strong>{t('unity.religions.theGood')}</strong> {religion.fondements.bien}
                       </div>
                       <div className="fondement-item">
-                        <strong>Le Mal :</strong> {religion.fondements.mal}
+                        <strong>{t('unity.religions.theEvil')}</strong> {religion.fondements.mal}
                       </div>
                       <div className="fondement-item">
-                        <strong>Les Anges :</strong> {religion.fondements.anges}
+                        <strong>{t('unity.religions.theAngels')}</strong> {religion.fondements.anges}
                       </div>
                       <div className="fondement-item regle-or">
-                        <strong>L'Unité :</strong> {religion.fondements.unite}
+                        <strong>{t('unity.religions.theUnity')}</strong> {religion.fondements.unite}
                       </div>
                       
                       <div className="valeurs-cles">
-                        <strong>Valeurs :</strong>
+                        <strong>{t('unity.religions.values')}</strong>
                         <div className="valeurs-tags">
                           {religion.valeursCles.map((valeur, idx) => (
                             <span key={idx} className="valeur-tag" style={{ backgroundColor: religion.couleur }}>
@@ -469,9 +463,9 @@ const UnityPeaceModule = () => {
         {/* SECTION FONDEMENTS COMMUNS */}
         {activeSection === 'commun' && (
           <section className="commun-section">
-            <h2>Les Bases Communes</h2>
+            <h2>{t('unity.common.title')}</h2>
             <p className="section-intro">
-              Le Bien, le Mal, les Anges, Un Dieu Unique, la Relation, l'Inclusion : ce qui unit l'humanité
+              {t('unity.common.intro')}
             </p>
 
             <div className="valeurs-universelles">
@@ -490,13 +484,10 @@ const UnityPeaceModule = () => {
 
             <div className="citation-finale">
               <blockquote>
-                "J'ai été surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu, 
-                que l'ange Michel est un grand messager pour les musulmans, 
-                que Jésus, Isa, Yeshua sont connus de diverses manières même dans la foi chrétienne.
-                Car il existe diverses tribus, diverses églises, diverses familles.
+                {t('unity.common.finalQuote')}
                 <br /><br />
-                Nous parlons des mêmes réalités avec des noms différents."
-                <footer>— Emmanuel, L'Unité qui Produit la Paix</footer>
+                {t('unity.common.finalQuote2')}
+                <footer>— {t('unity.common.quoteAuthor')}</footer>
               </blockquote>
             </div>
           </section>
@@ -505,9 +496,9 @@ const UnityPeaceModule = () => {
         {/* SECTION PROCESSUS D'HUMILITÉ */}
         {activeSection === 'humilite' && (
           <section className="humilite-section">
-            <h2>7 Étapes vers l'Humilité et la Paix</h2>
+            <h2>{t('unity.humility.title')}</h2>
             <p className="section-intro">
-              Le processus pour dépasser le communautarisme et devenir une vraie lanterne
+              {t('unity.humility.intro')}
             </p>
 
             <div className="processus-timeline">
@@ -518,7 +509,7 @@ const UnityPeaceModule = () => {
                     <h3>{etape.titre}</h3>
                     <p className="etape-description">{etape.description}</p>
                     <div className="etape-action">
-                      <strong>Action :</strong> {etape.action}
+                      <strong>{t('unity.humility.action')}</strong> {etape.action}
                     </div>
                   </div>
                 </div>
@@ -526,31 +517,30 @@ const UnityPeaceModule = () => {
             </div>
 
             <div className="conclusion-humilite">
-              <h3>🍎 Discerner par les Fruits</h3>
+              <h3>🍎 {t('unity.humility.discernFruits')}</h3>
               
               <div className="intro-card danger" style={{marginBottom: '1rem'}}>
-                <h3>⚠️ Le cœur de l'homme qui divise</h3>
+                <h3>⚠️ {t('unity.humility.humanHeart')}</h3>
                 <p>
-                  <strong>Trop de fois, c'est le cœur de l'homme qui parle et divise.</strong>
+                  <strong>{t('unity.intro.manSpeaks')}</strong>
                   <br />
-                  On le voit par le fruit : le vol, la destruction, les guerres.
-                  Prenez garde à la manipulation des mots pour concourir à son propre orgueil.
+                  {t('unity.intro.seeFruits')}
                 </p>
               </div>
 
               <div className="intro-card success" style={{marginBottom: '1rem'}}>
-                <h3>✨ Regarder à l'amour de Dieu</h3>
+                <h3>✨ {t('unity.humility.lookGodLove')}</h3>
                 <p>
-                  <strong>Regarder à la paix pour tous, regarder à l'amour de Dieu pour les autres.</strong>
+                  <strong>{t('unity.intro.lookPeaceAll')}</strong>
                   <br />
-                  Les vrais fruits de Dieu sont la paix, l'unité, la réconciliation, l'amour sans distinction.
+                  {t('unity.intro.godSpeaks')}
                 </p>
               </div>
 
-              <h3 style={{marginTop: '1.5rem'}}>💬 Veiller à nos Mots</h3>
+              <h3 style={{marginTop: '1.5rem'}}>💬 {t('unity.humility.watchOurWords')}</h3>
               <div className="mots-grid">
                 <div className="mots-card destructeurs">
-                  <h4>❌ Fruits de l'orgueil humain</h4>
+                  <h4>❌ {t('unity.humility.prideFruits')}</h4>
                   <ul>
                     <li>L'esprit de parti : "J'ai raison un point c'est tout"</li>
                     <li>La politique de l'orgueil : "J'ai raison de te faire mal"</li>
@@ -566,7 +556,7 @@ const UnityPeaceModule = () => {
                   </ul>
                 </div>
                 <div className="mots-card constructeurs">
-                  <h4>✓ Fruits de l'amour de Dieu</h4>
+                  <h4>✓ {t('unity.humility.godFruits')}</h4>
                   <ul>
                     <li>Séparer les actes de la personne avec sagesse</li>
                     <li>Compassion pour notre pauvreté humaine</li>
@@ -584,9 +574,8 @@ const UnityPeaceModule = () => {
 
               <div className="citation-finale-humilite">
                 <blockquote>
-                  "Même si la fraternité n'est pas applicable objectivement, le respect est le socle de l'humilité, gardien de la paix. 
-                  Éviter la poursuite des mots pour mots, et nos enfants du futur vivront en paix dans la diversité."
-                  <footer>— Emmanuel</footer>
+                  {t('unity.humility.finalQuote')}
+                  <footer>— {t('unity.humility.author')}</footer>
                 </blockquote>
               </div>
             </div>
@@ -598,11 +587,10 @@ const UnityPeaceModule = () => {
       {/* Pied de page */}
       <footer className="module-footer">
         <p>
-          �️ <em>Le respect est le socle de l'humilité, gardien de la paix. 
-          Nos enfants vivront en paix dans la diversité si nous choisissons le respect aujourd'hui.</em>
+          🕊️ <em>{t('unity.footer.quote')}</em>
         </p>
         <p style={{marginTop: '0.5rem', fontSize: '0.7rem', color: '#7f8c8d'}}>
-          — Emmanuel, L'Unité qui Produit la Paix
+          — {t('unity.footer.author')}
         </p>
       </footer>
     </div>
