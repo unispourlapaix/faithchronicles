@@ -1,20 +1,50 @@
 import React from 'react';
-import { ChevronRight, Star, Trophy, Sparkles, Info, Gem, HelpCircle } from 'lucide-react';
-import { bibleData } from '../../data/bible/bibleData.js';
+import { ChevronRight, Star, Trophy, Sparkles, Info, Gem, Book, BookOpen, Heart } from 'lucide-react';
+import { bibleData, bibleTreasures } from '../../data/bible';
+import ConnectionStatus from '../ConnectionStatus.jsx';
+import LanguageSelector from '../LanguageSelector.jsx';
+import JohnTreasuresDisplay from '../JohnTreasuresDisplay.jsx';
+import JohnBibleReader from '../JohnBibleReader.jsx';
+import useTranslation from '../../hooks/useTranslation';
 
 const MenuScreen = ({ 
   wisdomPoints, unlockedLevels, levelStars, score, revelationPoints,
-  setCurrentScreen, setShowModal, setModalContent, setCurrentLevel
+  setCurrentScreen, setShowModal, setModalContent, setCurrentLevel,
+  user, isAnonymousMode, isSupabaseConnected, onLogout, onSwitchToLogin, onRefresh, audio
 }) => {
+  const { t } = useTranslation();
+  const [showAudioPanel, setShowAudioPanel] = React.useState(false);
+  const [gospelStatus, setGospelStatus] = React.useState({ isPlaying: false, currentIndex: 0 });
+  
+  // Mise à jour du statut gospel
+  React.useEffect(() => {
+    if (!showAudioPanel) return;
+    
+    const updateGospelStatus = () => {
+      if (window.faithGospelPlayer) {
+        setGospelStatus({
+          isPlaying: window.faithGospelPlayer.isPlaying || false,
+          currentIndex: window.faithGospelPlayer.currentIndex || 0
+        });
+      }
+    };
+    
+    // Mise à jour initiale
+    updateGospelStatus();
+    
+    // Mise à jour périodique quand le panneau est ouvert
+    const interval = setInterval(updateGospelStatus, 1000);
+    return () => clearInterval(interval);
+  }, [showAudioPanel]);
   
   const calculatePlayerRank = () => {
-    if (wisdomPoints >= 12000) return "Saint";
-    if (wisdomPoints >= 8000) return "Prophète";
-    if (wisdomPoints >= 5000) return "Sage";
-    if (wisdomPoints >= 3000) return "Fidèle";
-    if (wisdomPoints >= 1500) return "Croyant";
-    if (wisdomPoints >= 500) return "Disciple";
-    return "Chercheur";
+    if (wisdomPoints >= 12000) return t('ranks.saint');
+    if (wisdomPoints >= 8000) return t('ranks.prophet');
+    if (wisdomPoints >= 5000) return t('ranks.wise');
+    if (wisdomPoints >= 3000) return t('ranks.faithful');
+    if (wisdomPoints >= 1500) return t('ranks.believer');
+    if (wisdomPoints >= 500) return t('ranks.disciple');
+    return t('ranks.seeker');
   };
 
   const getTotalStars = () => {
@@ -38,24 +68,38 @@ const MenuScreen = ({
   };
 
   const getBibleTreasure = () => {
-    return bibleData.getRandomTreasure();
-  };
-
-  const getSillyQuestion = () => {
-    const questions = [
-      "Pourquoi Dieu a-t-il créé les moustiques ? 🦟",
-      "Est-ce que Noé a pris des poissons dans l'arche ? 🐠",
-      "Adam avait-il un nombril ? 🤔",
-      "Les anges ont-ils des ailes ou c'est Hollywood ? 👼",
-      "Pourquoi le fruit défendu n'était pas un légume ? 🍎"
-    ];
-    return questions[Math.floor(Math.random() * questions.length)];
+    return bibleTreasures.getRandomTreasure();
   };
 
   const resetProgress = () => {
-    localStorage.removeItem('faithChroniclesProgress');
-    window.location.reload();
+    // Jouer le son de reset
+    audio?.sounds?.reset();
+    
+    // Petite pause pour que l'utilisateur entende le son avant le rechargement
+    setTimeout(() => {
+      localStorage.removeItem('faithChroniclesProgress');
+      window.location.reload();
+    }, 200);
   };
+
+  const openJohnBibleReader = (initialChapter = 1) => {
+    openModal(t('bible.johnReaderTitle'),
+      <JohnBibleReader 
+        onClose={() => setShowModal(false)}
+        initialChapter={initialChapter}
+      />
+    );
+  };
+
+  // Exposer la fonction globalement pour JohnTreasuresDisplay
+  React.useEffect(() => {
+    window.openJohnBibleReader = openJohnBibleReader;
+    return () => {
+      delete window.openJohnBibleReader;
+    };
+  }, []);
+
+
 
   return (
     <>
@@ -67,8 +111,160 @@ const MenuScreen = ({
         <div className="absolute top-20 left-10 w-32 h-32 bg-purple-100/20 rounded-full blur-xl"></div>
       </div>
 
+      {/* Indicateur de connexion discret */}
+      <ConnectionStatus 
+        user={user}
+        isAnonymousMode={isAnonymousMode}
+        isSupabaseConnected={isSupabaseConnected}
+        onLogout={onLogout}
+        onSwitchToLogin={onSwitchToLogin}
+        onRefresh={onRefresh}
+        audio={audio}
+      />
+
+      {/* Contrôles Audio - juste l'icône au début */}
+      <div className="absolute top-3 left-3 z-50">
+        {!showAudioPanel ? (
+          // Icône son seule
+          <button
+            onClick={() => setShowAudioPanel(true)}
+            className={`p-2 rounded-md transition-all hover:scale-105 bg-white/85 backdrop-blur-sm shadow-sm ${
+              audio?.isEnabled 
+                ? 'text-green-600 hover:bg-green-50' 
+                : 'text-gray-400 hover:bg-gray-50'
+            }`}
+            title={t('menu.audioControls')}
+          >
+            {audio?.isEnabled ? '🔊' : '🔇'}
+          </button>
+        ) : (
+          <>
+            {/* Overlay pour fermer le panneau en cliquant dehors */}
+            <div 
+              className="fixed inset-0 z-40"
+              onClick={() => setShowAudioPanel(false)}
+            />
+            
+            {/* Panneau complet ouvert */}
+            <div className="relative z-50 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg border border-gray-200">
+            <div className="flex items-center gap-2 mb-2">
+              {/* Bouton Mute/Unmute */}
+              <button
+                onClick={() => {
+                  audio?.toggleAudio();
+                  audio?.sounds?.tick();
+                }}
+                className={`p-1 rounded-sm transition-all hover:scale-105 text-sm ${
+                  audio?.isEnabled 
+                    ? 'bg-green-50 text-green-600 hover:bg-green-100' 
+                    : 'bg-gray-50 text-gray-400 hover:bg-gray-100'
+                }`}
+                title={audio?.isEnabled ? t('menu.mute') : t('menu.unmute')}
+              >
+                {audio?.isEnabled ? '🔊' : '🔇'}
+              </button>
+              
+              {/* Slider volume compact */}
+              {audio?.isEnabled && (
+                <div className="flex items-center gap-1">
+                  <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value={audio?.volume || 0.7}
+                    onChange={(e) => audio?.changeVolume(parseFloat(e.target.value))}
+                    className="w-16 h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                    title={`Volume: ${Math.round((audio?.volume || 0.7) * 100)}%`}
+                  />
+                  <span className="text-xs text-gray-400 text-[10px] min-w-[25px]">
+                    {Math.round((audio?.volume || 0.7) * 100)}%
+                  </span>
+                </div>
+              )}
+              
+              {/* Bouton fermer */}
+              <button
+                onClick={() => setShowAudioPanel(false)}
+                className="p-1 rounded-sm bg-gray-50 text-gray-500 hover:bg-gray-100 transition-all text-xs"
+                title={t('menu.close')}
+              >
+                ✕
+              </button>
+            </div>
+            
+            {/* Sélecteur de langue */}
+            <div className="mb-2">
+              <div className="text-xs text-gray-600 mb-1">{t('menu.language')} :</div>
+              <LanguageSelector audio={audio} />
+            </div>
+            
+            {/* Bouton Reset dans le panneau audio */}
+            <div className="border-t border-gray-200 pt-2">
+              <button
+                onClick={() => {
+                  audio?.sounds?.tick();
+                  setShowAudioPanel(false); // Fermer le panneau d'abord
+                  if (wisdomPoints > 0) {
+                    openModal(t('menu.restart'),
+                      <div className="space-y-4">
+                        <div className="text-center">
+                          <div className="text-6xl mb-4">⚠️</div>
+                          <p className="text-sm text-gray-700 mb-4">
+                            {t('menu.confirmReset')}
+                          </p>
+                          <div className="p-3 bg-red-50 rounded-xl">
+                            <div className="text-xs text-red-700">
+                              {t('menu.youWillLose')}<br/>
+                              • {wisdomPoints} {t('menu.wisdomPoints')}<br/>
+                              • {getTotalStars()} {t('menu.starsCollected')}<br/>
+                              • {unlockedLevels.length} {t('menu.levelsUnlocked')}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <button 
+                            onClick={resetProgress}
+                            className="w-full py-3 bg-red-500 text-white rounded-full font-bold shadow-lg active:scale-95 transition-all"
+                          >
+                            {t('buttons.yesRestart')}
+                          </button>
+                          <button 
+                            onClick={() => setShowModal(false)}
+                            className="w-full py-3 bg-gray-200 text-gray-700 rounded-full font-semibold"
+                          >
+                            {t('buttons.noContinue')}
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  } else {
+                    openModal(t('menu.newAdventure'),
+                      <div className="text-center space-y-4">
+                        <div className="text-5xl mb-4">🌟</div>
+                        <div className="text-lg font-bold text-blue-700">{t('menu.readyToStart')}</div>
+                        <div className="p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border border-blue-200">
+                          <div className="text-sm text-gray-600">
+                            {t('menu.startJourney')}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+                }}
+                className="w-full py-1.5 px-2 bg-orange-50 text-orange-600 rounded-md hover:bg-orange-100 transition-all text-xs font-medium flex items-center justify-center gap-1"
+                title={t('menu.restartGame')}
+              >
+                🔄 {t('menu.reset')}
+              </button>
+            </div>
+          </div>
+          </>
+        )}
+      </div>
+
       <div className="relative z-10 p-8 h-full flex flex-col justify-between">
-        <div className="text-center mt-2">
+        <div className="text-center">
           {/* Logo avec croix moderne */}
           <div className="mb-2">
             <div className="w-32 h-32 mx-auto rounded-full shadow-2xl flex items-center justify-center relative"
@@ -109,7 +305,11 @@ const MenuScreen = ({
           
           {/* Titre avec effet 3D */}
           <div className="mb-4">
-            <h1 className="text-5xl font-black mb-3 tracking-wider relative"
+            <h1 className={`font-black mb-3 tracking-wider relative ${
+              t('app.title').split(' ')[0].length <= 8 ? 'text-5xl' : 
+              t('app.title').split(' ')[0].length <= 12 ? 'text-4xl' : 
+              t('app.title').split(' ')[0].length <= 16 ? 'text-3xl' : 'text-2xl'
+            }`}
                 style={{
                   color: '#ffaa55',
                   background: 'linear-gradient(135deg, #ffcc77 0%, #ff9944 50%, #ff8833 100%)',
@@ -129,7 +329,7 @@ const MenuScreen = ({
                 zIndex: -1,
                 transform: 'translateZ(-10px) translateY(2px)',
                 opacity: 0.7
-              }}>FAITH</span>
+              }}>{t('app.title').split(' ')[0]}</span>
               <span style={{
                 position: 'absolute',
                 top: 0,
@@ -138,11 +338,16 @@ const MenuScreen = ({
                 zIndex: -2,
                 transform: 'translateZ(-20px) translateY(4px)',
                 opacity: 0.5
-              }}>FAITH</span>
-              FAITH
+              }}>{t('app.title').split(' ')[0]}</span>
+              {t('app.title').split(' ')[0]}
             </h1>
             
-            <h2 className="text-2xl font-medium tracking-[0.5em] relative"
+            {t('app.title').split(' ').slice(1).join(' ') && (
+              <h2 className={`font-medium tracking-[0.5em] relative ${
+                t('app.title').split(' ').slice(1).join(' ').replace('\n', ' ').length <= 15 ? 'text-2xl' : 
+                t('app.title').split(' ').slice(1).join(' ').replace('\n', ' ').length <= 25 ? 'text-xl' : 
+                t('app.title').split(' ').slice(1).join(' ').replace('\n', ' ').length <= 35 ? 'text-lg' : 'text-base'
+              }`}
                 style={{
                   fontFamily: 'Trebuchet MS, sans-serif',
                   color: '#6b7280',
@@ -155,17 +360,19 @@ const MenuScreen = ({
                   transformOrigin: 'center',
                   display: 'inline-block',
                   marginTop: '-8px',
-                  letterSpacing: '0.5em'
+                  letterSpacing: '0.5em',
+                  whiteSpace: 'pre-line'
                 }}>
-              CHRONICLES
-            </h2>
+                {t('app.title').split(' ').slice(1).join(' ')}
+              </h2>
+            )}
           </div>
           
           <div className="text-xs text-gray-600 mb-8">
             <div className="relative">
-              La Connaissance des Écritures<br/>
+              {t('app.subtitle')}<br/>
               <span className="italic text-green-600 font-medium bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">
-                "Étudier les Écritures, c'est marcher vers la lumière divine"
+                {t('app.tagline')}
               </span>
               <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent opacity-70"></div>
             </div>
@@ -184,14 +391,14 @@ const MenuScreen = ({
               ))}
             </div>
             <div className="relative z-10">
-              <div className="text-sm text-blue-800">Rang Spirituel :</div>
+              <div className="text-sm text-blue-800">{t('menu.spiritualRank')} :</div>
               <div className="text-xl font-bold text-blue-900 mb-1">{calculatePlayerRank()}</div>
-              <div className="text-sm text-blue-800">{wisdomPoints} Points de Sagesse</div>
+              <div className="text-sm text-blue-800">{wisdomPoints} {t('menu.wisdomPoints')}</div>
               <div className="text-xs text-blue-700 mt-1">
-                {unlockedLevels.length} niveau(x) débloqué(s)
+                {unlockedLevels.length} {t('menu.levelsUnlocked')}
               </div>
               <div className="text-xs text-blue-600 italic mt-3 pt-2 border-t border-blue-200/50">
-                "La connaissance vraie mène à la sagesse éternelle"
+                {t('quotes.wisdom')}
               </div>
             </div>
           </div>
@@ -200,11 +407,12 @@ const MenuScreen = ({
         <div className="space-y-4">
           <button 
             onClick={() => {
+              audio?.sounds?.gong();
               const levelToPlay = getNextLevelToPlay();
               setCurrentLevel(levelToPlay);
               setCurrentScreen('challenge');
             }}
-            className="w-full py-4 bg-white text-black border-2 border-gray-200 rounded-full font-bold text-lg shadow-xl transform transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 relative overflow-hidden group"
+            className="w-full py-2.5 bg-white text-black border-2 border-gray-200 rounded-full font-bold text-lg shadow-xl transform transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 relative overflow-hidden group"
             style={{
               boxShadow: '0 10px 30px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.9)',
               background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)'
@@ -213,96 +421,54 @@ const MenuScreen = ({
             {/* Effet de brillance au hover */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></div>
             
-            <span className="relative z-10">JOUER</span>
+            <span className="relative z-10">{t('buttons.play')}</span>
             <ChevronRight className="w-5 h-5 relative z-10 transform group-hover:translate-x-1 transition-transform" />
           </button>
           
           <div className="grid grid-cols-3 gap-3 text-center">
             <div className="bg-gradient-to-br from-white to-yellow-50 rounded-2xl shadow-lg p-3 border border-yellow-100 transform hover:scale-105 transition-all duration-200 hover:shadow-xl">
               <Trophy className="w-6 h-6 mx-auto text-yellow-500 mb-1 drop-shadow-sm" />
-              <div className="text-xs text-yellow-700 font-medium">Score</div>
+              <div className="text-xs text-yellow-700 font-medium">{t('labels.score')}</div>
               <div className="font-bold text-yellow-800 text-sm">{score}</div>
             </div>
             <div className="bg-gradient-to-br from-white to-purple-50 rounded-2xl shadow-lg p-3 border border-purple-100 transform hover:scale-105 transition-all duration-200 hover:shadow-xl">
               <Star className="w-6 h-6 mx-auto text-purple-500 mb-1 drop-shadow-sm" />
-              <div className="text-xs text-purple-700 font-medium">Étoiles</div>
+              <div className="text-xs text-purple-700 font-medium">{t('labels.stars')}</div>
               <div className="font-bold text-purple-800 text-sm">{getTotalStars()}/273</div>
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg p-3 border border-blue-100 transform hover:scale-105 transition-all duration-200 hover:shadow-xl">
               <Sparkles className="w-6 h-6 mx-auto text-blue-500 mb-1 drop-shadow-sm" />
-              <div className="text-xs text-blue-700 font-medium">Révélation</div>
+              <div className="text-xs text-blue-700 font-medium">{t('labels.revelation')}</div>
               <div className="font-bold text-blue-800 text-sm">{revelationPoints}</div>
             </div>
           </div>
           
-          {/* Menu du bas - Version améliorée */}
-          <div className="mt-3 flex justify-around px-2">
+          {/* Menu du bas - Version simplifiée avec 3 boutons */}
+          <div className="mt-6 grid grid-cols-3 gap-3 px-2">
             <button 
-              onClick={() => setCurrentScreen('info')}
+              onClick={() => {
+                audio?.sounds?.tick();
+                setCurrentScreen('info');
+              }}
               className="flex flex-col items-center p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95 border border-white/40 group"
-              style={{minWidth: '85px'}}
             >
               <Info className="w-5 h-5 text-blue-500 mb-1 drop-shadow-sm group-hover:text-blue-600 transition-colors" />
-              <span className="text-[10px] text-gray-700 font-medium group-hover:text-gray-800 transition-colors">Info</span>
+              <span className="text-[10px] text-gray-700 font-medium group-hover:text-gray-800 transition-colors">{t('menu.info')}</span>
             </button>
             
             <button 
               onClick={() => {
+                audio?.sounds?.tick();
                 const treasure = getBibleTreasure();
-                openModal("💎 Les Trésors de la Bible",
+                openModal(t('treasures.title'),
                   <div className="space-y-3">
-                    <div className="p-3 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl">
-                      <div className="text-xs font-bold text-amber-700 mb-2">✨ Verset du jour</div>
-                      <div className="text-sm text-gray-700 italic">{treasure.verse}</div>
-                    </div>
-                    <div className="p-3 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl">
-                      <div className="text-xs font-bold text-blue-700 mb-2">🌟 Le saviez-vous ?</div>
-                      <div className="text-sm text-gray-700">{treasure.fact}</div>
-                    </div>
-                    <div className="p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
-                      <div className="text-xs font-bold text-purple-700 mb-2">📜 Trésor caché</div>
-                      <div className="text-sm text-gray-700">{treasure.treasure}</div>
-                    </div>
-                    <div className="p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl">
-                      <div className="text-xs font-bold text-green-700 mb-2">🤔 Question rigolote</div>
-                      <div className="text-sm text-gray-700">{treasure.question}</div>
-                    </div>
-                    {hasLastThreeStars() && (
-                      <div className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border border-amber-200">
-                        <div className="text-xs font-bold text-amber-700 mb-2">📝 Mémo d'Emmanuel</div>
-                        <div className="text-sm text-gray-700 leading-relaxed">
-                          Vous êtes arrivés en haut de la montagne, et la connaissance est acquise.<br/>
-                          Mais la foi inébranlable demande de l'expérience de vie, de la miséricorde et du véritable amour de Jésus.<br/><br/>
-                          
-                          Les diverses épreuves de la vie testeront votre voie, le vrai chemin que l'on choisit, notre cœur.<br/>
-                          Nous restons imparfaits, nos désirs sont nombreux, et l'amour du gain ou de notre confort personnel devient trop souvent notre priorité égoïste.<br/><br/>
-                          
-                          Demandez à Dieu la sagesse, son amour, sa force, et reconnaissez vos faiblesses humblement, car on ne peut rien Lui cacher… Rien.<br/>
-                          Inutile de voyager en mode privé, en VPN, ou même d'effacer l'historique.<br/><br/>
-                          
-                          Jeûnez comme Daniel : privez-vous un moment de ce que vous aimez le plus, dans le calme et la sagesse. Cela vous permettra de mieux entendre Dieu, d'avoir une disposition de cœur prête aux transformations profondes — et souvent douloureuses.<br/>
-                          Alors, les rêves et les songes deviendront plus clairs, comme pour Joseph.<br/><br/>
-                          
-                          Mais gardez-vous de l'orgueil : ne cédez pas au « j'ai toujours raison » ou au « je connais mieux ». Car la révélation de Dieu est une grâce extraordinaire.<br/>
-                          Ne devenez pas un docteur de la Loi, capable de crucifier encore Jésus aujourd'hui, Lui qui demande simplement d'aimer votre prochain… et de lui accorder la même liberté que vous-même recevez.<br/><br/>
-                          
-                          Avoir la foi, c'est entrer dans une relation et un cheminement libre du cœur.<br/>
-                          Elle fera de vous des héros puissants, capables de l'impossible.<br/>
-                          Car l'expérience du surnaturel, la présence de Dieu, sa confirmation ou sa bénédiction vous rendra vraiment inébranlables.
-                        </div>
-                      </div>
-                    )}
-                    <div className="p-3 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl border border-red-200">
-                      <div className="text-xs font-bold text-red-700 mb-2">❌ Clarification importante</div>
-                      <div className="text-sm text-gray-700 mb-1">{treasure.jesusIsNot}</div>
-                      <div className="text-xs text-gray-600 italic">{treasure.jesusIsNotContext}</div>
-                    </div>
+                    {/* Bible Offline - EN PREMIER */}
                     <div className="p-3 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border border-indigo-200">
-                      <div className="text-xs font-bold text-indigo-700 mb-2">📖 Lire la Bible Offline</div>
+                      <div className="text-xs font-bold text-indigo-700 mb-2">📖 {t('treasures.bibleOffline')}</div>
                       <div className="text-sm text-gray-700 font-semibold mb-1">{treasure.bibleResource.name}</div>
                       <div className="text-xs text-gray-600 mb-2">{treasure.bibleResource.description}</div>
                       <div className="text-xs text-indigo-600 mb-2">
-                        Fonctionnalités : {treasure.bibleResource.features.join(", ")}
+                        {t('treasures.features')} : {treasure.bibleResource.features.join(", ")}
                       </div>
                       <button
                         onClick={() => {
@@ -311,78 +477,165 @@ const MenuScreen = ({
                         }}
                         className="w-full py-2 bg-indigo-500 text-white rounded-full text-xs font-bold shadow-md hover:shadow-lg active:scale-95 transition-all"
                       >
-                        📖 Ouvrir le lecteur
+                        📖 {t('treasures.openReader')}
                       </button>
                     </div>
+                    
+                    <div className="p-3 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl">
+                      <div className="text-xs font-bold text-amber-700 mb-2">✨ {t('treasures.verse')}</div>
+                      <div className="text-sm text-gray-700 italic">{treasure.verse}</div>
+                    </div>
+                    <div className="p-3 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl">
+                      <div className="text-xs font-bold text-blue-700 mb-2">🌟 {t('treasures.fact')}</div>
+                      <div className="text-sm text-gray-700">{treasure.fact}</div>
+                    </div>
+                    <div className="p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
+                      <div className="text-xs font-bold text-purple-700 mb-2">� {t('treasures.treasure')}</div>
+                      <div className="text-sm text-gray-700">{treasure.treasure}</div>
+                    </div>
+                    <div className="p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl">
+                      <div className="text-xs font-bold text-green-700 mb-2">🤔 {t('treasures.question')}</div>
+                      <div className="text-sm text-gray-700">{treasure.question}</div>
+                    </div>
+                    {hasLastThreeStars() && (
+                      <div className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border border-amber-200">
+                        <div className="text-xs font-bold text-amber-700 mb-2">� {t('treasures.emmanuelMemo')}</div>
+                        <div className="text-sm text-gray-700 leading-relaxed">
+                          {t('treasures.emmanuelMessage')}
+                        </div>
+                      </div>
+                    )}
+                    <div className="p-3 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl border border-red-200">
+                      <div className="text-xs font-bold text-red-700 mb-2">❌ {t('treasures.clarification')}</div>
+                      <div className="text-sm text-gray-700 mb-1">{treasure.jesusIsNot}</div>
+                      <div className="text-xs text-gray-600 italic">{treasure.jesusIsNotContext}</div>
+                    </div>
                     <div className="p-2 bg-gradient-to-r from-gray-50 to-slate-50 rounded-xl border">
-                      <div className="text-xs font-bold text-gray-600 mb-1">📖 Étude biblique</div>
+                      <div className="text-xs font-bold text-gray-600 mb-1">📖 {t('treasures.bibleStudy')}</div>
                       <div className="text-xs text-gray-600 font-mono mb-1">{treasure.strongGreek}</div>
-                      <div className="text-xs text-gray-500 italic">Version : {treasure.version}</div>
+                      <div className="text-xs text-gray-500 italic">{t('treasures.version')} : {treasure.version}</div>
                     </div>
                   </div>
                 );
               }}
               className="flex flex-col items-center p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95 border border-white/40 group"
-              style={{minWidth: '85px'}}
             >
               <Gem className="w-5 h-5 text-purple-500 mb-1 drop-shadow-sm group-hover:text-purple-600 transition-colors" />
-              <span className="text-[10px] text-gray-700 font-medium text-center group-hover:text-gray-800 transition-colors">Trésors</span>
+              <span className="text-[10px] text-gray-700 font-medium text-center group-hover:text-gray-800 transition-colors">{t('menu.treasures')}</span>
             </button>
-            
+
             <button 
               onClick={() => {
-                if (wisdomPoints > 0) {
-                  openModal("🔄 Recommencer l'aventure ?",
-                    <div className="space-y-4">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">⚠️</div>
-                        <p className="text-sm text-gray-700 mb-4">
-                          Es-tu sûr de vouloir effacer toute ta progression ?
-                        </p>
-                        <div className="p-3 bg-red-50 rounded-xl">
-                          <div className="text-xs text-red-700">
-                            Tu perdras :<br/>
-                            • {wisdomPoints} Points de Sagesse<br/>
-                            • {getTotalStars()} étoiles collectées<br/>
-                            • {unlockedLevels.length} niveaux débloqués
+                audio?.sounds?.tick();
+                openModal("",
+                  <div className="space-y-4">
+                    {/* Header */}
+                    <div className="text-center mb-4">
+                      <div className="text-3xl mb-2">📖</div>
+                      <h3 className="text-lg font-bold text-blue-600">
+                        Évangile de Jean
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        21 chapitres • 878 versets • 14 langues
+                      </p>
+                    </div>
+
+                    {/* Options */}
+                    <div className="grid grid-cols-1 gap-3">
+                      {/* Lecteur Bible + Strong EN PREMIER */}
+                      <button
+                        onClick={() => {
+                          setShowModal(false);
+                          setTimeout(() => {
+                            openJohnBibleReader(1);
+                          }, 100);
+                        }}
+                        className="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 hover:from-blue-100 hover:to-indigo-100 transition-all group"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <BookOpen className="w-5 h-5 text-white" />
                           </div>
+                          <div className="flex-1 text-left">
+                            <div className="font-semibold text-blue-700">
+                              Lecteur Bible + Strong
+                            </div>
+                            <div className="text-sm text-gray-600">
+                              Lecture complète avec dictionnaire Strong
+                            </div>
+                          </div>
+                          <ChevronRight className="w-5 h-5 text-blue-500" />
                         </div>
+                      </button>
+
+                      {/* Trésors de Jean EN SECOND */}
+                      <button
+                        onClick={() => {
+                          setShowModal(false);
+                          setTimeout(() => {
+                            openModal("Trésors de Jean, l'apôtre de l'amour",
+                              <JohnTreasuresDisplay onClose={() => setShowModal(false)} />
+                            );
+                          }, 100);
+                        }}
+                        className="p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl border border-purple-200 hover:from-purple-100 hover:to-blue-100 transition-all group"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <Heart className="w-5 h-5 text-white" />
+                          </div>
+                          <div className="flex-1 text-left">
+                            <div className="font-semibold text-purple-700">
+                              Trésors de Jean
+                            </div>
+                            <div className="text-sm text-gray-600">
+                              Découvrez les versets célèbres et inspirants
+                            </div>
+                          </div>
+                          <ChevronRight className="w-5 h-5 text-purple-500" />
+                        </div>
+                      </button>
+                    </div>
+
+                    {/* Quick Access */}
+                    <div className="pt-3 border-t border-gray-200">
+                      <div className="text-xs font-semibold text-gray-600 mb-2">
+                        Accès rapide aux chapitres célèbres:
                       </div>
-                      <div className="space-y-2">
-                        <button 
-                          onClick={resetProgress}
-                          className="w-full py-3 bg-red-500 text-white rounded-full font-bold shadow-lg active:scale-95 transition-all"
-                        >
-                          Oui, recommencer
-                        </button>
-                        <button 
-                          onClick={() => setShowModal(false)}
-                          className="w-full py-3 bg-gray-200 text-gray-700 rounded-full font-semibold"
-                        >
-                          Non, continuer
-                        </button>
+                      <div className="flex flex-wrap gap-2">
+                        {[
+                          { ch: 1, title: "Prologue" },
+                          { ch: 3, title: "Naître de nouveau" },
+                          { ch: 14, title: "Je suis le chemin" },
+                          { ch: 20, title: "Résurrection" }
+                        ].map(({ ch, title }) => (
+                          <button
+                            key={ch}
+                            onClick={() => {
+                              setShowModal(false);
+                              setTimeout(() => {
+                                openJohnBibleReader(ch);
+                              }, 100);
+                            }}
+                            className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-xs font-medium text-gray-700 transition-colors"
+                          >
+                            Ch.{ch}: {title}
+                          </button>
+                        ))}
                       </div>
                     </div>
-                  );
-                } else {
-                  openModal("🎮 Nouvelle Aventure",
-                    <div className="text-center space-y-4">
-                      <div className="text-5xl mb-4">🌟</div>
-                      <div className="text-lg font-bold text-blue-700">Prêt à commencer ?</div>
-                      <div className="p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border border-blue-200">
-                        <div className="text-sm text-gray-600">
-                          "Commence ton voyage dans la connaissance des Écritures !"
-                        </div>
-                      </div>
-                    </div>
-                  );
-                }
+                  </div>
+                );
               }}
-              className="flex flex-col items-center p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95 border border-white/40 group"
-              style={{minWidth: '85px'}}
+              className="flex flex-col items-center p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95 border border-white/40 group relative"
             >
-              <div className="w-5 h-5 text-orange-500 mb-1 drop-shadow-sm group-hover:text-orange-600 transition-colors text-center">🔄</div>
-              <span className="text-[10px] text-gray-700 font-medium text-center group-hover:text-gray-800 transition-colors">Reset</span>
+              {/* Badge "Nouveau" */}
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full flex items-center justify-center">
+                <span className="text-white text-[6px] font-bold">N</span>
+              </div>
+              
+              <Book className="w-5 h-5 text-blue-600 mb-1 drop-shadow-sm group-hover:text-blue-700 transition-colors" />
+              <span className="text-[10px] text-gray-700 font-medium text-center group-hover:text-gray-800 transition-colors">{t('menu.john')}</span>
             </button>
           </div>
         </div>
