@@ -20,139 +20,103 @@ const UnityPeaceModule = () => {
   // Les religions et leurs fondements communs
   const religions = {
     christianisme: {
-      nom: "Christianisme",
+      nom: t('unity.religions.christianity.name'),
       couleur: "#4A90E2",
       symbole: "✝️",
       fondements: {
-        dieu: "Un Dieu unique, Père créateur",
-        bien: "L'amour du prochain, le pardon, la paix",
-        mal: "La haine, l'égoïsme, la violence",
-        anges: "Les messagers de Dieu (Gabriel, Michel...)",
-        unite: "Un seul Dieu pour tous les hommes"
+        dieu: t('unity.religions.christianity.godText'),
+        bien: t('unity.religions.christianity.goodText'),
+        mal: t('unity.religions.christianity.evilText'),
+        anges: t('unity.religions.christianity.angelsText'),
+        unite: t('unity.religions.christianity.unityText')
       },
-      valeursCles: ["Amour", "Pardon", "Paix", "Humilité", "Justice"]
+      valeursCles: t('unity.religions.christianity.values').split(',')
     },
     islam: {
-      nom: "Islam",
+      nom: t('unity.religions.islam.name'),
       couleur: "#27AE60",
       symbole: "☪️",
       fondements: {
-        dieu: "Allah, l'Unique et Miséricordieux",
-        bien: "La justice, la charité, la paix",
-        mal: "L'oppression, le mensonge, la division",
-        anges: "Les anges de lumière (Jibril, Mikail...)",
-        unite: "Il n'y a de dieu qu'Allah"
+        dieu: t('unity.religions.islam.godText'),
+        bien: t('unity.religions.islam.goodText'),
+        mal: t('unity.religions.islam.evilText'),
+        anges: t('unity.religions.islam.angelsText'),
+        unite: t('unity.religions.islam.unityText')
       },
-      valeursCles: ["Paix", "Justice", "Charité", "Respect", "Miséricorde"]
+      valeursCles: t('unity.religions.islam.values').split(',')
     },
     judaisme: {
-      nom: "Judaïsme",
+      nom: t('unity.religions.judaism.name'),
       couleur: "#3498DB",
       symbole: "✡️",
       fondements: {
-        dieu: "YHWH, l'Éternel unique",
-        bien: "La justice, la compassion, la vie",
-        mal: "L'oppression, la médisance, la haine",
-        anges: "Les messagers célestes (Malakhim)",
-        unite: "Écoute Israël, l'Éternel est Un"
+        dieu: t('unity.religions.judaism.godText'),
+        bien: t('unity.religions.judaism.goodText'),
+        mal: t('unity.religions.judaism.evilText'),
+        anges: t('unity.religions.judaism.angelsText'),
+        unite: t('unity.religions.judaism.unityText')
       },
-      valeursCles: ["Justice", "Vie", "Mémoire", "Paix", "Étude"]
+      valeursCles: t('unity.religions.judaism.values').split(',')
     },
     hindouisme: {
-      nom: "Hindouisme",
+      nom: t('unity.religions.hinduism.name'),
       couleur: "#E67E22",
       symbole: "🕉️",
       fondements: {
-        dieu: "Brahman, la réalité suprême",
-        bien: "La non-violence (ahimsa), le devoir juste",
-        mal: "La violence, l'ignorance spirituelle",
-        anges: "Les Devas, êtres célestes bienveillants",
-        unite: "Tout est Un dans Brahman"
+        dieu: t('unity.religions.hinduism.godText'),
+        bien: t('unity.religions.hinduism.goodText'),
+        mal: t('unity.religions.hinduism.evilText'),
+        anges: t('unity.religions.hinduism.angelsText'),
+        unite: t('unity.religions.hinduism.unityText')
       },
-      valeursCles: ["Non-violence", "Vérité", "Compassion", "Pureté", "Harmonie"]
+      valeursCles: t('unity.religions.hinduism.values').split(',')
     },
     bouddhisme: {
-      nom: "Bouddhisme",
+      nom: t('unity.religions.buddhism.name'),
       couleur: "#9B59B6",
       symbole: "☸️",
       fondements: {
-        dieu: "Pas de dieu créateur, mais respect du sacré",
-        bien: "La compassion, la sagesse, la paix",
-        mal: "La souffrance causée par l'ignorance",
-        anges: "Les Bodhisattvas, êtres éveillés",
-        unite: "Nature de Bouddha en chacun"
+        dieu: t('unity.religions.buddhism.godText'),
+        bien: t('unity.religions.buddhism.goodText'),
+        mal: t('unity.religions.buddhism.evilText'),
+        anges: t('unity.religions.buddhism.angelsText'),
+        unite: t('unity.religions.buddhism.unityText')
       },
-      valeursCles: ["Compassion", "Sagesse", "Paix", "Non-violence", "Éveil"]
+      valeursCles: t('unity.religions.buddhism.values').split(',')
     }
   };
 
   // Les bases communes : ce qui unit l'humanité
   const valeursUniverselles = [
     {
-      titre: "Le Bien",
-      description: "Toutes les religions enseignent l'amour, la justice et la compassion",
-      exemples: [
-        "Aimer son prochain comme soi-même",
-        "Faire le bien sans distinction",
-        "Protéger les faibles et les opprimés",
-        "Dire la vérité avec bienveillance",
-        "Partager ce que l'on a"
-      ]
+      titre: t('unity.common.goodTitle'),
+      description: t('unity.common.goodDescription'),
+      exemples: t('unity.common.goodExamples').split('|')
     },
     {
-      titre: "Le Mal",
-      description: "Toutes condamnent la violence, le mensonge et l'oppression",
-      exemples: [
-        "Tuer sans justice",
-        "Voler et exploiter",
-        "Mentir et calomnier",
-        "Mépriser et humilier",
-        "Diviser et haïr"
-      ]
+      titre: t('unity.common.evilTitle'),
+      description: t('unity.common.evilDescription'),
+      exemples: t('unity.common.evilExamples').split('|')
     },
     {
-      titre: "Les Anges et Êtres Spirituels",
-      description: "Presque toutes reconnaissent des messagers célestes bienveillants",
-      exemples: [
-        "Anges messagers de Dieu",
-        "Guides spirituels",
-        "Êtres de lumière",
-        "Protecteurs célestes",
-        "Bodhisattvas et Devas"
-      ]
+      titre: t('unity.common.angelsTitle'),
+      description: t('unity.common.angelsDescription'),
+      exemples: t('unity.common.angelsExamples').split('|')
     },
     {
-      titre: "Un Dieu Unique (ou Réalité Suprême)",
-      description: "La majorité croit en une source unique, un créateur ou une réalité ultime",
-      exemples: [
-        "Christianisme, Islam, Judaïsme : Un seul Dieu",
-        "Hindouisme : Brahman, l'Un suprême",
-        "Bouddhisme : Nature de Bouddha universelle",
-        "Tous cherchent la vérité ultime",
-        "Tous aspirent à l'unité et à la paix"
-      ]
+      titre: t('unity.common.godTitle'),
+      description: t('unity.common.godDescription'),
+      exemples: t('unity.common.godExamples').split('|')
     },
     {
-      titre: "La Relation et la Paix",
-      description: "Ce qui unit vraiment toutes les religions et tous les hommes",
-      exemples: [
-        "Chaque religion cherche la relation avec le divin",
-        "Chaque homme recherche la paix",
-        "Cette relation qui nous lie tous, c'est l'amour de Dieu",
-        "L'amour est le lien universel",
-        "La paix est notre aspiration commune"
-      ]
+      titre: t('unity.common.relationTitle'),
+      description: t('unity.common.relationDescription'),
+      exemples: t('unity.common.relationExamples').split('|')
     },
     {
-      titre: "L'Inclusion : Aimés de Dieu",
-      description: "La diversité religieuse est vaste, mais encore plus vaste est l'inclusion",
-      exemples: [
-        "Inclusion des autres là où ils sont appelés par Dieu",
-        "Respect des différences de couleur",
-        "Respect des différences de genres",
-        "L'inclusion nous rend humains uniques, aimés de Dieu",
-        "Jésus a dit : 'Aimez-vous les uns les autres'"
-      ]
+      titre: t('unity.common.inclusionTitle'),
+      description: t('unity.common.inclusionDescription'),
+      exemples: t('unity.common.inclusionExamples').split('|')
     }
   ];
 
@@ -160,45 +124,45 @@ const UnityPeaceModule = () => {
   const processusHumilite = [
     {
       etape: 1,
-      titre: "Reconnaître : nos frontières viennent du passé",
-      description: "La division, l'isolement par des barrières et frontières de peur, est l'œuvre de notre passé périlleux. Nos divisions ne sont pas la volonté de Dieu.",
-      action: "Accepter que ma tradition n'est qu'à moi, et je fais partie de la diversité voulue par Dieu"
+      titre: t('unity.humility.step1Title'),
+      description: t('unity.humility.step1Description'),
+      action: t('unity.humility.step1Action')
     },
     {
       etape: 2,
-      titre: "Le respect : socle de l'humilité, gardien de la paix",
-      description: "Même si la fraternité n'est pas applicable objectivement, le respect est le fondement.",
-      action: "Respecter toutes les croyances, même sans tout comprendre"
+      titre: t('unity.humility.step2Title'),
+      description: t('unity.humility.step2Description'),
+      action: t('unity.humility.step2Action')
     },
     {
       etape: 3,
-      titre: "Comprendre sans juger",
-      description: "Aujourd'hui, comprendre les autres est un processus d'humilité nécessaire.",
-      action: "Écouter vraiment ce que croient les autres, sans jugement"
+      titre: t('unity.humility.step3Title'),
+      description: t('unity.humility.step3Description'),
+      action: t('unity.humility.step3Action')
     },
     {
       etape: 4,
-      titre: "Changement de toi d'abord : sois une vraie lanterne",
-      description: "Reconnaître que la bienséance n'est pas la même pour chacun. Change ton cœur progressivement, transforme ta vie, deviens une vraie lumière.",
-      action: "Ne pas imposer mes règles aux autres, mais être un exemple vivant par ma transformation"
+      titre: t('unity.humility.step4Title'),
+      description: t('unity.humility.step4Description'),
+      action: t('unity.humility.step4Action')
     },
     {
       etape: 5,
-      titre: "Rompre avec l'esprit communautariste",
-      description: "Nos esprits de parti nous poussent à la politique de l'orgueil : 'J'ai raison de te faire mal, j'ai raison un point c'est tout.' Prenez garde au cœur du problème, à la racine de notre propre mal.",
-      action: "Refuser les discours de division dans ma propre communauté"
+      titre: t('unity.humility.step5Title'),
+      description: t('unity.humility.step5Description'),
+      action: t('unity.humility.step5Action')
     },
     {
       etape: 6,
-      titre: "Pour être libre, rendre libre les autres",
-      description: "Ma liberté dépend de celle que j'accorde aux autres.",
-      action: "Défendre la liberté de conscience de tous, pas seulement la mienne"
+      titre: t('unity.humility.step6Title'),
+      description: t('unity.humility.step6Description'),
+      action: t('unity.humility.step6Action')
     },
     {
       etape: 7,
-      titre: "Éviter la poursuite des mots pour mots",
-      description: "Ne pas répondre à la haine par la haine, aux insultes par les insultes.",
-      action: "Choisir la paix pour que nos enfants vivent en paix dans la diversité"
+      titre: t('unity.humility.step7Title'),
+      description: t('unity.humility.step7Description'),
+      action: t('unity.humility.step7Action')
     }
   ];
 

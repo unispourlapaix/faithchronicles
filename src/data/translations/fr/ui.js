@@ -407,11 +407,51 @@ export const uiTranslations = {
       theUnity: "L'Unité :",
       values: "Valeurs :",
       
-      christianity: "Christianisme",
-      islam: "Islam",
-      judaism: "Judaïsme",
-      hinduism: "Hindouisme",
-      buddhism: "Bouddhisme"
+      christianity: {
+        name: "Christianisme",
+        godText: "Un Dieu unique, Père créateur",
+        goodText: "L'amour du prochain, le pardon, la paix",
+        evilText: "La haine, l'égoïsme, la violence",
+        angelsText: "Les messagers de Dieu (Gabriel, Michel...)",
+        unityText: "Un seul Dieu pour tous les hommes",
+        values: "Amour,Pardon,Paix,Humilité,Justice"
+      },
+      islam: {
+        name: "Islam",
+        godText: "Allah, l'Unique et Miséricordieux",
+        goodText: "La justice, la charité, la paix",
+        evilText: "L'oppression, le mensonge, la division",
+        angelsText: "Les anges de lumière (Jibril, Mikail...)",
+        unityText: "Il n'y a de dieu qu'Allah",
+        values: "Paix,Justice,Charité,Respect,Miséricorde"
+      },
+      judaism: {
+        name: "Judaïsme",
+        godText: "YHWH, l'Éternel unique",
+        goodText: "La justice, la compassion, la vie",
+        evilText: "L'oppression, la médisance, la haine",
+        angelsText: "Les messagers célestes (Malakhim)",
+        unityText: "Écoute Israël, l'Éternel est Un",
+        values: "Justice,Vie,Mémoire,Paix,Étude"
+      },
+      hinduism: {
+        name: "Hindouisme",
+        godText: "Brahman, la réalité suprême",
+        goodText: "La non-violence (ahimsa), le devoir juste",
+        evilText: "La violence, l'ignorance spirituelle",
+        angelsText: "Les Devas, êtres célestes bienveillants",
+        unityText: "Tout est Un dans Brahman",
+        values: "Non-violence,Vérité,Compassion,Pureté,Harmonie"
+      },
+      buddhism: {
+        name: "Bouddhisme",
+        godText: "Pas de dieu créateur, mais respect du sacré",
+        goodText: "La compassion, la sagesse, la paix",
+        evilText: "La souffrance causée par l'ignorance",
+        angelsText: "Les Bodhisattvas, êtres éveillés",
+        unityText: "Nature de Bouddha en chacun",
+        values: "Compassion,Sagesse,Paix,Non-violence,Éveil"
+      }
     },
 
     // Valeurs communes
@@ -421,21 +461,27 @@ export const uiTranslations = {
       
       goodTitle: "Le Bien",
       goodDescription: "Toutes les religions enseignent l'amour, la justice et la compassion",
+      goodExamples: "Aimer son prochain comme soi-même|Faire le bien sans distinction|Protéger les faibles et les opprimés|Dire la vérité avec bienveillance|Partager ce que l'on a",
       
       evilTitle: "Le Mal",
       evilDescription: "Toutes condamnent la violence, le mensonge et l'oppression",
+      evilExamples: "Tuer sans justice|Voler et exploiter|Mentir et calomnier|Mépriser et humilier|Diviser et haïr",
       
       angelsTitle: "Les Anges et Êtres Spirituels",
       angelsDescription: "Presque toutes reconnaissent des messagers célestes bienveillants",
+      angelsExamples: "Anges messagers de Dieu|Guides spirituels|Êtres de lumière|Protecteurs célestes|Bodhisattvas et Devas",
       
       godTitle: "Un Dieu Unique (ou Réalité Suprême)",
       godDescription: "La majorité croit en une source unique, un créateur ou une réalité ultime",
+      godExamples: "Christianisme, Islam, Judaïsme : Un seul Dieu|Hindouisme : Brahman, l'Un suprême|Bouddhisme : Nature de Bouddha universelle|Tous cherchent la vérité ultime|Tous aspirent à l'unité et à la paix",
       
       relationTitle: "La Relation et la Paix",
       relationDescription: "Ce qui unit vraiment toutes les religions et tous les hommes",
+      relationExamples: "Chaque religion cherche la relation avec le divin|Chaque homme recherche la paix|Cette relation qui nous lie tous, c'est l'amour de Dieu|L'amour est le lien universel|La paix est notre aspiration commune",
       
       inclusionTitle: "L'Inclusion : Aimés de Dieu",
       inclusionDescription: "La diversité religieuse est vaste, mais encore plus vaste est l'inclusion",
+      inclusionExamples: "Inclusion des autres là où ils sont appelés par Dieu|Respect des différences de couleur|Respect des différences de genres|L'inclusion nous rend humains uniques, aimés de Dieu|Jésus a dit : 'Aimez-vous les uns les autres'",
       
       finalQuote: "J'ai été surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu, que l'ange Michel est un grand messager pour les musulmans, que Jésus, Isa, Yeshua sont connus de diverses manières même dans la foi chrétienne. Car il existe diverses tribus, diverses églises, diverses familles.",
       finalQuote2: "Nous parlons des mêmes réalités avec des noms différents.",
@@ -449,6 +495,34 @@ export const uiTranslations = {
       
       step: "Étape",
       action: "Action :",
+      
+      step1Title: "Reconnaître : nos frontières viennent du passé",
+      step1Description: "La division, l'isolement par des barrières et frontières de peur, est l'œuvre de notre passé périlleux. Nos divisions ne sont pas la volonté de Dieu.",
+      step1Action: "Accepter que ma tradition n'est qu'à moi, et je fais partie de la diversité voulue par Dieu",
+      
+      step2Title: "Le respect : socle de l'humilité, gardien de la paix",
+      step2Description: "Même si la fraternité n'est pas applicable objectivement, le respect est le fondement.",
+      step2Action: "Respecter toutes les croyances, même sans tout comprendre",
+      
+      step3Title: "Comprendre sans juger",
+      step3Description: "Aujourd'hui, comprendre les autres est un processus d'humilité nécessaire.",
+      step3Action: "Écouter vraiment ce que croient les autres, sans jugement",
+      
+      step4Title: "Changement de toi d'abord : sois une vraie lanterne",
+      step4Description: "Reconnaître que la bienséance n'est pas la même pour chacun. Change ton cœur progressivement, transforme ta vie, deviens une vraie lumière.",
+      step4Action: "Ne pas imposer mes règles aux autres, mais être un exemple vivant par ma transformation",
+      
+      step5Title: "Rompre avec l'esprit communautariste",
+      step5Description: "Nos esprits de parti nous poussent à la politique de l'orgueil : 'J'ai raison de te faire mal, j'ai raison un point c'est tout.' Prenez garde au cœur du problème, à la racine de notre propre mal.",
+      step5Action: "Refuser les discours de division dans ma propre communauté",
+      
+      step6Title: "Pour être libre, rendre libre les autres",
+      step6Description: "Ma liberté dépend de celle que j'accorde aux autres.",
+      step6Action: "Défendre la liberté de conscience de tous, pas seulement la mienne",
+      
+      step7Title: "Éviter la poursuite des mots pour mots",
+      step7Description: "Ne pas répondre à la haine par la haine, aux insultes par les insultes.",
+      step7Action: "Choisir la paix pour que nos enfants vivent en paix dans la diversité",
       
       discernFruits: "Discerner par les Fruits",
       humanHeart: "Le cœur de l'homme qui divise",
