@@ -59,7 +59,9 @@ export const uiTranslations = {
     testFailed: "Trial Failed",
     wisdomBonus: "Bonus",
     xpGained: "XP",
-    newRank: "New rank"
+    newRank: "New rank",
+    nextGrade: "Next grade",
+    maxLevelReached: "Maximum level reached!"
   },
   
   menu: {
@@ -77,7 +79,13 @@ export const uiTranslations = {
     spiritualRank: "Spiritual Rank",
     newAdventure: "🎮 New Adventure",
     readyToStart: "Ready to start?",
-    startJourney: "Begin your journey into the knowledge of the Scriptures!"
+    startJourney: "Begin your journey into the knowledge of the Scriptures!",
+    audioControls: "Audio controls",
+    mute: "Mute sound",
+    unmute: "Unmute sound",
+    close: "Close",
+    language: "Language",
+    restartGame: "Restart game"
   },
   
   login: {
