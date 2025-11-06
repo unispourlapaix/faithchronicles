@@ -2,7 +2,7 @@
 
 ## 📋 Vue d'ensemble
 
-FaithChronicles utilise maintenant un système de cache intelligent pour optimiser les performances et réduire les appels API inutiles vers Supabase.
+UNITYQUEST Chronicles of Love utilise maintenant un système de cache intelligent pour optimiser les performances et réduire les appels API inutiles vers Supabase.
 
 ## ⏱️ Cache de 60 secondes
 
