@@ -1,35 +1,5 @@
 # 📖 L'Évangile de Jean : Le Chemin de l'Amour et l'Unité
 
-## 🌟 Introduction philosophique
-
-> *"Au commencement était la Parole, et la Parole était avec Dieu, et la Parole était Dieu."*  
-> — **Jean 1:1**
-
-L'Évangile de Jean se distingue des autres évangiles par sa profondeur théologique et philosophique. Là où Matthieu, Marc et Luc racontent les événements de la vie de Jésus, Jean révèle leur **signification ontologique** : Jésus n'est pas simplement un prophète ou un maître, mais **le Logos incarné**, le principe même de l'existence et de la cohérence de l'univers.
-
----
-
-## 💫 Le Logos : Principe d'Unité Cosmique
-
-### La Parole Créatrice
-
-Jean ouvre son évangile par une déclaration philosophique majeure : **le Logos** (la Parole, la Raison) était au commencement. Ce concept, familier aux philosophes grecs comme Héraclite et aux Juifs hellénisés comme Philon d'Alexandrie, devient ici le fondement d'une nouvelle compréhension de l'unité :
-
-- **Le Logos préexiste** à la création
-- **Le Logos crée** toutes choses
-- **Le Logos s'incarne** en Jésus-Christ
-
-Cette triple dimension établit Jésus comme le **pont ontologique** entre le divin et l'humain, entre l'éternité et le temps, entre l'unité transcendante et la diversité manifeste.
-
-### L'Unité dans la Différence
-
-> *"En lui était la vie, et la vie était la lumière des hommes."*  
-> — **Jean 1:4**
-
-La lumière, chez Jean, n'est pas une métaphore banale mais un **principe d'unification**. La lumière révèle, unifie, rend cohérent. Elle ne détruit pas les couleurs mais les révèle dans leur diversité harmonieuse. Ainsi, l'unité proposée par Jean n'est pas une uniformité, mais une **harmonie dans la diversité**.
-
----
-
 ## 🕊️ L'Amour : L'Ontologie de l'Unité
 
 ### Le Commandement Nouveau
