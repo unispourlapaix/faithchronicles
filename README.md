@@ -1,327 +1,346 @@
-# 📖 FaithChronicles / BibleQuest
+# 🎵✨ UNITYQUEST Chronicles of Love
 
-> **UNITYQUEST Chronicles of Love** - Interactive Scripture Discovery  
-> *"Le Chemin de l'Amour"* - The Path of Love
+> *Une expérience spirituelle et artistique immersive*  
+> **Le Chemin de l'Amour** • The Path of Love
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/faithchronicles)
 [![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
-## 🌟 À Propos du Projet
-
-**FaithChronicles** (aussi connu sous le nom de **BibleQuest**) est une aventure biblique interactive centrée sur **l'Évangile de Jean** et le thème universel de **"Le Chemin de l'Amour"**. 
-
-Ce jeu éducatif et spirituel permet aux joueurs d'explorer les Écritures à travers **91 niveaux** répartis sur **8 chapitres thématiques**, disponibles en **17 langues**.
-
-### 🎯 Mission
-
-Rendre les Écritures accessibles, engageantes et transformatrices à travers une expérience interactive qui célèbre :
-- ✝️ **L'Évangile de Jean** comme fondation spirituelle
-- 💝 **Le Chemin de l'Amour** comme thème central
-- 🌍 **L'Unité dans la Diversité** comme vision
-- 🕊️ **La Paix entre les Traditions** comme appel
+[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/faithchronicles)
 
 ---
 
-## ✨ Fonctionnalités Principales
+## 🌟 Une Aventure Spirituelle Audiovisuelle
 
-### 📚 Contenu Biblique
-- **91 niveaux** de questions bibliques interactives
-- **8 chapitres** couvrant l'ensemble de l'histoire biblique
-- **273 étoiles** à collecter (3 par niveau)
-- **Chapitre bonus secret** pour les joueurs accomplis
-- **Lecteur biblique intégré** avec références Strong pour l'Évangile de Jean
+**UNITYQUEST Chronicles of Love** est une **odyssée interactive** qui transforme la découverte biblique en **expérience immersive**. 
 
-### 🎮 Système de Jeu
-- **3 Cartes de Pouvoir** : Foi, Courage, Sagesse
-  - 💫 **Foi** : +50% de points de sagesse
-  - ⚔️ **Courage** : Seconde chance en cas d'erreur
-  - 🧠 **Sagesse** : Indices révélés + 25% de bonus
-- **Système de progression** avec rangs spirituels
-- **Animation de montagne** représentant l'ascension spirituelle
-- **Sauvegarde locale** et **synchronisation cloud** (Supabase)
+À travers **91 niveaux** et **8 chapitres**, explorez l'Évangile de Jean comme une **partition musicale**, où chaque question révèle une **note** dans la symphonie de l'amour divin.
 
-### 🌍 Multilingue (17 Langues)
-- 🇫🇷 Français • 🇬🇧 English • 🇪🇸 Español
-- 🇩🇪 Deutsch • 🇵🇹 Português • 🇮🇹 Italiano
-- 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית
-- 🇮🇳 हिंदी • 🇯🇵 日本語 • 🇰🇷 한국어
-- 🇨🇳 中文 (简体) • 🇹🇼 中文 (繁體)
-- 🇵🇱 Polski • 🇨🇩 Lingala • 🇹🇿 Kiswahili
-- 🇺🇦 Українська
+### 💝 Notre Vision
 
-### 🎨 Modules Spéciaux
-- **📖 Évangile de Jean** : Lecteur biblique complet avec Strong
-- **💎 Trésors Bibliques** : Versets, faits intéressants, questions
-- **🎵 Système Audio** : Lecteur gospel intégré
-- **🎨 Module Emmanuel Artist** : Portfolio et créations numériques
-- **🕊️ L'Unité qui Produit la Paix** : Réflexion philosophique
+Ce n'est pas un simple jeu — c'est un **voyage audiovisuel** qui célèbre :
+- 🎵 **L'Harmonie Spirituelle** — La Bible comme mélodie universelle
+- 🎨 **L'Art de l'Unité** — 17 langues, une seule voix d'amour
+- 🕊️ **La Paix par la Beauté** — L'esthétique au service du sacré
+- ✨ **La Créativité Divine** — Chaque niveau, une œuvre d'art
 
 ---
 
-## 🏗️ Architecture Technique
+## 🎨 Une Expérience Multisensorielle
 
-### Technologies Utilisées
+### 🎵 Dimension Audio
+
+Plongez dans une **atmosphère sonore** qui accompagne votre ascension spirituelle :
+
+- **🎼 Lecteur Gospel Intégré** — Musique spirituelle dynamique
+- **🔊 Effets Sonores Immersifs** — Chaque action a sa signature
+- **🎧 Ambiances par Chapitre** — Du jardin d'Éden à l'Apocalypse
+- **📻 Faithful Sounds Generator** — Créez vos propres hymnes
+
+### 🎮 Design Visuel Poétique
+
+Une **esthétique raffinée** pensée pour les créateurs :
+
+- **🏔️ Montagne Animée** — Votre progression visualisée en temps réel
+- **✨ Animations Fluides** — Chaque transition est un ballet
+- **🌈 Palette Spirituelle** — Couleurs inspirées des vitraux sacrés
+- **💎 Iconographie Symbolique** — Chaque icône raconte une histoire
+
+### 📖 Narratif Cinématographique
+
+**91 niveaux** structurés comme un **film épique** :
+
+- **Acte I** : Genèse — Le mystère de la Création
+- **Acte II** : Exode — L'épopée de la Libération  
+- **Acte III** : Jésus-Christ — La révélation de l'Amour
+- **Acte IV** : Passion — Le sacrifice ultime
+- **Acte V** : Église Primitive — La naissance d'un mouvement
+- **Acte VI** : Missions de Paul — Voyages et transformations
+- **Acte VII** : Révélation — Vision de l'éternité
+- **Acte VIII** : 🏆 **Le Sommet** — Niveau bonus secret
+
+---
+
+## ✨ Fonctionnalités Créatives
+
+### 🎴 Système de Cartes Magiques
+
+Trois **cartes de pouvoir** aux designs soignés :
+
+- **💫 FOI** — Luminescence dorée, +50% sagesse  
+  *"La foi déplace les montagnes"*
+  
+- **⚔️ COURAGE** — Flamme rouge ardente, seconde chance  
+  *"Sois fort et courageux"*
+  
+- **🧠 SAGESSE** — Aura bleue mystique, révélation + 25% bonus  
+  *"La sagesse commence par la crainte de Dieu"*
+
+### 🎯 Progression Artistique
+
+**8 rangs spirituels** avec visuels uniques :
+
+1. 🌱 **Chercheur** — Aube naissante
+2. 👣 **Disciple** — Sentier éclairé
+3. 🙏 **Serviteur** — Cœur ouvert
+4. 📢 **Témoin** — Phare lumineux
+5. 🛡️ **Gardien** — Bouclier sacré
+6. 🦉 **Sage** — Œil omniscient
+7. ⚡ **Prophète** — Foudre divine
+8. ✨ **Apôtre** — Étoile éternelle
+
+### 🌍 Polyglotte Universel
+
+**17 langues** avec typographies authentiques :
+
+🇫🇷 Français • 🇬🇧 English • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  
+🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  
+🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  
+🇨🇩 Lingala • 🇹🇿 Kiswahili
+
+---
+
+## 🎬 Modules Artistiques
+
+### 📖 Lecteur Biblique Immersif
+
+L'**Évangile de Jean** transformé en expérience visuelle :
+
+- **Strong Concordance** — Mots hébreux/grecs en survol
+- **14 langues** avec polices natives
+- **Lecture progressive** — Animation de défilement
+- **Mode nuit/jour** — Confort visuel optimal
+
+### 💎 Galerie de Trésors
+
+Collection de **perles spirituelles** :
+
+- **✨ Versets Lumineux** — Citations animées
+- **🎨 Faits Artistiques** — Illustrations bibliques
+- **🌟 Questions Mystère** — Énigmes spirituelles
+
+### 🎨 Emmanuel Artist Module
+
+Portfolio multimédia intégré :
+
+- **🖼️ Créations Numériques** — Art génératif
+- **🎵 Compositions Sonores** — Expérimentations audio
+- **📝 Réflexions Philosophiques** — Pensées créatives
+
+### 🕊️ L'Unité qui Produit la Paix
+
+Module contemplatif sur **7 étapes** :
+
+> *"Nos frontières viennent du passé, mais l'amour nous unit dans le présent."*
+
+---
+
+## 🎯 Pour les Créateurs & Artistes
+
+### 🎨 Palette Technique Élégante
+
 ```
-React 18.x          - Interface utilisateur moderne
-Tailwind CSS        - Design responsive et élégant
-Supabase           - Base de données et authentification
-LocalStorage       - Sauvegarde locale des progressions
-React Router       - Navigation dynamique
-Framer Motion      - Animations fluides
+React 18            - Interface fluide et réactive
+Tailwind CSS        - Design system sur mesure
+Framer Motion       - Animations cinématographiques
+Supabase            - Synchronisation cloud élégante
+LocalStorage        - Sauvegarde locale instantanée
 ```
 
-### Structure du Projet
+### 🎵 Architecture Audio
+
 ```
-faithchronicles/
-├── public/
-│   ├── audio/              # Système audio gospel
-│   └── manifest.json       # PWA configuration
-├── src/
-│   ├── components/         # Composants React
-│   │   ├── QuizMountain/  # Système de jeu principal
-│   │   └── screens/       # Écrans de l'application
-│   ├── data/
-│   │   ├── bible/         # Évangile de Jean (14 langues)
-│   │   ├── chapters/      # Contenu des 8 chapitres
-│   │   └── translations/  # Traductions UI (17 langues)
-│   ├── hooks/             # Hooks React personnalisés
-│   ├── lib/               # Configuration Supabase
-│   └── utils/             # Utilitaires
-└── scripts/               # Scripts de téléchargement/traduction
+public/audio/
+├── gospel/              # Bibliothèque musicale
+├── effects/             # Sons d'interface
+└── faithful-sounds-generator.js  # Générateur audio
+```
+
+### 📖 Structure des Données
+
+```
+src/data/
+├── bible/               # Évangile de Jean (14 langues + Strong)
+├── chapters/            # 8 chapitres thématiques (91 niveaux)
+└── translations/        # UI multilingue (17 langues)
 ```
 
 ---
 
-## 🚀 Installation et Démarrage
+## 🚀 Démarrage Rapide (pour Artistes)
 
-### Prérequis
+### Installation Simple
+
 ```bash
-Node.js >= 16.x
-npm >= 8.x
-```
-
-### Installation
-```bash
-# Cloner le dépôt
+# 1. Télécharger le projet
 git clone https://github.com/unispourlapaix/faithchronicles.git
+
+# 2. Entrer dans le dossier
 cd faithchronicles
 
-# Installer les dépendances
+# 3. Installer
 npm install
-```
 
-### Configuration Supabase (Optionnel)
-Créer un fichier `.env.local` :
-```env
-REACT_APP_SUPABASE_URL=votre_url_supabase
-REACT_APP_SUPABASE_ANON_KEY=votre_clé_supabase
-```
-
-### Démarrage
-```bash
-# Mode développement
+# 4. Lancer
 npm start
-# Ouvre http://localhost:3000
-
-# Build de production
-npm run build
-
-# Tests
-npm test
 ```
 
----
+✨ **C'est tout !** Ouvrez http://localhost:3000
 
-## 📖 Les 8 Chapitres
+### Mode Artiste (Sans Code)
 
-| Chapitre | Titre | Niveaux | Thème |
-|----------|-------|---------|-------|
-| **1** | La Genèse | 1-13 | Création → Joseph |
-| **2** | L'Exode | 14-26 | Moïse → Terre Promise |
-| **3** | Jésus-Christ | 27-39 | Naissance → Ministère |
-| **4** | Crucifixion/Résurrection | 40-52 | Passion → Ascension |
-| **5** | Église Primitive | 53-65 | Pentecôte → Premiers disciples |
-| **6** | Missions de Paul | 66-78 | Conversion → Voyages |
-| **7** | Lettres et Apocalypse | 79-91 | Épîtres → Révélation |
-| **8** | 🏆 Niveau Bonus | 92 | Au Sommet de la Montagne |
+Vous pouvez contribuer **sans toucher au code** :
+
+- 🎨 **Créer des visuels** → Placez-les dans `/public/images/`
+- 🎵 **Ajouter de la musique** → Déposez les MP3 dans `/public/audio/`
+- 🌍 **Traduire** → Éditez les fichiers JSON dans `/src/data/translations/`
+- 📝 **Écrire** → Ajoutez vos réflexions dans les markdown
 
 ---
 
-## 🎓 Système de Rangs Spirituels
+## 🎓 Chapitres & Ambiances
 
-Progressez à travers 8 rangs spirituels :
-
-1. 🌱 **Chercheur** (Seeker) - Début du voyage
-2. 👣 **Disciple** (Disciple) - Suivre le chemin
-3. 🙏 **Serviteur** (Servant) - Service humble
-4. 📢 **Témoin** (Witness) - Partager la lumière
-5. 🛡️ **Gardien** (Guardian) - Protéger la vérité
-6. 🦉 **Sage** (Wise) - Sagesse acquise
-7. ⚡ **Prophète** (Prophet) - Vision spirituelle
-8. ✨ **Apôtre** (Apostle) - Maîtrise spirituelle
+| Chapitre | Titre | Niveaux | Ambiance Visuelle |
+|----------|-------|---------|-------------------|
+| **1** | La Genèse | 1-13 | 🌅 Aube dorée, jardin mystique |
+| **2** | L'Exode | 14-26 | 🏜️ Désert ardent, mer divisée |
+| **3** | Jésus-Christ | 27-39 | ✨ Lumière douce, étoile brillante |
+| **4** | Crucifixion | 40-52 | 🌑 Obscurité dramatique, renaissance |
+| **5** | Église | 53-65 | 🔥 Flammes pentecôte, communauté |
+| **6** | Missions | 66-78 | 🌍 Routes anciennes, voyages |
+| **7** | Apocalypse | 79-91 | 🌌 Cosmos mystique, visions |
+| **8** | 🏆 Sommet | 92 | ⛰️ Ciel ouvert, paix absolue |
 
 ---
 
-## 🌍 La Philosophie : L'Unité qui Produit la Paix
+## 🕊️ Philosophie Artistique
 
 ### Le Cœur du Projet
 
-FaithChronicles est fondé sur une vision d'**unité dans la diversité** :
+> *"La beauté est le langage universel de l'âme. À travers l'art, la musique et la poésie, nous transcendons les frontières pour toucher l'essence même de l'amour divin."*
 
-> *"Nos frontières viennent du passé. Chaque religion a ses raisons. Nos divisions ne sont pas la volonté de Dieu, mais le fruit de l'histoire, de la géographie, de la culture."*
+### 7 Principes Créatifs
 
-### Les 7 Étapes vers l'Humilité et la Paix
-
-1. **Reconnaître** : nos frontières viennent du passé
-2. **Respecter** : fondement de l'humilité, gardienne de la paix
-3. **Comprendre** sans juger
-4. **Changer soi-même** d'abord : être une vraie lanterne
-5. **Rompre** avec l'esprit communautaire
-6. **Libérer** pour être libre
-7. **Éviter** de poursuivre mot pour mot
-
-📄 Lire la présentation complète : [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)
+1. **🎨 Beauté** — L'esthétique élève l'esprit
+2. **🎵 Harmonie** — L'unité dans la diversité sonore
+3. **✨ Lumière** — Chaque détail illumine le sacré
+4. **💝 Amour** — Le thème central de toute création
+5. **🌍 Universalité** — Accessible à tous les cœurs
+6. **🕊️ Paix** — L'art comme pont entre les traditions
+7. **🔥 Passion** — Créer avec ferveur et authenticité
 
 ---
 
-## 🎯 Guides de Documentation
+## 🎯 Citations Inspirantes
 
-### Pour les Développeurs
-- 📘 [MULTILANGUAGE_SUMMARY.md](MULTILANGUAGE_SUMMARY.md) - Système multilingue
-- 📗 [GAME_SAVE_SYSTEM.md](GAME_SAVE_SYSTEM.md) - Système de sauvegarde
-- 📙 [AUDIO_SYSTEM.md](AUDIO_SYSTEM.md) - Système audio gospel
-- 📕 [PERFORMANCE_CACHE.md](PERFORMANCE_CACHE.md) - Optimisation
+> *"Au commencement était la Parole, et la Parole était avec Dieu, et la Parole était Dieu."*  
+> — **Jean 1:1**
 
-### Pour les Traducteurs
-- 🌍 [MULTILANGUAGE_INTEGRATION_GUIDE.md](MULTILANGUAGE_INTEGRATION_GUIDE.md)
-- 📖 [GENERATE_CHAPTER_TRANSLATIONS.md](GENERATE_CHAPTER_TRANSLATIONS.md)
-- 🇫🇷 [GUIDE_TRADUCTION_CHAPITRE1.md](GUIDE_TRADUCTION_CHAPITRE1.md)
+> *"Je vous donne un commandement nouveau : Aimez-vous les uns les autres."*  
+> — **Jean 13:34**
 
-### Configuration
-- ⚙️ [SUPABASE_SETUP.md](SUPABASE_SETUP.md) - Configuration base de données
-- 🚀 [SUPABASE_QUICKSTART.md](SUPABASE_QUICKSTART.md) - Démarrage rapide
+> *"Afin que tous soient un, comme toi, Père, tu es en moi, et comme je suis en toi."*  
+> — **Jean 17:21**
 
 ---
 
-## 🤝 Contribution
+## 🤝 Contribuer Créativement
 
-Les contributions sont les bienvenues ! Voici comment vous pouvez aider :
+Toutes les **expressions artistiques** sont bienvenues :
 
-### Types de Contributions
-- 🌍 **Traductions** : Ajouter de nouvelles langues
-- 📝 **Contenu** : Améliorer les questions et explications
-- 🎨 **Design** : Améliorer l'interface utilisateur
-- 🐛 **Bugs** : Signaler et corriger les problèmes
-- 📚 **Documentation** : Améliorer les guides
+### 🎨 Design & Visuels
+- Illustrations bibliques
+- Icônes et symboles
+- Animations et transitions
+- Palettes de couleurs
 
-### Processus
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/AmazingFeature`)
-3. Commit les changements (`git commit -m 'Add AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+### 🎵 Audio & Musique
+- Compositions originales
+- Effets sonores
+- Ambiances par chapitre
+- Hymnes modernes
+
+### 📝 Contenu Créatif
+- Traductions poétiques
+- Méditations écrites
+- Questions inspirantes
+- Réflexions philosophiques
+
+### 🌍 Traductions Artistiques
+- Adapter les métaphores
+- Préserver la beauté lyrique
+- Respecter les nuances culturelles
 
 ---
 
 ## 👨‍💻 Créateur
 
 **Emmanuel Payet**  
-Développeur passionné par la spiritualité et l'unité
+*Artiste numérique, développeur passionné, chercheur d'unité*
 
-- 🌐 [Emmanuel Artist Module](public/emmanuel-artist-module.html)
-- 💼 Portfolio de créations numériques
+🎨 Spécialités :
+- Expériences interactives immersives
+- Art génératif et audio-réactif
+- Design spirituel et contemplatif
+- Philosophie de l'unité
+
+📍 **Portfolio** : [Emmanuel Artist Module](public/emmanuel-artist-module.html)
+
+---
+
+## 📊 L'Aventure en Chiffres
+
+```
+🎮  91 niveaux immersifs
+🎬  8 chapitres cinématographiques
+🌍  17 langues vivantes
+⭐  273 étoiles à récolter
+📖  21 chapitres bibliques (Jean)
+🎴  3 cartes magiques de pouvoir
+🏆  1 niveau bonus secret
+🎯  8 rangs spirituels artistiques
+🎵  Système audio gospel intégré
+✨  Animations Framer Motion fluides
+```
+
+---
+
+## 🔗 Ressources Créatives
+
+- 🎨 [Module Emmanuel Artist](public/emmanuel-artist-module.html)
 - 🎵 [Faithful Sounds Generator](public/audio/faithful-sounds-generator.js)
+- 🕊️ [Philosophie de l'Unité](JEAN_ET_UNITE.md)
+- 📖 [Système Audio](AUDIO_SYSTEM.md)
+- 🌍 [Guide Multilingue](MULTILANGUAGE_SUMMARY.md)
 
 ---
 
-## 📜 Licence
+## 📜 Licence Ouverte
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+**MIT License** — Libre d'utilisation, de modification et de partage.
 
----
-
-## 🙏 Remerciements
-
-### Technologies
-- [React](https://reactjs.org/) - Framework UI
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
-- [Supabase](https://supabase.com/) - Backend as a Service
-- [Framer Motion](https://www.framer.com/motion/) - Animations
-
-### Ressources Bibliques
-- Louis Segond 1910 - Version biblique (domaine public)
-- Strong's Concordance - Références hébraïques/grecques
-- Communauté open-source biblique
-
-### Inspiration
-- L'Évangile de Jean - Source spirituelle
-- La diversité des traditions religieuses
-- Le désir d'unité dans l'amour
-
----
-
-## 📊 Statistiques du Projet
-
-```
-91 niveaux de jeu
-8 chapitres thématiques
-17 langues supportées
-273 étoiles à collecter
-1 chapitre bonus secret
-21 chapitres de l'Évangile de Jean
-14 langues pour la Bible (Strong inclus)
-3 cartes de pouvoir uniques
-8 rangs spirituels
-```
-
----
-
-## 🌟 Citations du Projet
-
-> *"Au commencement était la Parole, et la Parole était avec Dieu, et la Parole était Dieu."*  
-> — **Jean 1:1**
-
-> *"Je vous donne un commandement nouveau : Aimez-vous les uns les autres ; comme je vous ai aimés, vous aussi, aimez-vous les uns les autres."*  
-> — **Jean 13:34**
-
-> *"Afin que tous soient un, comme toi, Père, tu es en moi, et comme je suis en toi, afin qu'eux aussi soient un en nous, pour que le monde croie que tu m'as envoyé."*  
-> — **Jean 17:21**
-
----
-
-## 🔗 Liens Utiles
-
-- 📖 [Présentation Philosophique](JEAN_ET_UNITE.md)
-- 🎮 [Jouer en ligne](https://faithchronicles.netlify.app) *(si déployé)*
-- 📚 [Documentation complète](https://github.com/unispourlapaix/faithchronicles/wiki)
-- 🐛 [Signaler un bug](https://github.com/unispourlapaix/faithchronicles/issues)
-- 💬 [Discussions](https://github.com/unispourlapaix/faithchronicles/discussions)
-
----
-
-## 📞 Contact
-
-Pour toute question ou suggestion :
-- 📧 Email : [contact via GitHub](https://github.com/unispourlapaix)
-- 💬 Discussions : [GitHub Discussions](https://github.com/unispourlapaix/faithchronicles/discussions)
-- 🐛 Issues : [GitHub Issues](https://github.com/unispourlapaix/faithchronicles/issues)
+> *"Que votre lumière luise devant les hommes, afin qu'ils voient vos bonnes œuvres."*  
+> — Matthieu 5:16
 
 ---
 
 <div align="center">
 
-### 💝 Fait avec amour pour la gloire de Dieu
+## 💝 Créé avec Amour et Passion
 
-**FaithChronicles / BibleQuest**  
+**UNITYQUEST Chronicles of Love**  
 *Le Chemin de l'Amour • The Path of Love*
 
-[![⭐ Star sur GitHub](https://img.shields.io/github/stars/unispourlapaix/faithchronicles?style=social)](https://github.com/unispourlapaix/faithchronicles)
-[![🍴 Fork sur GitHub](https://img.shields.io/github/forks/unispourlapaix/faithchronicles?style=social)](https://github.com/unispourlapaix/faithchronicles/fork)
+[![⭐ Star](https://img.shields.io/github/stars/unispourlapaix/faithchronicles?style=social)](https://github.com/unispourlapaix/faithchronicles)
+[![🍴 Fork](https://img.shields.io/github/forks/unispourlapaix/faithchronicles?style=social)](https://github.com/unispourlapaix/faithchronicles/fork)
 
 ---
 
-*"Que la grâce du Seigneur Jésus-Christ, l'amour de Dieu, et la communion du Saint-Esprit soient avec vous tous !"*  
-— **2 Corinthiens 13:14**
+### 🎵✨ *"Là où règne l'amour, là est Dieu vivant"* ✨🎵
+
+*Que la grâce, l'amour et la paix soient avec tous ceux qui créent, jouent et partagent.*
+
+---
+
+**🌟 Rejoignez l'Aventure • Join the Journey • Únete a la Aventura 🌟**
 
 </div>
