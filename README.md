@@ -3,9 +3,9 @@
 > *Une expérience spirituelle et artistique immersive*  
 > **Le Chemin de l'Amour** • The Path of Love
 
-[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/faithchronicles)
+[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 [![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
-[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/faithchronicles)
+[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
 ---
 
@@ -172,10 +172,10 @@ src/data/
 
 ```bash
 # 1. Télécharger le projet
-git clone https://github.com/unispourlapaix/faithchronicles.git
+git clone https://github.com/unispourlapaix/unityquest-chronicles-of-love.git
 
 # 2. Entrer dans le dossier
-cd faithchronicles
+cd unityquest-chronicles-of-love
 
 # 3. Installer
 npm install
@@ -330,8 +330,8 @@ Toutes les **expressions artistiques** sont bienvenues :
 **UNITYQUEST Chronicles of Love**  
 *Le Chemin de l'Amour • The Path of Love*
 
-[![⭐ Star](https://img.shields.io/github/stars/unispourlapaix/faithchronicles?style=social)](https://github.com/unispourlapaix/faithchronicles)
-[![🍴 Fork](https://img.shields.io/github/forks/unispourlapaix/faithchronicles?style=social)](https://github.com/unispourlapaix/faithchronicles/fork)
+[![⭐ Star](https://img.shields.io/github/stars/unispourlapaix/unityquest-chronicles-of-love?style=social)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+[![🍴 Fork](https://img.shields.io/github/forks/unispourlapaix/unityquest-chronicles-of-love?style=social)](https://github.com/unispourlapaix/unityquest-chronicles-of-love/fork)
 
 ---
 
