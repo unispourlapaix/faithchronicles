@@ -345,7 +345,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
     
     return {
       text: `"${textToShare}" - Jean ${currentChapter}${verse?.number ? `:${verse.number}` : ''}`,
-      hashtags: '#UnityQuest #Bible #Jean #Foi #Évangile #Amour',
+      hashtags: '#UnityQuestChroniclesOfLove #Bible #Jean #Foi #Évangile #Amour #Unité',
       url: 'https://emmanuel.gallery/'
     };
   };
