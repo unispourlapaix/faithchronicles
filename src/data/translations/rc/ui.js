@@ -170,6 +170,18 @@ export const uiTranslations = {
     chooseWisely: "Pona na bwanya, pamba te kopona na yo ekosalisa yo na niveau mobimba"
   },
 
+  chapters: {
+    "1": "Ebandeli",
+    "2": "Kobima",
+    "3": "Yesu-Klisto",
+    "4": "Kobaka na Ekulusu/Kosekwa",
+    "5": "Lingomba ya Ebandeli",
+    "6": "Misala ya Paulo",
+    "7": "Mikanda/Emoniseli",
+    "8": "Niveau Bonus"
+  },
+
+
   bible: {
     readerTitle: "📖 Motángi ya Bible",
     loading: "Ezali kotya Makomi...",

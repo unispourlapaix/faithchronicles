@@ -170,6 +170,18 @@ export const uiTranslations = {
     chooseWisely: "Scegli con saggezza, perché la tua scelta ti accompagnerà per tutto il livello"
   },
 
+  chapters: {
+    "1": "Genesi",
+    "2": "Esodo",
+    "3": "Gesù Cristo",
+    "4": "Crocifissione/Risurrezione",
+    "5": "Chiesa primitiva",
+    "6": "Missioni di Paolo",
+    "7": "Lettere/Apocalisse",
+    "8": "Livello bonus"
+  },
+
+
   bible: {
     readerTitle: "📖 Lettore della Bibbia",
     loading: "Caricamento delle Scritture...",

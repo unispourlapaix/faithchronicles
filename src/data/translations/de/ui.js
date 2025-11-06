@@ -29,7 +29,9 @@ export const uiTranslations = {
     cancel: "Abbrechen",
     confirm: "Bestätigen",
     save: "Speichern",
-    load: "Laden"
+    load: "Laden",
+    yesRestart: "Ja, neu starten",
+    noContinue: "Nein, fortsetzen"
   },
   
   labels: {
@@ -49,7 +51,15 @@ export const uiTranslations = {
     completed: "Abgeschlossen",
     rank: "Spiritueller Rang",
     points: "Weisheitspunkte",
-    unlockedLevels: "Level freigeschaltet"
+    unlockedLevels: "Level freigeschaltet",
+    questionOfKnowledge: "Wissensfrage",
+    hintOfWisdom: "Weisheitshinweis",
+    knowledgeMastered: "Wissen gemeistert!",
+    knowledgeAcquired: "Wissen erworben!",
+    testFailed: "Prüfung gescheitert",
+    wisdomBonus: "Bonus",
+    xpGained: "XP",
+    newRank: "Neuer Rang"
   },
   
   menu: {
@@ -58,16 +68,14 @@ export const uiTranslations = {
     treasures: "Schätze",
     john: "Johannes",
     reset: "Zurücksetzen",
-    resetConfirm: "Abenteuer neu starten?",
-    resetWarning: "Bist du sicher, dass du deinen gesamten Fortschritt löschen möchtest?",
-    resetLose: "Du wirst verlieren:",
+    restart: "🔄 Abenteuer neu starten?",
+    confirmReset: "Bist du sicher, dass du deinen gesamten Fortschritt löschen möchtest?",
+    youWillLose: "Du wirst verlieren:",
     wisdomPoints: "Weisheitspunkte",
     starsCollected: "gesammelte Sterne",
     levelsUnlocked: "freigeschaltete Level",
     spiritualRank: "Spiritueller Rang",
-    yesRestart: "Ja, neu starten",
-    noContinue: "Nein, fortsetzen",
-    newAdventure: "Neues Abenteuer",
+    newAdventure: "🎮 Neues Abenteuer",
     readyToStart: "Bereit zu starten?",
     startJourney: "Beginne deine Reise in die Kenntnis der Schriften!"
   },
@@ -136,20 +144,38 @@ export const uiTranslations = {
     chooseCard: "⚡ Wähle deine Machtkarte",
     cardHelp: "Sie wird dich bei den 3 Fragen dieses Levels begleiten",
     chooseAnswer: "📖 Wähle deine Antwort:",
-    wrongAnswer: "❌ Falsche Antwort! Du hast noch {lives} Leben. Versuche es erneut!",
-    levelCompleted: "Level {level} abgeschlossen",
-    questionsProgress: "Frage {current} von 3",
-    starsCollected: "Gesammelte Sterne: {current}/{total}",
-    pointsEarned: "+{points} Weisheitspunkte"
+    wrongAnswer: "❌ Falsche Antwort! Du hast noch {{lives}} Leben. Versuche es erneut!",
+    levelCompleted: "Level {{level}} abgeschlossen",
+    questionsProgress: "Frage {{current}} von {{total}}",
+    starsCollected: "Gesammelte Sterne: {{current}}/{{total}}",
+    pointsEarned: "+{{points}} Weisheitspunkte",
+    secondChance: "⚔️ Deine MUT-Karte gibt dir eine zweite Chance! Versuche es erneut mit Weisheit.",
+    bonusApplied: "✨ {{card}}-Bonus: +{{percent}}% ({{base}} → {{final}})",
+    defeatedQuote: "Ich vermag alles durch den, der mich stark macht - Philipper 4:13",
+    perfect: "✨ Perfekt",
+    good: "⭐ Gut",
+    start: "⭐ Start",
+    secretLevel: "🎺 GEHEIMES LEVEL FREIGESCHALTET!",
+    secretChapter: "🏆 Geheimes Kapitel",
+    returnToLevels: "Zurück",
+    next: "Weiter",
+    retry: "Erneut versuchen",
+    menu: "Menü",
+    chapter: "Kapitel",
+    chapterStars: "Kapitel-Sterne",
+    totalGlobal: "Gesamt global",
+    backToMenu: "Zurück zum Menü"
   },
-  
-  quotes: {
-    wisdom: "Die Furcht des Herrn ist der Anfang der Weisheit",
-    faith: "Ich vermag alles durch den, der mich stark macht",
-    hope: "Der Herr ist mein Hirte, mir wird nichts mangeln",
-    love: "Denn so sehr hat Gott die Welt geliebt...",
-    perseverance: "Glaube erfordert Ausdauer",
-    defeat: "Scheitern lädt ein, im Wissen zu wachsen"
+
+  chapters: {
+    "1": "Genesis",
+    "2": "Exodus",
+    "3": "Jesus Christus",
+    "4": "Kreuzigung/Auferstehung",
+    "5": "Frühe Kirche",
+    "6": "Paulus Missionen",
+    "7": "Briefe/Offenbarung",
+    "8": "Bonuslevel"
   },
 
   cards: {
@@ -168,6 +194,45 @@ export const uiTranslations = {
     courageEffect: "Normale Punkte aber zweite Chance bei Fehler",
     wisdomEffect: "+25% Punkte + Hinweis für jede Frage enthüllt",
     chooseWisely: "Wähle weise, denn deine Wahl wird dich durch das Level begleiten"
+  },
+
+  challenge: {
+    loading: "Level wird geladen...",
+    peace: "🕊️ Friede sei mit dir",
+    questionsAwaiting: "💡 3 Wissensfragen erwarten dich",
+    starsQuote: "Jeder Stern ist ein Schritt zum göttlichen Licht"
+  },
+
+  info: {
+    title: "Unity Quest Chronicles of Peace",
+    subtitle: "Interaktive Schriftentdeckung",
+    yourStats: "Deine Statistiken",
+    score: "Punktzahl",
+    wisdom: "Weisheit",
+    revelation: "Offenbarung",
+    createdWith: "Entwickelt mit ❤️",
+    creator: "Emmanuel Payet",
+    developerPassionate: "Leidenschaftlicher spiritueller Entwickler",
+    artistModule: "Emmanuel Artist Modul",
+    artistPortfolio: "Portfolio für digitale Kunst und Kreation",
+    features: "Funktionen",
+    multipleChapters: "91 Level in 8 biblischen Kapiteln",
+    powerCards: "3 einzigartige Machtkarten (Glaube, Mut, Weisheit)",
+    progressionSystem: "Fortschritts- und spirituelles Rangsystem",
+    bibleTreasures: "Bibelschätze und faszinierende Fakten",
+    howToPlay: "Wie man spielt",
+    selectLevel: "Wähle ein freigeschaltetes Level",
+    choosePowerCard: "Wähle deine Machtkarte",
+    answerQuestions: "Beantworte 3 Wissensfragen",
+    earnStars: "Verdiene Sterne basierend auf verbleibenden Leben",
+    tips: "Tipps",
+    readCarefully: "Lies jede Frage sorgfältig",
+    useWisdomCard: "Nutze die Weisheitskarte für Hinweise",
+    courageGivesSecondChance: "Die Mutkarte gibt dir eine zweite Chance",
+    faithMaximizes: "Die Glaubenskarte maximiert deine Punkte",
+    version: "Version",
+    madeWithLove: "Mit Liebe zur Ehre Gottes entwickelt",
+    backToMenu: "Zurück zum Menü"
   },
 
   bible: {
@@ -190,6 +255,243 @@ export const uiTranslations = {
     close: "Schließen",
     moreReferences: "und {{count}} weitere Referenzen",
     copyright: "📖 Luther 1545 - Gemeinfrei • Strong-Nummern enthalten"
+  },
+
+  quotes: {
+    wisdom: "Die Furcht des Herrn ist der Anfang der Weisheit",
+    faith: "Ich vermag alles durch den, der mich stark macht",
+    hope: "Der Herr ist mein Hirte, mir wird nichts mangeln",
+    love: "Denn so sehr hat Gott die Welt geliebt...",
+    perseverance: "Glaube erfordert Ausdauer",
+    defeat: "Scheitern lädt ein, im Wissen zu wachsen"
+  },
+
+  unity: {
+    title: "Einheit, die Frieden bringt",
+    author: "Von Emmanuel",
+    subtitle: "Jede Religion hat ihre Gründe, unsere Grenzen kommen aus der Vergangenheit",
+    description: "Modul zur Reflexion über spirituelle Einheit und Frieden zwischen den Traditionen",
+    
+    nav: {
+      intro: "Einführung",
+      religions: "Religionen",
+      common: "Gemeinsame Grundlagen",
+      humility: "Demut"
+    },
+
+    intro: {
+      emmanuelSays: "Emmanuel sagt:",
+      ourBordersFromPast: "Unsere Grenzen kommen aus der Vergangenheit",
+      bordersDescription: "Jede Religion hat ihre Gründe. Unsere Spaltungen sind nicht Gottes Wille, sondern Früchte der Geschichte, Geographie, Kultur.",
+      divisionWork: "Spaltung, Trennung durch Barrieren und Grenzen der Angst, ist das Werk unserer gefährlichen Vergangenheit.",
+      sharedHumanity: "Wir wurden in verschiedenen Traditionen geboren, aber wir teilen die gleiche Menschlichkeit.",
+      
+      revelationTitle: "Augenöffnende Offenbarung",
+      surprisedLearning: "Ich war eines Tages überrascht zu erfahren, dass Juden auch Kinder Gottes sind.",
+      angelMichael: "Dass der Erzengel Michael ein Hauptbote für Muslime ist.",
+      jesusNames: "Dass Jesus, Isa, Jeschua auf verschiedene Weise bekannt sind, sogar im christlichen Glauben.",
+      diverseTribes: "Denn es gibt verschiedene Stämme, verschiedene Kirchen, verschiedene Familien.",
+      sameRealities: "Wir sprechen über die gleichen Realitäten mit verschiedenen Namen. Dies sollte uns näher bringen, nicht spalten.",
+      
+      respectTitle: "Respekt: Grundlage der Demut, Hüter des Friedens",
+      respectFoundation: "Auch wenn Brüderlichkeit in der Wahrheit nicht möglich ist, ist Respekt die Grundlage der Demut, der Hüter des Friedens.",
+      understandingProcess: "Andere Religionen zu verstehen und zu respektieren ist ein Prozess der Demut. Es bedeutet nicht, deinen Glauben aufzugeben, sondern zu akzeptieren, dass andere auch die Wahrheit suchen.",
+      
+      whatBindsUs: "Was uns wirklich verbindet",
+      seekingRelation: "Jede Religion sucht eine Beziehung. Jeder sucht Frieden.",
+      loveOfGod: "Diese Beziehung, die alle verbindet, ist die Liebe Gottes.",
+      universalLink: "Liebe ist das universelle Band, das alle Grenzen, alle Sprachen, alle Traditionen überschreitet.",
+      
+      inclusionTitle: "Inklusion: Über religiöse Unterschiede hinaus",
+      vastInclusion: "Religiöse Unterschiede sind groß, aber darüber hinaus gibt es die Inklusion anderer, wo sie von Gott gerufen werden.",
+      respectDifferences: "Respekt vor Unterschieden in Hautfarbe, Geschlecht, Inklusion macht uns zu einzigartigen Menschen, von Gott geliebt.",
+      jesusCommand: "Jesus sagte: 'Liebt einander.'",
+      
+      communitySpirit: "Den Stammesgeist verlassen",
+      communityTerror: "Stammestum ist der Terror des verborgenen Hasses des Bösen. Es verwandelt Glauben in Stammesidentität, in eine trennende Mauer, in eine verletzende Waffe.",
+      pridePolitics: "Unsere Parteigeister treiben uns in die Politik des Stolzes:",
+      prideQuotes: "Ich habe das Recht, dich zu verletzen. Ich habe nur recht. Ich habe das Recht, gerechte Kriege zu führen.",
+      watchHeart: "Hüte dich vor dem Herzen des Problems, der Wurzel unseres eigenen Übels.",
+      refuseDivision: "Lasst uns diese trennende Tendenz ablehnen, die die Menschheit im Namen Gottes spaltet.",
+      
+      freedomTitle: "Frei sein, andere frei machen",
+      freedomOthers: "Um frei zu sein, müssen wir auch wissen, wie wir andere frei machen.",
+      defendFreedom: "Meine Freiheit zu glauben hat nur dann Wert, wenn ich die Freiheit aller verteidige. Andere zu verurteilen bedeutet, sich selbst zur Sklaverei zu verurteilen.",
+      
+      changeHeartTitle: "Verändere dein Herz: Sei ein echtes Licht",
+      recognizeDecency: "Erkenne, dass Anstand nicht für alle gleich ist.",
+      changeYourself: "Verändere dich selbst zuerst, Schritt für Schritt. Verändere dein Herz, verwandle dein Leben, sei ein echtes Licht.",
+      beExample: "Uriniere nicht auf das Gras, denn es wird sterben... Setze deine Gesetze nicht anderen auf, sondern sei ein lebendiges Beispiel durch deine Veränderung.",
+      
+      childrenPeaceTitle: "Unsere Kinder werden in Vielfalt in Frieden leben",
+      avoidPursuit: "Vermeide es, Worten Wort für Wort zu folgen.",
+      peaceChoice: "Wenn wir heute Respekt wählen, werden unsere Kinder von morgen in Vielfalt in Frieden leben. Friede beginnt mit uns, jetzt, in unseren Worten und Taten.",
+      
+      discernTitle: "Unterscheide: Mensch oder Gott?",
+      manSpeaks: "Oft ist es das Herz des Menschen, das spricht und spaltet.",
+      seeFruits: "Wir sehen dies an den Früchten von Worten und Aussagen: Diebstahl, Zerstörung, Kriege. Hüte dich vor der Täuschung von Worten, die um deinen eigenen Stolz konkurrieren.",
+      
+      lookPeaceTitle: "Schau mit Frieden und Liebe",
+      lookPeaceAll: "Schau mit Frieden auf alle, schau mit Gottes Liebe auf andere.",
+      godSpeaks: "Wenn Worte Frieden, Versöhnung, Einheit bringen: Gott spricht. Wenn sie Spaltung, Hass, Kriege bringen: Es ist menschlicher Stolz.",
+      
+      watchWordsTitle: "Achte auf unsere Worte",
+      watchShares: "Achte auf unsere Spaltungen, achte auf unsere scharfen Worte, die andere schädigen.",
+      disqualify: "Diese Übel disqualifizieren uns. Die Früchte unserer Worte offenbaren, wer in uns spricht: Gott oder unser eigener Stolz?",
+      
+      wisdomMaturityTitle: "Weisheit und Reife vor unserer Natur",
+      useScriptures: "Schriften (Gesetze) zu verwenden, um zu verletzen, ist unser Verhalten, ein fast natürlicher Prozess und Spiel.",
+      hateSin: "Angesichts unserer sündigen Natur hassen wir das Böse und die Menschen, die Böses tun.",
+      separateActs: "Aber mit Weisheit und Reife müssen wir Handlungen von unserer menschlichen Armseligkeit trennen.",
+      compassionNature: "Unsere tierische Natur zu erkennen, die Mitgefühl und Gnade braucht, während wir uns je nach Kontext schützen.",
+      
+      denounceLeadersTitle: "Korrupte spirituelle Führer anprangern",
+      watchLeaders: "Hüte dich vor spirituellen Führern oder Regierenden, die versuchen, ihre Ausrichtung und Täuschung zu verbergen.",
+      noJustice: "Ohne Gerechtigkeit gibt es kein Beispiel. Ohne Wissen sterben andere Opfer in unserem Schweigen.",
+      silenceComplicity: "Schweigen angesichts von Unterdrückung ist Komplizenschaft. Die Wahrheit muss gesprochen werden, um andere zu schützen."
+    },
+
+    religions: {
+      title: "Verschiedene Religionen, eine Menschheit",
+      intro: "Christen, Muslime, Juden, Hindus, Buddhisten... und viele andere: Alle suchen die Wahrheit",
+      theirGod: "Ihr Gott:",
+      theGood: "Das Gute:",
+      theEvil: "Das Böse:",
+      theAngels: "Die Engel:",
+      theUnity: "Die Einheit:",
+      values: "Werte:",
+      
+      christianity: {
+        name: "Christentum",
+        godText: "Ein einziger Gott, Vater Schöpfer",
+        goodText: "Nächstenliebe, Vergebung, Frieden",
+        evilText: "Hass, Egoismus, Gewalt",
+        angelsText: "Boten Gottes (Gabriel, Michael...)",
+        unityText: "Ein Gott für alle Menschen",
+        values: "Liebe,Vergebung,Frieden,Demut,Gerechtigkeit"
+      },
+      islam: {
+        name: "Islam",
+        godText: "Allah, der Einzige und Barmherzige",
+        goodText: "Gerechtigkeit, Almosen, Frieden",
+        evilText: "Unterdrückung, Lüge, Spaltung",
+        angelsText: "Engel des Lichts (Jibril, Mikail...)",
+        unityText: "Es gibt keinen Gott außer Allah",
+        values: "Frieden,Gerechtigkeit,Almosen,Respekt,Barmherzigkeit"
+      },
+      judaism: {
+        name: "Judentum",
+        godText: "JHWH, der Einzige Ewige",
+        goodText: "Gerechtigkeit, Barmherzigkeit, Leben",
+        evilText: "Unterdrückung, Götzendienst, Hass",
+        angelsText: "Himmlische Boten (Malakhim)",
+        unityText: "Höre Israel, der Ewige ist Eins",
+        values: "Gerechtigkeit,Leben,Erinnerung,Frieden,Studium"
+      },
+      hinduism: {
+        name: "Hinduismus",
+        godText: "Brahman, die höchste Wahrheit",
+        goodText: "Gewaltlosigkeit (Ahimsa), gerechte Pflicht",
+        evilText: "Gewalt, spirituelle Unwissenheit",
+        angelsText: "Devas, gute himmlische Wesen",
+        unityText: "Alles ist Eins in Brahman",
+        values: "Gewaltlosigkeit,Wahrheit,Mitgefühl,Reinheit,Hingabe"
+      },
+      buddhism: {
+        name: "Buddhismus",
+        godText: "Kein Schöpfergott, aber Respekt für das Heilige",
+        goodText: "Mitgefühl, Weisheit, Frieden",
+        evilText: "Leiden, verursacht durch Unwissenheit",
+        angelsText: "Bodhisattvas, erwachte Wesen",
+        unityText: "Buddha-Natur in jedem",
+        values: "Mitgefühl,Weisheit,Frieden,Gewaltlosigkeit,Erwachen"
+      }
+    },
+
+    common: {
+      title: "Gemeinsame Grundlagen",
+      intro: "Das Gute, das Böse, die Engel, der Eine Gott, Beziehung, Inklusion: Was die Menschheit verbindet",
+      
+      goodTitle: "Das Gute",
+      goodDescription: "Alle Religionen lehren Liebe, Gerechtigkeit und Mitgefühl",
+      goodExamples: "Liebe deinen Nächsten wie dich selbst|Tue Gutes ohne Unterscheidung|Schütze die Schwachen und Unterdrückten|Sprich die Wahrheit mit Güte|Teile, was du hast",
+      
+      evilTitle: "Das Böse",
+      evilDescription: "Alle lehnen Gewalt, Lüge und Unterdrückung ab",
+      evilExamples: "Ungerechtes Töten|Stehlen und Ausbeuten|Lügen und Betrügen|Verachten und Erniedrigen|Spalten und Hassen",
+      
+      angelsTitle: "Engel und Spirituelle Wesen",
+      angelsDescription: "Fast alle erkennen gute himmlische Boten an",
+      angelsExamples: "Engel, Boten Gottes|Spirituelle Führer|Lichtwesen|Himmlische Wächter|Bodhisattvas und Devas",
+      
+      godTitle: "Ein Gott (oder Höchste Wahrheit)",
+      godDescription: "Viele glauben an eine Quelle, einen Schöpfer oder eine endgültige Wahrheit",
+      godExamples: "Christentum, Islam, Judentum: Ein Gott|Hinduismus: Brahman, das höchste Eine|Buddhismus: Universelle Buddha-Natur|Alle suchen die endgültige Wahrheit|Alle streben nach Einheit und Frieden",
+      
+      relationTitle: "Beziehung und Frieden",
+      relationDescription: "Was wirklich alle Religionen und alle Menschen verbindet",
+      relationExamples: "Jede Religion sucht eine Beziehung mit dem Göttlichen|Jeder sucht Frieden|Diese Beziehung, die alle verbindet, ist die Liebe Gottes|Liebe ist das universelle Band|Friede ist unsere gemeinsame Sehnsucht",
+      
+      inclusionTitle: "Inklusion: Von Gott Geliebt",
+      inclusionDescription: "Religiöse Unterschiede sind groß, aber Inklusion ist größer",
+      inclusionExamples: "Inklusion anderer, wo sie von Gott gerufen werden|Respekt vor Unterschieden in der Hautfarbe|Respekt vor Geschlechtsunterschieden|Inklusion macht uns zu einzigartigen Menschen, von Gott geliebt|Jesus sagte: 'Liebt einander'",
+      
+      finalQuote: "Ich war eines Tages überrascht zu erfahren, dass Juden auch Kinder Gottes sind, dass der Erzengel Michael ein Hauptbote für Muslime ist, dass Jesus, Isa, Jeschua auf verschiedene Weise bekannt sind, sogar im christlichen Glauben. Denn es gibt verschiedene Stämme, verschiedene Kirchen, verschiedene Familien.",
+      finalQuote2: "Wir sprechen über die gleichen Realitäten mit verschiedenen Namen.",
+      quoteAuthor: "Emmanuel, Einheit, die Frieden bringt"
+    },
+
+    humility: {
+      title: "7 Schritte zu Demut und Frieden",
+      intro: "Ein Prozess, um Stammestum zu überwinden und ein echtes Licht zu werden",
+      
+      step: "Schritt",
+      action: "Handlung:",
+      
+      step1Title: "Erkennen: Unsere Grenzen kommen aus der Vergangenheit",
+      step1Description: "Spaltung, Trennung durch Barrieren und Grenzen der Angst, ist das Werk unserer gefährlichen Vergangenheit. Unsere Spaltungen sind nicht Gottes Wille.",
+      step1Action: "Akzeptieren, dass meine Tradition nur meine ist, und ich Teil der von Gott gewünschten Vielfalt bin",
+      
+      step2Title: "Respekt: Grundlage der Demut, Hüter des Friedens",
+      step2Description: "Auch wenn Brüderlichkeit in der Wahrheit nicht möglich ist, ist Respekt die Grundlage.",
+      step2Action: "Alle Glaubensrichtungen respektieren, auch ohne alles zu verstehen",
+      
+      step3Title: "Verstehen ohne zu urteilen",
+      step3Description: "Heute ist es wichtig, andere in einem Prozess der Demut zu verstehen.",
+      step3Action: "Wirklich zuhören, was andere glauben, ohne zu urteilen",
+      
+      step4Title: "Verändere dich selbst zuerst: Sei ein echtes Licht",
+      step4Description: "Erkenne, dass Anstand nicht für alle gleich ist. Verändere dein Herz Schritt für Schritt, verwandle dein Leben, sei ein echtes Licht.",
+      step4Action: "Meine Gesetze nicht anderen auferlegen, sondern ein lebendiges Beispiel durch meine Veränderung sein",
+      
+      step5Title: "Den Stammesgeist verlassen",
+      step5Description: "Unsere Parteigeister treiben uns in die Politik des Stolzes: 'Ich habe das Recht, dich zu verletzen, ich habe nur recht.' Hüte dich vor dem Herzen des Problems, der Wurzel unseres eigenen Übels.",
+      step5Action: "Spaltende Reden in meiner eigenen Gemeinschaft ablehnen",
+      
+      step6Title: "Frei sein, andere frei machen",
+      step6Description: "Meine Freiheit hängt von der ab, die ich anderen gebe.",
+      step6Action: "Die Gewissensfreiheit aller verteidigen, nicht nur meine",
+      
+      step7Title: "Vermeide es, Worten Wort für Wort zu folgen",
+      step7Description: "Nicht auf Hass mit Hass antworten, auf Beleidigungen mit Beleidigungen.",
+      step7Action: "Frieden wählen, damit unsere Kinder in Vielfalt in Frieden leben",
+      
+      discernFruits: "Unterscheide durch die Früchte",
+      humanHeart: "Das menschliche Herz, das spaltet",
+      lookGodLove: "Schau mit Gottes Liebe",
+      watchOurWords: "Achte auf unsere Worte",
+      
+      prideFruits: "Früchte des menschlichen Stolzes",
+      godFruits: "Früchte der Liebe Gottes",
+      
+      finalQuote: "Auch wenn Brüderlichkeit in der Wahrheit nicht möglich ist, ist Respekt die Grundlage der Demut, der Hüter des Friedens. Vermeide es, Worten Wort für Wort zu folgen, und unsere Kinder von morgen werden in Vielfalt in Frieden leben.",
+      author: "Emmanuel"
+    },
+
+    footer: {
+      quote: "Respekt ist die Grundlage der Demut, der Hüter des Friedens. Unsere Kinder werden in Vielfalt in Frieden leben, wenn wir heute Respekt wählen.",
+      author: "Emmanuel, Einheit, die Frieden bringt"
+    }
   },
 
   philosophy: {
@@ -250,6 +552,13 @@ export const uiTranslations = {
   },
 
   mountain: {
+    spiritualAscension: "Spiritueller Aufstieg",
+    levelProgress: "Level {{level}} • {{stars}} Sterne erreicht",
+    combo: "Combo",
+    perfectMessage: "\"Denn meine Gedanken sind nicht eure Gedanken\" - Das Lamm steigt zur vollkommenen Weisheit empor",
+    goodMessage: "\"Suchet, so werdet ihr finden\" - Der Aufstieg zur Wahrheit geht weiter",
+    startMessage: "\"Der Glaube, auch klein wie ein Senfkorn\" - Erster Schritt zum Licht",
+    skipAnimation: "Animation überspringen",
     waypoints: {
       start: "Start",
       firstSlope: "Erster Hang",

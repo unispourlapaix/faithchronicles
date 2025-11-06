@@ -172,6 +172,18 @@ export const uiTranslations = {
     chooseWisely: "בחר בחוכמה, כי בחירתך תלווה אותך לאורך כל השלב"
   },
 
+  chapters: {
+    "1": "בראשית",
+    "2": "שמות",
+    "3": "ישוע המשיח",
+    "4": "צליבה/תחייה",
+    "5": "הקהילה הראשונה",
+    "6": "משלחות פאולוס",
+    "7": "מכתבים/התגלות",
+    "8": "שלב בונוס"
+  },
+
+
   bible: {
     readerTitle: "📖 קורא התנ״ך",
     loading: "טוען כתבים...",

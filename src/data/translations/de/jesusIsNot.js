@@ -1,128 +1,122 @@
 // ============================================================================
-// GERMAN TRANSLATIONS - JESUS IS NOT
+// DEUTSCHE ÜBERSETZUNGEN - JESUS IST NICHT...
 // ============================================================================
-// Klarstellungen darüber, wer Jesus ist (und wer er nicht ist)
+// Wichtige Klarstellungen darüber, wer Jesus wirklich ist
 
 export const jesusIsNot = [
   {
-    category: "liebe",
-    text: "Jesus ist nicht rassistisch - Er liebt alle gleichermaßen, unabhängig von ihrer Herkunft",
-    reference: "Johannes 4:9 - Die samaritische Frau wundert sich, dass Jesus mit ihr spricht",
-    context: "Jesus überwindet die kulturellen und rassischen Barrieren seiner Zeit"
+    "category": "Liebe",
+    "text": "Jesus ist nicht homophob - Seine unendliche Liebe schließt jeden so ein, wie er ist",
+    "reference": "1. Johannes 4:8 - Gott ist Liebe",
+    "context": "Gottes Liebe ist inklusiv und akzeptiert jeden Menschen in seiner Vielfalt"
   },
   {
-    category: "ausgrenzung",
-    text: "Jesus ist nicht ausgrenzend - Er empfängt alle, besonders die Ausgegrenzten",
-    reference: "Matthäus 9:10-13 - Jesus isst mit Zöllnern und Sündern",
-    context: "Jesus sucht die Verlorenen und Abgelehnten der Gesellschaft"
+    "category": "Gleichheit",
+    "text": "Jesus ist nicht frauenfeindlich - Seine unendliche Liebe schätzt jede Frau",
+    "reference": "Lukas 8:1-3 - Die Frauen, die Jesus folgten",
+    "context": "Jesus revolutioniert seine Zeit, indem er Frauen einbezieht und ehrt"
   },
   {
-    category: "urteil",
-    text: "Jesus ist nicht verurteilend - Er kam, um zu retten, nicht um zu verdammen",
-    reference: "Johannes 3:17 - Gott sandte seinen Sohn nicht, um die Welt zu verdammen",
-    context: "Die Mission Jesu ist Rettung und Wiederherstellung"
+    "category": "Frieden",
+    "text": "Jesus ist kein Mörder - Seine unendliche Liebe schenkt allen Leben",
+    "reference": "Johannes 10:10 - Ich bin gekommen, damit sie Leben haben",
+    "context": "Jesus bringt Leben, Heilung und Wiederherstellung für jeden"
   },
   {
-    category: "gewalt",
-    text: "Jesus ist nicht gewalttätig - Er lehrt Feindesliebe",
-    reference: "Matthäus 5:44 - Liebt eure Feinde",
-    context: "Jesus revolutioniert das Konzept der Gerechtigkeit durch radikale Liebe"
+    "category": "Einheit",
+    "text": "Jesus ist nicht spaltend - Seine unendliche Liebe vereint die ganze Menschheit",
+    "reference": "Galater 3:28 - Da ist weder Jude noch Grieche",
+    "context": "Jesu Liebe überwindet alle menschlichen Barrieren"
   },
   {
-    category: "reichtum",
-    text: "Jesus ist nicht materialistisch - Er warnt vor der Liebe zum Geld",
-    reference: "Matthäus 6:24 - Ihr könnt nicht Gott dienen und dem Mammon",
-    context: "Jesus priorisiert himmlische Schätze über irdische"
+    "category": "Liebe",
+    "text": "Jesus ist nicht rassistisch - Seine unendliche Liebe umfasst alle Kulturen",
+    "reference": "Matthäus 28:19 - Macht zu Jüngern alle Völker",
+    "context": "Jesu Liebe feiert die Vielfalt der ganzen Menschheit"
   },
   {
-    category: "stolz",
-    text: "Jesus ist nicht stolz - Er demütigt sich und dient",
-    reference: "Johannes 13:5 - Jesus wäscht die Füße seiner Jünger",
-    context: "Jesus zeigt, dass Größe im demütigen Dienst liegt"
+    "category": "Gerechtigkeit",
+    "text": "Jesus ist kein Unterdrücker - Seine unendliche Liebe befreit und heilt jeden",
+    "reference": "Lukas 4:18 - Er hat mich gesandt, Gefangenen Freiheit zu verkünden",
+    "context": "Jesu Liebe bringt Freiheit und Heilung für alle"
   },
   {
-    category: "legalismus",
-    text: "Jesus ist nicht legalistisch - Er stellt Barmherzigkeit über Ritual",
-    reference: "Matthäus 12:7 - Barmherzigkeit will ich und nicht Opfer",
-    context: "Jesus kritisiert Legalismus, der das Herz des Gesetzes vergisst"
+    "category": "Demut",
+    "text": "Jesus ist nicht stolz - Seine unendliche Liebe dient allen",
+    "reference": "Philipper 2:7 - Er entäußerte sich selbst",
+    "context": "Jesu Liebe drückt sich durch Demut und Dienst aus"
   },
   {
-    category: "geschlecht",
-    text: "Jesus ist nicht sexistisch - Er ehrt und schätzt Frauen",
-    reference: "Johannes 4:27 - Die Jünger wundern sich, dass er mit einer Frau spricht",
-    context: "Jesus fordert die patriarchalischen Normen seiner Kultur heraus"
+    "category": "Vergebung",
+    "text": "Jesus ist nicht rachsüchtig - Seine unendliche Liebe vergibt immer",
+    "reference": "Lukas 23:34 - Vater, vergib ihnen, denn sie wissen nicht, was sie tun",
+    "context": "Jesu Liebe bietet Vergebung selbst im Leiden"
   },
   {
-    category: "macht",
-    text: "Jesus ist kein Tyrann - Er führt mit Liebe und Beispiel",
-    reference: "Matthäus 20:28 - Der Menschensohn kam, um zu dienen",
-    context: "Jesus definiert Führung als opfernden Dienst neu"
+    "category": "Mitgefühl",
+    "text": "Jesus ist nicht gefühllos - Seine unendliche Liebe fühlt jeden Schmerz",
+    "reference": "Johannes 11:35 - Jesus weinte",
+    "context": "Jesu Liebe teilt tief unsere Freuden und Sorgen"
   },
   {
-    category: "rache",
-    text: "Jesus ist nicht rachsüchtig - Er vergibt und stellt wieder her",
-    reference: "Lukas 23:34 - Vater, vergib ihnen, denn sie wissen nicht, was sie tun",
-    context: "Jesus praktiziert radikale Vergebung sogar am Kreuz"
+    "category": "Wahrheit",
+    "text": "Jesus ist kein Lügner - Seine unendliche Liebe ist reine Wahrheit",
+    "reference": "Johannes 14:6 - Ich bin der Weg, die Wahrheit und das Leben",
+    "context": "Jesu Liebe ist die authentischste Wahrheit, die existiert"
   },
   {
-    category: "gleichgültigkeit",
-    text: "Jesus ist nicht gleichgültig - Er ist bewegt vom Leiden",
-    reference: "Matthäus 9:36 - Er erbarmte sich über die Volksmenge",
-    context: "Jesus zeigt tiefe Empathie für die Leidenden"
+    "category": "Frieden",
+    "text": "Jesus ist nicht gewalttätig - Seine unendliche Liebe bringt wahren Frieden",
+    "reference": "Matthäus 5:9 - Selig sind die Friedensstifter",
+    "context": "Jesu Liebe verwandelt Konflikte in Versöhnung"
   },
   {
-    category: "elite",
-    text: "Jesus ist nicht elitär - Er umgibt sich mit gewöhnlichen Menschen",
-    reference: "Markus 1:16-20 - Jesus ruft Fischer als Jünger",
-    context: "Jesus wählt gewöhnliche Menschen für seine außergewöhnliche Mission"
+    "category": "Großzügigkeit",
+    "text": "Jesus ist nicht geizig - Seine unendliche Liebe gibt ohne Maß",
+    "reference": "2. Korinther 8:9 - Um euretwillen wurde er arm",
+    "context": "Jesu Liebe ist großzügig bis zum Punkt, alles zu geben"
   },
   {
-    category: "heuchelei",
-    text: "Jesus ist kein Heuchler - Er lebt, was er lehrt",
-    reference: "Johannes 8:46 - Wer von euch kann mich einer Sünde zeihen?",
-    context: "Jesus fordert heraus, einen Widerspruch zwischen seinen Worten und Taten zu finden"
+    "category": "Liebe",
+    "text": "Jesus ist nicht parteiisch - Seine unendliche Liebe empfängt jedes einzigartige Wesen",
+    "reference": "Apostelgeschichte 10:34 - Gott sieht die Person nicht an",
+    "context": "Jesu Liebe feiert die Einzigartigkeit jedes Menschen, Behinderung eingeschlossen"
   },
   {
-    category: "starrheit",
-    text: "Jesus ist nicht starr - Er passt seine Lehre an jede Person an",
-    reference: "Johannes 3 - Jesus spricht anders mit Nikodemus als mit der Samariterin",
-    context: "Jesus personalisiert seine Botschaft nach den Bedürfnissen jedes Einzelnen"
+    "category": "Universalität",
+    "text": "Jesus hat keine Grenzen - Seine unendliche Liebe überschreitet alle Grenzen",
+    "reference": "Römer 10:12 - Es ist kein Unterschied zwischen Jude und Grieche",
+    "context": "Es gibt keine Grenze für Jesus: weder geografisch, noch kulturell, noch sozial"
   },
   {
-    category: "tradition",
-    text: "Jesus ist kein blinder Traditionalist - Er hinterfragt unterdrückende Traditionen",
-    reference: "Markus 7:13 - Ihr hebt Gottes Wort auf durch eure Überlieferung",
-    context: "Jesus priorisiert den Geist des Gesetzes über menschliche Traditionen"
+    "category": "Respekt",
+    "text": "Jesus ist nicht respektlos - Er lehrt Selbstachtung, Achtung vor Frauen, vor anderen",
+    "reference": "Matthäus 22:39 - Du sollst deinen Nächsten lieben wie dich selbst",
+    "context": "Respekt ist sichere Weisheit: Respektiere dein Leben, deinen Körper, Frauen wie dich selbst, andere"
   },
   {
-    category: "nationalismus",
-    text: "Jesus ist nicht nationalistisch - Sein Reich überschreitet Grenzen",
-    reference: "Matthäus 28:19 - Geht hin und macht alle Völker zu Jüngern",
-    context: "Die Mission Jesu ist universal, nicht auf ein Volk beschränkt"
+    "category": "Frieden",
+    "text": "Jesus ist nicht spaltend - Er vereint Juden, Araber und alle Konfessionen in Frieden",
+    "reference": "Epheser 2:14 - Er ist unser Friede, der aus beiden eins gemacht hat",
+    "context": "Lasst uns unsere Vielfalt feiern, anstatt daraus Wortstreit und Kriege zu machen"
   },
   {
-    category: "spaltung",
-    text: "Jesus ist nicht spaltend - Er betet für die Einheit der Gläubigen",
-    reference: "Johannes 17:21 - Dass sie alle eins seien",
-    context: "Lasst uns unsere Vielfalt feiern, statt Wortkriege zu führen"
+    "category": "Wahrheit",
+    "text": "Jesus ist kein Lügner - Er prangert Lüge und Manipulation an",
+    "reference": "Johannes 8:44 - Der Teufel ist der Vater der Lüge",
+    "context": "Jesus entlarvt die Lügen und Manipulationen, die Seelen verletzen"
   },
   {
-    category: "wahrheit",
-    text: "Jesus ist kein Lügner - Er deckt Lüge und Manipulation auf",
-    reference: "Johannes 8:44 - Der Teufel ist der Vater der Lüge",
-    context: "Jesus entlarvt Lügen und Manipulationen, die Seelen verletzen"
+    "category": "Großzügigkeit",
+    "text": "Jesus ist nicht habgierig - Seine Großzügigkeit übersteigt den Zehnten bei weitem",
+    "reference": "Lukas 21:3 - Diese arme Witwe hat mehr als alle anderen gegeben",
+    "context": "Jesu Großzügigkeit ist stärker als die Verpflichtung des Zehnten"
   },
   {
-    category: "großzügigkeit",
-    text: "Jesus ist nicht geizig - Seine Großzügigkeit übertrifft den Zehnten bei weitem",
-    reference: "Lukas 21:3 - Diese arme Witwe hat mehr eingelegt als alle anderen",
-    context: "Die Großzügigkeit Jesu ist stärker als die Verpflichtung des Zehnten"
-  },
-  {
-    category: "gerechtigkeit",
-    text: "Jesus ist kein Komplize des Schweigens - Er schützt durch gesunde Gerechtigkeit",
-    reference: "Matthäus 18:6 - Wer einen dieser Kleinen verführt",
-    context: "Schweigen, das Fehler verdeckt, ohne andere zu schützen, ist nicht Jesu Weisheit"
+    "category": "Gerechtigkeit",
+    "text": "Jesus ist nicht mitschuldig am Schweigen - Er schützt durch gesunde Gerechtigkeit",
+    "reference": "Matthäus 18:6 - Wer einem dieser Kleinen Ärgernis gibt",
+    "context": "Schweigen, das Fehler deckt ohne andere zu schützen, ist nicht Jesu Weisheit"
   }
 ];
 

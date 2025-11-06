@@ -1,129 +1,123 @@
 // ============================================================================
-// CONGOLESE (LINGALA) TRANSLATIONS - JESUS IS NOT
+// TRADUCTIONS LINGALA - YESU AZALI...TE
 // ============================================================================
-// Bolimboli ya theologie na ntina ya Yesu (Komonisa bolingo oyo eyambaka bato nyonso)
+// Polimboli ya ntina oyo etali nani Yesu azali na bosolo
 
-export const jesusIsNotRc = [
+export const jesusIsNot = [
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali moyini ya bato te",
-    reference: "Yoane 4:9",
-    context: "Yesu asolanaki na mwasi ya Samaria, alongolaki mikakatano ya bikolo mpe ya mimeseno"
+    "category": "bolingo",
+    "text": "Yesu azali homophobe te - Bolingo na ye oyo ezali na nsuka te ezali kokangisa bato nyonso ndenge bazali",
+    "reference": "1 Yoane 4:8 - Nzambe azali bolingo",
+    "context": "Bolingo ya Nzambe ezali kokangisa mpe kondima moto nyonso na bokeseni na ye"
   },
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali moto oyo aboyaka bato te",
-    reference: "Matai 11:28",
-    context: "Azali kobenga bato nyonso mpe aboyaka motema moko te oyo ezali ya solo"
+    "category": "bokokani",
+    "text": "Yesu azali misogyne te - Bolingo na ye oyo ezali na nsuka te ezali kopesa motuya na basi nyonso",
+    "reference": "Luka 8:1-3 - Basi oyo balandaki Yesu",
+    "context": "Yesu asalaki révolution na ntango na ye na kokotisa mpe kopesa basi lokumu"
   },
   {
-    category: "Bolingo",
-    text: "Yesu alingaka na mabongisi te",
-    reference: "Baroma 5:8",
-    context: "Akufaki mpo na biso ntango tozalaki naino basumuki"
+    "category": "kimia",
+    "text": "Yesu azali mobomi te - Bolingo na ye oyo ezali na nsuka te ezali kopesa bomoi na bato nyonso",
+    "reference": "Yoane 10:10 - Nayaki mpo ete bazala na bomoi",
+    "context": "Yesu amemeli bato nyonso bomoi, libela mpe lisusu kobongisama"
   },
   {
-    category: "Mawa",
-    text: "Yesu ayaki kosambisa kaka te",
-    reference: "Yoane 3:17",
-    context: "Mokano na Ye ya liboso ezali kobikisa mokili"
+    "category": "bomoko",
+    "text": "Yesu azali kokabola te - Bolingo na ye oyo ezali na nsuka te ezali kosangisa bato nyonso",
+    "reference": "Balagalata 3:28 - Ezali lisusu na Moyuda to Mogreka te",
+    "context": "Bolingo ya Yesu ezali koleka mikano nyonso ya bato"
   },
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali mpo na ekolo moko kaka te",
-    reference: "Yoane 10:16",
-    context: "Azali na mpata mosusu oyo euti na bikolo nyonso"
+    "category": "bolingo",
+    "text": "Yesu azali raciste te - Bolingo na ye oyo ezali na nsuka te ezali koyamba bato ya bikolo nyonso",
+    "reference": "Matai 28:19 - Bokomisa bikolo nyonso bayekoli",
+    "context": "Bolingo ya Yesu ezali kosepela na bokeseni ya bato nyonso"
   },
   {
-    category: "Bokokani",
-    text: "Yesu azali mpo na bato ya likolo kaka te",
-    reference: "Marko 2:17",
-    context: "Azalaki na babeli, babola, mpe baoyo basundolaki"
+    "category": "bosembo",
+    "text": "Yesu azali monyokoli te - Bolingo na ye oyo ezali na nsuka te ezali kokangola mpe kobikisa bato nyonso",
+    "reference": "Luka 4:18 - Atindi ngai kosakola na bakangami bonsomi",
+    "context": "Bolingo ya Yesu ezali komemela bato nyonso bonsomi mpe libela"
   },
   {
-    category: "Mawa",
-    text: "Yesu azali moto oyo alimbisaka te",
-    reference: "Luka 23:34",
-    context: "Ata na likonzi, alimbisaki"
+    "category": "komikitisa",
+    "text": "Yesu azali na lofundu te - Bolingo na ye oyo ezali na nsuka te ezali kosalela bato nyonso",
+    "reference": "Bafilipai 2:7 - Amikitisaki ye moko",
+    "context": "Bolingo ya Yesu ezali komonana na komikitisa mpe mosala"
   },
   {
-    category: "Bolingo",
-    text: "Yesu azali moto oyo ayokaka mawa te",
-    reference: "Matai 9:36",
-    context: "Ntango amonaki bato ebele, ayokaki mawa mingi na bango"
+    "category": "bolimbisi",
+    "text": "Yesu azali kozongisela mabe te - Bolingo na ye oyo ezali na nsuka te ezali ntango nyonso kolimbisa",
+    "reference": "Luka 23:34 - Tata, limbisa bango mpo bayebi te oyo bazali kosala",
+    "context": "Bolingo ya Yesu ezali kopesa bolimbisi ata na mpasi"
   },
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali moyini ya basi te",
-    reference: "Yoane 20:17",
-    context: "Azalaki kopesa lokumu na basi mpe aponaki bango lokola batatoli ya liboso ya lisekwa"
+    "category": "mawa",
+    "text": "Yesu azali moto ya motema makasi te - Bolingo na ye oyo ezali na nsuka te ezali koyoka mpasi nyonso",
+    "reference": "Yoane 11:35 - Yesu alelaki",
+    "context": "Bolingo ya Yesu ezali kokabola na biso esengo mpe mawa na biso"
   },
   {
-    category: "Mawa",
-    text: "Yesu azali mobomi te",
-    reference: "Matai 5:39",
-    context: "Alakisaki kimia mpe koboma te"
+    "category": "bosolo",
+    "text": "Yesu azali mokosi te - Bolingo na ye oyo ezali na nsuka te ezali bosolo ya peto",
+    "reference": "Yoane 14:6 - Ngai nazali nzela, bosolo mpe bomoi",
+    "context": "Bolingo ya Yesu ezali bosolo ya solo oyo ezali"
   },
   {
-    category: "Bokokani",
-    text: "Yesu azali mosika te",
-    reference: "Matai 28:20",
-    context: "Alakaki kozala na biso tii na nsuka ya mokili"
+    "category": "kimia",
+    "text": "Yesu azali na nkanda te - Bolingo na ye oyo ezali na nsuka te ezali komemela kimia ya solo",
+    "reference": "Matai 5:9 - Esengo na bato oyo bazali kosala kimia",
+    "context": "Bolingo ya Yesu ezali kobongola koswana na boyokani"
   },
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali mpo na lolenge moko ya bato kaka te",
-    reference: "Yakobo 2:1-9",
-    context: "Azali koponaka kati na bazwi mpe babola te"
+    "category": "bonkoko",
+    "text": "Yesu azali mokangami na biloko te - Bolingo na ye oyo ezali na nsuka te ezali kopesa kozanga ndelo",
+    "reference": "2 Bakorinti 8:9 - Mpo na bino akomaki mobola",
+    "context": "Bolingo ya Yesu ezali bonkoko kino kopesa nyonso"
   },
   {
-    category: "Bolingo",
-    text: "Yesu azali kanda kaka te",
-    reference: "Yoane 13:1",
-    context: "Alingaki biso tii na nsuka"
+    "category": "bolingo",
+    "text": "Yesu azali na bokeseni te - Bolingo na ye oyo ezali na nsuka te ezali koyamba moto nyonso na bokeseni na ye",
+    "reference": "Misala 10:34 - Nzambe azali komonana elongi ya moto te",
+    "context": "Bolingo ya Yesu ezali kosepela na bokeseni ya moto moko na moko, ata moto ya kozanga makasi"
   },
   {
-    category: "Mawa",
-    text: "Yesu azali moto ya makasi mingi na mibeko te",
-    reference: "Marko 2:27",
-    context: "Alobaki ete Sabala esalamaki mpo na moto, kasi moto mpo na Sabala te"
+    "category": "bato nyonso",
+    "text": "Yesu azali na bandelo te - Bolingo na ye oyo ezali na nsuka te ezali koleka bandelo nyonso",
+    "reference": "Baroma 10:12 - Ezali na bokeseni te kati ya Moyuda mpe Mogreka",
+    "context": "Ezali na ndelo te mpo na Yesu: ezala ya mabele, ya mimeseno to ya lisanga"
   },
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali ya bondeko moko ya liloba te",
-    reference: "Yoane 4:21-24",
-    context: "Azali koteya kosambela ya bato nyonso na molimo mpe na bosolo"
+    "category": "botosi",
+    "text": "Yesu azali moto ya kokosa bato te - Azali koteya botosi ya moto ye moko, ya basi, ya basusu",
+    "reference": "Matai 22:39 - Linga moninga na yo lokola yo moko",
+    "context": "Botosi ezali bwanya ya solo: tosa bomoi na yo, nzoto na yo, mwasi lokola yo moko, basusu"
   },
   {
-    category: "Bokokani",
-    text: "Yesu azali kosenga makambo ya mpasi ya liloba te",
-    reference: "Matai 18:3",
-    context: "Azali kosenga kondima ya pete lokola ya mwana"
+    "category": "kimia",
+    "text": "Yesu azali kokabola te - Azali kosangisa Bayuda, Ba-arabe mpe mangomba nyonso na kimia",
+    "reference": "Ba-efeso 2:14 - Ye azali kimia na biso, oyo asalaki bato mibale moko",
+    "context": "Tosepela na bokeseni na biso na esika ya kosala yango matata ya maloba mpe bitumba"
   },
   {
-    category: "Bolingo",
-    text: "Yesu azali kobomba kanda te",
-    reference: "1 Petelo 2:23",
-    context: "Tango bafingaki ye, afingaki te na nsima"
+    "category": "bosolo",
+    "text": "Yesu azali mokosi te - Azali kofunda lokuta mpe mayele mabe",
+    "reference": "Yoane 8:44 - Zabolo azali tata ya lokuta",
+    "context": "Yesu azali kofunda lokuta mpe mayele mabe oyo ezali kosala moto mawa"
   },
   {
-    category: "Mawa",
-    text: "Yesu azali monyokoli te",
-    reference: "Matai 11:30",
-    context: "Ekangiseli na Ye ezali pɛtɛɛ mpe mokumba na Ye moke"
+    "category": "bonkoko",
+    "text": "Yesu azali na lokoso te - Bonkoko na ye ezali koleka mingi eteni ya zomi",
+    "reference": "Luka 21:3 - Mwasi oyo ya lisusu azangi mobali mpe mobola atie mingi koleka bato nyonso",
+    "context": "Bonkoko ya Yesu ezali makasi koleka mokumba ya eteni ya zomi"
   },
   {
-    category: "Koyamba bato nyonso",
-    text: "Yesu azali koponaka kolanda mibu te",
-    reference: "Marko 10:14",
-    context: "Azali koyamba bana mpe kopesa lokumu na mikolo"
-  },
-  {
-    category: "Bolingo",
-    text: "Yesu ayaki kopamela basumuki te",
-    reference: "Yoane 8:11",
-    context: "Alobaki na mwasi oyo asalaki ekobo: 'Ngai mpe napameli yo te'"
+    "category": "bosembo",
+    "text": "Yesu azali elongo ya kovanda kimia te - Azali kobatela na nzela ya bosembo ya malamu",
+    "reference": "Matai 18:6 - Moto nyonso oyo akobetisa moko ya bana mike oyo",
+    "context": "Kovanda kimia oyo ezali kozipa mabe na koboela basusu te ezali bwanya ya Yesu te"
   }
 ];
 
-export default jesusIsNotRc;
+export default jesusIsNot;

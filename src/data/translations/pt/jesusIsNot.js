@@ -1,128 +1,122 @@
 // ============================================================================
-// PORTUGUESE TRANSLATIONS - JESUS IS NOT
+// TRADUÇÕES PORTUGUESAS - JESUS NÃO É...
 // ============================================================================
-// Esclarecimentos sobre quem Jesus é (e quem ele não é)
+// Esclarecimentos importantes sobre quem Jesus realmente é
 
 export const jesusIsNot = [
   {
-    category: "amor",
-    text: "Jesus não é racista - Ele ama a todos igualmente, independentemente de sua origem",
-    reference: "João 4:9 - A mulher samaritana se admira de que Jesus lhe fale",
-    context: "Jesus rompe as barreiras culturais e raciais de sua época"
+    "category": "amor",
+    "text": "Jesus não é homofóbico - Seu amor infinito inclui todos como são",
+    "reference": "1 João 4:8 - Deus é amor",
+    "context": "O amor de Deus é inclusivo e aceita cada pessoa em sua diversidade"
   },
   {
-    category: "exclusão",
-    text: "Jesus não é excludente - Ele acolhe a todos, especialmente os marginalizados",
-    reference: "Mateus 9:10-13 - Jesus come com publicanos e pecadores",
-    context: "Jesus busca os perdidos e rejeitados da sociedade"
+    "category": "igualdade",
+    "text": "Jesus não é misógino - Seu amor infinito valoriza cada mulher",
+    "reference": "Lucas 8:1-3 - As mulheres que seguiam Jesus",
+    "context": "Jesus revoluciona sua época incluindo e honrando as mulheres"
   },
   {
-    category: "julgamento",
-    text: "Jesus não é condenador - Ele veio para salvar, não para condenar",
-    reference: "João 3:17 - Deus não enviou seu Filho para condenar o mundo",
-    context: "A missão de Jesus é a salvação e a restauração"
+    "category": "paz",
+    "text": "Jesus não é assassino - Seu amor infinito dá vida a todos",
+    "reference": "João 10:10 - Vim para que tenham vida",
+    "context": "Jesus traz vida, cura e restauração a todos"
   },
   {
-    category: "violência",
-    text: "Jesus não é violento - Ele ensina o amor aos inimigos",
-    reference: "Mateus 5:44 - Amai os vossos inimigos",
-    context: "Jesus revoluciona o conceito de justiça com o amor radical"
+    "category": "unidade",
+    "text": "Jesus não é divisivo - Seu amor infinito une toda a humanidade",
+    "reference": "Gálatas 3:28 - Não há judeu nem grego",
+    "context": "O amor de Jesus transcende todas as barreiras humanas"
   },
   {
-    category: "riqueza",
-    text: "Jesus não é materialista - Ele adverte contra o amor ao dinheiro",
-    reference: "Mateus 6:24 - Não podeis servir a Deus e às riquezas",
-    context: "Jesus prioriza os tesouros celestiais sobre os terrenos"
+    "category": "amor",
+    "text": "Jesus não é racista - Seu amor infinito abraça todas as culturas",
+    "reference": "Mateus 28:19 - Fazei discípulos de todas as nações",
+    "context": "O amor de Jesus celebra a diversidade de toda a humanidade"
   },
   {
-    category: "orgulho",
-    text: "Jesus não é orgulhoso - Ele se humilha e serve",
-    reference: "João 13:5 - Jesus lava os pés de seus discípulos",
-    context: "Jesus mostra que a grandeza está no serviço humilde"
+    "category": "justiça",
+    "text": "Jesus não é opressor - Seu amor infinito liberta e cura a todos",
+    "reference": "Lucas 4:18 - Ele me enviou a proclamar libertação aos cativos",
+    "context": "O amor de Jesus traz liberdade e cura para todos"
   },
   {
-    category: "legalismo",
-    text: "Jesus não é legalista - Ele coloca a misericórdia acima do ritual",
-    reference: "Mateus 12:7 - Misericórdia quero e não sacrifício",
-    context: "Jesus critica o legalismo que esquece o coração da lei"
+    "category": "humildade",
+    "text": "Jesus não é orgulhoso - Seu amor infinito serve a todos",
+    "reference": "Filipenses 2:7 - Esvaziou-se a si mesmo",
+    "context": "O amor de Jesus se expressa através da humildade e do serviço"
   },
   {
-    category: "gênero",
-    text: "Jesus não é sexista - Ele honra e valoriza as mulheres",
-    reference: "João 4:27 - Os discípulos se admiram de que ele fale com uma mulher",
-    context: "Jesus desafia as normas patriarcais de sua cultura"
+    "category": "perdão",
+    "text": "Jesus não é vingativo - Seu amor infinito sempre perdoa",
+    "reference": "Lucas 23:34 - Pai, perdoa-lhes, porque não sabem o que fazem",
+    "context": "O amor de Jesus oferece perdão mesmo no sofrimento"
   },
   {
-    category: "poder",
-    text: "Jesus não é tirano - Ele lidera com amor e exemplo",
-    reference: "Mateus 20:28 - O Filho do Homem veio para servir",
-    context: "Jesus redefine a liderança como serviço sacrificial"
+    "category": "compaixão",
+    "text": "Jesus não é insensível - Seu amor infinito sente cada dor",
+    "reference": "João 11:35 - Jesus chorou",
+    "context": "O amor de Jesus compartilha profundamente nossas alegrias e tristezas"
   },
   {
-    category: "vingança",
-    text: "Jesus não é vingativo - Ele perdoa e restaura",
-    reference: "Lucas 23:34 - Pai, perdoa-lhes, porque não sabem o que fazem",
-    context: "Jesus pratica o perdão radical mesmo na cruz"
+    "category": "verdade",
+    "text": "Jesus não é mentiroso - Seu amor infinito é pura verdade",
+    "reference": "João 14:6 - Eu sou o caminho, a verdade e a vida",
+    "context": "O amor de Jesus é a verdade mais autêntica que existe"
   },
   {
-    category: "indiferença",
-    text: "Jesus não é indiferente - Ele se comove diante do sofrimento",
-    reference: "Mateus 9:36 - Teve compaixão das multidões",
-    context: "Jesus mostra empatia profunda pelos que sofrem"
+    "category": "paz",
+    "text": "Jesus não é violento - Seu amor infinito traz paz verdadeira",
+    "reference": "Mateus 5:9 - Bem-aventurados os pacificadores",
+    "context": "O amor de Jesus transforma conflitos em reconciliação"
   },
   {
-    category: "elite",
-    text: "Jesus não é elitista - Ele se cerca de gente comum",
-    reference: "Marcos 1:16-20 - Jesus chama pescadores como discípulos",
-    context: "Jesus escolhe pessoas ordinárias para sua missão extraordinária"
+    "category": "generosidade",
+    "text": "Jesus não é avarento - Seu amor infinito dá sem medida",
+    "reference": "2 Coríntios 8:9 - Por amor de vós se fez pobre",
+    "context": "O amor de Jesus é generoso ao ponto de dar tudo"
   },
   {
-    category: "hipocrisia",
-    text: "Jesus não é hipócrita - Ele vive o que ensina",
-    reference: "João 8:46 - Quem dentre vós me convence de pecado?",
-    context: "Jesus desafia a encontrar contradição entre suas palavras e ações"
+    "category": "amor",
+    "text": "Jesus não é parcial - Seu amor infinito acolhe cada ser único",
+    "reference": "Atos 10:34 - Deus não faz acepção de pessoas",
+    "context": "O amor de Jesus celebra a singularidade de cada pessoa, deficiência incluída"
   },
   {
-    category: "rigidez",
-    text: "Jesus não é rígido - Ele adapta seu ensinamento a cada pessoa",
-    reference: "João 3 - Jesus fala diferente com Nicodemos do que com a samaritana",
-    context: "Jesus personaliza sua mensagem conforme as necessidades de cada um"
+    "category": "universalidade",
+    "text": "Jesus não tem fronteiras - Seu amor infinito ultrapassa todos os limites",
+    "reference": "Romanos 10:12 - Não há diferença entre judeu e grego",
+    "context": "Não há fronteira para Jesus: nem geográfica, nem cultural, nem social"
   },
   {
-    category: "tradição",
-    text: "Jesus não é tradicionalista cego - Ele questiona tradições que oprimem",
-    reference: "Marcos 7:13 - Invalidando a palavra de Deus com vossa tradição",
-    context: "Jesus prioriza o espírito da lei sobre as tradições humanas"
+    "category": "respeito",
+    "text": "Jesus não é desrespeitoso - Ele ensina o respeito a si mesmo, às mulheres, aos outros",
+    "reference": "Mateus 22:39 - Amarás o teu próximo como a ti mesmo",
+    "context": "O respeito é sabedoria certa: respeita tua vida, teu corpo, a mulher como a ti mesmo, os outros"
   },
   {
-    category: "nacionalismo",
-    text: "Jesus não é nacionalista - Seu reino transcende fronteiras",
-    reference: "Mateus 28:19 - Ide e fazei discípulos de todas as nações",
-    context: "A missão de Jesus é universal, não limitada a um só povo"
+    "category": "paz",
+    "text": "Jesus não é divisivo - Ele une judeus, árabes e todas as denominações em paz",
+    "reference": "Efésios 2:14 - Ele é nossa paz, que de ambos fez um",
+    "context": "Celebremos nossas diversidades em vez de fazer delas querelas de palavras e guerras"
   },
   {
-    category: "divisão",
-    text: "Jesus não é divisivo - Ele ora pela unidade dos crentes",
-    reference: "João 17:21 - Para que todos sejam um",
-    context: "Celebremos nossas diversidades em vez de criar guerras de palavras"
+    "category": "verdade",
+    "text": "Jesus não é mentiroso - Ele denuncia a mentira e a manipulação",
+    "reference": "João 8:44 - O diabo é o pai da mentira",
+    "context": "Jesus expõe as mentiras e manipulações que ferem as almas"
   },
   {
-    category: "verdade",
-    text: "Jesus não é mentiroso - Ele denuncia a mentira e a manipulação",
-    reference: "João 8:44 - O diabo é pai da mentira",
-    context: "Jesus expõe as mentiras e manipulações que ferem as almas"
+    "category": "generosidade",
+    "text": "Jesus não é ganancioso - Sua generosidade ultrapassa em muito o dízimo",
+    "reference": "Lucas 21:3 - Esta viúva pobre deu mais que todos os outros",
+    "context": "A generosidade de Jesus é mais forte que a obrigação do dízimo"
   },
   {
-    category: "generosidade",
-    text: "Jesus não é avarento - Sua generosidade supera amplamente o dízimo",
-    reference: "Lucas 21:3 - Esta viúva pobre deu mais do que todos",
-    context: "A generosidade de Jesus é mais forte que a obrigação do dízimo"
-  },
-  {
-    category: "justiça",
-    text: "Jesus não é cúmplice do silêncio - Ele protege com uma justiça saudável",
-    reference: "Mateus 18:6 - Quem fizer tropeçar um destes pequeninos",
-    context: "O silêncio que encobre faltas sem proteger outros não é a sabedoria de Jesus"
+    "category": "justiça",
+    "text": "Jesus não é cúmplice do silêncio - Ele protege através de uma justiça sã",
+    "reference": "Mateus 18:6 - Quem fizer tropeçar um destes pequeninos",
+    "context": "O silêncio que encobre faltas sem proteger os outros não é a sabedoria de Jesus"
   }
 ];
 
