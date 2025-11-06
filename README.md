@@ -1,4 +1,4 @@
-# 🕊️ UNITYQUEST Chronicles of Love# 🕊️ UNITYQUEST Chronicles of Love# 🕊️ UNITYQUEST Chronicles of Love# 🎵✨ UNITYQUEST Chronicles of Love
+# 🕊️ UNITYQUEST Chronicles of Love# 🕊️ UNITYQUEST Chronicles of Love# 🕊️ UNITYQUEST Chronicles of Love# 🕊️ UNITYQUEST Chronicles of Love# 🎵✨ UNITYQUEST Chronicles of Love
 
 
 
@@ -6,267 +6,536 @@
 
 > Test your knowledge, explore the Gospel of John, discover unity through faith
 
-> *Love is not a program — but code can be love.*
+> **An Interactive Biblical Quiz Game**  
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
-[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)> Test your knowledge, explore the Gospel of John, discover unity through faith
 
 [![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
-[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)> *An Interactive Biblical Quiz Journey*  > *Une expérience spirituelle et artistique immersive*  
+> *Love is not a program — but code can be love.*
 
 ---
 
-[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
+[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
 ## 🎮 What is This?
 
-[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)> **The Path of Love**> **Le Chemin de l'Amour** • The Path of Love
+[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
 
 **UNITYQUEST Chronicles of Love** is a **biblical quiz game** with 91 questions testing your knowledge of the Bible. Answer questions, collect stars, and climb a spiritual mountain while exploring the Gospel of John with Strong's Concordance in multiple languages.
 
-
+[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
 ### Three Main Features
 
----
+[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)> *An Interactive Biblical Quiz Journey*  > *Une expérience spirituelle et artistique immersive*  
 
 1. **📚 Quiz Game** — 91 questions about the Bible (Genesis to Revelation)
 
-2. **❤️ Gospel Reader** — Complete Gospel of John with Strong's Greek references
+2. **❤️ Gospel Reader** — Complete Gospel of John with Strong's Greek references---
 
 3. **🕊️ Unity Message** — Understanding that transcends religious boundaries
 
-## 🌍 A Philosophical Journey[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
 
 ---
 
-
+## 🎮 What is This?
 
 ## 🎯 The Quiz Game
 
-### On Humanity and Diversity[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
+[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)> **The Path of Love**> **Le Chemin de l'Amour** • The Path of Love
 
 ### 8 Chapters, 91 Questions
 
-
+**UNITYQUEST Chronicles of Love** is a **biblical quiz game** with 91 questions testing your knowledge of the Bible. Answer questions, collect stars, and climb a spiritual mountain while exploring the Gospel of John with Strong's Concordance in multiple languages.
 
 | Chapter | Title | Levels | Content |
 
-|---------|-------|--------|---------|Humanity, in its magnificent diversity, is already the living symbol that **we all have something to share**. Each language, each culture, each person carries a unique perspective on the eternal questions that unite us all:[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+|---------|-------|--------|---------|
 
 | **1** | Genesis | 1-13 | Creation, Noah, Abraham, Joseph |
 
-| **2** | Exodus | 14-26 | Moses, Ten Commandments, Promised Land |
+| **2** | Exodus | 14-26 | Moses, Ten Commandments, Promised Land |### Three Main Features
 
 | **3** | Jesus Christ | 27-39 | Birth, Miracles, Teachings |
 
-| **4** | Crucifixion | 40-52 | Passion, Death, Resurrection |- *Who are we?*
+| **4** | Crucifixion | 40-52 | Passion, Death, Resurrection |---
 
 | **5** | Early Church | 53-65 | Pentecost, First Christians |
 
-| **6** | Paul's Missions | 66-78 | Conversion, Journeys, Letters |- *Why are we here?*
+| **6** | Paul's Missions | 66-78 | Conversion, Journeys, Letters |1. **📚 Quiz Game** — 91 questions about the Bible (Genesis to Revelation)
 
 | **7** | Revelation | 79-91 | End Times, New Jerusalem |
 
-| **8** | 🏆 Summit | Bonus | Special Challenge |- *What is the meaning of love?*------
+| **8** | 🏆 Summit | Bonus | Special Challenge |2. **❤️ Gospel Reader** — Complete Gospel of John with Strong's Greek references
 
 
 
-### How to Play
+### How to Play3. **🕊️ Unity Message** — Understanding that transcends religious boundaries
 
 
 
-1. **Answer questions** about biblical events and teachingsThis project is not just an application — it is a **digital mirror** reflecting the universal truth: **through peace and respect, our differences become bridges, not walls.**
+1. **Answer questions** about biblical events and teachings## 🌍 A Philosophical Journey[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
 2. **Earn stars** — 1 star (pass), 2 stars (good), 3 stars (perfect)
 
-3. **Collect 273 stars total** across all 91 levels
+3. **Collect 273 stars total** across all 91 levels---
 
 4. **Unlock chapters** as you progress
 
-5. **Climb the mountain** — visual progress tracker shows your journey### On Choice and Journey## 🌟 What is UNITYQUEST?## 🌟 Une Aventure Spirituelle Audiovisuelle
+5. **Climb the mountain** — visual progress tracker shows your journey
 
 
 
-### Three Spiritual Gifts
+### Three Spiritual Gifts## 🎯 The Quiz Game
 
 
 
-Use these to help you when stuck:In every path, there are **choices**. In every choice, there are **questions**. In every question, there are **answers** — some immediate, others waiting to be discovered across a lifetime.
+Use these to help you when stuck:### On Humanity and Diversity[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
 
 
 
-- **💫 FAITH** — +50% wisdom points  
+- **💫 FAITH** — +50% wisdom points  ### 8 Chapters, 91 Questions
 
   *Limited use, choose wisely*
 
-**UNITYQUEST Chronicles of Love** is an interactive journey where:**UNITYQUEST Chronicles of Love** is an **interactive Bible quiz** with **91 levels** across **8 chapters** that explores biblical history while discovering the **Gospel of John** as its spiritual heart.**UNITYQUEST Chronicles of Love** est une **odyssée interactive** qui transforme la découverte biblique en **expérience immersive**. 
+
 
 - **⚔️ COURAGE** — Second chance on wrong answer  
 
-  *One retry per question*- Every question invites **reflection**
+  *One retry per question*| Chapter | Title | Levels | Content |
 
 
 
-- **🧠 WISDOM** — Reveals hints + 25% bonus points  - Every answer reveals **understanding**
+- **🧠 WISDOM** — Reveals hints + 25% bonus points  |---------|-------|--------|---------|Humanity, in its magnificent diversity, is already the living symbol that **we all have something to share**. Each language, each culture, each person carries a unique perspective on the eternal questions that unite us all:[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
   *Shows clues to help find the answer*
 
-- Every step forward is a **choice** to seek truth with humility
+| **1** | Genesis | 1-13 | Creation, Noah, Abraham, Joseph |
 
 ### Eight Spiritual Ranks
 
-### 💝 Three PillarsÀ travers **91 niveaux** et **8 chapitres**, explorez l'Évangile de Jean comme une **partition musicale**, où chaque question révèle une **note** dans la symphonie de l'amour divin.
+| **2** | Exodus | 14-26 | Moses, Ten Commandments, Promised Land |
 
 Progress through ranks based on your performance:
+
+| **3** | Jesus Christ | 27-39 | Birth, Miracles, Teachings |
+
+1. 🌱 **Seeker** — Just beginning
+
+2. 👣 **Disciple** — Learning the path| **4** | Crucifixion | 40-52 | Passion, Death, Resurrection |- *Who are we?*
+
+3. 🙏 **Servant** — Growing in understanding
+
+4. 📢 **Witness** — Sharing knowledge| **5** | Early Church | 53-65 | Pentecost, First Christians |
+
+5. 🛡️ **Guardian** — Protecting truth
+
+6. 🦉 **Wise** — Deep comprehension| **6** | Paul's Missions | 66-78 | Conversion, Journeys, Letters |- *Why are we here?*
+
+7. ⚡ **Prophet** — Spiritual insight
+
+8. ✨ **Apostle** — Master level| **7** | Revelation | 79-91 | End Times, New Jerusalem |
+
+
+
+---| **8** | 🏆 Summit | Bonus | Special Challenge |- *What is the meaning of love?*------
+
+
+
+## ❤️ Gospel of John Reader
+
+
+
+Beyond the quiz, explore the **complete Gospel of John** with advanced study tools.### How to Play
+
+
+
+### Features
+
+
+
+- **21 Chapters** — Full text of John's Gospel1. **Answer questions** about biblical events and teachingsThis project is not just an application — it is a **digital mirror** reflecting the universal truth: **through peace and respect, our differences become bridges, not walls.**
+
+- **Strong's Concordance** — Click any word to see original Greek (G####)
+
+- **14 Languages** — Read in Arabic, Hebrew, Chinese, Russian, Hindi, and more2. **Earn stars** — 1 star (pass), 2 stars (good), 3 stars (perfect)
+
+- **Word-by-Word Study** — Deep linguistic exploration
+
+- **Verse Comparison** — Compare translations side-by-side3. **Collect 273 stars total** across all 91 levels
+
+
+
+### Why Gospel of John?4. **Unlock chapters** as you progress
+
+
+
+> *"In the beginning was the Word, and the Word was with God, and the Word was God."*  5. **Climb the mountain** — visual progress tracker shows your journey### On Choice and Journey## 🌟 What is UNITYQUEST?## 🌟 Une Aventure Spirituelle Audiovisuelle
+
+> — John 1:1
+
+
+
+The Gospel of John is the spiritual heart of this project. It teaches **love**, **unity**, and the message that transcends all religious boundaries.
+
+### Three Spiritual Gifts
+
+> *"A new command I give you: Love one another."*  
+
+> — John 13:34
+
+
+
+---Use these to help you when stuck:In every path, there are **choices**. In every choice, there are **questions**. In every question, there are **answers** — some immediate, others waiting to be discovered across a lifetime.
+
+
+
+## 🕊️ The Unity Message
+
+
+
+### Philosophy- **💫 FAITH** — +50% wisdom points  
+
+
+
+This game teaches a simple truth: **our divisions are human, but our unity is divine**.  *Limited use, choose wisely*
+
+
+
+All religions come from history, geography, and culture. Our differences are real — but they don't have to divide us. What if we:**UNITYQUEST Chronicles of Love** is an interactive journey where:**UNITYQUEST Chronicles of Love** is an **interactive Bible quiz** with **91 levels** across **8 chapters** that explores biblical history while discovering the **Gospel of John** as its spiritual heart.**UNITYQUEST Chronicles of Love** est une **odyssée interactive** qui transforme la découverte biblique en **expérience immersive**. 
+
+
+
+- **Respected** every path while walking our own?- **⚔️ COURAGE** — Second chance on wrong answer  
+
+- **Understood** without needing to agree?
+
+- **Loved** beyond tribal boundaries?  *One retry per question*- Every question invites **reflection**
+
+
+
+### Seven Steps to Peace
+
+
+
+1. **Recognize** — Our boundaries come from the past- **🧠 WISDOM** — Reveals hints + 25% bonus points  - Every answer reveals **understanding**
+
+2. **Respect** — Foundation of peace
+
+3. **Understand** — Listen without judging  *Shows clues to help find the answer*
+
+4. **Transform Yourself** — Be the change
+
+5. **Break Free** — From "us vs. them" thinking- Every step forward is a **choice** to seek truth with humility
+
+6. **Liberate Others** — Through example
+
+7. **Seek Meaning** — In spirit, not just words### Eight Spiritual Ranks
+
+
+
+> *"That all of them may be one, Father, just as you are in me and I am in you."*  ### 💝 Three PillarsÀ travers **91 niveaux** et **8 chapitres**, explorez l'Évangile de Jean comme une **partition musicale**, où chaque question révèle une **note** dans la symphonie de l'amour divin.
+
+> — John 17:21
+
+Progress through ranks based on your performance:
+
+📄 Full essay: [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)
+
+---
 
 ---
 
 1. 🌱 **Seeker** — Just beginning
 
-2. 👣 **Disciple** — Learning the path
-
-3. 🙏 **Servant** — Growing in understanding
-
-4. 📢 **Witness** — Sharing knowledge## 💝 The Philosophy: Code as Love
-
-5. 🛡️ **Guardian** — Protecting truth
-
-6. 🦉 **Wise** — Deep comprehension- **📖 The Quiz** — Biblical knowledge through 91 interactive questions### 💝 Notre Vision
-
-7. ⚡ **Prophet** — Spiritual insight
-
-8. ✨ **Apostle** — Master level### Love is Not a Program
-
-
-
----- **❤️ The Heart** — Gospel of John with Strong's Concordance in 14 languages
-
-
-
-## ❤️ Gospel of John ReaderLove cannot be reduced to algorithms, to logic gates, to conditional statements. Love is **spontaneous**, **unpredictable**, **infinite**.
-
-
-
-Beyond the quiz, explore the **complete Gospel of John** with advanced study tools.- **🕊️ The Wisdom** — Unity through Faith transcending religious boundariesCe n'est pas un simple jeu — c'est un **voyage audiovisuel** qui célèbre :
-
-
-
-### Features### But Code Can Be Love
-
-
-
-- **21 Chapters** — Full text of John's Gospel- 🎵 **L'Harmonie Spirituelle** — La Bible comme mélodie universelle
-
-- **Strong's Concordance** — Click any word to see original Greek (G####)
-
-- **14 Languages** — Read in Arabic, Hebrew, Chinese, Russian, Hindi, and moreYet, when code is written with intention — when every line serves **connection**, when every function builds **understanding**, when every feature creates **space for others** — then code transcends its technical nature.
-
-- **Word-by-Word Study** — Deep linguistic exploration
-
-- **Verse Comparison** — Compare translations side-by-side---- 🎨 **L'Art de l'Unité** — 17 langues, une seule voix d'amour
-
-
-
-### Why Gospel of John?**This code is love because:**
-
-
-
-> *"In the beginning was the Word, and the Word was with God, and the Word was God."*  - It **welcomes** 17 languages, respecting every voice- 🕊️ **La Paix par la Beauté** — L'esthétique au service du sacré
-
-> — John 1:1
-
-- It **shares** sacred texts without judgment or exclusion
-
-The Gospel of John is the spiritual heart of this project. It teaches **love**, **unity**, and the message that transcends all religious boundaries.
-
-- It **invites** questions rather than imposing answers## 📖 The Three Pillars Explained- ✨ **La Créativité Divine** — Chaque niveau, une œuvre d'art
-
-> *"A new command I give you: Love one another."*  
-
-> — John 13:34- It **celebrates** diversity as divine design, not division
-
-
-
----
-
-
-
-## 🕊️ The Unity MessageWhen we build technology that **honors** human dignity, that **opens doors** instead of closing them, that **listens** to the many rather than the few — we are writing love into the digital fabric of our world.
-
-
-
-### Philosophy### 1. 📚 The Quiz — Test Your Biblical Knowledge---
-
-
-
-This game teaches a simple truth: **our divisions are human, but our unity is divine**.---
-
-
-
-All religions come from history, geography, and culture. Our differences are real — but they don't have to divide us. What if we:
-
-
-
-- **Respected** every path while walking our own?## 📖 The Three Pillars of the Journey
-
-- **Understood** without needing to agree?
-
-- **Loved** beyond tribal boundaries?**91 interactive questions** across 8 chapters:## 📖 The Three Pillars Explained
-
-
-
-### Seven Steps to Peace### 1. 📚 The Quiz — Questions That Matter
-
-
-
-1. **Recognize** — Our boundaries come from the past
-
-2. **Respect** — Foundation of peace
-
-3. **Understand** — Listen without judging**91 interactive questions** spanning the biblical narrative:
-
-4. **Transform Yourself** — Be the change
-
-5. **Break Free** — From "us vs. them" thinking- **Chapter 1-2**: Genesis & Exodus (Creation to Promised Land)### 1. 📚 The Quiz — Biblical Knowledge
-
-6. **Liberate Others** — Through example
-
-7. **Seek Meaning** — In spirit, not just words- **Chapter 1-2**: Genesis & Exodus — From Creation to Liberation
-
-
-
-> *"That all of them may be one, Father, just as you are in me and I am in you."*  - **Chapter 3-4**: Jesus Christ — From Birth to Resurrection- **Chapter 3-4**: Jesus Christ (Birth to Resurrection)
-
-> — John 17:21
-
-- **Chapter 5-6**: Early Church & Paul — From Pentecost to Mission
-
-📄 Full essay: [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)
-
-- **Chapter 7**: Revelation — Letters to Apocalypse- **Chapter 5-6**: Early Church & Paul's Missions**91 interactive questions** testing your knowledge of the Bible:
-
----
-
-- **Chapter 8**: 🏆 The Summit — A Bonus for Seekers
-
 ## 🌍 17 Languages
 
-- **Chapter 7**: Revelation & Apocalypse
+2. 👣 **Disciple** — Learning the path
 
 Play and study in:
 
-These are not mere tests of memory. They are **invitations to think**, to connect past wisdom with present challenges, to see biblical stories not as distant myths but as **mirrors of our own journeys**.
+3. 🙏 **Servant** — Growing in understanding
 
 🇬🇧 English • 🇫🇷 Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  
 
-🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  - **Chapter 8**: 🏆 Bonus Summit Level- **Chapter 1-2**: Genesis & Exodus (Creation to Promised Land)
+🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  4. 📢 **Witness** — Sharing knowledge## 💝 The Philosophy: Code as Love
 
 🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  
 
-🇨🇩 Lingala • 🇹🇿 Kiswahili**Collect 273 stars** — not to compete, but to **mark your progress** on the path of understanding.
+🇨🇩 Lingala • 🇹🇿 Kiswahili5. 🛡️ **Guardian** — Protecting truth
+
+
+
+---6. 🦉 **Wise** — Deep comprehension- **📖 The Quiz** — Biblical knowledge through 91 interactive questions### 💝 Notre Vision
+
+
+
+## 🚀 Installation7. ⚡ **Prophet** — Spiritual insight
+
+
+
+### Quick Start8. ✨ **Apostle** — Master level### Love is Not a Program
+
+
+
+```bash
+
+# 1. Clone the repository
+
+git clone https://github.com/unispourlapaix/unityquest-chronicles-of-love.git---- **❤️ The Heart** — Gospel of John with Strong's Concordance in 14 languages
+
+
+
+# 2. Enter folder
+
+cd unityquest-chronicles-of-love
+
+## ❤️ Gospel of John ReaderLove cannot be reduced to algorithms, to logic gates, to conditional statements. Love is **spontaneous**, **unpredictable**, **infinite**.
+
+# 3. Install dependencies
+
+npm install
+
+
+
+# 4. Start the gameBeyond the quiz, explore the **complete Gospel of John** with advanced study tools.- **🕊️ The Wisdom** — Unity through Faith transcending religious boundariesCe n'est pas un simple jeu — c'est un **voyage audiovisuel** qui célèbre :
+
+npm start
+
+```
+
+
+
+✨ **Done!** Open your browser to `http://localhost:3000`### Features### But Code Can Be Love
+
+
+
+### Optional: Cloud Sync
+
+
+
+To save progress across devices, create `.env.local`:- **21 Chapters** — Full text of John's Gospel- 🎵 **L'Harmonie Spirituelle** — La Bible comme mélodie universelle
+
+
+
+```env- **Strong's Concordance** — Click any word to see original Greek (G####)
+
+REACT_APP_SUPABASE_URL=your_supabase_url
+
+REACT_APP_SUPABASE_ANON_KEY=your_supabase_anon_key- **14 Languages** — Read in Arabic, Hebrew, Chinese, Russian, Hindi, and moreYet, when code is written with intention — when every line serves **connection**, when every function builds **understanding**, when every feature creates **space for others** — then code transcends its technical nature.
+
+```
+
+- **Word-by-Word Study** — Deep linguistic exploration
+
+Without this, progress saves locally (works perfectly fine).
+
+- **Verse Comparison** — Compare translations side-by-side---- 🎨 **L'Art de l'Unité** — 17 langues, une seule voix d'amour
+
+---
+
+
+
+## 💻 Technology
+
+### Why Gospel of John?**This code is love because:**
+
+### Stack
+
+
+
+- **React 18** — User interface
+
+- **Tailwind CSS** — Styling> *"In the beginning was the Word, and the Word was with God, and the Word was God."*  - It **welcomes** 17 languages, respecting every voice- 🕊️ **La Paix par la Beauté** — L'esthétique au service du sacré
+
+- **Supabase** — Optional cloud sync
+
+- **LocalStorage** — Local saves> — John 1:1
+
+
+
+### Project Structure- It **shares** sacred texts without judgment or exclusion
+
+
+
+```The Gospel of John is the spiritual heart of this project. It teaches **love**, **unity**, and the message that transcends all religious boundaries.
+
+src/
+
+├── components/         # React components- It **invites** questions rather than imposing answers## 📖 The Three Pillars Explained- ✨ **La Créativité Divine** — Chaque niveau, une œuvre d'art
+
+├── data/
+
+│   ├── bible/         # Gospel of John (14 languages + Strong's)> *"A new command I give you: Love one another."*  
+
+│   ├── chapters/      # 91 quiz questions
+
+│   └── translations/  # UI text (17 languages)> — John 13:34- It **celebrates** diversity as divine design, not division
+
+└── hooks/             # Custom game logic
+
+```
+
+
+
+------
+
+
+
+## 🤝 Contributing
+
+
+
+All contributions welcome:## 🕊️ The Unity MessageWhen we build technology that **honors** human dignity, that **opens doors** instead of closing them, that **listens** to the many rather than the few — we are writing love into the digital fabric of our world.
+
+
+
+- **🌍 Translations** — Add new languages or improve existing ones
+
+- **📝 Quiz Questions** — Suggest new questions or improve existing ones
+
+- **🎨 Design** — UI improvements, accessibility enhancements### Philosophy### 1. 📚 The Quiz — Test Your Biblical Knowledge---
+
+- **🐛 Bug Reports** — Test and report issues
+
+
+
+### How to Contribute
+
+This game teaches a simple truth: **our divisions are human, but our unity is divine**.---
+
+1. Fork the project
+
+2. Create a branch (`git checkout -b feature/YourFeature`)
+
+3. Commit changes (`git commit -m 'Add YourFeature'`)
+
+4. Push to branch (`git push origin feature/YourFeature`)All religions come from history, geography, and culture. Our differences are real — but they don't have to divide us. What if we:
+
+5. Open a Pull Request
+
+
+
+---
+
+- **Respected** every path while walking our own?## 📖 The Three Pillars of the Journey
+
+## 📊 Project Stats
+
+- **Understood** without needing to agree?
+
+```
+
+🎮  91 quiz questions- **Loved** beyond tribal boundaries?**91 interactive questions** across 8 chapters:## 📖 The Three Pillars Explained
+
+📚  8 chapters
+
+🌍  17 languages
+
+⭐  273 stars to collect
+
+📖  21 chapters (Gospel of John)### Seven Steps to Peace### 1. 📚 The Quiz — Questions That Matter
+
+🎁  3 spiritual gifts
+
+🏆  1 bonus level
+
+🎯  8 spiritual ranks
+
+```1. **Recognize** — Our boundaries come from the past
+
+
+
+---2. **Respect** — Foundation of peace
+
+
+
+## 🔗 Resources3. **Understand** — Listen without judging**91 interactive questions** spanning the biblical narrative:
+
+
+
+- 🕊️ [Philosophy: Unity Through Faith](JEAN_ET_UNITE.md)4. **Transform Yourself** — Be the change
+
+- 📖 [Audio System](AUDIO_SYSTEM.md)
+
+- 🌍 [Multilanguage Guide](MULTILANGUAGE_SUMMARY.md)5. **Break Free** — From "us vs. them" thinking- **Chapter 1-2**: Genesis & Exodus (Creation to Promised Land)### 1. 📚 The Quiz — Biblical Knowledge
+
+
+
+---6. **Liberate Others** — Through example
+
+
+
+## 📜 License7. **Seek Meaning** — In spirit, not just words- **Chapter 1-2**: Genesis & Exodus — From Creation to Liberation
+
+
+
+**MIT License** — Free to use, modify, and share.
+
+
+
+> *"Let your light shine before others."*  > *"That all of them may be one, Father, just as you are in me and I am in you."*  - **Chapter 3-4**: Jesus Christ — From Birth to Resurrection- **Chapter 3-4**: Jesus Christ (Birth to Resurrection)
+
+> — Matthew 5:16
+
+> — John 17:21
+
+---
+
+- **Chapter 5-6**: Early Church & Paul — From Pentecost to Mission
+
+## 👨‍💻 Creator
+
+📄 Full essay: [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)
+
+**Emmanuel Payet**  
+
+*Developer passionate about spirituality and unity*- **Chapter 7**: Revelation — Letters to Apocalypse- **Chapter 5-6**: Early Church & Paul's Missions**91 interactive questions** testing your knowledge of the Bible:
+
+
+
+------
+
+
+
+<div align="center">- **Chapter 8**: 🏆 The Summit — A Bonus for Seekers
+
+
+
+## 💝 Made with Love## 🌍 17 Languages
+
+
+
+**UNITYQUEST Chronicles of Love**  - **Chapter 7**: Revelation & Apocalypse
+
+*A Biblical Quiz Game About Unity*
+
+Play and study in:
+
+[![⭐ Star](https://img.shields.io/github/stars/unispourlapaix/unityquest-chronicles-of-love?style=social)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+
+[![🍴 Fork](https://img.shields.io/github/forks/unispourlapaix/unityquest-chronicles-of-love?style=social)](https://github.com/unispourlapaix/unityquest-chronicles-of-love/fork)These are not mere tests of memory. They are **invitations to think**, to connect past wisdom with present challenges, to see biblical stories not as distant myths but as **mirrors of our own journeys**.
+
+
+
+---🇬🇧 English • 🇫🇷 Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  
+
+
+
+### 🕊️ *"Where there is love, there is unity"* 🕊️🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  - **Chapter 8**: 🏆 Bonus Summit Level- **Chapter 1-2**: Genesis & Exodus (Creation to Promised Land)
+
+
+
+**Play • Learn • Share**🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  
+
+
+
+</div>🇨🇩 Lingala • 🇹🇿 Kiswahili**Collect 273 stars** — not to compete, but to **mark your progress** on the path of understanding.
+
 
 
 
