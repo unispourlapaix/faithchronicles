@@ -1,330 +1,657 @@
-# 🕊️ UNITYQUEST Chronicles of Love# 🎵✨ UNITYQUEST Chronicles of Love
+# 🕊️ UNITYQUEST Chronicles of Love# 🕊️ UNITYQUEST Chronicles of Love# 🎵✨ UNITYQUEST Chronicles of Love
 
 
 
-> *An Interactive Biblical Quiz Journey*  > *Une expérience spirituelle et artistique immersive*  
-
-> **The Path of Love**> **Le Chemin de l'Amour** • The Path of Love
+> *Love is not a program — but code can be love.*
 
 
 
-[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)> *An Interactive Biblical Quiz Journey*  > *Une expérience spirituelle et artistique immersive*  
 
-[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
 
-[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
-
-
-
-------
+[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)> **The Path of Love**> **Le Chemin de l'Amour** • The Path of Love
 
 
 
-## 🌟 What is UNITYQUEST?## 🌟 Une Aventure Spirituelle Audiovisuelle
+---
 
 
 
-**UNITYQUEST Chronicles of Love** is an **interactive Bible quiz** with **91 levels** across **8 chapters** that explores biblical history while discovering the **Gospel of John** as its spiritual heart.**UNITYQUEST Chronicles of Love** est une **odyssée interactive** qui transforme la découverte biblique en **expérience immersive**. 
+## 🌍 A Philosophical Journey[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 
 
+
+### On Humanity and Diversity[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)[![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
+
+
+
+Humanity, in its magnificent diversity, is already the living symbol that **we all have something to share**. Each language, each culture, each person carries a unique perspective on the eternal questions that unite us all:[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)[![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+
+
+
+- *Who are we?*
+
+- *Why are we here?*
+
+- *What is the meaning of love?*------
+
+
+
+This project is not just an application — it is a **digital mirror** reflecting the universal truth: **through peace and respect, our differences become bridges, not walls.**
+
+
+
+### On Choice and Journey## 🌟 What is UNITYQUEST?## 🌟 Une Aventure Spirituelle Audiovisuelle
+
+
+
+In every path, there are **choices**. In every choice, there are **questions**. In every question, there are **answers** — some immediate, others waiting to be discovered across a lifetime.
+
+
+
+**UNITYQUEST Chronicles of Love** is an interactive journey where:**UNITYQUEST Chronicles of Love** is an **interactive Bible quiz** with **91 levels** across **8 chapters** that explores biblical history while discovering the **Gospel of John** as its spiritual heart.**UNITYQUEST Chronicles of Love** est une **odyssée interactive** qui transforme la découverte biblique en **expérience immersive**. 
+
+- Every question invites **reflection**
+
+- Every answer reveals **understanding**
+
+- Every step forward is a **choice** to seek truth with humility
 
 ### 💝 Three PillarsÀ travers **91 niveaux** et **8 chapitres**, explorez l'Évangile de Jean comme une **partition musicale**, où chaque question révèle une **note** dans la symphonie de l'amour divin.
 
+---
 
+
+
+## 💝 The Philosophy: Code as Love
 
 - **📖 The Quiz** — Biblical knowledge through 91 interactive questions### 💝 Notre Vision
 
+### Love is Not a Program
+
 - **❤️ The Heart** — Gospel of John with Strong's Concordance in 14 languages
+
+Love cannot be reduced to algorithms, to logic gates, to conditional statements. Love is **spontaneous**, **unpredictable**, **infinite**.
 
 - **🕊️ The Wisdom** — Unity through Faith transcending religious boundariesCe n'est pas un simple jeu — c'est un **voyage audiovisuel** qui célèbre :
 
+### But Code Can Be Love
+
 - 🎵 **L'Harmonie Spirituelle** — La Bible comme mélodie universelle
+
+Yet, when code is written with intention — when every line serves **connection**, when every function builds **understanding**, when every feature creates **space for others** — then code transcends its technical nature.
 
 ---- 🎨 **L'Art de l'Unité** — 17 langues, une seule voix d'amour
 
-- 🕊️ **La Paix par la Beauté** — L'esthétique au service du sacré
+**This code is love because:**
 
-## 📖 The Three Pillars Explained- ✨ **La Créativité Divine** — Chaque niveau, une œuvre d'art
+- It **welcomes** 17 languages, respecting every voice- 🕊️ **La Paix par la Beauté** — L'esthétique au service du sacré
+
+- It **shares** sacred texts without judgment or exclusion
+
+- It **invites** questions rather than imposing answers## 📖 The Three Pillars Explained- ✨ **La Créativité Divine** — Chaque niveau, une œuvre d'art
+
+- It **celebrates** diversity as divine design, not division
 
 
+
+When we build technology that **honors** human dignity, that **opens doors** instead of closing them, that **listens** to the many rather than the few — we are writing love into the digital fabric of our world.
 
 ### 1. 📚 The Quiz — Test Your Biblical Knowledge---
 
+---
 
+
+
+## 📖 The Three Pillars of the Journey
 
 **91 interactive questions** across 8 chapters:## 📖 The Three Pillars Explained
 
+### 1. 📚 The Quiz — Questions That Matter
 
+
+
+**91 interactive questions** spanning the biblical narrative:
 
 - **Chapter 1-2**: Genesis & Exodus (Creation to Promised Land)### 1. 📚 The Quiz — Biblical Knowledge
 
-- **Chapter 3-4**: Jesus Christ (Birth to Resurrection)
+- **Chapter 1-2**: Genesis & Exodus — From Creation to Liberation
 
-- **Chapter 5-6**: Early Church & Paul's Missions**91 interactive questions** testing your knowledge of the Bible:
+- **Chapter 3-4**: Jesus Christ — From Birth to Resurrection- **Chapter 3-4**: Jesus Christ (Birth to Resurrection)
+
+- **Chapter 5-6**: Early Church & Paul — From Pentecost to Mission
+
+- **Chapter 7**: Revelation — Letters to Apocalypse- **Chapter 5-6**: Early Church & Paul's Missions**91 interactive questions** testing your knowledge of the Bible:
+
+- **Chapter 8**: 🏆 The Summit — A Bonus for Seekers
 
 - **Chapter 7**: Revelation & Apocalypse
 
+These are not mere tests of memory. They are **invitations to think**, to connect past wisdom with present challenges, to see biblical stories not as distant myths but as **mirrors of our own journeys**.
+
 - **Chapter 8**: 🏆 Bonus Summit Level- **Chapter 1-2**: Genesis & Exodus (Creation to Promised Land)
+
+**Collect 273 stars** — not to compete, but to **mark your progress** on the path of understanding.
 
 - **Chapter 3-4**: Jesus Christ (Birth to Resurrection)
 
+### 2. ❤️ The Heart — Gospel of John
+
 **Collect 273 stars** (3 per level) and climb the spiritual mountain!- **Chapter 5-6**: Early Church & Paul's Missions
+
+At the center of this journey lies the **Gospel of John** — 21 chapters exploring the radical message of love:
 
 - **Chapter 7**: Revelation & Letters
 
-### 2. ❤️ The Heart — Gospel of John- **Chapter 8**: 🏆 Bonus Summit Level
+- **Complete text** in 14 languages (Arabic, Hebrew, Chinese, Russian, Hindi, and more)
+
+- **Strong's Concordance** — Original Greek words with deep linguistic exploration### 2. ❤️ The Heart — Gospel of John- **Chapter 8**: 🏆 Bonus Summit Level
+
+- **Interactive study** — Click on any word to discover its roots and meanings
 
 
 
-The **Gospel of John** is the spiritual core:**Collect 273 stars** (3 per level) and climb the spiritual mountain!
+> *"In the beginning was the Word, and the Word was with God, and the Word was God."*  
+
+> — **John 1:1**The **Gospel of John** is the spiritual core:**Collect 273 stars** (3 per level) and climb the spiritual mountain!
 
 
 
-- **Complete text** of John's 21 chapters### 2. ❤️ The Heart — Gospel of John
+This is not just reading — it is **encounter**. With every word studied, we step closer to understanding a message that transcends religious boundaries: **Love one another.**
 
-- **Strong's Concordance** — Original Greek words with translations
 
-- **14 languages** including Hebrew, Arabic, Hindi, Chinese, RussianThe **Gospel of John** is the spiritual core of this project:
 
-- **Interactive reading** with word-by-word analysis
+### 3. 🕊️ The Wisdom — Unity Beyond Boundaries- **Complete text** of John's 21 chapters### 2. ❤️ The Heart — Gospel of John
 
-- **Complete text** of John's 21 chapters
+
+
+The ultimate teaching is simple yet revolutionary:- **Strong's Concordance** — Original Greek words with translations
+
+
+
+**Our divisions are human — our unity is divine.**- **14 languages** including Hebrew, Arabic, Hindi, Chinese, RussianThe **Gospel of John** is the spiritual core of this project:
+
+
+
+All religions emerge from **history, geography, culture**. Our differences are **real** — but they need not be **barriers**. What if:- **Interactive reading** with word-by-word analysis
+
+- We **respected** every path while walking our own?
+
+- We **understood** without requiring agreement?- **Complete text** of John's 21 chapters
+
+- We **loved** beyond the limits of tribe and tradition?
 
 > *"In the beginning was the Word, and the Word was with God, and the Word was God."*  - **Strong's Concordance** — Original Greek words with translations
 
-> — John 1:1- **14 languages** including Hebrew, Arabic, Hindi, Chinese
+> *"That all of them may be one, Father, just as you are in me and I am in you."*  
 
-- **Interactive reading** with word-by-word analysis
+> — **John 17:21**> — John 1:1- **14 languages** including Hebrew, Arabic, Hindi, Chinese
 
-### 3. 🕊️ The Wisdom — Unity Through Faith
 
-*"In the beginning was the Word, and the Word was with God, and the Word was God."* — John 1:1
 
-The ultimate teaching: **Unity transcends religious boundaries**
+This is the wisdom: **Peace is not uniformity. Peace is unity in diversity.**- **Interactive reading** with word-by-word analysis
 
-### 3. �️ The Wisdom — Unity Through Faith
 
-- All religions have historical and cultural reasons
+
+---### 3. 🕊️ The Wisdom — Unity Through Faith
+
+
+
+## ✨ How This Journey Works*"In the beginning was the Word, and the Word was with God, and the Word was God."* — John 1:1
+
+
+
+### 🎁 Three Spiritual GiftsThe ultimate teaching: **Unity transcends religious boundaries**
+
+
+
+As you journey, you have access to **three spiritual gifts** (not rewards, but companions):### 3. �️ The Wisdom — Unity Through Faith
+
+
+
+- **💫 FAITH** — Illuminates the path, reveals deeper meaning (+50% wisdom points)  - All religions have historical and cultural reasons
+
+  *"Faith moves mountains"* — Matthew 17:20
 
 - Our divisions are not God's willThe ultimate teaching: **Unity transcends religious boundaries**
 
-- **Love and respect** are the path to peace
+- **⚔️ COURAGE** — Offers second chances when we stumble (retry on wrong answers)  
 
-- Understanding without judgment- All religions have historical and cultural reasons
+  *"Be strong and courageous, do not be afraid"* — Joshua 1:9- **Love and respect** are the path to peace
+
+
+
+- **🧠 WISDOM** — Reveals hidden insights and questions unseen (hints + 25% bonus)  - Understanding without judgment- All religions have historical and cultural reasons
+
+  *"The fear of the Lord is the beginning of wisdom"* — Proverbs 9:10
 
 - Faith in the **One God** unites us all- Our divisions are not God's will
 
+### 🎯 Eight Spiritual Ranks
+
 - **Love and respect** are the path to peace
+
+Your journey progresses through **eight stages of growth**:
 
 > *"That they all may be one, as You, Father, are in Me, and I in You."*  - Understanding without judgment
 
-> — John 17:21- Faith in the **One God** unites us all
+1. 🌱 **Seeker** — You begin with questions
+
+2. 👣 **Disciple** — You follow the path with humility> — John 17:21- Faith in the **One God** unites us all
+
+3. 🙏 **Servant** — You learn through service
+
+4. 📢 **Witness** — You share what you've discovered
+
+5. 🛡️ **Guardian** — You protect truth with compassion
+
+6. 🦉 **Wise** — You see patterns, connections, meanings---*"That they all may be one, as You, Father, are in Me, and I in You."* — John 17:21
+
+7. ⚡ **Prophet** — You speak truth to power
+
+8. ✨ **Apostle** — You embody the message: love
 
 
 
----*"That they all may be one, as You, Father, are in Me, and I in You."* — John 17:21
+### 🌍 17 Languages — One Human Family## ✨ Core Features---
 
 
 
-## ✨ Core Features---
+Universal accessibility in:
 
 
 
-### 🎁 Three Spiritual Gifts## ✨ Core Features
-
-
-
-Use **spiritual gifts** (not cards, but divine blessings) to help you progress:### � Three Spiritual Gifts
-
-
-
-- **💫 FAITH** — Golden blessing, +50% wisdom points  Use **spiritual gifts** to help you progress:
-
-  *"Faith moves mountains"*
-
-  - **💫 FAITH** — Golden blessing, +50% wisdom points  
-
-- **⚔️ COURAGE** — Red flame, second chance on wrong answers    *"Faith moves mountains"*
-
-  *"Be strong and courageous"*  
-
-  - **⚔️ COURAGE** — Red flame, second chance on wrong answers  
-
-- **🧠 WISDOM** — Blue aura, reveals hints + 25% bonus    *"Be strong and courageous"*
-
-  *"The fear of the Lord is the beginning of wisdom"*  
-
-- **🧠 WISDOM** — Blue aura, reveals hints + 25% bonus  
-
-### 🎯 8 Spiritual Ranks  *"The fear of the Lord is the beginning of wisdom"*
-
-
-
-Progress through spiritual ranks:### 🎯 8 Spiritual Ranks
-
-
-
-1. 🌱 **Seeker** — Beginning the journeyProgress through spiritual ranks as you advance:
-
-2. 👣 **Disciple** — Following the path
-
-3. 🙏 **Servant** — Humble service1. 🌱 **Seeker** — Beginning the journey
-
-4. 📢 **Witness** — Sharing the light2. 👣 **Disciple** — Following the path
-
-5. 🛡️ **Guardian** — Protecting truth3. 🙏 **Servant** — Humble service
-
-6. 🦉 **Wise** — Acquired wisdom4. 📢 **Witness** — Sharing the light
-
-7. ⚡ **Prophet** — Spiritual vision5. 🛡️ **Guardian** — Protecting truth
-
-8. ✨ **Apostle** — Spiritual mastery6. 🦉 **Wise** — Acquired wisdom
-
-7. ⚡ **Prophet** — Spiritual vision
-
-### 🌍 17 Languages8. ✨ **Apostle** — Spiritual mastery
-
-
-
-Universal accessibility:### 🌍 17 Languages
-
-
-
-🇬🇧 English • 🇫🇷 Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  **Universal accessibility** in:
+🇬🇧 English • 🇫🇷 Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  ### 🎁 Three Spiritual Gifts## ✨ Core Features
 
 🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  
 
-🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  �� English • �� Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  
-
-🇨🇩 Lingala • 🇹🇿 Kiswahili🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  
-
 🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  
 
----🇨🇩 Lingala • 🇹🇿 Kiswahili
+🇨🇩 Lingala • 🇹🇿 Kiswahili
 
+Use **spiritual gifts** (not cards, but divine blessings) to help you progress:### � Three Spiritual Gifts
 
+**Why so many languages?**  
 
-## 🎮 How to Play---
+Because truth is not the property of one tongue. Because every language carries wisdom. Because **diversity itself is sacred**.
 
 
 
-### Quiz Mode## � How to Play
+---- **💫 FAITH** — Golden blessing, +50% wisdom points  Use **spiritual gifts** to help you progress:
 
-1. **Answer questions** about the Bible
 
-2. **Use spiritual gifts** when needed (Faith, Courage, Wisdom)### Quiz Mode
 
-3. **Collect stars** — 1 star for pass, 2 for good, 3 for perfect1. **Answer questions** about the Bible
+## 🚀 Begin Your Journey  *"Faith moves mountains"*
 
-4. **Climb the mountain** — Visual progress tracker2. **Use spiritual gifts** when needed (Faith, Courage, Wisdom)
 
-5. **Unlock chapters** as you advance3. **Collect stars** — 1 star for pass, 2 for good, 3 for perfect
 
-4. **Climb the mountain** — Visual progress tracker
+### Installation (Simple)  - **💫 FAITH** — Golden blessing, +50% wisdom points  
 
-### Gospel Reader Mode5. **Unlock chapters** as you advance
 
-1. **Read John's Gospel** in your language
 
-2. **Click on words** to see Strong's Concordance### Gospel Reader Mode
+```bash- **⚔️ COURAGE** — Red flame, second chance on wrong answers    *"Faith moves mountains"*
 
-3. **Discover** original Greek meanings1. **Read John's Gospel** in your language
+# 1. Download the project
 
-4. **Learn** word-by-word translations2. **Click on words** to see Strong's Concordance
+git clone https://github.com/unispourlapaix/unityquest-chronicles-of-love.git  *"Be strong and courageous"*  
 
-3. **Discover** original Greek meanings
 
-### Treasures Mode4. **Learn** word-by-word translations
 
-- Discover **biblical verses**
-
-- Learn **interesting facts**### Treasures Mode
-
-- Answer **mystery questions**- Discover **biblical verses**
-
-- Learn **interesting facts**
-
----- Answer **mystery questions**
-
-
-
-## 📚 The 8 Chapters---
-
-
-
-| Chapter | Title | Levels | Topic |## 💻 Technology
-
-|---------|-------|--------|-------|
-
-| **1** | Genesis | 1-13 | Creation to Joseph |### Simple Stack
-
-| **2** | Exodus | 14-26 | Moses to Promised Land |
-
-| **3** | Jesus Christ | 27-39 | Birth to Ministry |```
-
-| **4** | Crucifixion | 40-52 | Passion to Resurrection |React 18            - User interface
-
-| **5** | Early Church | 53-65 | Pentecost to First Disciples |Tailwind CSS        - Modern design
-
-| **6** | Paul's Missions | 66-78 | Conversion to Journeys |Supabase            - Cloud sync (optional)
-
-| **7** | Revelation | 79-91 | Letters to Apocalypse |LocalStorage        - Local save
-
-| **8** | 🏆 Summit | 92 | Bonus Level at the Peak |```
-
-
-
----### Project Structure
-
-
-
-## 🕊️ Philosophy: Unity Through Faith```
-
-src/
-
-### The Heart of the Message├── components/         # React components
-
-├── data/
-
-> *"Our religious boundaries come from the past — history, geography, culture. Our divisions are not God's will. Through love, respect, and understanding, we find unity in faith."*│   ├── bible/         # Gospel of John (14 languages + Strong)
-
-│   ├── chapters/      # 91 quiz levels
-
-### 7 Steps to Peace│   └── translations/  # UI (17 languages)
-
-└── hooks/             # Custom hooks
-
-1. **Recognize** — Our boundaries come from the past```
-
-2. **Respect** — Foundation of humility, guardian of peace
-
-3. **Understand** — Without judging---
-
-4. **Change Yourself** — Be a true light
-
-5. **Break Free** — From tribalism## 🚀 Démarrage Rapide (pour Artistes)
-
-6. **Liberate** — To be truly free
-
-7. **Avoid** — Following word-for-word without understanding### Installation Simple
-
-
-
-📄 Full presentation: [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)```bash
-
-# 1. Télécharger le projet
-
----git clone https://github.com/unispourlapaix/unityquest-chronicles-of-love.git
-
-
-
-## 🚀 Quick Start# 2. Entrer dans le dossier
+# 2. Enter the folder  - **⚔️ COURAGE** — Red flame, second chance on wrong answers  
 
 cd unityquest-chronicles-of-love
 
-### Installation
+- **🧠 WISDOM** — Blue aura, reveals hints + 25% bonus    *"Be strong and courageous"*
 
-# 3. Installer
+# 3. Install dependencies
+
+npm install  *"The fear of the Lord is the beginning of wisdom"*  
+
+
+
+# 4. Launch the journey- **🧠 WISDOM** — Blue aura, reveals hints + 25% bonus  
+
+npm start
+
+```### 🎯 8 Spiritual Ranks  *"The fear of the Lord is the beginning of wisdom"*
+
+
+
+✨ **That's all.** Open your browser to `http://localhost:3000`
+
+
+
+### Optional: Cloud SynchronizationProgress through spiritual ranks:### 🎯 8 Spiritual Ranks
+
+
+
+To save your progress across devices, create `.env.local`:
+
+
+
+```env1. 🌱 **Seeker** — Beginning the journeyProgress through spiritual ranks as you advance:
+
+REACT_APP_SUPABASE_URL=your_supabase_url
+
+REACT_APP_SUPABASE_ANON_KEY=your_supabase_anon_key2. 👣 **Disciple** — Following the path
+
+```
+
+3. 🙏 **Servant** — Humble service1. 🌱 **Seeker** — Beginning the journey
+
+Without this, your progress is saved locally — equally valid.
+
+4. 📢 **Witness** — Sharing the light2. 👣 **Disciple** — Following the path
+
+---
+
+5. 🛡️ **Guardian** — Protecting truth3. 🙏 **Servant** — Humble service
+
+## 💻 The Technical Foundation
+
+6. 🦉 **Wise** — Acquired wisdom4. 📢 **Witness** — Sharing the light
+
+### Simple, Intentional Stack
+
+7. ⚡ **Prophet** — Spiritual vision5. 🛡️ **Guardian** — Protecting truth
+
+```
+
+React 18            — Building bridges between user and content8. ✨ **Apostle** — Spiritual mastery6. 🦉 **Wise** — Acquired wisdom
+
+Tailwind CSS        — Beauty serves accessibility
+
+Supabase            — Optional cloud sync for community7. ⚡ **Prophet** — Spiritual vision
+
+LocalStorage        — Personal sanctuary for solo journeys
+
+```### 🌍 17 Languages8. ✨ **Apostle** — Spiritual mastery
+
+
+
+### Project Structure
+
+
+
+```Universal accessibility:### 🌍 17 Languages
+
+src/
+
+├── components/         # React components for interface
+
+├── data/
+
+│   ├── bible/         # Gospel of John (14 languages + Strong's)🇬🇧 English • 🇫🇷 Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  **Universal accessibility** in:
+
+│   ├── chapters/      # 91 quiz levels with questions
+
+│   └── translations/  # UI text (17 languages)🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  
+
+└── hooks/             # Custom logic for journey management
+
+```🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  �� English • �� Français • 🇪🇸 Español • 🇩🇪 Deutsch • 🇵🇹 Português  
+
+
+
+---🇨🇩 Lingala • 🇹🇿 Kiswahili🇮🇹 Italiano • 🇷🇺 Русский • 🇸🇦 العربية • 🇮🇱 עברית • 🇮🇳 हिंदी  
+
+
+
+## 🕊️ The Seven Steps to Peace🇯🇵 日本語 • 🇰🇷 한국어 • 🇨🇳 中文 • 🇵🇱 Polski • 🇺🇦 Українська  
+
+
+
+This project embodies a **philosophy of unity**:---🇨🇩 Lingala • 🇹🇿 Kiswahili
+
+
+
+1. **Recognize** — Our boundaries come from the past (history, geography, culture)
+
+2. **Respect** — The foundation of humility, the guardian of peace
+
+3. **Understand** — Listen without needing to agree## 🎮 How to Play---
+
+4. **Transform Yourself** — Be the change, not the judge
+
+5. **Break Free** — From tribalism, from "us vs. them" thinking
+
+6. **Liberate Others** — Through example, not coercion
+
+7. **Seek Meaning** — Not in words alone, but in their spirit### Quiz Mode## � How to Play
+
+
+
+📄 Full philosophical essay: [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)1. **Answer questions** about the Bible
+
+
+
+---2. **Use spiritual gifts** when needed (Faith, Courage, Wisdom)### Quiz Mode
+
+
+
+## 🎯 Sacred Texts That Guide Us3. **Collect stars** — 1 star for pass, 2 for good, 3 for perfect1. **Answer questions** about the Bible
+
+
+
+> *"In the beginning was the Word, and the Word was with God, and the Word was God."*  4. **Climb the mountain** — Visual progress tracker2. **Use spiritual gifts** when needed (Faith, Courage, Wisdom)
+
+> — **John 1:1**
+
+5. **Unlock chapters** as you advance3. **Collect stars** — 1 star for pass, 2 for good, 3 for perfect
+
+The **Word** is not a text — it is the **truth** that precedes all language.
+
+4. **Climb the mountain** — Visual progress tracker
+
+> *"A new command I give you: Love one another. As I have loved you, so you must love one another."*  
+
+> — **John 13:34**### Gospel Reader Mode5. **Unlock chapters** as you advance
+
+
+
+The **command** is simple — yet contains all complexity: **love**.1. **Read John's Gospel** in your language
+
+
+
+> *"That all of them may be one, Father, just as you are in me and I am in you. May they also be in us so that the world may believe."*  2. **Click on words** to see Strong's Concordance### Gospel Reader Mode
+
+> — **John 17:21**
+
+3. **Discover** original Greek meanings1. **Read John's Gospel** in your language
+
+The **prayer** reveals the goal: **unity**, not through force, but through **being**.
+
+4. **Learn** word-by-word translations2. **Click on words** to see Strong's Concordance
+
+---
+
+3. **Discover** original Greek meanings
+
+## 🤝 Contributing to the Journey
+
+### Treasures Mode4. **Learn** word-by-word translations
+
+All are welcome to contribute:
+
+- Discover **biblical verses**
+
+### 🌍 Translations
+
+- Add new languages to reach more hearts- Learn **interesting facts**### Treasures Mode
+
+- Improve existing translations for cultural authenticity
+
+- Adapt phrases to honor local wisdom- Answer **mystery questions**- Discover **biblical verses**
+
+
+
+### 📝 Content- Learn **interesting facts**
+
+- Suggest new quiz questions that provoke thought
+
+- Add biblical insights or historical context---- Answer **mystery questions**
+
+- Propose alternative perspectives on passages
+
+
+
+### 🎨 Design
+
+- Enhance accessibility (screen readers, color contrast)## 📚 The 8 Chapters---
+
+- Create visual elements that serve understanding
+
+- Simplify navigation for all ages and abilities
+
+
+
+### 🐛 Testing & Feedback| Chapter | Title | Levels | Topic |## 💻 Technology
+
+- Report bugs with patience and detail
+
+- Suggest improvements with humility|---------|-------|--------|-------|
+
+- Share how this journey has touched you
+
+| **1** | Genesis | 1-13 | Creation to Joseph |### Simple Stack
+
+**Process:**
+
+1. Fork the project| **2** | Exodus | 14-26 | Moses to Promised Land |
+
+2. Create a branch (`git checkout -b feature/YourIdea`)
+
+3. Make your changes with intention| **3** | Jesus Christ | 27-39 | Birth to Ministry |```
+
+4. Commit with clear messages (`git commit -m 'Add: [Your contribution]'`)
+
+5. Push to your fork (`git push origin feature/YourIdea`)| **4** | Crucifixion | 40-52 | Passion to Resurrection |React 18            - User interface
+
+6. Open a Pull Request with explanation
+
+| **5** | Early Church | 53-65 | Pentecost to First Disciples |Tailwind CSS        - Modern design
+
+---
+
+| **6** | Paul's Missions | 66-78 | Conversion to Journeys |Supabase            - Cloud sync (optional)
+
+## 📊 The Journey in Numbers
+
+| **7** | Revelation | 79-91 | Letters to Apocalypse |LocalStorage        - Local save
+
+```
+
+🎮  91 quiz levels             — Questions to spark thought| **8** | 🏆 Summit | 92 | Bonus Level at the Peak |```
+
+📚  8 chapters                — Stages of the biblical story
+
+🌍  17 languages              — Voices of humanity
+
+⭐  273 stars to collect      — Markers of progress
+
+📖  21 chapters               — Gospel of John, complete---### Project Structure
+
+🎁  3 spiritual gifts         — Faith, Courage, Wisdom
+
+🏆  1 bonus level             — The Summit for persistent seekers
+
+🎯  8 spiritual ranks         — From Seeker to Apostle
+
+```## 🕊️ Philosophy: Unity Through Faith```
+
+
+
+---src/
+
+
+
+## 🔗 Further Reading### The Heart of the Message├── components/         # React components
+
+
+
+- 🕊️ [Philosophy: Unity Through Faith](JEAN_ET_UNITE.md) — Deep dive into the seven steps├── data/
+
+- 📖 [Audio System](AUDIO_SYSTEM.md) — How sound enhances the journey
+
+- 🌍 [Multilanguage Guide](MULTILANGUAGE_SUMMARY.md) — Translation philosophy> *"Our religious boundaries come from the past — history, geography, culture. Our divisions are not God's will. Through love, respect, and understanding, we find unity in faith."*│   ├── bible/         # Gospel of John (14 languages + Strong)
+
+- 📚 [Full Documentation](https://github.com/unispourlapaix/unityquest-chronicles-of-love/wiki) — Technical details
+
+│   ├── chapters/      # 91 quiz levels
+
+---
+
+### 7 Steps to Peace│   └── translations/  # UI (17 languages)
+
+## 📜 License: Open and Free
+
+└── hooks/             # Custom hooks
+
+**MIT License** — This work is free to use, modify, and share.
+
+1. **Recognize** — Our boundaries come from the past```
+
+Why? Because **love cannot be owned**. Because **wisdom must flow freely**. Because **barriers to understanding are barriers to peace**.
+
+2. **Respect** — Foundation of humility, guardian of peace
+
+> *"Let your light shine before others, that they may see your good deeds and glorify your Father in heaven."*  
+
+> — **Matthew 5:16**3. **Understand** — Without judging---
+
+
+
+---4. **Change Yourself** — Be a true light
+
+
+
+<div align="center">5. **Break Free** — From tribalism## 🚀 Démarrage Rapide (pour Artistes)
+
+
+
+## 💝 Created with Intention and Love6. **Liberate** — To be truly free
+
+
+
+**UNITYQUEST Chronicles of Love**  7. **Avoid** — Following word-for-word without understanding### Installation Simple
+
+*Where code becomes love, and love becomes understanding*
+
+
+
+[![⭐ Star](https://img.shields.io/github/stars/unispourlapaix/unityquest-chronicles-of-love?style=social)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+
+[![🍴 Fork](https://img.shields.io/github/forks/unispourlapaix/unityquest-chronicles-of-love?style=social)](https://github.com/unispourlapaix/unityquest-chronicles-of-love/fork)📄 Full presentation: [JEAN_ET_UNITE.md](JEAN_ET_UNITE.md)```bash
+
+
+
+---# 1. Télécharger le projet
+
+
+
+### 🕊️ *"In our diversity, we find our unity. In our unity, we find divine love."* 🕊️---git clone https://github.com/unispourlapaix/unityquest-chronicles-of-love.git
+
+
+
+*May grace, peace, and understanding be with all who seek.*
+
+
+
+---## 🚀 Quick Start# 2. Entrer dans le dossier
+
+
+
+**🌟 Join the Journey 🌟**cd unityquest-chronicles-of-love
+
+
+
+*Every question is a step. Every answer is a choice. Every choice shapes who we become.*### Installation
+
+
+
+</div># 3. Installer
+
 
 ```bashnpm install
 
