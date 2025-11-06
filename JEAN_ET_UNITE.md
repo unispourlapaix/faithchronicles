@@ -341,7 +341,7 @@ Puisse cette réflexion philosophique sur Jean et l'Unité nous inspirer à :
 
 ---
 
-**© 2024 • FaithChronicles / BibleQuest**  
+**© 2024-2025 • UNITYQUEST Chronicles of Love**  
 *Développé pour la gloire de Dieu • L'Évangile de Jean comme fondation*  
-*Le Chemin de l'Amour • Le point central de l'attention de BibleQuest*
+*Le Chemin de l'Amour • L'Unité dans la Diversité*
 
