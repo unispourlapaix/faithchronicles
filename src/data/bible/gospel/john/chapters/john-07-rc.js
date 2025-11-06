@@ -37,7 +37,7 @@ export const johnChapter7RC = {
     "text": "Pamba te moto moko asalaka eloko na kobombana te, soki azali koluka koyebana. Soki ozali kosala makambo oyo, mimonisa yo moko na mokili.",
     "strong": [
             {
-                  "text": "Personne",
+                  "text": "Moto moko te",
                   "strong": "G3762",
                   "start": 0,
                   "end": 8
@@ -60,7 +60,7 @@ export const johnChapter7RC = {
     "text": "Bongo Yesu alobaki na bango: Ntango na ngai ekoki nanu te, kasi ntango na bino ezali ntango nyonso.",
     "strong": [
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 70,
                   "end": 78
@@ -84,13 +84,13 @@ export const johnChapter7RC = {
     "text": "Bino bomata na feti oyo; ngai nakomata nanu te na feti oyo, pamba te ntango na ngai ekoki nanu te.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 16,
                   "end": 21
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 65,
                   "end": 70
@@ -102,7 +102,7 @@ export const johnChapter7RC = {
     "text": "Ntango alobaki makambo oyo na bango, afandaki na Galile.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 11,
                   "end": 16
@@ -114,7 +114,7 @@ export const johnChapter7RC = {
     "text": "Kasi ntango bandeko na ye bamataki, ye mpe amataki na feti, te polele, kasi na kobombana.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 94,
                   "end": 99
@@ -167,7 +167,7 @@ export const johnChapter7RC = {
     "text": "Nzokande, moto moko alobaki polele te na tina na ye, mpo na kobanga Bayuda.",
     "strong": [
             {
-                  "text": "Personne",
+                  "text": "Moto moko te",
                   "strong": "G3762",
                   "start": 0,
                   "end": 8
@@ -361,7 +361,7 @@ export const johnChapter7RC = {
     "text": "Kasi, tala, azali koloba polele, mpe balobi ye eloko moko te. Bakambi bayebi solo ete ye nde Klisto?",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 51,
                   "end": 55
@@ -385,7 +385,7 @@ export const johnChapter7RC = {
                   "end": 59
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 79,
                   "end": 87
@@ -420,7 +420,7 @@ export const johnChapter7RC = {
     "text": "Bongo bazalaki koluka kokanga ye; kasi moto moko atiaki loboko na ye te, pamba te ngonga na ye ekokaki nanu te.",
     "strong": [
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 44,
                   "end": 52
@@ -490,7 +490,7 @@ export const johnChapter7RC = {
     "text": "Liloba nini oyo alobaki: Bokoluka ngai, mpe bokomona ngai te; mpe epai nazali, bino bokoki koya te?",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 13,
                   "end": 18
@@ -538,7 +538,7 @@ export const johnChapter7RC = {
     "text": "Ye oyo andimi na ngai, ndenge Makomi elobi, miluka ya mai ya bomoi ekotiola na libumu na ye.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 70,
                   "end": 75
@@ -634,7 +634,7 @@ export const johnChapter7RC = {
     "text": "Mpe basusu kati na bango balingaki kokanga ye, kasi moto moko atiaki maboko na ye te.",
     "strong": [
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 51,
                   "end": 59
@@ -670,7 +670,7 @@ export const johnChapter7RC = {
                   "end": 67
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 50,
                   "end": 55
@@ -698,7 +698,7 @@ export const johnChapter7RC = {
     "text": "Kasi ebele oyo ya bato oyo bayebi mobeko te, bazali bakatami.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 5,
                   "end": 10

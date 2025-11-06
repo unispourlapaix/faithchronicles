@@ -181,7 +181,7 @@ export const johnChapter18RC = {
                   "end": 56
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 107,
                   "end": 112
@@ -300,7 +300,7 @@ export const johnChapter18RC = {
                   "end": 48
             },
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 58,
                   "end": 66
@@ -318,7 +318,7 @@ export const johnChapter18RC = {
                   "end": 27
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 156,
                   "end": 160
@@ -445,7 +445,7 @@ export const johnChapter18RC = {
                   "end": 65
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 135,
                   "end": 143
@@ -558,7 +558,7 @@ export const johnChapter18RC = {
     "text": "Pilato alobaki na ye: Bosolo ezali nini? Mpe ntango alobaki yango, abimaki lisusu epai ya Bayuda, mpe alobaki na bango: Ngai nazwi te likambo kati na ye.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 47,
                   "end": 52
@@ -588,7 +588,7 @@ export const johnChapter18RC = {
     "text": "Kasi bozali na momesano ete nalongola mpo na bino moto moko na Paska; bongo bolingi ete nalongola mpo na bino Mokonzi ya Bayuda?",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 6,
                   "end": 11

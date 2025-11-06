@@ -81,7 +81,7 @@ export const johnChapter14RC = {
                   "end": 25
             },
             {
-                  "text": "savoir",
+                  "text": "koyeba",
                   "strong": "G1097",
                   "start": 76,
                   "end": 82
@@ -199,7 +199,7 @@ export const johnChapter14RC = {
                   "end": 27
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 95,
                   "end": 99
@@ -405,7 +405,7 @@ export const johnChapter14RC = {
                   "end": 45
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 68,
                   "end": 73
@@ -452,7 +452,7 @@ export const johnChapter14RC = {
                   "end": 60
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 74,
                   "end": 78

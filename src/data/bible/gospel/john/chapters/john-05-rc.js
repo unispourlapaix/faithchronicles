@@ -110,7 +110,7 @@ export const johnChapter5RC = {
                   "end": 35
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 42,
                   "end": 50
@@ -269,13 +269,13 @@ export const johnChapter5RC = {
                   "end": 27
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 83,
                   "end": 87
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 96,
                   "end": 100
@@ -299,7 +299,7 @@ export const johnChapter5RC = {
                   "end": 174
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 196,
                   "end": 200
@@ -311,7 +311,7 @@ export const johnChapter5RC = {
     "text": "Pamba te Tata alingaka Mwana, mpe amonisaka ye makambo nyonso oyo ye moko azali kosala; mpe akomonisa ye misala minene koleka oyo, mpo ete bino bokamwa.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 20,
                   "end": 24
@@ -335,13 +335,13 @@ export const johnChapter5RC = {
     "text": "Pamba te ndenge Tata alamwisaka bakufi mpe apesaka bomoi, ndenge wana mpe Mwana apesaka bomoi na baoyo alingi.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 5,
                   "end": 10
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 66,
                   "end": 70
@@ -353,7 +353,7 @@ export const johnChapter5RC = {
     "text": "Pamba te Tata azali kosambisa moto moko te, kasi apesi kosambisa nyonso na Mwana,",
     "strong": [
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 16,
                   "end": 24
@@ -365,13 +365,13 @@ export const johnChapter5RC = {
                   "end": 71
             },
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 47,
                   "end": 55
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 59,
                   "end": 63
@@ -383,19 +383,19 @@ export const johnChapter5RC = {
     "text": "mpo ete bato nyonso bakumisa Mwana ndenge bakumisaka Tata. Oyo akumisi Mwana te azali kokumisa te Tata oyo atindaki ye.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 26,
                   "end": 30
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 31,
                   "end": 36
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 85,
                   "end": 89
@@ -413,7 +413,7 @@ export const johnChapter5RC = {
                   "end": 54
             },
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 143,
                   "end": 151
@@ -431,7 +431,7 @@ export const johnChapter5RC = {
     "text": "Amen, amen, nalobi na bino, ngonga ezali koya, mpe ezali sikawa, ntango bakufi bakoyoka mongongo ya Mwana ya Nzambe, mpe baoyo bakoyoka bakozala na bomoi.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 112,
                   "end": 116
@@ -449,19 +449,19 @@ export const johnChapter5RC = {
     "text": "Pamba te ndenge Tata azali na bomoi kati na ye moko, ndenge wana mpe apesi Mwana kozala na bomoi kati na ye moko,",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 5,
                   "end": 10
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 61,
                   "end": 65
             },
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 68,
                   "end": 73
@@ -473,13 +473,13 @@ export const johnChapter5RC = {
     "text": "mpe apesi ye bokonzi ya kosambisa, pamba te azali Mwana ya moto.",
     "strong": [
             {
-                  "text": "juger",
+                  "text": "kosambisa",
                   "strong": "G2919",
                   "start": 32,
                   "end": 37
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 55,
                   "end": 59
@@ -515,7 +515,7 @@ export const johnChapter5RC = {
                   "end": 28
             },
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 113,
                   "end": 121
@@ -527,7 +527,7 @@ export const johnChapter5RC = {
     "text": "Ngai nakoki kosala eloko moko te ngai moko; ndenge nayokaka nde nazali kosambisa, mpe kosambisa na ngai ezali sembo; pamba te nazali koluka te mokano na ngai, kasi mokano ya Tata oyo atindaki ngai.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 11,
                   "end": 15
@@ -545,7 +545,7 @@ export const johnChapter5RC = {
                   "end": 40
             },
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 72,
                   "end": 80
@@ -656,7 +656,7 @@ export const johnChapter5RC = {
     "text": "Bolukalukaka Makomi, pamba te bokanisaka ete kati na yango bozali na bomoi ya seko; mpe yango nde ezali kotatola mpo na ngai.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 49,
                   "end": 54
@@ -668,7 +668,7 @@ export const johnChapter5RC = {
     "text": "Mpe bolingi te koya epai na ngai mpo ete bozala na bomoi.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 39,
                   "end": 44

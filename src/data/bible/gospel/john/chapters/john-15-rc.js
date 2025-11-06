@@ -56,7 +56,7 @@ export const johnChapter15RC = {
     "text": "Bofanda kati na ngai, mpe ngai kati na bino. Ndenge etape ekoki te kobota mbuma na yango moko, soki efandaka te na nzete ya vino, ndenge wana mpe bino, soki bofandaka te kati na ngai.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 43,
                   "end": 48
@@ -92,7 +92,7 @@ export const johnChapter15RC = {
                   "end": 100
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 139,
                   "end": 143
@@ -116,7 +116,7 @@ export const johnChapter15RC = {
                   "end": 23
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 56,
                   "end": 61
@@ -145,7 +145,7 @@ export const johnChapter15RC = {
     "text": "Ndenge Tata alingaki ngai, ngai mpe nalingaki bino; bofanda na bolingo na ngai.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
@@ -216,7 +216,7 @@ export const johnChapter15RC = {
                   "end": 26
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 59,
                   "end": 64

@@ -45,7 +45,7 @@ export const johnChapter13RC = {
     "text": "Mpe ntango bilei ya butu ezalaki, zabolo atii na sik'oyo na motema ya Yuda Iskariote, mwana ya Simoni, ete akaba ye,",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 83,
                   "end": 87
@@ -205,7 +205,7 @@ export const johnChapter13RC = {
     "text": "Pamba te napesi bino ndakisa, mpo ete ndenge nasalaki na bino, bino mpe bosala.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 55,
                   "end": 60
@@ -308,7 +308,7 @@ export const johnChapter13RC = {
     "text": "Simoni Petelo bongo asololi ye mpo na kotuna ye nani ye oyo alobaki na tina na ye.",
     "strong": [
             {
-                  "text": "signe",
+                  "text": "elembo",
                   "strong": "G4592",
                   "start": 21,
                   "end": 26
@@ -344,7 +344,7 @@ export const johnChapter13RC = {
     "text": "Yesu azongisaki: Ye nde oyo nakopesa ye eteni ya mapa nsima ya kozindisa yango. Mpe ntango azindisi eteni ya mapa, azwaki mpe apesaki Yuda Iskariote, mwana ya Simoni.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 115,
                   "end": 119
@@ -386,7 +386,7 @@ export const johnChapter13RC = {
     "text": "Pamba te basusu bakanisaki, lokola Yuda azalaki na sakosi, ete Yesu alobaki na ye: Somba oyo tozali na mposa mpo na feti; to ete apesa babola eloko.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 32,
                   "end": 37
@@ -428,7 +428,7 @@ export const johnChapter13RC = {
     "text": "Bongo, ntango abimaki, Yesu alobaki: Sikawa Mwana ya moto akonzami nkembo, mpe Nzambe akonzami nkembo kati na ye.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 51,
                   "end": 55
@@ -476,7 +476,7 @@ export const johnChapter13RC = {
                   "end": 57
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 88,
                   "end": 93
@@ -500,7 +500,7 @@ export const johnChapter13RC = {
                   "end": 37
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 70,
                   "end": 75

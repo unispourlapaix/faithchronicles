@@ -21,10 +21,10 @@ export const johnChapter9RC = {
                   "end": 39
             },
             {
-                  "text": "naissance",
+                  "text": "mbotama",
                   "strong": "G36",
-                  "start": 43,
-                  "end": 52
+                  "start": 46,
+                  "end": 53
             }
       ]
   },
@@ -33,16 +33,16 @@ export const johnChapter9RC = {
     "text": "Mpe bayekoli na ye batunaki ye, koloba: Rabi, nani asalaki lisumu, moto oyo to baboti na ye, mpo abotama akufi miso?",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
-                  "start": 25,
-                  "end": 30
+                  "start": 68,
+                  "end": 71
             },
             {
                   "text": "moto",
                   "strong": "G444",
-                  "start": 67,
-                  "end": 71
+                  "start": 72,
+                  "end": 76
             }
       ]
   },
@@ -63,10 +63,10 @@ export const johnChapter9RC = {
     "text": "Tosengeli kosala misala ya ye oyo atindaki ngai, ntango ezali nanu butu te; butu ezali koya, ntango moto moko akoki kosala mosala te.",
     "strong": [
             {
-                  "text": "mokolo",
+                  "text": "ezali",
                   "strong": "H3117",
-                  "start": 39,
-                  "end": 43
+                  "start": 51,
+                  "end": 56
             },
             {
                   "text": "butu",
@@ -75,10 +75,10 @@ export const johnChapter9RC = {
                   "end": 71
             },
             {
-                  "text": "personne",
+                  "text": "moto moko",
                   "strong": "G3762",
                   "start": 99,
-                  "end": 107
+                  "end": 108
             }
       ]
   },
@@ -111,10 +111,10 @@ export const johnChapter9RC = {
     "text": "Ntango alobaki makambo oyo, aswaki na mabele, mpe asalaki potopoto na swa, mpe atiaki potopoto yango na miso ya mokuf miso.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "alobaki",
                   "strong": "G1372",
-                  "start": 6,
-                  "end": 11
+                  "start": 7,
+                  "end": 14
             },
             {
                   "text": "mabele",
@@ -123,16 +123,16 @@ export const johnChapter9RC = {
                   "end": 44
             },
             {
-                  "text": "elongo na",
+                  "text": "na",
                   "strong": "G1848",
-                  "start": 59,
-                  "end": 63
+                  "start": 78,
+                  "end": 80
             },
             {
-                  "text": "cette",
+                  "text": "yango",
                   "strong": "G3778",
-                  "start": 92,
-                  "end": 97
+                  "start": 91,
+                  "end": 96
             }
       ]
   },
@@ -146,10 +146,10 @@ export const johnChapter9RC = {
     "text": "Yango wana babenzi mpe baoyo bamonaki ye liboso ete azalaki kobondela, balobaki: Oyo te ye oyo azalaki kofanda mpe kobondela?",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
-                  "start": 51,
-                  "end": 56
+                  "start": 70,
+                  "end": 76
             }
       ]
   },
@@ -168,16 +168,16 @@ export const johnChapter9RC = {
     "text": "Azongisaki mpe alobaki: Moto oyo babengaka Yesu asalaki potopoto, mpe atiaki yango na miso na ngai, mpe alobaki na ngai: Kende na liziba ya Siloamu, mpe kosukola. Bongo nakendaki, nasukoli, mpe nakomaki komona.",
     "strong": [
             {
-                  "text": "moto",
+                  "text": "Moto",
                   "strong": "G444",
-                  "start": 15,
-                  "end": 20
+                  "start": 31,
+                  "end": 35
             },
             {
-                  "text": "oint",
+                  "text": "Yesu",
                   "strong": "G5547",
-                  "start": 62,
-                  "end": 66
+                  "start": 53,
+                  "end": 57
             }
       ]
   },
@@ -186,10 +186,10 @@ export const johnChapter9RC = {
     "text": "Bongo balobaki na ye: Azali wapi? Alobaki: Nayebi te.",
     "strong": [
             {
-                  "text": "moto",
+                  "text": "Azali",
                   "strong": "G444",
-                  "start": 27,
-                  "end": 32
+                  "start": 30,
+                  "end": 35
             }
       ]
   },
@@ -203,10 +203,10 @@ export const johnChapter9RC = {
     "text": "Nzokande, ezalaki Saba ntango Yesu asalaki potopoto mpe afungolaki miso na ye.",
     "strong": [
             {
-                  "text": "mokolo",
+                  "text": "Saba",
                   "strong": "H3117",
-                  "start": 15,
-                  "end": 19
+                  "start": 18,
+                  "end": 22
             }
       ]
   },
@@ -267,10 +267,10 @@ export const johnChapter9RC = {
     "text": "Mpe batunaki bango, koloba: Oyo nde mwana na bino, oyo bolobi ete abotamaki akufi miso? Bongo ndenge nini azali komona sikawa?",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
-                  "start": 50,
-                  "end": 54
+                  "start": 38,
+                  "end": 43
             }
       ]
   },
@@ -279,10 +279,10 @@ export const johnChapter9RC = {
     "text": "Baboti na ye bazongisaki bango mpe balobaki: Toyebi ete oyo nde mwana na biso, mpe ete abotamaki akufi miso;",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
-                  "start": 53,
-                  "end": 57
+                  "start": 64,
+                  "end": 69
             }
       ]
   },
@@ -347,10 +347,10 @@ export const johnChapter9RC = {
     "text": "Azongisaki bango: Nalobi na bino na sik'oyo, mpe boyoki te; mpo na nini bolingi koyoka lisusu? Mbele bino mpe bolingi kokoma bayekoli na ye?",
     "strong": [
             {
-                  "text": "devenir",
+                  "text": "kokoma",
                   "strong": "G1096",
-                  "start": 126,
-                  "end": 133
+                  "start": 119,
+                  "end": 125
             }
       ]
   },
@@ -407,10 +407,10 @@ export const johnChapter9RC = {
     "text": "Banda ebandeli ya mokili eyokami te ete moto afungoli miso ya moto moko abotamaki akufi miso.",
     "strong": [
             {
-                  "text": "koloba",
+                  "text": "eyokami",
                   "strong": "H559",
-                  "start": 22,
-                  "end": 26
+                  "start": 32,
+                  "end": 39
             }
       ]
   },
@@ -431,16 +431,16 @@ export const johnChapter9RC = {
                   "end": 31
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko",
                   "strong": "G3762",
-                  "start": 51,
-                  "end": 55
+                  "start": 54,
+                  "end": 64
             },
             {
                   "text": "kosala",
                   "strong": "G1080",
-                  "start": 45,
-                  "end": 51
+                  "start": 47,
+                  "end": 53
             }
       ]
   },
@@ -449,16 +449,16 @@ export const johnChapter9RC = {
     "text": "Bazongisaki mpe balobaki na ye: Yo obotamaki mobimba na masumu, mpe ozali kolakisa biso? Mpe babimisaki ye.",
     "strong": [
             {
-                  "text": "nyonso",
+                  "text": "mobimba",
                   "strong": "G3956",
-                  "start": 30,
-                  "end": 34
+                  "start": 49,
+                  "end": 56
             },
             {
                   "text": "na",
                   "strong": "H6887",
-                  "start": 25,
-                  "end": 27
+                  "start": 57,
+                  "end": 59
             }
       ]
   },
@@ -467,16 +467,16 @@ export const johnChapter9RC = {
     "text": "Yesu ayokaki ete babimisaki ye; mpe ntango amonaki ye, alobaki na ye: Ondimi na Mwana ya Nzambe?",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
-                  "start": 85,
-                  "end": 89
+                  "start": 82,
+                  "end": 87
             },
             {
                   "text": "Nzambe",
                   "strong": "G2316",
-                  "start": 89,
-                  "end": 95
+                  "start": 91,
+                  "end": 97
             }
       ]
   },
@@ -514,10 +514,10 @@ export const johnChapter9RC = {
     "text": "Mpe Yesu alobaki: Mpo na kosambisa nayaki na mokili oyo, mpo ete baoyo bamonaka te bamona, mpe baoyo bamonaka bakóma bakufi miso.",
     "strong": [
             {
-                  "text": "na",
-                  "strong": "H6887",
-                  "start": 22,
-                  "end": 24
+                  "text": "kosambisa",
+                  "strong": "G2920",
+                  "start": 23,
+                  "end": 32
             },
             {
                   "text": "mokili",
@@ -526,10 +526,10 @@ export const johnChapter9RC = {
                   "end": 51
             },
             {
-                  "text": "jugement",
-                  "strong": "G2920",
-                  "start": 51,
-                  "end": 59
+                  "text": "na",
+                  "strong": "H6887",
+                  "start": 33,
+                  "end": 35
             }
       ]
   },

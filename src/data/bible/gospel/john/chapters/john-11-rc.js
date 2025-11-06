@@ -33,7 +33,7 @@ export const johnChapter11RC = {
     "text": "(Ezalaki Maria oyo apakoli Nkolo mafuta mpe asukolaki makolo na ye na nsuki na ye, oyo ndeko na ye Lazaro azalaki na bokono.)",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 8,
                   "end": 13
@@ -87,13 +87,13 @@ export const johnChapter11RC = {
     "text": "Ntango Yesu ayokaki, alobaki: Bokono oyo ezali mpo na liwa te, kasi mpo na nkembo ya Nzambe, mpo ete Mwana ya Nzambe akonzama nkembo na yango.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 6,
                   "end": 11
             },
             {
-                  "text": "Cette",
+                  "text": "Oyo",
                   "strong": "G3778",
                   "start": 37,
                   "end": 42
@@ -111,7 +111,7 @@ export const johnChapter11RC = {
                   "end": 91
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 124,
                   "end": 128
@@ -287,7 +287,7 @@ export const johnChapter11RC = {
     "text": "Nzokande, Betani ezalaki pene ya Yelusaleme, pene ya kilomita misato.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 4,
                   "end": 9
@@ -417,7 +417,7 @@ export const johnChapter11RC = {
                   "end": 54
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 62,
                   "end": 66
@@ -558,7 +558,7 @@ export const johnChapter11RC = {
     "text": "Bongo Bayuda balobaki: Tala ndenge azalaki kolinga ye!",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 33,
                   "end": 38
@@ -635,7 +635,7 @@ export const johnChapter11RC = {
     "text": "Mpe ngai nayebaki ete oyokaka ngai ntango nyonso, kasi nalobi yango mpo na ebele ya bato oyo batelemi zingazinga, mpo ete bandima ete yo nde otindaki ngai.",
     "strong": [
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 37,
                   "end": 45
@@ -722,13 +722,13 @@ export const johnChapter11RC = {
     "text": "Mpe moko kati na bango, Kaifo, oyo azalaki nganga-nzambe monene ya mobu wana, alobaki na bango: Bino boyebi eloko te,",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 54,
                   "end": 59
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 98,
                   "end": 102
@@ -776,7 +776,7 @@ export const johnChapter11RC = {
     "text": "Nzokande, alobaki yango na ye moko te, kasi azalaki nganga-nzambe monene ya mobu wana, asakolaki ete Yesu akokufa mpo na ekolo;",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 71,
                   "end": 76

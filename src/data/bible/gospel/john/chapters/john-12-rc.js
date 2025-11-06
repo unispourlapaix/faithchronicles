@@ -62,7 +62,7 @@ export const johnChapter12RC = {
     "text": "Bongo Yuda Iskariote, moko ya bayekoli na ye, oyo akokaba ye, alobaki:",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 37,
                   "end": 41
@@ -109,7 +109,7 @@ export const johnChapter12RC = {
     "text": "Pamba te babola bozali na bango ntango nyonso elongo na bino, kasi ngai bozali na ngai ntango nyonso te.",
     "strong": [
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 10,
                   "end": 18
@@ -121,7 +121,7 @@ export const johnChapter12RC = {
                   "end": 55
             },
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 66,
                   "end": 74
@@ -264,7 +264,7 @@ export const johnChapter12RC = {
     "text": "Bongo Bafarisai balobaki kati na bango moko: Bomoni ete botungisi eloko moko te? tala, mokili mobimba ezali kolanda ye.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 80,
                   "end": 84
@@ -341,7 +341,7 @@ export const johnChapter12RC = {
     "text": "Mpe Yesu azongisaki bango, koloba: Ngonga ekoki, mpo ete Mwana ya moto akonzama nkembo.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 45,
                   "end": 49
@@ -413,13 +413,13 @@ export const johnChapter12RC = {
     "text": "Sikawa molimo na ngai ezali na pasi; mpe nalobi nini? Tata, bikisa ngai na ngonga oyo? Kasi mpo na yango nayaki na ngonga oyo.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 75,
                   "end": 80
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 137,
                   "end": 142
@@ -461,7 +461,7 @@ export const johnChapter12RC = {
     "text": "Yesu azongisaki mpe alobaki: Mongongo oyo eyaki te mpo na ngai, kasi mpo na bino.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 43,
                   "end": 48
@@ -473,7 +473,7 @@ export const johnChapter12RC = {
     "text": "Sikawa ezali kosambisama mokili oyo; sikawa mokambi ya mokili oyo akobengana libanda.",
     "strong": [
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 21,
                   "end": 29
@@ -539,7 +539,7 @@ export const johnChapter12RC = {
                   "end": 73
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 125,
                   "end": 129
@@ -551,7 +551,7 @@ export const johnChapter12RC = {
                   "end": 135
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 164,
                   "end": 168
@@ -678,7 +678,7 @@ export const johnChapter12RC = {
     "text": "Ngai nayaki na mokili lokola pole, mpo ete moto nyonso oyo andimi na ngai afanda te na molili.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 13,
                   "end": 18
@@ -714,7 +714,7 @@ export const johnChapter12RC = {
     "text": "Mpe soki moto moko ayoki maloba na ngai, mpe abateli te, ngai nasambisaka ye te; pamba te nayaki te mpo na kosambisa mokili, kasi mpo na kobikisa mokili.",
     "strong": [
             {
-                  "text": "juger",
+                  "text": "kosambisa",
                   "strong": "G2919",
                   "start": 111,
                   "end": 116
@@ -780,7 +780,7 @@ export const johnChapter12RC = {
                   "end": 31
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 103,
                   "end": 108

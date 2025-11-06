@@ -15,7 +15,7 @@ export const johnChapter17RC = {
     "text": "Yesu alobaki makambo oyo, mpe atombolaki miso na ye na likolo, mpe alobaki: Tata, ngonga ekómaki; konza Mwana na yo nkembo, mpo ete Mwana na yo mpe akonza yo nkembo;",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 6,
                   "end": 11
@@ -27,13 +27,13 @@ export const johnChapter17RC = {
                   "end": 61
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 100,
                   "end": 104
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 119,
                   "end": 123
@@ -200,7 +200,7 @@ export const johnChapter17RC = {
                   "end": 27
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 152,
                   "end": 157
@@ -236,7 +236,7 @@ export const johnChapter17RC = {
                   "end": 111
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 143,
                   "end": 147
@@ -284,7 +284,7 @@ export const johnChapter17RC = {
                   "end": 37
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 87,
                   "end": 92
@@ -320,7 +320,7 @@ export const johnChapter17RC = {
                   "end": 16
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 26,
                   "end": 31
@@ -350,7 +350,7 @@ export const johnChapter17RC = {
     "text": "Ndenge otindaki ngai na mokili, ngai mpe natindi bango na mokili.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
@@ -403,13 +403,13 @@ export const johnChapter17RC = {
     "text": "mpo ete bango nyonso bazala moko, ndenge yo, Tata, ozali kati na ngai, mpe ngai kati na yo, ete bango mpe bazala kati na biso, mpo ete mokili endima ete yo nde otindaki ngai.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 25,
                   "end": 30
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 59,
                   "end": 64
@@ -427,7 +427,7 @@ export const johnChapter17RC = {
     "text": "Mpe nkembo oyo opesi ngai, napesi bango, mpo ete bazala moko, ndenge tozali moko;",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 69,
                   "end": 74
@@ -445,7 +445,7 @@ export const johnChapter17RC = {
                   "end": 90
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 131,
                   "end": 136

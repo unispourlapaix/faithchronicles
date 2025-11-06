@@ -71,7 +71,7 @@ export const johnChapter19RC = {
                   "end": 56
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 107,
                   "end": 111
@@ -89,7 +89,7 @@ export const johnChapter19RC = {
     "text": "Ntango bongo Pilato ayokaki liloba yango, abangaki koleka;",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 22,
                   "end": 27
@@ -227,7 +227,7 @@ export const johnChapter19RC = {
                   "end": 8
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 25,
                   "end": 30
@@ -255,7 +255,7 @@ export const johnChapter19RC = {
     "text": "Bongo basoda, ntango babakaki Yesu na ekulusu, bazwaki bilamba na ye, mpe bakabolaki na biteni minei, eteni moko moko mpo na mosoda moko; bazwaki mpe nzambala; nzokande, nzambala ezalaki na liketo te, etongami lokola moko banda likolo.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 19,
                   "end": 24
@@ -279,7 +279,7 @@ export const johnChapter19RC = {
     "text": "Yango wana balobaki na bango moko: Tokata yango te na biteni, kasi tobeta zeke mpo na yango, ya nani ekozala; mpo ete Makomi ekokisama, oyo elobi: Bakabolaki bilamba na ngai kati na bango, mpe babetaki zeke mpo na nzambala na ngai. Yango nde basoda basalaki.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 116,
                   "end": 121
@@ -308,7 +308,7 @@ export const johnChapter19RC = {
                   "end": 51
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 98,
                   "end": 102
@@ -533,7 +533,7 @@ export const johnChapter19RC = {
                   "end": 77
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 85,
                   "end": 90
@@ -557,7 +557,7 @@ export const johnChapter19RC = {
                   "end": 12
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 106,
                   "end": 114

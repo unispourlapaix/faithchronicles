@@ -45,7 +45,7 @@ export const johnChapter3RC = {
                   "end": 102
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 111,
                   "end": 119
@@ -265,7 +265,7 @@ export const johnChapter3RC = {
     "text": "Mpe moto moko te amataki na likolo, longola ye oyo akitaki na likolo, Mwana ya moto oyo azali na likolo.",
     "strong": [
             {
-                  "text": "Personne",
+                  "text": "Moto moko te",
                   "strong": "G3762",
                   "start": 0,
                   "end": 8
@@ -283,7 +283,7 @@ export const johnChapter3RC = {
                   "end": 34
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 77,
                   "end": 81
@@ -313,7 +313,7 @@ export const johnChapter3RC = {
     "text": "Mpe ndenge Moyize atombolaki nyoka na esobe, ndenge wana mpe Mwana ya moto asengeli kotombolama;",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 3,
                   "end": 8
@@ -331,7 +331,7 @@ export const johnChapter3RC = {
                   "end": 36
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 71,
                   "end": 75
@@ -366,7 +366,7 @@ export const johnChapter3RC = {
                   "end": 31
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 48,
                   "end": 52
@@ -390,7 +390,7 @@ export const johnChapter3RC = {
                   "end": 15
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 35,
                   "end": 39
@@ -426,7 +426,7 @@ export const johnChapter3RC = {
     "text": "Oyo andimi na Ye azali kosambisama te, kasi oyo andimi te asambisami na sik'oyo, pamba te andimi te na nkombo ya Mwana ya moko ya Nzambe.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 118,
                   "end": 122
@@ -450,7 +450,7 @@ export const johnChapter3RC = {
     "text": "Mpe oyo nde kosambisama: Pole eyaki na mokili, mpe bato balingaki molili koleka pole, pamba te misala na bango ezalaki mabe.",
     "strong": [
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 6,
                   "end": 14
@@ -642,7 +642,7 @@ export const johnChapter3RC = {
     "text": "Ye oyo azali na mwasi ya libala azali mobali ya libala; kasi molingami ya mobali ya libala, oyo atelemi mpe ayokaka ye, asepelaka makasi na mongongo ya mobali ya libala: yango wana esengo oyo ya ngai ekokisami.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 165,
                   "end": 170
@@ -671,7 +671,7 @@ export const johnChapter3RC = {
                   "end": 76
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 104,
                   "end": 109
@@ -695,7 +695,7 @@ export const johnChapter3RC = {
     "text": "Mpe oyo amoni mpe ayoki, yango nde atatoli; mpe moto moko te andimi litatoli na ye.",
     "strong": [
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 51,
                   "end": 59
@@ -755,7 +755,7 @@ export const johnChapter3RC = {
     "text": "Tata alingaka Mwana, mpe apesi biloko nyonso na maboko na ye.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 16,
                   "end": 20
@@ -767,13 +767,13 @@ export const johnChapter3RC = {
     "text": "Oyo andimi na Mwana azali na bomoi ya seko; kasi oyo atosi Mwana te akomona bomoi te, kasi kanda ya Nzambe efandaka likolo na ye.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 19,
                   "end": 23
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 70,
                   "end": 74

@@ -95,7 +95,7 @@ export const johnChapter16RC = {
                   "end": 85
             },
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 93,
                   "end": 101
@@ -124,7 +124,7 @@ export const johnChapter16RC = {
     "text": "mpo na kosambisama, pamba te mokambi ya mokili oyo asambisami.",
     "strong": [
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 3,
                   "end": 11
@@ -300,7 +300,7 @@ export const johnChapter16RC = {
                   "end": 13
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 47,
                   "end": 51
@@ -312,7 +312,7 @@ export const johnChapter16RC = {
     "text": "Tii sikawa bosengaki eloko moko te na nkombo na ngai; bosenga, mpe bokozwa, mpo ete esengo na bino ekoka.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 28,
                   "end": 32
@@ -388,7 +388,7 @@ export const johnChapter16RC = {
                   "end": 75
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 80,
                   "end": 88

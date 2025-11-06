@@ -75,7 +75,7 @@ export const johnChapter8RC = {
                   "end": 34
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 64,
                   "end": 69
@@ -117,7 +117,7 @@ export const johnChapter8RC = {
     "text": "Ntango bazalaki kokoba kotuna ye, alamwaki, mpe alobaki na bango: Ye oyo kati na bino azangi lisumu, ye nde liboso abamba ye na libanga.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
@@ -183,7 +183,7 @@ export const johnChapter8RC = {
     "text": "Ntango Yesu alamwaki, mpe amonaki te moto, longola mwasi kaka, alobaki na ye: Mwasi, bazali wapi, baoyo bazalaki kofunda yo? Moko te akataki etumbu na yo?",
     "strong": [
             {
-                  "text": "Personne",
+                  "text": "Moto moko te",
                   "strong": "G3762",
                   "start": 107,
                   "end": 115
@@ -253,7 +253,7 @@ export const johnChapter8RC = {
                   "end": 25
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 43,
                   "end": 51
@@ -265,7 +265,7 @@ export const johnChapter8RC = {
     "text": "Mpe ata soki nasambisa, kosambisa na ngai ezali ya solo; pamba te nazali ye moko te, kasi ngai mpe Tata oyo atindaki ngai.",
     "strong": [
             {
-                  "text": "jugement",
+                  "text": "kosambisa",
                   "strong": "G2920",
                   "start": 19,
                   "end": 27
@@ -329,7 +329,7 @@ export const johnChapter8RC = {
                   "end": 21
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 81,
                   "end": 89
@@ -418,7 +418,7 @@ export const johnChapter8RC = {
                   "end": 33
             },
             {
-                  "text": "juger",
+                  "text": "kosambisa",
                   "strong": "G2919",
                   "start": 44,
                   "end": 49
@@ -441,7 +441,7 @@ export const johnChapter8RC = {
     "text": "Bongo Yesu alobaki na bango: Ntango bokotombola Mwana ya moto, bongo bokoyeba ete ngai nazali ye, mpe ete nasalaka eloko moko te na ngai moko, kasi ndenge Tata lakisaki ngai, yango nde nalobi.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 47,
                   "end": 51
@@ -453,7 +453,7 @@ export const johnChapter8RC = {
                   "end": 61
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 120,
                   "end": 124
@@ -483,7 +483,7 @@ export const johnChapter8RC = {
                   "end": 60
             },
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 80,
                   "end": 88
@@ -495,7 +495,7 @@ export const johnChapter8RC = {
     "text": "Ntango azalaki koloba makambo oyo, mingi bandimaki na ye.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
@@ -536,7 +536,7 @@ export const johnChapter8RC = {
                   "end": 40
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 93,
                   "end": 101
@@ -572,7 +572,7 @@ export const johnChapter8RC = {
                   "end": 24
             },
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 29,
                   "end": 37
@@ -590,7 +590,7 @@ export const johnChapter8RC = {
                   "end": 52
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 57,
                   "end": 61
@@ -602,7 +602,7 @@ export const johnChapter8RC = {
                   "end": 71
             },
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 72,
                   "end": 80
@@ -614,7 +614,7 @@ export const johnChapter8RC = {
     "text": "Yango wana, soki Mwana akopesa bino bonsomi, bokozala solo na bonsomi.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 11,
                   "end": 15
@@ -921,7 +921,7 @@ export const johnChapter8RC = {
     "text": "Yesu azongisaki: Soki ngai moko nakonza ngai nkembo, nkembo na ngai ezali eloko te; ezali Tata na ngai oyo akonza ngai nkembo, oyo bolobi na tina na ye ete azali Nzambe na bino,",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 60,
                   "end": 64

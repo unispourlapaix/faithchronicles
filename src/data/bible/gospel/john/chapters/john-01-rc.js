@@ -87,7 +87,7 @@ export const johnChapter1RC = {
     "text": "Biloko nyonso ekelami na nzela na yango, mpe na kozanga yango, eloko moko te ya oyo ekela ekelami te.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 42,
                   "end": 46
@@ -164,7 +164,7 @@ export const johnChapter1RC = {
     "text": "Pole ya solo, oyo engengisaka moto nyonso, ezalaki koya na mokili.",
     "strong": [
             {
-                  "text": "Cette",
+                  "text": "Oyo",
                   "strong": "G3778",
                   "start": 0,
                   "end": 5
@@ -235,7 +235,7 @@ export const johnChapter1RC = {
     "text": "Kasi baoyo nyonso bayambaki ye, bapesaki bango nguya ya kokóma bana ya Nzambe, ete baoyo bandimi na nkombo na ye,",
     "strong": [
             {
-                  "text": "devenir",
+                  "text": "kokoma",
                   "strong": "G1096",
                   "start": 92,
                   "end": 99
@@ -289,13 +289,13 @@ export const johnChapter1RC = {
                   "end": 30
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 137,
                   "end": 142
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 156,
                   "end": 160
@@ -342,7 +342,7 @@ export const johnChapter1RC = {
     "text": "Moto moko te amonaki Nzambe ntango moko te; kasi Mwana ya moko moko, oyo azali na ntolo ya Tata, ye nde asakolaki ye.",
     "strong": [
             {
-                  "text": "Personne",
+                  "text": "Moto moko te",
                   "strong": "G3762",
                   "start": 0,
                   "end": 8
@@ -354,7 +354,7 @@ export const johnChapter1RC = {
                   "end": 27
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 32,
                   "end": 36
@@ -436,7 +436,7 @@ export const johnChapter1RC = {
                   "end": 90
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 97,
                   "end": 102
@@ -453,7 +453,7 @@ export const johnChapter1RC = {
     "text": "Mpe batunaki ye, balobelaki na ye: Bongo mpo na nini ozali kobatisa, soki ozali Klisto te, ozali Eli te, mpe ozali mosakoli te?",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 22,
                   "end": 27
@@ -566,7 +566,7 @@ export const johnChapter1RC = {
                   "end": 93
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 62,
                   "end": 67
@@ -602,7 +602,7 @@ export const johnChapter1RC = {
     "text": "Mpe namonaki, mpe natatoli ete ye nde Mwana ya Nzambe.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 50,
                   "end": 54
@@ -733,7 +733,7 @@ export const johnChapter1RC = {
     "text": "Mpe amemaki ye epai ya Yesu. Yesu atali ye mpe alobaki: Yo ozali Simoni, mwana ya Yona; bakobenga yo Kefa (oyo elimboli: Petelo).",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 73,
                   "end": 77
@@ -787,7 +787,7 @@ export const johnChapter1RC = {
                   "end": 12
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 151,
                   "end": 155
@@ -835,7 +835,7 @@ export const johnChapter1RC = {
     "text": "Natanael azongisaki mpe alobaki na ye: Rabi, yo ozali Mwana ya Nzambe, yo ozali Mokonzi ya Isalaele!",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 47,
                   "end": 51
@@ -870,7 +870,7 @@ export const johnChapter1RC = {
                   "end": 111
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 122,
                   "end": 126

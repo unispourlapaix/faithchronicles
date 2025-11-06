@@ -26,7 +26,7 @@ export const johnChapter21RC = {
                   "end": 20
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 72,
                   "end": 76
@@ -62,7 +62,7 @@ export const johnChapter21RC = {
                   "end": 24
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 130,
                   "end": 135
@@ -74,7 +74,7 @@ export const johnChapter21RC = {
                   "end": 155
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 159,
                   "end": 163
@@ -91,7 +91,7 @@ export const johnChapter21RC = {
     "text": "Bongo Yesu alobaki na bango: Bana, bozali na eloko ya kolia te? Bazongisaki ye: Te.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 37,
                   "end": 41
@@ -251,7 +251,7 @@ export const johnChapter21RC = {
     "text": "Bongo ntango baliaki, Yesu alobaki na Simoni Petelo: Simoni, mwana ya Yona, olingi ngai koleka oyo? Alobaki na ye: Iyo, Nkolo, oyebi ete nalingi yo. Alobaki na ye: Batela bana meme na ngai.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 60,
                   "end": 64
@@ -269,7 +269,7 @@ export const johnChapter21RC = {
     "text": "Alobaki na ye kaka mbala ya mibale: Simoni, mwana ya Yona, olingi ngai? Alobaki na ye: Iyo, Nkolo, oyebi ete nalingi yo. Alobaki na ye: Batela bameme na ngai.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 36,
                   "end": 40
@@ -293,7 +293,7 @@ export const johnChapter21RC = {
     "text": "Alobaki na ye mbala ya misato: Simoni, mwana ya Yona, olingi ngai? Petelo ayokaki mawa mpo ete alobaki na ye mbala ya misato: Olingi ngai? Mpe alobaki na ye: Nkolo, oyebi nyonso, oyebi ete nalingi yo. Yesu alobaki na ye: Batela bameme na ngai.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 42,
                   "end": 46

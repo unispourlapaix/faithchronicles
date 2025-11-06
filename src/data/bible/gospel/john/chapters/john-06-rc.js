@@ -143,7 +143,7 @@ export const johnChapter6RC = {
     "text": "Nzokande, ntango batondaki, alobaki na bayekoli na ye: Bosangisa biteni oyo etikali, mpo ete eloko moko te ebungisa.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 97,
                   "end": 101
@@ -262,7 +262,7 @@ export const johnChapter6RC = {
     "text": "Bongo ntango bakufisaki pene ya kilomita mitano to motoba, bamonaki Yesu azali kotambola na likolo ya ebale, mpe azali kopusana na masuwa; mpe babangaki.",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 6,
                   "end": 11
@@ -322,7 +322,7 @@ export const johnChapter6RC = {
                   "end": 55
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 148,
                   "end": 153
@@ -340,7 +340,7 @@ export const johnChapter6RC = {
     "text": "Nzokande, masuwa mosusu eyaki na Tiberiade pene na esika epai Nkolo apesaki matondi mpe baliaki mapa.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 14,
                   "end": 19
@@ -392,7 +392,7 @@ export const johnChapter6RC = {
     "text": "Bosala mosala te mpo na bilei oyo ebungisaka, kasi mpo na bilei oyo ewumelaka mpo na bomoi ya seko, oyo Mwana ya moto akopesa bino; pamba te ye nde Tata Nzambe atiaki kashe na ye.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 108,
                   "end": 112
@@ -560,7 +560,7 @@ export const johnChapter6RC = {
                   "end": 27
             },
             {
-                  "text": "toujours",
+                  "text": "ntango nyonso",
                   "strong": "H5769",
                   "start": 37,
                   "end": 45
@@ -624,7 +624,7 @@ export const johnChapter6RC = {
     "text": "Mpe oyo nde mokano ya Tata oyo atindaki ngai, ete nyonso oyo apesi ngai, nabungisa eloko moko te, kasi nalamwisa yango na mokolo ya suka.",
     "strong": [
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 62,
                   "end": 66
@@ -648,7 +648,7 @@ export const johnChapter6RC = {
     "text": "Mpe oyo nde mokano ya ye oyo atindaki ngai, ete moto nyonso oyo amoni Mwana mpe andimi na ye, azala na bomoi ya seko; mpe ngai nakolamwisa ye na mokolo ya suka.",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 52,
                   "end": 56
@@ -684,7 +684,7 @@ export const johnChapter6RC = {
     "text": "Mpe balobaki: Oyo te Yesu, mwana ya Yosefu, oyo toyebi tata na ye mpe mama na ye? Bongo ndenge nini azali koloba sikawa: Nakitaki na likolo?",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 43,
                   "end": 47
@@ -862,7 +862,7 @@ export const johnChapter6RC = {
                   "end": 80
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 84,
                   "end": 88
@@ -934,7 +934,7 @@ export const johnChapter6RC = {
     "text": "Ndenge Tata ya bomoi atindaki ngai, mpe ngai nazali na bomoi na Tata, ndenge wana mpe ye oyo azali kolia ngai, ye mpe akozala na bomoi na ngai.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
@@ -958,7 +958,7 @@ export const johnChapter6RC = {
                   "end": 34
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 60,
                   "end": 65
@@ -994,13 +994,13 @@ export const johnChapter6RC = {
     "text": "Yango wana bato mingi ya bayekoli na ye, ntango bayokaki, balobaki: Liloba oyo ezali makasi; nani akoki koyoka yango?",
     "strong": [
             {
-                  "text": "avoir",
+                  "text": "kozala na",
                   "strong": "G1372",
                   "start": 36,
                   "end": 41
             },
             {
-                  "text": "Cette",
+                  "text": "Oyo",
                   "strong": "G3778",
                   "start": 59,
                   "end": 64
@@ -1023,7 +1023,7 @@ export const johnChapter6RC = {
     "text": "Bongo soki bomona Mwana ya moto azali komata epai azalaki liboso?",
     "strong": [
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 20,
                   "end": 24
@@ -1053,7 +1053,7 @@ export const johnChapter6RC = {
                   "end": 36
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 48,
                   "end": 52
@@ -1147,7 +1147,7 @@ export const johnChapter6RC = {
     "text": "Nzokande, alobaki na tina ya Yuda Iskariote, mwana ya Simoni; pamba te ye nde azalaki koya kokaba ye, azali moko ya zomi na mibale.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 30,
                   "end": 34

@@ -86,7 +86,7 @@ export const johnChapter10RC = {
     "text": "Yesu alobaki na bango lisese oyo, kasi bayebaki te makambo oyo azalaki koloba na bango.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 15,
                   "end": 20
@@ -229,13 +229,13 @@ export const johnChapter10RC = {
     "text": "Ndenge Tata ayebaka ngai, ngai mpe nayebaka Tata; mpe nopesaka bomoi na ngai mpo na bameme.",
     "strong": [
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 28,
                   "end": 33
@@ -259,7 +259,7 @@ export const johnChapter10RC = {
                   "end": 27
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 48,
                   "end": 53
@@ -294,7 +294,7 @@ export const johnChapter10RC = {
     "text": "Moto moko alongolaka yango na ngai te, kasi ngai moko napesaká yango. Nazali na bokonzi ya kopesa yango, mpe nazali na bokonzi ya kozwa yango lisusu. Oyo nde mitindo oyo nazwaki na Tata na ngai.",
     "strong": [
             {
-                  "text": "Personne",
+                  "text": "Moto moko te",
                   "strong": "G3762",
                   "start": 0,
                   "end": 8
@@ -404,7 +404,7 @@ export const johnChapter10RC = {
     "text": "mpe ngai napesaká bango bomoi ya seko, mpe bakokufa te seko na seko, mpe moto moko akobotola bango na maboko na ngai te.",
     "strong": [
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 64,
                   "end": 72
@@ -428,7 +428,7 @@ export const johnChapter10RC = {
                   "end": 48
             },
             {
-                  "text": "personne",
+                  "text": "moto moko te",
                   "strong": "G3762",
                   "start": 60,
                   "end": 68
@@ -547,7 +547,7 @@ export const johnChapter10RC = {
                   "end": 68
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 125,
                   "end": 129

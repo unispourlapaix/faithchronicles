@@ -43,7 +43,7 @@ export const johnChapter4RC = {
     "text": "Mpe asengelaki koleka na Samaria.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
@@ -61,7 +61,7 @@ export const johnChapter4RC = {
                   "end": 14
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 102,
                   "end": 106
@@ -124,13 +124,13 @@ export const johnChapter4RC = {
                   "end": 26
             },
             {
-                  "text": "rien",
+                  "text": "eloko moko te",
                   "strong": "G3762",
                   "start": 36,
                   "end": 40
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 99,
                   "end": 104
@@ -148,7 +148,7 @@ export const johnChapter4RC = {
                   "end": 12
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 105,
                   "end": 109
@@ -160,7 +160,7 @@ export const johnChapter4RC = {
     "text": "Yesu azongisaki mpe alobaki na ye: Moto nyonso oyo ameli mai oyo, akoyoka lisusu posa ya komela;",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 38,
                   "end": 43
@@ -202,7 +202,7 @@ export const johnChapter4RC = {
                   "end": 26
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 38,
                   "end": 43
@@ -260,7 +260,7 @@ export const johnChapter4RC = {
     "text": "Batata na biso bagumbamelaki na ngomba oyo; mpe bino bolobi ete na Yelusaleme ezali esika oyo bato basengeli kogumbamela.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 24,
                   "end": 29
@@ -278,7 +278,7 @@ export const johnChapter4RC = {
     "text": "Yesu alobaki na ye: Mwasi, yamba ngai, ngonga ezali koya, ntango bokogumbamela Tata na ngomba oyo te, mpe na Yelusaleme te.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 68,
                   "end": 73
@@ -504,13 +504,13 @@ export const johnChapter4RC = {
     "text": "Nzokande, Basamaria mingi ya engumba yango bandimaki na ye mpo na liloba ya mwasi, oyo atatoli: Alobi ngai makambo nyonso oyo nasali.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 25,
                   "end": 30
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 65,
                   "end": 70
@@ -630,7 +630,7 @@ export const johnChapter4RC = {
     "text": "Bongo Yesu ayaki lisusu na Kana ya Galile, epai akomisaki mai vino. Mpe ezalaki na moko ya bakalaka ya mokonzi, mwana na ye azalaki kobela na Kapernaumu.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 122,
                   "end": 126
@@ -648,7 +648,7 @@ export const johnChapter4RC = {
     "text": "Ye, ntango ayokaki ete Yesu autaki na Yuda mpo na kokende na Galile, akendaki epai na ye, mpe asengaki ye ete akita mpe abikisa mwana na ye, pamba te akokufaka.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 114,
                   "end": 118
@@ -683,7 +683,7 @@ export const johnChapter4RC = {
     "text": "Yesu alobaki na ye: Kende; mwana na yo azali na bomoi. Mpe moto yango andimaki liloba oyo Yesu alobaki na ye, mpe akendaki.",
     "strong": [
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 23,
                   "end": 27
@@ -707,13 +707,13 @@ export const johnChapter4RC = {
     "text": "Mpe ntango azalaki nanu na nzela ya kokita, basaleli na ye bakutanaki na ye, mpe balobaki: Mwana na yo azali na bomoi.",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 0,
                   "end": 5
             },
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 80,
                   "end": 85
@@ -736,13 +736,13 @@ export const johnChapter4RC = {
     "text": "Bongo tata ayebaki ete ezalaki na ngonga yango wana oyo Yesu alobaki na ye: Mwana na yo azali na bomoi; mpe ye mpe libota na ye mobimba bandimaki.",
     "strong": [
             {
-                  "text": "cette",
+                  "text": "oyo",
                   "strong": "G3778",
                   "start": 31,
                   "end": 36
             },
             {
-                  "text": "fils",
+                  "text": "mwana",
                   "strong": "G5207",
                   "start": 75,
                   "end": 79

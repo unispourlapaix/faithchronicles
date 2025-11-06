@@ -27,7 +27,7 @@ export const johnChapter20RC = {
                   "end": 19
             },
             {
-                  "text": "comme",
+                  "text": "lokola",
                   "strong": "G2531",
                   "start": 84,
                   "end": 89
@@ -176,7 +176,7 @@ export const johnChapter20RC = {
     "text": "Kasi Maria atelemaki libanda na lilita azali kolela; mpe ntango azalaki kolela, afukamaki na lilita,",
     "strong": [
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 64,
                   "end": 69
@@ -361,7 +361,7 @@ export const johnChapter20RC = {
                   "end": 44
             },
             {
-                  "text": "Comme",
+                  "text": "Lokola",
                   "strong": "G2531",
                   "start": 51,
                   "end": 56
@@ -569,7 +569,7 @@ export const johnChapter20RC = {
                   "end": 55
             },
             {
-                  "text": "Fils",
+                  "text": "Mwana",
                   "strong": "G5207",
                   "start": 82,
                   "end": 86
