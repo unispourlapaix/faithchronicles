@@ -349,6 +349,18 @@ export const uiTranslations = {
       inProgress: "進行中"
     }
   },
+  
+  bibleResources: {
+    inAppReader: {
+      name: "アプリで読む",
+      description: "ストロング番号付き統合聖書リーダー",
+      features: {
+        offline: "オフライン",
+        strong: "ストロング番号",
+        navigation: "ナビゲーション"
+      }
+    }
+  },
 
   validation: {
     pseudoTooShort: "ユーザー名は少なくとも2文字必要です",

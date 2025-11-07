@@ -260,17 +260,33 @@ export const bibleData = {
       features: ["Segond 21", "Concordance", "Audio"]
     },
     {
-      name: "Lire dans l'App",
+      name: "translatable:inAppReader",
       url: "internal://bible-reader",
-      description: "Lecteur Bible intégré avec Strong",
-      language: "français",
-      features: ["Hors ligne", "Numéros Strong", "Navigation"]
+      description: "translatable:inAppReader",
+      language: "multi-langues",
+      features: ["translatable:offline", "translatable:strong", "translatable:navigation"]
     }
   ],
 
-  // Obtenir une ressource Bible aléatoire
-  getRandomBibleResource() {
-    return this.bibleResources[Math.floor(Math.random() * this.bibleResources.length)];
+  // Obtenir une ressource Bible aléatoire (avec support de traduction)
+  getRandomBibleResource(t = null) {
+    const resource = this.bibleResources[Math.floor(Math.random() * this.bibleResources.length)];
+    
+    // Si la ressource nécessite une traduction et que t() est fourni
+    if (t && resource.name === "translatable:inAppReader") {
+      return {
+        ...resource,
+        name: t('bibleResources.inAppReader.name'),
+        description: t('bibleResources.inAppReader.description'),
+        features: [
+          t('bibleResources.inAppReader.features.offline'),
+          t('bibleResources.inAppReader.features.strong'),
+          t('bibleResources.inAppReader.features.navigation')
+        ]
+      };
+    }
+    
+    return resource;
   },
 
   // Obtenir une clarification "Jésus n'est pas..." aléatoire

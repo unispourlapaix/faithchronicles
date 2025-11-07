@@ -88,8 +88,9 @@ export const bibleTreasures = {
 
   /**
    * Get a complete treasure package with all elements localized
+   * @param {Function} t - Translation function from useTranslation hook
    */
-  getCompleteTreasure() {
+  getCompleteTreasure(t = null) {
     const verse = this.getRandomVerse();
     const fact = this.getRandomFact();
     const funQuestion = this.getRandomFunQuestion();
@@ -101,9 +102,20 @@ export const bibleTreasures = {
     const strongRef = randomStrongKey ? verse.strongNumbers[randomStrongKey] : null;
     const strongData = strongRef ? strongGreek[strongRef] : null;
 
-    // Get Bible resources
-    const offlineBibleResource = bibleData.bibleResources?.find(r => r.url === "internal://bible-reader");
-    const otherBibleResource = bibleData.getRandomBibleResource ? bibleData.getRandomBibleResource() : null;
+    // Get Bible resources (with translation support)
+    const offlineBibleResource = bibleData.bibleResources?.find(r => r.name === "translatable:inAppReader");
+    const translatedOfflineResource = offlineBibleResource && t ? {
+      ...offlineBibleResource,
+      name: t('bibleResources.inAppReader.name'),
+      description: t('bibleResources.inAppReader.description'),
+      features: [
+        t('bibleResources.inAppReader.features.offline'),
+        t('bibleResources.inAppReader.features.strong'),
+        t('bibleResources.inAppReader.features.navigation')
+      ]
+    } : offlineBibleResource;
+    
+    const otherBibleResource = bibleData.getRandomBibleResource ? bibleData.getRandomBibleResource(t) : null;
 
     return {
       // Core content
@@ -145,7 +157,7 @@ export const bibleTreasures = {
 
       // Bible resources
       resources: {
-        offline: offlineBibleResource,
+        offline: translatedOfflineResource,
         online: otherBibleResource
       },
 
@@ -157,9 +169,10 @@ export const bibleTreasures = {
 
   /**
    * Get treasure formatted for UI display (backward compatibility)
+   * @param {Function} t - Translation function from useTranslation hook
    */
-  getRandomTreasure() {
-    const treasure = this.getCompleteTreasure();
+  getRandomTreasure(t = null) {
+    const treasure = this.getCompleteTreasure(t);
     
     return {
       verse: `"${treasure.verse.text}" - ${treasure.verse.reference}`,

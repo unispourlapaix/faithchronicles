@@ -68,7 +68,7 @@ const MenuScreen = ({
   };
 
   const getBibleTreasure = () => {
-    return bibleTreasures.getRandomTreasure();
+    return bibleTreasures.getRandomTreasure(t);
   };
 
   const resetProgress = () => {

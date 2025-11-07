@@ -305,6 +305,18 @@ export const uiTranslations = {
     }
   },
   
+  bibleResources: {
+    inAppReader: {
+      name: "Lire dans l'App",
+      description: "Lecteur Bible intégré avec Strong",
+      features: {
+        offline: "Hors ligne",
+        strong: "Numéros Strong",
+        navigation: "Navigation"
+      }
+    }
+  },
+  
   quotes: {
     wisdom: "La connaissance vraie mène à la sagesse éternelle",
     faith: "Je puis tout par celui qui me fortifie",
