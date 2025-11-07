@@ -280,13 +280,25 @@ export const uiTranslations = {
   },
   
   mountain: {
+    chapter: "Chapitre",
+    secret: "Secret!",
     spiritualAscension: "Ascension Spirituelle",
     levelProgress: "Niveau {{level}} • {{stars}} étoiles obtenues",
     combo: "Combo",
     perfectMessage: '"Car mes pensées ne sont pas vos pensées" - L\'agneau gravit vers la sagesse parfaite',
     goodMessage: '"Cherchez et vous trouverez" - La montée continue vers la vérité',
     startMessage: '"La foi, même petite comme un grain de sénevé" - Premier pas vers la lumière',
-    skipAnimation: "Passer l'animation"
+    skipAnimation: "Passer l'animation",
+    waypoints: {
+      start: "Départ",
+      firstSlope: "Première pente", 
+      lastSlope: "Dernière pente"
+    },
+    status: {
+      victory: "Victoire!",
+      defeat: "Défaite",
+      inProgress: "En progression"
+    }
   },
   
   quotes: {
@@ -586,21 +598,6 @@ export const uiTranslations = {
       child: "ENFANT DE DIEU",
       blessing: "QUE DIEU TE BÉNISSE",
       continue: "Continuer"
-    }
-  },
-
-  mountain: {
-    chapter: "Chapitre",
-    secret: "Secret!",
-    waypoints: {
-      start: "Départ",
-      firstSlope: "Première pente", 
-      lastSlope: "Dernière pente"
-    },
-    status: {
-      victory: "Victoire!",
-      defeat: "Défaite",
-      inProgress: "En progression"
     }
   },
 
