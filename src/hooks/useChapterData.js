@@ -5,6 +5,7 @@
 
 import { useMemo } from 'react';
 import useTranslation from './useTranslation.js';
+import { getCorrectAnswer } from '../data/chapters/correctAnswers.js';
 
 const useChapterData = () => {
   const { getChapter, currentLanguage } = useTranslation();
@@ -39,14 +40,20 @@ const useChapterData = () => {
         return null;
       }
 
-      return {
+      // Ajouter les réponses correctes depuis le fichier centralisé
+      const levelWithCorrectAnswers = {
         ...level,
+        easy: level.easy ? { ...level.easy, correct: getCorrectAnswer(levelId, 'easy') } : undefined,
+        medium: level.medium ? { ...level.medium, correct: getCorrectAnswer(levelId, 'medium') } : undefined,
+        hard: level.hard ? { ...level.hard, correct: getCorrectAnswer(levelId, 'hard') } : undefined,
         chapterInfo: {
           id: chapterId,
           name: chapterData.name,
           description: chapterData.description
         }
       };
+
+      return levelWithCorrectAnswers;
     };
   }, [getChapter]);
 

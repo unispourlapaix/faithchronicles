@@ -590,13 +590,17 @@ export const uiTranslations = {
   },
 
   mountain: {
+    chapter: "Chapitre",
+    secret: "Secret!",
     waypoints: {
       start: "Départ",
       firstSlope: "Première pente", 
       lastSlope: "Dernière pente"
     },
     status: {
-      defeat: "Défaite"
+      victory: "Victoire!",
+      defeat: "Défaite",
+      inProgress: "En progression"
     }
   },
 

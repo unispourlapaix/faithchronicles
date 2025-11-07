@@ -537,12 +537,12 @@ const FaithChroniclesProgress = ({
       <div className="p-4 bg-white">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-gray-700">
-            Chapitre {chapter}/7 {chapter8Unlocked ? "+ Secret!" : ""}
+            {t('mountain.chapter')} {chapter}/7 {chapter8Unlocked ? `+ ${t('mountain.secret')}` : ""}
           </span>
           <span className="text-sm text-gray-500">
-            {status === "victory" ? "Victoire!" : 
+            {status === "victory" ? t('mountain.status.victory') : 
              status === "defeat" ? t('mountain.status.defeat') : 
-             "En progression"}
+             t('mountain.status.inProgress')}
           </span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">

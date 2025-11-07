@@ -20,12 +20,14 @@ export const chapter1Translations = {
       easy: {
         question: "神は何日で世界を創造されましたか?",
         options: ["5日", "6日", "7日", "8日"],
+        correct: 1,
         hint: "週の休息日を考えて",
         funFact: "💡 第7日目に神は休まれました。これが安息日、週の休息日の起源です!"
       },
       medium: {
         question: "神は第4日目に何を創造されましたか?",
         options: ["動物", "人間", "太陽、月、星", "植物"],
+        correct: 2,
         hint: "これらの被造物は地を照らし、時を定めます",
         funFact: "🌟 光る物は季節と宗教的な祭りを定めるために創造されました!"
       },
@@ -37,6 +39,7 @@ export const chapter1Translations = {
           "自然な不死",
           "神の力"
         ],
+        correct: 1,
         hint: "霊的・知的な性質のことです",
         funFact: "✨ 私たちの内にある神のかたちには、創造性、道徳的良心、愛する能力が含まれます!"
       }
@@ -48,6 +51,7 @@ export const chapter1Translations = {
       easy: {
         question: "園でエバを誘惑した動物は何ですか?",
         options: ["ライオン", "蛇", "鷲", "龍"],
+        correct: 1,
         hint: "この動物は腹で這います",
         funFact: "🐍 蛇は聖書全体で誘惑と狡猾さを象徴します!"
       },
@@ -59,6 +63,7 @@ export const chapter1Translations = {
           "神のようになる",
           "幸せになる"
         ],
+        correct: 2,
         hint: "蛇は神のレベルへの昇格を約束します",
         funFact: "🎭 蛇の嘘は真実と欺きを混ぜます - 古典的な誘惑の技術です!"
       },
@@ -70,6 +75,7 @@ export const chapter1Translations = {
           "神は私たちを見捨てる",
           "誘惑は無敵"
         ],
+        correct: 1,
         hint: "選択し結果を負う能力のことです",
         funFact: "🌳 知識の木は人類を定義する道徳的選択を象徴します!"
       }

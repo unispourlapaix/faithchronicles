@@ -45,6 +45,15 @@ import { chapter6Translations as enChapter6 } from '../data/translations/en/inte
 import { chapter7Translations as enChapter7 } from '../data/translations/en/interface_chapter7.js';
 import { chapter8Translations as enChapter8 } from '../data/translations/en/interface_chapter8.js';
 
+import { chapter1Translations as jpChapter1 } from '../data/translations/jp/interface_chapter1.js';
+import { chapter2Translations as jpChapter2 } from '../data/translations/jp/interface_chapter2.js';
+import { chapter3Translations as jpChapter3 } from '../data/translations/jp/interface_chapter3.js';
+import { chapter4Translations as jpChapter4 } from '../data/translations/jp/interface_chapter4.js';
+import { chapter5Translations as jpChapter5 } from '../data/translations/jp/interface_chapter5.js';
+import { chapter6Translations as jpChapter6 } from '../data/translations/jp/interface_chapter6.js';
+import { chapter7Translations as jpChapter7 } from '../data/translations/jp/interface_chapter7.js';
+import { chapter8Translations as jpChapter8 } from '../data/translations/jp/interface_chapter8.js';
+
 // Mapping des traductions UI
 const UI_TRANSLATIONS = {
   fr: frUI,
@@ -118,8 +127,8 @@ const CHAPTER_TRANSLATIONS = {
     5: frChapter5, 6: frChapter6, 7: frChapter7, 8: frChapter8
   },
   jp: {
-    1: frChapter1, 2: frChapter2, 3: frChapter3, 4: frChapter4,
-    5: frChapter5, 6: frChapter6, 7: frChapter7, 8: frChapter8
+    1: jpChapter1, 2: jpChapter2, 3: jpChapter3, 4: jpChapter4,
+    5: jpChapter5, 6: jpChapter6, 7: jpChapter7, 8: jpChapter8
   },
   ko: {
     1: frChapter1, 2: frChapter2, 3: frChapter3, 4: frChapter4,

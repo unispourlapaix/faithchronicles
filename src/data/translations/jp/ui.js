@@ -79,7 +79,13 @@ export const uiTranslations = {
     noContinue: "いいえ、続ける",
     newAdventure: "新しい冒険",
     readyToStart: "始める準備はできましたか？",
-    startJourney: "聖書の知識への旅を始めましょう！"
+    startJourney: "聖書の知識への旅を始めましょう！",
+    audioControls: "音声コントロール",
+    mute: "音声をミュート",
+    unmute: "音声のミュートを解除",
+    close: "閉じる",
+    language: "言語",
+    restartGame: "ゲームを再起動"
   },
   
   login: {
@@ -150,7 +156,23 @@ export const uiTranslations = {
     levelCompleted: "レベル {level} 完了",
     questionsProgress: "質問 {current}/3",
     starsCollected: "集めたスター：{current}/{total}",
-    pointsEarned: "+{points} 知恵ポイント"
+    pointsEarned: "+{points} 知恵ポイント",
+    secondChance: "⚔️ 勇気カードがセカンドチャンスを与えます！知恵を持って再挑戦してください。",
+    bonusApplied: "✨ {card} ボーナス: +{percent}% ({base} → {final})",
+    defeatedQuote: "私を強くしてくださる方によって、私はすべてのことができます - ピリピ 4:13",
+    perfect: "✨ 完璧",
+    good: "⭐ 良い",
+    start: "⭐ スタート",
+    secretLevel: "🎺 シークレットレベル解除！",
+    secretChapter: "🏆 シークレットチャプター",
+    returnToLevels: "戻る",
+    next: "次へ",
+    retry: "リトライ",
+    menu: "メニュー",
+    chapter: "チャプター",
+    chapterStars: "チャプタースター",
+    totalGlobal: "グローバル合計",
+    backToMenu: "メニューに戻る"
   },
   
   quotes: {
@@ -180,6 +202,13 @@ export const uiTranslations = {
     chooseWisely: "賢く選択してください、あなたの選択がレベル全体に同行します"
   },
 
+  challenge: {
+    loading: "レベルを読み込み中...",
+    peace: "🕊️ あなたの家に平和がありますように",
+    questionsAwaiting: "💡 3つの知識の質問があなたを待っています",
+    starsQuote: "各スターは神聖な光への一歩です"
+  },
+
   chapters: {
     "1": "創世記",
     "2": "出エジプト記",
@@ -191,6 +220,37 @@ export const uiTranslations = {
     "8": "ボーナスレベル"
   },
 
+  info: {
+    title: "Unity Quest Chronicles of Peace",
+    subtitle: "インタラクティブな聖書の探求",
+    yourStats: "あなたの統計",
+    score: "スコア",
+    wisdom: "知恵",
+    revelation: "啓示",
+    createdWith: "❤️で作成",
+    creator: "Emmanuel Payet",
+    developerPassionate: "霊性に情熱を注ぐ開発者",
+    artistModule: "エマニュエル・アーティストモジュール",
+    artistPortfolio: "アーティスティックポートフォリオとデジタル作品",
+    features: "機能",
+    multipleChapters: "8つの聖書の章にわたる91のレベル",
+    powerCards: "3つのユニークなパワーカード（信仰、勇気、知恵）",
+    progressionSystem: "霊的ランクを持つ進行システム",
+    bibleTreasures: "聖書の宝物と興味深い事実",
+    howToPlay: "遊び方",
+    selectLevel: "アンロックされたレベルを選択",
+    choosePowerCard: "パワーカードを選択",
+    answerQuestions: "3つの知識の質問に答える",
+    earnStars: "残りのライフに基づいてスターを獲得",
+    tips: "ヒント",
+    readCarefully: "各質問を注意深く読む",
+    useWisdomCard: "ヒントのために知恵カードを使用",
+    courageGivesSecondChance: "勇気カードはセカンドチャンスを与えます",
+    faithMaximizes: "信仰カードはポイントを最大化します",
+    version: "バージョン",
+    madeWithLove: "神の栄光のために愛をもって作成",
+    backToMenu: "メニューに戻る"
+  },
 
   bible: {
     readerTitle: "📖 聖書リーダー",
@@ -272,13 +332,17 @@ export const uiTranslations = {
   },
 
   mountain: {
+    chapter: "チャプター",
+    secret: "シークレット！",
     waypoints: {
       start: "スタート",
       firstSlope: "最初の斜面",
       lastSlope: "最後の斜面"
     },
     status: {
-      defeat: "敗北"
+      victory: "勝利！",
+      defeat: "敗北",
+      inProgress: "進行中"
     }
   },
 
