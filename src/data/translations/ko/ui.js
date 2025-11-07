@@ -49,7 +49,13 @@ export const uiTranslations = {
     completed: "완료",
     rank: "영적 등급",
     points: "지혜 포인트",
-    unlockedLevels: "잠금 해제된 레벨"
+    unlockedLevels: "잠금 해제된 레벨",
+    questionOfKnowledge: "지식의 질문",
+    hintOfWisdom: "지혜의 힌트",
+    knowledgeMastered: "지식 완전 습득!",
+    knowledgeAcquired: "지식 획득!",
+    testFailed: "시련 실패",
+    wisdomBonus: "보너스"
   },
   
   menu: {
@@ -69,7 +75,13 @@ export const uiTranslations = {
     noContinue: "아니요, 계속",
     newAdventure: "새로운 모험",
     readyToStart: "시작할 준비가 되셨습니까?",
-    startJourney: "성경 지식의 여정을 시작하세요!"
+    startJourney: "성경 지식의 여정을 시작하세요!",
+    audioControls: "오디오 제어",
+    mute: "음소거",
+    unmute: "음소거 해제",
+    close: "닫기",
+    language: "언어",
+    restartGame: "게임 재시작"
   },
   
   login: {
@@ -170,6 +182,13 @@ export const uiTranslations = {
     chooseWisely: "현명하게 선택하세요, 당신의 선택이 레벨 전체에 동행합니다"
   },
 
+  challenge: {
+    loading: "레벨 로딩 중...",
+    peace: "🕊️ 당신의 집에 평화가 깃들기를",
+    questionsAwaiting: "🎯 3개의 지식 질문이 기다리고 있습니다",
+    starsQuote: "각 별은 신성한 빛을 향한 한 걸음입니다"
+  },
+
   chapters: {
     "1": "창세기",
     "2": "출애굽기",
@@ -262,13 +281,28 @@ export const uiTranslations = {
   },
 
   mountain: {
+    chapter: "챕터",
+    secret: "비밀!",
+    spiritualAscension: "영적 상승",
+    levelProgress: "레벨 {{level}} • {{stars}} 별 획득",
+    combo: "콤보",
+    perfectMessage: '"내 생각은 너희 생각과 다르니라" - 어린 양이 완전한 지혜를 향해 오릅니다',
+    goodMessage: '"구하라 그리하면 찾을 것이니" - 진리를 향한 상승이 계속됩니다',
+    startMessage: '"믿음이 겨자씨 한 알만 하여도" - 빛을 향한 첫걸음',
+    skipAnimation: "애니메이션 건너뛰기",
+    stats: {
+      points: "pts",
+      level: "Niv."
+    },
     waypoints: {
       start: "시작",
       firstSlope: "첫 번째 경사",
       lastSlope: "마지막 경사"
     },
     status: {
-      defeat: "패배"
+      victory: "승리!",
+      defeat: "패배",
+      inProgress: "진행 중"
     }
   },
 

@@ -70,14 +70,14 @@ export const uiTranslations = {
     treasures: "Treasures",
     john: "John",
     reset: "Reset",
-    restart: "🔄 Restart adventure?",
+    restart: "­ƒöä Restart adventure?",
     confirmReset: "Are you sure you want to erase all your progress?",
     youWillLose: "You will lose:",
     wisdomPoints: "Wisdom Points",
     starsCollected: "stars collected",
     levelsUnlocked: "level(s) unlocked",
     spiritualRank: "Spiritual Rank",
-    newAdventure: "🎮 New Adventure",
+    newAdventure: "­ƒÄ« New Adventure",
     readyToStart: "Ready to start?",
     startJourney: "Begin your journey into Scripture knowledge!",
     audioControls: "Audio controls",
@@ -105,9 +105,9 @@ export const uiTranslations = {
     connecting: "Connecting...",
     back: "Back",
     localSave: "Your progress will be saved locally",
-    cloudSync: "No password required • Cloud sync",
+    cloudSync: "No password required ÔÇó Cloud sync",
     magicLink: "Receive a magic link by email",
-    checkEmail: "✉️ Check your email! A login link has been sent to you.",
+    checkEmail: "Ô£ë´©Å Check your email! A login link has been sent to you.",
     checkSpam: "Check your spam/junk folder too",
     waitingConnection: "Waiting for connection...",
     errorSend: "Error sending link",
@@ -128,7 +128,7 @@ export const uiTranslations = {
   },
   
   treasures: {
-    title: "💎 Bible Treasures",
+    title: "­ƒÆÄ Bible Treasures",
     verse: "Verse of the day",
     fact: "Did you know?",
     treasure: "Hidden treasure",
@@ -138,7 +138,7 @@ export const uiTranslations = {
     availableInLanguages: "Available in 14 languages",
     johnBibleReader: "John Bible Reader + Strong",
     emmanuelMemo: "Emmanuel's Memo",
-    emmanuelMessage: "You have reached the mountain top, and knowledge is acquired. But unwavering faith requires life experience, mercy, and true love of Jesus. Life's various trials will test your path, the true way we choose, our heart. We remain imperfect, our desires are many, and love of gain or personal comfort too often becomes our selfish priority. Ask God for wisdom, His love, His strength, and humbly acknowledge your weaknesses, for we can hide nothing from Him... Nothing. No need to browse in private mode, use VPN, or even clear history. Fast like Daniel: deprive yourself for a moment of what you love most, in calm and wisdom. This will allow you to better hear God, to have a heart disposition ready for profound — and often painful — transformations. Then dreams and visions will become clearer, as with Joseph. But guard against pride: do not yield to 'I'm always right' or 'I know better.' For God's revelation is an extraordinary grace. Don't become a teacher of the Law, capable of crucifying Jesus again today, He who simply asks to love your neighbor... and grant them the same freedom you yourself receive. Having faith means entering into a relationship and a free journey of the heart. It will make you powerful heroes, capable of the impossible. For the experience of the supernatural, God's presence, His confirmation or blessing will make you truly unshakeable.",
+    emmanuelMessage: "You have reached the mountain top, and knowledge is acquired. But unwavering faith requires life experience, mercy, and true love of Jesus. Life's various trials will test your path, the true way we choose, our heart. We remain imperfect, our desires are many, and love of gain or personal comfort too often becomes our selfish priority. Ask God for wisdom, His love, His strength, and humbly acknowledge your weaknesses, for we can hide nothing from Him... Nothing. No need to browse in private mode, use VPN, or even clear history. Fast like Daniel: deprive yourself for a moment of what you love most, in calm and wisdom. This will allow you to better hear God, to have a heart disposition ready for profound ÔÇö and often painful ÔÇö transformations. Then dreams and visions will become clearer, as with Joseph. But guard against pride: do not yield to 'I'm always right' or 'I know better.' For God's revelation is an extraordinary grace. Don't become a teacher of the Law, capable of crucifying Jesus again today, He who simply asks to love your neighbor... and grant them the same freedom you yourself receive. Having faith means entering into a relationship and a free journey of the heart. It will make you powerful heroes, capable of the impossible. For the experience of the supernatural, God's presence, His confirmation or blessing will make you truly unshakeable.",
     clarification: "Important clarification",
     bibleOffline: "Read Bible Offline",
     bibleStudy: "Bible study",
@@ -148,22 +148,22 @@ export const uiTranslations = {
   },
   
   messages: {
-    chooseCard: "⚡ Choose your power card",
+    chooseCard: "ÔÜí Choose your power card",
     cardHelp: "It will accompany you for the 3 questions of this level",
-    chooseAnswer: "📖 Choose your answer:",
-    wrongAnswer: "❌ Wrong answer! You have {lives} life/lives left. Try again!",
+    chooseAnswer: "­ƒôû Choose your answer:",
+    wrongAnswer: "ÔØî Wrong answer! You have {lives} life/lives left. Try again!",
     levelCompleted: "Level {level} Completed",
     questionsProgress: "Question {current} of {total}",
     starsCollected: "Stars collected: {current}/{total}",
     pointsEarned: "+{points} Wisdom Points",
-    secondChance: "⚔️ Your COURAGE card gives you a second chance! Try again with wisdom.",
-    bonusApplied: "✨ {card} Bonus: +{percent}% ({base} → {final})",
+    secondChance: "ÔÜö´©Å Your COURAGE card gives you a second chance! Try again with wisdom.",
+    bonusApplied: "Ô£¿ {card} Bonus: +{percent}% ({base} ÔåÆ {final})",
     defeatedQuote: "I can do all things through Christ who strengthens me - Phil. 4:13",
-    perfect: "✨ Perfect",
-    good: "⭐ Good",
-    start: "⭐ Start",
-    secretLevel: "🎺 SECRET LEVEL UNLOCKED!",
-    secretChapter: "🏆 Secret Chapter",
+    perfect: "Ô£¿ Perfect",
+    good: "Ô¡É Good",
+    start: "Ô¡É Start",
+    secretLevel: "­ƒÄ║ SECRET LEVEL UNLOCKED!",
+    secretChapter: "­ƒÅå Secret Chapter",
     returnToLevels: "Return",
     next: "Next",
     retry: "Retry",
@@ -195,8 +195,8 @@ export const uiTranslations = {
     faithDesc: "Maximum wisdom points obtained",
     courageDesc: "Normal points but second chance",
     wisdomDesc: "Hint revealed and +25% points",
-    chooseCard: "✨ Choose your knowledge card",
-    cardEffects: "✨ Knowledge card effects:",
+    chooseCard: "Ô£¿ Choose your knowledge card",
+    cardEffects: "Ô£¿ Knowledge card effects:",
     faithEffect: "+50% wisdom points - Maximum reward",
     courageEffect: "Normal points but second chance on error",
     wisdomEffect: "+25% points + hint revealed for each question",
@@ -205,8 +205,8 @@ export const uiTranslations = {
   
   challenge: {
     loading: "Loading level...",
-    peace: "🕊️ May peace rest in your house",
-    questionsAwaiting: "💡 3 knowledge questions await you",
+    peace: "­ƒòè´©Å May peace rest in your house",
+    questionsAwaiting: "­ƒÆí 3 knowledge questions await you",
     starsQuote: "Each star is a step toward divine light"
   },
   
@@ -217,7 +217,7 @@ export const uiTranslations = {
     score: "Score",
     wisdom: "Wisdom",
     revelation: "Revelation",
-    createdWith: "Created with ❤️",
+    createdWith: "Created with ÔØñ´©Å",
     creator: "Emmanuel Payet",
     developerPassionate: "Developer passionate about spirituality",
     artistModule: "Emmanuel Artist Module",
@@ -243,7 +243,7 @@ export const uiTranslations = {
   },
   
   bible: {
-    readerTitle: "📖 Bible Reader",
+    readerTitle: "­ƒôû Bible Reader",
     johnReaderTitle: "Bible Reader - Gospel of John",
     loading: "Loading Scriptures...",
     menu: "Menu",
@@ -269,15 +269,15 @@ export const uiTranslations = {
     search: "Search...",
     definitionNotFound: "Definition not found",
     definitionLoading: "Definition to load...",
-    imageFeatureComing: "🎨 Image feature coming!",
+    imageFeatureComing: "­ƒÄ¿ Image feature coming!",
     copyError: "Copy error:",
-    error: "❌ Error",
+    error: "ÔØî Error",
     errorLoading: "Loading error",
     retry: "Retry",
     readerInDevelopment: "John Bible Reader in development...",
     verseCopied: "Verse copied to clipboard!",
     moreReferences: "and {{count}} other references",
-    copyright: "📖 Public Domain • Strong"
+    copyright: "­ƒôû Public Domain ÔÇó Strong"
   },
   
   bibleResources: {
@@ -294,7 +294,7 @@ export const uiTranslations = {
   
   mountain: {
     spiritualAscension: "Spiritual Ascension",
-    levelProgress: "Level {{level}} • {{stars}} stars obtained",
+    levelProgress: "Level {{level}} ÔÇó {{stars}} stars obtained",
     combo: "Combo",
     perfectMessage: '"For my thoughts are not your thoughts" - The lamb climbs toward perfect wisdom',
     goodMessage: '"Seek and you shall find" - The ascent continues toward truth',
@@ -559,7 +559,7 @@ export const uiTranslations = {
   },
 
   footer: {
-    version: "Version 1.0 • 2024",
+    version: "Version 1.0 ÔÇó 2024",
     dedication: "Developed for God's glory"
   },
 
@@ -615,7 +615,7 @@ export const uiTranslations = {
     connectedWith: "Connected with",
     playerPseudo: "Player Username",
     pseudoPlaceholder: "Your username...",
-    pseudoRequirements: "2-20 characters • Displayed in rankings",
+    pseudoRequirements: "2-20 characters ÔÇó Displayed in rankings",
     suggestions: "Suggestions",
     confirm: "Confirm Username",
     errorConfig: "Configuration error"
@@ -637,13 +637,13 @@ export const uiTranslations = {
 
   levels: {
     chaptersAndBonus: "8 chapters + bonus level",
-    bonusUnlocked: "🏆 BONUS LEVEL UNLOCKED! You have reached spiritual perfection!",
+    bonusUnlocked: "­ƒÅå BONUS LEVEL UNLOCKED! You have reached spiritual perfection!",
     starsToDiscover: "273 {stars} to discover",
     starsPerLevel: "3 {stars} per level"
   },
 
   architecture: {
-    title: "🔧 Technical architecture",
+    title: "­ƒöº Technical architecture",
     react: {
       name: "React",
       description: "Modern interface"
@@ -673,10 +673,10 @@ export const uiTranslations = {
     save: "Save",
     loadProgress: "Load",
     loading: "Loading...",
-    autoSaveEnabled: "💾 Auto-save enabled",
-    saveError: "❌ Save error",
-    gameSaved: "✅ Game saved!",
-    gameLoaded: "📥 Game loaded!"
+    autoSaveEnabled: "­ƒÆ¥ Auto-save enabled",
+    saveError: "ÔØî Save error",
+    gameSaved: "Ô£à Game saved!",
+    gameLoaded: "­ƒôÑ Game loaded!"
   }
 };
 
