@@ -187,7 +187,7 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
           {/* Copyright */}
           <div className="mt-3 text-center">
             <p className="text-xs text-gray-500">
-              📖 Louis Segond 1910 - Domaine public • Numéros Strong inclus
+              {t('bible.copyright')}
             </p>
           </div>
         </>

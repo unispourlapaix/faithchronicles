@@ -273,7 +273,7 @@ export const uiTranslations = {
     etymology: "語源",
     close: "閉じる",
     moreReferences: "および{{count}}の他の参照",
-    copyright: "📖 Colloquial Japanese 1955 - パブリックドメイン • Strong番号を含む"
+    copyright: "📖 口語訳 1955 • Strong番号"
   },
 
   philosophy: {

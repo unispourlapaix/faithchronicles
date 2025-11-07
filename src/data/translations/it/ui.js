@@ -186,6 +186,8 @@ export const uiTranslations = {
     readerTitle: "📖 Lettore della Bibbia",
     loading: "Caricamento delle Scritture...",
     menu: "Menu",
+    tabBible: "Bibbia",
+    tabUnity: "Unità",
     strong: "Strong",
     strongReferences: "Riferimenti Strong",
     verses: "versetti",
@@ -201,7 +203,19 @@ export const uiTranslations = {
     etymology: "Etimologia",
     close: "Chiudi",
     moreReferences: "e {{count}} altri riferimenti",
-    copyright: "📖 Riveduta Luzzi 1927 - Dominio pubblico • Numeri Strong inclusi"
+    copyright: "📖 Dominio pubblico • Strong"
+  },
+
+  bibleResources: {
+    inAppReader: {
+      name: "Leggi nell'App",
+      description: "Lettore Bibbia integrato con Strong",
+      features: {
+        offline: "Offline",
+        strong: "Numeri Strong",
+        navigation: "Navigazione"
+      }
+    }
   },
 
   philosophy: {

@@ -239,6 +239,8 @@ export const uiTranslations = {
     readerTitle: "📖 Bibelleser",
     loading: "Schriften werden geladen...",
     menu: "Menü",
+    tabBible: "Bibel",
+    tabUnity: "Einheit",
     strong: "Strong",
     strongReferences: "Strong-Referenzen",
     verses: "Verse",
@@ -254,7 +256,19 @@ export const uiTranslations = {
     etymology: "Etymologie",
     close: "Schließen",
     moreReferences: "und {{count}} weitere Referenzen",
-    copyright: "📖 Luther 1545 - Gemeinfrei • Strong-Nummern enthalten"
+    copyright: "📖 Gemeinfrei • Strong"
+  },
+
+  bibleResources: {
+    inAppReader: {
+      name: "In der App lesen",
+      description: "Integrierter Bibelleser mit Strong",
+      features: {
+        offline: "Offline",
+        strong: "Strong-Nummern",
+        navigation: "Navigation"
+      }
+    }
   },
 
   quotes: {

@@ -247,6 +247,8 @@ export const uiTranslations = {
     johnReaderTitle: "Lector de la Biblia - Evangelio de Juan",
     loading: "Cargando Escrituras...",
     menu: "Menú",
+    tabBible: "Biblia",
+    tabUnity: "Unidad",
     strong: "Strong",
     strongReferences: "Referencias Strong",
     verses: "versículos",
@@ -275,7 +277,19 @@ export const uiTranslations = {
     readerInDevelopment: "Lector de la Biblia de Juan en desarrollo...",
     verseCopied: "Versículo copiado al portapapeles!",
     moreReferences: "y {{count}} otras referencias",
-    copyright: " Louis Segond 1910 - Dominio público  Números Strong incluidos"
+    copyright: "📖 Dominio público • Strong"
+  },
+  
+  bibleResources: {
+    inAppReader: {
+      name: "Leer en la App",
+      description: "Lector de Biblia integrado con Strong",
+      features: {
+        offline: "Sin conexión",
+        strong: "Números Strong",
+        navigation: "Navegación"
+      }
+    }
   },
   
   mountain: {

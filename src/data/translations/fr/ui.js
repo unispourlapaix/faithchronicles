@@ -277,7 +277,7 @@ export const uiTranslations = {
     readerInDevelopment: "Lecteur Bible Jean en cours de développement...",
     verseCopied: "Verset copié dans le presse-papiers !",
     moreReferences: "et {{count}} autres références",
-    copyright: "📖 Louis Segond 1910 - Domaine public • Numéros Strong inclus"
+    copyright: "📖 LSG 1910 • Strong inclus"
   },
   
   mountain: {

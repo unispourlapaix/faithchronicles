@@ -186,6 +186,8 @@ export const uiTranslations = {
     readerTitle: "📖 Leitor da Bíblia",
     loading: "Carregando as Escrituras...",
     menu: "Menu",
+    tabBible: "Bíblia",
+    tabUnity: "Unidade",
     strong: "Strong",
     strongReferences: "Referências Strong",
     verses: "versículos",
@@ -201,7 +203,19 @@ export const uiTranslations = {
     etymology: "Etimologia",
     close: "Fechar",
     moreReferences: "e {{count}} outras referências",
-    copyright: "📖 Almeida 1911 - Domínio público • Números Strong incluídos"
+    copyright: "📖 Domínio público • Strong"
+  },
+
+  bibleResources: {
+    inAppReader: {
+      name: "Ler no App",
+      description: "Leitor de Bíblia integrado com Strong",
+      features: {
+        offline: "Offline",
+        strong: "Números Strong",
+        navigation: "Navegação"
+      }
+    }
   },
 
   philosophy: {

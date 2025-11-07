@@ -247,6 +247,8 @@ export const uiTranslations = {
     johnReaderTitle: "Bible Reader - Gospel of John",
     loading: "Loading Scriptures...",
     menu: "Menu",
+    tabBible: "Bible",
+    tabUnity: "Unity",
     strong: "Strong",
     strongReferences: "Strong References",
     verses: "verses",
@@ -275,7 +277,19 @@ export const uiTranslations = {
     readerInDevelopment: "John Bible Reader in development...",
     verseCopied: "Verse copied to clipboard!",
     moreReferences: "and {{count}} other references",
-    copyright: "📖 Louis Segond 1910 - Public domain • Strong numbers included"
+    copyright: "📖 Public Domain • Strong"
+  },
+  
+  bibleResources: {
+    inAppReader: {
+      name: "Read in App",
+      description: "Integrated Bible reader with Strong",
+      features: {
+        offline: "Offline",
+        strong: "Strong Numbers",
+        navigation: "Navigation"
+      }
+    }
   },
   
   mountain: {
