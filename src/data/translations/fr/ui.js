@@ -289,6 +289,10 @@ export const uiTranslations = {
     goodMessage: '"Cherchez et vous trouverez" - La montée continue vers la vérité',
     startMessage: '"La foi, même petite comme un grain de sénevé" - Premier pas vers la lumière',
     skipAnimation: "Passer l'animation",
+    stats: {
+      points: "pts",
+      level: "Niv."
+    },
     waypoints: {
       start: "Départ",
       firstSlope: "Première pente", 

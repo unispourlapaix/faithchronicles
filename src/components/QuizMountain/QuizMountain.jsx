@@ -410,9 +410,9 @@ const QuizMountain = ({
       {showStats && (
         <div className="absolute top-4 left-4 bg-white bg-opacity-80 rounded-lg p-2 text-sm">
           <div className="flex gap-4">
-            <span className="font-bold">{points}pts</span>
+            <span className="font-bold">{points}{t('mountain.stats.points')}</span>
             <span>{percentage}%</span>
-            <span>Niv.{currentLevel + 1}</span>
+            <span>{t('mountain.stats.level')}{currentLevel + 1}</span>
           </div>
         </div>
       )}

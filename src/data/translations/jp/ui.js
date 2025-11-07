@@ -334,6 +334,10 @@ export const uiTranslations = {
   mountain: {
     chapter: "チャプター",
     secret: "シークレット！",
+    stats: {
+      points: "pt",
+      level: "Lv."
+    },
     waypoints: {
       start: "スタート",
       firstSlope: "最初の斜面",
