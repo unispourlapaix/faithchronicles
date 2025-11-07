@@ -152,7 +152,23 @@ export const uiTranslations = {
     levelCompleted: "레벨 {level} 완료",
     questionsProgress: "질문 {current}/3",
     starsCollected: "수집한 별: {current}/{total}",
-    pointsEarned: "+{points} 지혜 포인트"
+    pointsEarned: "+{points} 지혜 포인트",
+    secondChance: "🛡️ 용기 카드가 두 번째 기회를 줍니다! 지혜롭게 다시 시도하세요.",
+    bonusApplied: "✨ {card} 보너스: +{percent}% ({base} → {final})",
+    defeatedQuote: "내게 능력 주시는 자 안에서 내가 모든 것을 할 수 있느니라 - 빌립보서 4:13",
+    perfect: "✨ 완벽",
+    good: "👍 좋음",
+    start: "👍 시작",
+    secretLevel: "🔓 비밀 레벨 잠금 해제!",
+    secretChapter: "🌟 비밀 챕터",
+    returnToLevels: "돌아가기",
+    next: "다음",
+    retry: "재시도",
+    menu: "메뉴",
+    chapter: "챕터",
+    chapterStars: "챕터 별",
+    totalGlobal: "전체 합계",
+    backToMenu: "메뉴로 돌아가기"
   },
   
   quotes: {
@@ -187,6 +203,38 @@ export const uiTranslations = {
     peace: "🕊️ 당신의 집에 평화가 깃들기를",
     questionsAwaiting: "🎯 3개의 지식 질문이 기다리고 있습니다",
     starsQuote: "각 별은 신성한 빛을 향한 한 걸음입니다"
+  },
+
+  info: {
+    title: "Unity Quest 평화의 연대기",
+    subtitle: "성경의 대화형 발견",
+    yourStats: "당신의 통계",
+    score: "점수",
+    wisdom: "지혜",
+    revelation: "계시",
+    createdWith: "❤️로 만들어진",
+    creator: "Emmanuel Payet",
+    developerPassionate: "영성에 열정적인 개발자",
+    artistModule: "엠마누엘 아티스트",
+    artistPortfolio: "예술 포트폴리오 및 디지털 창작물",
+    features: "기능",
+    multipleChapters: "8개의 성경 챕터에 걸쳐 91개 레벨",
+    powerCards: "3개의 고유한 파워 카드 (믿음, 용기, 지혜)",
+    progressionSystem: "영적 순위가 있는 진행 시스템",
+    bibleTreasures: "성경 보물과 흥미로운 사실",
+    howToPlay: "플레이 방법",
+    selectLevel: "잠금 해제된 레벨 선택",
+    choosePowerCard: "파워 카드 선택",
+    answerQuestions: "3개의 지식 질문에 답하기",
+    earnStars: "남은 생명에 따라 별 획득",
+    tips: "팁",
+    readCarefully: "각 질문을 주의 깊게 읽으세요",
+    useWisdomCard: "힌트를 위해 지혜 카드 사용",
+    courageGivesSecondChance: "용기 카드는 두 번째 기회를 제공합니다",
+    faithMaximizes: "믿음 카드는 포인트를 최대화합니다",
+    version: "버전",
+    madeWithLove: "하나님의 영광을 위해 사랑으로 만들어짐",
+    backToMenu: "메뉴로 돌아가기"
   },
 
   chapters: {

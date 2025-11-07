@@ -208,7 +208,7 @@ export const uiTranslations = {
     createdWith: "Stworzone z ❤️",
     creator: "Emmanuel Payet",
     developerPassionate: "Programista pasjonujący się duchowością",
-    artistModule: "Moduł Emmanuel Artist",
+    artistModule: "Emmanuel Artysta",
     artistPortfolio: "Portfolio artystyczne i twórczość cyfrowa",
     features: "Funkcje",
     multipleChapters: "91 poziomów w 8 rozdziałach biblijnych",

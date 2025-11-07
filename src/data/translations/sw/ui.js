@@ -208,7 +208,7 @@ export const uiTranslations = {
     createdWith: "Imeundwa na ❤️",
     creator: "Emmanuel Payet",
     developerPassionate: "Msanidi programu mwenye shauku ya kiroho",
-    artistModule: "Moduli ya Emmanuel Artist",
+    artistModule: "Emmanuel Msanii",
     artistPortfolio: "Portfolio ya sanaa na ubunifu wa kidijitali",
     features: "Vipengele",
     multipleChapters: "Ngazi 91 katika sura 8 za Biblia",

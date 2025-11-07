@@ -208,7 +208,7 @@ export const uiTranslations = {
     createdWith: "❤️ के साथ बनाया गया",
     creator: "इमैनुएल पायेट",
     developerPassionate: "आध्यात्मिकता के प्रति उत्साही डेवलपर",
-    artistModule: "इमैनुएल कलाकार मॉड्यूल",
+    artistModule: "इमैनुएल कलाकार",
     artistPortfolio: "कलात्मक पोर्टफोलियो और डिजिटल रचनाएँ",
     features: "विशेषताएं",
     multipleChapters: "8 बाइबिल अध्यायों में फैले 91 स्तर",

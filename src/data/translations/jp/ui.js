@@ -230,7 +230,7 @@ export const uiTranslations = {
     createdWith: "ÔØñ´©ÅÒüºõ¢£µêÉ",
     creator: "Emmanuel Payet",
     developerPassionate: "Ú£èµÇºÒü½µâàþå▒ÒéÆµ│¿ÒüÉÚûïþÖ║ÞÇà",
-    artistModule: "Òé¿Òâ×ÒâïÒâÑÒé¿Òâ½Òâ╗ÒéóÒâ╝ÒâåÒéúÒé╣ÒâêÒâóÒé©ÒâÑÒâ╝Òâ½",
+    artistModule: "Òé¿Òâ×ÒâïÒâÑÒé¿Òâ½Òâ╗ÒéóÒâ╝ÒâåÒéúÒé╣ÒâêÒâó",
     artistPortfolio: "ÒéóÒâ╝ÒâåÒéúÒé╣ÒâåÒéúÒââÒé»ÒâØÒâ╝ÒâêÒâòÒé®Òâ¬Òé¬Òü¿ÒâçÒé©Òé┐Òâ½õ¢£Õôü",
     features: "µ®ƒÞâ¢",
     multipleChapters: "8ÒüñÒü«Þüûµø©Òü«þ½áÒü½ÒéÅÒüƒÒéï91Òü«Òâ¼ÒâÖÒâ½",

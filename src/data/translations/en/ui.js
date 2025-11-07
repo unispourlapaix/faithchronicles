@@ -220,7 +220,7 @@ export const uiTranslations = {
     createdWith: "Created with ÔØñ´©Å",
     creator: "Emmanuel Payet",
     developerPassionate: "Developer passionate about spirituality",
-    artistModule: "Emmanuel Artist Module",
+    artistModule: "Emmanuel Artist",
     artistPortfolio: "Artistic portfolio and digital creations",
     features: "Features",
     multipleChapters: "91 levels across 8 biblical chapters",
