@@ -76,7 +76,7 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
             }`}
           >
             <Book className="w-3 h-3" />
-            Bible
+            {t('bible.tabBible')}
           </button>
           <button
             onClick={() => setActiveTab('unity')}
@@ -87,7 +87,7 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
             }`}
           >
             <Heart className="w-3 h-3" />
-            Unité
+            {t('bible.tabUnity')}
           </button>
         </div>
 

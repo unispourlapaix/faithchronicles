@@ -256,6 +256,8 @@ export const uiTranslations = {
     readerTitle: "📖 聖書リーダー",
     loading: "聖書を読み込み中...",
     menu: "メニュー",
+    tabBible: "聖書",
+    tabUnity: "一致",
     strong: "Strong",
     strongReferences: "Strong参照",
     verses: "節",

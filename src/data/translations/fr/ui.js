@@ -247,6 +247,8 @@ export const uiTranslations = {
     johnReaderTitle: "Lecteur Bible - Évangile de Jean",
     loading: "Chargement des Écritures...",
     menu: "Menu",
+    tabBible: "Bible",
+    tabUnity: "Unité",
     strong: "Strong",
     strongReferences: "Références Strong",
     verses: "versets",

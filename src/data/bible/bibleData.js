@@ -6,56 +6,137 @@ import { strongGreek } from './strongGreek.js';
 import { gospelJohnTreasures } from './gospel/john/index.js';
 
 // Import French translations
-import { bibleVerses as bibleVersesFr } from './translations/fr/bibleVerses.js';
-import { jesusIsNot as jesusIsNotFr } from './translations/fr/jesusIsNot.js';
-import { bibleFacts as bibleFactsFr } from './translations/fr/bibleFacts.js';
-import { funQuestions as funQuestionsFr } from './translations/fr/funQuestions.js';
-import { bibleTreasures as bibleTreasuresFr } from './translations/fr/bibleTreasures.js';
-import { biblePassagesFr } from './translations/fr/biblePassages.js';
+import { bibleVerses as bibleVersesFr } from '../translations/fr/bibleVerses.js';
+import { jesusIsNot as jesusIsNotFr } from '../translations/fr/jesusIsNot.js';
+import { bibleFacts as bibleFactsFr } from '../translations/fr/bibleFacts.js';
+import { funQuestions as funQuestionsFr } from '../translations/fr/funQuestions.js';
+import { bibleTreasures as bibleTreasuresFr } from '../translations/fr/bibleTreasures.js';
+import { biblePassagesFr } from '../translations/fr/biblePassages.js';
 
 // Import English translations
-import { bibleVerses as bibleVersesEn } from './translations/en/bibleVerses.js';
-import { jesusIsNot as jesusIsNotEn } from './translations/en/jesusIsNot.js';
-import { bibleFacts as bibleFactsEn } from './translations/en/bibleFacts.js';
-import { funQuestions as funQuestionsEn } from './translations/en/funQuestions.js';
-import { bibleTreasures as bibleTreasuresEn } from './translations/en/bibleTreasures.js';
-import { biblePassagesEn } from './translations/en/biblePassages.js';
+import { bibleVerses as bibleVersesEn } from '../translations/en/bibleVerses.js';
+import { jesusIsNot as jesusIsNotEn } from '../translations/en/jesusIsNot.js';
+import { bibleFacts as bibleFactsEn } from '../translations/en/bibleFacts.js';
+import { funQuestions as funQuestionsEn } from '../translations/en/funQuestions.js';
+import { bibleTreasures as bibleTreasuresEn } from '../translations/en/bibleTreasures.js';
+import { biblePassagesEn } from '../translations/en/biblePassages.js';
 
 // Import Spanish translations
-import { biblePassagesEs } from './translations/es/biblePassages.js';
+import { biblePassagesEs } from '../translations/es/biblePassages.js';
+import { bibleVerses as bibleVersesEs } from '../translations/es/bibleVerses.js';
+import { jesusIsNot as jesusIsNotEs } from '../translations/es/jesusIsNot.js';
+import { bibleFacts as bibleFactsEs } from '../translations/es/bibleFacts.js';
+import { funQuestions as funQuestionsEs } from '../translations/es/funQuestions.js';
+import { bibleTreasures as bibleTreasuresEs } from '../translations/es/bibleTreasures.js';
 
 // Import German translations
-import { biblePassagesDe } from './translations/de/biblePassages.js';
+import { biblePassagesDe } from '../translations/de/biblePassages.js';
+import { bibleVerses as bibleVersesDe } from '../translations/de/bibleVerses.js';
+import { jesusIsNot as jesusIsNotDe } from '../translations/de/jesusIsNot.js';
+import { bibleFacts as bibleFactsDe } from '../translations/de/bibleFacts.js';
+import { funQuestions as funQuestionsDe } from '../translations/de/funQuestions.js';
+import { bibleTreasures as bibleTreasuresDe } from '../translations/de/bibleTreasures.js';
 
 // Import Italian translations
-import { biblePassagesIt } from './translations/it/biblePassages.js';
+import { biblePassagesIt } from '../translations/it/biblePassages.js';
+import { bibleVerses as bibleVersesIt } from '../translations/it/bibleVerses.js';
+import { jesusIsNot as jesusIsNotIt } from '../translations/it/jesusIsNot.js';
+import { bibleFacts as bibleFactsIt } from '../translations/it/bibleFacts.js';
+import { funQuestions as funQuestionsIt } from '../translations/it/funQuestions.js';
+import { bibleTreasures as bibleTreasuresIt } from '../translations/it/bibleTreasures.js';
 
 // Import Portuguese translations
-import { biblePassagesPt } from './translations/pt/biblePassages.js';
+import { biblePassagesPt } from '../translations/pt/biblePassages.js';
+import { bibleVerses as bibleVersesPt } from '../translations/pt/bibleVerses.js';
+import { jesusIsNot as jesusIsNotPt } from '../translations/pt/jesusIsNot.js';
+import { bibleFacts as bibleFactsPt } from '../translations/pt/bibleFacts.js';
+import { funQuestions as funQuestionsPt } from '../translations/pt/funQuestions.js';
+import { bibleTreasures as bibleTreasuresPt } from '../translations/pt/bibleTreasures.js';
 
 // Import Russian translations
-import { biblePassagesRu } from './translations/ru/biblePassages.js';
+import { biblePassagesRu } from '../translations/ru/biblePassages.js';
+import { bibleVerses as bibleVersesRu } from '../translations/ru/bibleVerses.js';
+import { jesusIsNot as jesusIsNotRu } from '../translations/ru/jesusIsNot.js';
+import { bibleFacts as bibleFactsRu } from '../translations/ru/bibleFacts.js';
+import { funQuestions as funQuestionsRu } from '../translations/ru/funQuestions.js';
+import { bibleTreasures as bibleTreasuresRu } from '../translations/ru/bibleTreasures.js';
 
 // Import Ukrainian translations
-import { biblePassagesUk } from './translations/uk/biblePassages.js';
+import { biblePassagesUk } from '../translations/uk/biblePassages.js';
+import { bibleVerses as bibleVersesUk } from '../translations/uk/bibleVerses.js';
+import { jesusIsNot as jesusIsNotUk } from '../translations/uk/jesusIsNot.js';
+import { bibleFacts as bibleFactsUk } from '../translations/uk/bibleFacts.js';
+import { funQuestions as funQuestionsUk } from '../translations/uk/funQuestions.js';
+import { bibleTreasures as bibleTreasuresUk } from '../translations/uk/bibleTreasures.js';
 
 // Import Chinese translations
-import { biblePassagesZh } from './translations/zh/biblePassages.js';
+import { biblePassagesZh } from '../translations/zh/biblePassages.js';
+import { bibleVerses as bibleVersesZh } from '../translations/zh/bibleVerses.js';
+import { jesusIsNot as jesusIsNotZh } from '../translations/zh/jesusIsNot.js';
+import { bibleFacts as bibleFactsZh } from '../translations/zh/bibleFacts.js';
+import { funQuestions as funQuestionsZh } from '../translations/zh/funQuestions.js';
+import { bibleTreasures as bibleTreasuresZh } from '../translations/zh/bibleTreasures.js';
 
 // Import Japanese translations
-import { biblePassagesJp } from './translations/jp/biblePassages.js';
+import { biblePassagesJp } from '../translations/jp/biblePassages.js';
+import { bibleVerses as bibleVersesJp } from '../translations/jp/bibleVerses.js';
+import { jesusIsNot as jesusIsNotJp } from '../translations/jp/jesusIsNot.js';
+import { bibleFacts as bibleFactsJp } from '../translations/jp/bibleFacts.js';
+import { funQuestions as funQuestionsJp } from '../translations/jp/funQuestions.js';
+import { bibleTreasures as bibleTreasuresJp } from '../translations/jp/bibleTreasures.js';
 
 // Import Korean translations
-import { biblePassagesKo } from './translations/ko/biblePassages.js';
+import { biblePassagesKo } from '../translations/ko/biblePassages.js';
+import { bibleVersesKo } from '../translations/ko/bibleVerses.js';
+import { jesusIsNotKo } from '../translations/ko/jesusIsNot.js';
+import { bibleFactsKo } from '../translations/ko/bibleFacts.js';
+import { funQuestionsKo } from '../translations/ko/funQuestions.js';
+import { bibleTreasuresKo } from '../translations/ko/bibleTreasures.js';
 
 // Import Arabic translations
-import { biblePassagesAr } from './translations/ar/biblePassages.js';
+import { biblePassagesAr } from '../translations/ar/biblePassages.js';
+import { bibleVersesAr } from '../translations/ar/bibleVerses.js';
+import { jesusIsNotAr } from '../translations/ar/jesusIsNot.js';
+import { bibleFactsAr } from '../translations/ar/bibleFacts.js';
+import { funQuestionsAr } from '../translations/ar/funQuestions.js';
+import { bibleTreasuresAr } from '../translations/ar/bibleTreasures.js';
 
 // Import Hebrew translations
-import { biblePassagesHe } from './translations/he/biblePassages.js';
+import { biblePassagesHe } from '../translations/he/biblePassages.js';
+import { bibleVersesHe } from '../translations/he/bibleVerses.js';
+import { jesusIsNotHe } from '../translations/he/jesusIsNot.js';
+import { bibleFactsHe } from '../translations/he/bibleFacts.js';
+import { funQuestionsHe } from '../translations/he/funQuestions.js';
+import { bibleTreasuresHe } from '../translations/he/bibleTreasures.js';
 
 // Import Lingala translations
-import { biblePassagesRc } from './translations/rc/biblePassages.js';
+import { biblePassagesRc } from '../translations/rc/biblePassages.js';
+import { bibleVersesRc } from '../translations/rc/bibleVerses.js';
+import { jesusIsNotRc } from '../translations/rc/jesusIsNot.js';
+import { bibleFactsRc } from '../translations/rc/bibleFacts.js';
+import { funQuestionsRc } from '../translations/rc/funQuestions.js';
+import { bibleTreasuresRc } from '../translations/rc/bibleTreasures.js';
+
+// Import Hindi translations
+import { bibleVerses as bibleVersesHi } from '../translations/hi/bibleVerses.js';
+import { jesusIsNot as jesusIsNotHi } from '../translations/hi/jesusIsNot.js';
+import { bibleFacts as bibleFactsHi } from '../translations/hi/bibleFacts.js';
+import { funQuestions as funQuestionsHi } from '../translations/hi/funQuestions.js';
+import { bibleTreasures as bibleTreasuresHi } from '../translations/hi/bibleTreasures.js';
+
+// Import Polish translations
+import { bibleVerses as bibleVersesPl } from '../translations/pl/bibleVerses.js';
+import { jesusIsNot as jesusIsNotPl } from '../translations/pl/jesusIsNot.js';
+import { bibleFacts as bibleFactsPl } from '../translations/pl/bibleFacts.js';
+import { funQuestions as funQuestionsPl } from '../translations/pl/funQuestions.js';
+import { bibleTreasures as bibleTreasuresPl } from '../translations/pl/bibleTreasures.js';
+
+// Import Swahili translations
+import { bibleVerses as bibleVersesSw } from '../translations/sw/bibleVerses.js';
+import { jesusIsNot as jesusIsNotSw } from '../translations/sw/jesusIsNot.js';
+import { bibleFacts as bibleFactsSw } from '../translations/sw/bibleFacts.js';
+import { funQuestions as funQuestionsSw } from '../translations/sw/funQuestions.js';
+import { bibleTreasures as bibleTreasuresSw } from '../translations/sw/bibleTreasures.js';
 
 export const bibleData = {
   // Sagesse spirituelle : La connaissance vivifie l'esprit
@@ -80,40 +161,121 @@ export const bibleData = {
       passages: biblePassagesEn
     },
     es: {
+      verses: bibleVersesEs,
+      jesusIsNot: jesusIsNotEs,
+      facts: bibleFactsEs,
+      funQuestions: funQuestionsEs,
+      bibleTreasures: bibleTreasuresEs,
       passages: biblePassagesEs
     },
     de: {
+      verses: bibleVersesDe,
+      jesusIsNot: jesusIsNotDe,
+      facts: bibleFactsDe,
+      funQuestions: funQuestionsDe,
+      bibleTreasures: bibleTreasuresDe,
       passages: biblePassagesDe
     },
     it: {
+      verses: bibleVersesIt,
+      jesusIsNot: jesusIsNotIt,
+      facts: bibleFactsIt,
+      funQuestions: funQuestionsIt,
+      bibleTreasures: bibleTreasuresIt,
       passages: biblePassagesIt
     },
     pt: {
+      verses: bibleVersesPt,
+      jesusIsNot: jesusIsNotPt,
+      facts: bibleFactsPt,
+      funQuestions: funQuestionsPt,
+      bibleTreasures: bibleTreasuresPt,
       passages: biblePassagesPt
     },
     ru: {
+      verses: bibleVersesRu,
+      jesusIsNot: jesusIsNotRu,
+      facts: bibleFactsRu,
+      funQuestions: funQuestionsRu,
+      bibleTreasures: bibleTreasuresRu,
       passages: biblePassagesRu
     },
     uk: {
+      verses: bibleVersesUk,
+      jesusIsNot: jesusIsNotUk,
+      facts: bibleFactsUk,
+      funQuestions: funQuestionsUk,
+      bibleTreasures: bibleTreasuresUk,
       passages: biblePassagesUk
     },
     zh: {
+      verses: bibleVersesZh,
+      jesusIsNot: jesusIsNotZh,
+      facts: bibleFactsZh,
+      funQuestions: funQuestionsZh,
+      bibleTreasures: bibleTreasuresZh,
       passages: biblePassagesZh
     },
     jp: {
+      verses: bibleVersesJp,
+      jesusIsNot: jesusIsNotJp,
+      facts: bibleFactsJp,
+      funQuestions: funQuestionsJp,
+      bibleTreasures: bibleTreasuresJp,
       passages: biblePassagesJp
     },
     ko: {
+      verses: bibleVersesKo,
+      jesusIsNot: jesusIsNotKo,
+      facts: bibleFactsKo,
+      funQuestions: funQuestionsKo,
+      bibleTreasures: bibleTreasuresKo,
       passages: biblePassagesKo
     },
     ar: {
+      verses: bibleVersesAr,
+      jesusIsNot: jesusIsNotAr,
+      facts: bibleFactsAr,
+      funQuestions: funQuestionsAr,
+      bibleTreasures: bibleTreasuresAr,
       passages: biblePassagesAr
     },
     he: {
+      verses: bibleVersesHe,
+      jesusIsNot: jesusIsNotHe,
+      facts: bibleFactsHe,
+      funQuestions: funQuestionsHe,
+      bibleTreasures: bibleTreasuresHe,
       passages: biblePassagesHe
     },
     rc: {
+      verses: bibleVersesRc,
+      jesusIsNot: jesusIsNotRc,
+      facts: bibleFactsRc,
+      funQuestions: funQuestionsRc,
+      bibleTreasures: bibleTreasuresRc,
       passages: biblePassagesRc
+    },
+    hi: {
+      verses: bibleVersesHi,
+      jesusIsNot: jesusIsNotHi,
+      facts: bibleFactsHi,
+      funQuestions: funQuestionsHi,
+      bibleTreasures: bibleTreasuresHi
+    },
+    pl: {
+      verses: bibleVersesPl,
+      jesusIsNot: jesusIsNotPl,
+      facts: bibleFactsPl,
+      funQuestions: funQuestionsPl,
+      bibleTreasures: bibleTreasuresPl
+    },
+    sw: {
+      verses: bibleVersesSw,
+      jesusIsNot: jesusIsNotSw,
+      facts: bibleFactsSw,
+      funQuestions: funQuestionsSw,
+      bibleTreasures: bibleTreasuresSw
     }
   },
   
