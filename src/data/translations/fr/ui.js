@@ -266,7 +266,6 @@ export const uiTranslations = {
     definition: "Définition complète",
     usage: "Usage biblique",
     etymology: "Étymologie",
-    close: "Fermer",
     search: "Rechercher...",
     definitionNotFound: "Définition non trouvée",
     definitionLoading: "Définition à charger...",
