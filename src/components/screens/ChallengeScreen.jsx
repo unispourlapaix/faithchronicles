@@ -28,7 +28,7 @@ const ChallengeScreen = ({
       name: t('cards.courage'), 
       icon: '⚔️', 
       knowledge: t('cards.courageKnowledge'),
-      bonus: 'secondChance',
+      bonus: 'eliminateWrong',
       multiplier: 1.0,
       description: t('cards.courageDesc'),
       color: 'from-red-400 to-red-600',
@@ -65,8 +65,8 @@ const ChallengeScreen = ({
     
     try {
       const levelData = getLevel(currentLevel);
-      if (levelData && levelData.easy) {
-        setCurrentQuestion(levelData.easy);
+      if (levelData && levelData.questions && levelData.questions.easy) {
+        setCurrentQuestion(levelData.questions.easy);
         setCurrentScreen('question');
       }
     } catch (error) {

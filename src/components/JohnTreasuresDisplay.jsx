@@ -142,10 +142,10 @@ const JohnTreasuresDisplay = ({ onClose }) => {
             📚 {johnMetadata.title}
           </div>
           <div className="text-sm text-gray-700">
-            L'Évangile de Jean révèle la divinité de Jésus à travers 21 chapitres inspirants.
+            {t('treasures.johnGospelDescription')}
           </div>
           <div className="text-xs text-gray-500 mt-1">
-            Disponible en 14 langues • {johnMetadata.copyright}
+            {t('treasures.availableInLanguages')} • {johnMetadata.copyright}
           </div>
         </div>
       )}
@@ -157,7 +157,7 @@ const JohnTreasuresDisplay = ({ onClose }) => {
           className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 active:scale-95 transition-all flex items-center justify-center gap-2"
         >
           <Search className="w-4 h-4" />
-          Nouveau trésor
+          {t('treasures.newTreasure')}
         </button>
         
         {/* Bible Reader Button */}
@@ -173,13 +173,13 @@ const JohnTreasuresDisplay = ({ onClose }) => {
           className="w-full px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg hover:from-purple-600 hover:to-blue-600 active:scale-95 transition-all flex items-center justify-center gap-2 font-medium"
         >
           <Book className="w-4 h-4" />
-          📖 Lecteur Bible Jean + Strong
+          📖 {t('treasures.johnBibleReader')}
         </button>
       </div>
 
       {/* Copyright */}
       <div className="text-center text-xs text-gray-500 pt-2 border-t border-gray-200">
-        Évangile de Jean complet • 878 versets • 14 langues disponibles
+        {t('treasures.johnGospelStats')}
       </div>
     </div>
   );

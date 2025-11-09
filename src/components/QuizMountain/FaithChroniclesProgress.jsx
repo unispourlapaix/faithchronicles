@@ -537,7 +537,7 @@ const FaithChroniclesProgress = ({
       <div className="p-4 bg-white">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-gray-700">
-            {t('mountain.chapter')} {chapter}/7 {chapter8Unlocked ? `+ ${t('mountain.secret')}` : ""}
+            {t('mountain.chapterProgress', { current: chapter, total: 7 })} {chapter8Unlocked ? `+ ${t('mountain.secret')}` : ""}
           </span>
           <span className="text-sm text-gray-500">
             {status === "victory" ? t('mountain.status.victory') : 

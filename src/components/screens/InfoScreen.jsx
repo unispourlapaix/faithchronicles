@@ -4,7 +4,7 @@ import ProgressionDisplay from '../ProgressionDisplay';
 import useTranslation from '../../hooks/useTranslation';
 
 const InfoScreen = ({ setCurrentScreen, score, wisdomPoints, revelationPoints, totalXP = 0, audio }) => {
-  const { t } = useTranslation();
+  const { t, currentLanguage } = useTranslation();
   
   return (
     <div className="relative z-10 p-6 h-full flex flex-col bg-gradient-to-b from-blue-50 to-white">
@@ -72,7 +72,7 @@ const InfoScreen = ({ setCurrentScreen, score, wisdomPoints, revelationPoints, t
             {/* Lien vers le module artiste */}
             <div className="mt-4">
               <a
-                href="/emmanuel-artist-module.html"
+                href={`/emmanuel-artist-module.html?lang=${currentLanguage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {

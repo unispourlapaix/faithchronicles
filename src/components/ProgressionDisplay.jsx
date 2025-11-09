@@ -59,14 +59,14 @@ const ProgressionDisplay = ({ totalXP = 0, compact = false }) => {
               {levelName}
             </h3>
             <p className="text-sm text-gray-400">
-              Grade {current.gradeRoman}
+              {t('spiritualJourney.grade')} {current.gradeRoman}
             </p>
           </div>
         </div>
 
         <div className="text-right">
           <p className="text-xs text-gray-500 uppercase tracking-wider">
-            Niveau {progression.level}/8
+            {t('spiritualJourney.level')} {progression.level}/8
           </p>
           <p className="text-lg font-bold text-white">
             {totalXP.toLocaleString()} XP
@@ -76,7 +76,7 @@ const ProgressionDisplay = ({ totalXP = 0, compact = false }) => {
 
       {/* Description */}
       <p className="text-sm text-gray-400 mb-4 italic">
-        "{current.description}"
+        "{t(`ranks.${current.descriptionKey}`)}"
       </p>
 
       {/* Barre de progression */}
@@ -128,14 +128,14 @@ const ProgressionDisplay = ({ totalXP = 0, compact = false }) => {
                 <div className="flex items-center space-x-2">
                   <span className="text-xl">{next.icon}</span>
                   <div>
-                    <p className="text-xs text-gray-500">Prochain grade</p>
+                    <p className="text-xs text-gray-500">{t('spiritualJourney.nextGrade')}</p>
                     <p className="text-sm font-bold text-white">
                       {nextLevelName} {next.gradeRoman}
                     </p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs text-gray-500">Encore</p>
+                  <p className="text-xs text-gray-500">{t('spiritualJourney.still')}</p>
                   <p className="text-sm font-bold" style={{ color: next.color }}>
                     {(progression.xpToNextGrade - progression.currentXP).toLocaleString()} XP
                   </p>
@@ -151,11 +151,11 @@ const ProgressionDisplay = ({ totalXP = 0, compact = false }) => {
         <div className="mt-4 p-4 bg-gradient-to-r from-yellow-600 to-orange-600 rounded-lg text-center">
           <p className="text-lg font-bold text-white flex items-center justify-center space-x-2">
             <span>👑</span>
-            <span>Niveau Maximum Atteint!</span>
+            <span>{t('spiritualJourney.maxLevelReached')}</span>
             <span>👑</span>
           </p>
           <p className="text-sm text-yellow-100 mt-1">
-            Vous avez maîtrisé tous les enseignements
+            {t('spiritualJourney.masteredAllTeachings')}
           </p>
         </div>
       )}
@@ -163,15 +163,15 @@ const ProgressionDisplay = ({ totalXP = 0, compact = false }) => {
       {/* Statistiques rapides */}
       <div className="mt-4 grid grid-cols-3 gap-2">
         <div className="bg-gray-800 rounded-lg p-2 text-center">
-          <p className="text-xs text-gray-500">Niveau</p>
+          <p className="text-xs text-gray-500">{t('spiritualJourney.level')}</p>
           <p className="text-lg font-bold text-white">{progression.level}</p>
         </div>
         <div className="bg-gray-800 rounded-lg p-2 text-center">
-          <p className="text-xs text-gray-500">Grade</p>
+          <p className="text-xs text-gray-500">{t('spiritualJourney.grade')}</p>
           <p className="text-lg font-bold text-white">{current.gradeRoman}</p>
         </div>
         <div className="bg-gray-800 rounded-lg p-2 text-center">
-          <p className="text-xs text-gray-500">Progression</p>
+          <p className="text-xs text-gray-500">{t('spiritualJourney.progression')}</p>
           <p className="text-lg font-bold text-white">{progression.progressPercent}%</p>
         </div>
       </div>

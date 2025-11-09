@@ -32,19 +32,18 @@ const GameOverScreen = ({
   return (
     <div className="relative z-10 p-8 h-full flex flex-col justify-center items-center">
       <div className="text-center">
-        <h2 className="text-xl font-bold text-black mb-3 flex items-center justify-center gap-2">
+        <h2 className="text-xl font-bold text-black mb-3 mt-4 flex items-center justify-center gap-2">
           💔 <span className="bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">{t('labels.testFailed')}</span> 💔
         </h2>
         
         <div className="bg-white rounded-lg p-2 mb-3 shadow-lg border border-red-100">
           <div className="text-center text-xs">
-            <p className="text-gray-600 mb-1">{t('messages.defeatedQuote')}</p>
-            <p className="text-gray-500 italic">{t('quotes.defeat')}</p>
+            <p className="text-gray-600 mb-1">{t('quotes.defeat')}</p>
           </div>
         </div>
 
         {/* Animation QuizMountain pour la défaite */}
-        <div className="mb-6">
+        <div className="mb-3">
           <QuizMountain 
             ref={mountainRef}
             autoStart={false}
@@ -66,7 +65,7 @@ const GameOverScreen = ({
             onClick={resetGame}
             className="flex-1 py-2 bg-white text-black rounded-lg font-semibold shadow-lg border border-gray-200 hover:scale-105 active:scale-95 transition-all"
           >
-            Menu
+            {t('app.menu')}
           </button>
           <button 
             onClick={() => {
@@ -76,7 +75,7 @@ const GameOverScreen = ({
             }}
             className="flex-1 py-2 bg-white text-black rounded-lg font-bold shadow-xl border-2 border-red-200 hover:scale-105 active:scale-95 transition-all"
           >
-            ↻ Réessayer
+            ↻ {t('app.retry')}
           </button>
         </div>
       </div>

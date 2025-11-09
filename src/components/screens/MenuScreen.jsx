@@ -490,7 +490,7 @@ const MenuScreen = ({
                       <div className="text-sm text-gray-700">{treasure.fact}</div>
                     </div>
                     <div className="p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
-                      <div className="text-xs font-bold text-purple-700 mb-2">� {t('treasures.treasure')}</div>
+                      <div className="text-xs font-bold text-purple-700 mb-2">🎁 {t('treasures.treasure')}</div>
                       <div className="text-sm text-gray-700">{treasure.treasure}</div>
                     </div>
                     <div className="p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl">
@@ -499,7 +499,7 @@ const MenuScreen = ({
                     </div>
                     {hasLastThreeStars() && (
                       <div className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border border-amber-200">
-                        <div className="text-xs font-bold text-amber-700 mb-2">� {t('treasures.emmanuelMemo')}</div>
+                        <div className="text-xs font-bold text-amber-700 mb-2">💭 {t('treasures.emmanuelMemo')}</div>
                         <div className="text-sm text-gray-700 leading-relaxed">
                           {t('treasures.emmanuelMessage')}
                         </div>
@@ -533,10 +533,10 @@ const MenuScreen = ({
                     <div className="text-center mb-4">
                       <div className="text-3xl mb-2">📖</div>
                       <h3 className="text-lg font-bold text-blue-600">
-                        Évangile de Jean
+                        {t('info.johnGospelTitle')}
                       </h3>
                       <p className="text-sm text-gray-600">
-                        21 chapitres • 878 versets • 14 langues
+                        {t('info.johnGospelStats')}
                       </p>
                     </div>
 
@@ -558,10 +558,10 @@ const MenuScreen = ({
                           </div>
                           <div className="flex-1 text-left">
                             <div className="font-semibold text-blue-700">
-                              Lecteur Bible + Strong
+                              {t('info.bibleReaderStrong')}
                             </div>
                             <div className="text-sm text-gray-600">
-                              Lecture complète avec dictionnaire Strong
+                              {t('info.bibleReaderStrongDesc')}
                             </div>
                           </div>
                           <ChevronRight className="w-5 h-5 text-blue-500" />
@@ -573,7 +573,7 @@ const MenuScreen = ({
                         onClick={() => {
                           setShowModal(false);
                           setTimeout(() => {
-                            openModal("Trésors de Jean, l'apôtre de l'amour",
+                            openModal(t('info.johnTreasures'),
                               <JohnTreasuresDisplay onClose={() => setShowModal(false)} />
                             );
                           }, 100);
@@ -586,10 +586,10 @@ const MenuScreen = ({
                           </div>
                           <div className="flex-1 text-left">
                             <div className="font-semibold text-purple-700">
-                              Trésors de Jean
+                              {t('info.johnTreasures')}
                             </div>
                             <div className="text-sm text-gray-600">
-                              Découvrez les versets célèbres et inspirants
+                              {t('info.johnTreasuresDesc')}
                             </div>
                           </div>
                           <ChevronRight className="w-5 h-5 text-purple-500" />
@@ -600,15 +600,15 @@ const MenuScreen = ({
                     {/* Quick Access */}
                     <div className="pt-3 border-t border-gray-200">
                       <div className="text-xs font-semibold text-gray-600 mb-2">
-                        Accès rapide aux chapitres célèbres:
+                        {t('info.quickAccessChapters')}
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {[
-                          { ch: 1, title: "Prologue" },
-                          { ch: 3, title: "Naître de nouveau" },
-                          { ch: 14, title: "Je suis le chemin" },
-                          { ch: 20, title: "Résurrection" }
-                        ].map(({ ch, title }) => (
+                          { ch: 1, titleKey: "johnChapter1" },
+                          { ch: 3, titleKey: "johnChapter3" },
+                          { ch: 14, titleKey: "johnChapter14" },
+                          { ch: 20, titleKey: "johnChapter20" }
+                        ].map(({ ch, titleKey }) => (
                           <button
                             key={ch}
                             onClick={() => {
@@ -619,7 +619,7 @@ const MenuScreen = ({
                             }}
                             className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-xs font-medium text-gray-700 transition-colors"
                           >
-                            Ch.{ch}: {title}
+                            Ch.{ch}: {t(`info.${titleKey}`)}
                           </button>
                         ))}
                       </div>

@@ -25,7 +25,12 @@ const FaithChronicles = () => {
   
   // Hook Audio 🎵
   const audio = useAudio();
-  const { t } = useTranslation();
+  const { t, currentLanguage } = useTranslation();
+  
+  // Synchroniser la langue avec ModuleManager
+  useEffect(() => {
+    moduleManager.setLanguage(currentLanguage);
+  }, [currentLanguage]);
 
   // Afficher un avertissement si Supabase n'est pas configuré
   useEffect(() => {

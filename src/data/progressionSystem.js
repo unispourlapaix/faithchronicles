@@ -7,56 +7,56 @@ export const SPIRITUAL_LEVELS = [
   {
     level: 1,
     nameKey: "seeker",
-    description: "Début du voyage spirituel",
+    descriptionKey: "seekerDesc",
     color: "#9CA3AF", // Gris
     icon: "🌱"
   },
   {
     level: 2,
     nameKey: "disciple",
-    description: "Apprentissage des enseignements",
+    descriptionKey: "discipleDesc",
     color: "#60A5FA", // Bleu
     icon: "📖"
   },
   {
     level: 3,
     nameKey: "servant",
-    description: "Service et dévotion",
+    descriptionKey: "servantDesc",
     color: "#34D399", // Vert
     icon: "🙏"
   },
   {
     level: 4,
     nameKey: "witness",
-    description: "Partage de la foi",
+    descriptionKey: "witnessDesc",
     color: "#FBBF24", // Jaune
     icon: "✨"
   },
   {
     level: 5,
     nameKey: "guardian",
-    description: "Protection de la vérité",
+    descriptionKey: "guardianDesc",
     color: "#F97316", // Orange
     icon: "🛡️"
   },
   {
     level: 6,
     nameKey: "wise",
-    description: "Sagesse et connaissance",
+    descriptionKey: "wiseDesc",
     color: "#A78BFA", // Violet
     icon: "📜"
   },
   {
     level: 7,
     nameKey: "prophet",
-    description: "Vision spirituelle",
+    descriptionKey: "prophetDesc",
     color: "#EC4899", // Rose
     icon: "👁️"
   },
   {
     level: 8,
     nameKey: "apostle",
-    description: "Maître spirituel",
+    descriptionKey: "apostleDesc",
     color: "#EF4444", // Rouge/Or
     icon: "👑"
   }
@@ -237,7 +237,7 @@ export const formatProgression = (level, grade) => {
     gradeRoman: gradeData.roman,
     color: levelData.color,
     icon: levelData.icon,
-    description: levelData.description
+    descriptionKey: levelData.descriptionKey
   };
 };
 

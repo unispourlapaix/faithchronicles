@@ -215,6 +215,63 @@
             100% { transform: scale(1); }
         }
 
+        /* Sélecteur de langue */
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .language-selector:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .lang-icon {
+            font-size: 1.5em;
+        }
+
+        .lang-select {
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            outline: none;
+            padding: 5px;
+            font-family: inherit;
+        }
+
+        .lang-select option {
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .language-selector {
+                top: 10px;
+                right: 10px;
+                padding: 8px 12px;
+            }
+
+            .lang-icon {
+                font-size: 1.2em;
+            }
+
+            .lang-select {
+                font-size: 12px;
+            }
+        }
+
         /* Styles pour le Top 10000 */
         .leaderboard-section {
             margin: 30px 0 40px 0;
@@ -516,6 +573,30 @@
     </style>
 </head>
 <body>
+    <!-- Sélecteur de langue -->
+    <div class="language-selector">
+        <span class="lang-icon">🌍</span>
+        <select id="languageSelect" class="lang-select">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="ru">Русский</option>
+            <option value="uk">Українська</option>
+            <option value="zh">中文</option>
+            <option value="ar">العربية</option>
+            <option value="he">עברית</option>
+            <option value="jp">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="hi">हिन्दी</option>
+            <option value="sw">Kiswahili</option>
+            <option value="pl">Polski</option>
+            <option value="rc">Lingala</option>
+        </select>
+    </div>
+
     <div class="module-container">
         <div class="header">
             <h1 class="main-title pulse" id="main-title">Emmanuel Payet</h1>
@@ -525,8 +606,8 @@
         <!-- Section Top 10000 -->
         <div class="leaderboard-section">
             <div class="leaderboard-header">
-                <h2 class="leaderboard-title">🏆 Top 33 Millions Mondial</h2>
-                <p class="leaderboard-subtitle">Classement des meilleurs joueurs de FAITHCHRONICLES</p>
+                <h2 id="leaderboard-title" class="leaderboard-title">🏆 Top 33 Millions Mondial</h2>
+                <p id="leaderboard-subtitle" class="leaderboard-subtitle">Classement des meilleurs joueurs de FAITHCHRONICLES</p>
             </div>
 
             <div class="leaderboard-stats">
@@ -539,18 +620,18 @@
                 </div>
             </div>
 
-            <input type="text" id="searchInput" class="search-box" placeholder="🔍 Rechercher un joueur...">
+            <input type="text" id="searchInput" class="search-box" placeholder="🔍 Rechercher un joueur..." data-translation-key="searchPlaceholder">
 
             <div class="leaderboard-table">
                 <div class="table-header">
-                    <div>Rang</div>
-                    <div>Avatar</div>
-                    <div>Joueur</div>
-                    <div>Niveau</div>
-                    <div>Score</div>
+                    <div id="rank-header">Rang</div>
+                    <div id="avatar-header">Avatar</div>
+                    <div id="player-header">Joueur</div>
+                    <div id="level-header">Niveau</div>
+                    <div id="score-header">Score</div>
                 </div>
                 <div id="leaderboardContent">
-                    <div class="loading">⏳ Chargement des scores...</div>
+                    <div id="loading-message" class="loading">⏳ Chargement des scores...</div>
                 </div>
             </div>
 
@@ -640,7 +721,8 @@
 
         async function loadScores() {
             try {
-                document.getElementById('leaderboardContent').innerHTML = '<div class="loading">⏳ Connexion à Supabase...</div>';
+                const t = window.translations?.[window.currentLanguage || 'en'] || window.translations.en;
+                document.getElementById('leaderboardContent').innerHTML = `<div class="loading">${t.loading}</div>`;
                 console.log('📡 Tentative de connexion Supabase:', SUPABASE_URL);
 
                 // Charger depuis users + faithchronicles_game_progress
@@ -1244,16 +1326,36 @@
             }
         });
 
-        // Chargement initial
-        loadScores();
+        // Chargement initial - attendre que les traductions soient chargées
+        window.addEventListener('DOMContentLoaded', () => {
+            // Attendre un peu que le script des traductions soit chargé
+            setTimeout(() => {
+                if (window.translations) {
+                    loadScores();
+                } else {
+                    console.warn('⚠️ Traductions non chargées, réessai...');
+                    setTimeout(() => loadScores(), 500);
+                }
+            }, 100);
+        });
     </script>
 
     <script>
         // Traductions multilingues
-        const translations = {
+        // Variables globales accessibles depuis tous les scripts
+        window.translations = {
             fr: {
                 pageTitle: "Emmanuel Payet - Artiste Chrétien",
                 subtitle: "Artiste Chrétien • Créateur • Inspirateur",
+                leaderboardTitle: "🏆 Top 33 Millions Mondial",
+                leaderboardSubtitle: "Classement des meilleurs joueurs de FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Rechercher un joueur...",
+                loading: "⏳ Chargement des scores...",
+                rankHeader: "Rang",
+                avatarHeader: "Avatar",
+                playerHeader: "Joueur",
+                levelHeader: "Niveau",
+                scoreHeader: "Score",
                 gamesTitle: "Jeux & Déco",
                 gamesDesc: "Découvre mes créations visuelles, jeux interactifs et décorations artistiques qui célèbrent la foi et la beauté.",
                 booksTitle: "Livres & Art",
@@ -1268,6 +1370,15 @@
             en: {
                 pageTitle: "Emmanuel Payet - Christian Artist",
                 subtitle: "Christian Artist • Creator • Inspirator",
+                leaderboardTitle: "🏆 Top 33 Million Worldwide",
+                leaderboardSubtitle: "Ranking of the best FAITHCHRONICLES players",
+                searchPlaceholder: "🔍 Search for a player...",
+                loading: "⏳ Loading scores...",
+                rankHeader: "Rank",
+                avatarHeader: "Avatar",
+                playerHeader: "Player",
+                levelHeader: "Level",
+                scoreHeader: "Score",
                 gamesTitle: "Games & Deco",
                 gamesDesc: "Discover my visual creations, interactive games and artistic decorations that celebrate faith and beauty.",
                 booksTitle: "Books & Art",
@@ -1282,6 +1393,15 @@
             es: {
                 pageTitle: "Emmanuel Payet - Artista Cristiano",
                 subtitle: "Artista Cristiano • Creador • Inspirador",
+                leaderboardTitle: "🏆 Top 33 Millones Mundial",
+                leaderboardSubtitle: "Clasificación de los mejores jugadores de FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Buscar un jugador...",
+                loading: "⏳ Cargando puntuaciones...",
+                rankHeader: "Rango",
+                avatarHeader: "Avatar",
+                playerHeader: "Jugador",
+                levelHeader: "Nivel",
+                scoreHeader: "Puntuación",
                 gamesTitle: "Juegos y Decoración",
                 gamesDesc: "Descubre mis creaciones visuales, juegos interactivos y decoraciones artísticas que celebran la fe y la belleza.",
                 booksTitle: "Libros y Arte",
@@ -1296,6 +1416,15 @@
             de: {
                 pageTitle: "Emmanuel Payet - Christlicher Künstler",
                 subtitle: "Christlicher Künstler • Schöpfer • Inspirator",
+                leaderboardTitle: "🏆 Top 33 Millionen Weltweit",
+                leaderboardSubtitle: "Rangliste der besten FAITHCHRONICLES-Spieler",
+                searchPlaceholder: "🔍 Spieler suchen...",
+                loading: "⏳ Lade Punkte...",
+                rankHeader: "Rang",
+                avatarHeader: "Avatar",
+                playerHeader: "Spieler",
+                levelHeader: "Level",
+                scoreHeader: "Punkte",
                 gamesTitle: "Spiele & Deko",
                 gamesDesc: "Entdecke meine visuellen Kreationen, interaktiven Spiele und künstlerischen Dekorationen, die Glaube und Schönheit feiern.",
                 booksTitle: "Bücher & Kunst",
@@ -1310,6 +1439,15 @@
             it: {
                 pageTitle: "Emmanuel Payet - Artista Cristiano",
                 subtitle: "Artista Cristiano • Creatore • Ispiratore",
+                leaderboardTitle: "🏆 Top 33 Milioni Mondiale",
+                leaderboardSubtitle: "Classifica dei migliori giocatori di FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Cerca un giocatore...",
+                loading: "⏳ Caricamento punteggi...",
+                rankHeader: "Posizione",
+                avatarHeader: "Avatar",
+                playerHeader: "Giocatore",
+                levelHeader: "Livello",
+                scoreHeader: "Punteggio",
                 gamesTitle: "Giochi e Decorazioni",
                 gamesDesc: "Scopri le mie creazioni visive, giochi interattivi e decorazioni artistiche che celebrano la fede e la bellezza.",
                 booksTitle: "Libri e Arte",
@@ -1324,6 +1462,15 @@
             pt: {
                 pageTitle: "Emmanuel Payet - Artista Cristão",
                 subtitle: "Artista Cristão • Criador • Inspirador",
+                leaderboardTitle: "🏆 Top 33 Milhões Mundial",
+                leaderboardSubtitle: "Classificação dos melhores jogadores de FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Procurar um jogador...",
+                loading: "⏳ Carregando pontuações...",
+                rankHeader: "Posição",
+                avatarHeader: "Avatar",
+                playerHeader: "Jogador",
+                levelHeader: "Nível",
+                scoreHeader: "Pontuação",
                 gamesTitle: "Jogos e Decoração",
                 gamesDesc: "Descubra minhas criações visuais, jogos interativos e decorações artísticas que celebram a fé e a beleza.",
                 booksTitle: "Livros e Arte",
@@ -1338,6 +1485,15 @@
             ru: {
                 pageTitle: "Эммануэль Пайе - Христианский Художник",
                 subtitle: "Христианский Художник • Творец • Вдохновитель",
+                leaderboardTitle: "🏆 Топ 33 Миллиона Мировой",
+                leaderboardSubtitle: "Рейтинг лучших игроков FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Поиск игрока...",
+                loading: "⏳ Загрузка результатов...",
+                rankHeader: "Ранг",
+                avatarHeader: "Аватар",
+                playerHeader: "Игрок",
+                levelHeader: "Уровень",
+                scoreHeader: "Счёт",
                 gamesTitle: "Игры и Декор",
                 gamesDesc: "Откройте мои визуальные творения, интерактивные игры и художественные украшения, которые прославляют веру и красоту.",
                 booksTitle: "Книги и Искусство",
@@ -1352,6 +1508,15 @@
             zh: {
                 pageTitle: "艾曼纽·佩耶 - 基督教艺术家",
                 subtitle: "基督教艺术家 • 创作者 • 启发者",
+                leaderboardTitle: "🏆 全球前3300万名",
+                leaderboardSubtitle: "FAITHCHRONICLES最佳玩家排名",
+                searchPlaceholder: "🔍 搜索玩家...",
+                loading: "⏳ 加载分数中...",
+                rankHeader: "排名",
+                avatarHeader: "头像",
+                playerHeader: "玩家",
+                levelHeader: "等级",
+                scoreHeader: "分数",
                 gamesTitle: "游戏与装饰",
                 gamesDesc: "发现我的视觉创作、互动游戏和艺术装饰，它们颂扬信仰和美丽。",
                 booksTitle: "书籍与艺术",
@@ -1366,6 +1531,15 @@
             ko: {
                 pageTitle: "엠마누엘 파예 - 기독교 예술가",
                 subtitle: "기독교 예술가 • 창작자 • 영감자",
+                leaderboardTitle: "🏆 전 세계 상위 3,300만",
+                leaderboardSubtitle: "FAITHCHRONICLES 최고의 플레이어 순위",
+                searchPlaceholder: "🔍 플레이어 검색...",
+                loading: "⏳ 점수 로딩 중...",
+                rankHeader: "순위",
+                avatarHeader: "아바타",
+                playerHeader: "플레이어",
+                levelHeader: "레벨",
+                scoreHeader: "점수",
                 gamesTitle: "게임과 장식",
                 gamesDesc: "신앙과 아름다움을 찬양하는 나의 시각적 창작물, 인터랙티브 게임, 예술적 장식을 발견하세요.",
                 booksTitle: "책과 예술",
@@ -1380,6 +1554,15 @@
             jp: {
                 pageTitle: "エマニュエル・パイエ - キリスト教アーティスト",
                 subtitle: "キリスト教アーティスト • クリエイター • インスピレーター",
+                leaderboardTitle: "🏆 世界トップ3300万",
+                leaderboardSubtitle: "FaITHCHRONICLES最高のプレイヤーランキング",
+                searchPlaceholder: "🔍 プレイヤーを検索...",
+                loading: "⏳ スコアを読み込み中...",
+                rankHeader: "ランク",
+                avatarHeader: "アバター",
+                playerHeader: "プレイヤー",
+                levelHeader: "レベル",
+                scoreHeader: "スコア",
                 gamesTitle: "ゲーム＆デコレーション",
                 gamesDesc: "信仰と美しさを讃える私のビジュアル創作、インタラクティブゲーム、芸術的装飾を発見してください。",
                 booksTitle: "書籍＆アート",
@@ -1394,6 +1577,15 @@
             ar: {
                 pageTitle: "إيمانويل باييت - فنان مسيحي",
                 subtitle: "فنان مسيحي • مبدع • ملهم",
+                leaderboardTitle: "🏆 أفضل 33 مليون عالمياً",
+                leaderboardSubtitle: "تصنيف أفضل لاعبي FAITHCHRONICLES",
+                searchPlaceholder: "🔍 البحث عن لاعب...",
+                loading: "⏳ تحميل النتائج...",
+                rankHeader: "الترتيب",
+                avatarHeader: "الصورة",
+                playerHeader: "اللاعب",
+                levelHeader: "المستوى",
+                scoreHeader: "النتيجة",
                 gamesTitle: "الألعاب والديكور",
                 gamesDesc: "اكتشف إبداعاتي البصرية والألعاب التفاعلية والزخارف الفنية التي تحتفل بالإيمان والجمال.",
                 booksTitle: "الكتب والفن",
@@ -1408,6 +1600,15 @@
             he: {
                 pageTitle: "עמנואל פאייט - אמן נוצרי",
                 subtitle: "אמן נוצרי • יוצר • מעורר השראה",
+                leaderboardTitle: "🏆 33 מיליון הטובים בעולם",
+                leaderboardSubtitle: "דירוג השחקנים הטובים ביותר של FAITHCHRONICLES",
+                searchPlaceholder: "🔍 חיפוש שחקן...",
+                loading: "⏳ טוען תוצאות...",
+                rankHeader: "דירוג",
+                avatarHeader: "אווטר",
+                playerHeader: "שחקן",
+                levelHeader: "רמה",
+                scoreHeader: "ניקוד",
                 gamesTitle: "משחקים ועיצוב",
                 gamesDesc: "גלו את היצירות החזותיות שלי, משחקים אינטראקטיביים ועיטורים אמנותיים החוגגים אמונה ויופי.",
                 booksTitle: "ספרים ואמנות",
@@ -1422,6 +1623,15 @@
             uk: {
                 pageTitle: "Еммануель Пайє - Християнський Художник",
                 subtitle: "Християнський Художник • Творець • Натхненник",
+                leaderboardTitle: "🏆 Топ 33 Мільйони Світовий",
+                leaderboardSubtitle: "Рейтинг найкращих гравців FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Пошук гравця...",
+                loading: "⏳ Завантаження результатів...",
+                rankHeader: "Ранг",
+                avatarHeader: "Аватар",
+                playerHeader: "Гравець",
+                levelHeader: "Рівень",
+                scoreHeader: "Рахунок",
                 gamesTitle: "Ігри та Декор",
                 gamesDesc: "Відкрийте мої візуальні творіння, інтерактивні ігри та художні прикраси, які прославляють віру та красу.",
                 booksTitle: "Книги та Мистецтво",
@@ -1432,11 +1642,106 @@
                 shopDesc: "Це зараз! Відкрийте мій магазин Redbubble з унікальними дизайнами та надихаючими творіннями для носіння.",
                 quote: "Християнське мистецтво об'єднує серця за межами відмінностей, прославляючи красу божественного творіння у всьому його різноманітті.",
                 credits: "Запрограмовано Claude • Оригінальна ідея Еммануель Пайє"
-            }
+            },
+            pl: {
+                pageTitle: "Emmanuel Payet - Artysta Chrześcijański",
+                subtitle: "Artysta Chrześcijański • Twórca • Inspirator",
+                leaderboardTitle: "🏆 Top 33 Miliony Światowy",
+                leaderboardSubtitle: "Ranking najlepszych graczy FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Szukaj gracza...",
+                loading: "⏳ Ładowanie wyników...",
+                rankHeader: "Ranga",
+                avatarHeader: "Awatar",
+                playerHeader: "Gracz",
+                levelHeader: "Poziom",
+                scoreHeader: "Wynik",
+                gamesTitle: "Gry i Dekoracje",
+                gamesDesc: "Odkryj moje wizualne kreacje, interaktywne gry i artystyczne dekoracje, które celebrują wiarę i piękno.",
+                booksTitle: "Książki i Sztuka",
+                booksDesc: "Zanurz się w moich dziełach literackich i artystycznych, stworzonych z moją córką Béthanie, aby odżywiać duszę i ducha.",
+                musicTitle: "Darmowy Gospel",
+                musicDesc: "Słuchaj moich kompozycji gospel na AudioMack, melodii, które chwalą Boga i inspirują jedność w różnorodności.",
+                shopTitle: "Dobry Czas",
+                shopDesc: "To teraz! Odkryj mój sklep Redbubble z unikalnymi projektami i inspirującymi kreacjami do noszenia.",
+                quote: "Sztuka chrześcijańska jednoczy serca ponad różnicami, celebrując piękno boskiego stworzenia we wszystkich jego odmianach.",
+                credits: "Zaprogramowane przez Claude • Pomysł oryginalny Emmanuel Payet"
+            },
+            sw: {
+                pageTitle: "Emmanuel Payet - Msanii wa Kikristo",
+                subtitle: "Msanii wa Kikristo • Muumbaji • Mtia Hamasa",
+                leaderboardTitle: "🏆 Wabora 33 Milioni Duniani",
+                leaderboardSubtitle: "Orodha ya wachezaji bora wa FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Tafuta mchezaji...",
+                loading: "⏳ Inapakia matokeo...",
+                rankHeader: "Hadhi",
+                avatarHeader: "Picha",
+                playerHeader: "Mchezaji",
+                levelHeader: "Kiwango",
+                scoreHeader: "Alama",
+                gamesTitle: "Michezo na Mapambo",
+                gamesDesc: "Gundua miundo yangu ya kuona, michezo ya maingiliano na mapambo ya kisanii yanayosherehekea imani na uzuri.",
+                booksTitle: "Vitabu na Sanaa",
+                booksDesc: "Zama katika kazi zangu za kifasihi na kisanii, zilizotengenezwa na binti yangu Béthanie, ili kulisha roho na nafsi.",
+                musicTitle: "Gospel Bure",
+                musicDesc: "Sikiliza michanganyiko yangu ya gospel kwenye AudioMack, melodi zinazomsifu Mungu na kuhamasisha umoja katika utofauti.",
+                shopTitle: "Wakati Mzuri",
+                shopDesc: "Ni sasa! Gundua duka langu la Redbubble lilialo na miundo ya kipekee na ubunifu unaotia hamasa wa kuvaa.",
+                quote: "Sanaa ya Kikristo inaunganisha mioyo zaidi ya tofauti, ikisherehekea uzuri wa uumbaji wa kimungu katika utofauti wake wote.",
+                credits: "Imeprogramiwa na Claude • Wazo la asili Emmanuel Payet"
+            },
+            hi: {
+                pageTitle: "इमैनुएल पायेट - ईसाई कलाकार",
+                subtitle: "ईसाई कलाकार • रचनाकार • प्रेरक",
+                leaderboardTitle: "🏆 शीर्ष 33 मिलियन विश्वव्यापी",
+                leaderboardSubtitle: "FAITHCHRONICLES के सर्वश्रेष्ठ खिलाड़ियों की रैंकिंग",
+                searchPlaceholder: "🔍 खिलाड़ी खोजें...",
+                loading: "⏳ परिणाम लोड हो रहे हैं...",
+                rankHeader: "रैंक",
+                avatarHeader: "अवतार",
+                playerHeader: "खिलाड़ी",
+                levelHeader: "स्तर",
+                scoreHeader: "स्कोर",
+                gamesTitle: "गेम्स और सजावट",
+                gamesDesc: "मेरी दृश्य रचनाएँ, इंटरएक्टिव गेम्स और कलात्मक सजावट की खोज करें जो विश्वास और सुंदरता का जश्न मनाती हैं।",
+                booksTitle: "किताबें और कला",
+                booksDesc: "मेरी साहित्यिक और कलात्मक रचनाओं में डूबें, जो मेरी बेटी बेताने के साथ बनाई गई हैं, आत्मा और आत्मा को पोषण देने के लिए।",
+                musicTitle: "मुफ्त गॉस्पेल",
+                musicDesc: "AudioMack पर मेरी गॉस्पेल रचनाएँ सुनें, धुनें जो भगवान की स्तुति करती हैं और विविधता में एकता को प्रेरित करती हैं।",
+                shopTitle: "अच्छा समय",
+                shopDesc: "यह अभी है! अद्वितीय डिज़ाइन और प्रेरक रचनाओं के साथ मेरी Redbubble दुकान खोजें।",
+                quote: "ईसाई कला अंतर से परे दिलों को जोड़ती है, अपनी सभी विविधता में दिव्य सृष्टि की सुंदरता का जश्न मनाती है।",
+                credits: "Claude द्वारा प्रोग्राम किया गया • मूल विचार इमैनुएल पायेट"
+            },
+            rc: {
+                pageTitle: "Emmanuel Payet - Mosali ya Kristo",
+                subtitle: "Mosali ya Kristo • Mokeli • Motindi",
+                leaderboardTitle: "🏆 Ba Malamu 33 Million na Mokili",
+                leaderboardSubtitle: "Classement ya ba basani malamu ya FAITHCHRONICLES",
+                searchPlaceholder: "🔍 Luka mosani...",
+                loading: "⏳ Ezali kokarga ba scores...",
+                rankHeader: "Rang",
+                avatarHeader: "Avatar",
+                playerHeader: "Mosani",
+                levelHeader: "Niveau",
+                scoreHeader: "Score",
+                gamesTitle: "Masano na Mapambo",
+                gamesDesc: "Mona ba créations visuelles na ngai, masano ya kozongazonga na mapambo ya bongengi oyo ezali kosepelisa kondima na kitoko.",
+                booksTitle: "Mikanda na Art",
+                booksDesc: "Kota na misala na ngai ya mikanda na bongengi, oyo nasalaki elongo na mwana na ngai ya mwasi Béthanie, mpo na koleisa molimo na motema.",
+                musicTitle: "Gospel ya Ofele",
+                musicDesc: "Yoka ba compositions na ngai ya gospel na AudioMack, melodi oyo ezali kokumisa Nzambe mpe kopesa ngolu na bosangani na bokeseni.",
+                shopTitle: "Ngonga Malamu",
+                shopDesc: "Ezali sikawa! Mona magazini na ngai Redbubble na ba designs ekeseni mpe ba créations ya kopesa ngolu ya kolata.",
+                quote: "Art ya Kristo esangisaka mitema na likolo ya bokeseni, kosepelaka na kitoko ya bokeli ya Nzambe na bokeseni na yango mobimba.",
+                credits: "Esalemi na Claude • Likanisi ya ebandeli Emmanuel Payet"
+            },
         };
 
+        // Variable globale pour la langue actuelle
+        window.currentLanguage = 'en';
+
         // Fonction pour détecter la langue depuis l'URL ou le parent
-        function detectLanguage() {
+        window.detectLanguage = function() {
             // Essayer de récupérer la langue depuis l'URL
             const urlParams = new URLSearchParams(window.location.search);
             let lang = urlParams.get('lang');
@@ -1451,42 +1756,137 @@
             }
             
             // Si pas trouvé, essayer localStorage
-            if (!lang && localStorage.getItem('selectedLanguage')) {
-                lang = localStorage.getItem('selectedLanguage');
+            if (!lang && localStorage.getItem('emmanuelModuleLanguage')) {
+                lang = localStorage.getItem('emmanuelModuleLanguage');
             }
             
-            // Par défaut français
-            return lang && translations[lang] ? lang : 'fr';
+            // Si toujours pas trouvé, détecter la langue du navigateur
+            if (!lang) {
+                const browserLang = navigator.language || navigator.userLanguage;
+                // Extraire le code langue (ex: 'en-US' -> 'en')
+                lang = browserLang.split('-')[0].toLowerCase();
+                
+                // Mapper certaines langues spécifiques
+                const langMap = {
+                    'zh': 'zh',
+                    'ar': 'ar',
+                    'he': 'he',
+                    'ja': 'jp',
+                    'ko': 'ko',
+                    'hi': 'hi',
+                    'sw': 'sw',
+                    'pl': 'pl',
+                    'ln': 'rc',  // Lingala
+                    'uk': 'uk',
+                    'ru': 'ru'
+                };
+                
+                if (langMap[lang]) {
+                    lang = langMap[lang];
+                }
+            }
+            
+            // Par défaut anglais si la langue n'est pas supportée
+            return lang && window.translations[lang] ? lang : 'en';
+        }
+
+        // Fonction pour changer la langue
+        window.changeLanguage = function(lang) {
+            if (!window.translations[lang]) {
+                console.error('❌ Langue non supportée:', lang);
+                return;
+            }
+            
+            window.currentLanguage = lang;
+            localStorage.setItem('emmanuelModuleLanguage', lang);
+            
+            // Mettre à jour le sélecteur
+            const select = document.getElementById('languageSelect');
+            if (select) {
+                select.value = lang;
+            }
+            
+            // Appliquer les traductions
+            window.applyTranslation(lang);
+            
+            console.log('✅ Langue changée:', lang);
         }
 
         // Fonction pour appliquer la traduction
-        function applyTranslation(lang) {
-            const t = translations[lang];
-            if (!t) return;
+        window.applyTranslation = function(lang) {
+            const t = window.translations[lang];
+            if (!t) {
+                console.error('❌ Traduction non trouvée pour:', lang);
+                return;
+            }
 
-            document.getElementById('page-title').textContent = t.pageTitle;
+            console.log('🌍 Application des traductions pour:', lang);
+
+            // Éléments statiques à traduire
+            const staticElements = {
+                'page-title': t.pageTitle,
+                'subtitle': t.subtitle,
+                'leaderboard-title': t.leaderboardTitle,
+                'leaderboard-subtitle': t.leaderboardSubtitle,
+                'rank-header': t.rankHeader,
+                'avatar-header': t.avatarHeader,
+                'player-header': t.playerHeader,
+                'level-header': t.levelHeader,
+                'score-header': t.scoreHeader,
+                'games-title': t.gamesTitle,
+                'games-desc': t.gamesDesc,
+                'books-title': t.booksTitle,
+                'books-desc': t.booksDesc,
+                'music-title': t.musicTitle,
+                'music-desc': t.musicDesc,
+                'shop-title': t.shopTitle,
+                'shop-desc': t.shopDesc,
+                'inspiring-quote': t.quote,
+                'credits': t.credits
+            };
+
+            // Appliquer les traductions pour les éléments qui existent
+            Object.keys(staticElements).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.textContent = staticElements[id];
+                }
+            });
+
+            // Mettre à jour le titre de la page
             document.title = t.pageTitle;
-            document.getElementById('subtitle').textContent = t.subtitle;
-            document.getElementById('games-title').textContent = t.gamesTitle;
-            document.getElementById('games-desc').textContent = t.gamesDesc;
-            document.getElementById('books-title').textContent = t.booksTitle;
-            document.getElementById('books-desc').textContent = t.booksDesc;
-            document.getElementById('music-title').textContent = t.musicTitle;
-            document.getElementById('music-desc').textContent = t.musicDesc;
-            document.getElementById('shop-title').textContent = t.shopTitle;
-            document.getElementById('shop-desc').textContent = t.shopDesc;
-            document.getElementById('inspiring-quote').textContent = t.quote;
-            document.getElementById('credits').textContent = t.credits;
             
-            // Mettre à jour l'attribut lang
+            // Mettre à jour le placeholder de recherche
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.placeholder = t.searchPlaceholder;
+            }
+            
+            // Mettre à jour l'attribut lang et direction pour RTL
             document.documentElement.lang = lang;
+            document.documentElement.dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
+            
+            console.log('✅ Traductions appliquées avec succès');
         }
 
         // Initialiser la langue au chargement
-        window.addEventListener('load', () => {
-            const currentLang = detectLanguage();
-            applyTranslation(currentLang);
-            console.log('🌍 Module Emmanuel chargé en:', currentLang);
+        document.addEventListener('DOMContentLoaded', () => {
+            window.currentLanguage = window.detectLanguage();
+            console.log('🔍 Langue détectée:', window.currentLanguage);
+            
+            // Mettre à jour le sélecteur avec la langue détectée
+            const select = document.getElementById('languageSelect');
+            if (select) {
+                select.value = window.currentLanguage;
+                
+                // Écouter les changements
+                select.addEventListener('change', (e) => {
+                    window.changeLanguage(e.target.value);
+                });
+            }
+            
+            // Appliquer la traduction initiale
+            window.applyTranslation(window.currentLanguage);
         });
 
         // Animation au scroll pour les cartes

@@ -122,6 +122,7 @@ class ModuleManager {
       const response = await import(`../data/translations/${this.currentLanguage}/interface_chapter${chapterId}.js`);
       return response.default;
     } catch (error) {
+      console.log(`⚠️ Traduction pour chapitre ${chapterId} en ${this.currentLanguage} non disponible`);
       return null;
     }
   }
@@ -129,22 +130,48 @@ class ModuleManager {
   mergeTranslation(chapterData, translation) {
     if (!translation) return chapterData;
     
+    const mergedLevels = {};
+    
+    // Les levels sont des objets avec des clés numériques, pas des tableaux
+    Object.keys(chapterData.levels).forEach(levelKey => {
+      const level = chapterData.levels[levelKey];
+      const translatedLevel = translation.levels?.[levelKey];
+      
+      if (!translatedLevel) {
+        mergedLevels[levelKey] = level;
+        return;
+      }
+      
+      mergedLevels[levelKey] = {
+        ...level,
+        name: translatedLevel.name || level.name,
+        challenge: translatedLevel.challenge || level.challenge,
+        questions: {
+          easy: this.mergeQuestion(level.questions.easy, translatedLevel.easy),
+          medium: this.mergeQuestion(level.questions.medium, translatedLevel.medium),
+          hard: this.mergeQuestion(level.questions.hard, translatedLevel.hard)
+        }
+      };
+    });
+    
     return {
       ...chapterData,
       name: translation.name || chapterData.name,
       description: translation.description || chapterData.description,
-      levels: chapterData.levels.map((level, index) => ({
-        ...level,
-        title: translation.levels?.[index]?.title || level.title,
-        questions: level.questions.map((question, qIndex) => ({
-          ...question,
-          question: translation.levels?.[index]?.questions?.[qIndex]?.question || question.question,
-          answers: question.answers.map((answer, aIndex) => 
-            translation.levels?.[index]?.questions?.[qIndex]?.answers?.[aIndex] || answer
-          ),
-          explanation: translation.levels?.[index]?.questions?.[qIndex]?.explanation || question.explanation
-        }))
-      }))
+      spiritualWisdom: translation.spiritualWisdom || chapterData.spiritualWisdom,
+      levels: mergedLevels
+    };
+  }
+  
+  mergeQuestion(originalQuestion, translatedQuestion) {
+    if (!translatedQuestion) return originalQuestion;
+    
+    return {
+      ...originalQuestion,
+      question: translatedQuestion.question || originalQuestion.question,
+      options: translatedQuestion.options || originalQuestion.options,
+      hint: translatedQuestion.hint || originalQuestion.hint,
+      funFact: translatedQuestion.funFact || originalQuestion.funFact
     };
   }
 

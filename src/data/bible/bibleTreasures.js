@@ -2,7 +2,7 @@
 // BIBLE TREASURES MODULE - Multilingual Bible treasures and wisdom
 // ============================================================================
 import { bibleData } from './bibleData.js';
-import { strongGreek } from './strongGreek.js';
+import { getStrongDictionary } from './strong/index.js';
 
 /**
  * Bible Treasures Manager - Handles multilingual bible content
@@ -96,11 +96,17 @@ export const bibleTreasures = {
     const funQuestion = this.getRandomFunQuestion();
     const jesusClarification = this.getRandomJesusClarification();
     
+    // Get current language for Strong dictionary
+    const currentLang = this.getCurrentLanguage();
+    
     // Get Strong's reference from verse if available
     const strongKeys = verse.strongNumbers ? Object.keys(verse.strongNumbers) : [];
     const randomStrongKey = strongKeys.length > 0 ? strongKeys[Math.floor(Math.random() * strongKeys.length)] : null;
     const strongRef = randomStrongKey ? verse.strongNumbers[randomStrongKey] : null;
-    const strongData = strongRef ? strongGreek[strongRef] : null;
+    
+    // Use multilingual Strong dictionary based on current language
+    const strongDict = getStrongDictionary(currentLang);
+    const strongData = strongRef ? strongDict[strongRef] : null;
 
     // Get Bible resources (with translation support)
     const offlineBibleResource = bibleData.bibleResources?.find(r => r.name === "translatable:inAppReader");
@@ -177,13 +183,13 @@ export const bibleTreasures = {
     return {
       verse: `"${treasure.verse.text}" - ${treasure.verse.reference}`,
       fact: treasure.fact.text,
-      treasure: `Contexte : ${treasure.verse.context}`,
+      treasure: t ? `${t('treasures.context')} : ${treasure.verse.context}` : `Contexte : ${treasure.verse.context}`,
       question: `${treasure.funQuestion.question} ${treasure.funQuestion.emoji || '🤔'}`,
       jesusIsNot: `❌ ${treasure.jesusClarification.text}`,
       jesusIsNotContext: `📖 ${treasure.jesusClarification.reference} - ${treasure.jesusClarification.context}`,
       strongGreek: treasure.strongReference ? 
         `Strong ${treasure.strongReference.number} : ${treasure.strongReference.word} (${treasure.strongReference.transliteration}) = ${treasure.strongReference.meaning}` :
-        `Strong : Référence biblique pour étude approfondie`,
+        (t ? `Strong : ${t('treasures.strongReference')}` : `Strong : Référence biblique pour étude approfondie`),
       bibleResource: treasure.resources.offline || treasure.resources.online,
       otherBibleResource: treasure.resources.online,
       theme: treasure.verse.theme,

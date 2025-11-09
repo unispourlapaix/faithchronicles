@@ -40,12 +40,37 @@ const useChapterData = () => {
         return null;
       }
 
+      // Normaliser la structure : les traductions ont easy/medium/hard directement,
+      // les fichiers sources ont questions.easy/medium/hard
+      let easyQuestion, mediumQuestion, hardQuestion;
+      
+      if (level.questions) {
+        // Structure source française : level.questions.easy
+        easyQuestion = level.questions.easy;
+        mediumQuestion = level.questions.medium;
+        hardQuestion = level.questions.hard;
+      } else {
+        // Structure traductions : level.easy directement
+        easyQuestion = level.easy;
+        mediumQuestion = level.medium;
+        hardQuestion = level.hard;
+      }
+      
+      console.log(`🔍 [useChapterData] Niveau ${levelId} - Structure:`, {
+        hasQuestions: !!level.questions,
+        easyHint: easyQuestion?.hint,
+        easyOptions: easyQuestion?.options
+      });
+      
       // Ajouter les réponses correctes depuis le fichier centralisé
       const levelWithCorrectAnswers = {
-        ...level,
-        easy: level.easy ? { ...level.easy, correct: getCorrectAnswer(levelId, 'easy') } : undefined,
-        medium: level.medium ? { ...level.medium, correct: getCorrectAnswer(levelId, 'medium') } : undefined,
-        hard: level.hard ? { ...level.hard, correct: getCorrectAnswer(levelId, 'hard') } : undefined,
+        name: level.name,
+        challenge: level.challenge,
+        questions: {
+          easy: easyQuestion ? { ...easyQuestion, correct: getCorrectAnswer(levelId, 'easy') } : undefined,
+          medium: mediumQuestion ? { ...mediumQuestion, correct: getCorrectAnswer(levelId, 'medium') } : undefined,
+          hard: hardQuestion ? { ...hardQuestion, correct: getCorrectAnswer(levelId, 'hard') } : undefined
+        },
         chapterInfo: {
           id: chapterId,
           name: chapterData.name,

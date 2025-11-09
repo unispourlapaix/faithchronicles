@@ -5,14 +5,16 @@
 export const uiTranslations = {
   meta: {
     language: 'fr',
-    languageName: 'Fran├ºais',
+    languageName: 'Franêais',
     version: '1.0'
   },
   
   app: {
     title: "UNITYQUEST Chroniques\nde l'Amour",
-    subtitle: "D├®couverte interactive des ├ëcritures",
-    tagline: "Marcher vers la lumi├¿re divine"
+    subtitle: "Découverte interactive des Écritures",
+    tagline: "Marcher vers la lumiïre divine",
+    menu: "Menu",
+    retry: "Réessayer"
   },
   
   buttons: {
@@ -22,8 +24,8 @@ export const uiTranslations = {
     restart: "Recommencer",
     close: "Fermer",
     nextLevel: "Niveau Suivant",
-    selectLevel: "S├®lection des Niveaux",
-    retry: "R├®essayer",
+    selectLevel: "Sélection des Niveaux",
+    retry: "Réessayer",
     mainMenu: "Menu Principal",
     start: "Commencer",
     cancel: "Annuler",
@@ -36,9 +38,9 @@ export const uiTranslations = {
   
   labels: {
     score: "Score",
-    stars: "├ëtoiles",
+    stars: "étoiles",
     wisdom: "Sagesse",
-    revelation: "R├®v├®lation",
+    revelation: "Révélation",
     lives: "Vies",
     combo: "Combo",
     level: "NIVEAU",
@@ -46,17 +48,17 @@ export const uiTranslations = {
     medium: "MOYEN",
     hard: "DIFFICILE",
     correct: "Correct !",
-    gameOver: "├ëpreuve ├ëchou├®e",
+    gameOver: "épreuve échouée",
     victory: "Victoire !",
-    completed: "Compl├®t├®",
+    completed: "Complété",
     rank: "Rang Spirituel",
     points: "Points de Sagesse",
-    unlockedLevels: "niveau(x) d├®bloqu├®(s)",
+    unlockedLevels: "niveau(x) débloqué(s)",
     questionOfKnowledge: "Question de Connaissance",
     hintOfWisdom: "Indice de Sagesse",
-    knowledgeMastered: "Connaissance Ma├«tris├®e !",
+    knowledgeMastered: "Connaissance Maîtrisée !",
     knowledgeAcquired: "Connaissance acquise !",
-    testFailed: "├ëpreuve ├ëchou├®e",
+    testFailed: "épreuve échouée",
     wisdomBonus: "Bonus",
     xpGained: "XP",
     newRank: "Nouveau rang",
@@ -67,25 +69,25 @@ export const uiTranslations = {
   menu: {
     playButton: "JOUER",
     info: "Info",
-    treasures: "Tr├®sors",
+    treasures: "Trésors",
     john: "Jean",
     reset: "Reset",
-    restart: "­ƒöä Recommencer l'aventure ?",
-    confirmReset: "Es-tu s├╗r de vouloir effacer toute ta progression ?",
+    restart: "🔄 Recommencer l'aventure ?",
+    confirmReset: "Es-tu sûr de vouloir effacer toute ta progression ?",
     youWillLose: "Tu perdras :",
     wisdomPoints: "Points de Sagesse",
-    starsCollected: "├®toiles collect├®es",
-    levelsUnlocked: "niveau(x) d├®bloqu├®(s)",
+    starsCollected: "étoiles collectées",
+    levelsUnlocked: "niveau(x) débloqué(s)",
     spiritualRank: "Rang Spirituel",
-    newAdventure: "­ƒÄ« Nouvelle Aventure",
-    readyToStart: "Pr├¬t ├á commencer ?",
-    startJourney: "Commence ton voyage dans la connaissance des ├ëcritures !",
-    audioControls: "Contr├┤les audio",
+    newAdventure: "🌟 Nouvelle Aventure",
+    readyToStart: "Prèt à commencer ?",
+    startJourney: "Commence ton voyage dans la connaissance des Écritures !",
+    audioControls: "Contrôles audio",
     mute: "Couper le son",
     unmute: "Activer le son",
     close: "Fermer",
     language: "Langue",
-    restartGame: "Red├®marrer le jeu"
+    restartGame: "Redémarrer le jeu"
   },
   
   login: {
@@ -99,16 +101,16 @@ export const uiTranslations = {
     pseudoPlaceholder: "Votre pseudo...",
     email: "Adresse Email",
     emailPlaceholder: "votre@email.com",
-    startPlaying: "Commencer ├á jouer",
+    startPlaying: "Commencer à jouer",
     sendLink: "Envoyer le lien",
     sending: "Envoi...",
     connecting: "Connexion...",
     back: "Retour",
-    localSave: "Votre progression sera sauvegard├®e localement",
-    cloudSync: "Pas de mot de passe requis ÔÇó Synchronisation cloud",
+    localSave: "Votre progression sera sauvegardée localement",
+    cloudSync: "Pas de mot de passe requis • Synchronisation cloud",
     magicLink: "Recevez un lien magique par email",
-    checkEmail: "Ô£ë´©Å V├®rifiez votre email ! Un lien de connexion vous a ├®t├® envoy├®.",
-    checkSpam: "V├®rifiez aussi vos spams/courriers ind├®sirables",
+    checkEmail: "📧 Vérifiez votre email ! Un lien de connexion vous a été envoyé.",
+    checkSpam: "Vérifiez aussi vos spams/courriers indésirables",
     waitingConnection: "En attente de connexion...",
     errorSend: "Erreur d'envoi du lien",
     errorConnection: "Erreur de connexion",
@@ -120,66 +122,95 @@ export const uiTranslations = {
     seeker: "Chercheur",
     disciple: "Disciple",
     servant: "Serviteur",
-    witness: "T├®moin",
+    witness: "Témoin",
     guardian: "Gardien",
     wise: "Sage",
-    prophet: "Proph├¿te",
-    apostle: "Ap├┤tre"
+    prophet: "Prophète",
+    apostle: "Apôtre",
+    seekerDesc: "Début du voyage spirituel",
+    discipleDesc: "Apprentissage des enseignements",
+    servantDesc: "Service et dévotion",
+    witnessDesc: "Partage de la foi",
+    guardianDesc: "Protection de la vérité",
+    wiseDesc: "Sagesse et connaissance",
+    prophetDesc: "Vision spirituelle",
+    apostleDesc: "Maître spirituel"
+  },
+
+  spiritualJourney: {
+    beginning: "Début du voyage spirituel",
+    progress: "Progression spirituelle",
+    grade: "Grade",
+    xp: "XP",
+    level: "Niveau",
+    nextGrade: "Prochain grade",
+    still: "Encore",
+    maxLevelReached: "Niveau Maximum Atteint !",
+    masteredAllTeachings: "Vous avez maîtrisé tous les enseignements",
+    progression: "Progression"
   },
   
   treasures: {
-    title: "­ƒÆÄ Les Tr├®sors de la Bible",
+    title: "📖 Les Trésors de la Bible",
     verse: "Verset du jour",
     fact: "Le saviez-vous ?",
-    treasure: "Tr├®sor cach├®",
+    treasure: "🎁 Trésor caché",
     question: "Question rigolote",
-    newTreasure: "Nouveau tr├®sor",
-    johnGospelDescription: "L'├ëvangile de Jean r├®v├¿le la divinit├® de J├®sus ├á travers 21 chapitres inspirants.",
+    newTreasure: "Nouveau trésor",
+    context: "Contexte",
+    strongReference: "Référence biblique pour étude approfondie",
+    johnGospelDescription: "L'évangile de Jean révèle la divinité de Jésus à travers 21 chapitres inspirants.",
     availableInLanguages: "Disponible en 14 langues",
+    johnGospelTitle: "Évangile de Jean",
+    johnGospelStats: "21 chapitres • 878 versets • 14 langues",
+    bibleReaderStrong: "Lecteur Bible + Strong",
+    bibleReaderStrongDesc: "Lecture complète avec dictionnaire Strong",
+    johnTreasures: "Trésors de Jean",
+    johnTreasuresDesc: "Trésors bibliques et anecdotes intéressantes",
     johnBibleReader: "Lecteur Bible Jean + Strong",
-    emmanuelMemo: "M├®mo d'Emmanuel",
-    emmanuelMessage: "Vous ├¬tes arriv├®s en haut de la montagne, et la connaissance est acquise. Mais la foi in├®branlable demande de l'exp├®rience de vie, de la mis├®ricorde et du v├®ritable amour de J├®sus. Les diverses ├®preuves de la vie testeront votre voie, le vrai chemin que l'on choisit, notre c┼ôur. Nous restons imparfaits, nos d├®sirs sont nombreux, et l'amour du gain ou de notre confort personnel devient trop souvent notre priorit├® ├®go├»ste. Demandez ├á Dieu la sagesse, son amour, sa force, et reconnaissez vos faiblesses humblement, car on ne peut rien Lui cacherÔÇª Rien. Inutile de voyager en mode priv├®, en VPN, ou m├¬me d'effacer l'historique. Je├╗nez comme Daniel : privez-vous un moment de ce que vous aimez le plus, dans le calme et la sagesse. Cela vous permettra de mieux entendre Dieu, d'avoir une disposition de c┼ôur pr├¬te aux transformations profondes ÔÇö et souvent douloureuses. Alors, les r├¬ves et les songes deviendront plus clairs, comme pour Joseph. Mais gardez-vous de l'orgueil : ne c├®dez pas au ┬½ j'ai toujours raison ┬╗ ou au ┬½ je connais mieux ┬╗. Car la r├®v├®lation de Dieu est une gr├óce extraordinaire. Ne devenez pas un docteur de la Loi, capable de crucifier encore J├®sus aujourd'hui, Lui qui demande simplement d'aimer votre prochainÔÇª et de lui accorder la m├¬me libert├® que vous-m├¬me recevez. Avoir la foi, c'est entrer dans une relation et un cheminement libre du c┼ôur. Elle fera de vous des h├®ros puissants, capables de l'impossible. Car l'exp├®rience du surnaturel, la pr├®sence de Dieu, sa confirmation ou sa b├®n├®diction vous rendra vraiment in├®branlables.",
+    emmanuelMemo: "Mémo d'Emmanuel",
+    emmanuelMessage: "Vous êtes arrivés en haut de la montagne, et la connaissance est acquise. Mais la foi inébranlable demande de l'expérience de vie, de la miséricorde et du véritable amour de Jésus. Les diverses épreuves de la vie testeront votre voie, le vrai chemin que l'on choisit, notre cœur. Nous restons imparfaits, nos désirs sont nombreux, et l'amour du gain ou de notre confort personnel devient trop souvent notre priorité égoïste. Demandez à Dieu la sagesse, son amour, sa force, et reconnaissez vos faiblesses humblement, car on ne peut rien Lui cacher… Rien. Inutile de voyager en mode privé, en VPN, ou même d'effacer l'historique. Jeûnez comme Daniel : privez-vous un moment de ce que vous aimez le plus, dans le calme et la sagesse. Cela vous permettra de mieux entendre Dieu, d'avoir une disposition de cœur prête aux transformations profondes — et souvent douloureuses. Alors, les rêves et les songes deviendront plus clairs, comme pour Joseph. Mais gardez-vous de l'orgueil : ne cédez pas au « j'ai toujours raison » ou au « je connais mieux ». Car la révélation de Dieu est une grâce extraordinaire. Ne devenez pas un docteur de la Loi, capable de crucifier encore Jésus aujourd'hui, Lui qui demande simplement d'aimer votre prochain… et de lui accorder la même liberté que vous-même recevez. Avoir la foi, c'est entrer dans une relation et un cheminement libre du cœur. Elle fera de vous des héros puissants, capables de l'impossible. Car l'expérience du surnaturel, la présence de Dieu, sa confirmation ou sa bénédiction vous rendra vraiment inébranlables.",
     clarification: "Clarification importante",
     bibleOffline: "Lire la Bible Offline",
-    bibleStudy: "├ëtude biblique",
+    bibleStudy: "Étude biblique",
     version: "Version",
     openReader: "Ouvrir le lecteur",
-    features: "Fonctionnalit├®s"
+    features: "Fonctionnalités"
   },
   
   messages: {
-    chooseCard: "ÔÜí Choisis ta carte de pouvoir",
+    chooseCard: "🃏 Choisis ta carte de pouvoir",
     cardHelp: "Elle t'accompagnera pour les 3 questions de ce niveau",
-    chooseAnswer: "­ƒôû Choisis ta r├®ponse :",
-    wrongAnswer: "ÔØî Mauvaise r├®ponse ! Il te reste {lives} vie(s). Essaie encore !",
-    levelCompleted: "Niveau {level} Compl├®t├®",
+    chooseAnswer: "📖 Choisis ta réponse :",
+    wrongAnswer: "❌ Mauvaise réponse ! Il te reste {lives} vie(s). Essaie encore !",
+    levelCompleted: "Niveau {level} Complété",
     questionsProgress: "Question {current} sur {total}",
-    starsCollected: "├ëtoiles collect├®es : {current}/{total}",
+    starsCollected: "étoiles collectées : {current}/{total}",
     pointsEarned: "+{points} Points de Sagesse",
-    secondChance: "ÔÜö´©Å Ta carte COURAGE te donne une seconde chance ! R├®essaie avec sagesse.",
-    bonusApplied: "Ô£¿ Bonus {card} : +{percent}% ({base} ÔåÆ {final})",
-    defeatedQuote: "Je puis tout par celui qui me fortifie - Phil. 4:13",
-    perfect: "Ô£¿ Parfait",
-    good: "Ô¡É Bien",
-    start: "Ô¡É D├®but",
-    secretLevel: "­ƒÄ║ NIVEAU SECRET D├ëBLOQU├ë!",
-    secretChapter: "­ƒÅå Chapitre Secret",
+    secondChance: "🔥 Votre carte COURAGE vous donne une seconde chance ! Réessayez avec sagesse.",
+    bonusApplied: "🃏 Bonus {card} : +{percent}% ({base} → {final})",
+    defeatedQuote: "Je puis tout par celui qui me fortifie",
+    perfect: "🃏 Parfait",
+    good: "✅ Bien",
+    start: "✅ Début",
+    secretLevel: "🔓 NIVEAU SECRET DÉBLOQUÉ!",
+    secretChapter: "🎁 Chapitre Secret",
     returnToLevels: "Retour",
     next: "Suivant",
-    retry: "R├®essayer",
+    retry: "Réessayer",
     menu: "Menu",
     chapter: "Chapitre",
-    chapterStars: "├ëtoiles du chapitre",
+    chapterStars: "étoiles du chapitre",
     totalGlobal: "Total global",
     backToMenu: "Retour au Menu"
   },
   
   chapters: {
-    "1": "La Gen├¿se",
+    "1": "La Genïse",
     "2": "L'Exode",
-    "3": "J├®sus-Christ",
-    "4": "Crucifixion/R├®surrection",
-    "5": "├ëglise primitive",
+    "3": "Jésus-Christ",
+    "4": "Crucifixion/Résurrection",
+    "5": "Église primitive",
     "6": "Missions de Paul",
     "7": "Lettres/Apocalypse",
     "8": "Niveau Bonus"
@@ -194,114 +225,129 @@ export const uiTranslations = {
     wisdomKnowledge: "Indice + bonus",
     faithDesc: "Maximum de points de sagesse obtenus",
     courageDesc: "Points normaux mais seconde chance",
-    wisdomDesc: "Indice r├®v├®l├® et +25% points",
-    chooseCard: "Ô£¿ Choisis ta carte de connaissance",
-    cardEffects: "Ô£¿ Effets des cartes de connaissance :",
-    faithEffect: "+50% points de sagesse - Maximum de r├®compense",
+    wisdomDesc: "Indice révélé et +25% points",
+    chooseCard: "🃏 Choisis un don de connaissance",
+    cardEffects: "🃏 Effets des dons de connaissance :",
+    faithEffect: "+50% points de sagesse - Maximum de récompense",
     courageEffect: "Points normaux mais seconde chance sur erreur",
-    wisdomEffect: "+25% points + indice r├®v├®l├® pour chaque question",
+    wisdomEffect: "+25% points + indice révélé pour chaque question",
     chooseWisely: "Choisis avec sagesse, car ton choix t'accompagnera tout au long du niveau"
   },
   
   challenge: {
     loading: "Chargement du niveau...",
-    peace: "­ƒòè´©Å Que la paix repose dans ta maison",
-    questionsAwaiting: "­ƒÆí 3 questions de connaissance t'attendent",
-    starsQuote: "Chaque ├®toile est une ├®tape vers la lumi├¿re divine"
+    peace: "🕊️ Que la paix repose dans ta maison",
+    questionsAwaiting: "📚 3 questions de connaissance t'attendent",
+    starsQuote: "Chaque étoile est une étape vers la lumiïre divine"
   },
   
   info: {
     title: "Unity Quest Chronicles of Peace",
-    subtitle: "D├®couverte interactive des ├ëcritures",
+    subtitle: "Découverte interactive des Écritures",
     yourStats: "Vos Statistiques",
     score: "Score",
     wisdom: "Sagesse",
-    revelation: "R├®v├®lation",
-    createdWith: "Cr├®├® avec ÔØñ´©Å",
+    revelation: "Révélation",
+    createdWith: "Créé avec ❤️",
     creator: "Emmanuel Payet",
     developerPassionate: "Développeur passionné de spiritualité",
     artistModule: "Emmanuel Artiste",
     artistPortfolio: "Portfolio artistique et créations numériques",
-    features: "Fonctionnalit├®s",
-    multipleChapters: "91 niveaux r├®partis en 8 chapitres bibliques",
+    features: "Fonctionnalités",
+    multipleChapters: "91 niveaux répartis en 8 chapitres bibliques",
     powerCards: "3 cartes de pouvoir uniques (Foi, Courage, Sagesse)",
-    progressionSystem: "Syst├¿me de progression avec rangs spirituels",
-    bibleTreasures: "Tr├®sors bibliques et faits int├®ressants",
+    progressionSystem: "Système de progression avec rangs spirituels",
+    bibleTreasures: "Trésors bibliques et faits intéressants",
     howToPlay: "Comment Jouer",
-    selectLevel: "S├®lectionnez un niveau d├®bloqu├®",
+    selectLevel: "Sélectionnez un niveau débloqué",
     choosePowerCard: "Choisissez votre carte de pouvoir",
-    answerQuestions: "R├®pondez aux 3 questions de connaissance",
-    earnStars: "Gagnez des ├®toiles selon vos vies restantes",
+    answerQuestions: "Répondez aux 3 questions de connaissance",
+    earnStars: "Gagnez des étoiles selon vos vies restantes",
     tips: "Astuces",
     readCarefully: "Lisez attentivement chaque question",
     useWisdomCard: "Utilisez la carte Sagesse pour des indices",
     courageGivesSecondChance: "La carte Courage vous donne une seconde chance",
     faithMaximizes: "La carte Foi maximise vos points",
+    johnGospelTitle: "Évangile de Jean",
+    johnGospelStats: "21 chapitres • 878 versets • 14 langues",
+    bibleReaderStrong: "Lecteur Bible + Strong",
+    bibleReaderStrongDesc: "Lecture complète avec dictionnaire Strong",
+    johnTreasures: "Trésors de Jean",
+    johnTreasuresDesc: "Trésors bibliques et anecdotes intéressantes",
+    quickAccessChapters: "Accès rapide aux chapitres célèbres:",
+    johnChapter1: "Prologue",
+    johnChapter3: "Naître de nouveau",
+    johnChapter14: "Je suis le chemin",
+    johnChapter20: "Résurrection",
     version: "Version",
     madeWithLove: "Fait avec amour pour la gloire de Dieu",
     backToMenu: "Retour au Menu"
   },
   
   bible: {
-    readerTitle: "­ƒôû Lecteur Bible",
-    johnReaderTitle: "Lecteur Bible - ├ëvangile de Jean",
-    loading: "Chargement des ├ëcritures...",
+    readerTitle: "📖 Lecteur Bible",
+    johnReaderTitle: "Lecteur Bible - Évangile de Jean",
+    john: "Jean",
+    loading: "Chargement des Écritures...",
+    loadingChapter: "Chapitre {chapter} de l'Évangile de Jean. Les données complètes sont en cours de chargement...",
+    exploreWhileLoading: "En attendant, vous pouvez explorer les autres chapitres ou utiliser la fonction de recherche.",
     menu: "Menu",
     tabBible: "Bible",
-    tabUnity: "Unit├®",
+    tabUnity: "Unité",
     strong: "Strong",
-    strongReferences: "R├®f├®rences Strong",
+    strongReferences: "Références Strong",
     verses: "versets",
-    previous: "Pr├®c├®dent",
+    previous: "Précédent",
     next: "Suivant",
-    strongDefinition: "R├®f├®rence Strong",
+    strongDefinition: "Référence Strong",
     word: "Mot original",
-    transliteration: "Translitt├®ration",
+    transliteration: "Translittération",
     close: "Fermer",
     share: "Partager",
     shareVerse: "Partager ce verset",
-    shareSelection: "Partager la s├®lection",
+    shareSelection: "Partager la sélection",
     pronunciation: "Prononciation",
     meaning: "Signification",
-    definition: "D├®finition compl├¿te",
+    definition: "Définition complïte",
     usage: "Usage biblique",
-    etymology: "├ëtymologie",
+    etymology: "étymologie",
     search: "Rechercher...",
-    definitionNotFound: "D├®finition non trouv├®e",
-    definitionLoading: "D├®finition ├á charger...",
-    imageFeatureComing: "­ƒÄ¿ Fonctionnalit├® d'image ├á venir !",
+    definitionNotFound: "Définition non trouvée",
+    definitionLoading: "Définition à charger...",
+    imageFeatureComing: "🖼️ Fonctionnalité d'image à venir !",
     copyError: "Erreur lors de la copie:",
-    error: "ÔØî Erreur",
+    error: "❌ Erreur",
     errorLoading: "Erreur de chargement",
-    retry: "R├®essayer",
-    readerInDevelopment: "Lecteur Bible Jean en cours de d├®veloppement...",
-    verseCopied: "Verset copi├® dans le presse-papiers !",
-    moreReferences: "et {{count}} autres r├®f├®rences",
-    copyright: "­ƒôû LSG 1910 ÔÇó Strong inclus"
+    retry: "Réessayer",
+    readerInDevelopment: "Lecteur Bible Jean en cours de développement...",
+    verseCopied: "Verset copié dans le presse-papiers !",
+    moreReferences: "et {{count}} autres références",
+    copyright: "📖 LSG 1910 • Strong inclus"
   },
   
   mountain: {
     chapter: "Chapitre",
+    chapterProgress: "Chapitre {{current}}/{{total}}",
     secret: "Secret!",
     spiritualAscension: "Ascension Spirituelle",
-    levelProgress: "Niveau {{level}} ÔÇó {{stars}} ├®toiles obtenues",
+    levelProgress: "Niveau {{level}} • {{stars}} étoiles obtenues",
     combo: "Combo",
-    perfectMessage: '"Car mes pens├®es ne sont pas vos pens├®es" - L\'agneau gravit vers la sagesse parfaite',
-    goodMessage: '"Cherchez et vous trouverez" - La mont├®e continue vers la v├®rit├®',
-    startMessage: '"La foi, m├¬me petite comme un grain de s├®nev├®" - Premier pas vers la lumi├¿re',
+    perfectMessage: '"Car mes pensées ne sont pas vos pensées" - L\'agneau gravit vers la sagesse parfaite',
+    goodMessage: '"Cherchez et vous trouverez" - La montée continue vers la vérité',
+    startMessage: '"La foi, mème petite comme un grain de sénevé" - Premier pas vers la lumiïre',
     skipAnimation: "Passer l'animation",
     stats: {
       points: "pts",
       level: "Niv."
     },
     waypoints: {
-      start: "D├®part",
-      firstSlope: "Premi├¿re pente", 
-      lastSlope: "Derni├¿re pente"
+      start: "Départ",
+      firstSlope: "Premiïre pente", 
+      lastSlope: "Derniïre pente"
     },
     status: {
       victory: "Victoire!",
-      defeat: "D├®faite",
+      defeat: "Défaite",
       inProgress: "En progression"
     }
   },
@@ -309,303 +355,303 @@ export const uiTranslations = {
   bibleResources: {
     inAppReader: {
       name: "Lire dans l'App",
-      description: "Lecteur Bible int├®gr├® avec Strong",
+      description: "Lecteur Bible intégré avec Strong",
       features: {
         offline: "Hors ligne",
-        strong: "Num├®ros Strong",
+        strong: "Numéros Strong",
         navigation: "Navigation"
       }
     }
   },
   
   quotes: {
-    wisdom: "La connaissance vraie m├¿ne ├á la sagesse ├®ternelle",
+    wisdom: "La connaissance vraie mène à la sagesse éternelle",
     faith: "Je puis tout par celui qui me fortifie",
-    hope: "L'├ëternel est mon berger, je ne manquerai de rien",
-    love: "Car Dieu a tant aim├® le monde...",
-    perseverance: "La foi n├®cessite de la pers├®v├®rance",
-    defeat: "L'├®chec invite ├á grandir dans la connaissance"
+    hope: "L'Éternel est mon berger, je ne manquerai de rien",
+    love: "Car Dieu a tant aimé le monde...",
+    perseverance: "La foi nécessite de la persévérance",
+    defeat: "L'échec invite à grandir dans la connaissance"
   },
 
   philosophy: {
     title: "Dimension philosophique",
     loveOntology: "L'amour comme principe ontologique",
-    loveDescription: "J├®sus transforme l'amour en fondement m├®taphysique : aimer Dieu et autrui devient la structure m├¬me de l'├¬tre authentique. L'amour transcende la morale pour devenir mode d'existence.",
+    loveDescription: "Jésus transforme l'amour en fondement métaphysique : aimer Dieu et autrui devient la structure mème de l'ètre authentique. L'amour transcende la morale pour devenir mode d'existence.",
     newCommandment: "Le Nouveau Commandement",
-    jesusEmphasizes: "Quand J├®sus donne un nouveau commandement, il accentue le verbe aimer",
-    loveGod: "Aime Dieu de tout ton c┼ôur",
-    loveNeighbor: "Aime ton prochain comme toi-m├¬me",
-    lovePriority: "L'amour devient une priorit├®"
+    jesusEmphasizes: "Quand Jésus donne un nouveau commandement, il accentue le verbe aimer",
+    loveGod: "Aime Dieu de tout ton cœur",
+    loveNeighbor: "Aime ton prochain comme toi-mème",
+    lovePriority: "L'amour devient une priorité"
   },
 
   unity: {
-    title: "L'Unit├® qui Produit la Paix",
+    title: "L'Unité qui Produit la Paix",
     author: "Par Emmanuel",
-    subtitle: "Chaque religion a ses raisons, nos fronti├¿res viennent du pass├®",
-    description: "Module de r├®flexion sur l'unit├® spirituelle et la paix entre les traditions",
+    subtitle: "Chaque religion a ses raisons, nos frontiïres viennent du passé",
+    description: "Module de réflexion sur l'unité spirituelle et la paix entre les traditions",
     
     // Navigation
     nav: {
       intro: "Intro",
       religions: "Religions",
       common: "Bases Communes",
-      humility: "Humilit├®"
+      humility: "Humilité"
     },
 
     // Introduction
     intro: {
       emmanuelSays: "Emmanuel dit :",
-      ourBordersFromPast: "Nos fronti├¿res viennent du pass├®",
-      bordersDescription: "Chaque religion a ses raisons. Nos divisions ne sont pas la volont├® divine, mais le fruit de l'histoire, de la g├®ographie, de la culture.",
-      divisionWork: "La division, l'isolement par des barri├¿res et fronti├¿res de peur, est l'┼ôuvre de notre pass├® p├®rilleux.",
-      sharedHumanity: "Nous sommes n├®s dans des traditions diff├®rentes, mais nous partageons la m├¬me humanit├®.",
+      ourBordersFromPast: "Nos frontiïres viennent du passé",
+      bordersDescription: "Chaque religion a ses raisons. Nos divisions ne sont pas la volonté divine, mais le fruit de l'histoire, de la géographie, de la culture.",
+      divisionWork: "La division, l'isolement par des barriïres et frontiïres de peur, est l'┼ôuvre de notre passé périlleux.",
+      sharedHumanity: "Nous sommes nés dans des traditions différentes, mais nous partageons la mème humanité.",
       
-      revelationTitle: "Une r├®v├®lation qui ouvre les yeux",
-      surprisedLearning: "J'ai ├®t├® surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu.",
+      revelationTitle: "Une révélation qui ouvre les yeux",
+      surprisedLearning: "J'ai été surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu.",
       angelMichael: "Que l'ange Michel est un grand messager pour les musulmans.",
-      jesusNames: "Que J├®sus, Isa, Yeshua sont connus de diverses mani├¿res, m├¬me dans la foi chr├®tienne.",
-      diverseTribes: "Car il existe diverses tribus, diverses ├®glises, diverses familles.",
-      sameRealities: "Nous parlons des m├¬mes r├®alit├®s avec des noms diff├®rents. Cela devrait nous rapprocher, pas nous diviser.",
+      jesusNames: "Que Jésus, Isa, Yeshua sont connus de diverses maniïres, mème dans la foi chrétienne.",
+      diverseTribes: "Car il existe diverses tribus, diverses églises, diverses familles.",
+      sameRealities: "Nous parlons des mèmes réalités avec des noms différents. Cela devrait nous rapprocher, pas nous diviser.",
       
-      respectTitle: "Le respect : socle de l'humilit├®, gardien de la paix",
-      respectFoundation: "M├¬me si la fraternit├® n'est pas applicable objectivement, le respect est le socle de l'humilit├®, gardien de la paix.",
-      understandingProcess: "Comprendre et respecter les autres religions est un processus d'humilit├®. Cela ne veut pas dire renoncer ├á sa foi, mais accepter que l'autre aussi cherche la v├®rit├®.",
+      respectTitle: "Le respect : socle de l'humilité, gardien de la paix",
+      respectFoundation: "Mème si la fraternité n'est pas applicable objectivement, le respect est le socle de l'humilité, gardien de la paix.",
+      understandingProcess: "Comprendre et respecter les autres religions est un processus d'humilité. Cela ne veut pas dire renoncer à sa foi, mais accepter que l'autre aussi cherche la vérité.",
       
       whatBindsUs: "Ce qui nous lie vraiment",
       seekingRelation: "Chaque religion cherche la relation. Chaque homme recherche la paix.",
       loveOfGod: "Cette relation qui nous lie tous, c'est l'amour de Dieu.",
-      universalLink: "L'amour est le lien universel qui transcende toutes les fronti├¿res, toutes les langues, toutes les traditions.",
+      universalLink: "L'amour est le lien universel qui transcende toutes les frontiïres, toutes les langues, toutes les traditions.",
       
-      inclusionTitle: "L'inclusion : plus vaste encore que la diversit├® religieuse",
-      vastInclusion: "La diversit├® religieuse est vaste, mais encore plus vaste est l'inclusion des autres l├á o├╣ ils sont appel├®s par Dieu.",
-      respectDifferences: "Le respect des diff├®rences de couleur, de genres, l'inclusion nous rend humains uniques, aim├®s de Dieu.",
-      jesusCommand: "J├®sus a dit : 'Aimez-vous les uns les autres.'",
+      inclusionTitle: "L'inclusion : plus vaste encore que la diversité religieuse",
+      vastInclusion: "La diversité religieuse est vaste, mais encore plus vaste est l'inclusion des autres là o├╣ ils sont appelés par Dieu.",
+      respectDifferences: "Le respect des différences de couleur, de genres, l'inclusion nous rend humains uniques, aimés de Dieu.",
+      jesusCommand: "Jésus a dit : 'Aimez-vous les uns les autres.'",
       
       communitySpirit: "Rompre avec l'esprit communautariste",
-      communityTerror: "Le communautarisme est le terrot de la haine du mal d├®guis├®. Il transforme la foi en identit├® tribale, en mur qui s├®pare, en arme qui blesse.",
-      pridePolitics: "Nos esprits de parti nous poussent ├á la politique de l'orgueil :",
+      communityTerror: "Le communautarisme est le terrot de la haine du mal déguisé. Il transforme la foi en identité tribale, en mur qui sépare, en arme qui blesse.",
+      pridePolitics: "Nos esprits de parti nous poussent à la politique de l'orgueil :",
       prideQuotes: "J'ai raison de te faire mal. J'ai raison un point c'est tout. J'ai raison de faire bonne guerre.",
-      watchHeart: "Prenez garde au c┼ôur du probl├¿me, ├á la racine de notre propre mal.",
-      refuseDivision: "Refusons cette d├®rive qui divise l'humanit├® au nom de Dieu.",
+      watchHeart: "Prenez garde au cœur du problïme, à la racine de notre propre mal.",
+      refuseDivision: "Refusons cette dérive qui divise l'humanité au nom de Dieu.",
       
-      freedomTitle: "Pour ├¬tre libres, rendre libres les autres",
-      freedomOthers: "Pour ├¬tre libres, il faut savoir rendre libres les autres aussi.",
-      defendFreedom: "Ma libert├® de croire n'a de valeur que si je d├®fends celle de tous. Opprimer l'autre, c'est me condamner moi-m├¬me ├á la servitude.",
+      freedomTitle: "Pour ètre libres, rendre libres les autres",
+      freedomOthers: "Pour ètre libres, il faut savoir rendre libres les autres aussi.",
+      defendFreedom: "Ma liberté de croire n'a de valeur que si je défends celle de tous. Opprimer l'autre, c'est me condamner moi-mème à la servitude.",
       
-      changeHeartTitle: "Change ton c┼ôur : sois une vraie lanterne",
-      recognizeDecency: "Reconna├«tre que la biens├®ance n'est pas la m├¬me pour chacun.",
-      changeYourself: "Changement de toi d'abord, progressivement. Change ton c┼ôur, transforme ta vie, sois une vraie lanterne.",
-      beExample: "Tu feras pas pipi sur le gazon, car il p├®rira... Ne pas imposer tes r├¿gles aux autres, mais devenir un exemple vivant par ta transformation.",
+      changeHeartTitle: "Change ton cœur : sois une vraie lanterne",
+      recognizeDecency: "Reconnaître que la bienséance n'est pas la même pour chacun.",
+      changeYourself: "Changement de toi d'abord, progressivement. Change ton cœur, transforme ta vie, sois une vraie lanterne.",
+      beExample: "Tu feras pas pipi sur le gazon, car il périra... Ne pas imposer tes règles aux autres, mais devenir un exemple vivant par ta transformation.",
       
-      childrenPeaceTitle: "Nos enfants vivront en paix dans la diversit├®",
-      avoidPursuit: "├ëviter la poursuite des mots pour mots.",
-      peaceChoice: "Si nous choisissons le respect aujourd'hui, nos enfants du futur vivront en paix dans la diversit├®. La paix commence par nous, maintenant, dans nos paroles et nos actes.",
+      childrenPeaceTitle: "Nos enfants vivront en paix dans la diversité",
+      avoidPursuit: "Éviter la poursuite des mots pour mots.",
+      peaceChoice: "Si nous choisissons le respect aujourd'hui, nos enfants du futur vivront en paix dans la diversité. La paix commence par nous, maintenant, dans nos paroles et nos actes.",
       
       discernTitle: "Discerner : l'homme ou Dieu ?",
-      manSpeaks: "Trop de fois, c'est le c┼ôur de l'homme qui parle et divise.",
-      seeFruits: "On le voit par le fruit des paroles et des mots : le vol, la destruction, les guerres. Prenez garde ├á la manipulation des mots pour concourir ├á son propre orgueil.",
+      manSpeaks: "Trop de fois, c'est le cœur de l'homme qui parle et divise.",
+      seeFruits: "On le voit par le fruit des paroles et des mots : le vol, la destruction, les guerres. Prenez garde à la manipulation des mots pour concourir à son propre orgueil.",
       
-      lookPeaceTitle: "Regarder ├á la paix et ├á l'amour",
-      lookPeaceAll: "Regarder ├á la paix pour tous, regarder ├á l'amour de Dieu pour les autres.",
-      godSpeaks: "Quand les mots produisent la paix, la r├®conciliation, l'unit├® : c'est Dieu qui parle. Quand ils produisent la division, la haine, la guerre : c'est l'orgueil de l'homme.",
+      lookPeaceTitle: "Regarder à la paix et à l'amour",
+      lookPeaceAll: "Regarder à la paix pour tous, regarder à l'amour de Dieu pour les autres.",
+      godSpeaks: "Quand les mots produisent la paix, la réconciliation, l'unité : c'est Dieu qui parle. Quand ils produisent la division, la haine, la guerre : c'est l'orgueil de l'homme.",
       
-      watchWordsTitle: "Veiller ├á nos mots",
-      watchShares: "Veiller ├á nos partages, veiller ├á nos mots contraires n├®fastes envers les autres.",
-      disqualify: "Ces maux nous disqualifient nous-m├¬mes. Les fruits de nos paroles r├®v├¿lent qui parle en nous : Dieu ou notre propre orgueil ?",
+      watchWordsTitle: "Veiller à nos mots",
+      watchShares: "Veiller à nos partages, veiller à nos mots contraires néfastes envers les autres.",
+      disqualify: "Ces maux nous disqualifient nous-mèmes. Les fruits de nos paroles révïlent qui parle en nous : Dieu ou notre propre orgueil ?",
       
-      wisdomMaturityTitle: "Sagesse et maturit├® face ├á notre nature",
-      useScriptures: "Utiliser les ├®critures (les lois) pour faire mal est notre habitude, un processus presque naturel et espi├¿gle.",
-      hateSin: "Face ├á notre nature p├®cheresse, nous avons en horreur le mal et les personnes qui font le mal.",
-      separateActs: "Mais par sagesse et maturit├®, il faut s├®parer les actes de notre pauvret├® humaine.",
-      compassionNature: "Reconna├«tre notre nature animale qui a besoin de compassion et de gr├óce, tout en se prot├®geant selon les contextes.",
+      wisdomMaturityTitle: "Sagesse et maturité face à notre nature",
+      useScriptures: "Utiliser les écritures (les lois) pour faire mal est notre habitude, un processus presque naturel et espiïgle.",
+      hateSin: "Face à notre nature pécheresse, nous avons en horreur le mal et les personnes qui font le mal.",
+      separateActs: "Mais par sagesse et maturité, il faut séparer les actes de notre pauvreté humaine.",
+      compassionNature: "Reconnaître notre nature animale qui a besoin de compassion et de grâce, tout en se protégeant selon les contextes.",
       
-      denounceLeadersTitle: "D├®noncer les leaders spirituels corrompus",
-      watchLeaders: "Prenez garde aux leaders spirituels ou dirigeants qui cherchent ├á garder en secret leur d├®rive et malhonn├¬tet├®.",
-      noJustice: "Sans justice, pas d'exemple. Sans connaissance, d'autres victimes p├®rissent par notre silence.",
-      silenceComplicity: "Le silence face ├á l'injustice est une complicit├®. La v├®rit├® doit ├¬tre dite pour prot├®ger les autres."
+      denounceLeadersTitle: "Dénoncer les leaders spirituels corrompus",
+      watchLeaders: "Prenez garde aux leaders spirituels ou dirigeants qui cherchent à garder en secret leur dérive et malhonnèteté.",
+      noJustice: "Sans justice, pas d'exemple. Sans connaissance, d'autres victimes périssent par notre silence.",
+      silenceComplicity: "Le silence face à l'injustice est une complicité. La vérité doit être dite pour protéger les autres."
     },
 
     // Religions
     religions: {
-      title: "Diverses Religions, une Humanit├®",
-      intro: "Chr├®tiens, Musulmans, Juifs, Hindous, Bouddhistes... et bien d'autres : tous cherchent la v├®rit├®",
+      title: "Diverses Religions, une Humanité",
+      intro: "Chrétiens, Musulmans, Juifs, Hindous, Bouddhistes... et bien d'autres : tous cherchent la vérité",
       theirGod: "Leur Dieu :",
       theGood: "Le Bien :",
       theEvil: "Le Mal :",
       theAngels: "Les Anges :",
-      theUnity: "L'Unit├® :",
+      theUnity: "L'Unité :",
       values: "Valeurs :",
       
       christianity: {
         name: "Christianisme",
-        godText: "Un Dieu unique, P├¿re cr├®ateur",
+        godText: "Un Dieu unique, Pïre créateur",
         goodText: "L'amour du prochain, le pardon, la paix",
-        evilText: "La haine, l'├®go├»sme, la violence",
+        evilText: "La haine, l'égoîsme, la violence",
         angelsText: "Les messagers de Dieu (Gabriel, Michel...)",
         unityText: "Un seul Dieu pour tous les hommes",
-        values: "Amour,Pardon,Paix,Humilit├®,Justice"
+        values: "Amour,Pardon,Paix,Humilité,Justice"
       },
       islam: {
         name: "Islam",
-        godText: "Allah, l'Unique et Mis├®ricordieux",
-        goodText: "La justice, la charit├®, la paix",
+        godText: "Allah, l'Unique et Miséricordieux",
+        goodText: "La justice, la charité, la paix",
         evilText: "L'oppression, le mensonge, la division",
-        angelsText: "Les anges de lumi├¿re (Jibril, Mikail...)",
+        angelsText: "Les anges de lumiïre (Jibril, Mikail...)",
         unityText: "Il n'y a de dieu qu'Allah",
-        values: "Paix,Justice,Charit├®,Respect,Mis├®ricorde"
+        values: "Paix,Justice,Charité,Respect,Miséricorde"
       },
       judaism: {
-        name: "Juda├»sme",
-        godText: "YHWH, l'├ëternel unique",
+        name: "Judaîsme",
+        godText: "YHWH, l'Éternel unique",
         goodText: "La justice, la compassion, la vie",
-        evilText: "L'oppression, la m├®disance, la haine",
-        angelsText: "Les messagers c├®lestes (Malakhim)",
-        unityText: "├ëcoute Isra├½l, l'├ëternel est Un",
-        values: "Justice,Vie,M├®moire,Paix,├ëtude"
+        evilText: "L'oppression, la médisance, la haine",
+        angelsText: "Les messagers célestes (Malakhim)",
+        unityText: "Écoute Israël, l'Éternel est Un",
+        values: "Justice,Vie,Mémoire,Paix,Étude"
       },
       hinduism: {
         name: "Hindouisme",
-        godText: "Brahman, la r├®alit├® supr├¬me",
+        godText: "Brahman, la réalité suprème",
         goodText: "La non-violence (ahimsa), le devoir juste",
         evilText: "La violence, l'ignorance spirituelle",
-        angelsText: "Les Devas, ├¬tres c├®lestes bienveillants",
+        angelsText: "Les Devas, ètres célestes bienveillants",
         unityText: "Tout est Un dans Brahman",
-        values: "Non-violence,V├®rit├®,Compassion,Puret├®,Harmonie"
+        values: "Non-violence,Vérité,Compassion,Pureté,Harmonie"
       },
       buddhism: {
         name: "Bouddhisme",
-        godText: "Pas de dieu cr├®ateur, mais respect du sacr├®",
+        godText: "Pas de dieu créateur, mais respect du sacré",
         goodText: "La compassion, la sagesse, la paix",
-        evilText: "La souffrance caus├®e par l'ignorance",
-        angelsText: "Les Bodhisattvas, ├¬tres ├®veill├®s",
+        evilText: "La souffrance causée par l'ignorance",
+        angelsText: "Les Bodhisattvas, ètres éveillés",
         unityText: "Nature de Bouddha en chacun",
-        values: "Compassion,Sagesse,Paix,Non-violence,├ëveil"
+        values: "Compassion,Sagesse,Paix,Non-violence,Éveil"
       }
     },
 
     // Valeurs communes
     common: {
       title: "Les Bases Communes",
-      intro: "Le Bien, le Mal, les Anges, Un Dieu Unique, la Relation, l'Inclusion : ce qui unit l'humanit├®",
+      intro: "Le Bien, le Mal, les Anges, Un Dieu Unique, la Relation, l'Inclusion : ce qui unit l'humanité",
       
       goodTitle: "Le Bien",
       goodDescription: "Toutes les religions enseignent l'amour, la justice et la compassion",
-      goodExamples: "Aimer son prochain comme soi-m├¬me|Faire le bien sans distinction|Prot├®ger les faibles et les opprim├®s|Dire la v├®rit├® avec bienveillance|Partager ce que l'on a",
+      goodExamples: "Aimer son prochain comme soi-mème|Faire le bien sans distinction|Protéger les faibles et les opprimés|Dire la vérité avec bienveillance|Partager ce que l'on a",
       
       evilTitle: "Le Mal",
       evilDescription: "Toutes condamnent la violence, le mensonge et l'oppression",
-      evilExamples: "Tuer sans justice|Voler et exploiter|Mentir et calomnier|M├®priser et humilier|Diviser et ha├»r",
+      evilExamples: "Tuer sans justice|Voler et exploiter|Mentir et calomnier|Mépriser et humilier|Diviser et haîr",
       
       angelsTitle: "Les Anges et ├ètres Spirituels",
-      angelsDescription: "Presque toutes reconnaissent des messagers c├®lestes bienveillants",
-      angelsExamples: "Anges messagers de Dieu|Guides spirituels|├ètres de lumi├¿re|Protecteurs c├®lestes|Bodhisattvas et Devas",
+      angelsDescription: "Presque toutes reconnaissent des messagers célestes bienveillants",
+      angelsExamples: "Anges messagers de Dieu|Guides spirituels|├ètres de lumiïre|Protecteurs célestes|Bodhisattvas et Devas",
       
-      godTitle: "Un Dieu Unique (ou R├®alit├® Supr├¬me)",
-      godDescription: "La majorit├® croit en une source unique, un cr├®ateur ou une r├®alit├® ultime",
-      godExamples: "Christianisme, Islam, Juda├»sme : Un seul Dieu|Hindouisme : Brahman, l'Un supr├¬me|Bouddhisme : Nature de Bouddha universelle|Tous cherchent la v├®rit├® ultime|Tous aspirent ├á l'unit├® et ├á la paix",
+      godTitle: "Un Dieu Unique (ou Réalité Suprème)",
+      godDescription: "La majorité croit en une source unique, un créateur ou une réalité ultime",
+      godExamples: "Christianisme, Islam, Judaîsme : Un seul Dieu|Hindouisme : Brahman, l'Un suprème|Bouddhisme : Nature de Bouddha universelle|Tous cherchent la vérité ultime|Tous aspirent à l'unité et à la paix",
       
       relationTitle: "La Relation et la Paix",
       relationDescription: "Ce qui unit vraiment toutes les religions et tous les hommes",
       relationExamples: "Chaque religion cherche la relation avec le divin|Chaque homme recherche la paix|Cette relation qui nous lie tous, c'est l'amour de Dieu|L'amour est le lien universel|La paix est notre aspiration commune",
       
-      inclusionTitle: "L'Inclusion : Aim├®s de Dieu",
-      inclusionDescription: "La diversit├® religieuse est vaste, mais encore plus vaste est l'inclusion",
-      inclusionExamples: "Inclusion des autres l├á o├╣ ils sont appel├®s par Dieu|Respect des diff├®rences de couleur|Respect des diff├®rences de genres|L'inclusion nous rend humains uniques, aim├®s de Dieu|J├®sus a dit : 'Aimez-vous les uns les autres'",
+      inclusionTitle: "L'Inclusion : Aimés de Dieu",
+      inclusionDescription: "La diversité religieuse est vaste, mais encore plus vaste est l'inclusion",
+      inclusionExamples: "Inclusion des autres là o├╣ ils sont appelés par Dieu|Respect des différences de couleur|Respect des différences de genres|L'inclusion nous rend humains uniques, aimés de Dieu|Jésus a dit : 'Aimez-vous les uns les autres'",
       
-      finalQuote: "J'ai ├®t├® surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu, que l'ange Michel est un grand messager pour les musulmans, que J├®sus, Isa, Yeshua sont connus de diverses mani├¿res m├¬me dans la foi chr├®tienne. Car il existe diverses tribus, diverses ├®glises, diverses familles.",
-      finalQuote2: "Nous parlons des m├¬mes r├®alit├®s avec des noms diff├®rents.",
-      quoteAuthor: "Emmanuel, L'Unit├® qui Produit la Paix"
+      finalQuote: "J'ai été surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu, que l'ange Michel est un grand messager pour les musulmans, que Jésus, Isa, Yeshua sont connus de diverses maniïres mème dans la foi chrétienne. Car il existe diverses tribus, diverses églises, diverses familles.",
+      finalQuote2: "Nous parlons des mèmes réalités avec des noms différents.",
+      quoteAuthor: "Emmanuel, L'Unité qui Produit la Paix"
     },
 
-    // Processus humilit├®
+    // Processus humilité
     humility: {
-      title: "7 ├ëtapes vers l'Humilit├® et la Paix",
-      intro: "Le processus pour d├®passer le communautarisme et devenir une vraie lanterne",
+      title: "7 Étapes vers l'Humilité et la Paix",
+      intro: "Le processus pour dépasser le communautarisme et devenir une vraie lanterne",
       
-      step: "├ëtape",
+      step: "Étape",
       action: "Action :",
       
-      step1Title: "Reconna├«tre : nos fronti├¿res viennent du pass├®",
-      step1Description: "La division, l'isolement par des barri├¿res et fronti├¿res de peur, est l'┼ôuvre de notre pass├® p├®rilleux. Nos divisions ne sont pas la volont├® de Dieu.",
-      step1Action: "Accepter que ma tradition n'est qu'├á moi, et je fais partie de la diversit├® voulue par Dieu",
+      step1Title: "Reconnaître : nos frontières viennent du passé",
+      step1Description: "La division, l'isolement par des barrières et frontières de peur, est l'œuvre de notre passé périlleux. Nos divisions ne sont pas la volonté de Dieu.",
+      step1Action: "Accepter que ma tradition n'est qu'à moi, et je fais partie de la diversité voulue par Dieu",
       
-      step2Title: "Le respect : socle de l'humilit├®, gardien de la paix",
-      step2Description: "M├¬me si la fraternit├® n'est pas applicable objectivement, le respect est le fondement.",
-      step2Action: "Respecter toutes les croyances, m├¬me sans tout comprendre",
+      step2Title: "Le respect : socle de l'humilité, gardien de la paix",
+      step2Description: "Même si la fraternité n'est pas applicable objectivement, le respect est le fondement.",
+      step2Action: "Respecter toutes les croyances, même sans tout comprendre",
       
       step3Title: "Comprendre sans juger",
-      step3Description: "Aujourd'hui, comprendre les autres est un processus d'humilit├® n├®cessaire.",
-      step3Action: "├ëcouter vraiment ce que croient les autres, sans jugement",
+      step3Description: "Aujourd'hui, comprendre les autres est un processus d'humilité nécessaire.",
+      step3Action: "Écouter vraiment ce que croient les autres, sans jugement",
       
       step4Title: "Changement de toi d'abord : sois une vraie lanterne",
-      step4Description: "Reconna├«tre que la biens├®ance n'est pas la m├¬me pour chacun. Change ton c┼ôur progressivement, transforme ta vie, deviens une vraie lumi├¿re.",
-      step4Action: "Ne pas imposer mes r├¿gles aux autres, mais ├¬tre un exemple vivant par ma transformation",
+      step4Description: "Reconnaître que la bienséance n'est pas la même pour chacun. Change ton cœur progressivement, transforme ta vie, deviens une vraie lumière.",
+      step4Action: "Ne pas imposer mes règles aux autres, mais être un exemple vivant par ma transformation",
       
       step5Title: "Rompre avec l'esprit communautariste",
-      step5Description: "Nos esprits de parti nous poussent ├á la politique de l'orgueil : 'J'ai raison de te faire mal, j'ai raison un point c'est tout.' Prenez garde au c┼ôur du probl├¿me, ├á la racine de notre propre mal.",
-      step5Action: "Refuser les discours de division dans ma propre communaut├®",
+      step5Description: "Nos esprits de parti nous poussent à la politique de l'orgueil : 'J'ai raison de te faire mal, j'ai raison un point c'est tout.' Prenez garde au cœur du problème, à la racine de notre propre mal.",
+      step5Action: "Refuser les discours de division dans ma propre communauté",
       
-      step6Title: "Pour ├¬tre libre, rendre libre les autres",
-      step6Description: "Ma libert├® d├®pend de celle que j'accorde aux autres.",
-      step6Action: "D├®fendre la libert├® de conscience de tous, pas seulement la mienne",
+      step6Title: "Pour être libre, rendre libre les autres",
+      step6Description: "Ma liberté dépend de celle que j'accorde aux autres.",
+      step6Action: "Défendre la liberté de conscience de tous, pas seulement la mienne",
       
-      step7Title: "├ëviter la poursuite des mots pour mots",
-      step7Description: "Ne pas r├®pondre ├á la haine par la haine, aux insultes par les insultes.",
-      step7Action: "Choisir la paix pour que nos enfants vivent en paix dans la diversit├®",
+      step7Title: "Éviter la poursuite des mots pour mots",
+      step7Description: "Ne pas répondre à la haine par la haine, aux insultes par les insultes.",
+      step7Action: "Choisir la paix pour que nos enfants vivent en paix dans la diversité",
       
       discernFruits: "Discerner par les Fruits",
-      humanHeart: "Le c┼ôur de l'homme qui divise",
-      lookGodLove: "Regarder ├á l'amour de Dieu",
-      watchOurWords: "Veiller ├á nos Mots",
+      humanHeart: "Le cœur de l'homme qui divise",
+      lookGodLove: "Regarder à l'amour de Dieu",
+      watchOurWords: "Veiller à nos Mots",
       
       prideFruits: "Fruits de l'orgueil humain",
       godFruits: "Fruits de l'amour de Dieu",
       
-      finalQuote: "M├¬me si la fraternit├® n'est pas applicable objectivement, le respect est le socle de l'humilit├®, gardien de la paix. ├ëviter la poursuite des mots pour mots, et nos enfants du futur vivront en paix dans la diversit├®.",
+      finalQuote: "Mème si la fraternité n'est pas applicable objectivement, le respect est le socle de l'humilité, gardien de la paix. Éviter la poursuite des mots pour mots, et nos enfants du futur vivront en paix dans la diversité.",
       author: "Emmanuel"
     },
 
     // Footer
     footer: {
-      quote: "Le respect est le socle de l'humilit├®, gardien de la paix. Nos enfants vivront en paix dans la diversit├® si nous choisissons le respect aujourd'hui.",
-      author: "Emmanuel, L'Unit├® qui Produit la Paix"
+      quote: "Le respect est le socle de l'humilité, gardien de la paix. Nos enfants vivront en paix dans la diversité si nous choisissons le respect aujourd'hui.",
+      author: "Emmanuel, L'Unité qui Produit la Paix"
     }
   },
 
   footer: {
-    version: "Version 1.0 ÔÇó 2024",
-    dedication: "D├®velopp├® pour la gloire de Dieu"
+    version: "Version 1.0 • 2024",
+    dedication: "Développé pour la gloire de Dieu"
   },
 
   endCredits: {
     lines: [
-      { text: "Tu es arriv├® en haut de la montagne", delay: 2000 },
+      { text: "Tu es arrivé en haut de la montagne", delay: 2000 },
       { text: "Tu as appris beaucoup de choses", delay: 2000 },
       { text: "Ta foi grandit chaque jour", delay: 2000 },
       { text: "Tu vis de belles choses avec Dieu", delay: 2000 },
-      { text: "Les difficult├®s t'aident ├á grandir", delay: 2000 },
+      { text: "Les difficultés t'aident à grandir", delay: 2000 },
       { text: "Elles montrent ce qui est important", delay: 2000 },
       { text: "Sois humble comme un petit enfant", delay: 2000 },
-      { text: "Dieu aime ton c┼ôur simple", delay: 2000 },
+      { text: "Dieu aime ton cœur simple", delay: 2000 },
       { text: "Dans le calme tu entends Dieu", delay: 2000 },
-      { text: "Le je├╗ne lib├¿re ton esprit", delay: 2000 },
+      { text: "Le jeûne libïre ton esprit", delay: 2000 },
       { text: "Prie et Dieu te guidera", delay: 2000 },
-      { text: "L'orgueil cache la v├®rit├®", delay: 2000 },
-      { text: "La gr├óce de Dieu est magnifique", delay: 2000 },
-      { text: "Elle vient du c┼ôur de Dieu", delay: 2000 },
+      { text: "L'orgueil cache la vérité", delay: 2000 },
+      { text: "La grâce de Dieu est magnifique", delay: 2000 },
+      { text: "Elle vient du cœur de Dieu", delay: 2000 },
       { text: "La vraie foi te rend libre", delay: 2000 },
-      { text: "Elle t'unit ├á Dieu pour toujours", delay: 2000 },
+      { text: "Elle t'unit à Dieu pour toujours", delay: 2000 },
       { text: "L'amour peut tout changer", delay: 2000 },
       { text: "Il peut faire des miracles", delay: 2000 },
-      { text: "R├®p├¿te avec moi", delay: 2000 },
-      { text: "J├®sus, je te donne mon c┼ôur", delay: 3000 },
+      { text: "Répïte avec moi", delay: 2000 },
+      { text: "Jésus, je te donne mon cœur", delay: 3000 },
       { text: "Tu es mon roi, mon sauveur", delay: 3000 },
       { text: "Viens transformer ma vie", delay: 3000 },
       { text: "Le chemin continue maintenant", delay: 2000 },
-      { text: "Partage cette belle lumi├¿re", delay: 2000 },
+      { text: "Partage cette belle lumiïre", delay: 2000 },
       { text: "Vers la vie qui ne finit jamais", delay: 2000 },
-      { text: "Garde l'amour dans ton c┼ôur", delay: 3000 },
-      { text: "Comme un tr├®sor pr├®cieux", delay: 3000 }
+      { text: "Garde l'amour dans ton cœur", delay: 3000 },
+      { text: "Comme un trésor précieux", delay: 3000 }
     ],
     finalMessages: {
       congratulations: "BRAVO !",
@@ -613,23 +659,23 @@ export const uiTranslations = {
       courage: "COURAGE VALEUREUX",
       peace: "PORTEUR DE PAIX",
       child: "ENFANT DE DIEU",
-      blessing: "QUE DIEU TE B├ëNISSE",
+      blessing: "QUE DIEU TE BÉNISSE",
       continue: "Continuer"
     }
   },
 
   validation: {
-    pseudoTooShort: "Le pseudo doit contenir au moins 2 caract├¿res",
+    pseudoTooShort: "Le pseudo doit contenir au moins 2 caractïres",
     enterPseudo: "Veuillez entrer un pseudo"
   },
 
   pseudoSetup: {
     title: "Choisissez votre pseudo de joueur",
     profileConfig: "Configuration du Profil",
-    connectedWith: "Connect├® avec",
+    connectedWith: "Connecté avec",
     playerPseudo: "Pseudo de Joueur",
     pseudoPlaceholder: "Votre pseudo...",
-    pseudoRequirements: "2-20 caract├¿res ÔÇó Affich├® dans les classements",
+    pseudoRequirements: "2-20 caractïres • Affiché dans les classements",
     suggestions: "Suggestions",
     confirm: "Confirmer le Pseudo",
     errorConfig: "Erreur lors de la configuration"
@@ -640,24 +686,24 @@ export const uiTranslations = {
   },
 
   console: {
-    starsUnlocked: "├®toiles atteintes ! D├®blocage chapitre",
-    defeatAnimation: "D├®faite... J.C. redescend"
+    starsUnlocked: "étoiles atteintes ! Déblocage chapitre",
+    defeatAnimation: "Défaite... J.C. redescend"
   },
 
   errors: {
     progressionError: "Erreur de progression",
-    invalidProgressionData: "Donn├®es de progression invalides:"
+    invalidProgressionData: "Données de progression invalides:"
   },
 
   levels: {
     chaptersAndBonus: "8 chapitres + niveau bonus",
-    bonusUnlocked: "­ƒÅå NIVEAU BONUS D├ëBLOQU├ë ! Tu as atteint la perfection spirituelle !",
-    starsToDiscover: "273 {stars} ├á d├®couvrir",
+    bonusUnlocked: "🎁 NIVEAU BONUS DÉBLOQUÉ ! Tu as atteint la perfection spirituelle !",
+    starsToDiscover: "273 {stars} à découvrir",
     starsPerLevel: "3 {stars} par niveau"
   },
 
   architecture: {
-    title: "­ƒöº Architecture technique",
+    title: "⚙️ Architecture technique",
     react: {
       name: "React",
       description: "Interface moderne"
@@ -679,18 +725,18 @@ export const uiTranslations = {
   gameManager: {
     title: "Sauvegarde de jeu",
     saveLocal: "Sauvegarde locale",
-    saveCloud: "Cloud synchronis├®",
+    saveCloud: "Cloud synchronisé",
     saveWaiting: "En attente de connexion",
-    lastSave: "Derni├¿re sauvegarde:",
+    lastSave: "Derniïre sauvegarde:",
     never: "Jamais",
     saving: "Sauvegarde...",
     save: "Sauvegarder",
     loadProgress: "Charger",
     loading: "Chargement...",
-    autoSaveEnabled: "­ƒÆ¥ Sauvegarde automatique activ├®e",
-    saveError: "ÔØî Erreur de sauvegarde",
-    gameSaved: "Ô£à Partie sauvegard├®e !",
-    gameLoaded: "­ƒôÑ Partie charg├®e !"
+    autoSaveEnabled: "💾 Sauvegarde automatique activée",
+    saveError: "❌ Erreur de sauvegarde",
+    gameSaved: "✅ Partie sauvegardée !",
+    gameLoaded: "✅ Partie chargée !"
   }
 };
 

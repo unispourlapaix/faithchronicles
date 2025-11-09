@@ -531,14 +531,14 @@ export const bibleData = {
     }));
 
     try {
-      // Get John chapters (first 3 chapters for demo)
+      // Get all John chapters (21 chapters complete)
       const johnChapters = await this.getAllJohnChapters(language);
-      const selectedJohnChapters = johnChapters.slice(0, 3).map(chapter => ({
+      const allJohnChapters = johnChapters.map(chapter => ({
         ...chapter,
         source: 'john_complete'
       }));
 
-      return [...regularPassages, ...selectedJohnChapters];
+      return [...regularPassages, ...allJohnChapters];
     } catch (error) {
       console.error('Error loading John chapters:', error);
       return regularPassages;

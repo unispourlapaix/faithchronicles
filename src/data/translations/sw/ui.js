@@ -12,7 +12,9 @@ export const uiTranslations = {
   app: {
     title: "UNITYQUEST Hadithi\nya Upendo",
     subtitle: "Ugunduzi wa Maandiko wa Kuingiliana",
-    tagline: "Kutembea kuelekea mwanga wa kimungu"
+    tagline: "Kutembea kuelekea mwanga wa kimungu",
+    menu: "Menyu",
+    retry: "Jaribu tena"
   },
   
   buttons: {
@@ -77,7 +79,13 @@ export const uiTranslations = {
     spiritualRank: "Daraja la kiroho",
     newAdventure: "🎮 Safari mpya",
     readyToStart: "Uko tayari kuanza?",
-    startJourney: "Anza safari yako katika maarifa ya Maandiko!"
+    startJourney: "Anza safari yako katika maarifa ya Maandiko!",
+    audioControls: "Vidhibiti vya sauti",
+    mute: "Zima sauti",
+    unmute: "Washa sauti",
+    close: "Funga",
+    language: "Lugha",
+    restartGame: "Anzisha upya mchezo"
   },
   
   login: {
@@ -116,7 +124,28 @@ export const uiTranslations = {
     guardian: "Mlinzi",
     wise: "Mwenye hekima",
     prophet: "Nabii",
-    apostle: "Mtume"
+    apostle: "Mtume",
+    seekerDesc: "Mwanzo wa safari ya kiroho",
+    discipleDesc: "Kujifunza mafundisho",
+    servantDesc: "Huduma na utii",
+    witnessDesc: "Kushiriki imani",
+    guardianDesc: "Ulinzi wa ukweli",
+    wiseDesc: "Hekima na maarifa",
+    prophetDesc: "Maono ya kiroho",
+    apostleDesc: "Mwalimu wa kiroho"
+  },
+
+  spiritualJourney: {
+    beginning: "Mwanzo wa safari ya kiroho",
+    progress: "Maendeleo ya kiroho",
+    grade: "Daraja",
+    xp: "XP",
+    level: "Kiwango",
+    nextGrade: "Daraja linalofuata",
+    still: "Bado",
+    maxLevelReached: "Kiwango cha Juu Kimefikiwa!",
+    masteredAllTeachings: "Umejifunza mafundisho yote",
+    progression: "Maendeleo"
   },
   
   treasures: {
@@ -125,6 +154,8 @@ export const uiTranslations = {
     fact: "Je, ulijua?",
     treasure: "Hazina iliyofichwa",
     question: "Swali la kuchekesha",
+    context: "Muktadha",
+    strongReference: "Rejea ya Biblia kwa masomo ya kina",
     emmanuelMemo: "Kumbukumbu ya Emmanuel",
     emmanuelMessage: "Umefika juu ya mlima, na maarifa yamepatikana. Lakini imani isiyoyumbayumba inahitaji uzoefu wa maisha, rehema na upendo wa kweli wa Yesu. Majaribu mbalimbali ya maisha yatajaribu njia yako, njia ya kweli tunayochagua, moyo wetu. Tunabaki wasio kamilifu, tamaa zetu ni nyingi, na upendo wa faida au starehe yetu binafsi mara nyingi unakuwa kipaumbele chetu cha ubinafsi. Muombe Mungu hekima, upendo wake, nguvu zake, na ukubali kwa unyenyekevu udhaifu wako, kwa sababu hakuna kinachoweza kufichwa Mbele yake... Hakuna kitu. Hakuna haja ya kusafiri katika hali ya faragha, VPN, au hata kufuta historia. Funga kama Danieli: jinyime kwa muda wa kile unachokipenda zaidi, katika utulivu na hekima. Hii itakuruhusu kusikia Mungu vizuri zaidi, kuwa na tabia ya moyo iliyojiandaa kwa mabadiliko ya kina — na mara nyingi ya maumivu. Kisha ndoto na maono yatakuwa wazi zaidi, kama kwa Yosefu. Lakini jihadhari na kiburi: usikubali 'nina haki daima' au 'najua vizuri zaidi'. Kwa sababu ufunuo wa Mungu ni neema ya ajabu. Usikuwe daktari wa Sheria, mwenye uwezo wa kumsulubisha Yesu tena leo, Yeye ambaye anaomba tu kupenda jirani yako... na kumpa uhuru sawa na ule unaopokea. Kuwa na imani ni kuingia katika uhusiano na safari ya moyo iliyo huru. Itakufanya mashujaa wenye nguvu, wenye uwezo wa mambo yasiyo ya kawaida. Kwa sababu uzoefu wa kimiujiza, uwepo wa Mungu, uthibitisho wake au baraka zake zitakufanya usiyumbayumba kweli.",
     clarification: "Ufafanuzi muhimu",
@@ -146,7 +177,7 @@ export const uiTranslations = {
     pointsEarned: "+{points} pointi za hekima",
     secondChance: "⚔️ Kadi yako ya UJASIRI inakupa nafasi ya pili! Jaribu tena kwa hekima.",
     bonusApplied: "✨ Bonus ya {card}: +{percent}% ({base} → {final})",
-    defeatedQuote: "Naweza mambo yote katika Yeye anayenitia nguvu - Wafilipi 4:13",
+    defeatedQuote: "Naweza mambo yote ndani Yake",
     perfect: "✨ Kamili",
     good: "⭐ Vizuri",
     start: "⭐ Mwanzo",
@@ -183,8 +214,8 @@ export const uiTranslations = {
     faithDesc: "Upeo wa pointi za hekima zilizopatikana",
     courageDesc: "Pointi za kawaida lakini nafasi ya pili",
     wisdomDesc: "Kidokezo kilichofunuliwa na +25% pointi",
-    chooseCard: "✨ Chagua kadi yako ya maarifa",
-    cardEffects: "✨ Athari za kadi za maarifa:",
+    chooseCard: "✨ Chagua kipaji cha maarifa",
+    cardEffects: "✨ Athari za vipaji vya maarifa:",
     faithEffect: "+50% pointi za hekima - Tuzo ya juu zaidi",
     courageEffect: "Pointi za kawaida lakini nafasi ya pili wakati wa kosa",
     wisdomEffect: "+25% pointi + kidokezo kilichofunuliwa kwa kila swali",
@@ -199,7 +230,7 @@ export const uiTranslations = {
   },
   
   info: {
-    title: "Unity Quest Chronicles of Peace",
+    title: "Unity Quest Kumbukumbu za Amani",
     subtitle: "Ugunduzi wa Maandiko wa kuingiliana",
     yourStats: "Takwimu zako",
     score: "Alama",
@@ -225,6 +256,17 @@ export const uiTranslations = {
     useWisdomCard: "Tumia kadi ya Hekima kwa vidokezo",
     courageGivesSecondChance: "Kadi ya Ujasiri inakupa nafasi ya pili",
     faithMaximizes: "Kadi ya Imani inaongeza pointi zako",
+    johnGospelTitle: "Injili ya Yohana",
+    johnGospelStats: "Sura 21 • Mistari 878 • Lugha 14",
+    bibleReaderStrong: "Kisomaji cha Biblia + Strong",
+    bibleReaderStrongDesc: "Kusoma kamili na kamusi ya Strong",
+    johnTreasures: "Hazina za Yohana",
+    johnTreasuresDesc: "Hazina za Biblia na ukweli wa kuvutia",
+    quickAccessChapters: "Ufikiaji wa haraka kwa sura maarufu:",
+    johnChapter1: "Utangulizi",
+    johnChapter3: "Kuzaliwa upya",
+    johnChapter14: "Mimi ni njia",
+    johnChapter20: "Ufufuo",
     version: "Toleo",
     madeWithLove: "Imeundwa kwa upendo kwa utukufu wa Mungu",
     backToMenu: "Rudi kwenye menyu"
@@ -232,7 +274,10 @@ export const uiTranslations = {
   
   bible: {
     readerTitle: "📖 Kisomaji cha Biblia",
+    john: "Yohana",
     loading: "Inapakia Maandiko...",
+    loadingChapter: "Sura ya {chapter} ya Injili ya Yohana. Data kamili inapakiwa...",
+    exploreWhileLoading: "Wakati huo, unaweza kuchunguza sura nyingine au kutumia kipengele cha utafutaji.",
     menu: "Menyu",
     strong: "Strong",
     strongReferences: "Marejeleo ya Strong",
@@ -260,13 +305,17 @@ export const uiTranslations = {
     goodMessage: '"Tafuteni nanyi mtapata" - Kupanda kunaendelea kuelekea ukweli',
     startMessage: '"Imani, hata ndogo kama mbegu ya haradali" - Hatua ya kwanza kuelekea mwanga',
     skipAnimation: "Ruka uhuishaji",
+    chapter: "Sura",
+    chapterProgress: "Sura {{current}}/{{total}}",
+    secret: "Siri",
     waypoints: {
       start: "Mwanzo",
       firstSlope: "Mteremko wa kwanza",
       lastSlope: "Mteremko wa mwisho"
     },
     status: {
-      defeat: "Kushindwa"
+      defeat: "Kushindwa",
+      inProgress: "Inaendelea"
     }
   },
   

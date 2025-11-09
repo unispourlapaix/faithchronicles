@@ -19,6 +19,33 @@ const QuestionScreen = ({
   const [showEndCredits, setShowEndCredits] = React.useState(false);
   const [xpGained, setXpGained] = React.useState(0);
   const [questionStartTime] = React.useState(Date.now());
+  const [eliminatedOption, setEliminatedOption] = React.useState(null);
+
+  // Effet pour éliminer une mauvaise réponse avec Courage
+  React.useEffect(() => {
+    console.log('🔍 [QuestionScreen] Effet eliminateWrong déclenché:', {
+      hasCard: !!selectedCard,
+      cardBonus: selectedCard?.bonus,
+      hasQuestion: !!currentQuestion,
+      questionText: currentQuestion?.question,
+      optionsCount: currentQuestion?.options?.length,
+      correctIndex: currentQuestion?.correct
+    });
+    
+    if (selectedCard && selectedCard.bonus === 'eliminateWrong' && currentQuestion) {
+      const wrongOptions = currentQuestion.options
+        .map((_, index) => index)
+        .filter(index => index !== currentQuestion.correct);
+      
+      if (wrongOptions.length > 0) {
+        const randomWrong = wrongOptions[Math.floor(Math.random() * wrongOptions.length)];
+        console.log('⚔️ [Courage] Option éliminée:', randomWrong, 'Texte:', currentQuestion.options[randomWrong]);
+        setEliminatedOption(randomWrong);
+      }
+    } else {
+      setEliminatedOption(null);
+    }
+  }, [currentQuestion, selectedCard]);
 
   const handleAnswer = async (optionIndex) => {
     if (isAnswering) return;
@@ -91,18 +118,6 @@ const QuestionScreen = ({
         // 🎵 Son de mauvaise réponse
         audio?.sounds?.wrongAnswer();
         
-        // Bonus COURAGE : seconde chance
-        if (selectedCard && selectedCard.bonus === 'secondChance') {
-          setTimeout(() => {
-            setSelectedAnswer(null);
-            setIsAnswering(false);
-            alert(t('messages.secondChance'));
-            // Désactiver le bonus pour éviter l'infini
-            setSelectedCard({...selectedCard, bonus: 'used'});
-          }, 1000);
-          return;
-        }
-        
         setTimeout(() => {
           setLives(lives - 1);
           setCombo(0);
@@ -134,10 +149,10 @@ const QuestionScreen = ({
       
       if (questionDifficulty === 'easy') {
         setQuestionDifficulty('medium');
-        setCurrentQuestion(levelData.medium);
+        setCurrentQuestion(levelData.questions.medium);
       } else if (questionDifficulty === 'medium') {
         setQuestionDifficulty('hard');
-        setCurrentQuestion(levelData.hard);
+        setCurrentQuestion(levelData.questions.hard);
       } else {
         // 🎵 Son de fin de niveau
         audio?.sounds?.levelComplete();
@@ -235,6 +250,11 @@ const QuestionScreen = ({
                   <span className="text-blue-600">📜</span>
                   <span className="text-xs font-bold text-blue-700">{t('labels.hintOfWisdom')} :</span>
                 </div>
+                {console.log('🔍 [QuestionScreen] currentQuestion:', {
+                  hint: currentQuestion.hint,
+                  correct: currentQuestion.correct,
+                  correctOption: currentQuestion.options?.[currentQuestion.correct]
+                })}
                 <p className="text-xs text-gray-700 italic">{currentQuestion.hint}</p>
               </div>
             )}
@@ -251,35 +271,53 @@ const QuestionScreen = ({
         <div className="text-center text-sm font-bold text-black mb-2">
           {t('messages.chooseAnswer')}
         </div>
-        {currentQuestion.options.map((option, index) => {
-          const isSelected = selectedAnswer === index;
-          const isCorrect = index === currentQuestion.correct;
-          const showResult = isAnswering && selectedAnswer !== null;
-          
-          return (
+        {!currentQuestion?.options ? (
+          <div className="text-center text-red-500">Erreur: Options manquantes</div>
+        ) : !Array.isArray(currentQuestion.options) ? (
+          <div className="text-center text-red-500">
+            Erreur: Options invalides (type: {typeof currentQuestion.options})
+            <br />
+            Valeur: {JSON.stringify(currentQuestion.options)}
+          </div>
+        ) : (
+          currentQuestion.options.map((option, index) => {
+            const isSelected = selectedAnswer === index;
+            const isCorrect = index === currentQuestion.correct;
+            const showResult = isAnswering && selectedAnswer !== null;
+            const isEliminated = eliminatedOption === index;
+            
+            return (
             <button
               key={index}
-              onClick={() => handleAnswer(index)}
-              disabled={isAnswering}
+              onClick={() => !isEliminated && handleAnswer(index)}
+              disabled={isAnswering || isEliminated}
               className={`w-full p-4 rounded-full text-left transition-all 
-                       flex items-center gap-3 shadow-md
-                       ${!isAnswering ? 'hover:shadow-lg active:scale-95' : ''}
+                       flex items-center gap-3 shadow-md relative
+                       ${!isAnswering && !isEliminated ? 'hover:shadow-lg active:scale-95' : ''}
                        ${showResult && isSelected && isCorrect ? 'bg-green-100 border-green-400' :
                          showResult && isSelected && !isCorrect ? 'bg-red-100 border-red-400' :
+                         isEliminated ? 'bg-gray-100 border-gray-300 opacity-50' :
                          'bg-white border-blue-100 hover:border-blue-300'}
-                       ${isAnswering ? 'cursor-not-allowed' : 'cursor-pointer'}
+                       ${isAnswering || isEliminated ? 'cursor-not-allowed' : 'cursor-pointer'}
                        border-2`}
             >
               <div className={`w-5 h-5 rounded-full flex items-center justify-center font-bold text-white text-xs
                             ${showResult && isSelected && isCorrect ? 'bg-green-500' :
                               showResult && isSelected && !isCorrect ? 'bg-red-500' :
+                              isEliminated ? 'bg-gray-400' :
                               'bg-gradient-to-br from-blue-500 to-purple-500'}`}>
                 {showResult && isSelected ? (isCorrect ? '✓' : '✗') : String.fromCharCode(65 + index)}
               </div>
-              <span className="text-black flex-1 font-medium">{option}</span>
+              <span className={`flex-1 font-medium ${isEliminated ? 'text-gray-400 line-through' : 'text-black'}`}>
+                {option}
+              </span>
+              {isEliminated && (
+                <span className="text-red-500 text-xl">⚔️</span>
+              )}
             </button>
           );
-        })}
+        })
+        )}
       </div>
 
       {showFunFact && (

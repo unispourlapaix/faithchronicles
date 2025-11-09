@@ -243,17 +243,17 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
 
     return fallbackChapters[chapterNumber] || {
       chapter: chapterNumber,
-      title: `Jean ${chapterNumber}`,
+      title: `${t('bible.john')} ${chapterNumber}`,
       version: "LSG 1910",
       verses: [
         {
           number: 1,
-          text: `Chapitre ${chapterNumber} de l'Évangile de Jean. Les données complètes sont en cours de chargement...`,
+          text: t('bible.loadingChapter', { chapter: chapterNumber }),
           strong: []
         },
         {
           number: 2,
-          text: "En attendant, vous pouvez explorer les autres chapitres ou utiliser la fonction de recherche.",
+          text: t('bible.exploreWhileLoading'),
           strong: []
         }
       ]
@@ -421,7 +421,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         {/* Ligne 1: Titre centré */}
         <div className="relative px-3 py-2 text-center">
-          <div className="text-sm font-bold">Jean {currentChapter} / 21</div>
+          <div className="text-sm font-bold">{t('bible.john')} {currentChapter} / 21</div>
           {onClose && (
             <button
               onClick={onClose}
@@ -570,7 +570,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
 
       {/* Content - Optimisé pour lecture mobile avec header 2 lignes */}
       <div 
-        className="overflow-y-auto bg-white"
+        className="overflow-y-auto bg-gradient-to-br from-amber-50 to-white"
         style={{
           flex: '1 1 auto',
           minHeight: 0,
@@ -578,7 +578,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
           WebkitOverflowScrolling: 'touch' // Smooth scroll iOS
         }}
       >
-        <div className="p-2 sm:p-4">
+        <div className="p-4 sm:p-6 max-w-3xl mx-auto">
         {error ? (
           <div className="text-center py-4">
             <div className="text-red-500 mb-2 text-sm">{t('bible.error')}</div>
@@ -597,10 +597,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
             {chapterData?.verses?.map((verse, index) => (
               <div key={verse.number}>
                 <div
-                  className={`group relative transition-all p-2 sm:p-3 rounded ${
-                    // Espacement toutes les 3 lignes
-                    (index + 1) % 3 === 0 ? 'mb-3' : 'mb-0.5'
-                  }`}
+                  className={`group relative transition-all p-3 sm:p-4 rounded mb-2`}
                 >
                   <div className="flex gap-2 relative">
                     <span className="text-blue-600 font-bold text-xs sm:text-sm mt-0.5 min-w-[18px] sm:min-w-[22px] flex-shrink-0">
@@ -616,13 +613,10 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
                         <Share2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-500" />
                       </button>
                       <div 
-                        className={`${fontSize} leading-relaxed text-gray-800 select-text`}
+                        className={`${fontSize} leading-relaxed text-gray-900 select-text font-serif text-justify`}
                         style={{ 
-                          fontFamily: language === 'fr' 
-                            ? '"Georgia", "Times New Roman", serif'
-                            : '"Times New Roman", serif',
-                          textAlign: 'left',
-                          lineHeight: '1.65',
+                          lineHeight: '1.75',
+                          letterSpacing: '0.01em',
                           WebkitFontSmoothing: 'antialiased',
                           MozOsxFontSmoothing: 'grayscale'
                         }}

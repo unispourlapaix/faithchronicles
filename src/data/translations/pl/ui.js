@@ -12,7 +12,9 @@ export const uiTranslations = {
   app: {
     title: "UNITYQUEST Kroniki\nMiłości",
     subtitle: "Interaktywne odkrywanie Pism Świętych",
-    tagline: "Wędrówka ku boskiemu światłu"
+    tagline: "Wędrówka ku boskiemu światłu",
+    menu: "Menu",
+    retry: "Spróbuj ponownie"
   },
   
   buttons: {
@@ -77,7 +79,13 @@ export const uiTranslations = {
     spiritualRank: "Ranga duchowa",
     newAdventure: "🎮 Nowa przygoda",
     readyToStart: "Gotowy do startu?",
-    startJourney: "Rozpocznij swoją podróż w poznawaniu Pism Świętych!"
+    startJourney: "Rozpocznij swoją podróż w poznawaniu Pism Świętych!",
+    audioControls: "Sterowanie audio",
+    mute: "Wycisz",
+    unmute: "Włącz dźwięk",
+    close: "Zamknij",
+    language: "Język",
+    restartGame: "Uruchom ponownie grę"
   },
   
   login: {
@@ -116,7 +124,28 @@ export const uiTranslations = {
     guardian: "Strażnik",
     wise: "Mędrzec",
     prophet: "Prorok",
-    apostle: "Apostoł"
+    apostle: "Apostoł",
+    seekerDesc: "Początek duchowej podróży",
+    discipleDesc: "Nauka nauk",
+    servantDesc: "Służba i oddanie",
+    witnessDesc: "Dzielenie się wiarą",
+    guardianDesc: "Ochrona prawdy",
+    wiseDesc: "Mądrość i wiedza",
+    prophetDesc: "Duchowa wizja",
+    apostleDesc: "Duchowy mistrz"
+  },
+
+  spiritualJourney: {
+    beginning: "Początek duchowej podróży",
+    progress: "Postęp duchowy",
+    grade: "Stopień",
+    xp: "XP",
+    level: "Poziom",
+    nextGrade: "Następny stopień",
+    still: "Jeszcze",
+    maxLevelReached: "Osiągnięto Maksymalny Poziom!",
+    masteredAllTeachings: "Opanowałeś wszystkie nauki",
+    progression: "Postęp"
   },
   
   treasures: {
@@ -125,6 +154,8 @@ export const uiTranslations = {
     fact: "Czy wiesz?",
     treasure: "Ukryty skarb",
     question: "Zabawne pytanie",
+    context: "Kontekst",
+    strongReference: "Odniesienie biblijne do pogłębionej nauki",
     emmanuelMemo: "Notatka Emmanuela",
     emmanuelMessage: "Dotarłeś na szczyt góry i wiedza została zdobyta. Ale niezachwiana wiara wymaga życiowego doświadczenia, miłosierdzia i prawdziwej miłości Jezusa. Różne próby życiowe będą testować twoją drogę, prawdziwą ścieżkę którą wybieramy, nasze serce. Pozostajemy niedoskonali, nasze pragnienia są liczne, a miłość do zysku lub osobistego komfortu zbyt często staje się naszym egoistycznym priorytetem. Proś Boga o mądrość, Jego miłość, Jego siłę, i pokornie uznawaj swoje słabości, bo nie możesz przed Nim niczego ukryć... Nic. Nie ma sensu podróżować w trybie prywatnym, przez VPN, czy nawet usuwać historię. Pość jak Daniel: pozbądź się na chwilę tego, co kochasz najbardziej, w ciszy i mądrości. To pozwoli ci lepiej słyszeć Boga, mieć dyspozycję serca gotową na głębokie — i często bolesne — przemiany. Wtedy sny i wizje staną się jaśniejsze, jak dla Józefa. Ale strzeż się pychy: nie ulegaj \"zawsze mam rację\" lub \"wiem lepiej\". Bo objawienie Boga jest nadzwyczajną łaską. Nie stań się doktorem Prawa, zdolnym do ukrzyżowania Jezusa ponownie dzisiaj, Jego który po prostu prosi o miłowanie bliźniego... i przyznanie mu tej samej wolności, którą sam otrzymujesz. Mieć wiarę to wejść w relację i swobodną wędrówkę serca. Uczyni cię to potężnymi bohaterami, zdolnymi do niemożliwego. Bo doświadczenie nadprzyrodzonego, obecność Boga, Jego potwierdzenie lub błogosławieństwo uczyni cię naprawdę niezachwianym.",
     clarification: "Ważne wyjaśnienie",
@@ -146,7 +177,7 @@ export const uiTranslations = {
     pointsEarned: "+{points} punktów mądrości",
     secondChance: "⚔️ Twoja karta ODWAGA daje ci drugą szansę! Spróbuj ponownie z mądrością.",
     bonusApplied: "✨ Bonus {card}: +{percent}% ({base} → {final})",
-    defeatedQuote: "Wszystko mogę w Tym, który mnie umacnia - Flp 4:13",
+    defeatedQuote: "Wszystko mogę w Tym, który mnie umacnia",
     perfect: "✨ Perfekcyjnie",
     good: "⭐ Dobrze",
     start: "⭐ Start",
@@ -183,8 +214,8 @@ export const uiTranslations = {
     faithDesc: "Maksymalna liczba punktów mądrości",
     courageDesc: "Normalne punkty ale druga szansa",
     wisdomDesc: "Wskazówka ujawniona i +25% punktów",
-    chooseCard: "✨ Wybierz swoją kartę wiedzy",
-    cardEffects: "✨ Efekty kart wiedzy:",
+    chooseCard: "✨ Wybierz dar wiedzy",
+    cardEffects: "✨ Efekty darów wiedzy:",
     faithEffect: "+50% punktów mądrości - Maksymalna nagroda",
     courageEffect: "Normalne punkty ale druga szansa przy błędzie",
     wisdomEffect: "+25% punktów + wskazówka ujawniona dla każdego pytania",
@@ -199,7 +230,7 @@ export const uiTranslations = {
   },
   
   info: {
-    title: "Unity Quest Chronicles of Peace",
+    title: "Unity Quest Kroniki Pokoju",
     subtitle: "Interaktywne odkrywanie Pism Świętych",
     yourStats: "Twoje statystyki",
     score: "Wynik",
@@ -225,6 +256,17 @@ export const uiTranslations = {
     useWisdomCard: "Używaj karty Mądrość dla wskazówek",
     courageGivesSecondChance: "Karta Odwaga daje drugą szansę",
     faithMaximizes: "Karta Wiara maksymalizuje punkty",
+    johnGospelTitle: "Ewangelia Jana",
+    johnGospelStats: "21 rozdziałów • 878 wersetów • 14 języków",
+    bibleReaderStrong: "Czytnik Biblii + Strong",
+    bibleReaderStrongDesc: "Pełne czytanie ze słownikiem Strong",
+    johnTreasures: "Skarby Jana",
+    johnTreasuresDesc: "Biblijne skarby i ciekawe fakty",
+    quickAccessChapters: "Szybki dostęp do słynnych rozdziałów:",
+    johnChapter1: "Prolog",
+    johnChapter3: "Narodzić się na nowo",
+    johnChapter14: "Ja jestem drogą",
+    johnChapter20: "Zmartwychwstanie",
     version: "Wersja",
     madeWithLove: "Stworzone z miłością dla chwały Bożej",
     backToMenu: "Powrót do menu"
@@ -232,7 +274,10 @@ export const uiTranslations = {
   
   bible: {
     readerTitle: "📖 Czytnik Biblii",
+    john: "Jan",
     loading: "Ładowanie Pism Świętych...",
+    loadingChapter: "Rozdział {chapter} Ewangelii Jana. Pełne dane są ładowane...",
+    exploreWhileLoading: "W międzyczasie możesz przeglądać inne rozdziały lub użyć funkcji wyszukiwania.",
     menu: "Menu",
     strong: "Strong",
     strongReferences: "Referencje Strong",
@@ -260,13 +305,17 @@ export const uiTranslations = {
     goodMessage: '"Szukajcie, a znajdziecie" - Wspinaczka ku prawdzie trwa',
     startMessage: '"Wiara, choćby jak ziarnko gorczycy" - Pierwszy krok ku światłu',
     skipAnimation: "Pomiń animację",
+    chapter: "Rozdział",
+    chapterProgress: "Rozdział {{current}}/{{total}}",
+    secret: "Sekret",
     waypoints: {
       start: "Start",
       firstSlope: "Pierwszy stok",
       lastSlope: "Ostatni stok"
     },
     status: {
-      defeat: "Porażka"
+      defeat: "Porażka",
+      inProgress: "W toku"
     }
   },
   

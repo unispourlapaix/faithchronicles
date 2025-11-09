@@ -105,22 +105,21 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
         <>
           {/* Titre du passage */}
           <div className="text-center mb-4">
-            <h1 className="text-xl font-bold text-gray-800 mb-1">
+            <h1 className="text-xl font-bold text-gray-800">
               {currentPassage.book} {currentPassage.chapter}
             </h1>
-            <p className="text-sm text-gray-600 italic">{currentPassage.title}</p>
           </div>
 
           {/* Contenu biblique */}
-          <div className="flex-1 overflow-y-auto bg-white/90 rounded-3xl shadow-xl p-4 mb-4">
-            <div className="space-y-3">
+          <div className="flex-1 overflow-y-auto bg-white/90 rounded-3xl shadow-xl p-6 mb-4">
+            <div className="space-y-4 max-w-2xl mx-auto">
               {currentPassage.verses.map((verse) => (
                 <div key={verse.number} className="group">
-                  <div className="flex items-start gap-2">
-                    <span className="text-[10px] font-bold text-blue-600 bg-blue-100 rounded-full w-5 h-5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="flex items-start gap-3">
+                    <span className="text-xs font-bold text-blue-500 bg-blue-50 rounded-md px-2 py-1 flex-shrink-0 mt-0.5">
                       {verse.number}
                     </span>
-                    <div className="text-xs text-gray-800 leading-relaxed">
+                    <div className="text-base text-gray-900 leading-relaxed font-serif text-justify">
                       <VerseWithStrong 
                         verse={verse} 
                         language={currentPassage.language || 'fr'} 
