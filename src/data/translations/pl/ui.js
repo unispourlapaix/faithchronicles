@@ -295,7 +295,8 @@ export const uiTranslations = {
     etymology: "Etymologia",
     close: "Zamknij",
     moreReferences: "i {{count}} innych referencji",
-    copyright: "📖 Louis Segond 1910 - Domena publiczna • Numery Strong dołączone"
+    copyright: "📖 Louis Segond 1910 - Domena publiczna • Numery Strong dołączone",
+    shareVerse: "Udostępnij ten werset"
   },
   
   mountain: {

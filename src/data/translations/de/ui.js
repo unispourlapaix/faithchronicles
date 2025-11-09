@@ -302,7 +302,8 @@ export const uiTranslations = {
     etymology: "Etymologie",
     close: "Schlie├ƒen",
     moreReferences: "und {{count}} weitere Referenzen",
-    copyright: "📖 Gemeinfrei • Strong"
+    copyright: "📖 Gemeinfrei • Strong",
+    shareVerse: "Diesen Vers teilen"
   },
 
   bibleResources: {

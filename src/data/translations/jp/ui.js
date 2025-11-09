@@ -314,7 +314,8 @@ export const uiTranslations = {
     etymology: "語源",
     close: "閉じる",
     moreReferences: "さらに{{count}}つの他の参照",
-    copyright: "💭 著作権訳 1955 • Strong辞書"
+    copyright: "💭 著作権訳 1955 • Strong辞書",
+    shareVerse: "この節を共有"
   },
 
   mountain: {

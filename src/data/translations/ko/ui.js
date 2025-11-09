@@ -320,7 +320,8 @@ export const uiTranslations = {
     etymology: "어원",
     close: "닫기",
     moreReferences: "및 {{count}}개의 다른 참조",
-    copyright: "📖 Korean Revised Version - 공개 도메인 • Strong 번호 포함"
+    copyright: "📖 Korean Revised Version - 공개 도메인 • Strong 번호 포함",
+    shareVerse: "이 구절 공유"
   },
 
   philosophy: {
