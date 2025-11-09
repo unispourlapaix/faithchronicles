@@ -14,6 +14,7 @@ import { translationService } from '../data/bible/gospel/john/translationService
 import VerseWithStrong from './VerseWithStrong';
 import useTranslation from '../hooks/useTranslation.js';
 import Toast from './Toast';
+import VerseImageGenerator from './VerseImageGenerator';
 
 const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
@@ -91,6 +92,8 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
   const [selectedText, setSelectedText] = useState('');
   const [showFloatingShare, setShowFloatingShare] = useState(false);
   const [shareButtonPosition, setShareButtonPosition] = useState({ x: 0, y: 0 });
+  const [showImageGenerator, setShowImageGenerator] = useState(false);
+  const [verseForImage, setVerseForImage] = useState(null);
 
   // Mettre à jour la langue automatiquement quand currentLanguage change
   useEffect(() => {
@@ -413,7 +416,9 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
   };
 
   const downloadImage = (verse) => {
-    showToast(t('bible.imageFeatureComing'), 'info');
+    setVerseForImage(verse);
+    setShowImageGenerator(true);
+    setShowShareModal(false);
     audio?.sounds?.tok();
   };
 
@@ -822,6 +827,17 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
           onClose={() => setToast(null)}
         />
       )}
+      
+      {/* Image Generator */}
+      <VerseImageGenerator
+        verse={verseForImage}
+        chapterNumber={currentChapter}
+        show={showImageGenerator}
+        onClose={() => {
+          setShowImageGenerator(false);
+          setVerseForImage(null);
+        }}
+      />
     </div>
   );
 };
