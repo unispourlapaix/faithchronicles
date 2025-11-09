@@ -218,7 +218,10 @@ title: "L'Unità che Produce la Pace",
       watchOurWords: "Vegliare sulle nostre Parole",
       
       prideFruits: "Frutti dell'orgoglio umano",
+      prideFruitsList: "Spirito di parte: \"Ho ragione, punto\"|Politica dell'orgoglio: \"Ho ragione di farti del male\"|Usare le scritture per far del male (processo dispettoso)|Odiare le persone (non solo gli atti)|Leader spirituali che nascondono la loro deriva e disonestà|Silenzio complice di fronte all'ingiustizia|Divisione e guerre|Odio mascherato da pietà|Furto e distruzione|Manipolazione per orgoglio|Disprezzo e violenza",
+      
       godFruits: "Frutti dell'amore di Dio",
+      godFruitsList: "Separare gli atti dalla persona con saggezza|Compassione per la nostra povertà umana|Grazia proteggendoci secondo i contesti|Denunciare l'ingiustizia per proteggere gli altri|Dire la verità con coraggio|Pace per tutti|Amore senza distinzione|Riconciliazione e unità|Umiltà e rispetto|Libertà per tutti",
       
       finalQuote: "Anche se la fratellanza non è oggettivamente applicabile, il rispetto è la base dell'umiltà, custode della pace. Evitare l'inseguimento delle parole per parole, e i nostri figli del futuro vivranno in pace nella diversità.",
       author: "Emmanuel"

@@ -218,7 +218,10 @@ title: "Jedność, która przynosi pokój",
       watchOurWords: "Czuwać nad naszymi słowami",
       
       prideFruits: "Owoce ludzkiej pychy",
+      prideFruitsList: "Duch partyjny: \"Mam rację, kropka\"|Polityka pychy: \"Mam rację, by cię skrzywdzić\"|Używanie pism do krzywdzenia (podstępny proces)|Nienawiść do osób (nie tylko do czynów)|Przywódcy duchowi ukrywający swoje odchylenia i nieuczciwość|Współwinne milczenie wobec niesprawiedliwości|Podział i wojny|Nienawiść przebrana za pobożność|Kradzież i zniszczenie|Manipulacja dla pychy|Pogarda i przemoc",
+      
       godFruits: "Owoce miłości Boga",
+      godFruitsList: "Oddzielanie czynów od osoby z mądrością|Współczucie dla naszej ludzkiej nędzy|Łaska, chroniąc się zgodnie z kontekstem|Potępianie niesprawiedliwości, aby chronić innych|Mówienie prawdy z odwagą|Pokój dla wszystkich|Miłość bez rozróżnienia|Pojednanie i jedność|Pokora i szacunek|Wolność dla wszystkich",
       
       finalQuote: "Nawet jeśli braterstwo nie jest obiektywnie możliwe, szacunek jest fundamentem pokory, strażnikiem pokoju. Unikaj pogoń za słowami dla słów, a nasze dzieci przyszłości będą żyć w pokoju w różnorodności.",
       author: "Emmanuel"

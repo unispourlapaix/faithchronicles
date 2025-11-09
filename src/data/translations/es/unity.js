@@ -218,7 +218,10 @@ title: "La Unidad que Produce Paz",
       watchOurWords: "Vigilar nuestras Palabras",
       
       prideFruits: "Frutos del orgullo humano",
+      prideFruitsList: "Espíritu de partido: \"Tengo razón, punto\"|Política del orgullo: \"Tengo razón de hacerte daño\"|Usar las escrituras para hacer daño (proceso travieso)|Odiar a las personas (no solo los actos)|Líderes espirituales que ocultan su deriva y deshonestidad|Silencio cómplice ante la injusticia|División y guerras|Odio disfrazado de piedad|Robo y destrucción|Manipulación por orgullo|Desprecio y violencia",
+      
       godFruits: "Frutos del amor de Dios",
+      godFruitsList: "Separar los actos de la persona con sabiduría|Compasión por nuestra pobreza humana|Gracia mientras nos protegemos según los contextos|Denunciar la injusticia para proteger a otros|Decir la verdad con valentía|Paz para todos|Amor sin distinción|Reconciliación y unidad|Humildad y respeto|Libertad para todos",
       
       finalQuote: "Aunque la fraternidad no sea objetivamente aplicable, el respeto es la base de la humildad, guardián de la paz. Evitar la persecución de palabras por palabras, y nuestros hijos del futuro vivirán en paz en la diversidad.",
       author: "Emmanuel"

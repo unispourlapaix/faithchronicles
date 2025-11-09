@@ -182,7 +182,11 @@ title: "Bomoko",
       lookGodLove: "Luka bolingo ya Nzambe na moto nyonso, ata soki andimi ndenge mosusu.",
       watchOurWords: "Bátela maloba mpe misala na biso.",
       prideFruits: "Ba fruits ya lofundu: kokabwana, koyina, kobanga, contrôle, bitumba.",
+      prideFruitsList: "Elimo ya etuka: \"Nazali na racio, point\"|Politiki ya lofundu: \"Nazali na racio ya kosala yo mabe\"|Kosalela ba écritures pona kosala mabe (processus ya mayele)|Koyina batu (kasi te kaka misala)|Ba chefs spirituels oyo babombaka dérive mpe lokuta na bango|Kovanda complice liboso ya injustice|Kokabwana mpe bitumba|Koyina oyo ebombami na piété|Moyibi mpe kobebisa|Manipulation pona lofundu|Kozanga bokebi mpe violence",
+      
       godFruits: "Ba fruits ya Nzambe: bolingo, kimia, patience, mawa, bomoko.",
+      godFruitsList: "Kokabola misala na moto na bwanya|Mawa pona bobola na biso ya bomoto|Grâce na kobatela biso na ba contextes|Koloba injustice pona kobatela basusu|Koloba solo na mpiko|Kimia pona bato nyonso|Bolingo kozanga kokesana|Boyokani mpe bomoko|Komikitisa mpe bokebi|Bonsomi pona bato nyonso",
+      
       finalQuote: "Soki olingi komona elongi ya Nzambe, talá elongi ya moninga.",
       author: "- Emmanuel"
     },

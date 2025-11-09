@@ -172,9 +172,9 @@ const UnityPeaceModule = () => {
     <div className="unity-peace-module">
       {/* En-tête */}
       <header className="module-header">
-        <h1>🕊️ L'Unité qui Produit la Paix</h1>
+        <h1>🕊️ {t('unity.title')}</h1>
         <p className="subtitle">
-          Par Emmanuel - "Chaque religion a ses raisons, nos frontières viennent du passé"
+          {t('unity.author')} - "{t('unity.subtitle')}"
         </p>
       </header>
 
@@ -184,25 +184,25 @@ const UnityPeaceModule = () => {
           className={activeSection === 'intro' ? 'active' : ''}
           onClick={() => setActiveSection('intro')}
         >
-          Intro
+          {t('unity.nav.intro')}
         </button>
         <button 
           className={activeSection === 'religions' ? 'active' : ''}
           onClick={() => setActiveSection('religions')}
         >
-          Religions
+          {t('unity.nav.religions')}
         </button>
         <button 
           className={activeSection === 'commun' ? 'active' : ''}
           onClick={() => setActiveSection('commun')}
         >
-          Bases Communes
+          {t('unity.nav.common')}
         </button>
         <button 
           className={activeSection === 'humilite' ? 'active' : ''}
           onClick={() => setActiveSection('humilite')}
         >
-          Humilité
+          {t('unity.nav.humility')}
         </button>
       </nav>
 
@@ -212,52 +212,51 @@ const UnityPeaceModule = () => {
         {/* SECTION INTRODUCTION */}
         {activeSection === 'intro' && (
           <section className="intro-section">
-            <h2>Emmanuel dit :</h2>
+            <h2>{t('unity.intro.emmanuelSays')}</h2>
             
             <div className="intro-card">
-              <h3>🌍 Nos frontières viennent du passé</h3>
+              <h3>🌍 {t('unity.intro.ourBordersFromPast')}</h3>
               <p>
-                Chaque religion a ses raisons. Nos divisions ne sont pas la volonté divine, 
-                mais le fruit de l'histoire, de la géographie, de la culture. 
+                {t('unity.intro.bordersDescription')}
                 <br /><br />
-                <strong>La division, l'isolement par des barrières et frontières de peur, est l'œuvre de notre passé périlleux.</strong>
+                <strong>{t('unity.intro.divisionWork')}</strong>
                 <br />
-                Nous sommes nés dans des traditions différentes, mais nous partageons la même humanité.
+                {t('unity.intro.sharedHumanity')}
               </p>
             </div>
 
             <div className="intro-card success">
-              <h3>✨ Une révélation qui ouvre les yeux</h3>
+              <h3>✨ {t('unity.intro.revelationTitle')}</h3>
               <p>
-                <strong>J'ai été surpris un jour en apprenant que les Juifs sont aussi les fils de Dieu.</strong>
+                <strong>{t('unity.intro.surprisedLearning')}</strong>
                 <br />
-                Que l'ange Michel est un grand messager pour les musulmans.
-                Que Jésus, Isa, Yeshua sont connus de diverses manières, même dans la foi chrétienne.
+                {t('unity.intro.angelMichael')}
+                {' '}
+                {t('unity.intro.jesusNames')}
                 <br />
-                <em>Car il existe diverses tribus, diverses églises, diverses familles.</em>
+                <em>{t('unity.intro.diverseTribes')}</em>
                 <br />
-                Nous parlons des mêmes réalités avec des noms différents. Cela devrait nous rapprocher, pas nous diviser.
+                {t('unity.intro.sameRealities')}
               </p>
             </div>
 
             <div className="intro-card">
-              <h3>🙏 Le respect : socle de l'humilité, gardien de la paix</h3>
+              <h3>🙏 {t('unity.intro.respectTitle')}</h3>
               <p>
-                Même si la fraternité n'est pas applicable objectivement, <strong>le respect est le socle de l'humilité, gardien de la paix.</strong>
+                {t('unity.intro.respectFoundation')}
                 <br />
-                Comprendre et respecter les autres religions est un processus d'humilité. 
-                Cela ne veut pas dire renoncer à sa foi, mais accepter que l'autre aussi cherche la vérité.
+                {t('unity.intro.understandingProcess')}
               </p>
             </div>
 
             <div className="intro-card success">
-              <h3>❤️ Ce qui nous lie vraiment</h3>
+              <h3>❤️ {t('unity.intro.whatBindsUs')}</h3>
               <p>
-                <strong>Chaque religion cherche la relation. Chaque homme recherche la paix.</strong>
+                <strong>{t('unity.intro.seekingRelation')}</strong>
                 <br />
-                Cette relation qui nous lie tous, c'est l'amour de Dieu.
+                {t('unity.intro.loveOfGod')}
                 <br />
-                L'amour est le lien universel qui transcende toutes les frontières, toutes les langues, toutes les traditions.
+                {t('unity.intro.universalLink')}
               </p>
             </div>
 
@@ -508,32 +507,17 @@ const UnityPeaceModule = () => {
                 <div className="mots-card destructeurs">
                   <h4>❌ {t('unity.humility.prideFruits')}</h4>
                   <ul>
-                    <li>L'esprit de parti : "J'ai raison un point c'est tout"</li>
-                    <li>La politique de l'orgueil : "J'ai raison de te faire mal"</li>
-                    <li>Utiliser les écritures pour faire mal (processus espiègle)</li>
-                    <li>Avoir en horreur les personnes (et non seulement les actes)</li>
-                    <li>Leaders spirituels qui cachent leur dérive et malhonnêteté</li>
-                    <li>Silence complice face à l'injustice</li>
-                    <li>Division et guerres</li>
-                    <li>Haine déguisée en piété</li>
-                    <li>Vol et destruction</li>
-                    <li>Manipulation pour l'orgueil</li>
-                    <li>Mépris et violence</li>
+                    {t('unity.humility.prideFruitsList').split('|').map((fruit, index) => (
+                      <li key={index}>{fruit}</li>
+                    ))}
                   </ul>
                 </div>
                 <div className="mots-card constructeurs">
                   <h4>✓ {t('unity.humility.godFruits')}</h4>
                   <ul>
-                    <li>Séparer les actes de la personne avec sagesse</li>
-                    <li>Compassion pour notre pauvreté humaine</li>
-                    <li>Grâce tout en se protégeant selon les contextes</li>
-                    <li>Dénoncer l'injustice pour protéger les autres</li>
-                    <li>Dire la vérité avec courage</li>
-                    <li>Paix pour tous</li>
-                    <li>Amour sans distinction</li>
-                    <li>Réconciliation et unité</li>
-                    <li>Humilité et respect</li>
-                    <li>Liberté pour tous</li>
+                    {t('unity.humility.godFruitsList').split('|').map((fruit, index) => (
+                      <li key={index}>{fruit}</li>
+                    ))}
                   </ul>
                 </div>
               </div>

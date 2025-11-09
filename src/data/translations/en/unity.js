@@ -217,10 +217,13 @@ export const unityTranslations = {
     lookGodLove: "Look to God's love",
     watchOurWords: "Watch Our Words",
     
-    prideFruits: "Fruits of human pride",
-    godFruits: "Fruits of God's love",
+    prideFruits: "Fruits of Human Pride",
+    prideFruitsList: "Partisan spirit: \"I'm right, period\"|Politics of pride: \"I'm right to hurt you\"|Using scriptures to hurt (mischievous process)|Hating persons (not just acts)|Spiritual leaders hiding their drift and dishonesty|Complicit silence in the face of injustice|Division and wars|Hatred disguised as piety|Theft and destruction|Manipulation for pride|Contempt and violence",
     
-    finalQuote: "Even if brotherhood is not objectively applicable, respect is the foundation of humility, guardian of peace. Avoid the pursuit of words for words, and our future children will live in peace in diversity.",
+    godFruits: "Fruits of God's Love",
+    godFruitsList: "Separating acts from person with wisdom|Compassion for our human poverty|Grace while protecting ourselves according to contexts|Denouncing injustice to protect others|Speaking truth with courage|Peace for all|Love without distinction|Reconciliation and unity|Humility and respect|Freedom for all",
+    
+    finalQuote: "Even if brotherhood is not objectively applicable, respect is the foundation of humility, guardian of peace. Avoid the pursuit of words for words, and our children of the future will live in peace in diversity.",
     author: "Emmanuel"
   },
 

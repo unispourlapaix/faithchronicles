@@ -218,7 +218,10 @@ export const unityTranslations = {
     watchOurWords: "Veiller à nos Mots",
     
     prideFruits: "Fruits de l'orgueil humain",
+    prideFruitsList: "L'esprit de parti : \"J'ai raison un point c'est tout\"|La politique de l'orgueil : \"J'ai raison de te faire mal\"|Utiliser les écritures pour faire mal (processus espiègle)|Avoir en horreur les personnes (et non seulement les actes)|Leaders spirituels qui cachent leur dérive et malhonnêteté|Silence complice face à l'injustice|Division et guerres|Haine déguisée en piété|Vol et destruction|Manipulation pour l'orgueil|Mépris et violence",
+    
     godFruits: "Fruits de l'amour de Dieu",
+    godFruitsList: "Séparer les actes de la personne avec sagesse|Compassion pour notre pauvreté humaine|Grâce tout en se protégeant selon les contextes|Dénoncer l'injustice pour protéger les autres|Dire la vérité avec courage|Paix pour tous|Amour sans distinction|Réconciliation et unité|Humilité et respect|Liberté pour tous",
     
     finalQuote: "Même si la fraternité n'est pas applicable objectivement, le respect est le socle de l'humilité, gardien de la paix. Éviter la poursuite des mots pour mots, et nos enfants du futur vivront en paix dans la diversité.",
     author: "Emmanuel"

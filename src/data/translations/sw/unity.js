@@ -218,7 +218,10 @@ title: "Umoja unaoleta amani",
       watchOurWords: "Angalia Maneno Yetu",
       
       prideFruits: "Matunda ya kiburi cha kibinadamu",
+      prideFruitsList: "Roho ya chama: \"Niko sahihi, kipindi\"|Siasa za kiburi: \"Nina haki ya kukuumiza\"|Kutumia maandiko kuumiza (mchakato wa ujanja)|Kuchukia watu (si matendo tu)|Viongozi wa kiroho wanaficha upotovu na udanganyifu wao|Ukimya wa ushirika mbele ya udhalimu|Mgawanyiko na vita|Chuki iliyojificha kama utauwa|Wizi na uharibifu|Udanganyifu kwa ajili ya kiburi|Dharau na vurugu",
+      
       godFruits: "Matunda ya upendo wa Mungu",
+      godFruitsList: "Kutenganisha matendo na mtu kwa hekima|Huruma kwa umaskini wetu wa kibinadamu|Neema huku tukijilinda kulingana na mazingira|Kukemea udhalimu kulinda wengine|Kusema ukweli kwa ujasiri|Amani kwa wote|Upendo bila ubaguzi|Upatanisho na umoja|Unyenyekevu na heshima|Uhuru kwa wote",
       
       finalQuote: "Hata kama undugu hauwezekani kwa ukweli, heshima ni msingi wa unyenyekevu, mlinzi wa amani. Epuka kufuatilia maneno kwa maneno, na watoto wetu wa kesho wataishi kwa amani katika utofauti.",
       author: "Emmanuel"

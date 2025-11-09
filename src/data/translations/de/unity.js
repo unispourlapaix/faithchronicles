@@ -218,7 +218,10 @@ title: "Einheit, die Frieden bringt",
       watchOurWords: "Achte auf unsere Worte",
       
       prideFruits: "Früchte des menschlichen Stolzes",
+      prideFruitsList: "Parteigeist: \"Ich habe recht, Punkt\"|Politik des Stolzes: \"Ich habe recht, dir wehzutun\"|Schriften benutzen, um zu verletzen (schelmischer Prozess)|Personen hassen (nicht nur Taten)|Geistliche Führer, die ihre Abweichung und Unehrlichkeit verbergen|Komplizenhaftes Schweigen angesichts von Ungerechtigkeit|Spaltung und Kriege|Hass, getarnt als Frömmigkeit|Diebstahl und Zerstörung|Manipulation für Stolz|Verachtung und Gewalt",
+      
       godFruits: "Früchte der Liebe Gottes",
+      godFruitsList: "Taten von Person mit Weisheit trennen|Mitgefühl für unsere menschliche Armut|Gnade, während wir uns je nach Kontext schützen|Ungerechtigkeit anprangern, um andere zu schützen|Wahrheit mit Mut sprechen|Frieden für alle|Liebe ohne Unterscheidung|Versöhnung und Einheit|Demut und Respekt|Freiheit für alle",
       
       finalQuote: "Auch wenn Brüderlichkeit in der Wahrheit nicht m├Âglich ist, ist Respekt die Grundlage der Demut, der Hüter des Friedens. Vermeide es, Worten Wort für Wort zu folgen, und unsere Kinder von morgen werden in Vielfalt in Frieden leben.",
       author: "Emmanuel"
