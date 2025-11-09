@@ -485,7 +485,11 @@ export const uiTranslations = {
     copyright: "📖 LSG 1910 • Strong ekotami",
     markAsRead: "Eteni etángami",
     alreadyRead: "Etángami liboso",
-    readingBonus: "Bonusi ya kotánga"
+    readingBonus: "Bonusi ya kotánga",
+    results: "ndimbola",
+    result: "ndimbola",
+    copy: "Kokopisa",
+    image: "Elilingi"
   },
 
   mountain: {

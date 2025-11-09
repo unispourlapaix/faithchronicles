@@ -344,7 +344,11 @@ export const uiTranslations = {
     shareVerse: "이 구절 공유",
     markAsRead: "구절 읽음",
     alreadyRead: "이미 읽음",
-    readingBonus: "읽기 보너스"
+    readingBonus: "읽기 보너스",
+    results: "결과",
+    result: "결과",
+    copy: "복사",
+    image: "이미지"
   },
 
   philosophy: {

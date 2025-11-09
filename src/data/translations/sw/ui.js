@@ -317,7 +317,11 @@ export const uiTranslations = {
     shareVerse: "Shiriki aya hii",
     markAsRead: "Kifungu kimesomwa",
     alreadyRead: "Tayari imesomwa",
-    readingBonus: "Bonasi ya kusoma"
+    readingBonus: "Bonasi ya kusoma",
+    results: "matokeo",
+    result: "tokeo",
+    copy: "Nakili",
+    image: "Picha"
   },
   
   mountain: {

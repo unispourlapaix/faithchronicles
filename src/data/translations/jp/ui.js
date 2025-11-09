@@ -335,7 +335,11 @@ export const uiTranslations = {
     shareVerse: "この節を共有",
     markAsRead: "箇所既読",
     alreadyRead: "既読",
-    readingBonus: "読書ボーナス"
+    readingBonus: "読書ボーナス",
+    results: "結果",
+    result: "結果",
+    copy: "コピー",
+    image: "画像"
   },
 
   mountain: {

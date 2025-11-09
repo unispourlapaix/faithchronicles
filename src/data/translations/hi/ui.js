@@ -317,7 +317,11 @@ export const uiTranslations = {
     shareVerse: "इस पद को साझा करें",
     markAsRead: "अंश पढ़ लिया",
     alreadyRead: "पहले से पढ़ा",
-    readingBonus: "पढ़ने का बोनस"
+    readingBonus: "पढ़ने का बोनस",
+    results: "परिणाम",
+    result: "परिणाम",
+    copy: "कॉपी करें",
+    image: "छवि"
   },
   
   mountain: {

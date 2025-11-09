@@ -492,7 +492,11 @@ export const uiTranslations = {
     copyright: "📖 LSG 1910 • Strong مضمن",
     markAsRead: "المقطع مقروء",
     alreadyRead: "تم القراءة",
-    readingBonus: "مكافأة القراءة"
+    readingBonus: "مكافأة القراءة",
+    results: "نتائج",
+    result: "نتيجة",
+    copy: "نسخ",
+    image: "صورة"
   },
 
   mountain: {

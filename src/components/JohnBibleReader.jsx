@@ -610,7 +610,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
         <div className="bg-yellow-50 border-b">
           <div className="p-2">
             <div className="text-xs font-semibold text-gray-700 mb-1 px-1">
-              {searchResults.length} résultat{searchResults.length > 1 ? 's' : ''}
+              {searchResults.length} {searchResults.length > 1 ? t('bible.results') : t('bible.result')}
             </div>
             <div className="space-y-1 max-h-48 overflow-y-auto">
               {searchResults.map((result, index) => (
@@ -651,7 +651,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
               onClick={() => loadChapter(currentChapter)}
               className="px-3 py-1.5 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 transition-colors"
             >
-              Réessayer
+              {t('bible.retry')}
             </button>
           </div>
         ) : (
@@ -693,6 +693,27 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
                 
               </div>
             ))}
+
+            {/* Boutons de navigation en bas - Nouveau */}
+            <div className="mt-8 mb-4 flex items-center justify-between gap-4 px-2">
+              <button
+                onClick={() => goToChapter(currentChapter - 1)}
+                disabled={currentChapter <= 1}
+                className="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg disabled:opacity-30 disabled:cursor-not-allowed active:scale-95 transition-all shadow-lg hover:shadow-xl disabled:shadow-none flex-1 justify-center"
+              >
+                <ChevronLeft className="w-5 h-5" />
+                <span className="font-medium">{t('bible.previous')}</span>
+              </button>
+
+              <button
+                onClick={() => goToChapter(currentChapter + 1)}
+                disabled={currentChapter >= 21}
+                className="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg disabled:opacity-30 disabled:cursor-not-allowed active:scale-95 transition-all shadow-lg hover:shadow-xl disabled:shadow-none flex-1 justify-center"
+              >
+                <span className="font-medium">{t('bible.next')}</span>
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         )}
         </div>
@@ -720,9 +741,9 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
           <div className="bg-white rounded-t-2xl sm:rounded-2xl max-w-md w-full max-h-[85vh] overflow-y-auto">
             {/* Header compact */}
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 sm:p-4 rounded-t-2xl text-center">
-              <div className="text-white font-bold text-base sm:text-lg">Partager</div>
+              <div className="text-white font-bold text-base sm:text-lg">{t('bible.share')}</div>
               <div className="text-blue-100 text-xs sm:text-sm">
-                Jean {currentChapter}{selectedVerse?.number ? `:${selectedVerse.number}` : ''}
+                {t('bible.john')} {currentChapter}{selectedVerse?.number ? `:${selectedVerse.number}` : ''}
               </div>
             </div>
 
@@ -733,7 +754,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
                   "{selectedText || (selectedVerse?.text ? formatTextByLanguage(selectedVerse.text, language) : '')}"
                 </div>
                 <div className="text-blue-600 font-semibold text-xs sm:text-sm">
-                  — Jean {currentChapter}{selectedVerse?.number ? `:${selectedVerse.number}` : ''}
+                  — {t('bible.john')} {currentChapter}{selectedVerse?.number ? `:${selectedVerse.number}` : ''}
                 </div>
               </div>
             </div>
@@ -746,7 +767,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
                   className="flex items-center justify-center gap-2 p-3 bg-green-600 active:bg-green-700 text-white rounded-lg transition-colors"
                 >
                   <Copy className="w-4 h-4" />
-                  <span className="font-medium text-sm">Copier</span>
+                  <span className="font-medium text-sm">{t('bible.copy')}</span>
                 </button>
                 
                 <button
@@ -754,7 +775,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
                   className="flex items-center justify-center gap-2 p-3 bg-purple-600 active:bg-purple-700 text-white rounded-lg transition-colors"
                 >
                   <Download className="w-4 h-4" />
-                  <span className="font-medium text-sm">Image</span>
+                  <span className="font-medium text-sm">{t('bible.image')}</span>
                 </button>
               </div>
             </div>
@@ -768,7 +789,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
                 }}
                 className="w-full p-2.5 bg-gray-100 active:bg-gray-200 text-gray-700 rounded-lg transition-colors font-medium text-sm"
               >
-                Fermer
+                {t('bible.close')}
               </button>
             </div>
           </div>

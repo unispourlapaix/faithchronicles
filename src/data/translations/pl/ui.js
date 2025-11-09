@@ -317,7 +317,11 @@ export const uiTranslations = {
     shareVerse: "Udostępnij ten werset",
     markAsRead: "Fragment przeczytany",
     alreadyRead: "Już przeczytane",
-    readingBonus: "Bonus za czytanie"
+    readingBonus: "Bonus za czytanie",
+    results: "wyników",
+    result: "wynik",
+    copy: "Kopiuj",
+    image: "Obraz"
   },
   
   mountain: {

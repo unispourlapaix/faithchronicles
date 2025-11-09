@@ -342,7 +342,11 @@ export const uiTranslations = {
     copyright: "📖 LSG 1910 • Strong inclus",
     markAsRead: "Passage lu",
     alreadyRead: "Déjà lu",
-    readingBonus: "Bonus de lecture"
+    readingBonus: "Bonus de lecture",
+    results: "résultats",
+    result: "résultat",
+    copy: "Copier",
+    image: "Image"
   },
   
   mountain: {

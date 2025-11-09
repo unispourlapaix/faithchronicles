@@ -490,7 +490,11 @@ export const uiTranslations = {
     copyright: "📖 LSG 1910 • 包含Strong",
     markAsRead: "段落已读",
     alreadyRead: "已阅读",
-    readingBonus: "阅读奖励"
+    readingBonus: "阅读奖励",
+    results: "结果",
+    result: "结果",
+    copy: "复制",
+    image: "图片"
   },
 
   mountain: {

@@ -508,7 +508,11 @@ export const uiTranslations = {
     copyright: "© זכויות יוצרים",
     markAsRead: "הקטע נקרא",
     alreadyRead: "כבר נקרא",
-    readingBonus: "בונוס קריאה"
+    readingBonus: "בונוס קריאה",
+    results: "תוצאות",
+    result: "תוצאה",
+    copy: "העתק",
+    image: "תמונה"
   },
 
   mountain: {

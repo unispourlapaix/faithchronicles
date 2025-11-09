@@ -322,7 +322,23 @@ export const uiTranslations = {
     shareVerse: "Diesen Vers teilen",
     markAsRead: "Passage gelesen",
     alreadyRead: "Bereits gelesen",
-    readingBonus: "Lesebonus"
+    readingBonus: "Lesebonus",
+    share: "Teilen",
+    shareSelection: "Auswahl teilen",
+    search: "Suchen...",
+    definitionNotFound: "Definition nicht gefunden",
+    definitionLoading: "Definition wird geladen...",
+    imageFeatureComing: "🖼️ Bildfunktion kommt bald!",
+    copyError: "Kopierfehler:",
+    error: "❌ Fehler",
+    errorLoading: "Fehler beim Laden",
+    retry: "Wiederholen",
+    readerInDevelopment: "Johannes-Bibelleser in Entwicklung...",
+    verseCopied: "Vers in die Zwischenablage kopiert!",
+    results: "Ergebnisse",
+    result: "Ergebnis",
+    copy: "Kopieren",
+    image: "Bild"
   },
 
   bibleResources: {

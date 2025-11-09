@@ -212,10 +212,33 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
               ))}
             </div>
             
+            {/* Bouton "Passage lu" */}
+            {setTotalXP && (
+              <div className="mt-8 flex justify-center items-center">
+                {!readPassages.has(`${currentPassage.book}_${currentPassage.chapter}`) ? (
+                  <button
+                    onClick={() => {
+                      const passageId = `${currentPassage.book}_${currentPassage.chapter}`;
+                      markPassageAsRead(passageId);
+                    }}
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95"
+                  >
+                    <Book className="w-5 h-5" />
+                    <span>{t('bible.markAsRead')}</span>
+                    <span className="px-2 py-1 bg-white/20 rounded-full text-sm">+10 XP</span>
+                  </button>
+                ) : (
+                  <div className="inline-flex items-center gap-3 px-8 py-4 bg-green-100 text-green-700 font-bold rounded-full shadow-md">
+                    <span>✅</span>
+                    <span>{t('bible.alreadyRead')}</span>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
-          {/* Navigation avec bouton de lecture intégré */}
-          <div className="flex items-center justify-between gap-3 mt-8">
+          {/* Navigation */}
+          <div className="flex items-center justify-between">
             <button 
               onClick={() => {
                 if (window.faithSounds && window.faithSounds.cheube) {
@@ -224,38 +247,14 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
                 navigatePassage('prev');
               }}
               disabled={currentIndex === 0}
-              className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-2xl transition-all ${
+              className={`flex items-center justify-center py-2 px-4 rounded-full font-bold text-xl transition-all ${
                 currentIndex === 0 
                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
                   : 'bg-white text-blue-600 shadow-md hover:shadow-lg active:scale-95'
               }`}
             >
-              &lt;
+              ‹
             </button>
-
-            {/* Bouton "Passage lu" intégré dans la navigation */}
-            {setTotalXP && (
-              <div className="flex-1 flex justify-center">
-                {!readPassages.has(`${currentPassage.book}_${currentPassage.chapter}`) ? (
-                  <button
-                    onClick={() => {
-                      const passageId = `${currentPassage.book}_${currentPassage.chapter}`;
-                      markPassageAsRead(passageId);
-                    }}
-                    className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95"
-                  >
-                    <Book className="w-4 h-4" />
-                    <span className="text-sm">{t('bible.markAsRead')}</span>
-                    <span className="px-2 py-0.5 bg-white/20 rounded-full text-xs">+10 XP</span>
-                  </button>
-                ) : (
-                  <div className="inline-flex items-center gap-2 px-6 py-2 bg-green-100 text-green-700 font-bold rounded-full shadow-md">
-                    <span>✅</span>
-                    <span className="text-sm">{t('bible.alreadyRead')}</span>
-                  </div>
-                )}
-              </div>
-            )}
 
             <div className="flex gap-1">
               {availablePassages.map((_, index) => (
@@ -280,13 +279,13 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
                 navigatePassage('next');
               }}
               disabled={currentIndex === availablePassages.length - 1}
-              className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-2xl transition-all ${
+              className={`flex items-center justify-center py-2 px-4 rounded-full font-bold text-xl transition-all ${
                 currentIndex === availablePassages.length - 1
                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
                   : 'bg-white text-blue-600 shadow-md hover:shadow-lg active:scale-95'
               }`}
             >
-              &gt;
+              ›
             </button>
           </div>
 

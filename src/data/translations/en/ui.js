@@ -342,7 +342,11 @@ export const uiTranslations = {
     copyright: "📖 Public Domain • Strong",
     markAsRead: "Passage read",
     alreadyRead: "Already read",
-    readingBonus: "Reading bonus"
+    readingBonus: "Reading bonus",
+    results: "results",
+    result: "result",
+    copy: "Copy",
+    image: "Image"
   },
   
   bibleResources: {
