@@ -5,12 +5,15 @@ import useTranslation from '../../hooks/useTranslation.js';
 import VerseWithStrong from '../VerseWithStrong';
 import UnityPeaceModule from '../UnityPeaceModule';
 
-const BibleReaderScreen = ({ setCurrentScreen }) => {
+const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => {
   const { t, currentLanguage } = useTranslation();
   const [currentPassage, setCurrentPassage] = useState(null);
   const [availablePassages, setAvailablePassages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeTab, setActiveTab] = useState('bible'); // 'bible' ou 'unity'
+  const [readPassages, setReadPassages] = useState(new Set()); // Passages déjà lus
+  const [showXpGain, setShowXpGain] = useState(false);
+  const [xpAmount, setXpAmount] = useState(0);
 
   useEffect(() => {
     const loadPassages = async () => {
@@ -34,6 +37,34 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
     loadPassages();
   }, [currentLanguage]); // Recharger quand la langue change
 
+  // Fonction pour marquer un passage comme lu et gagner des XP
+  const markPassageAsRead = (passageId) => {
+    if (!passageId || readPassages.has(passageId)) return; // Déjà lu
+    
+    // Calculer les XP bonus (10 XP par passage)
+    const READING_XP = 10;
+    
+    // Marquer comme lu
+    setReadPassages(prev => new Set([...prev, passageId]));
+    
+    // Ajouter les XP
+    if (setTotalXP) {
+      setTotalXP(prev => (prev || 0) + READING_XP);
+      setXpAmount(READING_XP);
+      setShowXpGain(true);
+      
+      // Jouer un son de récompense
+      if (audio?.sounds?.starEarned) {
+        audio.sounds.starEarned();
+      }
+      
+      // Masquer l'animation après 2s
+      setTimeout(() => setShowXpGain(false), 2000);
+      
+      console.log(`📖 Passage lu: ${passageId} - +${READING_XP} XP`);
+    }
+  };
+
   const navigatePassage = (direction) => {
     const newIndex = direction === 'next' 
       ? Math.min(currentIndex + 1, availablePassages.length - 1)
@@ -41,6 +72,12 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
     
     setCurrentIndex(newIndex);
     setCurrentPassage(availablePassages[newIndex]);
+    
+    // Marquer le passage précédent comme lu quand on navigue
+    if (currentPassage && direction === 'next') {
+      const passageId = `${currentPassage.book}_${currentPassage.chapter}`;
+      markPassageAsRead(passageId);
+    }
   };
 
   if (!currentPassage) {
@@ -56,6 +93,17 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
 
   return (
     <div className="relative z-10 p-4 h-full flex flex-col">
+      {/* Animation XP gagnés */}
+      {showXpGain && (
+        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-50 animate-bounce">
+          <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2">
+            <span className="text-2xl">📖</span>
+            <span className="font-bold text-lg">+{xpAmount} XP</span>
+            <span className="text-sm opacity-90">Connaissance</span>
+          </div>
+        </div>
+      )}
+
       {/* En-tête */}
       <div className="flex items-center justify-between mb-4">
         <button 
@@ -129,6 +177,30 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
                 </div>
               ))}
             </div>
+            
+            {/* Bouton "J'ai lu ce passage" */}
+            {setTotalXP && (
+              <div className="mt-6 text-center">
+                {!readPassages.has(`${currentPassage.book}_${currentPassage.chapter}`) ? (
+                  <button
+                    onClick={() => {
+                      const passageId = `${currentPassage.book}_${currentPassage.chapter}`;
+                      markPassageAsRead(passageId);
+                    }}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all active:scale-95"
+                  >
+                    <Book className="w-5 h-5" />
+                    <span>{t('bible.markAsRead') || "J'ai lu ce passage"}</span>
+                    <span className="text-sm opacity-90">+10 XP</span>
+                  </button>
+                ) : (
+                  <div className="inline-flex items-center gap-2 px-6 py-3 bg-green-100 text-green-700 font-bold rounded-full">
+                    <span>✅</span>
+                    <span>{t('bible.alreadyRead') || "Passage déjà lu"}</span>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Navigation */}

@@ -334,7 +334,10 @@ export const uiTranslations = {
     readerInDevelopment: "John Bible Reader in development...",
     verseCopied: "Verse copied to clipboard!",
     moreReferences: "and {{count}} other references",
-    copyright: "📖 Public Domain • Strong"
+    copyright: "📖 Public Domain • Strong",
+    markAsRead: "I have read this passage",
+    alreadyRead: "Already read",
+    readingBonus: "Reading bonus"
   },
   
   bibleResources: {
