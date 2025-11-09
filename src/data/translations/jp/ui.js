@@ -117,7 +117,18 @@ export const uiTranslations = {
     errorSend: "リンク送信エラー",
     errorConnection: "接続エラー",
     enterPseudo: "ニックネームを入力してください",
-    enterEmail: "有効なメールアドレスを入力してください"
+    enterEmail: "有効なメールアドレスを入力してください",
+    // Tooltips
+    never: "なし",
+    save: "ゲームを保存",
+    lastSave: "最後",
+    refresh: "進行状況を再読み込み",
+    logout: "ログアウト",
+    connectToCloud: "オンライン保存のために接続",
+    editPseudo: "ユーザー名を編集",
+    confirm: "確認",
+    cancel: "キャンセル",
+    close: "閉じる"
   },
   
   ranks: {
@@ -292,6 +303,7 @@ export const uiTranslations = {
 
   bible: {
     readerTitle: "💭 聖書リーダー",
+    johnReaderTitle: "聖書リーダー - ヨハネの福音書",
     john: "ヨハネ",
     loading: "聖書を読み込み中...",
     loadingChapter: "ヨハネの福音書第 {chapter} 章。完全なデータを読み込んでいます...",

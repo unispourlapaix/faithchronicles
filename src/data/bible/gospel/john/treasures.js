@@ -87,7 +87,7 @@ export class GospelJohnTreasures {
           
           return {
             id: `John_${chapter.chapter}`,
-            book: lang === 'fr' ? 'Jean' : 'John',
+            book: this.getBookName(lang),
             chapter: chapter.chapter,
             title: chapter.title || this.getChapterTitle(chapter.chapter, lang),
             verses: chapter.verses.map(verse => ({
@@ -117,6 +117,35 @@ export class GospelJohnTreasures {
       console.error('Error loading John chapters from JS data:', error);
       return [];
     }
+  }
+
+  /**
+   * Get localized book name for Gospel of John
+   */
+  getBookName(language = null) {
+    const lang = language || this.getCurrentLanguage();
+    
+    const bookNames = {
+      fr: 'Jean',
+      en: 'John',
+      es: 'Juan',
+      de: 'Johannes',
+      it: 'Giovanni',
+      pt: 'João',
+      ru: 'Иоанна',
+      uk: 'Івана',
+      zh: '约翰福音',
+      ar: 'يوحنا',
+      he: 'יוחנן',
+      ja: 'ヨハネ',
+      ko: '요한',
+      hi: 'यूहन्ना',
+      sw: 'Yohana',
+      pl: 'Jana',
+      rc: 'Yoane'
+    };
+
+    return bookNames[lang] || 'John';
   }
 
   /**

@@ -116,7 +116,18 @@ export const uiTranslations = {
     errorSend: "Ошибка отправки ссылки",
     errorConnection: "Ошибка подключения",
     enterPseudo: "Пожалуйста, введите псевдоним",
-    enterEmail: "Пожалуйста, введите действительный email"
+    enterEmail: "Пожалуйста, введите действительный email",
+    // Tooltips
+    never: "Никогда",
+    save: "Сохранить игру",
+    lastSave: "последнее",
+    refresh: "Перезагрузить прогресс",
+    logout: "Выйти",
+    connectToCloud: "Подключиться для сохранения онлайн",
+    editPseudo: "Изменить имя",
+    confirm: "Подтвердить",
+    cancel: "Отменить",
+    close: "Закрыть"
   },
   
   ranks: {

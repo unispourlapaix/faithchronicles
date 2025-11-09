@@ -118,7 +118,18 @@ export const uiTranslations = {
     errorSend: "שגיאה בשליחת הקישור",
     errorConnection: "שגיאת חיבור",
     enterPseudo: "אנא הזן כינוי",
-    enterEmail: "אנא הזן אימייל תקף"
+    enterEmail: "אנא הזן אימייל תקף",
+    // Tooltips
+    never: "אף פעם",
+    save: "שמור משחק",
+    lastSave: "אחרון",
+    refresh: "טען מחדש התקדמות",
+    logout: "התנתק",
+    connectToCloud: "התחבר לשמירה מקוונת",
+    editPseudo: "ערוך שם משתמש",
+    confirm: "אשר",
+    cancel: "ביטול",
+    close: "סגור"
   },
   
   ranks: {

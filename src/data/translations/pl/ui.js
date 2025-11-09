@@ -114,7 +114,18 @@ export const uiTranslations = {
     errorSend: "Błąd wysyłania linku",
     errorConnection: "Błąd połączenia",
     enterPseudo: "Proszę wprowadzić pseudonim",
-    enterEmail: "Proszę wprowadzić prawidłowy adres email"
+    enterEmail: "Proszę wprowadzić prawidłowy adres email",
+    // Tooltips
+    never: "Nigdy",
+    save: "Zapisz grę",
+    lastSave: "ostatnie",
+    refresh: "Przeładuj postęp",
+    logout: "Wyloguj",
+    connectToCloud: "Połącz aby zapisać online",
+    editPseudo: "Edytuj nazwę użytkownika",
+    confirm: "Potwierdź",
+    cancel: "Anuluj",
+    close: "Zamknij"
   },
   
   ranks: {
@@ -275,11 +286,14 @@ export const uiTranslations = {
   
   bible: {
     readerTitle: "📖 Czytnik Biblii",
+    johnReaderTitle: "Czytnik Biblii - Ewangelia Jana",
     john: "Jan",
     loading: "Ładowanie Pism Świętych...",
     loadingChapter: "Rozdział {chapter} Ewangelii Jana. Pełne dane są ładowane...",
     exploreWhileLoading: "W międzyczasie możesz przeglądać inne rozdziały lub użyć funkcji wyszukiwania.",
     menu: "Menu",
+    tabBible: "Biblia",
+    tabUnity: "Jedność",
     strong: "Strong",
     strongReferences: "Referencje Strong",
     verses: "wersety",

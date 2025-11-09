@@ -116,7 +116,18 @@ export const uiTranslations = {
     errorSend: "Libunga ya kotinda lien",
     errorConnection: "Libunga ya connexion",
     enterPseudo: "Palado kotya nkombo",
-    enterEmail: "Palado kotya email ya malamu"
+    enterEmail: "Palado kotya email ya malamu",
+    // Tooltips
+    never: "Ata moke te",
+    save: "Kobomba jeu",
+    lastSave: "ya suka",
+    refresh: "Kotia lisusu bokende liboso",
+    logout: "Kobima",
+    connectToCloud: "Kokangama pona kobomba na Internet",
+    editPseudo: "Kobongola nkombo ya mosaleli",
+    confirm: "Kondima",
+    cancel: "Kotika",
+    close: "Kokanga"
   },
   
   ranks: {
@@ -432,18 +443,18 @@ export const uiTranslations = {
     john: "Yoane",
     loading: "Ezali kotya Makomi ya Nzambe...",
     loadingChapter: "Mokanda {chapter} ya Evangile ya Yoane. Makambo nyonso ezali kotya...",
-    exploreWhileLoading: "Na ntango oyo, okoki kotala ba mikanda mosusu to kosalela fonction ya koluka.",
+    exploreWhileLoading: "Na ntango oyo, okoki kotala mikanda mosusu to kosalela mosala ya boluki.",
     menu: "Menu",
     tabBible: "Bible",
     tabUnity: "Bomoko",
     strong: "Strong",
-    strongReferences: "Ba référence Strong",
-    verses: "ba vérité",
+    strongReferences: "Batoli ya Strong",
+    verses: "bavérité",
     previous: "Ya liboso",
     next: "Ya nsima",
     strongDefinition: "Ndimbola Strong",
     word: "Liloba ya ebandeli",
-    transliteration: "Translitération",
+    transliteration: "Ndimbola ya makomi",
     close: "Kanga",
     share: "Kabola",
     shareVerse: "Kabola vérité oyo",
@@ -456,14 +467,14 @@ export const uiTranslations = {
     search: "Koluka...",
     definitionNotFound: "Ndimbola ezwami te",
     definitionLoading: "Ndimbola ezali kotya...",
-    imageFeatureComing: "🖼️ Fonctionnalité ya bililingi ekoya!",
+    imageFeatureComing: "🖼️ Bilili ekoya!",
     copyError: "Libunga ntango ya kokopya:",
     error: "❌ Libunga",
     errorLoading: "Libunga ya kotya",
     retry: "Meka lisusu",
     readerInDevelopment: "Motángi ya Bible ya Yoane ezali kotongama...",
-    verseCopied: "Vérité ekopyami na presse-papiers!",
-    moreReferences: "mpe {{count}} ba référence mosusu",
+    verseCopied: "Vérité ekopyami!",
+    moreReferences: "mpe {{count}} batoli mosusu",
     copyright: "📖 LSG 1910 • Strong ekotami"
   },
 
@@ -495,12 +506,12 @@ export const uiTranslations = {
 
   bibleResources: {
     inAppReader: {
-      name: "Motángi na kati ya application",
-      description: "Motángi ya Bible oyo ezali na ba fonctionnalités avancées",
+      name: "Motángi na kati ya app",
+      description: "Motángi ya Bible oyo ezali na makasi ya Strong",
       features: {
-        offline: "✅ Mosala hors ligne",
-        strong: "✅ Ba définitions Strong intégrées",
-        navigation: "✅ Kotambola malamu kati na ba eteni"
+        offline: "✅ Mosala na Internet te",
+        strong: "✅ Bandimbola Strong",
+        navigation: "✅ Kotambola malamu"
       }
     }
   },

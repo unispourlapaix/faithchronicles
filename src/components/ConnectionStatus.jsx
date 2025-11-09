@@ -20,7 +20,7 @@ const ConnectionStatus = ({
   const [isEditingPseudo, setIsEditingPseudo] = useState(false);
   const [newPseudo, setNewPseudo] = useState('');
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
-  const { changeLanguage } = useTranslation();
+  const { t, changeLanguage } = useTranslation();
 
   const handleSave = async () => {
     if (!onManualSave) return;
@@ -60,7 +60,7 @@ const ConnectionStatus = ({
   };
 
   const formatLastSave = () => {
-    if (!lastSaveTime) return "Jamais";
+    if (!lastSaveTime) return t('login.never');
     return new Date(lastSaveTime).toLocaleTimeString();
   };
 
@@ -183,14 +183,14 @@ const ConnectionStatus = ({
                     <button
                       onClick={handlePseudoSave}
                       className="p-1 hover:bg-green-50 rounded-full transition-colors"
-                      title="Confirmer"
+                      title={t('login.confirm')}
                     >
                       <Check className="w-3.5 h-3.5 text-green-600" />
                     </button>
                     <button
                       onClick={handlePseudoCancel}
                       className="p-1 hover:bg-red-50 rounded-full transition-colors"
-                      title="Annuler"
+                      title={t('login.cancel')}
                     >
                       <X className="w-3.5 h-3.5 text-red-600" />
                     </button>
@@ -208,7 +208,7 @@ const ConnectionStatus = ({
                           handlePseudoEdit();
                         }}
                         className="p-0.5 hover:bg-gray-100 rounded transition-colors"
-                        title="Modifier le pseudo"
+                        title={t('login.editPseudo')}
                       >
                         <Edit2 className="w-3 h-3 text-gray-500" />
                       </button>
@@ -298,7 +298,7 @@ const ConnectionStatus = ({
                               }}
                               className="mt-3 w-full py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium text-gray-700 transition-colors flex-shrink-0"
                             >
-                              ✕ Fermer
+                              ✕ {t('login.close')}
                             </button>
                           </div>
                         </>
@@ -318,7 +318,7 @@ const ConnectionStatus = ({
                       onSwitchToLogin();
                     }}
                     className="p-1.5 hover:bg-blue-50 rounded-full transition-colors group"
-                    title="Se connecter pour sauvegarder en ligne"
+                    title={t('login.connectToCloud')}
                   >
                     <Cloud className="w-3.5 h-3.5 text-blue-600 group-hover:text-blue-700" />
                   </button>
@@ -333,7 +333,7 @@ const ConnectionStatus = ({
                     }}
                     disabled={isSaving}
                     className="p-1.5 hover:bg-green-50 rounded-full transition-colors group"
-                    title={`Sauvegarder la partie${lastSaveTime ? ` (dernière: ${formatLastSave()})` : ''}`}
+                    title={`${t('login.save')}${lastSaveTime ? ` (${t('login.lastSave')}: ${formatLastSave()})` : ''}`}
                   >
                     <Save className={`w-3.5 h-3.5 ${isSaving ? 'text-green-300 animate-pulse' : 'text-green-600 group-hover:text-green-700'}`} />
                   </button>
@@ -347,7 +347,7 @@ const ConnectionStatus = ({
                       onRefresh();
                     }}
                     className="p-1.5 hover:bg-blue-50 rounded-full transition-colors group"
-                    title="Recharger la progression"
+                    title={t('login.refresh')}
                   >
                     <RefreshCw className="w-3.5 h-3.5 text-blue-600 group-hover:text-blue-700" />
                   </button>
@@ -361,7 +361,7 @@ const ConnectionStatus = ({
                       onLogout();
                     }}
                     className="p-1.5 hover:bg-red-50 rounded-full transition-colors group"
-                    title="Se déconnecter"
+                    title={t('login.logout')}
                   >
                     <LogOut className="w-3.5 h-3.5 text-red-600 group-hover:text-red-700" />
                   </button>
@@ -375,7 +375,7 @@ const ConnectionStatus = ({
       {/* Message d'aide discret */}
       {isExpanded && status.type === 'email_pending' && (
         <div className="mt-2 text-xs text-blue-600 bg-blue-50 rounded-lg p-2 shadow-sm animate-fade-in">
-          💌 Vérifiez votre email
+          💌 {t('login.checkEmail')}
         </div>
       )}
     </div>

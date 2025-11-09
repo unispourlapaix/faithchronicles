@@ -116,7 +116,18 @@ export const uiTranslations = {
     errorSend: "Errore nell'invio del link",
     errorConnection: "Errore di connessione",
     enterPseudo: "Inserisci un nickname",
-    enterEmail: "Inserisci un'email valida"
+    enterEmail: "Inserisci un'email valida",
+    // Tooltips
+    never: "Mai",
+    save: "Salva partita",
+    lastSave: "ultima",
+    refresh: "Ricarica progressi",
+    logout: "Disconnetti",
+    connectToCloud: "Connetti per salvare online",
+    editPseudo: "Modifica utente",
+    confirm: "Conferma",
+    cancel: "Annulla",
+    close: "Chiudi"
   },
   
   ranks: {

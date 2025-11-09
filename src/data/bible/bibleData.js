@@ -118,6 +118,7 @@ import { funQuestionsRc } from '../translations/rc/funQuestions.js';
 import { bibleTreasuresRc } from '../translations/rc/bibleTreasures.js';
 
 // Import Hindi translations
+import { biblePassagesHi } from '../translations/hi/biblePassages.js';
 import { bibleVerses as bibleVersesHi } from '../translations/hi/bibleVerses.js';
 import { jesusIsNot as jesusIsNotHi } from '../translations/hi/jesusIsNot.js';
 import { bibleFacts as bibleFactsHi } from '../translations/hi/bibleFacts.js';
@@ -125,6 +126,7 @@ import { funQuestions as funQuestionsHi } from '../translations/hi/funQuestions.
 import { bibleTreasures as bibleTreasuresHi } from '../translations/hi/bibleTreasures.js';
 
 // Import Polish translations
+import { biblePassagesPl } from '../translations/pl/biblePassages.js';
 import { bibleVerses as bibleVersesPl } from '../translations/pl/bibleVerses.js';
 import { jesusIsNot as jesusIsNotPl } from '../translations/pl/jesusIsNot.js';
 import { bibleFacts as bibleFactsPl } from '../translations/pl/bibleFacts.js';
@@ -132,6 +134,7 @@ import { funQuestions as funQuestionsPl } from '../translations/pl/funQuestions.
 import { bibleTreasures as bibleTreasuresPl } from '../translations/pl/bibleTreasures.js';
 
 // Import Swahili translations
+import { biblePassagesSw } from '../translations/sw/biblePassages.js';
 import { bibleVerses as bibleVersesSw } from '../translations/sw/bibleVerses.js';
 import { jesusIsNot as jesusIsNotSw } from '../translations/sw/jesusIsNot.js';
 import { bibleFacts as bibleFactsSw } from '../translations/sw/bibleFacts.js';
@@ -261,21 +264,24 @@ export const bibleData = {
       jesusIsNot: jesusIsNotHi,
       facts: bibleFactsHi,
       funQuestions: funQuestionsHi,
-      bibleTreasures: bibleTreasuresHi
+      bibleTreasures: bibleTreasuresHi,
+      passages: biblePassagesHi
     },
     pl: {
       verses: bibleVersesPl,
       jesusIsNot: jesusIsNotPl,
       facts: bibleFactsPl,
       funQuestions: funQuestionsPl,
-      bibleTreasures: bibleTreasuresPl
+      bibleTreasures: bibleTreasuresPl,
+      passages: biblePassagesPl
     },
     sw: {
       verses: bibleVersesSw,
       jesusIsNot: jesusIsNotSw,
       facts: bibleFactsSw,
       funQuestions: funQuestionsSw,
-      bibleTreasures: bibleTreasuresSw
+      bibleTreasures: bibleTreasuresSw,
+      passages: biblePassagesSw
     }
   },
   

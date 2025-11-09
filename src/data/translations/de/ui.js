@@ -114,7 +114,18 @@ export const uiTranslations = {
     errorSend: "Fehler beim Senden des Links",
     errorConnection: "Verbindungsfehler",
     enterPseudo: "Bitte gib einen Spitznamen ein",
-    enterEmail: "Bitte gib eine gültige E-Mail ein"
+    enterEmail: "Bitte gib eine gültige E-Mail ein",
+    // Tooltips
+    never: "Nie",
+    save: "Spiel speichern",
+    lastSave: "letzte",
+    refresh: "Fortschritt neu laden",
+    logout: "Abmelden",
+    connectToCloud: "Verbinden um online zu speichern",
+    editPseudo: "Benutzername bearbeiten",
+    confirm: "Bestätigen",
+    cancel: "Abbrechen",
+    close: "Schließen"
   },
   
   ranks: {
@@ -280,6 +291,7 @@ export const uiTranslations = {
 
   bible: {
     readerTitle: "📖 Bibelleser",
+    johnReaderTitle: "Bibelleser - Johannes-Evangelium",
     john: "Johannes",
     loading: "Schriften werden geladen...",
     loadingChapter: "Kapitel {chapter} des Johannes-Evangeliums. Vollständige Daten werden geladen...",

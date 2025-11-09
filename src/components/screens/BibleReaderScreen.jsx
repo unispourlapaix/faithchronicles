@@ -122,7 +122,7 @@ const BibleReaderScreen = ({ setCurrentScreen }) => {
                     <div className="text-base text-gray-900 leading-relaxed font-serif text-justify">
                       <VerseWithStrong 
                         verse={verse} 
-                        language={currentPassage.language || 'fr'} 
+                        language={currentPassage.metadata?.language || currentLanguage} 
                       />
                     </div>
                   </div>

@@ -114,7 +114,18 @@ export const uiTranslations = {
     errorSend: "Kosa la kutuma kiungo",
     errorConnection: "Kosa la muunganisho",
     enterPseudo: "Tafadhali weka jina la utani",
-    enterEmail: "Tafadhali weka barua pepe halali"
+    enterEmail: "Tafadhali weka barua pepe halali",
+    // Tooltips
+    never: "Kamwe",
+    save: "Hifadhi mchezo",
+    lastSave: "mwisho",
+    refresh: "Pakia tena maendeleo",
+    logout: "Ondoka",
+    connectToCloud: "Unganisha kuhifadhi mtandaoni",
+    editPseudo: "Hariri jina la mtumiaji",
+    confirm: "Thibitisha",
+    cancel: "Ghairi",
+    close: "Funga"
   },
   
   ranks: {
@@ -275,11 +286,14 @@ export const uiTranslations = {
   
   bible: {
     readerTitle: "📖 Kisomaji cha Biblia",
+    johnReaderTitle: "Kisomaji cha Biblia - Injili ya Yohana",
     john: "Yohana",
     loading: "Inapakia Maandiko...",
     loadingChapter: "Sura ya {chapter} ya Injili ya Yohana. Data kamili inapakiwa...",
     exploreWhileLoading: "Wakati huo, unaweza kuchunguza sura nyingine au kutumia kipengele cha utafutaji.",
     menu: "Menyu",
+    tabBible: "Biblia",
+    tabUnity: "Umoja",
     strong: "Strong",
     strongReferences: "Marejeleo ya Strong",
     verses: "aya",

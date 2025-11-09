@@ -116,7 +116,18 @@ export const uiTranslations = {
     errorSend: "发送链接错误",
     errorConnection: "连接错误",
     enterPseudo: "请输入昵称",
-    enterEmail: "请输入有效的电子邮件"
+    enterEmail: "请输入有效的电子邮件",
+    // Tooltips
+    never: "从未",
+    save: "保存游戏",
+    lastSave: "最后",
+    refresh: "重新加载进度",
+    logout: "登出",
+    connectToCloud: "连接以在线保存",
+    editPseudo: "编辑用户名",
+    confirm: "确认",
+    cancel: "取消",
+    close: "关闭"
   },
   
   ranks: {

@@ -118,7 +118,18 @@ export const uiTranslations = {
     errorSend: "خطأ في إرسال الرابط",
     errorConnection: "خطأ في الاتصال",
     enterPseudo: "الرجاء إدخال اسم مستعار",
-    enterEmail: "الرجاء إدخال بريد إلكتروني صالح"
+    enterEmail: "الرجاء إدخال بريد إلكتروني صالح",
+    // Tooltips
+    never: "أبداً",
+    save: "حفظ اللعبة",
+    lastSave: "آخر",
+    refresh: "إعادة تحميل التقدم",
+    logout: "تسجيل الخروج",
+    connectToCloud: "اتصل للحفظ عبر الإنترنت",
+    editPseudo: "تعديل اسم المستخدم",
+    confirm: "تأكيد",
+    cancel: "إلغاء",
+    close: "إغلاق"
   },
   
   ranks: {

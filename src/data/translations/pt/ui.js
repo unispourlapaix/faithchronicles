@@ -116,7 +116,18 @@ export const uiTranslations = {
     errorSend: "Erro ao enviar link",
     errorConnection: "Erro de conex├úo",
     enterPseudo: "Por favor, insira um apelido",
-    enterEmail: "Por favor, insira um email válido"
+    enterEmail: "Por favor, insira um email válido",
+    // Tooltips
+    never: "Nunca",
+    save: "Salvar jogo",
+    lastSave: "última",
+    refresh: "Recarregar progresso",
+    logout: "Desconectar",
+    connectToCloud: "Conectar para salvar online",
+    editPseudo: "Editar usuário",
+    confirm: "Confirmar",
+    cancel: "Cancelar",
+    close: "Fechar"
   },
   
   ranks: {

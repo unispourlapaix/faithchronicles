@@ -112,7 +112,18 @@ export const uiTranslations = {
     errorSend: "링크 전송 오류",
     errorConnection: "연결 오류",
     enterPseudo: "닉네임을 입력하세요",
-    enterEmail: "유효한 이메일을 입력하세요"
+    enterEmail: "유효한 이메일을 입력하세요",
+    // Tooltips
+    never: "없음",
+    save: "게임 저장",
+    lastSave: "마지막",
+    refresh: "진행 상황 다시 로드",
+    logout: "로그아웃",
+    connectToCloud: "온라인 저장을 위해 연결",
+    editPseudo: "사용자 이름 편집",
+    confirm: "확인",
+    cancel: "취소",
+    close: "닫기"
   },
   
   ranks: {
@@ -300,11 +311,14 @@ export const uiTranslations = {
 
   bible: {
     readerTitle: "📖 성경 리더",
+    johnReaderTitle: "성경 리더 - 요한복음",
     john: "요한",
     loading: "성경을 로드하는 중...",
     loadingChapter: "요한복음 {chapter}장. 전체 데이터를 로드하는 중입니다...",
     exploreWhileLoading: "그동안 다른 장을 탐색하거나 검색 기능을 사용할 수 있습니다.",
     menu: "메뉴",
+    tabBible: "성경",
+    tabUnity: "통일",
     strong: "Strong",
     strongReferences: "Strong 참조",
     verses: "절",
