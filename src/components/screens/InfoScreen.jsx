@@ -72,7 +72,7 @@ const InfoScreen = ({ setCurrentScreen, score, wisdomPoints, revelationPoints, t
             {/* Lien vers le module artiste */}
             <div className="mt-4">
               <a
-                href={`/emmanuel-artist-module.html?lang=${currentLanguage}`}
+                href={`${process.env.PUBLIC_URL}/emmanuel-artist-module.html?lang=${currentLanguage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {

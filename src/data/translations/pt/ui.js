@@ -6,7 +6,7 @@ import unityTranslations from './unity.js';
 export const uiTranslations = {
   meta: {
     language: 'pt',
-    languageName: 'Portuguès',
+    languageName: 'Português',
     version: '1.0'
   },
   
@@ -28,7 +28,7 @@ export const uiTranslations = {
     selectLevel: "Seleção de Níveis",
     retry: "Tentar Novamente",
     mainMenu: "Menu Principal",
-    start: "Comeêar",
+    start: "Começar",
     cancel: "Cancelar",
     confirm: "Confirmar",
     save: "Salvar",
@@ -40,21 +40,21 @@ export const uiTranslations = {
   },
   
   labels: {
-    score: "Pontuaê├úo",
+    score: "Pontuação",
     stars: "Estrelas",
     wisdom: "Sabedoria",
-    revelation: "Revelaê├úo",
+    revelation: "Revelação",
     lives: "Vidas",
     combo: "Combo",
-    level: "N├ìVEL",
-    easy: "F├üCIL",
-    medium: "MëDIO",
-    hard: "DIF├ìCIL",
+    level: "NÍVEL",
+    easy: "FÁCIL",
+    medium: "MÉDIO",
+    hard: "DIFÍCIL",
     correct: "Correto!",
     gameOver: "Prova Falhada",
     victory: "Vitória!",
     completed: "Completado",
-    rank: "Classificaê├úo Espiritual",
+    rank: "Classificação Espiritual",
     points: "Pontos de Sabedoria",
     unlockedLevels: "nível(eis) desbloqueado(s)",
     questionOfKnowledge: "Pergunta de Conhecimento",
@@ -74,7 +74,7 @@ export const uiTranslations = {
     playButton: "JOGAR",
     info: "Info",
     treasures: "Tesouros",
-    john: "Jo├úo",
+    john: "João",
     reset: "Reiniciar",
     resetConfirm: "Reiniciar aventura?",
     resetWarning: "Tem certeza de que deseja apagar todo o seu progresso?",
@@ -86,7 +86,7 @@ export const uiTranslations = {
     yesRestart: "Sim, reiniciar",
     noContinue: "Não, continuar",
     newAdventure: "Nova Aventura",
-    readyToStart: "Pronto para comeêar?",
+    readyToStart: "Pronto para começar?",
     startJourney: "Comece sua jornada no conhecimento das Escrituras!",
     audioControls: "Controles de áudio",
     mute: "Silenciar",
@@ -105,21 +105,21 @@ export const uiTranslations = {
     emailDesc: "Salvamento multi-dispositivo",
     pseudo: "Apelido",
     pseudoPlaceholder: "Seu apelido...",
-    email: "Endereêo de Email",
+    email: "Endereço de Email",
     emailPlaceholder: "seu@email.com",
-    startPlaying: "Comeêar a jogar",
+    startPlaying: "Começar a jogar",
     sendLink: "Enviar link",
     sending: "Enviando...",
     connecting: "Conectando...",
     back: "Voltar",
     localSave: "Seu progresso será salvo localmente",
-    cloudSync: "Sem senha necessária • Sincronizaê├úo na nuvem",
+    cloudSync: "Sem senha necessária • Sincronização na nuvem",
     magicLink: "Receba um link mágico por email",
     checkEmail: "📧 Verifique seu email! Um link de login foi enviado.",
     checkSpam: "Verifique também sua pasta de spam",
-    waitingConnection: "Aguardando conex├úo...",
+    waitingConnection: "Aguardando conexão...",
     errorSend: "Erro ao enviar link",
-    errorConnection: "Erro de conex├úo",
+    errorConnection: "Erro de conexão",
     enterPseudo: "Por favor, insira um apelido",
     enterEmail: "Por favor, insira um email válido",
     // Tooltips
@@ -140,7 +140,7 @@ export const uiTranslations = {
     disciple: "Discípulo",
     servant: "Servo",
     witness: "Testemunha",
-    guardian: "Guardi├úo",
+    guardian: "Guardião",
     wise: "Sábio",
     prophet: "Profeta",
     apostle: "Apóstolo",
@@ -211,12 +211,12 @@ export const uiTranslations = {
     faith: "Tudo posso naquele que me fortalece",
     hope: "O Senhor é meu pastor, nada me faltará",
     love: "Porque Deus amou o mundo de tal maneira...",
-    perseverance: "A fé requer perseveranêa",
+    perseverance: "A fé requer perseverança",
     defeat: "O fracasso convida a crescer no conhecimento"
   },
 
   cards: {
-    faith: "Fë",
+    faith: "Fé",
     courage: "CORAGEM",
     wisdom: "SABEDORIA",
     faithKnowledge: "+50% pontos",
@@ -241,12 +241,12 @@ export const uiTranslations = {
   },
 
   chapters: {
-    "1": "Gènesis",
-    "2": "├èxodo",
+    "1": "Gênesis",
+    "2": "Êxodo",
     "3": "Jesus Cristo",
-    "4": "Crucificaê├úo/Ressurreiê├úo",
+    "4": "Crucificação/Ressurreição",
     "5": "Igreja Primitiva",
-    "6": "Miss├Áes de Paulo",
+    "6": "Missões de Paulo",
     "7": "Cartas/Apocalipse",
     "8": "Nível Bônus"
   },
@@ -258,20 +258,20 @@ export const uiTranslations = {
     tabBible: "Bíblia",
     tabUnity: "Unidade",
     strong: "Strong",
-    strongReferences: "Referèncias Strong",
+    strongReferences: "Referências Strong",
     verses: "versículos",
     previous: "Anterior",
     next: "Próximo",
-    strongDefinition: "Referència Strong",
+    strongDefinition: "Referência Strong",
     word: "Palavra original",
-    transliteration: "Transliteraê├úo",
+    transliteration: "Transliteração",
     pronunciation: "Pronúncia",
     meaning: "Significado",
-    definition: "Definiê├úo completa",
+    definition: "Definição completa",
     usage: "Uso bíblico",
     etymology: "Etimologia",
     close: "Fechar",
-    moreReferences: "e {{count}} outras referèncias",
+    moreReferences: "e {{count}} outras referências",
     copyright: "📖 Domínio público • Strong"
   },
 
@@ -282,7 +282,7 @@ export const uiTranslations = {
       features: {
         offline: "Offline",
         strong: "Números Strong",
-        navigation: "Navegaê├úo"
+        navigation: "Navegação"
       }
     }
   },
@@ -311,7 +311,7 @@ export const uiTranslations = {
       { text: "você vive coisas lindas com Deus", delay: 2000 },
       { text: "As dificuldades ajudam você a crescer", delay: 2000 },
       { text: "Elas mostram o que é importante", delay: 2000 },
-      { text: "Seja humilde como uma crianêa pequena", delay: 2000 },
+      { text: "Seja humilde como uma criança pequena", delay: 2000 },
       { text: "Deus ama seu coração simples", delay: 2000 },
       { text: "Na calma você ouve Deus", delay: 2000 },
       { text: "O jejum liberta seu espírito", delay: 2000 },
@@ -334,12 +334,12 @@ export const uiTranslations = {
       { text: "Como um tesouro precioso", delay: 3000 }
     ],
     finalMessages: {
-      congratulations: "PARABëNS!",
-      proud: "ESTAMOS ORGULHOSOS DE VOC├è",
+      congratulations: "PARABÉNS!",
+      proud: "ESTAMOS ORGULHOSOS DE VOCÊ",
       courage: "GUERREIRO CORAJOSO",
       peace: "PORTADOR DE PAZ",
       child: "FILHO DE DEUS",
-      blessing: "QUE DEUS TE ABENçOE",
+      blessing: "QUE DEUS TE ABENÇOE",
       continue: "Continuar"
     }
   },
@@ -358,7 +358,7 @@ export const uiTranslations = {
     waypoints: {
       start: "Início",
       firstSlope: "Primeira encosta",
-      lastSlope: "├Ültima encosta"
+      lastSlope: "Última encosta"
     },
     status: {
       defeat: "Derrota",
@@ -405,7 +405,7 @@ export const uiTranslations = {
       description: "Interface moderna"
     },
     modules: {
-      name: "M├│dulos",
+      name: "Módulos",
       description: "Carregamento dinâmico"
     },
     localStorage: {
@@ -422,8 +422,8 @@ export const uiTranslations = {
     title: "Salvamento de jogo",
     saveLocal: "Salvamento local",
     saveCloud: "Nuvem sincronizada",
-    saveWaiting: "Aguardando conex├úo",
-    lastSave: "├Ültimo salvamento:",
+    saveWaiting: "Aguardando conexão",
+    lastSave: "Último salvamento:",
     never: "Nunca",
     saving: "Salvando...",
     save: "Salvar",
