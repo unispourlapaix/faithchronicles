@@ -511,7 +511,10 @@ export const uiTranslations = {
     readerInDevelopment: "Leitor da Bíblia de João em desenvolvimento...",
     verseCopied: "Versículo copiado para a área de transferência!",
     moreReferences: "e {{count}} outras referências",
-    copyright: "📖 LSG 1910 • Strong incluído"
+    copyright: "📖 LSG 1910 • Strong incluído",
+    markAsRead: "Eu li esta passagem",
+    alreadyRead: "Já lido",
+    readingBonus: "Bônus de leitura"
   },
 
   mountain: {

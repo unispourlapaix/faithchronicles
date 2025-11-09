@@ -480,7 +480,10 @@ export const uiTranslations = {
     readerInDevelopment: "Читалка Библии Иоанна в разработке...",
     verseCopied: "Стих скопирован в буфер обмена!",
     moreReferences: "и {{count}} других ссылок",
-    copyright: "📖 LSG 1910 • Strong включен"
+    copyright: "📖 LSG 1910 • Strong включен",
+    markAsRead: "Я прочитал этот отрывок",
+    alreadyRead: "Уже прочитано",
+    readingBonus: "Бонус за чтение"
   },
 
   mountain: {

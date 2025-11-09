@@ -310,7 +310,10 @@ export const uiTranslations = {
     close: "Funga",
     moreReferences: "na marejeleo mengine {{count}}",
     copyright: "📖 Louis Segond 1910 - Kikoa cha umma • Nambari za Strong zimejumuishwa",
-    shareVerse: "Shiriki aya hii"
+    shareVerse: "Shiriki aya hii",
+    markAsRead: "Nimesoma kifungu hiki",
+    alreadyRead: "Tayari imesomwa",
+    readingBonus: "Bonasi ya kusoma"
   },
   
   mountain: {

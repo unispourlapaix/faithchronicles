@@ -482,7 +482,10 @@ export const uiTranslations = {
     readerInDevelopment: "قارئ إنجيل يوحنا قيد التطوير...",
     verseCopied: "تم نسخ الآية إلى الحافظة!",
     moreReferences: "و {{count}} مراجع أخرى",
-    copyright: "📖 LSG 1910 • Strong مضمن"
+    copyright: "📖 LSG 1910 • Strong مضمن",
+    markAsRead: "لقد قرأت هذا المقطع",
+    alreadyRead: "تم القراءة",
+    readingBonus: "مكافأة القراءة"
   },
 
   mountain: {

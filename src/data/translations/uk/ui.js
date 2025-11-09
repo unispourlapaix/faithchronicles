@@ -489,7 +489,10 @@ export const uiTranslations = {
     readerInDevelopment: "Читалка Біблії Івана в розробці...",
     verseCopied: "Вірш скопійовано в буфер обміну!",
     moreReferences: "і {{count}} інших посилань",
-    copyright: "📖 LSG 1910 • Strong включено"
+    copyright: "📖 LSG 1910 • Strong включено",
+    markAsRead: "Я прочитав цей уривок",
+    alreadyRead: "Вже прочитано",
+    readingBonus: "Бонус за читання"
   },
 
   mountain: {

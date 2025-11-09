@@ -315,7 +315,10 @@ export const uiTranslations = {
     close: "Schlie├ƒen",
     moreReferences: "und {{count}} weitere Referenzen",
     copyright: "📖 Gemeinfrei • Strong",
-    shareVerse: "Diesen Vers teilen"
+    shareVerse: "Diesen Vers teilen",
+    markAsRead: "Ich habe diese Passage gelesen",
+    alreadyRead: "Bereits gelesen",
+    readingBonus: "Lesebonus"
   },
 
   bibleResources: {

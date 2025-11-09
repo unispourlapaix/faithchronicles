@@ -334,7 +334,10 @@ export const uiTranslations = {
     readerInDevelopment: "Lector de la Biblia de Juan en desarrollo...",
     verseCopied: "Versículo copiado al portapapeles!",
     moreReferences: "y {{count}} otras referencias",
-    copyright: "📖 Dominio público • Strong"
+    copyright: "📖 Dominio público • Strong",
+    markAsRead: "He leído este pasaje",
+    alreadyRead: "Ya leído",
+    readingBonus: "Bonificación de lectura"
   },
   
   bibleResources: {

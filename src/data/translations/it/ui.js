@@ -516,7 +516,10 @@ export const uiTranslations = {
     readerInDevelopment: "Lettore Bibbia Giovanni in sviluppo...",
     verseCopied: "Versetto copiato negli appunti!",
     moreReferences: "e {{count}} altri riferimenti",
-    copyright: "📖 LSG 1910 • Strong inclusi"
+    copyright: "📖 LSG 1910 • Strong inclusi",
+    markAsRead: "Ho letto questo brano",
+    alreadyRead: "Già letto",
+    readingBonus: "Bonus di lettura"
   },
 
   mountain: {

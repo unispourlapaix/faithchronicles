@@ -310,7 +310,10 @@ export const uiTranslations = {
     close: "Zamknij",
     moreReferences: "i {{count}} innych referencji",
     copyright: "📖 Louis Segond 1910 - Domena publiczna • Numery Strong dołączone",
-    shareVerse: "Udostępnij ten werset"
+    shareVerse: "Udostępnij ten werset",
+    markAsRead: "Przeczytałem ten fragment",
+    alreadyRead: "Już przeczytane",
+    readingBonus: "Bonus za czytanie"
   },
   
   mountain: {

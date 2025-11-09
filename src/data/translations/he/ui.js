@@ -498,7 +498,10 @@ export const uiTranslations = {
     readerInDevelopment: "הקורא בפיתוח...",
     verseCopied: "הפסוק הועתק!",
     moreReferences: "הפניות נוספות",
-    copyright: "© זכויות יוצרים"
+    copyright: "© זכויות יוצרים",
+    markAsRead: "קראתי את הקטע הזה",
+    alreadyRead: "כבר נקרא",
+    readingBonus: "בונוס קריאה"
   },
 
   mountain: {

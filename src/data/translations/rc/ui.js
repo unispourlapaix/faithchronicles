@@ -475,7 +475,10 @@ export const uiTranslations = {
     readerInDevelopment: "Motángi ya Bible ya Yoane ezali kotongama...",
     verseCopied: "Vérité ekopyami!",
     moreReferences: "mpe {{count}} batoli mosusu",
-    copyright: "📖 LSG 1910 • Strong ekotami"
+    copyright: "📖 LSG 1910 • Strong ekotami",
+    markAsRead: "Natángi eteni oyo",
+    alreadyRead: "Etángi ya liboso",
+    readingBonus: "Bonusi ya kotánga"
   },
 
   mountain: {
