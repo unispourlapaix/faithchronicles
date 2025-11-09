@@ -1,7 +1,7 @@
 {
   "short_name": "FaithChronicles",
-  "name": "FaithChronicles - Jeu Biblique",
-  "description": "Un jeu biblique interactif pour découvrir et approfondir votre foi",
+  "name": "FaithChronicles - Chronicles of Love",
+  "description": "Un voyage spirituel à travers les religions - L'unité qui produit la paix",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,24 +9,29 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#6366f1",
-  "background_color": "#eef2ff",
-  "categories": ["education", "games"],
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "categories": ["education", "games", "lifestyle"],
   "scope": "/",
   "prefer_related_applications": false
 }

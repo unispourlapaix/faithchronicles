@@ -1,0 +1,97 @@
+<svg width="800" height="300" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Définition des gradients -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="crossGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:0.95" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Fond rectangle arrondi -->
+  <rect width="800" height="300" rx="40" fill="url(#bgGradient)"/>
+  
+  <!-- Icône à gauche -->
+  <g transform="translate(80, 50)">
+    <!-- Cercle de lumière -->
+    <circle cx="100" cy="100" r="70" fill="url(#glowGradient)" opacity="0.6"/>
+    
+    <!-- Croix horizontale -->
+    <rect x="40" y="85" width="120" height="30" rx="15" fill="url(#crossGradient)" filter="url(#shadow)"/>
+    
+    <!-- Croix verticale -->
+    <rect x="85" y="40" width="30" height="120" rx="15" fill="url(#crossGradient)" filter="url(#shadow)"/>
+    
+    <!-- Point central -->
+    <circle cx="100" cy="100" r="15" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Particules -->
+    <circle cx="55" cy="55" r="4" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="55" r="4" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="35" r="4" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="145" r="4" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="55" cy="145" r="4" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Texte -->
+  <g transform="translate(300, 90)">
+    <!-- Titre principal -->
+    <text x="0" y="50" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" 
+          font-size="56" font-weight="bold" fill="white" filter="url(#shadow)">
+      FaithChronicles
+    </text>
+    
+    <!-- Sous-titre -->
+    <text x="0" y="95" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" 
+          font-size="28" font-weight="300" fill="white" opacity="0.9">
+      Chronicles of Love
+    </text>
+    
+    <!-- Tagline -->
+    <text x="0" y="135" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" 
+          font-size="18" font-style="italic" fill="white" opacity="0.7">
+      L'unité qui produit la paix ✨
+    </text>
+  </g>
+</svg>

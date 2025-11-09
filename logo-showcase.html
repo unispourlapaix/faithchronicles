@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaithChronicles - Guide des Logos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+      background: white;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+      color: #666;
+      font-style: italic;
+    }
+    
+    .logo-section {
+      background: white;
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .logo-section h2 {
+      color: #667eea;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    
+    .logo-variants {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    .variant-card {
+      border: 2px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    
+    .variant-card:hover {
+      border-color: #667eea;
+      box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+      transform: translateY(-4px);
+    }
+    
+    .variant-card h3 {
+      margin-bottom: 15px;
+      color: #374151;
+      font-size: 1.1rem;
+    }
+    
+    .variant-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    
+    .bg-dark {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    
+    .bg-light {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    
+    .bg-gradient {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    
+    .specs {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f9fafb;
+      border-radius: 12px;
+      border-left: 4px solid #667eea;
+    }
+    
+    .specs h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    
+    .specs ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .specs li {
+      padding: 8px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .specs li:last-child {
+      border-bottom: none;
+    }
+    
+    .specs code {
+      background: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #764ba2;
+    }
+    
+    .color-palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .color-swatch {
+      text-align: center;
+    }
+    
+    .color-box {
+      height: 100px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .color-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .color-code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .download-section {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 40px;
+      border-radius: 24px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+    .download-section h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .download-btn {
+      background: white;
+      color: #667eea;
+      padding: 15px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+    
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎨 FaithChronicles Logo Kit</h1>
+      <p class="tagline">L'unité qui produit la paix ✨</p>
+    </header>
+
+    <!-- Logo Principal -->
+    <div class="logo-section">
+      <h2>Logo Principal</h2>
+      <p>Le logo complet avec cercle gradient et croix lumineuse. Utilisé pour l'application, le site web et la communication principale.</p>
+      
+      <div class="logo-variants">
+        <div class="variant-card">
+          <h3>Fond Clair</h3>
+          <div class="bg-light">
+            <img src="logo.svg" alt="Logo principal sur fond clair" />
+          </div>
+        </div>
+        
+        <div class="variant-card">
+          <h3>Fond Foncé</h3>
+          <div class="bg-dark">
+            <img src="logo.svg" alt="Logo principal sur fond foncé" />
+          </div>
+        </div>
+        
+        <div class="variant-card">
+          <h3>Fond Gradient</h3>
+          <div class="bg-gradient">
+            <img src="logo-simple.svg" alt="Logo simple sur gradient" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="specs">
+        <h3>Spécifications</h3>
+        <ul>
+          <li><strong>Format :</strong> <code>logo.svg</code></li>
+          <li><strong>Dimensions :</strong> 512×512px (carré)</li>
+          <li><strong>Usage :</strong> Application web, icônes, PWA</li>
+          <li><strong>Animations :</strong> Pulsation centrale + particules</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Logo Horizontal -->
+    <div class="logo-section">
+      <h2>Logo Horizontal avec Texte</h2>
+      <p>Version étendue avec le nom complet et la tagline. Idéal pour les en-têtes, bannières et présentations.</p>
+      
+      <div class="variant-card">
+        <div class="bg-gradient">
+          <img src="logo-horizontal.svg" alt="Logo horizontal" style="max-width: 100%;" />
+        </div>
+      </div>
+      
+      <div class="specs">
+        <h3>Spécifications</h3>
+        <ul>
+          <li><strong>Format :</strong> <code>logo-horizontal.svg</code></li>
+          <li><strong>Dimensions :</strong> 800×300px (16:9 approx.)</li>
+          <li><strong>Usage :</strong> Bannières, headers, réseaux sociaux</li>
+          <li><strong>Texte :</strong> FaithChronicles + Chronicles of Love + tagline</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Logo Simple -->
+    <div class="logo-section">
+      <h2>Logo Simplifié</h2>
+      <p>Croix seule sur fond transparent. Pour badges, overlays et petites tailles.</p>
+      
+      <div class="logo-variants">
+        <div class="variant-card">
+          <h3>Petit (64px)</h3>
+          <div class="bg-light">
+            <img src="logo-simple.svg" alt="Logo simple" style="width: 64px;" />
+          </div>
+        </div>
+        
+        <div class="variant-card">
+          <h3>Moyen (128px)</h3>
+          <div class="bg-dark">
+            <img src="logo-simple.svg" alt="Logo simple" style="width: 128px;" />
+          </div>
+        </div>
+        
+        <div class="variant-card">
+          <h3>Grand (256px)</h3>
+          <div class="bg-gradient">
+            <img src="logo-simple.svg" alt="Logo simple" style="width: 256px;" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="specs">
+        <h3>Spécifications</h3>
+        <ul>
+          <li><strong>Format :</strong> <code>logo-simple.svg</code></li>
+          <li><strong>Dimensions :</strong> 256×256px (scalable)</li>
+          <li><strong>Fond :</strong> Transparent</li>
+          <li><strong>Usage :</strong> Watermarks, badges, icônes UI</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Palette de Couleurs -->
+    <div class="logo-section">
+      <h2>Palette de Couleurs</h2>
+      <p>Les couleurs officielles du projet FaithChronicles.</p>
+      
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-box" style="background: #667eea;"></div>
+          <div class="color-name">Violet Principal</div>
+          <div class="color-code">#667eea</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background: #764ba2;"></div>
+          <div class="color-name">Violet Foncé</div>
+          <div class="color-code">#764ba2</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background: #f093fb;"></div>
+          <div class="color-name">Rose Clair</div>
+          <div class="color-code">#f093fb</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background: #ffffff; border: 2px solid #e5e7eb;"></div>
+          <div class="color-name">Blanc Pur</div>
+          <div class="color-code">#ffffff</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background: #f3f4f6;"></div>
+          <div class="color-name">Gris Clair</div>
+          <div class="color-code">#f3f4f6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section de Téléchargement -->
+    <div class="download-section">
+      <h2>📥 Télécharger le Logo Kit</h2>
+      <p>Tous les fichiers sources et variations en un seul endroit</p>
+      
+      <div class="download-grid">
+        <a href="logo.svg" download class="download-btn">Logo Principal SVG</a>
+        <a href="logo-horizontal.svg" download class="download-btn">Logo Horizontal SVG</a>
+        <a href="logo-simple.svg" download class="download-btn">Logo Simple SVG</a>
+        <a href="logo-generator.html" class="download-btn">Générateur PNG</a>
+      </div>
+      
+      <p style="margin-top: 30px; opacity: 0.9;">
+        💡 Consultez <strong>LOGO_README.md</strong> pour le guide complet d'utilisation
+      </p>
+    </div>
+  </div>
+</body>
+</html>
