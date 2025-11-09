@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkunityquest_chronicles_of_love=self.webpackChunkunityquest_chronicles_of_love||[]).push([[1303],{71303:(s,e,n)=>{n.r(e),n.d(e,{default:()=>i,hiTranslations:()=>u});const u={ui:n(71497).uiTranslations},i=u}}]);
+//# sourceMappingURL=1303.02e2ae48.chunk.js.map
