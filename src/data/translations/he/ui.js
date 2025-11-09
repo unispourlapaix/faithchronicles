@@ -139,6 +139,7 @@ export const uiTranslations = {
   
   ranks: {
     seeker: "מחפש",
+    believer: "מאמין",
     disciple: "תלמיד",
     servant: "משרת",
     witness: "עד",
@@ -147,6 +148,7 @@ export const uiTranslations = {
     prophet: "נביא",
     apostle: "שליח",
     seekerDesc: "תחילת המסע הרוחני",
+    believerDesc: "אמונה גדלה",
     discipleDesc: "לימוד התורות",
     servantDesc: "שירות ומסירות",
     witnessDesc: "שיתוף האמונה",

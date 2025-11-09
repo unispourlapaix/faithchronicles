@@ -137,6 +137,7 @@ export const uiTranslations = {
   
   ranks: {
     seeker: "寻求者",
+    believer: "信徒",
     disciple: "门徒",
     servant: "仆人",
     witness: "见证人",
@@ -145,6 +146,7 @@ export const uiTranslations = {
     prophet: "先知",
     apostle: "使徒",
     seekerDesc: "属灵旅程的开始",
+    believerDesc: "成长的信仰",
     discipleDesc: "学习教导",
     servantDesc: "服务与奉献",
     witnessDesc: "分享信仰",

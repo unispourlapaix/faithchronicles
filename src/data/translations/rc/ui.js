@@ -137,6 +137,7 @@ export const uiTranslations = {
   
   ranks: {
     seeker: "Moluki",
+    believer: "Mondimi",
     disciple: "Moyekoli",
     servant: "Mosaleli",
     witness: "Mtatoli",
@@ -145,6 +146,7 @@ export const uiTranslations = {
     prophet: "Profeta",
     apostle: "Ntoma",
     seekerDesc: "Ebandeli ya mobembo ya molimo",
+    believerDesc: "Kondima ya kokola",
     discipleDesc: "Koyekola mateya",
     servantDesc: "Mosala mpe kotya motema",
     witnessDesc: "Kokabola kondima",

@@ -132,6 +132,7 @@ export const uiTranslations = {
   
   ranks: {
     seeker: "구도자",
+    believer: "신자",
     disciple: "제자",
     servant: "종",
     witness: "증인",
@@ -140,6 +141,7 @@ export const uiTranslations = {
     prophet: "예언자",
     apostle: "사도",
     seekerDesc: "영적 여정의 시작",
+    believerDesc: "성장하는 믿음",
     discipleDesc: "가르침 배우기",
     servantDesc: "봉사와 헌신",
     witnessDesc: "믿음 나누기",
