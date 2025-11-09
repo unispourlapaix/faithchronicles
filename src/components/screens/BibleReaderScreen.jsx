@@ -11,9 +11,28 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
   const [availablePassages, setAvailablePassages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeTab, setActiveTab] = useState('bible'); // 'bible' ou 'unity'
-  const [readPassages, setReadPassages] = useState(new Set()); // Passages déjà lus
+  
+  // Charger les passages lus depuis localStorage
+  const [readPassages, setReadPassages] = useState(() => {
+    try {
+      const saved = localStorage.getItem('bibleReadPassages');
+      return saved ? new Set(JSON.parse(saved)) : new Set();
+    } catch {
+      return new Set();
+    }
+  });
+  
   const [showXpGain, setShowXpGain] = useState(false);
   const [xpAmount, setXpAmount] = useState(0);
+
+  // Sauvegarder les passages lus dans localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('bibleReadPassages', JSON.stringify([...readPassages]));
+    } catch (error) {
+      console.error('Erreur sauvegarde Bible passages:', error);
+    }
+  }, [readPassages]);
 
   useEffect(() => {
     const loadPassages = async () => {

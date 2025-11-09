@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './UnityPeaceModule.css';
 import useTranslation from '../hooks/useTranslation';
 
@@ -18,9 +18,28 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
   const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState('intro');
   const [selectedReligion, setSelectedReligion] = useState(null);
-  const [readCards, setReadCards] = useState(new Set());
+  
+  // Charger les cartes lues depuis localStorage
+  const [readCards, setReadCards] = useState(() => {
+    try {
+      const saved = localStorage.getItem('unityReadCards');
+      return saved ? new Set(JSON.parse(saved)) : new Set();
+    } catch {
+      return new Set();
+    }
+  });
+  
   const [showXpGain, setShowXpGain] = useState(false);
   const [xpAmount, setXpAmount] = useState(0);
+
+  // Sauvegarder les cartes lues dans localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('unityReadCards', JSON.stringify([...readCards]));
+    } catch (error) {
+      console.error('Erreur sauvegarde Unity cards:', error);
+    }
+  }, [readCards]);
 
   // Marquer une carte comme lue et donner l'XP bonus amour
   const markCardAsRead = (cardId, xpValue = 5) => {
@@ -259,7 +278,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-1')}
                   disabled={readCards.has('intro-1')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-1') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-1') ? 0.6 : 1,
@@ -289,7 +308,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-2')}
                   disabled={readCards.has('intro-2')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-2') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-2') ? 0.6 : 1,
@@ -313,7 +332,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-3')}
                   disabled={readCards.has('intro-3')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-3') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-3') ? 0.6 : 1,
@@ -339,7 +358,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-4')}
                   disabled={readCards.has('intro-4')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-4') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-4') ? 0.6 : 1,
@@ -365,7 +384,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-5')}
                   disabled={readCards.has('intro-5')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-5') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-5') ? 0.6 : 1,
@@ -395,7 +414,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-6')}
                   disabled={readCards.has('intro-6')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-6') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-6') ? 0.6 : 1,
@@ -419,7 +438,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-7')}
                   disabled={readCards.has('intro-7')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-7') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-7') ? 0.6 : 1,
@@ -445,7 +464,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-8')}
                   disabled={readCards.has('intro-8')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-8') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-8') ? 0.6 : 1,
@@ -469,7 +488,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-9')}
                   disabled={readCards.has('intro-9')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-9') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-9') ? 0.6 : 1,
@@ -493,7 +512,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-10')}
                   disabled={readCards.has('intro-10')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-10') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-10') ? 0.6 : 1,
@@ -517,7 +536,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-11')}
                   disabled={readCards.has('intro-11')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-11') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-11') ? 0.6 : 1,
@@ -541,7 +560,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-12')}
                   disabled={readCards.has('intro-12')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-12') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-12') ? 0.6 : 1,
@@ -569,7 +588,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-13')}
                   disabled={readCards.has('intro-13')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-13') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-13') ? 0.6 : 1,
@@ -595,7 +614,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <button
                   onClick={() => markCardAsRead('intro-14')}
                   disabled={readCards.has('intro-14')}
-                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
                   style={{
                     background: readCards.has('intro-14') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
                     opacity: readCards.has('intro-14') ? 0.6 : 1,
@@ -623,9 +642,27 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 <div 
                   key={key}
                   className={`religion-card ${selectedReligion === key ? 'selected' : ''}`}
-                  style={{ borderColor: religion.couleur }}
+                  style={{ borderColor: religion.couleur, position: 'relative' }}
                   onClick={() => setSelectedReligion(selectedReligion === key ? null : key)}
                 >
+                  {setTotalXP && (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        markCardAsRead(`religion-${key}`, 3);
+                      }}
+                      disabled={readCards.has(`religion-${key}`)}
+                      className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                      style={{
+                        background: readCards.has(`religion-${key}`) ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
+                        opacity: readCards.has(`religion-${key}`) ? 0.6 : 1,
+                        cursor: readCards.has(`religion-${key}`) ? 'default' : 'pointer'
+                      }}
+                      title={readCards.has(`religion-${key}`) ? '✓' : '+3 XP'}
+                    >
+                      <span className={readCards.has(`religion-${key}`) ? 'text-xs' : 'text-lg'}>{readCards.has(`religion-${key}`) ? '✓' : '❤️'}</span>
+                    </button>
+                  )}
                   <div className="religion-header">
                     <span className="religion-symbole">{religion.symbole}</span>
                     <h3 style={{ color: religion.couleur }}>{religion.nom}</h3>
@@ -677,7 +714,22 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
 
             <div className="valeurs-universelles">
               {valeursUniverselles.map((valeur, idx) => (
-                <div key={idx} className="valeur-card">
+                <div key={idx} className="valeur-card" style={{position: 'relative'}}>
+                  {setTotalXP && (
+                    <button
+                      onClick={() => markCardAsRead(`valeur-${idx}`, 3)}
+                      disabled={readCards.has(`valeur-${idx}`)}
+                      className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                      style={{
+                        background: readCards.has(`valeur-${idx}`) ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
+                        opacity: readCards.has(`valeur-${idx}`) ? 0.6 : 1,
+                        cursor: readCards.has(`valeur-${idx}`) ? 'default' : 'pointer'
+                      }}
+                      title={readCards.has(`valeur-${idx}`) ? '✓' : '+3 XP'}
+                    >
+                      <span className={readCards.has(`valeur-${idx}`) ? 'text-xs' : 'text-lg'}>{readCards.has(`valeur-${idx}`) ? '✓' : '❤️'}</span>
+                    </button>
+                  )}
                   <h3>{valeur.titre}</h3>
                   <p className="valeur-description">{valeur.description}</p>
                   <ul className="valeur-exemples">
@@ -710,7 +762,22 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
 
             <div className="processus-timeline">
               {processusHumilite.map((etape) => (
-                <div key={etape.etape} className="processus-etape">
+                <div key={etape.etape} className="processus-etape" style={{position: 'relative'}}>
+                  {setTotalXP && (
+                    <button
+                      onClick={() => markCardAsRead(`humilite-${etape.etape}`, 3)}
+                      disabled={readCards.has(`humilite-${etape.etape}`)}
+                      className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                      style={{
+                        background: readCards.has(`humilite-${etape.etape}`) ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
+                        opacity: readCards.has(`humilite-${etape.etape}`) ? 0.6 : 1,
+                        cursor: readCards.has(`humilite-${etape.etape}`) ? 'default' : 'pointer'
+                      }}
+                      title={readCards.has(`humilite-${etape.etape}`) ? '✓' : '+3 XP'}
+                    >
+                      <span className={readCards.has(`humilite-${etape.etape}`) ? 'text-xs' : 'text-lg'}>{readCards.has(`humilite-${etape.etape}`) ? '✓' : '❤️'}</span>
+                    </button>
+                  )}
                   <div className="etape-numero">{etape.etape}</div>
                   <div className="etape-contenu">
                     <h3>{etape.titre}</h3>
@@ -726,7 +793,22 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
             <div className="conclusion-humilite">
               <h3>🍎 {t('unity.humility.discernFruits')}</h3>
               
-              <div className="intro-card danger" style={{marginBottom: '1rem'}}>
+              <div className="intro-card danger" style={{marginBottom: '1rem', position: 'relative'}}>
+                {setTotalXP && (
+                  <button
+                    onClick={() => markCardAsRead('humilite-card-1', 2)}
+                    disabled={readCards.has('humilite-card-1')}
+                    className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                    style={{
+                      background: readCards.has('humilite-card-1') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
+                      opacity: readCards.has('humilite-card-1') ? 0.6 : 1,
+                      cursor: readCards.has('humilite-card-1') ? 'default' : 'pointer'
+                    }}
+                    title={readCards.has('humilite-card-1') ? '✓' : '+2 XP'}
+                  >
+                    <span className={readCards.has('humilite-card-1') ? 'text-xs' : 'text-lg'}>{readCards.has('humilite-card-1') ? '✓' : '❤️'}</span>
+                  </button>
+                )}
                 <h3>⚠️ {t('unity.humility.humanHeart')}</h3>
                 <p>
                   <strong>{t('unity.intro.manSpeaks')}</strong>
@@ -735,7 +817,22 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                 </p>
               </div>
 
-              <div className="intro-card success" style={{marginBottom: '1rem'}}>
+              <div className="intro-card success" style={{marginBottom: '1rem', position: 'relative'}}>
+                {setTotalXP && (
+                  <button
+                    onClick={() => markCardAsRead('humilite-card-2', 2)}
+                    disabled={readCards.has('humilite-card-2')}
+                    className="absolute -top-2 -right-2 w-6 h-6 rounded-full z-10 flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-95"
+                    style={{
+                      background: readCards.has('humilite-card-2') ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
+                      opacity: readCards.has('humilite-card-2') ? 0.6 : 1,
+                      cursor: readCards.has('humilite-card-2') ? 'default' : 'pointer'
+                    }}
+                    title={readCards.has('humilite-card-2') ? '✓' : '+2 XP'}
+                  >
+                    <span className={readCards.has('humilite-card-2') ? 'text-xs' : 'text-lg'}>{readCards.has('humilite-card-2') ? '✓' : '❤️'}</span>
+                  </button>
+                )}
                 <h3>✨ {t('unity.humility.lookGodLove')}</h3>
                 <p>
                   <strong>{t('unity.intro.lookPeaceAll')}</strong>
