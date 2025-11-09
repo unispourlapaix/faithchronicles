@@ -336,7 +336,7 @@ export const uiTranslations = {
     moreReferences: "및 {{count}}개의 다른 참조",
     copyright: "📖 Korean Revised Version - 공개 도메인 • Strong 번호 포함",
     shareVerse: "이 구절 공유",
-    markAsRead: "이 구절을 읽었습니다",
+    markAsRead: "구절 읽음",
     alreadyRead: "이미 읽음",
     readingBonus: "읽기 보너스"
   },

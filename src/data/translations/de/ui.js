@@ -316,7 +316,7 @@ export const uiTranslations = {
     moreReferences: "und {{count}} weitere Referenzen",
     copyright: "📖 Gemeinfrei • Strong",
     shareVerse: "Diesen Vers teilen",
-    markAsRead: "Ich habe diese Passage gelesen",
+    markAsRead: "Passage gelesen",
     alreadyRead: "Bereits gelesen",
     readingBonus: "Lesebonus"
   },

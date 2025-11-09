@@ -483,7 +483,7 @@ export const uiTranslations = {
     verseCopied: "تم نسخ الآية إلى الحافظة!",
     moreReferences: "و {{count}} مراجع أخرى",
     copyright: "📖 LSG 1910 • Strong مضمن",
-    markAsRead: "لقد قرأت هذا المقطع",
+    markAsRead: "المقطع مقروء",
     alreadyRead: "تم القراءة",
     readingBonus: "مكافأة القراءة"
   },

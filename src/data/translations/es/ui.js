@@ -335,7 +335,7 @@ export const uiTranslations = {
     verseCopied: "Versículo copiado al portapapeles!",
     moreReferences: "y {{count}} otras referencias",
     copyright: "📖 Dominio público • Strong",
-    markAsRead: "He leído este pasaje",
+    markAsRead: "Pasaje leído",
     alreadyRead: "Ya leído",
     readingBonus: "Bonificación de lectura"
   },

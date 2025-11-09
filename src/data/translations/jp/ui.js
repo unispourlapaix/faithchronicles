@@ -328,7 +328,7 @@ export const uiTranslations = {
     moreReferences: "さらに{{count}}つの他の参照",
     copyright: "💭 著作権訳 1955 • Strong辞書",
     shareVerse: "この節を共有",
-    markAsRead: "この箇所を読みました",
+    markAsRead: "箇所既読",
     alreadyRead: "既読",
     readingBonus: "読書ボーナス"
   },

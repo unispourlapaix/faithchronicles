@@ -335,8 +335,8 @@ export const uiTranslations = {
     verseCopied: "Verset copié dans le presse-papiers !",
     moreReferences: "et {{count}} autres références",
     copyright: "📖 LSG 1910 • Strong inclus",
-    markAsRead: "J'ai lu ce passage",
-    alreadyRead: "Passage déjà lu",
+    markAsRead: "Passage lu",
+    alreadyRead: "Déjà lu",
     readingBonus: "Bonus de lecture"
   },
   

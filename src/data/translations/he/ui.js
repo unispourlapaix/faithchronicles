@@ -499,7 +499,7 @@ export const uiTranslations = {
     verseCopied: "הפסוק הועתק!",
     moreReferences: "הפניות נוספות",
     copyright: "© זכויות יוצרים",
-    markAsRead: "קראתי את הקטע הזה",
+    markAsRead: "הקטע נקרא",
     alreadyRead: "כבר נקרא",
     readingBonus: "בונוס קריאה"
   },

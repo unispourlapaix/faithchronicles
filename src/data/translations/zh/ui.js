@@ -481,7 +481,7 @@ export const uiTranslations = {
     verseCopied: "经文已复制到剪贴板！",
     moreReferences: "和 {{count}} 个其他参考",
     copyright: "📖 LSG 1910 • 包含Strong",
-    markAsRead: "我已阅读此段落",
+    markAsRead: "段落已读",
     alreadyRead: "已阅读",
     readingBonus: "阅读奖励"
   },

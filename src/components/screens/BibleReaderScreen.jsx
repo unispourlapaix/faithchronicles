@@ -96,10 +96,9 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
       {/* Animation XP gagnés */}
       {showXpGain && (
         <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-50 animate-bounce">
-          <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2">
-            <span className="text-2xl">📖</span>
-            <span className="font-bold text-lg">+{xpAmount} XP</span>
-            <span className="text-sm opacity-90">Connaissance</span>
+          <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-3 rounded-full shadow-2xl flex items-center gap-2">
+            <span className="text-3xl">📖</span>
+            <span className="font-bold text-xl">+{xpAmount}</span>
           </div>
         </div>
       )}
@@ -178,25 +177,25 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
               ))}
             </div>
             
-            {/* Bouton "J'ai lu ce passage" */}
+            {/* Bouton "Passage lu" */}
             {setTotalXP && (
-              <div className="mt-6 text-center">
+              <div className="mt-8 flex justify-center items-center">
                 {!readPassages.has(`${currentPassage.book}_${currentPassage.chapter}`) ? (
                   <button
                     onClick={() => {
                       const passageId = `${currentPassage.book}_${currentPassage.chapter}`;
                       markPassageAsRead(passageId);
                     }}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all active:scale-95"
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95"
                   >
                     <Book className="w-5 h-5" />
-                    <span>{t('bible.markAsRead') || "J'ai lu ce passage"}</span>
-                    <span className="text-sm opacity-90">+10 XP</span>
+                    <span>{t('bible.markAsRead')}</span>
+                    <span className="px-2 py-1 bg-white/20 rounded-full text-sm">+10 XP</span>
                   </button>
                 ) : (
-                  <div className="inline-flex items-center gap-2 px-6 py-3 bg-green-100 text-green-700 font-bold rounded-full">
+                  <div className="inline-flex items-center gap-3 px-8 py-4 bg-green-100 text-green-700 font-bold rounded-full shadow-md">
                     <span>✅</span>
-                    <span>{t('bible.alreadyRead') || "Passage déjà lu"}</span>
+                    <span>{t('bible.alreadyRead')}</span>
                   </div>
                 )}
               </div>
@@ -265,7 +264,7 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
       ) : (
         /* Module Unité & Paix */
         <div className="flex-1 overflow-y-auto bg-white/90 rounded-3xl shadow-xl">
-          <UnityPeaceModule />
+          <UnityPeaceModule totalXP={totalXP} setTotalXP={setTotalXP} audio={audio} />
         </div>
       )}
     </div>

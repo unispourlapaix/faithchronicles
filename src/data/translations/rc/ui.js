@@ -476,8 +476,8 @@ export const uiTranslations = {
     verseCopied: "Vérité ekopyami!",
     moreReferences: "mpe {{count}} batoli mosusu",
     copyright: "📖 LSG 1910 • Strong ekotami",
-    markAsRead: "Natángi eteni oyo",
-    alreadyRead: "Etángi ya liboso",
+    markAsRead: "Eteni etángami",
+    alreadyRead: "Etángami liboso",
     readingBonus: "Bonusi ya kotánga"
   },
 
