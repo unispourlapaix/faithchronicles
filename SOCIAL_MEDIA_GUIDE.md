@@ -60,7 +60,7 @@ Caption suggérée:
 Découvrez un voyage spirituel unique à travers les religions du monde. 
 L'unité qui produit la paix 🕊️
 
-#FaithChronicles #UnityQuest #Peace #Love #Interfaith #Spirituality
+#FaithChronicles #UnityQuestCOL #Peace #Love #Interfaith #Spirituality
 ```
 
 **Story (1080×1920)**
@@ -81,7 +81,7 @@ FaithChronicles est un voyage spirituel interactif
 💜 Apprenez dans votre langue (17 langues!)
 🎮 Expérience gamifiée
 
-#UnityQuest #Peace #Interfaith
+#UnityQuestCOL #Peace #Interfaith
 ```
 
 #### 📘 Facebook
@@ -113,6 +113,7 @@ Comprendre et respecter les autres est aujourd'hui un processus d'humilité."
 ```
 #FaithChronicles
 #ChroniclesOfLove
+#UnityQuestCOL
 #UnityQuest
 ```
 

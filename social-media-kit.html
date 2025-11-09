@@ -55,6 +55,8 @@
       padding: 30px;
       border: 2px solid #667eea;
       transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
     }
     
     .format-card:hover {
@@ -79,12 +81,23 @@
     .preview-container {
       background: white;
       border-radius: 12px;
-      padding: 20px;
+      padding: 10px;
       margin-bottom: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 200px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .preview-container canvas {
+      max-width: 100%;
+      max-height: 280px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
     }
     
     .language-selector {
@@ -287,103 +300,103 @@
         title: "FaithChronicles",
         subtitle: "Chronicles of Love",
         quote: "L'unité qui produit la paix",
-        hashtag: "#UnityQuest #Peace #Love"
+        hashtag: "#UnityQuestCOL #Peace #Love"
       },
       en: {
         title: "FaithChronicles",
         subtitle: "Chronicles of Love",
         quote: "Unity that produces peace",
-        hashtag: "#UnityQuest #Peace #Love"
+        hashtag: "#UnityQuestCOL #Peace #Love"
       },
       es: {
         title: "FaithChronicles",
         subtitle: "Crónicas del Amor",
         quote: "La unidad que produce la paz",
-        hashtag: "#UnityQuest #Paz #Amor"
+        hashtag: "#UnityQuestCOL #Paz #Amor"
       },
       de: {
         title: "FaithChronicles",
         subtitle: "Chroniken der Liebe",
         quote: "Einheit, die Frieden schafft",
-        hashtag: "#UnityQuest #Frieden #Liebe"
+        hashtag: "#UnityQuestCOL #Frieden #Liebe"
       },
       it: {
         title: "FaithChronicles",
         subtitle: "Cronache d'Amore",
         quote: "L'unità che produce pace",
-        hashtag: "#UnityQuest #Pace #Amore"
+        hashtag: "#UnityQuestCOL #Pace #Amore"
       },
       pt: {
         title: "FaithChronicles",
         subtitle: "Crônicas do Amor",
         quote: "A unidade que produz paz",
-        hashtag: "#UnityQuest #Paz #Amor"
+        hashtag: "#UnityQuestCOL #Paz #Amor"
       },
       ru: {
         title: "FaithChronicles",
         subtitle: "Хроники Любви",
         quote: "Единство, рождающее мир",
-        hashtag: "#UnityQuest #Мир #Любовь"
+        hashtag: "#UnityQuestCOL #Мир #Любовь"
       },
       uk: {
         title: "FaithChronicles",
         subtitle: "Хроніки Кохання",
         quote: "Єдність, що породжує мир",
-        hashtag: "#UnityQuest #Мир #Любов"
+        hashtag: "#UnityQuestCOL #Мир #Любов"
       },
       zh: {
         title: "FaithChronicles",
         subtitle: "爱的编年史",
         quote: "产生和平的团结",
-        hashtag: "#UnityQuest #和平 #爱"
+        hashtag: "#UnityQuestCOL #和平 #爱"
       },
       ar: {
         title: "FaithChronicles",
         subtitle: "سجلات الحب",
         quote: "الوحدة التي تنتج السلام",
-        hashtag: "#UnityQuest #السلام #الحب"
+        hashtag: "#UnityQuestCOL #السلام #الحب"
       },
       he: {
         title: "FaithChronicles",
         subtitle: "דברי הימים של אהבה",
         quote: "האחדות היוצרת שלום",
-        hashtag: "#UnityQuest #שלום #אהבה"
+        hashtag: "#UnityQuestCOL #שלום #אהבה"
       },
       jp: {
         title: "FaithChronicles",
         subtitle: "愛の年代記",
         quote: "平和を生み出す統一",
-        hashtag: "#UnityQuest #平和 #愛"
+        hashtag: "#UnityQuestCOL #平和 #愛"
       },
       ko: {
         title: "FaithChronicles",
         subtitle: "사랑의 연대기",
         quote: "평화를 만드는 통일",
-        hashtag: "#UnityQuest #평화 #사랑"
+        hashtag: "#UnityQuestCOL #평화 #사랑"
       },
       hi: {
         title: "FaithChronicles",
         subtitle: "प्रेम का इतिहास",
         quote: "एकता जो शांति उत्पन्न करती है",
-        hashtag: "#UnityQuest #शांति #प्रेम"
+        hashtag: "#UnityQuestCOL #शांति #प्रेम"
       },
       sw: {
         title: "FaithChronicles",
         subtitle: "Historia ya Upendo",
         quote: "Umoja unao zaa amani",
-        hashtag: "#UnityQuest #Amani #Upendo"
+        hashtag: "#UnityQuestCOL #Amani #Upendo"
       },
       pl: {
         title: "FaithChronicles",
         subtitle: "Kroniki Miłości",
         quote: "Jedność rodząca pokój",
-        hashtag: "#UnityQuest #Pokój #Miłość"
+        hashtag: "#UnityQuestCOL #Pokój #Miłość"
       },
       rc: {
         title: "FaithChronicles",
         subtitle: "Makambu ya Bolingo",
         quote: "Lisángá oyo ebimisaka kimya",
-        hashtag: "#UnityQuest #Kimya #Bolingo"
+        hashtag: "#UnityQuestCOL #Kimya #Bolingo"
       }
     };
 
