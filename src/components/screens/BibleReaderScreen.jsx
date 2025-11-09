@@ -224,13 +224,13 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
                 navigatePassage('prev');
               }}
               disabled={currentIndex === 0}
-              className={`flex items-center justify-center py-2 px-4 rounded-full font-bold text-xl transition-all ${
+              className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-2xl transition-all ${
                 currentIndex === 0 
                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
                   : 'bg-white text-blue-600 shadow-md hover:shadow-lg active:scale-95'
               }`}
             >
-              ‹
+              &lt;
             </button>
 
             {/* Bouton "Passage lu" intégré dans la navigation */}
@@ -280,13 +280,13 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
                 navigatePassage('next');
               }}
               disabled={currentIndex === availablePassages.length - 1}
-              className={`flex items-center justify-center py-2 px-4 rounded-full font-bold text-xl transition-all ${
+              className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-2xl transition-all ${
                 currentIndex === availablePassages.length - 1
                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
                   : 'bg-white text-blue-600 shadow-md hover:shadow-lg active:scale-95'
               }`}
             >
-              ›
+              &gt;
             </button>
           </div>
 
