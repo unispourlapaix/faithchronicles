@@ -20,7 +20,6 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
   // Mapper les codes de langue UI vers les codes de fichiers Bible
   const languageMap = {
     'jp': 'ja',  // Japonais: jp (UI) -> ja (fichiers Bible)
-    'rc': 'fr',  // Lingala: pas de fichier Bible -> fallback français
   };
   
   // Obtenir le code langue pour les fichiers Bible

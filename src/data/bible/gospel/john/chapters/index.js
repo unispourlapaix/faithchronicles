@@ -12,7 +12,6 @@ export const availableChapters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 // Mapper les codes de langue UI vers les codes de fichiers Bible
 const languageMap = {
   'jp': 'ja',  // UI utilise jp, fichiers utilisent ja
-  'rc': 'fr',  // Lingala n'a pas de fichiers, fallback vers français
 };
 
 const getBibleLanguageCode = (uiLang) => {
