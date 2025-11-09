@@ -5,7 +5,10 @@
 
 // Configuration de la playlist automatique - 24 chansons gospel complètes
 const faithGospelConfig = {
-  baseUrl: '/audio/gospel/',
+  // Détection automatique du chemin de base (GitHub Pages ou local)
+  baseUrl: window.location.pathname.includes('/unityquest-chronicles-of-love/') 
+    ? '/unityquest-chronicles-of-love/audio/gospel/' 
+    : '/audio/gospel/',
   playlist: [
     'Aime_e_Tel_le_Que_Tu_Es.mp3',
     'Amour_Divin.mp3',
