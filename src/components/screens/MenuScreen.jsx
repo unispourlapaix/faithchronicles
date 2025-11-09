@@ -10,7 +10,8 @@ import useTranslation from '../../hooks/useTranslation';
 const MenuScreen = ({ 
   wisdomPoints, unlockedLevels, levelStars, score, revelationPoints,
   setCurrentScreen, setShowModal, setModalContent, setCurrentLevel,
-  user, isAnonymousMode, isSupabaseConnected, onLogout, onSwitchToLogin, onRefresh, audio
+  user, isAnonymousMode, isSupabaseConnected, onLogout, onSwitchToLogin, onRefresh, audio,
+  totalXP, setTotalXP, setBibleReaderTab
 }) => {
   const { t } = useTranslation();
   const [showAudioPanel, setShowAudioPanel] = React.useState(false);
@@ -87,6 +88,9 @@ const MenuScreen = ({
       <JohnBibleReader 
         onClose={() => setShowModal(false)}
         initialChapter={initialChapter}
+        totalXP={totalXP}
+        setTotalXP={setTotalXP}
+        audio={audio}
       />
     );
   };
@@ -265,9 +269,16 @@ const MenuScreen = ({
 
       <div className="relative z-10 p-8 h-full flex flex-col justify-between">
         <div className="text-center">
-          {/* Logo avec croix moderne */}
-          <div className="mb-2">
-            <div className="w-32 h-32 mx-auto rounded-full shadow-2xl flex items-center justify-center relative"
+          {/* Logo avec croix moderne - Cliquable pour Unity */}
+          <button
+            onClick={() => {
+              audio?.sounds?.tok();
+              setBibleReaderTab && setBibleReaderTab('unity');
+              setCurrentScreen('bibleReader');
+            }}
+            className="mb-2 mx-auto block hover:scale-105 active:scale-95 transition-transform cursor-pointer"
+          >
+            <div className="w-32 h-32 rounded-full shadow-2xl hover:shadow-3xl flex items-center justify-center relative transition-all"
                  style={{background: 'linear-gradient(145deg, #ffffff 0%, #f3f4f6 100%)'}}>
               <div className="absolute inset-0 rounded-full"
                    style={{background: 'radial-gradient(circle at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%)'}}></div>
@@ -301,7 +312,7 @@ const MenuScreen = ({
                 <div className="absolute top-12 left-12 w-1 h-1 bg-indigo-400 rounded-full opacity-60 animate-pulse" style={{animationDelay: '2s'}}></div>
               </div>
             </div>
-          </div>
+          </button>
           
           {/* Titre avec effet 3D */}
           <div className="mb-4">

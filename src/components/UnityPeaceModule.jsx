@@ -696,6 +696,34 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
                           ))}
                         </div>
                       </div>
+                      
+                      {/* Message commun : toutes les religions cherchent la paix */}
+                      <div className="fondement-item" style={{
+                        marginTop: '1.5rem',
+                        padding: '1rem',
+                        background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1))',
+                        borderRadius: '12px',
+                        border: '2px solid rgba(139, 92, 246, 0.3)'
+                      }}>
+                        <div style={{
+                          fontSize: '1.1rem',
+                          fontWeight: 'bold',
+                          marginBottom: '0.5rem',
+                          color: '#8b5cf6',
+                          textAlign: 'center'
+                        }}>
+                          ✨ {t('unity.religions.commonGoal')} ✨
+                        </div>
+                        <p style={{
+                          fontSize: '0.95rem',
+                          lineHeight: '1.6',
+                          color: '#4b5563',
+                          textAlign: 'center',
+                          fontStyle: 'italic'
+                        }}>
+                          {t('unity.religions.seekingPeace')}
+                        </p>
+                      </div>
                     </div>
                   )}
                 </div>

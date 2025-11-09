@@ -32,7 +32,11 @@ export const uiTranslations = {
     cancel: "취소",
     confirm: "확인",
     save: "저장",
-    load: "불러오기"
+    load: "불러오기",
+    yesRestart: "예, 다시 시작",
+    noContinue: "아니요, 계속",
+    tryAgain: "다시 시도",
+    backToMenu: "메뉴로 돌아가기"
   },
   
   labels: {

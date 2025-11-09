@@ -34,7 +34,9 @@ export const uiTranslations = {
     save: "Hifadhi",
     load: "Pakia",
     yesRestart: "Ndiyo, anzisha upya",
-    noContinue: "Hapana, endelea"
+    noContinue: "Hapana, endelea",
+    tryAgain: "Jaribu tena",
+    backToMenu: "Rudi kwenye menyu"
   },
   
   labels: {

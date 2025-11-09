@@ -96,6 +96,8 @@ title: "Jedność, która przynosi pokój",
       theAngels: "Aniołowie:",
       theUnity: "Jedność:",
       values: "Wartości:",
+    commonGoal: "Wspólny Cel",
+    seekingPeace: "Wszystkie religie dzielą wspólny cel: poszukiwanie pokoju, promowanie miłości i budowanie lepszego świata. Poza naszymi różnicami wszyscy jesteśmy zjednoczeni w tym poszukiwaniu mądrości i harmonii.",
       
       christianity: {
         name: "Chrześcijaństwo",

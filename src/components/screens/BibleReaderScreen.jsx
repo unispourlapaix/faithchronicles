@@ -5,12 +5,12 @@ import useTranslation from '../../hooks/useTranslation.js';
 import VerseWithStrong from '../VerseWithStrong';
 import UnityPeaceModule from '../UnityPeaceModule';
 
-const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => {
+const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bibleReaderTab, setBibleReaderTab }) => {
   const { t, currentLanguage } = useTranslation();
   const [currentPassage, setCurrentPassage] = useState(null);
   const [availablePassages, setAvailablePassages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [activeTab, setActiveTab] = useState('bible'); // 'bible' ou 'unity'
+  const [activeTab, setActiveTab] = useState(bibleReaderTab || 'bible'); // 'bible' ou 'unity'
   
   // Charger les passages lus depuis localStorage
   const [readPassages, setReadPassages] = useState(() => {
@@ -24,6 +24,13 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
   
   const [showXpGain, setShowXpGain] = useState(false);
   const [xpAmount, setXpAmount] = useState(0);
+
+  // Synchroniser l'onglet avec le parent
+  useEffect(() => {
+    if (bibleReaderTab) {
+      setActiveTab(bibleReaderTab);
+    }
+  }, [bibleReaderTab]);
 
   // Sauvegarder les passages lus dans localStorage
   useEffect(() => {
@@ -125,7 +132,10 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
       {/* En-tête */}
       <div className="flex items-center justify-between mb-4">
         <button 
-          onClick={() => setCurrentScreen('menu')}
+          onClick={() => {
+            setBibleReaderTab && setBibleReaderTab('bible');
+            setCurrentScreen('menu');
+          }}
           className="flex items-center gap-2 py-2 px-3 bg-white/80 rounded-full shadow-md hover:shadow-lg transition-all active:scale-95"
         >
           <ChevronLeft className="w-4 h-4" />
@@ -134,7 +144,10 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
         
         <div className="flex gap-1 bg-white/80 rounded-lg p-0.5">
           <button
-            onClick={() => setActiveTab('bible')}
+            onClick={() => {
+              setActiveTab('bible');
+              setBibleReaderTab && setBibleReaderTab('bible');
+            }}
             className={`flex items-center gap-1 px-2 py-1 rounded text-xs font-semibold transition-all ${
               activeTab === 'bible'
                 ? 'bg-blue-500 text-white shadow'
@@ -145,7 +158,10 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio }) => 
             {t('bible.tabBible')}
           </button>
           <button
-            onClick={() => setActiveTab('unity')}
+            onClick={() => {
+              setActiveTab('unity');
+              setBibleReaderTab && setBibleReaderTab('unity');
+            }}
             className={`flex items-center gap-1 px-2 py-1 rounded text-xs font-semibold transition-all ${
               activeTab === 'unity'
                 ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow'

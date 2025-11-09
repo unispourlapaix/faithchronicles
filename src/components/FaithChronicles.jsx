@@ -59,6 +59,7 @@ const FaithChronicles = () => {
 
   const savedProgress = loadProgress();
   const [currentScreen, setCurrentScreen] = useState(user ? 'menu' : 'login');
+  const [bibleReaderTab, setBibleReaderTab] = useState('bible'); // État pour l'onglet Bible Reader
   const [isAnonymousMode, setIsAnonymousMode] = useState(false); // Mode local sans Supabase
   const [currentLevel, setCurrentLevel] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -497,6 +498,7 @@ const FaithChronicles = () => {
     unlockedLevels, setUnlockedLevels,
     levelStars, setLevelStars,
     totalXP, setTotalXP,  // Nouveau: XP total
+    bibleReaderTab, setBibleReaderTab, // État pour l'onglet Bible Reader
     saveStarsForLevel,  // Nouvelle fonction pour sauvegarder les étoiles
     showFunFact, setShowFunFact,
     funFactText, setFunFactText,

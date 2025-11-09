@@ -96,6 +96,8 @@ title: "Einheit, die Frieden bringt",
       theAngels: "Die Engel:",
       theUnity: "Die Einheit:",
       values: "Werte:",
+    commonGoal: "Gemeinsames Ziel",
+    seekingPeace: "Alle Religionen teilen ein gemeinsames Ziel: Frieden suchen, Liebe fördern und eine bessere Welt aufbauen. Jenseits unserer Unterschiede sind wir alle in dieser Suche nach Weisheit und Harmonie vereint.",
       
       christianity: {
         name: "Christentum",

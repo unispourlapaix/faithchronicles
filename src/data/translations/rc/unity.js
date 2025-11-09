@@ -80,6 +80,8 @@ title: "Bomoko",
       theAngels: "Ba anzelu",
       theUnity: "Bomoko",
       values: "Ba valeurs",
+    commonGoal: "Ntina ya Lisángá",
+    seekingPeace: "Mabondeli nyonso ezali na ntina moko: koluka kimya, kotombola bolingo mpé kotónga mokili ya malamu. Na nse ya bokeseni na biso, biso nyonso tozali lisángá na boluki oyo ya bwanya mpé boyokani.",
       christianity: {
         name: "Christianisme",
         godText: "Tata, Mwana (Yesu), Molimo Mosantu – misato na moko",

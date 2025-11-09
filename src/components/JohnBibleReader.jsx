@@ -13,8 +13,9 @@ import { getStrongDictionary } from '../data/bible/strong/index.js';
 import { translationService } from '../data/bible/gospel/john/translationService';
 import VerseWithStrong from './VerseWithStrong';
 import useTranslation from '../hooks/useTranslation.js';
+import Toast from './Toast';
 
-const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
+const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
   
   // Mapper les codes de langue UI vers les codes de fichiers Bible
@@ -31,6 +32,54 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
   const [chapterData, setChapterData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  
+  // Charger les chapitres lus depuis localStorage
+  const [readChapters, setReadChapters] = useState(() => {
+    try {
+      const saved = localStorage.getItem('johnReadChapters');
+      return saved ? new Set(JSON.parse(saved)) : new Set();
+    } catch {
+      return new Set();
+    }
+  });
+  
+  const [showXpGain, setShowXpGain] = useState(false);
+  const [xpAmount, setXpAmount] = useState(0);
+  
+  // Toast notifications
+  const [toast, setToast] = useState(null);
+  
+  const showToast = (message, type = 'success', duration = 3000) => {
+    setToast({ message, type, duration });
+  };
+
+  // Sauvegarder les chapitres lus dans localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('johnReadChapters', JSON.stringify([...readChapters]));
+    } catch (error) {
+      console.error('Erreur sauvegarde John chapters:', error);
+    }
+  }, [readChapters]);
+
+  // Marquer un chapitre comme lu et donner l'XP
+  const markChapterAsRead = (chapterId) => {
+    if (readChapters.has(chapterId)) return;
+    
+    setReadChapters(prev => new Set([...prev, chapterId]));
+    
+    if (setTotalXP) {
+      setTotalXP(prev => prev + 10);
+      setXpAmount(10);
+      setShowXpGain(true);
+      
+      if (audio?.sounds?.starEarned) {
+        audio.sounds.starEarned();
+      }
+      
+      setTimeout(() => setShowXpGain(false), 2000);
+    }
+  };
 
   const [searchText, setSearchText] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -356,14 +405,16 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
     const fullText = `${content.text}\n${content.hashtags}\n${content.url}`;
     try {
       await navigator.clipboard.writeText(fullText);
-      alert(`✅ ${t('bible.verseCopied')}`);
+      showToast(t('bible.verseCopied'), 'success');
+      audio?.sounds?.tok();
     } catch (err) {
       console.error(t('bible.copyError'), err);
     }
   };
 
   const downloadImage = (verse) => {
-    alert(t('bible.imageFeatureComing'));
+    showToast(t('bible.imageFeatureComing'), 'info');
+    audio?.sounds?.tok();
   };
 
   const getStrongInfo = (strongNumbers) => {
@@ -416,11 +467,22 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
         flexDirection: 'column'
       }}
     >
+      {/* Animation XP gagnés */}
+      {showXpGain && (
+        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-50 animate-bounce">
+          <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-3 rounded-full shadow-2xl flex items-center gap-2">
+            <span className="text-3xl">📖</span>
+            <span className="font-bold text-xl">+{xpAmount}</span>
+          </div>
+        </div>
+      )}
+
       {/* Header - Ultra Compact 2 lignes */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         {/* Ligne 1: Titre centré */}
         <div className="relative px-3 py-2 text-center">
           <div className="text-sm font-bold">{t('bible.john')} {currentChapter} / 21</div>
+          
           {onClose && (
             <button
               onClick={onClose}
@@ -711,6 +773,33 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
             </div>
           </div>
         </div>
+      )}
+      
+      {/* Bouton XP compact fixe en bas */}
+      {setTotalXP && (
+        <button
+          onClick={() => markChapterAsRead(`john-${currentChapter}`)}
+          disabled={readChapters.has(`john-${currentChapter}`)}
+          className="fixed bottom-6 right-6 w-12 h-12 rounded-full flex items-center justify-center transition-all shadow-2xl hover:shadow-xl active:scale-95 z-40"
+          style={{
+            background: readChapters.has(`john-${currentChapter}`) ? '#10b981' : 'linear-gradient(135deg, #ec4899, #ef4444)',
+            opacity: readChapters.has(`john-${currentChapter}`) ? 0.6 : 1,
+            cursor: readChapters.has(`john-${currentChapter}`) ? 'default' : 'pointer'
+          }}
+          title={readChapters.has(`john-${currentChapter}`) ? '✓' : '+10 XP'}
+        >
+          <span className="text-2xl">{readChapters.has(`john-${currentChapter}`) ? '✓' : '❤️'}</span>
+        </button>
+      )}
+      
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          duration={toast.duration}
+          onClose={() => setToast(null)}
+        />
       )}
     </div>
   );

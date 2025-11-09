@@ -34,7 +34,9 @@ export const uiTranslations = {
     save: "Speichern",
     load: "Laden",
     yesRestart: "Ja, neu starten",
-    noContinue: "Nein, fortsetzen"
+    noContinue: "Nein, fortsetzen",
+    tryAgain: "Erneut versuchen",
+    backToMenu: "Zurück zum Menü"
   },
   
   labels: {

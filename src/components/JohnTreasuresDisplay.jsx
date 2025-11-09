@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { Book, Heart, Search } from 'lucide-react';
 import { bibleData } from '../data/bible';
 import useTranslation from '../hooks/useTranslation';
+import Toast from './Toast';
 
 const JohnTreasuresDisplay = ({ onClose }) => {
   const { t } = useTranslation();
@@ -14,6 +15,11 @@ const JohnTreasuresDisplay = ({ onClose }) => {
   const [johnMetadata, setJohnMetadata] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [toast, setToast] = useState(null);
+  
+  const showToast = (message, type = 'info', duration = 3000) => {
+    setToast({ message, type, duration });
+  };
 
   useEffect(() => {
     loadJohnTreasure();
@@ -167,7 +173,7 @@ const JohnTreasuresDisplay = ({ onClose }) => {
             if (window.openJohnBibleReader) {
               window.openJohnBibleReader();
             } else {
-              alert(t('bible.readerInDevelopment'));
+              showToast(t('bible.readerInDevelopment'), 'info');
             }
           }}
           className="w-full px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg hover:from-purple-600 hover:to-blue-600 active:scale-95 transition-all flex items-center justify-center gap-2 font-medium"
@@ -181,6 +187,16 @@ const JohnTreasuresDisplay = ({ onClose }) => {
       <div className="text-center text-xs text-gray-500 pt-2 border-t border-gray-200">
         {t('treasures.johnGospelStats')}
       </div>
+      
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          duration={toast.duration}
+          onClose={() => setToast(null)}
+        />
+      )}
     </div>
   );
 };

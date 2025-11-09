@@ -32,7 +32,11 @@ export const uiTranslations = {
     cancel: "Отмена",
     confirm: "Подтвердить",
     save: "Сохранить",
-    load: "Загрузить"
+    load: "Загрузить",
+    yesRestart: "Да, начать заново",
+    noContinue: "Нет, продолжить",
+    tryAgain: "Попробовать снова",
+    backToMenu: "Вернуться в меню"
   },
   
   labels: {
@@ -62,7 +66,8 @@ export const uiTranslations = {
     xpGained: "XP",
     newRank: "Новый ранг",
     nextGrade: "Следующий ранг",
-    maxLevelReached: "Достигнут максимальный уровень!"
+    maxLevelReached: "Достигнут максимальный уровень!",
+    wrongAnswer: "Неправильный ответ!"
   },
   
   menu: {

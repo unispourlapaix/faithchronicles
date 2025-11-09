@@ -96,6 +96,8 @@ title: "Umoja unaoleta amani",
       theAngels: "Malaika:",
       theUnity: "Umoja:",
       values: "Thamani:",
+    commonGoal: "Lengo la Pamoja",
+    seekingPeace: "Dini zote zinashiriki lengo moja: kutafuta amani, kuendeleza upendo na kujenga ulimwengu bora. Zaidi ya tofauti zetu, sote tumejiunga katika utafutaji huu wa hekima na mwangaza.",
       
       christianity: {
         name: "Ukristo",

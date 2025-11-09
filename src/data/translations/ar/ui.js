@@ -34,7 +34,11 @@ export const uiTranslations = {
     cancel: "إلغاء",
     confirm: "تأكيد",
     save: "حفظ",
-    load: "تحميل"
+    load: "تحميل",
+    yesRestart: "نعم، أعد البدء",
+    noContinue: "لا، استمر",
+    tryAgain: "حاول مرة أخرى",
+    backToMenu: "العودة إلى القائمة"
   },
   
   labels: {
@@ -64,7 +68,8 @@ export const uiTranslations = {
     xpGained: "نقاط الخبرة",
     newRank: "رتبة جديدة",
     nextGrade: "الدرجة التالية",
-    maxLevelReached: "تم الوصول إلى المستوى الأقصى!"
+    maxLevelReached: "تم الوصول إلى المستوى الأقصى!",
+    wrongAnswer: "إجابة خاطئة!"
   },
   
   menu: {

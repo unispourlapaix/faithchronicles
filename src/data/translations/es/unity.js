@@ -96,6 +96,8 @@ title: "La Unidad que Produce Paz",
       theAngels: "Los Ángeles:",
       theUnity: "La Unidad:",
       values: "Valores:",
+    commonGoal: "Objetivo Común",
+    seekingPeace: "Todas las religiones comparten un objetivo común: buscar la paz, promover el amor y construir un mundo mejor. Más allá de nuestras diferencias, todos estamos unidos en esta búsqueda de sabiduría y armonía.",
       
       christianity: {
         name: "Cristianismo",

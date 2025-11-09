@@ -32,7 +32,11 @@ export const uiTranslations = {
     cancel: "Kotika",
     confirm: "Kondima",
     save: "Kobomba",
-    load: "Kozwa"
+    load: "Kozwa",
+    yesRestart: "Iyo, bandela",
+    noContinue: "Te, koba",
+    tryAgain: "Meka lisusu",
+    backToMenu: "Zonga na menu"
   },
   
   labels: {
@@ -62,7 +66,8 @@ export const uiTranslations = {
     xpGained: "XP",
     newRank: "Esika ya sika",
     nextGrade: "Ndenge oyo elandi",
-    maxLevelReached: "Eteni ya likolo ekomi!"
+    maxLevelReached: "Eteni ya likolo ekomi!",
+    wrongAnswer: "Eyano ezali malamu te!"
   },
   
   menu: {

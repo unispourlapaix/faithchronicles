@@ -26,7 +26,7 @@ export const uiTranslations = {
     close: "Close",
     nextLevel: "Next Level",
     selectLevel: "Level Selection",
-    retry: "Retry",
+    retry: "Try Again",
     mainMenu: "Main Menu",
     start: "Start",
     cancel: "Cancel",
@@ -34,7 +34,9 @@ export const uiTranslations = {
     save: "Save",
     load: "Load",
     yesRestart: "Yes, restart",
-    noContinue: "No, continue"
+    noContinue: "No, continue",
+    tryAgain: "Try Again",
+    backToMenu: "Back to menu"
   },
   
   labels: {
@@ -64,7 +66,8 @@ export const uiTranslations = {
     xpGained: "XP",
     newRank: "New rank",
     nextGrade: "Next grade",
-    maxLevelReached: "Maximum level reached!"
+    maxLevelReached: "Maximum level reached!",
+    wrongAnswer: "Wrong answer!"
   },
   
   menu: {

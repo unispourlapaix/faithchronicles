@@ -32,7 +32,11 @@ export const uiTranslations = {
     cancel: "取消",
     confirm: "确认",
     save: "保存",
-    load: "加载"
+    load: "加载",
+    yesRestart: "是的，重新开始",
+    noContinue: "不，继续",
+    tryAgain: "再试一次",
+    backToMenu: "返回菜单"
   },
   
   labels: {
@@ -62,7 +66,8 @@ export const uiTranslations = {
     xpGained: "经验值",
     newRank: "新等级",
     nextGrade: "下一级",
-    maxLevelReached: "已达到最高等级！"
+    maxLevelReached: "已达到最高等级！",
+    wrongAnswer: "答错了！"
   },
   
   menu: {

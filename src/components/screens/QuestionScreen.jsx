@@ -4,6 +4,7 @@ import EndCredits from '../EndCredits';
 import { calculateQuestionXP, getProgressionFromXP, formatProgression } from '../../data/progressionSystem';
 import useTranslation from '../../hooks/useTranslation';
 import useChapterData from '../../hooks/useChapterData';
+import Toast from '../Toast';
 
 const QuestionScreen = ({
   currentQuestion, selectedCard, setSelectedCard, questionDifficulty, combo, isAnswering,
@@ -20,6 +21,12 @@ const QuestionScreen = ({
   const [xpGained, setXpGained] = React.useState(0);
   const [questionStartTime] = React.useState(Date.now());
   const [eliminatedOption, setEliminatedOption] = React.useState(null);
+  const [showWrongAnswerPopup, setShowWrongAnswerPopup] = React.useState(false);
+  const [toast, setToast] = React.useState(null);
+  
+  const showToast = (message, type = 'bonus', duration = 4000) => {
+    setToast({ message, type, duration });
+  };
 
   // Effet pour éliminer une mauvaise réponse avec Courage
   React.useEffect(() => {
@@ -121,13 +128,13 @@ const QuestionScreen = ({
         setTimeout(() => {
           setLives(lives - 1);
           setCombo(0);
-          setSelectedAnswer(null);
-          setIsAnswering(false);
           
           if (lives <= 1) {
+            setSelectedAnswer(null);
+            setIsAnswering(false);
             setCurrentScreen('gameOver');
           } else {
-            alert(t('messages.wrongAnswer').replace('{lives}', lives - 1));
+            setShowWrongAnswerPopup(true);
           }
         }, 1000);
       }
@@ -182,7 +189,7 @@ const QuestionScreen = ({
           setUnlockedLevels([...unlockedLevels, 92]);
           // 🎵 Son de notification spéciale
           audio?.sounds?.notification();
-          alert(t('levels.bonusUnlocked'));
+          showToast(t('levels.bonusUnlocked'), 'bonus', 4000);
         }
         
         setRevelationPoints(revelationPoints + 10);
@@ -391,6 +398,56 @@ const QuestionScreen = ({
         </div>
       )}
 
+      {/* Popup de mauvaise réponse */}
+      {showWrongAnswerPopup && (
+        <div className="absolute inset-0 bg-black/70 flex items-center justify-center p-6 z-50 animate-fade-in">
+          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 max-w-sm shadow-2xl border-4 border-red-200 animate-shake">
+            <div className="text-center mb-4">
+              <div className="text-6xl mb-3 animate-bounce">💔</div>
+              <h3 className="text-2xl font-bold text-red-600 mb-2">{t('labels.wrongAnswer')}</h3>
+              <p className="text-gray-700 text-sm">{t('messages.wrongAnswer').replace('{lives}', lives)}</p>
+            </div>
+            
+            {/* Vies restantes */}
+            <div className="flex justify-center gap-2 mb-6">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className={`text-4xl transition-all duration-300 ${i < lives ? 'scale-100 animate-pulse' : 'scale-75 opacity-30 grayscale'}`}>
+                  {i < lives ? '❤️' : '🖤'}
+                </div>
+              ))}
+            </div>
+            
+            <div className="space-y-3">
+              <button
+                onClick={() => {
+                  audio?.sounds?.tok();
+                  setShowWrongAnswerPopup(false);
+                  setSelectedAnswer(null);
+                  setIsAnswering(false);
+                }}
+                className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-bold 
+                         shadow-lg hover:shadow-xl active:scale-95 transition-all flex items-center justify-center gap-2"
+              >
+                <span>💪</span>
+                <span>{t('buttons.tryAgain')}</span>
+              </button>
+              
+              <button
+                onClick={() => {
+                  audio?.sounds?.wrash();
+                  setShowWrongAnswerPopup(false);
+                  setCurrentScreen('levelSelect');
+                }}
+                className="w-full px-6 py-3 bg-white text-gray-700 rounded-full font-medium 
+                         shadow hover:shadow-md active:scale-95 transition-all border-2 border-gray-200"
+              >
+                {t('buttons.backToMenu')}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Crédits de fin pour le niveau bonus 92 */}
       {showEndCredits && (
         <EndCredits 
@@ -398,6 +455,16 @@ const QuestionScreen = ({
             setShowEndCredits(false);
             setCurrentScreen('info');
           }}
+        />
+      )}
+      
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          duration={toast.duration}
+          onClose={() => setToast(null)}
         />
       )}
     </div>

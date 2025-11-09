@@ -36,7 +36,9 @@ export const uiTranslations = {
     load: "読み込む",
     yesRestart: "はい、再スタート",
     noContinue: "いいえ、続ける"
-  },
+  ,
+    tryAgain: "もう一度試す",
+    backToMenu: "メニューに戻る"},
   
   labels: {
     score: "スコア",
@@ -65,7 +67,8 @@ export const uiTranslations = {
     xpGained: "経験値",
     newRank: "新ランク",
     nextGrade: "次の階級",
-    maxLevelReached: "最大レベル到達！"
+    maxLevelReached: "最大レベル到達！",
+    wrongAnswer: "不正解！"
   },
   
   menu: {

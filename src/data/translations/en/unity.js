@@ -96,6 +96,8 @@ export const unityTranslations = {
     theAngels: "The Angels:",
     theUnity: "The Unity:",
     values: "Values:",
+    commonGoal: "Common Goal",
+    seekingPeace: "All religions share a common goal: seeking peace, promoting love, and building a better world. Beyond our differences, we are all united in this quest for wisdom and harmony.",
     
     christianity: {
       name: "Christianity",

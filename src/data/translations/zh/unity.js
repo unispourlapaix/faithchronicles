@@ -96,6 +96,8 @@ title: "产生和平的合一",
       theAngels: "天使：",
       theUnity: "合一：",
       values: "价值观：",
+    commonGoal: "共同目标",
+    seekingPeace: "所有宗教都有一个共同的目标：寻求和平、促进爱心、建设更美好的世界。超越我们的差异，我们都团结在这个追求智慧与和谐的旅程中。",
       
       christianity: {
         name: "基督教",

@@ -34,7 +34,11 @@ export const uiTranslations = {
     cancel: "ביטול",
     confirm: "אישור",
     save: "שמור",
-    load: "טען"
+    load: "טען",
+    yesRestart: "כן, התחל מחדש",
+    noContinue: "לא, המשך",
+    tryAgain: "נסה שוב",
+    backToMenu: "חזור לתפריט"
   },
   
   labels: {
@@ -64,7 +68,8 @@ export const uiTranslations = {
     xpGained: "ניסיון",
     newRank: "דרגה חדשה",
     nextGrade: "הדרגה הבאה",
-    maxLevelReached: "הגעת לרמה המקסימלית!"
+    maxLevelReached: "הגעת לרמה המקסימלית!",
+    wrongAnswer: "תשובה שגויה!"
   },
   
   menu: {

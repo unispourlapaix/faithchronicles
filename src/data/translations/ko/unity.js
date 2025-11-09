@@ -96,6 +96,8 @@ export const unityTranslations = {
     theAngels: "천사들:",
     theUnity: "일치:",
     values: "가치들:",
+    commonGoal: "공통 목표",
+    seekingPeace: "모든 종교는 공통의 목표를 공유합니다: 평화를 추구하고, 사랑을 증진하며, 더 나은 세상을 만드는 것. 우리의 차이를 넘어, 우리는 모두 지혜와 조화를 추구하는 이 여정에서 하나로 연합되어 있습니다.",
     
     christianity: {
       name: "기독교",
