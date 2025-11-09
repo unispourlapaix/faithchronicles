@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaithChronicles - Kit Réseaux Sociaux</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: white;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #667eea, #f093fb);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      color: #888;
+      font-size: 1.1rem;
+    }
+    
+    .formats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    
+    .format-card {
+      background: #16213e;
+      border-radius: 20px;
+      padding: 30px;
+      border: 2px solid #667eea;
+      transition: transform 0.3s;
+    }
+    
+    .format-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+    }
+    
+    .format-card h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .format-info {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    
+    .preview-container {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+    
+    .language-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .lang-btn {
+      padding: 8px 16px;
+      background: #667eea;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    
+    .lang-btn:hover {
+      background: #764ba2;
+      transform: scale(1.05);
+    }
+    
+    .lang-btn.active {
+      background: #f093fb;
+    }
+    
+    .download-btn {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .download-btn:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+    }
+    
+    .hashtags-section {
+      background: #16213e;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    
+    .hashtags-section h2 {
+      color: #667eea;
+      margin-bottom: 20px;
+    }
+    
+    .hashtags-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .hashtag-card {
+      background: #1a1a2e;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #667eea;
+    }
+    
+    .hashtag-card h3 {
+      color: #f093fb;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    
+    .hashtag-list {
+      color: #aaa;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    
+    /* Animations pour le canvas */
+    @keyframes pulse {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📱 FaithChronicles - Kit Réseaux Sociaux</h1>
+      <p class="subtitle">Logos animés avec philosophie traduite en 17 langues</p>
+    </header>
+
+    <div class="formats-grid">
+      <!-- Instagram Post -->
+      <div class="format-card">
+        <h2>📸 Instagram Post</h2>
+        <div class="format-info">1080×1080px • Format carré</div>
+        <div class="preview-container">
+          <canvas id="instagram-canvas" width="1080" height="1080"></canvas>
+        </div>
+        <div class="language-selector" id="instagram-langs"></div>
+        <button class="download-btn" onclick="downloadFormat('instagram')">
+          📥 Télécharger Instagram Post
+        </button>
+      </div>
+
+      <!-- Instagram Story -->
+      <div class="format-card">
+        <h2>📱 Instagram Story</h2>
+        <div class="format-info">1080×1920px • Format vertical</div>
+        <div class="preview-container">
+          <canvas id="story-canvas" width="1080" height="1920"></canvas>
+        </div>
+        <div class="language-selector" id="story-langs"></div>
+        <button class="download-btn" onclick="downloadFormat('story')">
+          📥 Télécharger Instagram Story
+        </button>
+      </div>
+
+      <!-- Twitter/X -->
+      <div class="format-card">
+        <h2>🐦 Twitter/X Post</h2>
+        <div class="format-info">1200×675px • Format 16:9</div>
+        <div class="preview-container">
+          <canvas id="twitter-canvas" width="1200" height="675"></canvas>
+        </div>
+        <div class="language-selector" id="twitter-langs"></div>
+        <button class="download-btn" onclick="downloadFormat('twitter')">
+          📥 Télécharger Twitter Post
+        </button>
+      </div>
+
+      <!-- Facebook -->
+      <div class="format-card">
+        <h2>📘 Facebook Post</h2>
+        <div class="format-info">1200×630px • Format Open Graph</div>
+        <div class="preview-container">
+          <canvas id="facebook-canvas" width="1200" height="630"></canvas>
+        </div>
+        <div class="language-selector" id="facebook-langs"></div>
+        <button class="download-btn" onclick="downloadFormat('facebook')">
+          📥 Télécharger Facebook Post
+        </button>
+      </div>
+    </div>
+
+    <!-- Section Hashtags -->
+    <div class="hashtags-section">
+      <h2>🏷️ Hashtags Recommandés</h2>
+      <div class="hashtags-grid">
+        <div class="hashtag-card">
+          <h3>🌍 Unité & Paix</h3>
+          <div class="hashtag-list">
+            #Unity #Peace #Love<br>
+            #Interfaith #OneLove<br>
+            #WorldPeace #Harmony
+          </div>
+        </div>
+        
+        <div class="hashtag-card">
+          <h3>🙏 Spiritualité</h3>
+          <div class="hashtag-list">
+            #Faith #Spirituality<br>
+            #Religion #Wisdom<br>
+            #Meditation #Prayer
+          </div>
+        </div>
+        
+        <div class="hashtag-card">
+          <h3>📚 Éducation</h3>
+          <div class="hashtag-list">
+            #Education #Learning<br>
+            #Knowledge #Inspiration<br>
+            #Wisdom #Truth
+          </div>
+        </div>
+        
+        <div class="hashtag-card">
+          <h3>💜 FaithChronicles</h3>
+          <div class="hashtag-list">
+            #FaithChronicles<br>
+            #ChroniclesOfLove<br>
+            #UnityQuest
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Traductions de la philosophie dans toutes les langues
+    const philosophyTranslations = {
+      fr: {
+        title: "FaithChronicles",
+        subtitle: "Chronicles of Love",
+        quote: "L'unité qui produit la paix",
+        hashtag: "#UnityQuest #Peace #Love"
+      },
+      en: {
+        title: "FaithChronicles",
+        subtitle: "Chronicles of Love",
+        quote: "Unity that produces peace",
+        hashtag: "#UnityQuest #Peace #Love"
+      },
+      es: {
+        title: "FaithChronicles",
+        subtitle: "Crónicas del Amor",
+        quote: "La unidad que produce la paz",
+        hashtag: "#UnityQuest #Paz #Amor"
+      },
+      de: {
+        title: "FaithChronicles",
+        subtitle: "Chroniken der Liebe",
+        quote: "Einheit, die Frieden schafft",
+        hashtag: "#UnityQuest #Frieden #Liebe"
+      },
+      it: {
+        title: "FaithChronicles",
+        subtitle: "Cronache d'Amore",
+        quote: "L'unità che produce pace",
+        hashtag: "#UnityQuest #Pace #Amore"
+      },
+      pt: {
+        title: "FaithChronicles",
+        subtitle: "Crônicas do Amor",
+        quote: "A unidade que produz paz",
+        hashtag: "#UnityQuest #Paz #Amor"
+      },
+      ru: {
+        title: "FaithChronicles",
+        subtitle: "Хроники Любви",
+        quote: "Единство, рождающее мир",
+        hashtag: "#UnityQuest #Мир #Любовь"
+      },
+      uk: {
+        title: "FaithChronicles",
+        subtitle: "Хроніки Кохання",
+        quote: "Єдність, що породжує мир",
+        hashtag: "#UnityQuest #Мир #Любов"
+      },
+      zh: {
+        title: "FaithChronicles",
+        subtitle: "爱的编年史",
+        quote: "产生和平的团结",
+        hashtag: "#UnityQuest #和平 #爱"
+      },
+      ar: {
+        title: "FaithChronicles",
+        subtitle: "سجلات الحب",
+        quote: "الوحدة التي تنتج السلام",
+        hashtag: "#UnityQuest #السلام #الحب"
+      },
+      he: {
+        title: "FaithChronicles",
+        subtitle: "דברי הימים של אהבה",
+        quote: "האחדות היוצרת שלום",
+        hashtag: "#UnityQuest #שלום #אהבה"
+      },
+      jp: {
+        title: "FaithChronicles",
+        subtitle: "愛の年代記",
+        quote: "平和を生み出す統一",
+        hashtag: "#UnityQuest #平和 #愛"
+      },
+      ko: {
+        title: "FaithChronicles",
+        subtitle: "사랑의 연대기",
+        quote: "평화를 만드는 통일",
+        hashtag: "#UnityQuest #평화 #사랑"
+      },
+      hi: {
+        title: "FaithChronicles",
+        subtitle: "प्रेम का इतिहास",
+        quote: "एकता जो शांति उत्पन्न करती है",
+        hashtag: "#UnityQuest #शांति #प्रेम"
+      },
+      sw: {
+        title: "FaithChronicles",
+        subtitle: "Historia ya Upendo",
+        quote: "Umoja unao zaa amani",
+        hashtag: "#UnityQuest #Amani #Upendo"
+      },
+      pl: {
+        title: "FaithChronicles",
+        subtitle: "Kroniki Miłości",
+        quote: "Jedność rodząca pokój",
+        hashtag: "#UnityQuest #Pokój #Miłość"
+      },
+      rc: {
+        title: "FaithChronicles",
+        subtitle: "Makambu ya Bolingo",
+        quote: "Lisángá oyo ebimisaka kimya",
+        hashtag: "#UnityQuest #Kimya #Bolingo"
+      }
+    };
+
+    // État actuel pour chaque format
+    const currentLang = {
+      instagram: 'fr',
+      story: 'en',
+      twitter: 'es',
+      facebook: 'de'
+    };
+
+    // Générer les boutons de langue pour chaque format
+    function initLanguageButtons() {
+      const formats = ['instagram', 'story', 'twitter', 'facebook'];
+      const langCodes = Object.keys(philosophyTranslations);
+      const langFlags = {
+        fr: '🇫🇷', en: '🇬🇧', es: '🇪🇸', de: '🇩🇪',
+        it: '🇮🇹', pt: '🇵🇹', ru: '🇷🇺', uk: '🇺🇦',
+        zh: '🇨🇳', ar: '🇸🇦', he: '🇮🇱', jp: '🇯🇵',
+        ko: '🇰🇷', hi: '🇮🇳', sw: '🇰🇪', pl: '🇵🇱', rc: '🇨🇩'
+      };
+
+      formats.forEach(format => {
+        const container = document.getElementById(`${format}-langs`);
+        langCodes.forEach(code => {
+          const btn = document.createElement('button');
+          btn.className = 'lang-btn' + (currentLang[format] === code ? ' active' : '');
+          btn.textContent = `${langFlags[code]} ${code.toUpperCase()}`;
+          btn.onclick = () => selectLanguage(format, code);
+          container.appendChild(btn);
+        });
+      });
+    }
+
+    // Sélectionner une langue
+    function selectLanguage(format, lang) {
+      currentLang[format] = lang;
+      
+      // Mettre à jour les boutons
+      const container = document.getElementById(`${format}-langs`);
+      const buttons = container.querySelectorAll('.lang-btn');
+      buttons.forEach((btn, i) => {
+        btn.classList.toggle('active', Object.keys(philosophyTranslations)[i] === lang);
+      });
+      
+      // Redessiner le canvas
+      drawFormat(format);
+    }
+
+    // Dessiner le logo avec texte
+    function drawLogo(ctx, x, y, size) {
+      const centerX = x;
+      const centerY = y;
+      const radius = size / 2;
+      
+      // Fond gradient circulaire
+      const bgGradient = ctx.createLinearGradient(x - radius, y - radius, x + radius, y + radius);
+      bgGradient.addColorStop(0, '#667eea');
+      bgGradient.addColorStop(0.5, '#764ba2');
+      bgGradient.addColorStop(1, '#f093fb');
+      
+      ctx.fillStyle = bgGradient;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Glow
+      const glowGradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius * 0.55);
+      glowGradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
+      glowGradient.addColorStop(0.7, 'rgba(255, 255, 255, 0.2)');
+      glowGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+      
+      ctx.fillStyle = glowGradient;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius * 0.55, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Ombre pour la croix
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+      ctx.shadowBlur = size * 0.02;
+      ctx.shadowOffsetY = size * 0.008;
+      
+      // Gradient pour la croix
+      const crossGradient = ctx.createLinearGradient(x - radius, y - radius, x + radius, y + radius);
+      crossGradient.addColorStop(0, '#ffffff');
+      crossGradient.addColorStop(1, '#f3f4f6');
+      ctx.fillStyle = crossGradient;
+      
+      // Barres de la croix
+      const barWidth = size * 0.47;
+      const barHeight = size * 0.078;
+      
+      // Horizontale
+      ctx.beginPath();
+      ctx.roundRect(centerX - barWidth / 2, centerY - barHeight / 2, barWidth, barHeight, barHeight / 2);
+      ctx.fill();
+      
+      // Verticale
+      ctx.beginPath();
+      ctx.roundRect(centerX - barHeight / 2, centerY - barWidth / 2, barHeight, barWidth, barHeight / 2);
+      ctx.fill();
+      
+      ctx.shadowColor = 'transparent';
+      
+      // Point central
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, size * 0.049, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Particules
+      const particles = [
+        { x: 0.33, y: 0.33 }, { x: 0.67, y: 0.33 },
+        { x: 0.5, y: 0.27 }, { x: 0.67, y: 0.67 }, { x: 0.33, y: 0.67 }
+      ];
+      
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+      particles.forEach(pos => {
+        ctx.beginPath();
+        ctx.arc(x + (pos.x - 0.5) * size, y + (pos.y - 0.5) * size, size * 0.012, 0, Math.PI * 2);
+        ctx.fill();
+      });
+    }
+
+    // Polyfill roundRect
+    if (!CanvasRenderingContext2D.prototype.roundRect) {
+      CanvasRenderingContext2D.prototype.roundRect = function(x, y, w, h, r) {
+        this.moveTo(x + r, y);
+        this.lineTo(x + w - r, y);
+        this.quadraticCurveTo(x + w, y, x + w, y + r);
+        this.lineTo(x + w, y + h - r);
+        this.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+        this.lineTo(x + r, y + h);
+        this.quadraticCurveTo(x, y + h, x, y + h - r);
+        this.lineTo(x, y + r);
+        this.quadraticCurveTo(x, y, x + r, y);
+        this.closePath();
+      };
+    }
+
+    // Dessiner chaque format
+    function drawFormat(format) {
+      const canvas = document.getElementById(`${format}-canvas`);
+      const ctx = canvas.getContext('2d');
+      const trans = philosophyTranslations[currentLang[format]];
+      
+      // Fond gradient
+      const bgGradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      bgGradient.addColorStop(0, '#667eea');
+      bgGradient.addColorStop(0.5, '#764ba2');
+      bgGradient.addColorStop(1, '#f093fb');
+      ctx.fillStyle = bgGradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Configuration selon le format
+      let logoSize, logoY, titleY, subtitleY, quoteY, quoteSize;
+      
+      if (format === 'instagram') {
+        logoSize = 300;
+        logoY = 350;
+        titleY = 580;
+        subtitleY = 640;
+        quoteY = 780;
+        quoteSize = 32;
+      } else if (format === 'story') {
+        logoSize = 350;
+        logoY = 600;
+        titleY = 900;
+        subtitleY = 970;
+        quoteY = 1200;
+        quoteSize = 36;
+      } else if (format === 'twitter') {
+        logoSize = 250;
+        logoY = 260;
+        titleY = 420;
+        subtitleY = 470;
+        quoteY = 560;
+        quoteSize = 28;
+      } else { // facebook
+        logoSize = 220;
+        logoY = 240;
+        titleY = 380;
+        subtitleY = 425;
+        quoteY = 520;
+        quoteSize = 26;
+      }
+      
+      // Dessiner le logo
+      drawLogo(ctx, canvas.width / 2, logoY, logoSize);
+      
+      // Textes
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+      ctx.shadowBlur = 20;
+      ctx.shadowOffsetY = 5;
+      
+      // Titre
+      ctx.fillStyle = 'white';
+      ctx.font = `bold ${logoSize * 0.2}px Arial`;
+      ctx.textAlign = 'center';
+      ctx.fillText(trans.title, canvas.width / 2, titleY);
+      
+      // Sous-titre
+      ctx.font = `${logoSize * 0.13}px Arial`;
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.fillText(trans.subtitle, canvas.width / 2, subtitleY);
+      
+      // Citation
+      ctx.font = `italic ${quoteSize}px Arial`;
+      ctx.fillStyle = 'white';
+      ctx.fillText(`"${trans.quote}"`, canvas.width / 2, quoteY);
+      
+      // Hashtag
+      ctx.shadowBlur = 10;
+      ctx.font = `${quoteSize * 0.75}px Arial`;
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.fillText(trans.hashtag, canvas.width / 2, quoteY + 50);
+    }
+
+    // Télécharger un format
+    function downloadFormat(format) {
+      const canvas = document.getElementById(`${format}-canvas`);
+      const link = document.createElement('a');
+      const lang = currentLang[format];
+      link.download = `faithchronicles-${format}-${lang}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+      
+      alert(`✅ Image téléchargée!\n\nFormat: ${format}\nLangue: ${lang}\n\nPartagez avec: ${philosophyTranslations[lang].hashtag}`);
+    }
+
+    // Initialiser
+    initLanguageButtons();
+    ['instagram', 'story', 'twitter', 'facebook'].forEach(drawFormat);
+  </script>
+</body>
+</html>
