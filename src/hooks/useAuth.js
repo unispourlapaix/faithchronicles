@@ -80,7 +80,7 @@ export const useAuth = () => {
       const { data, error } = await supabase.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: window.location.origin,
+          emailRedirectTo: `${window.location.origin}${process.env.PUBLIC_URL || ''}`,
         }
       });
       if (error) throw error;
