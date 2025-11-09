@@ -15,7 +15,7 @@ import VerseWithStrong from './VerseWithStrong';
 import useTranslation from '../hooks/useTranslation.js';
 
 const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
-  const { t, currentLanguage } = useTranslation();
+  const { t, currentLanguage, changeLanguage } = useTranslation();
   
   // Mapper les codes de langue UI vers les codes de fichiers Bible
   const languageMap = {
@@ -469,8 +469,8 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
 
           {/* Langue */}
           <select
-            value={language}
-            onChange={(e) => setLanguage(e.target.value)}
+            value={currentLanguage}
+            onChange={(e) => changeLanguage(e.target.value)}
             className="px-2 py-1 bg-white/20 rounded text-white text-xs border-none outline-none min-w-[50px] flex-shrink-0"
           >
             <option value="fr" className="text-gray-800">🇫🇷</option>
@@ -482,11 +482,14 @@ const JohnBibleReader = ({ onClose, initialChapter = 1 }) => {
             <option value="ru" className="text-gray-800">🇷🇺</option>
             <option value="zh" className="text-gray-800">🇨🇳</option>
             <option value="ar" className="text-gray-800">🇸🇦</option>
+            <option value="he" className="text-gray-800">🇮🇱</option>
             <option value="hi" className="text-gray-800">🇮🇳</option>
             <option value="sw" className="text-gray-800">🇹🇿</option>
             <option value="ko" className="text-gray-800">🇰🇷</option>
-            <option value="ja" className="text-gray-800">🇯🇵</option>
+            <option value="jp" className="text-gray-800">🇯🇵</option>
             <option value="pl" className="text-gray-800">🇵🇱</option>
+            <option value="rc" className="text-gray-800">🇨🇩</option>
+            <option value="uk" className="text-gray-800">🇺🇦</option>
           </select>
 
           {/* Taille */}
