@@ -320,6 +320,18 @@ export const uiTranslations = {
     }
   },
   
+  bibleResources: {
+    inAppReader: {
+      name: "Czytaj w aplikacji",
+      description: "Czytnik Biblii zintegrowany ze Strong",
+      features: {
+        offline: "Offline",
+        strong: "Numery Strong",
+        navigation: "Nawigacja"
+      }
+    }
+  },
+  
   quotes: {
     wisdom: "Prawdziwa wiedza prowadzi do wiecznej mądrości",
     faith: "Wszystko mogę w Tym, który mnie umacnia",

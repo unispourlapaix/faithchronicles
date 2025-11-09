@@ -320,6 +320,18 @@ export const uiTranslations = {
     }
   },
   
+  bibleResources: {
+    inAppReader: {
+      name: "ऐप में पढ़ें",
+      description: "Strong के साथ एकीकृत बाइबिल रीडर",
+      features: {
+        offline: "ऑफ़लाइन",
+        strong: "Strong नंबर",
+        navigation: "नेविगेशन"
+      }
+    }
+  },
+  
   quotes: {
     wisdom: "सच्चा ज्ञान शाश्वत बुद्धि की ओर ले जाता है",
     faith: "मैं मसीह के द्वारा जो मुझे सामर्थ देता है सब कुछ कर सकता हूं",

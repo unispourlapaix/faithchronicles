@@ -320,6 +320,18 @@ export const uiTranslations = {
     }
   },
   
+  bibleResources: {
+    inAppReader: {
+      name: "Soma kwenye App",
+      description: "Msomaji wa Biblia uliojumuishwa na Strong",
+      features: {
+        offline: "Bila mtandao",
+        strong: "Nambari za Strong",
+        navigation: "Urambazaji"
+      }
+    }
+  },
+  
   quotes: {
     wisdom: "Maarifa ya kweli yanaongoza kwa hekima ya milele",
     faith: "Naweza mambo yote katika Yeye anayenitia nguvu",

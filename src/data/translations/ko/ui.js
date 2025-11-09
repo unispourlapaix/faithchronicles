@@ -197,6 +197,18 @@ export const uiTranslations = {
     backToMenu: "메뉴로 돌아가기"
   },
   
+  bibleResources: {
+    inAppReader: {
+      name: "앱에서 읽기",
+      description: "Strong과 통합된 성경 리더",
+      features: {
+        offline: "오프라인",
+        strong: "Strong 번호",
+        navigation: "탐색"
+      }
+    }
+  },
+  
   quotes: {
     wisdom: "여호와를 경외하는 것이 지혜의 근본",
     faith: "나를 강하게 하시는 이 안에서 내가 모든 것을 할 수 있다",
