@@ -2,6 +2,8 @@
 // JAPANESE TRANSLATIONS - UI
 // ============================================================================
 
+import unityTranslations from './unity.js';
+
 export const uiTranslations = {
   meta: {
     language: 'jp',
@@ -365,59 +367,7 @@ export const uiTranslations = {
     lovePriority: "愛が全体の究極になります"
   },
 
-  unity: {
-    title: "統一の教え",
-    introduction: "イエス・キリストは、愛と統一を通じてすべての人間を結びつける普遍的なメッセージをもたらしました。",
-    jesusBuddha: {
-      title: "イエスと仏陀",
-      compassion: "両者とも慈悲を教えました",
-      suffering: "苦しみの理解",
-      love: "無条件の愛"
-    },
-    jesusMuhammad: {
-      title: "イエスとムハンマド",
-      prophets: "両者とも預言者でした",
-      justice: "正義を教えました",
-      mercy: "神の慈悲"
-    },
-    jesusKrishna: {
-      title: "イエスとクリシュナ",
-      divineInc: "神聖な化身",
-      love: "神への愛",
-      devotion: "献身的な奉仕"
-    },
-    jesusConfucius: {
-      title: "イエスと孔子",
-      goldenRule: "黄金律",
-      virtue: "徳の実践",
-      harmony: "調和"
-    },
-    jesusLaoTzu: {
-      title: "イエスと老子",
-      way: "道の教え",
-      humility: "謙虚さ",
-      simplicity: "シンプルさ"
-    },
-    jesusMoses: {
-      title: "イエスとモーセ",
-      law: "律法の完成",
-      liberation: "解放",
-      covenant: "契約"
-    },
-    jesusZoroaster: {
-      title: "イエスとゾロアスター",
-      goodEvil: "善と悪",
-      light: "光の勝利",
-      choice: "自由意志"
-    },
-    jesusSocrates: {
-      title: "イエスとソクラテス",
-      truth: "真理の探求",
-      wisdom: "知恵",
-      virtue: "徳"
-    },
-    conclusion: "すべての偉大な教師は、愛、慈悲、そして精神的な成長という共通のテーマを分かち合っています。"
-  },
+  unity: unityTranslations,
 
   footer: {
     version: "バージョン 1.0 • 2024",
