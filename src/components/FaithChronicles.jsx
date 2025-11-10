@@ -28,6 +28,7 @@ const FaithChronicles = () => {
     signInAnonymously,
     signInWithPassword,
     signUpWithPassword,
+    resetPassword,
     importSessionFromProduction, 
     isConfigured 
   } = useAuth();
@@ -563,6 +564,7 @@ const FaithChronicles = () => {
           <LoginScreen
             onLoginWithPassword={signInWithPassword}
             onSignup={signUpWithPassword}
+            onResetPassword={resetPassword}
             audio={audio}
           />
         )}

@@ -202,6 +202,44 @@ export const useAuth = () => {
     }
   };
 
+  // Réinitialisation de mot de passe (envoie un email avec un lien)
+  const resetPassword = async (email) => {
+    try {
+      console.log('🔑 Envoi email de réinitialisation:', email);
+      
+      const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: `${window.location.origin}${process.env.PUBLIC_URL || ''}/reset-password`,
+      });
+      
+      if (error) throw error;
+      
+      console.log('✅ Email de réinitialisation envoyé');
+      return { data, error: null };
+    } catch (error) {
+      console.error('❌ Erreur réinitialisation:', error);
+      return { data: null, error };
+    }
+  };
+
+  // Mettre à jour le mot de passe (après avoir cliqué sur le lien dans l'email)
+  const updatePassword = async (newPassword) => {
+    try {
+      console.log('🔐 Mise à jour du mot de passe');
+      
+      const { data, error } = await supabase.auth.updateUser({
+        password: newPassword
+      });
+      
+      if (error) throw error;
+      
+      console.log('✅ Mot de passe mis à jour');
+      return { data, error: null };
+    } catch (error) {
+      console.error('❌ Erreur mise à jour mot de passe:', error);
+      return { data: null, error };
+    }
+  };
+
   // Déconnexion
   const signOut = async () => {
     try {
@@ -297,6 +335,8 @@ export const useAuth = () => {
     signInWithEmail,
     signInWithPassword,
     signUpWithPassword,
+    resetPassword,
+    updatePassword,
     signOut,
     importSessionFromProduction,
     isConfigured: isSupabaseConfigured(),

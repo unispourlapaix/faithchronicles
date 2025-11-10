@@ -3,9 +3,9 @@ import { Globe, Eye, EyeOff, Mail, Lock } from 'lucide-react';
 import useTranslation from '../../hooks/useTranslation';
 import { getLanguage, getLanguageList } from '../../data/translations/languages.js';
 
-const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
+const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
-  const [authMode, setAuthMode] = useState('signin'); // 'signin' ou 'signup'
+  const [authMode, setAuthMode] = useState('signin'); // 'signin', 'signup', ou 'reset'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -13,7 +13,6 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState(''); // 'success', 'error', 'info'
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
-  const [showForgotPassword, setShowForgotPassword] = useState(false);
 
   // Connexion / Inscription avec mot de passe
   const handlePasswordLogin = async () => {
@@ -94,14 +93,43 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
     }
   };
 
-  const handleForgotPassword = () => {
-    setShowForgotPassword(!showForgotPassword);
-    if (!showForgotPassword) {
-      setMessage('💡 Astuce : Utilisez le bouton 👁️ pour voir votre mot de passe en le tapant !');
-      setMessageType('info');
-    } else {
-      setMessage('');
-      setMessageType('');
+  // Réinitialisation de mot de passe
+  const handleResetPassword = async () => {
+    if (!email.trim() || !email.includes('@')) {
+      setMessage(t('login.enterEmail') || 'Veuillez entrer un email valide');
+      setMessageType('error');
+      return;
+    }
+
+    console.log('🔑 Demande de réinitialisation pour:', email.trim());
+    setLoading(true);
+    setMessage('');
+    setMessageType('');
+
+    try {
+      const result = await onResetPassword(email.trim());
+      
+      if (result?.error) {
+        console.error('❌ Erreur réinitialisation:', result.error);
+        setMessage(t('login.errorReset') || 'Erreur lors de l\'envoi de l\'email');
+        setMessageType('error');
+      } else {
+        console.log('✅ Email de réinitialisation envoyé');
+        setMessage(t('login.resetEmailSent') || '� Email de réinitialisation envoyé ! Vérifiez votre boîte mail.');
+        setMessageType('success');
+        // Revenir au mode connexion après 3 secondes
+        setTimeout(() => {
+          setAuthMode('signin');
+          setMessage('');
+          setMessageType('');
+        }, 3000);
+      }
+    } catch (error) {
+      console.error('❌ Exception:', error);
+      setMessage(t('login.errorReset') || 'Erreur lors de l\'envoi de l\'email');
+      setMessageType('error');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -175,39 +203,50 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
           </div>
 
           <div className="space-y-6">
-            {/* Toggle Connexion / Inscription */}
-            <div className="bg-gray-100 p-1 rounded-xl flex">
-              <button
-                onClick={() => {
-                  audio?.sounds?.buttonClick();
-                  setAuthMode('signin');
-                  setMessage('');
-                  setMessageType('');
-                }}
-                className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
-                  authMode === 'signin'
-                    ? 'bg-white text-green-600 shadow-md'
-                    : 'text-gray-600 hover:text-gray-800'
-                }`}
-              >
-                {t('login.signin') || 'Connexion'}
-              </button>
-              <button
-                onClick={() => {
-                  audio?.sounds?.buttonClick();
-                  setAuthMode('signup');
-                  setMessage('');
-                  setMessageType('');
-                }}
-                className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
-                  authMode === 'signup'
-                    ? 'bg-white text-green-600 shadow-md'
-                    : 'text-gray-600 hover:text-gray-800'
-                }`}
-              >
-                {t('login.signup') || 'Inscription'}
-              </button>
-            </div>
+            {/* Toggle Connexion / Inscription / Mot de passe oublié */}
+            {authMode !== 'reset' ? (
+              <div className="bg-gray-100 p-1 rounded-xl flex">
+                <button
+                  onClick={() => {
+                    audio?.sounds?.buttonClick();
+                    setAuthMode('signin');
+                    setMessage('');
+                    setMessageType('');
+                  }}
+                  className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
+                    authMode === 'signin'
+                      ? 'bg-white text-green-600 shadow-md'
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
+                  {t('login.signin') || 'Connexion'}
+                </button>
+                <button
+                  onClick={() => {
+                    audio?.sounds?.buttonClick();
+                    setAuthMode('signup');
+                    setMessage('');
+                    setMessageType('');
+                  }}
+                  className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
+                    authMode === 'signup'
+                      ? 'bg-white text-green-600 shadow-md'
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
+                  {t('login.signup') || 'Inscription'}
+                </button>
+              </div>
+            ) : (
+              <div className="bg-blue-100 p-4 rounded-xl text-center">
+                <h3 className="font-bold text-blue-800 mb-2">
+                  🔑 {t('login.resetPasswordTitle') || 'Réinitialiser le mot de passe'}
+                </h3>
+                <p className="text-sm text-blue-600">
+                  {t('login.resetPasswordSubtitle') || 'Entrez votre email pour recevoir un lien de réinitialisation'}
+                </p>
+              </div>
+            )}
 
             {/* Info confirmation email (seulement en mode inscription) */}
             {authMode === 'signup' && (
@@ -243,47 +282,54 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
               />
             </div>
 
-            {/* Mot de passe */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                <Lock size={16} className="inline mr-1" />
-                {t('login.password') || 'Mot de passe'}
-              </label>
-              <div className="relative">
-                <input
-                  type={showPassword ? "text" : "password"}
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && handlePasswordLogin()}
-                  placeholder={t('login.passwordPlaceholder') || 'Minimum 6 caractères'}
-                  className="w-full px-4 py-3 pr-12 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none transition-colors"
-                  disabled={loading}
-                  minLength={6}
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors"
-                  disabled={loading}
-                >
-                  {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-                </button>
-              </div>
-              <div className="flex items-center justify-between mt-1">
-                <p className="text-xs text-gray-500">
-                  {t('login.passwordMinLength') || 'Minimum 6 caractères'}
-                </p>
-                {authMode === 'signin' && (
+            {/* Mot de passe (pas affiché en mode reset) */}
+            {authMode !== 'reset' && (
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <Lock size={16} className="inline mr-1" />
+                  {t('login.password') || 'Mot de passe'}
+                </label>
+                <div className="relative">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    onKeyPress={(e) => e.key === 'Enter' && handlePasswordLogin()}
+                    placeholder={t('login.passwordPlaceholder') || 'Minimum 6 caractères'}
+                    className="w-full px-4 py-3 pr-12 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none transition-colors"
+                    disabled={loading}
+                    minLength={6}
+                  />
                   <button
                     type="button"
-                    onClick={handleForgotPassword}
-                    className="text-xs text-blue-600 hover:text-blue-800 font-semibold"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors"
+                    disabled={loading}
                   >
-                    {t('login.forgotPassword') || 'Mot de passe oublié?'}
+                    {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                   </button>
-                )}
+                </div>
+                <div className="flex items-center justify-between mt-1">
+                  <p className="text-xs text-gray-500">
+                    {t('login.passwordMinLength') || 'Minimum 6 caractères'}
+                  </p>
+                  {authMode === 'signin' && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        audio?.sounds?.buttonClick();
+                        setAuthMode('reset');
+                        setMessage('');
+                        setMessageType('');
+                      }}
+                      className="text-xs text-blue-600 hover:text-blue-800 font-semibold"
+                    >
+                      {t('login.forgotPassword') || 'Mot de passe oublié?'}
+                    </button>
+                  )}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Message */}
             {message && (
@@ -302,18 +348,39 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
             <button
               onClick={() => {
                 audio?.sounds?.buttonClick();
-                handlePasswordLogin();
+                if (authMode === 'reset') {
+                  handleResetPassword();
+                } else {
+                  handlePasswordLogin();
+                }
               }}
-              disabled={loading || !email.trim() || !password.trim()}
+              disabled={loading || !email.trim() || (authMode !== 'reset' && !password.trim())}
               className="w-full py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading 
                 ? '⏳ Chargement...' 
+                : authMode === 'reset'
+                ? (t('login.sendResetLink') || 'Envoyer le lien')
                 : authMode === 'signup' 
                 ? (t('login.signupButton') || 'Créer mon compte') 
                 : (t('login.signinButton') || 'Se connecter')
               }
             </button>
+
+            {/* Lien retour si en mode reset */}
+            {authMode === 'reset' && (
+              <button
+                onClick={() => {
+                  audio?.sounds?.buttonClick();
+                  setAuthMode('signin');
+                  setMessage('');
+                  setMessageType('');
+                }}
+                className="w-full text-center text-sm text-gray-600 hover:text-gray-800 font-semibold"
+              >
+                ← {t('login.backToSignin') || 'Retour à la connexion'}
+              </button>
+            )}
           </div>
 
           <div className="mt-6 text-center">
