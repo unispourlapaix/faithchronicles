@@ -11,6 +11,39 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
   const canvasRef = useRef(null);
   const { t, currentLanguage } = useTranslation();
   const [isGenerating, setIsGenerating] = useState(false);
+  const [format, setFormat] = useState('instagram'); // 'instagram' or 'facebook'
+  const [colorScheme, setColorScheme] = useState('purple'); // 'purple', 'blue', 'green', 'orange', 'pink'
+  
+  // Schémas de couleurs
+  const colorSchemes = {
+    purple: {
+      gradient: ['#4158D0', '#C850C0', '#FFCC70'],
+      accent: '#FFD700',
+      shapes: '#ffffff'
+    },
+    blue: {
+      gradient: ['#2E3192', '#1BFFFF', '#00C9FF'],
+      accent: '#FFD700',
+      shapes: '#ffffff'
+    },
+    green: {
+      gradient: ['#134E5E', '#71B280', '#C9E265'],
+      accent: '#FFD700',
+      shapes: '#ffffff'
+    },
+    orange: {
+      gradient: ['#FC4A1A', '#F7B733', '#FFE066'],
+      accent: '#FFFFFF',
+      shapes: '#ffffff'
+    },
+    pink: {
+      gradient: ['#F093FB', '#F5576C', '#FED766'],
+      accent: '#FFFFFF',
+      shapes: '#ffffff'
+    }
+  };
+  
+  const currentColors = colorSchemes[colorScheme];
   
   // Dessiner l'image sur le canvas
   useEffect(() => {
@@ -19,15 +52,21 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     
-    // Dimensions Instagram Square (1080x1080)
-    canvas.width = 1080;
-    canvas.height = 1080;
+    // Dimensions selon le format
+    if (format === 'instagram') {
+      canvas.width = 1080;
+      canvas.height = 1080;
+    } else {
+      // Facebook portrait
+      canvas.width = 1200;
+      canvas.height = 630;
+    }
     
-    // Fond gradient
+    // Fond gradient avec les couleurs choisies
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, '#4158D0');
-    gradient.addColorStop(0.5, '#C850C0');
-    gradient.addColorStop(1, '#FFCC70');
+    gradient.addColorStop(0, currentColors.gradient[0]);
+    gradient.addColorStop(0.5, currentColors.gradient[1]);
+    gradient.addColorStop(1, currentColors.gradient[2]);
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
@@ -35,7 +74,45 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    // ===== DÉCORATIONS GÉOMÉTRIQUES =====
+    // ===== DÉCORATIONS GÉOMÉTRIQUES ALÉATOIRES =====
+    
+    // Fonction pour dessiner un plus (+)
+    const drawPlus = (x, y, size, color, opacity = 0.15) => {
+      ctx.save();
+      ctx.globalAlpha = opacity;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 3;
+      ctx.lineCap = 'round';
+      // Ligne verticale
+      ctx.beginPath();
+      ctx.moveTo(x, y - size);
+      ctx.lineTo(x, y + size);
+      ctx.stroke();
+      // Ligne horizontale
+      ctx.beginPath();
+      ctx.moveTo(x - size, y);
+      ctx.lineTo(x + size, y);
+      ctx.stroke();
+      ctx.restore();
+    };
+    
+    // Fonction pour dessiner une étoile (*)
+    const drawAsterisk = (x, y, size, color, opacity = 0.15) => {
+      ctx.save();
+      ctx.globalAlpha = opacity;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2.5;
+      ctx.lineCap = 'round';
+      // 8 branches
+      for (let i = 0; i < 8; i++) {
+        const angle = (Math.PI * 2 * i) / 8;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + Math.cos(angle) * size, y + Math.sin(angle) * size);
+        ctx.stroke();
+      }
+      ctx.restore();
+    };
     
     // Fonction pour dessiner un cœur géométrique
     const drawGeometricHeart = (x, y, size, color, opacity = 0.15) => {
@@ -115,6 +192,28 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     drawGeometricHeart(850, 900, 90, '#ffffff', 0.1);
     drawGeometricFlower(100, 550, 70, '#ffffff', 0.1);
     drawGeometricStar(950, 600, 50, '#ffffff', 0.08);
+    
+    // Générer des positions aléatoires mais déterministes (basées sur le verset)
+    const seed = verse.number * chapterNumber;
+    const random = (min, max, offset = 0) => {
+      const x = Math.sin(seed + offset) * 10000;
+      return min + (x - Math.floor(x)) * (max - min);
+    };
+    
+    // Ajouter des + et * aléatoirement partout
+    const shapeColor = currentColors.shapes;
+    for (let i = 0; i < 25; i++) {
+      const x = random(100, canvas.width - 100, i * 7);
+      const y = random(100, canvas.height - 100, i * 11);
+      const size = random(15, 40, i * 13);
+      const opacity = random(0.05, 0.2, i * 17);
+      
+      if (i % 2 === 0) {
+        drawPlus(x, y, size, shapeColor, opacity);
+      } else {
+        drawAsterisk(x, y, size, shapeColor, opacity);
+      }
+    }
     
     // ===== CADRE DÉCORATIF =====
     ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
@@ -208,7 +307,7 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     
     // ===== RÉFÉRENCE =====
     ctx.font = 'bold 42px sans-serif';
-    ctx.fillStyle = '#FFD700';
+    ctx.fillStyle = currentColors.accent;
     const reference = `${t('bible.john')} ${chapterNumber}:${verse.number}`;
     ctx.fillText(reference, canvas.width / 2, y + totalHeight + 80);
     
@@ -234,7 +333,7 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     
-  }, [show, verse, chapterNumber, currentLanguage, t]);
+  }, [show, verse, chapterNumber, currentLanguage, t, format, colorScheme]);
   
   // Générer les hashtags selon la langue
   const getHashtagsForLanguage = (lang) => {
@@ -287,7 +386,8 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
       jpgCanvas.toBlob((blob) => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
-        const filename = `john-${chapterNumber}-${verse.number}-${currentLanguage}.jpg`;
+        const formatName = format === 'instagram' ? 'insta' : 'fb';
+        const filename = `john-${chapterNumber}-${verse.number}-${formatName}-${currentLanguage}.jpg`;
         link.href = url;
         link.download = filename;
         document.body.appendChild(link);
@@ -322,6 +422,89 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
         
         {/* Preview Canvas */}
         <div className="p-6 bg-gray-50">
+          {/* Contrôles Format et Couleurs */}
+          <div className="mb-4 space-y-3">
+            {/* Format */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                📐 Format
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  onClick={() => setFormat('instagram')}
+                  className={`p-3 rounded-lg border-2 transition-all ${
+                    format === 'instagram'
+                      ? 'border-purple-600 bg-purple-50 text-purple-900'
+                      : 'border-gray-300 bg-white text-gray-700 hover:border-purple-300'
+                  }`}
+                >
+                  <div className="font-bold text-sm">Instagram</div>
+                  <div className="text-xs opacity-75">1080×1080 (Carré)</div>
+                </button>
+                <button
+                  onClick={() => setFormat('facebook')}
+                  className={`p-3 rounded-lg border-2 transition-all ${
+                    format === 'facebook'
+                      ? 'border-blue-600 bg-blue-50 text-blue-900'
+                      : 'border-gray-300 bg-white text-gray-700 hover:border-blue-300'
+                  }`}
+                >
+                  <div className="font-bold text-sm">Facebook</div>
+                  <div className="text-xs opacity-75">1200×630 (Portrait)</div>
+                </button>
+              </div>
+            </div>
+            
+            {/* Couleurs */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                🎨 Couleurs
+              </label>
+              <div className="flex gap-2 flex-wrap">
+                <button
+                  onClick={() => setColorScheme('purple')}
+                  className={`w-12 h-12 rounded-full transition-all ${
+                    colorScheme === 'purple' ? 'ring-4 ring-purple-400 scale-110' : 'hover:scale-105'
+                  }`}
+                  style={{ background: 'linear-gradient(135deg, #4158D0, #C850C0)' }}
+                  title="Violet"
+                />
+                <button
+                  onClick={() => setColorScheme('blue')}
+                  className={`w-12 h-12 rounded-full transition-all ${
+                    colorScheme === 'blue' ? 'ring-4 ring-blue-400 scale-110' : 'hover:scale-105'
+                  }`}
+                  style={{ background: 'linear-gradient(135deg, #2E3192, #1BFFFF)' }}
+                  title="Bleu"
+                />
+                <button
+                  onClick={() => setColorScheme('green')}
+                  className={`w-12 h-12 rounded-full transition-all ${
+                    colorScheme === 'green' ? 'ring-4 ring-green-400 scale-110' : 'hover:scale-105'
+                  }`}
+                  style={{ background: 'linear-gradient(135deg, #134E5E, #71B280)' }}
+                  title="Vert"
+                />
+                <button
+                  onClick={() => setColorScheme('orange')}
+                  className={`w-12 h-12 rounded-full transition-all ${
+                    colorScheme === 'orange' ? 'ring-4 ring-orange-400 scale-110' : 'hover:scale-105'
+                  }`}
+                  style={{ background: 'linear-gradient(135deg, #FC4A1A, #F7B733)' }}
+                  title="Orange"
+                />
+                <button
+                  onClick={() => setColorScheme('pink')}
+                  className={`w-12 h-12 rounded-full transition-all ${
+                    colorScheme === 'pink' ? 'ring-4 ring-pink-400 scale-110' : 'hover:scale-105'
+                  }`}
+                  style={{ background: 'linear-gradient(135deg, #F093FB, #F5576C)' }}
+                  title="Rose"
+                />
+              </div>
+            </div>
+          </div>
+          
           <div className="bg-white rounded-lg shadow-lg p-4 mb-4">
             <canvas
               ref={canvasRef}
@@ -332,7 +515,7 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
           
           {/* Info */}
           <div className="text-center text-sm text-gray-600 mb-4">
-            <p>📱 Format: 1080x1080px (Instagram)</p>
+            <p>📱 Format: {format === 'instagram' ? '1080×1080px (Instagram)' : '1200×630px (Facebook)'}</p>
             <p>💾 Type: JPEG • Qualité: 95%</p>
           </div>
           
@@ -354,9 +537,10 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
               📱 {currentLanguage === 'fr' ? 'Conseils partage' : 'Sharing tips'}
             </h4>
             <ul className="text-sm text-blue-800 space-y-1">
-              <li>✓ {currentLanguage === 'fr' ? 'Format optimisé pour Instagram' : 'Optimized for Instagram'}</li>
+              <li>✓ {format === 'instagram' ? 'Instagram Post (carré)' : 'Facebook Post (portrait)'}</li>
               <li>✓ {currentLanguage === 'fr' ? 'Hashtags inclus dans l\'image' : 'Hashtags included in image'}</li>
-              <li>✓ {currentLanguage === 'fr' ? 'Partageable sur tous les réseaux' : 'Shareable on all networks'}</li>
+              <li>✓ {currentLanguage === 'fr' ? 'Décorations aléatoires + et *' : 'Random + and * decorations'}</li>
+              <li>✓ {currentLanguage === 'fr' ? '5 thèmes de couleurs' : '5 color themes'}</li>
             </ul>
           </div>
         </div>
