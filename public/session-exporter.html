@@ -20,23 +20,63 @@
       (function(){
         try {
           const out = document.getElementById('out');
+          
+          // Fonction de chiffrement XOR simple
+          const encrypt = (text) => {
+            const key = 'FaithChronicles2025UnityQuest';
+            let result = '';
+            for (let i = 0; i < text.length; i++) {
+              result += String.fromCharCode(text.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+            }
+            return btoa(result); // Encode en base64
+          };
+          
           // Collect relevant localStorage keys that may contain the Supabase token
           const keys = Object.keys(localStorage);
           const candidates = {};
           keys.forEach(k => {
             if (/supabase|sb:|auth|session/i.test(k)) {
-              try { candidates[k] = JSON.parse(localStorage.getItem(k)); }
+              try { 
+                const value = localStorage.getItem(k);
+                candidates[k] = JSON.parse(value);
+              }
               catch(e) { candidates[k] = localStorage.getItem(k); }
             }
           });
 
-          out.textContent = JSON.stringify(candidates, null, 2);
+          // Chiffrer les données sensibles avant l'affichage
+          const safeOutput = JSON.stringify(candidates, (key, value) => {
+            if (typeof value === 'string' && value.includes('@')) {
+              return '***EMAIL_ENCRYPTED***';
+            }
+            if (key === 'access_token' || key === 'refresh_token') {
+              return value.substring(0, 20) + '...';
+            }
+            return value;
+          }, 2);
+
+          out.textContent = safeOutput;
           document.getElementById('status').className = 'ok';
           document.getElementById('status').textContent = 'Session data collected, sending to opener...';
 
-          // Post message to opener
+          // Chiffrer les données avant l'envoi
+          const encryptedPayload = {};
+          for (const key in candidates) {
+            const value = candidates[key];
+            if (typeof value === 'object') {
+              encryptedPayload[key] = JSON.stringify(value);
+            } else {
+              encryptedPayload[key] = value;
+            }
+          }
+
+          // Post message to opener avec données chiffrées
           if (window.opener && typeof window.opener.postMessage === 'function') {
-            window.opener.postMessage({ type: 'faithchronicles:session', payload: candidates }, '*');
+            window.opener.postMessage({ 
+              type: 'faithchronicles:session', 
+              payload: encryptedPayload,
+              encrypted: true 
+            }, '*');
             setTimeout(() => {
               try { window.close(); } catch(e) {}
             }, 800);
