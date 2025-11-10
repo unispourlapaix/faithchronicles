@@ -120,6 +120,7 @@ export const uiTranslations = {
     waitingConnection: "等待连接...",
     errorSend: "发送链接错误",
     rateLimited: "⏳ 请等待15秒后再重新发送邮件",
+    importSession: "🔄 从生产环境导入会话",
     errorConnection: "连接错误",
     enterPseudo: "请输入昵称",
     enterEmail: "请输入有效的电子邮件",

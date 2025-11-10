@@ -120,6 +120,7 @@ export const uiTranslations = {
     waitingConnection: "Kozela connexion...",
     errorSend: "Libunga ya kotinda lien",
     rateLimited: "⏳ Talela mikolo 15 liboso ya kotinda lisusu email",
+    importSession: "🔄 Kokɔtisa molɔngɔ́ uta na production",
     errorConnection: "Libunga ya connexion",
     enterPseudo: "Palado kotya nkombo",
     enterEmail: "Palado kotya email ya malamu",

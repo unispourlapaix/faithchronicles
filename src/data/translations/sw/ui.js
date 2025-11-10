@@ -115,6 +115,7 @@ export const uiTranslations = {
     waitingConnection: "Inasubiri muunganisho...",
     errorSend: "Kosa la kutuma kiungo",
     rateLimited: "⏳ Tafadhali subiri sekunde 15 kabla ya kutuma barua pepe tena",
+    importSession: "🔄 Leta kipindi kutoka kwa uzalishaji",
     errorConnection: "Kosa la muunganisho",
     enterPseudo: "Tafadhali weka jina la utani",
     enterEmail: "Tafadhali weka barua pepe halali",

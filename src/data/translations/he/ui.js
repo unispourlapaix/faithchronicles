@@ -122,6 +122,7 @@ export const uiTranslations = {
     waitingConnection: "ממתין לחיבור...",
     errorSend: "שגיאה בשליחת הקישור",
     rateLimited: "⏳ אנא המתן 15 שניות לפני שליחה מחדש של אימייל",
+    importSession: "🔄 ייבוא סשן מהפרודקשן",
     errorConnection: "שגיאת חיבור",
     enterPseudo: "אנא הזן כינוי",
     enterEmail: "אנא הזן אימייל תקף",

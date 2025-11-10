@@ -119,6 +119,7 @@ export const uiTranslations = {
     waitingConnection: "接続待ち...",
     errorSend: "リンク送信エラー",
     rateLimited: "⏳ メールを再送信する前に15秒お待ちください",
+    importSession: "🔄 本番環境からセッションをインポート",
     errorConnection: "接続エラー",
     enterPseudo: "ニックネームを入力してください",
     enterEmail: "有効なメールアドレスを入力してください",

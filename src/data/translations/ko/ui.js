@@ -115,6 +115,7 @@ export const uiTranslations = {
     waitingConnection: "연결 대기 중...",
     errorSend: "링크 전송 오류",
     rateLimited: "⏳ 이메일을 다시 보내기 전에 15초 기다려주세요",
+    importSession: "🔄 프로덕션에서 세션 가져오기",
     errorConnection: "연결 오류",
     enterPseudo: "닉네임을 입력하세요",
     enterEmail: "유효한 이메일을 입력하세요",

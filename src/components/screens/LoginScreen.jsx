@@ -404,7 +404,7 @@ const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio 
                   disabled={loading}
                   className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl font-semibold shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  🔄 Importer session depuis production
+                  {t('login.importSession')}
                 </button>
               )}
 

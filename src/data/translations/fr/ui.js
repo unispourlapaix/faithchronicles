@@ -118,6 +118,7 @@ export const uiTranslations = {
     waitingConnection: "En attente de connexion...",
     errorSend: "Erreur d'envoi du lien",
     rateLimited: "⏳ Veuillez patienter 15 secondes avant de renvoyer un email",
+    importSession: "🔄 Importer session depuis production",
     errorConnection: "Erreur de connexion",
     enterPseudo: "Veuillez entrer un pseudo",
     enterEmail: "Veuillez entrer un email valide",
