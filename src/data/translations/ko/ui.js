@@ -114,6 +114,7 @@ export const uiTranslations = {
     checkSpam: "스팸 폴더도 확인하세요",
     waitingConnection: "연결 대기 중...",
     errorSend: "링크 전송 오류",
+    rateLimited: "⏳ 이메일을 다시 보내기 전에 15초 기다려주세요",
     errorConnection: "연결 오류",
     enterPseudo: "닉네임을 입력하세요",
     enterEmail: "유효한 이메일을 입력하세요",

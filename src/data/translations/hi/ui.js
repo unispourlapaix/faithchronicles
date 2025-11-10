@@ -114,6 +114,7 @@ export const uiTranslations = {
     checkSpam: "अपने स्पैम/जंक फ़ोल्डर की भी जांच करें",
     waitingConnection: "कनेक्शन की प्रतीक्षा में...",
     errorSend: "लिंक भेजने में त्रुटि",
+    rateLimited: "⏳ ईमेल फिर से भेजने से पहले कृपया 15 सेकंड प्रतीक्षा करें",
     errorConnection: "कनेक्शन त्रुटि",
     enterPseudo: "कृपया एक उपनाम दर्ज करें",
     enterEmail: "कृपया एक मान्य ईमेल दर्ज करें",

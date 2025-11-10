@@ -121,6 +121,7 @@ export const uiTranslations = {
     checkSpam: "تحقق أيضًا من مجلد الرسائل غير المرغوب فيها",
     waitingConnection: "في انتظار الاتصال...",
     errorSend: "خطأ في إرسال الرابط",
+    rateLimited: "⏳ يرجى الانتظار 15 ثانية قبل إعادة إرسال بريد إلكتروني",
     errorConnection: "خطأ في الاتصال",
     enterPseudo: "الرجاء إدخال اسم مستعار",
     enterEmail: "الرجاء إدخال بريد إلكتروني صالح",

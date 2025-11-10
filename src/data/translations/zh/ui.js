@@ -119,6 +119,7 @@ export const uiTranslations = {
     checkSpam: "也请检查您的垃圾邮件文件夹",
     waitingConnection: "等待连接...",
     errorSend: "发送链接错误",
+    rateLimited: "⏳ 请等待15秒后再重新发送邮件",
     errorConnection: "连接错误",
     enterPseudo: "请输入昵称",
     enterEmail: "请输入有效的电子邮件",

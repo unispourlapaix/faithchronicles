@@ -3,7 +3,7 @@ import { User, Mail, Play, Globe } from 'lucide-react';
 import useTranslation from '../../hooks/useTranslation';
 import { getLanguage, getLanguageList } from '../../data/translations/languages.js';
 
-const LoginScreen = ({ onLogin, onAnonymous, audio }) => {
+const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
   const [mode, setMode] = useState(null); // null, 'anonymous', 'email'
   const [pseudo, setPseudo] = useState('');
@@ -16,6 +16,29 @@ const LoginScreen = ({ onLogin, onAnonymous, audio }) => {
     'CHRONICLES', 'faith', 'UNITY', 'Hope', 'Grace', 'Light', 
     'Peace', 'Truth', 'Love', 'Wisdom', 'Spirit', 'Blessed'
   ];
+
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+  const handleImportSession = async () => {
+    if (!importSessionFromProduction) return;
+    setLoading(true);
+    setMessage('');
+    try {
+      const result = await importSessionFromProduction();
+      if (result.error) {
+        setMessage('❌ ' + result.error.message);
+      } else if (result.session) {
+        setMessage('✅ Session importée avec succès ! Rechargement...');
+        setTimeout(() => window.location.reload(), 1500);
+      } else {
+        setMessage('⚠️ Aucune session trouvée sur la production');
+      }
+    } catch (err) {
+      setMessage('❌ Erreur: ' + err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleAnonymousPlay = async () => {
     if (!pseudo.trim()) {
@@ -40,19 +63,31 @@ const LoginScreen = ({ onLogin, onAnonymous, audio }) => {
       return;
     }
 
+    console.log('📧 Début envoi email pour:', email.trim());
     setLoading(true);
     setMessage('');
 
     try {
+      console.log('📤 Appel de onLogin...');
       const result = await onLogin(email.trim());
-      if (result.error) {
+      console.log('📥 Résultat onLogin:', result);
+      
+      // Vérifier si c'est une erreur de rate limiting (15 secondes)
+      if (result?.isRateLimited) {
+        console.warn('⏳ Rate limited - attendre 15 secondes');
+        setMessage(t('login.rateLimited'));
+      } else if (result?.error) {
+        console.error('❌ Erreur lors de l\'envoi:', result.error);
         setMessage(t('login.errorSend'));
       } else {
+        console.log('✅ Email envoyé avec succès');
         setMessage(t('login.checkEmail'));
       }
     } catch (error) {
+      console.error('❌ Exception attrapée:', error);
       setMessage(t('login.errorConnection'));
     } finally {
+      console.log('🔄 Finally: Remise à zéro du loading');
       setLoading(false);
     }
   };
@@ -330,6 +365,8 @@ const LoginScreen = ({ onLogin, onAnonymous, audio }) => {
                 <div className={`text-sm rounded-lg p-3 ${
                   message === t('login.checkEmail')
                     ? 'text-green-700 bg-green-50 border border-green-200'
+                    : message === t('login.rateLimited')
+                    ? 'text-amber-700 bg-amber-50 border border-amber-200'
                     : 'text-red-600 bg-red-50 border border-red-200'
                 }`}>
                   {message}
@@ -357,6 +394,19 @@ const LoginScreen = ({ onLogin, onAnonymous, audio }) => {
               >
                 {loading ? t('login.sending') : t('login.sendLink')}
               </button>
+
+              {isLocalhost && importSessionFromProduction && (
+                <button
+                  onClick={() => {
+                    audio?.sounds?.buttonClick();
+                    handleImportSession();
+                  }}
+                  disabled={loading}
+                  className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl font-semibold shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  🔄 Importer session depuis production
+                </button>
+              )}
 
               <p className="text-xs text-gray-500 text-center">
                 {t('login.cloudSync')}

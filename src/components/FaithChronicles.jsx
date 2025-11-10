@@ -20,7 +20,7 @@ import InfoScreen from './screens/InfoScreen';
 
 const FaithChronicles = () => {
   // Hooks Supabase
-  const { user, loading: authLoading, signInWithEmail, isConfigured } = useAuth();
+  const { user, loading: authLoading, signInWithEmail, importSessionFromProduction, isConfigured } = useAuth();
   const { progress, saveProgress: saveToSupabase, saveLevelStars, loadAllStars, forceRefresh, lastSaveTime } = useGameProgress(user?.id);
   
   // Hook Audio 🎵
@@ -533,6 +533,7 @@ const FaithChronicles = () => {
           <LoginScreen
             onAnonymous={handleAnonymousLogin}
             onLogin={handleEmailLogin}
+            importSessionFromProduction={importSessionFromProduction}
             audio={audio}
           />
         )}

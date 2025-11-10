@@ -119,6 +119,7 @@ export const uiTranslations = {
     checkSpam: "Talá mpe na dossier ya spam",
     waitingConnection: "Kozela connexion...",
     errorSend: "Libunga ya kotinda lien",
+    rateLimited: "⏳ Talela mikolo 15 liboso ya kotinda lisusu email",
     errorConnection: "Libunga ya connexion",
     enterPseudo: "Palado kotya nkombo",
     enterEmail: "Palado kotya email ya malamu",

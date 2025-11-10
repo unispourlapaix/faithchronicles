@@ -119,6 +119,7 @@ export const uiTranslations = {
     checkSpam: "Проверьте также папку спам",
     waitingConnection: "Ожидание подключения...",
     errorSend: "Ошибка отправки ссылки",
+    rateLimited: "⏳ Пожалуйста, подождите 15 секунд перед повторной отправкой письма",
     errorConnection: "Ошибка подключения",
     enterPseudo: "Пожалуйста, введите псевдоним",
     enterEmail: "Пожалуйста, введите действительный email",

@@ -114,6 +114,7 @@ export const uiTranslations = {
     checkSpam: "Angalia pia folda yako ya spam/barua zisizotakiwa",
     waitingConnection: "Inasubiri muunganisho...",
     errorSend: "Kosa la kutuma kiungo",
+    rateLimited: "⏳ Tafadhali subiri sekunde 15 kabla ya kutuma barua pepe tena",
     errorConnection: "Kosa la muunganisho",
     enterPseudo: "Tafadhali weka jina la utani",
     enterEmail: "Tafadhali weka barua pepe halali",

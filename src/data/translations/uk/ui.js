@@ -119,6 +119,7 @@ export const uiTranslations = {
     checkSpam: "Перевірте також папку спам",
     waitingConnection: "Очікування підключення...",
     errorSend: "Помилка надсилання посилання",
+    rateLimited: "⏳ Будь ласка, зачекайте 15 секунд перед повторним надсиланням листа",
     errorConnection: "Помилка підключення",
     enterPseudo: "Будь ласка, введіть псевдонім",
     enterEmail: "Будь ласка, введіть дійсний email",

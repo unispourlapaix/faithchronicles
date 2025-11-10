@@ -119,6 +119,7 @@ export const uiTranslations = {
     checkSpam: "Controlla anche la cartella spam",
     waitingConnection: "In attesa di connessione...",
     errorSend: "Errore nell'invio del link",
+    rateLimited: "⏳ Attendere 15 secondi prima di inviare nuovamente un'email",
     errorConnection: "Errore di connessione",
     enterPseudo: "Inserisci un nickname",
     enterEmail: "Inserisci un'email valida",

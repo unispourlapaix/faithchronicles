@@ -121,6 +121,7 @@ export const uiTranslations = {
     checkSpam: "בדוק גם את תיקיית הספאם",
     waitingConnection: "ממתין לחיבור...",
     errorSend: "שגיאה בשליחת הקישור",
+    rateLimited: "⏳ אנא המתן 15 שניות לפני שליחה מחדש של אימייל",
     errorConnection: "שגיאת חיבור",
     enterPseudo: "אנא הזן כינוי",
     enterEmail: "אנא הזן אימייל תקף",
