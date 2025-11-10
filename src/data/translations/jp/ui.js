@@ -136,6 +136,18 @@ export const uiTranslations = {
     close: "閉じる"
   },
   
+  install: {
+    title: "アプリをインストール",
+    subtitle: "クイックアクセスとオフライン",
+    feature1: "ホーム画面から即座に起動",
+    feature2: "インストール後はオフラインで動作",
+    feature3: "ネイティブアプリの体験",
+    feature4: "ストアダウンロード不要",
+    install: "インストール",
+    dismiss: "後で",
+    info: "いつでもアプリをアンインストールできます"
+  },
+  
   ranks: {
     seeker: "探求者",
     believer: "信者",

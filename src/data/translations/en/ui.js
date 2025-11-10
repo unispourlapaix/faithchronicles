@@ -135,6 +135,18 @@ export const uiTranslations = {
     close: "Close"
   },
   
+  install: {
+    title: "Install the app",
+    subtitle: "Quick access and offline",
+    feature1: "Instant launch from your home screen",
+    feature2: "Works offline after installation",
+    feature3: "Native app experience",
+    feature4: "No store download required",
+    install: "Install",
+    dismiss: "Later",
+    info: "You can uninstall the app anytime"
+  },
+  
   ranks: {
     seeker: "Seeker",
     believer: "Believer",

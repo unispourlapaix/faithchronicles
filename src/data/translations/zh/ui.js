@@ -137,6 +137,18 @@ export const uiTranslations = {
     close: "关闭"
   },
   
+  install: {
+    title: "安装应用",
+    subtitle: "快速访问和离线",
+    feature1: "从主屏幕即时启动",
+    feature2: "安装后可离线工作",
+    feature3: "原生应用体验",
+    feature4: "无需应用商店下载",
+    install: "安装",
+    dismiss: "稍后",
+    info: "您可以随时卸载应用"
+  },
+  
   ranks: {
     seeker: "寻求者",
     believer: "信徒",

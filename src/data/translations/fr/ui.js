@@ -135,6 +135,18 @@ export const uiTranslations = {
     close: "Fermer"
   },
   
+  install: {
+    title: "Installer l'application",
+    subtitle: "Accès rapide et hors ligne",
+    feature1: "Lancement instantané depuis votre écran d'accueil",
+    feature2: "Fonctionne hors ligne après installation",
+    feature3: "Expérience application native",
+    feature4: "Aucun téléchargement de store requis",
+    install: "Installer",
+    dismiss: "Plus tard",
+    info: "Vous pourrez désinstaller l'app à tout moment"
+  },
+  
   ranks: {
     seeker: "Chercheur",
     believer: "Croyant",

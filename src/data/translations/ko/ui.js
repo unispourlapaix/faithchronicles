@@ -132,6 +132,18 @@ export const uiTranslations = {
     close: "닫기"
   },
   
+  install: {
+    title: "앱 설치",
+    subtitle: "빠른 액세스 및 오프라인",
+    feature1: "홈 화면에서 즉시 실행",
+    feature2: "설치 후 오프라인 작동",
+    feature3: "네이티브 앱 경험",
+    feature4: "스토어 다운로드 불필요",
+    install: "설치",
+    dismiss: "나중에",
+    info: "언제든지 앱을 제거할 수 있습니다"
+  },
+  
   ranks: {
     seeker: "구도자",
     believer: "신자",

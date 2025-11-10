@@ -139,6 +139,18 @@ export const uiTranslations = {
     close: "סגור"
   },
   
+  install: {
+    title: "התקן את האפליקציה",
+    subtitle: "גישה מהירה ולא מקוון",
+    feature1: "הפעלה מיידית ממסך הבית",
+    feature2: "עובד במצב לא מקוון לאחר ההתקנה",
+    feature3: "חוויית אפליקציה מקורית",
+    feature4: "אין צורך בהורדה מחנות",
+    install: "התקן",
+    dismiss: "מאוחר יותר",
+    info: "תוכל להסיר את האפליקציה בכל עת"
+  },
+  
   ranks: {
     seeker: "מחפש",
     believer: "מאמין",

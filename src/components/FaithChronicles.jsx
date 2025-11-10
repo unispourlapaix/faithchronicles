@@ -17,6 +17,7 @@ import VictoryScreen from './screens/VictoryScreen';
 import GameOverScreen from './screens/GameOverScreen';
 import BibleReaderScreen from './screens/BibleReaderScreen';
 import InfoScreen from './screens/InfoScreen';
+import InstallPrompt from './InstallPrompt';
 
 const FaithChronicles = () => {
   // Hooks Supabase
@@ -649,6 +650,9 @@ const FaithChronicles = () => {
           background: #a8a8a8;
         }
       `}</style>
+      
+      {/* PWA Installation Prompt */}
+      <InstallPrompt />
     </div>
   );
 };

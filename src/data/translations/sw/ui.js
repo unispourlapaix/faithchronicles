@@ -132,6 +132,18 @@ export const uiTranslations = {
     close: "Funga"
   },
   
+  install: {
+    title: "Sakinisha programu",
+    subtitle: "Ufikiaji wa haraka na nje ya mtandao",
+    feature1: "Uzinduzi wa papo hapo kutoka kwa skrini yako ya nyumbani",
+    feature2: "Inafanya kazi nje ya mtandao baada ya usakinishaji",
+    feature3: "Uzoefu wa programu asilia",
+    feature4: "Hakuna upakuaji wa duka unahitajika",
+    install: "Sakinisha",
+    dismiss: "Baadaye",
+    info: "Unaweza kuondoa programu wakati wowote"
+  },
+  
   ranks: {
     seeker: "Mtafutaji",
     believer: "Muamini",

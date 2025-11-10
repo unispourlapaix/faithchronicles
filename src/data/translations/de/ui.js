@@ -132,6 +132,18 @@ export const uiTranslations = {
     close: "Schließen"
   },
   
+  install: {
+    title: "App installieren",
+    subtitle: "Schneller Zugriff und offline",
+    feature1: "Sofortiger Start von Ihrem Startbildschirm",
+    feature2: "Funktioniert offline nach der Installation",
+    feature3: "Native App-Erfahrung",
+    feature4: "Kein Store-Download erforderlich",
+    install: "Installieren",
+    dismiss: "Später",
+    info: "Sie können die App jederzeit deinstallieren"
+  },
+  
   ranks: {
     seeker: "Suchender",
     believer: "Gläubiger",

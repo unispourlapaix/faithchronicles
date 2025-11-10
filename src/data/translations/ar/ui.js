@@ -139,6 +139,18 @@ export const uiTranslations = {
     close: "إغلاق"
   },
   
+  install: {
+    title: "تثبيت التطبيق",
+    subtitle: "وصول سريع وغير متصل",
+    feature1: "إطلاق فوري من شاشتك الرئيسية",
+    feature2: "يعمل دون اتصال بعد التثبيت",
+    feature3: "تجربة تطبيق أصلي",
+    feature4: "لا حاجة لتنزيل المتجر",
+    install: "تثبيت",
+    dismiss: "لاحقاً",
+    info: "يمكنك إلغاء تثبيت التطبيق في أي وقت"
+  },
+  
   ranks: {
     seeker: "باحث",
     believer: "مؤمن",

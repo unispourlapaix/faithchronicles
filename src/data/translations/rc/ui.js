@@ -137,6 +137,18 @@ export const uiTranslations = {
     close: "Kokanga"
   },
   
+  install: {
+    title: "Tyá aplikasyo",
+    subtitle: "Kokóta nokinoki mpé offline",
+    feature1: "Kobanda mbala moko na écran ya mboka",
+    feature2: "Esalaka offline nsima ya installation",
+    feature3: "Expérience ya aplikasyo ya mboka",
+    feature4: "Esɛngaka té kokita na magazini",
+    install: "Tyá",
+    dismiss: "Na nsima",
+    info: "Okokoka kolongola aplikasyo ntango nyonso"
+  },
+  
   ranks: {
     seeker: "Moluki",
     believer: "Mondimi",
