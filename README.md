@@ -6,6 +6,8 @@
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
 [![React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
 [![17 Languages](https://img.shields.io/badge/languages-17-brightgreen.svg)](https://github.com/unispourlapaix/unityquest-chronicles-of-love)
+[![Security](https://img.shields.io/badge/security-monitored-success.svg)](./SECURITY.md)
+[![GitGuardian](https://img.shields.io/badge/GitGuardian-monitored-blue.svg)](https://www.gitguardian.com/)
 
 ---
 
