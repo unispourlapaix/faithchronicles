@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import { User, Mail, Play, Globe } from 'lucide-react';
+import { User, Mail, Play, Globe, Lock, UserPlus, Eye, EyeOff } from 'lucide-react';
 import useTranslation from '../../hooks/useTranslation';
 import { getLanguage, getLanguageList } from '../../data/translations/languages.js';
 
-const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio }) => {
+const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, importSessionFromProduction, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
-  const [mode, setMode] = useState(null); // null, 'anonymous', 'email'
+  const [mode, setMode] = useState(null); // null, 'anonymous', 'email', 'password'
+  const [authMode, setAuthMode] = useState('signin'); // 'signin' ou 'signup'
   const [pseudo, setPseudo] = useState('');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
@@ -84,10 +87,70 @@ const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio 
         setMessage(t('login.checkEmail'));
       }
     } catch (error) {
-      console.error('❌ Exception attrapée:', error);
+      console.error('❌ Exception:', error);
       setMessage(t('login.errorConnection'));
     } finally {
-      console.log('🔄 Finally: Remise à zéro du loading');
+      console.log('🏁 Fin handleEmailLogin, setLoading(false)');
+      setLoading(false);
+    }
+  };
+
+  // Connexion avec mot de passe
+  const handlePasswordLogin = async () => {
+    if (!email.trim() || !email.includes('@')) {
+      setMessage(t('login.enterEmail'));
+      return;
+    }
+
+    if (!password.trim() || password.length < 6) {
+      setMessage(t('login.passwordTooShort') || 'Le mot de passe doit contenir au moins 6 caractères');
+      return;
+    }
+
+    console.log('🔐 Connexion avec mot de passe pour:', email.trim());
+    setLoading(true);
+    setMessage('');
+
+    try {
+      if (authMode === 'signup') {
+        // Inscription
+        console.log('📝 Inscription...');
+        const result = await onSignup(email.trim(), password);
+        
+        if (result?.error) {
+          console.error('❌ Erreur inscription:', result.error);
+          if (result.error.message.includes('already registered')) {
+            setMessage(t('login.emailAlreadyExists') || 'Cet email est déjà utilisé');
+          } else {
+            setMessage(t('login.errorSignup') || 'Erreur lors de l\'inscription');
+          }
+        } else {
+          console.log('✅ Inscription réussie');
+          setMessage(t('login.signupSuccess') || '✅ Compte créé ! Connexion...');
+          // L'utilisateur est automatiquement connecté après inscription
+        }
+      } else {
+        // Connexion
+        console.log('🔑 Connexion...');
+        const result = await onLoginWithPassword(email.trim(), password);
+        
+        if (result?.error) {
+          console.error('❌ Erreur connexion:', result.error);
+          if (result.error.message.includes('Invalid login credentials')) {
+            setMessage(t('login.invalidCredentials') || 'Email ou mot de passe incorrect');
+          } else {
+            setMessage(t('login.errorConnection'));
+          }
+        } else {
+          console.log('✅ Connexion réussie');
+          setMessage(t('login.connectionSuccess') || '✅ Connexion réussie !');
+        }
+      }
+    } catch (error) {
+      console.error('❌ Exception:', error);
+      setMessage(t('login.errorConnection'));
+    } finally {
+      console.log('🏁 Fin handlePasswordLogin');
       setLoading(false);
     }
   };
@@ -185,7 +248,7 @@ const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio 
             </div>
           </button>
 
-          {/* Bouton Connexion Email */}
+          {/* Bouton Connexion Email (Magic Link) */}
           <button
             onClick={() => {
               audio?.sounds?.buttonClick(); // Son clic bouton
@@ -208,6 +271,32 @@ const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio 
                 </div>
               </div>
               <Play className="text-blue-600 group-hover:translate-x-1 transition-transform" size={20} />
+            </div>
+          </button>
+
+          {/* Bouton Connexion avec Mot de Passe (NOUVEAU - Simple et fiable) */}
+          <button
+            onClick={() => {
+              audio?.sounds?.buttonClick();
+              setMode('password');
+            }}
+            className="w-full bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-6 shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-200 group"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                  <Lock className="text-white" size={24} />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-lg font-bold text-white">
+                    {t('login.passwordMode') || 'Connexion simple'}
+                  </h3>
+                  <p className="text-sm text-green-100">
+                    {t('login.passwordDesc') || 'Email + mot de passe'}
+                  </p>
+                </div>
+              </div>
+              <Play className="text-white group-hover:translate-x-1 transition-transform" size={20} />
             </div>
           </button>
         </div>
@@ -407,6 +496,170 @@ const LoginScreen = ({ onLogin, onAnonymous, importSessionFromProduction, audio 
                   {t('login.importSession')}
                 </button>
               )}
+
+              <p className="text-xs text-gray-500 text-center">
+                {t('login.cloudSync')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Écran mode password (NOUVEAU - Connexion simple et fiable)
+  if (mode === 'password') {
+    return (
+      <div className="h-full bg-gradient-to-br from-green-600 via-emerald-600 to-teal-500 flex flex-col items-center justify-center p-6">
+        <div className="w-full max-w-sm">
+          <button
+            onClick={() => {
+              audio?.sounds?.wrash();
+              setMode(null);
+              setMessage('');
+              setPassword('');
+            }}
+            className="mb-6 text-white/90 hover:text-white flex items-center space-x-2"
+          >
+            <span>←</span>
+            <span>{t('login.back')}</span>
+          </button>
+
+          <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 shadow-2xl">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                {authMode === 'signup' ? <UserPlus className="text-white" size={32} /> : <Lock className="text-white" size={32} />}
+              </div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                {authMode === 'signup' ? (t('login.createAccount') || 'Créer un compte') : (t('login.passwordMode') || 'Connexion simple')}
+              </h2>
+              <p className="text-gray-600 text-sm">
+                {authMode === 'signup' ? (t('login.signupInfo') || 'Remplissez le formulaire ci-dessous') : (t('login.passwordInfo') || 'Accès rapide avec mot de passe')}
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {/* Toggle Connexion / Inscription */}
+              <div className="flex bg-gray-100 rounded-xl p-1">
+                <button
+                  onClick={() => {
+                    audio?.sounds?.buttonClick();
+                    setAuthMode('signin');
+                    setMessage('');
+                  }}
+                  className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
+                    authMode === 'signin'
+                      ? 'bg-white text-green-600 shadow-md'
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
+                  {t('login.signin') || 'Connexion'}
+                </button>
+                <button
+                  onClick={() => {
+                    audio?.sounds?.buttonClick();
+                    setAuthMode('signup');
+                    setMessage('');
+                  }}
+                  className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
+                    authMode === 'signup'
+                      ? 'bg-white text-green-600 shadow-md'
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
+                  {t('login.signup') || 'Inscription'}
+                </button>
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  {t('login.email')}
+                </label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={t('login.emailPlaceholder')}
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none transition-colors"
+                  disabled={loading}
+                  autoFocus
+                />
+              </div>
+
+              {/* Mot de passe */}
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  {t('login.password') || 'Mot de passe'}
+                </label>
+                <div className="relative">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    onKeyPress={(e) => e.key === 'Enter' && handlePasswordLogin()}
+                    placeholder={t('login.passwordPlaceholder') || 'Minimum 6 caractères'}
+                    className="w-full px-4 py-3 pr-12 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none transition-colors"
+                    disabled={loading}
+                    minLength={6}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors"
+                    disabled={loading}
+                  >
+                    {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                  </button>
+                </div>
+                <div className="flex items-center justify-between mt-1">
+                  <p className="text-xs text-gray-500">
+                    {t('login.passwordMinLength') || 'Minimum 6 caractères'}
+                  </p>
+                  {authMode === 'signin' && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        audio?.sounds?.buttonClick();
+                        setMessage('💡 Astuce : Utilisez le bouton 👁️ pour voir votre mot de passe en le tapant !');
+                      }}
+                      className="text-xs text-green-600 hover:text-green-700 font-semibold transition-colors"
+                    >
+                      {t('login.forgotPassword') || 'Mot de passe oublié ?'}
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              {/* Message de retour */}
+              {message && (
+                <div className={`text-sm rounded-lg p-3 ${
+                  message.includes('✅')
+                    ? 'text-green-700 bg-green-50 border border-green-200'
+                    : message.includes('💡')
+                      ? 'text-blue-700 bg-blue-50 border border-blue-200'
+                      : 'text-red-600 bg-red-50 border border-red-200'
+                }`}>
+                  {message}
+                </div>
+              )}
+
+              {/* Bouton principal */}
+              <button
+                onClick={() => {
+                  audio?.sounds?.buttonClick();
+                  handlePasswordLogin();
+                }}
+                disabled={loading || !email.trim() || !password.trim()}
+                className="w-full py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {loading 
+                  ? (t('login.connecting') || 'Connexion...') 
+                  : authMode === 'signup' 
+                    ? (t('login.signupButton') || 'Créer mon compte')
+                    : (t('login.signinButton') || 'Se connecter')
+                }
+              </button>
 
               <p className="text-xs text-gray-500 text-center">
                 {t('login.cloudSync')}

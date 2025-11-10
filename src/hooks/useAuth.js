@@ -158,6 +158,50 @@ export const useAuth = () => {
     }
   };
 
+  // Connexion avec email + mot de passe (méthode simple et fiable)
+  const signInWithPassword = async (email, password) => {
+    try {
+      console.log('🔐 Tentative de connexion avec mot de passe:', email);
+      
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      
+      if (error) throw error;
+      
+      console.log('✅ Connexion réussie:', data.user.email);
+      return { data, error: null };
+    } catch (error) {
+      console.error('❌ Erreur connexion mot de passe:', error);
+      return { data: null, error };
+    }
+  };
+
+  // Inscription avec email + mot de passe
+  const signUpWithPassword = async (email, password) => {
+    try {
+      console.log('📝 Tentative d\'inscription:', email);
+      
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          // Pas besoin de confirmation email pour simplifier
+          emailRedirectTo: `${window.location.origin}${process.env.PUBLIC_URL || ''}`,
+        }
+      });
+      
+      if (error) throw error;
+      
+      console.log('✅ Inscription réussie:', data.user?.email || 'En attente confirmation');
+      return { data, error: null };
+    } catch (error) {
+      console.error('❌ Erreur inscription:', error);
+      return { data: null, error };
+    }
+  };
+
   // Déconnexion
   const signOut = async () => {
     try {
@@ -251,6 +295,8 @@ export const useAuth = () => {
     loading,
     signInAnonymously,
     signInWithEmail,
+    signInWithPassword,
+    signUpWithPassword,
     signOut,
     importSessionFromProduction,
     isConfigured: isSupabaseConfigured(),

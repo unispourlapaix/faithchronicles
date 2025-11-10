@@ -4,7 +4,7 @@ import { useAuth } from '../hooks/useAuth';
 import { useGameProgress } from '../hooks/useGameProgress';
 import useAudio from '../hooks/useAudio';
 import { debounce } from '../utils/retryHelper.js';
-import { supabase } from '../lib/supabase.js';
+import { supabase, isSupabaseConfigured } from '../lib/supabase.js';
 import { useTranslation } from '../hooks/useTranslation.js';
 
 import LoginScreen from './screens/LoginScreen';
@@ -21,7 +21,16 @@ import InstallPrompt from './InstallPrompt';
 
 const FaithChronicles = () => {
   // Hooks Supabase
-  const { user, loading: authLoading, signInWithEmail, importSessionFromProduction, isConfigured } = useAuth();
+  const { 
+    user, 
+    loading: authLoading, 
+    signInWithEmail, 
+    signInAnonymously,
+    signInWithPassword,
+    signUpWithPassword,
+    importSessionFromProduction, 
+    isConfigured 
+  } = useAuth();
   const { progress, saveProgress: saveToSupabase, saveLevelStars, loadAllStars, forceRefresh, lastSaveTime } = useGameProgress(user?.id);
   
   // Hook Audio 🎵
@@ -84,12 +93,32 @@ const FaithChronicles = () => {
 
   // Gérer la connexion utilisateur
   const handleAnonymousLogin = async (pseudo) => {
-    // Mode anonyme = localStorage uniquement, pas de Supabase
-    localStorage.setItem('faithChronicles_pseudo', pseudo);
-    localStorage.setItem('faithChronicles_mode', 'anonymous');
-    setIsAnonymousMode(true);
-    setCurrentScreen('menu');
-    return { data: { pseudo }, error: null };
+    try {
+      if (!isSupabaseConfigured()) {
+        // Mode hors-ligne
+        localStorage.setItem('faithChronicles_pseudo', pseudo);
+        localStorage.setItem('faithChronicles_mode', 'anonymous');
+        setIsAnonymousMode(true);
+        setCurrentScreen('menu');
+        return { data: { pseudo }, error: null };
+      }
+
+      // Mode en ligne avec Supabase
+      const result = await signInAnonymously();
+      if (result.error) {
+        console.error('❌ Erreur connexion anonyme:', result.error);
+        return result;
+      }
+
+      localStorage.setItem('faithChronicles_pseudo', pseudo);
+      localStorage.setItem('faithChronicles_mode', 'anonymous');
+      setIsAnonymousMode(true);
+      setCurrentScreen('menu');
+      return result;
+    } catch (error) {
+      console.error('❌ Erreur handleAnonymousLogin:', error);
+      return { data: null, error };
+    }
   };
 
   const handleEmailLogin = async (email) => {
@@ -534,6 +563,8 @@ const FaithChronicles = () => {
           <LoginScreen
             onAnonymous={handleAnonymousLogin}
             onLogin={handleEmailLogin}
+            onLoginWithPassword={signInWithPassword}
+            onSignup={signUpWithPassword}
             importSessionFromProduction={importSessionFromProduction}
             audio={audio}
           />
