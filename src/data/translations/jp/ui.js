@@ -150,7 +150,7 @@ export const uiTranslations = {
   
   ranks: {
     seeker: "探求者",
-    believer: "信者",
+    believer: "覚醒者",
     disciple: "弟子",
     servant: "奉仕者",
     witness: "証人",
@@ -159,7 +159,7 @@ export const uiTranslations = {
     prophet: "預言者",
     apostle: "使徒",
     seekerDesc: "霊的な旅の始まり",
-    believerDesc: "成長する信仰",
+    believerDesc: "目覚めた霊的意識",
     discipleDesc: "教えの学習",
     servantDesc: "奉仕と献身",
     witnessDesc: "信仰の共有",

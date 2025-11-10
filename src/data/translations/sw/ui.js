@@ -146,7 +146,7 @@ export const uiTranslations = {
   
   ranks: {
     seeker: "Mtafutaji",
-    believer: "Muamini",
+    believer: "Aliyeamka",
     disciple: "Mwanafunzi",
     servant: "Mtumishi",
     witness: "Shahidi",
@@ -155,7 +155,7 @@ export const uiTranslations = {
     prophet: "Nabii",
     apostle: "Mtume",
     seekerDesc: "Mwanzo wa safari ya kiroho",
-    believerDesc: "Imani inayokua",
+    believerDesc: "Fahamu ya kiroho iliyoamka",
     discipleDesc: "Kujifunza mafundisho",
     servantDesc: "Huduma na utii",
     witnessDesc: "Kushiriki imani",
