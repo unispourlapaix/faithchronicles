@@ -109,21 +109,30 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
       const selection = window.getSelection();
       const text = selection.toString().trim();
       
-      if (text.length > 0) {
-        setSelectedText(text);
-        
-        // Positionner le bouton de partage près de la sélection
+      // Vérifier que la sélection est dans le contenu du lecteur Bible
+      if (text.length > 0 && text.length < 500) { // Limite pour éviter sélection trop large
+        // Vérifier que la sélection n'est pas sur un bouton ou contrôle
         const range = selection.getRangeAt(0);
-        const rect = range.getBoundingClientRect();
-        setShareButtonPosition({
-          x: rect.left + rect.width / 2,
-          y: rect.top - 10
-        });
-        setShowFloatingShare(true);
-      } else {
-        setShowFloatingShare(false);
-        setSelectedText('');
+        const container = range.commonAncestorContainer;
+        const parentElement = container.nodeType === 3 ? container.parentElement : container;
+        
+        // Ne pas afficher le bouton si la sélection est dans un bouton ou input
+        if (parentElement && !parentElement.closest('button, input, select, a')) {
+          setSelectedText(text);
+          
+          // Positionner le bouton de partage près de la sélection
+          const rect = range.getBoundingClientRect();
+          setShareButtonPosition({
+            x: rect.left + rect.width / 2,
+            y: rect.top - 10
+          });
+          setShowFloatingShare(true);
+          return;
+        }
       }
+      
+      setShowFloatingShare(false);
+      setSelectedText('');
     };
 
     document.addEventListener('mouseup', handleTextSelection);
@@ -664,7 +673,10 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
 
             {/* Verses - Optimisé pour mobile avec espacement intelligent */}
             {chapterData?.verses?.map((verse, index) => (
-              <div key={verse.number}>
+              <div 
+                key={verse.number}
+                style={{ userSelect: 'text', WebkitUserSelect: 'text' }}
+              >
                 <div
                   className={`group relative transition-all p-3 sm:p-4 rounded mb-2`}
                 >

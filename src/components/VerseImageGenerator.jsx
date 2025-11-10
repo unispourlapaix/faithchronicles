@@ -70,6 +70,26 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    // Overlay de triangles géométriques en fond
+    ctx.save();
+    ctx.globalAlpha = 0.08;
+    const triangleSize = 80;
+    const spacing = 120;
+    for (let x = 0; x < canvas.width + triangleSize; x += spacing) {
+      for (let y = 0; y < canvas.height + triangleSize; y += spacing) {
+        const offset = (y / spacing) % 2 === 0 ? spacing / 2 : 0;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(x + offset, y - triangleSize / 2);
+        ctx.lineTo(x + offset + triangleSize * 0.866, y + triangleSize / 2);
+        ctx.lineTo(x + offset - triangleSize * 0.866, y + triangleSize / 2);
+        ctx.closePath();
+        ctx.stroke();
+      }
+    }
+    ctx.restore();
+    
     // Overlay semi-transparent pour améliorer la lisibilité
     ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -111,6 +131,24 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
         ctx.lineTo(x + Math.cos(angle) * size, y + Math.sin(angle) * size);
         ctx.stroke();
       }
+      ctx.restore();
+    };
+    
+    // Fonction pour dessiner un triangle géométrique
+    const drawTriangle = (x, y, size, color, opacity = 0.15, rotation = 0) => {
+      ctx.save();
+      ctx.globalAlpha = opacity;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2.5;
+      ctx.translate(x, y);
+      ctx.rotate(rotation);
+      ctx.beginPath();
+      // Triangle équilatéral
+      ctx.moveTo(0, -size);
+      ctx.lineTo(size * 0.866, size * 0.5);
+      ctx.lineTo(-size * 0.866, size * 0.5);
+      ctx.closePath();
+      ctx.stroke();
       ctx.restore();
     };
     
@@ -200,18 +238,41 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
       return min + (x - Math.floor(x)) * (max - min);
     };
     
-    // Ajouter des + et * aléatoirement partout
+    // Adapter le nombre de décorations selon le format
+    const numDecorations = format === 'facebook' ? 12 : 25; // Moins en portrait
+    
+    // Ajouter des + et * aléatoirement
     const shapeColor = currentColors.shapes;
-    for (let i = 0; i < 25; i++) {
-      const x = random(100, canvas.width - 100, i * 7);
-      const y = random(100, canvas.height - 100, i * 11);
-      const size = random(15, 40, i * 13);
-      const opacity = random(0.05, 0.2, i * 17);
+    for (let i = 0; i < numDecorations; i++) {
+      let x = random(100, canvas.width - 100, i * 7);
+      let y = random(100, canvas.height - 100, i * 11);
       
-      if (i % 2 === 0) {
+      // En portrait Facebook, éviter le centre (zone de texte)
+      if (format === 'facebook') {
+        const centerY = canvas.height / 2;
+        const textZoneHeight = 350; // Zone à éviter autour du texte
+        
+        // Si trop proche du centre, déplacer vers les bords
+        if (Math.abs(y - centerY) < textZoneHeight / 2) {
+          if (y < centerY) {
+            y = random(80, 150, i * 19); // En haut
+          } else {
+            y = random(canvas.height - 150, canvas.height - 80, i * 23); // En bas
+          }
+        }
+      }
+      
+      const size = random(15, 35, i * 13);
+      const opacity = random(0.05, 0.15, i * 17);
+      const rotation = random(0, Math.PI * 2, i * 29);
+      
+      const shapeType = i % 3; // 3 types de formes
+      if (shapeType === 0) {
         drawPlus(x, y, size, shapeColor, opacity);
-      } else {
+      } else if (shapeType === 1) {
         drawAsterisk(x, y, size, shapeColor, opacity);
+      } else {
+        drawTriangle(x, y, size * 0.8, shapeColor, opacity, rotation);
       }
     }
     
@@ -256,78 +317,148 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     
-    // Icône citation (guillemets géométriques)
-    ctx.save();
-    ctx.globalAlpha = 0.2;
-    ctx.font = 'bold 180px serif';
-    ctx.fillText('"', 200, 300);
-    ctx.restore();
-    
-    // Texte du verset (avec retour à la ligne automatique)
-    const maxWidth = 800;
-    const lineHeight = 70;
-    let y = canvas.height / 2 - 100;
-    
-    ctx.font = 'bold 48px serif';
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-    ctx.shadowBlur = 10;
-    ctx.shadowOffsetX = 2;
-    ctx.shadowOffsetY = 2;
-    
-    // Fonction pour découper le texte en lignes
-    const wrapText = (text, maxWidth) => {
-      const words = text.split(' ');
-      const lines = [];
-      let currentLine = words[0];
+    // Disposition différente selon le format
+    if (format === 'facebook') {
+      // MODE PORTRAIT: Titre en haut, verset au centre, hashtags en bas
       
-      for (let i = 1; i < words.length; i++) {
-        const testLine = currentLine + ' ' + words[i];
-        const metrics = ctx.measureText(testLine);
-        if (metrics.width > maxWidth) {
-          lines.push(currentLine);
-          currentLine = words[i];
-        } else {
-          currentLine = testLine;
+      // Titre en haut
+      ctx.font = 'bold 36px sans-serif';
+      ctx.fillStyle = currentColors.accent;
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+      ctx.shadowBlur = 10;
+      ctx.shadowOffsetX = 2;
+      ctx.shadowOffsetY = 2;
+      ctx.fillText('Unity Quest • Chronicles of Love', canvas.width / 2, 120);
+      
+      // Référence biblique (sous le titre)
+      ctx.font = 'bold 32px sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      const reference = `${t('bible.john')} ${chapterNumber}:${verse.number}`;
+      ctx.fillText(reference, canvas.width / 2, 170);
+      
+      // Texte du verset au centre
+      const maxWidth = canvas.width - 200; // Plus large en portrait
+      const lineHeight = 55;
+      
+      ctx.font = 'bold 42px serif';
+      ctx.fillStyle = '#ffffff';
+      
+      const wrapText = (text, maxWidth) => {
+        const words = text.split(' ');
+        const lines = [];
+        let currentLine = words[0];
+        
+        for (let i = 1; i < words.length; i++) {
+          const testLine = currentLine + ' ' + words[i];
+          const metrics = ctx.measureText(testLine);
+          if (metrics.width > maxWidth) {
+            lines.push(currentLine);
+            currentLine = words[i];
+          } else {
+            currentLine = testLine;
+          }
         }
-      }
-      lines.push(currentLine);
-      return lines;
-    };
-    
-    const verseText = verse.text || '';
-    const lines = wrapText(verseText, maxWidth);
-    
-    // Centrer verticalement l'ensemble du texte
-    const totalHeight = lines.length * lineHeight;
-    y = (canvas.height - totalHeight) / 2;
-    
-    lines.forEach((line, index) => {
-      ctx.fillText(line, canvas.width / 2, y + index * lineHeight);
-    });
-    
-    // ===== RÉFÉRENCE =====
-    ctx.font = 'bold 42px sans-serif';
-    ctx.fillStyle = currentColors.accent;
-    const reference = `${t('bible.john')} ${chapterNumber}:${verse.number}`;
-    ctx.fillText(reference, canvas.width / 2, y + totalHeight + 80);
-    
-    // ===== HASHTAGS =====
-    ctx.font = '32px sans-serif';
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
-    ctx.shadowBlur = 5;
-    
-    const hashtags = getHashtagsForLanguage(currentLanguage);
-    const hashtagY = canvas.height - 150;
-    ctx.fillText(hashtags, canvas.width / 2, hashtagY);
-    
-    // ===== LOGO/SIGNATURE =====
-    ctx.font = 'bold 28px sans-serif';
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-    ctx.fillText('Unity Quest • Chronicles of Love', canvas.width / 2, canvas.height - 80);
-    
-    // Émojis décoratifs en bas
-    ctx.font = '36px sans-serif';
-    ctx.fillText('♥ ✟ ✿', canvas.width / 2, canvas.height - 35);
+        lines.push(currentLine);
+        return lines;
+      };
+      
+      const verseText = verse.text || '';
+      const lines = wrapText(verseText, maxWidth);
+      
+      // Centrer verticalement le texte
+      const totalHeight = lines.length * lineHeight;
+      let y = (canvas.height - totalHeight) / 2 + 30; // Légèrement décalé vers le bas
+      
+      lines.forEach((line, index) => {
+        ctx.fillText(line, canvas.width / 2, y + index * lineHeight);
+      });
+      
+      // Hashtags en bas
+      ctx.font = '28px sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.shadowBlur = 5;
+      const hashtags = getHashtagsForLanguage(currentLanguage);
+      ctx.fillText(hashtags, canvas.width / 2, canvas.height - 100);
+      
+      // Émojis décoratifs en bas
+      ctx.font = '32px sans-serif';
+      ctx.fillText('♥ ✟ ✿', canvas.width / 2, canvas.height - 50);
+      
+    } else {
+      // MODE CARRÉ: Disposition originale centrée
+      
+      // Icône citation (guillemets géométriques)
+      ctx.save();
+      ctx.globalAlpha = 0.2;
+      ctx.font = 'bold 180px serif';
+      ctx.fillText('"', 200, 300);
+      ctx.restore();
+      
+      // Texte du verset (avec retour à la ligne automatique)
+      const maxWidth = 800;
+      const lineHeight = 70;
+      
+      ctx.font = 'bold 48px serif';
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+      ctx.shadowBlur = 10;
+      ctx.shadowOffsetX = 2;
+      ctx.shadowOffsetY = 2;
+      
+      // Fonction pour découper le texte en lignes
+      const wrapText = (text, maxWidth) => {
+        const words = text.split(' ');
+        const lines = [];
+        let currentLine = words[0];
+        
+        for (let i = 1; i < words.length; i++) {
+          const testLine = currentLine + ' ' + words[i];
+          const metrics = ctx.measureText(testLine);
+          if (metrics.width > maxWidth) {
+            lines.push(currentLine);
+            currentLine = words[i];
+          } else {
+            currentLine = testLine;
+          }
+        }
+        lines.push(currentLine);
+        return lines;
+      };
+      
+      const verseText = verse.text || '';
+      const lines = wrapText(verseText, maxWidth);
+      
+      // Centrer verticalement l'ensemble du texte
+      const totalHeight = lines.length * lineHeight;
+      let y = (canvas.height - totalHeight) / 2;
+      
+      lines.forEach((line, index) => {
+        ctx.fillText(line, canvas.width / 2, y + index * lineHeight);
+      });
+      
+      // Référence
+      ctx.font = 'bold 42px sans-serif';
+      ctx.fillStyle = currentColors.accent;
+      const reference = `${t('bible.john')} ${chapterNumber}:${verse.number}`;
+      ctx.fillText(reference, canvas.width / 2, y + totalHeight + 80);
+      
+      // Hashtags
+      ctx.font = '32px sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.shadowBlur = 5;
+      
+      const hashtags = getHashtagsForLanguage(currentLanguage);
+      const hashtagY = canvas.height - 150;
+      ctx.fillText(hashtags, canvas.width / 2, hashtagY);
+      
+      // Logo/Signature
+      ctx.font = 'bold 28px sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.fillText('Unity Quest • Chronicles of Love', canvas.width / 2, canvas.height - 80);
+      
+      // Émojis décoratifs en bas
+      ctx.font = '36px sans-serif';
+      ctx.fillText('♥ ✟ ✿', canvas.width / 2, canvas.height - 35);
+    }
     
     ctx.shadowBlur = 0;
     ctx.shadowOffsetX = 0;
@@ -538,8 +669,8 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
             </h4>
             <ul className="text-sm text-blue-800 space-y-1">
               <li>✓ {format === 'instagram' ? 'Instagram Post (carré)' : 'Facebook Post (portrait)'}</li>
-              <li>✓ {currentLanguage === 'fr' ? 'Hashtags inclus dans l\'image' : 'Hashtags included in image'}</li>
-              <li>✓ {currentLanguage === 'fr' ? 'Décorations aléatoires + et *' : 'Random + and * decorations'}</li>
+              <li>✓ {currentLanguage === 'fr' ? 'Fond géométrique triangulaire' : 'Geometric triangle background'}</li>
+              <li>✓ {currentLanguage === 'fr' ? 'Décorations aléatoires +, * et △' : 'Random +, * and △ decorations'}</li>
               <li>✓ {currentLanguage === 'fr' ? '5 thèmes de couleurs' : '5 color themes'}</li>
             </ul>
           </div>
