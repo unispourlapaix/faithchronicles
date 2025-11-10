@@ -7,13 +7,14 @@
 const faithGospelConfig = {
   // Détection automatique du chemin de base (GitHub Pages, production ou développement local)
   baseUrl: (() => {
+    // Développement local avec React (localhost) - TOUJOURS utiliser le chemin de base de l'app
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      // En localhost, React sert depuis public/ avec le basePath défini dans package.json
+      return window.location.origin + '/unityquest-chronicles-of-love/audio/gospel/';
+    }
     // GitHub Pages
     if (window.location.pathname.includes('/unityquest-chronicles-of-love/')) {
       return '/unityquest-chronicles-of-love/audio/gospel/';
-    }
-    // Développement local avec React (localhost)
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      return window.location.origin + '/audio/gospel/';
     }
     // Production normale
     return '/audio/gospel/';
