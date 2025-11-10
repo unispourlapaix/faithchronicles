@@ -146,6 +146,8 @@ export const uiTranslations = {
     signinButton: "Ingia",
     passwordTooShort: "Nywila lazima iwe na angalau herufi 6",
     emailAlreadyExists: "Barua pepe hii tayari inatumika",
+    emailExistsHint: "✉️ Barua pepe hii tayari imesajiliwa. Jaribu kuingia! (Labda iliundwa kutoka kwa mchezo mwingine?)",
+    switchToSignin: "🔑 Badili hadi njia ya kuingia kwa barua pepe yako iliyopo",
     invalidCredentials: "Barua pepe au nywila si sahihi",
     signupSuccess: "📧 Akaunti imeundwa! Angalia barua pepe yako kuhakikisha usajili wako.",
     emailConfirmationRequired: "Angalia kisanduku chako cha barua kupata ili kuamilisha akaunti yako",

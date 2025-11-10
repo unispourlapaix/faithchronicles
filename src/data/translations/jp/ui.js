@@ -150,6 +150,8 @@ export const uiTranslations = {
     signinButton: "ログイン",
     passwordTooShort: "パスワードは最低6文字必要です",
     emailAlreadyExists: "このメールは既に使用されています",
+    emailExistsHint: "✉️ このメールは既に登録されています。ログインしてください！（別のゲームから作成された可能性があります）",
+    switchToSignin: "🔑 既存のメールでサインインモードに切り替えてください",
     invalidCredentials: "メールまたはパスワードが無効です",
     signupSuccess: "📧 アカウントが作成されました！登録を確認するためにメールをチェックしてください。",
     emailConfirmationRequired: "アカウントを有効化するために受信トレイを確認してください",

@@ -149,6 +149,8 @@ export const uiTranslations = {
     signinButton: "Se connecter",
     passwordTooShort: "Le mot de passe doit contenir au moins 6 caractères",
     emailAlreadyExists: "Cet email est déjà utilisé",
+    emailExistsHint: "✉️ Cet email est déjà enregistré. Essayez de vous connecter ! (Peut-être créé depuis un autre jeu?)",
+    switchToSignin: "🔑 Passez en mode Connexion avec votre email existant",
     invalidCredentials: "Email ou mot de passe incorrect",
     signupSuccess: "📧 Compte créé ! Vérifiez votre email pour confirmer votre inscription.",
     emailConfirmationRequired: "Vérifiez votre boîte mail pour activer votre compte",

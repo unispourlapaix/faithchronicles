@@ -151,6 +151,8 @@ export const uiTranslations = {
     signinButton: "登录",
     passwordTooShort: "密码必须至少6个字符",
     emailAlreadyExists: "此邮箱已被使用",
+    emailExistsHint: "✉️ 此邮箱已注册。请尝试登录！（可能是从另一个游戏创建的？）",
+    switchToSignin: "🔑 切换到使用现有邮箱的登录模式",
     invalidCredentials: "邮箱或密码无效",
     signupSuccess: "📧 账户已创建！请查看您的邮箱以确认注册。",
     emailConfirmationRequired: "请查看您的收件箱以激活账户",

@@ -146,6 +146,8 @@ export const uiTranslations = {
     signinButton: "Anmelden",
     passwordTooShort: "Passwort muss mindestens 6 Zeichen lang sein",
     emailAlreadyExists: "Diese E-Mail wird bereits verwendet",
+    emailExistsHint: "✉️ Diese E-Mail ist bereits registriert. Versuchen Sie sich anzumelden! (Vielleicht von einem anderen Spiel erstellt?)",
+    switchToSignin: "🔑 Wechseln Sie zum Anmeldemodus mit Ihrer vorhandenen E-Mail",
     invalidCredentials: "Ungültige E-Mail oder Passwort",
     signupSuccess: "📧 Konto erstellt! Überprüfen Sie Ihre E-Mail, um Ihre Registrierung zu bestätigen.",
     emailConfirmationRequired: "Überprüfen Sie Ihren Posteingang, um Ihr Konto zu aktivieren",

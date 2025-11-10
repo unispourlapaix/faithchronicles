@@ -43,8 +43,15 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, audio }) => {
         if (result?.error) {
           console.error('❌ Erreur inscription:', result.error);
           if (result.error.message.includes('already registered')) {
-            setMessage(t('login.emailAlreadyExists') || 'Cet email est déjà utilisé');
-            setMessageType('error');
+            // L'email existe déjà - suggérer de se connecter
+            setMessage(t('login.emailExistsHint') || '✉️ Cet email est déjà enregistré. Essayez de vous connecter ! (Peut-être créé depuis un autre jeu?)');
+            setMessageType('info');
+            // Basculer automatiquement en mode connexion après 3 secondes
+            setTimeout(() => {
+              setAuthMode('signin');
+              setMessage(t('login.switchToSignin') || '🔑 Passez en mode Connexion avec votre email existant');
+              setMessageType('info');
+            }, 3000);
           } else {
             setMessage(t('login.errorSignup') || 'Erreur lors de l\'inscription');
             setMessageType('error');

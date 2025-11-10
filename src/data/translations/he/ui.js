@@ -153,6 +153,8 @@ export const uiTranslations = {
     signinButton: "התחבר",
     passwordTooShort: "הסיסמה חייבת להכיל לפחות 6 תווים",
     emailAlreadyExists: "אימייל זה כבר בשימוש",
+    emailExistsHint: "✉️ אימייל זה כבר רשום. נסה להתחבר! (אולי נוצר ממשחק אחר?)",
+    switchToSignin: "🔑 עבור למצב התחברות עם האימייל הקיים שלך",
     invalidCredentials: "אימייל או סיסמה לא חוקיים",
     signupSuccess: "📧 חשבון נוצר! בדוק את האימייל שלך לאישור ההרשמה.",
     emailConfirmationRequired: "בדוק את תיבת הדואר הנכנס שלך כדי להפעיל את החשבון",

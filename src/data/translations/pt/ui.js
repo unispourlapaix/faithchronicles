@@ -151,6 +151,8 @@ export const uiTranslations = {
     signinButton: "Entrar",
     passwordTooShort: "A senha deve ter pelo menos 6 caracteres",
     emailAlreadyExists: "Este email já está em uso",
+    emailExistsHint: "✉️ Este email já está registrado. Tente fazer login! (Talvez criado de outro jogo?)",
+    switchToSignin: "🔑 Mude para o modo Entrar com seu email existente",
     invalidCredentials: "Email ou senha inválidos",
     signupSuccess: "📧 Conta criada! Verifique seu email para confirmar seu registro.",
     emailConfirmationRequired: "Verifique sua caixa de entrada para ativar sua conta",
