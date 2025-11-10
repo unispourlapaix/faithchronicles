@@ -57,9 +57,9 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
       canvas.width = 1080;
       canvas.height = 1080;
     } else {
-      // Facebook portrait
-      canvas.width = 1200;
-      canvas.height = 630;
+      // Facebook portrait (vertical)
+      canvas.width = 630;
+      canvas.height = 1200;
     }
     
     // Fond gradient avec les couleurs choisies
@@ -321,32 +321,53 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
     if (format === 'facebook') {
       // MODE PORTRAIT: Titre en haut, verset au centre, hashtags en bas
       
-      // Titre en haut
-      ctx.font = 'bold 36px sans-serif';
-      ctx.fillStyle = currentColors.accent;
-      ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-      ctx.shadowBlur = 10;
+      // ===== TITRE SIMPLE EN HAUT =====
+      ctx.save();
+      
+      // Fond simple semi-transparent
+      const titleGradient = ctx.createLinearGradient(0, 0, 0, 100);
+      titleGradient.addColorStop(0, 'rgba(0, 0, 0, 0.4)');
+      titleGradient.addColorStop(1, 'rgba(0, 0, 0, 0.1)');
+      ctx.fillStyle = titleGradient;
+      ctx.fillRect(0, 0, canvas.width, 100);
+      
+      // Titre simple
+      ctx.font = '24px sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.6)';
+      ctx.shadowBlur = 6;
       ctx.shadowOffsetX = 2;
       ctx.shadowOffsetY = 2;
-      ctx.fillText('Unity Quest • Chronicles of Love', canvas.width / 2, 120);
+      ctx.fillText('Unity Quest', canvas.width / 2, 40);
       
-      // Référence biblique (sous le titre)
-      ctx.font = 'bold 32px sans-serif';
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      // Référence biblique
+      ctx.font = 'bold 22px sans-serif';
+      ctx.fillStyle = currentColors.accent;
       const reference = `${t('bible.john')} ${chapterNumber}:${verse.number}`;
-      ctx.fillText(reference, canvas.width / 2, 170);
+      ctx.fillText(reference, canvas.width / 2, 75);
       
-      // Texte du verset au centre
-      const maxWidth = canvas.width - 200; // Plus large en portrait
-      const lineHeight = 55;
+      ctx.restore();
       
-      ctx.font = 'bold 42px serif';
-      ctx.fillStyle = '#ffffff';
+      // ===== TEXTE DU VERSET - GRAND ET STYLISÉ =====
+      const startY = 120; // Commence après le titre simple
+      const footerHeight = 120;
+      const availableSpace = canvas.height - startY - footerHeight;
       
-      const wrapText = (text, maxWidth) => {
-        const words = text.split(' ');
-        const lines = [];
-        let currentLine = words[0];
+      // Calculer la taille de police optimale pour maximiser l'espace
+      const maxWidth = canvas.width - 60;
+      let fontSize = 58; // Commence grand
+      let lineHeight = fontSize * 1.3;
+      let lines = [];
+      let bestFit = { fontSize: fontSize, lines: [], lineHeight: lineHeight };
+      
+      // Essayer différentes tailles pour trouver la plus grande qui rentre
+      for (let size = 58; size >= 32; size -= 2) {
+        ctx.font = `bold ${size}px serif`;
+        lineHeight = size * 1.3;
+        
+        const words = (verse.text || '').split(' ');
+        lines = [];
+        let currentLine = words[0] || '';
         
         for (let i = 1; i < words.length; i++) {
           const testLine = currentLine + ' ' + words[i];
@@ -359,30 +380,68 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
           }
         }
         lines.push(currentLine);
-        return lines;
-      };
+        
+        const totalHeight = lines.length * lineHeight;
+        if (totalHeight <= availableSpace * 0.85) {
+          bestFit = { fontSize: size, lines: lines, lineHeight: lineHeight };
+          break;
+        }
+      }
       
-      const verseText = verse.text || '';
-      const lines = wrapText(verseText, maxWidth);
+      // Dessiner le texte avec la meilleure taille trouvée
+      ctx.font = `bold ${bestFit.fontSize}px serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
       
-      // Centrer verticalement le texte
-      const totalHeight = lines.length * lineHeight;
-      let y = (canvas.height - totalHeight) / 2 + 30; // Légèrement décalé vers le bas
+      // Ombres multiples pour effet de profondeur
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.9)';
+      ctx.shadowBlur = 25;
+      ctx.shadowOffsetX = 4;
+      ctx.shadowOffsetY = 4;
       
-      lines.forEach((line, index) => {
-        ctx.fillText(line, canvas.width / 2, y + index * lineHeight);
+      // Centrer verticalement
+      const totalHeight = bestFit.lines.length * bestFit.lineHeight;
+      let y = startY + (availableSpace - totalHeight) / 2 + bestFit.lineHeight / 2;
+      
+      bestFit.lines.forEach((line) => {
+        // Ombre forte
+        ctx.fillText(line, canvas.width / 2, y);
+        
+        // Contour subtil pour la définition
+        ctx.save();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.4)';
+        ctx.lineWidth = 1.5;
+        ctx.strokeText(line, canvas.width / 2, y);
+        ctx.restore();
+        
+        y += bestFit.lineHeight;
       });
       
-      // Hashtags en bas
-      ctx.font = '28px sans-serif';
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
-      ctx.shadowBlur = 5;
-      const hashtags = getHashtagsForLanguage(currentLanguage);
-      ctx.fillText(hashtags, canvas.width / 2, canvas.height - 100);
+      // ===== FOOTER SIMPLE EN BAS =====
+      ctx.save();
       
-      // Émojis décoratifs en bas
-      ctx.font = '32px sans-serif';
-      ctx.fillText('♥ ✟ ✿', canvas.width / 2, canvas.height - 50);
+      // Fond simple
+      const footerGradient = ctx.createLinearGradient(0, canvas.height - 120, 0, canvas.height);
+      footerGradient.addColorStop(0, 'rgba(0, 0, 0, 0.1)');
+      footerGradient.addColorStop(1, 'rgba(0, 0, 0, 0.4)');
+      ctx.fillStyle = footerGradient;
+      ctx.fillRect(0, canvas.height - 120, canvas.width, 120);
+      
+      // Hashtags
+      ctx.font = '20px sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.6)';
+      ctx.shadowBlur = 6;
+      const hashtags = getHashtagsForLanguage(currentLanguage);
+      ctx.fillText(hashtags, canvas.width / 2, canvas.height - 70);
+      
+      // Émojis
+      ctx.font = '24px sans-serif';
+      ctx.fillStyle = currentColors.accent;
+      ctx.fillText('♥ ✟ ✿', canvas.width / 2, canvas.height - 35);
+      
+      ctx.restore();
       
     } else {
       // MODE CARRÉ: Disposition originale centrée
@@ -581,7 +640,7 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
                   }`}
                 >
                   <div className="font-bold text-sm">Facebook</div>
-                  <div className="text-xs opacity-75">1200×630 (Portrait)</div>
+                  <div className="text-xs opacity-75">630×1200 (Portrait)</div>
                 </button>
               </div>
             </div>
@@ -646,7 +705,7 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
           
           {/* Info */}
           <div className="text-center text-sm text-gray-600 mb-4">
-            <p>📱 Format: {format === 'instagram' ? '1080×1080px (Instagram)' : '1200×630px (Facebook)'}</p>
+            <p>📱 Format: {format === 'instagram' ? '1080×1080px (Instagram Carré)' : '630×1200px (Facebook Portrait)'}</p>
             <p>💾 Type: JPEG • Qualité: 95%</p>
           </div>
           
@@ -663,16 +722,35 @@ const VerseImageGenerator = ({ verse, chapterNumber, onClose, show }) => {
           </button>
           
           {/* Social Media Tips */}
-          <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-            <h4 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
-              📱 {currentLanguage === 'fr' ? 'Conseils partage' : 'Sharing tips'}
+          <div className="mt-4 p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border-2 border-blue-200">
+            <h4 className="font-bold text-blue-900 mb-3 flex items-center gap-2 text-lg">
+              📱 {currentLanguage === 'fr' ? 'Conseils de partage' : 'Sharing tips'}
             </h4>
-            <ul className="text-sm text-blue-800 space-y-1">
-              <li>✓ {format === 'instagram' ? 'Instagram Post (carré)' : 'Facebook Post (portrait)'}</li>
-              <li>✓ {currentLanguage === 'fr' ? 'Fond géométrique triangulaire' : 'Geometric triangle background'}</li>
-              <li>✓ {currentLanguage === 'fr' ? 'Décorations aléatoires +, * et △' : 'Random +, * and △ decorations'}</li>
-              <li>✓ {currentLanguage === 'fr' ? '5 thèmes de couleurs' : '5 color themes'}</li>
-            </ul>
+            
+            {/* App Title */}
+            <div className="mb-3 p-3 bg-white rounded-lg shadow-sm">
+              <p className="text-sm text-gray-600 mb-1">
+                {currentLanguage === 'fr' ? '📱 Titre de l\'app :' : '📱 App title:'}
+              </p>
+              <p className="font-bold text-purple-700 text-base">Unity Quest - Chronicles of Love</p>
+            </div>
+            
+            {/* Hashtags */}
+            <div className="mb-3 p-3 bg-white rounded-lg shadow-sm">
+              <p className="text-sm text-gray-600 mb-1">
+                {currentLanguage === 'fr' ? '# Hashtags suggérés :' : '# Suggested hashtags:'}
+              </p>
+              <p className="text-blue-700 text-sm font-mono break-words leading-relaxed">
+                {getHashtagsForLanguage(currentLanguage)}
+              </p>
+            </div>
+            
+            {/* Tips */}
+            <div className="text-xs text-gray-700 space-y-1">
+              <p>✓ {format === 'instagram' ? 'Instagram Post (1080×1080)' : 'Facebook Post (630×1200)'}</p>
+              <p>✓ {currentLanguage === 'fr' ? 'Copiez les hashtags et le titre dans votre publication' : 'Copy hashtags and title to your post'}</p>
+              <p>✓ {currentLanguage === 'fr' ? 'Partagez la Parole avec style !' : 'Share the Word with style!'}</p>
+            </div>
           </div>
         </div>
       </div>
