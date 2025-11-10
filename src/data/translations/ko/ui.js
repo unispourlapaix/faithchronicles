@@ -147,7 +147,9 @@ export const uiTranslations = {
     passwordTooShort: "비밀번호는 최소 6자 이상이어야 합니다",
     emailAlreadyExists: "이 이메일은 이미 사용 중입니다",
     invalidCredentials: "이메일 또는 비밀번호가 잘못되었습니다",
-    signupSuccess: "✅ 계정 생성 완료! 로그인 중...",
+    signupSuccess: "📧 계정이 생성되었습니다! 등록을 확인하기 위해 이메일을 확인하세요.",
+    emailConfirmationRequired: "계정을 활성화하기 위해 받은편지함을 확인하세요",
+    checkSpamFolder: "스팸 폴더를 확인하는 것을 잊지 마세요",
     connectionSuccess: "✅ 로그인 성공!",
     errorSignup: "가입 중 오류 발생"},
   

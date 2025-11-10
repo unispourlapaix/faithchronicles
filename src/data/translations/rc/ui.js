@@ -152,7 +152,9 @@ export const uiTranslations = {
     passwordTooShort: "Le mot de passe doit contenir au moins 6 caractères",
     emailAlreadyExists: "Cet email est déjà utilisé",
     invalidCredentials: "Email ou mot de passe incorrect",
-    signupSuccess: "✅ Compte créé ! Connexion...",
+    signupSuccess: "📧 Compte esalemi! Talela email na yo pona kondima inscription na yo.",
+    emailConfirmationRequired: "Talela boîte na yo ya email pona ko-activer compte na yo",
+    checkSpamFolder: "Kanisa ko-talela dossier na yo ya spam",
     connectionSuccess: "✅ Connexion réussie !",
     errorSignup: "Erreur lors de l'inscription"},
   

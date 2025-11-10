@@ -151,7 +151,9 @@ export const uiTranslations = {
     passwordTooShort: "パスワードは最低6文字必要です",
     emailAlreadyExists: "このメールは既に使用されています",
     invalidCredentials: "メールまたはパスワードが無効です",
-    signupSuccess: "✅ アカウント作成完了！ログイン中...",
+    signupSuccess: "📧 アカウントが作成されました！登録を確認するためにメールをチェックしてください。",
+    emailConfirmationRequired: "アカウントを有効化するために受信トレイを確認してください",
+    checkSpamFolder: "スパムフォルダを確認することを忘れないでください",
     connectionSuccess: "✅ ログイン成功！",
     errorSignup: "登録エラー"},
   

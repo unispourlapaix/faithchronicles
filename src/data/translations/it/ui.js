@@ -152,7 +152,9 @@ export const uiTranslations = {
     passwordTooShort: "La password deve contenere almeno 6 caratteri",
     emailAlreadyExists: "Questa email è già in uso",
     invalidCredentials: "Email o password non validi",
-    signupSuccess: "✅ Account creato! Accesso...",
+    signupSuccess: "📧 Account creato! Controlla la tua email per confermare la registrazione.",
+    emailConfirmationRequired: "Controlla la tua casella di posta per attivare il tuo account",
+    checkSpamFolder: "Ricorda di controllare la cartella spam/posta indesiderata",
     connectionSuccess: "✅ Accesso riuscito!",
     errorSignup: "Errore durante la registrazione"},
   

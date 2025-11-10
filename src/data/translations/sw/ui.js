@@ -147,7 +147,9 @@ export const uiTranslations = {
     passwordTooShort: "Nywila lazima iwe na angalau herufi 6",
     emailAlreadyExists: "Barua pepe hii tayari inatumika",
     invalidCredentials: "Barua pepe au nywila si sahihi",
-    signupSuccess: "✅ Akaunti imeundwa! Inaingia...",
+    signupSuccess: "📧 Akaunti imeundwa! Angalia barua pepe yako kuhakikisha usajili wako.",
+    emailConfirmationRequired: "Angalia kisanduku chako cha barua kupata ili kuamilisha akaunti yako",
+    checkSpamFolder: "Kumbuka kuangalia folda yako ya spam/barua zisizohitajika",
     connectionSuccess: "✅ Umeingia kwa mafanikio!",
     errorSignup: "Hitilafu wakati wa kujiandikisha"},
   

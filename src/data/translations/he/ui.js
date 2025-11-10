@@ -154,7 +154,9 @@ export const uiTranslations = {
     passwordTooShort: "הסיסמה חייבת להכיל לפחות 6 תווים",
     emailAlreadyExists: "אימייל זה כבר בשימוש",
     invalidCredentials: "אימייל או סיסמה לא חוקיים",
-    signupSuccess: "✅ החשבון נוצר! מתחבר...",
+    signupSuccess: "📧 חשבון נוצר! בדוק את האימייל שלך לאישור ההרשמה.",
+    emailConfirmationRequired: "בדוק את תיבת הדואר הנכנס שלך כדי להפעיל את החשבון",
+    checkSpamFolder: "זכור לבדוק את תיקיית הספאם שלך",
     connectionSuccess: "✅ התחברות הצליחה!",
     errorSignup: "שגיאה בהרשמה"},
   

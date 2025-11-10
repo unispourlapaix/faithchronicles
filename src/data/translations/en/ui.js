@@ -150,7 +150,9 @@ export const uiTranslations = {
     passwordTooShort: "Password must be at least 6 characters",
     emailAlreadyExists: "This email is already in use",
     invalidCredentials: "Invalid email or password",
-    signupSuccess: "✅ Account created! Logging in...",
+    signupSuccess: "📧 Account created! Check your email to confirm your registration.",
+    emailConfirmationRequired: "Check your inbox to activate your account",
+    checkSpamFolder: "Remember to check your spam/junk folder",
     connectionSuccess: "✅ Successfully logged in!",
     errorSignup: "Error during sign up"},
   

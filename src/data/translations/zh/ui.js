@@ -152,7 +152,9 @@ export const uiTranslations = {
     passwordTooShort: "密码必须至少6个字符",
     emailAlreadyExists: "此邮箱已被使用",
     invalidCredentials: "邮箱或密码无效",
-    signupSuccess: "✅ 账户已创建！登录中...",
+    signupSuccess: "📧 账户已创建！请查看您的邮箱以确认注册。",
+    emailConfirmationRequired: "请查看您的收件箱以激活账户",
+    checkSpamFolder: "请记得检查垃圾邮件文件夹",
     connectionSuccess: "✅ 登录成功！",
     errorSignup: "注册时出错"},
   

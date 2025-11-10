@@ -125,9 +125,9 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
             setMessage(t('login.errorSignup') || 'Erreur lors de l\'inscription');
           }
         } else {
-          console.log('✅ Inscription réussie');
-          setMessage(t('login.signupSuccess') || '✅ Compte créé ! Connexion...');
-          // L'utilisateur est automatiquement connecté après inscription
+          console.log('✅ Inscription réussie - En attente de confirmation email');
+          setMessage('📧 Compte créé ! Vérifiez votre email pour confirmer votre inscription.');
+          // Ne pas se connecter automatiquement - attendre la confirmation email
         }
       } else {
         // Connexion
@@ -570,6 +570,23 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
                   {t('login.signup') || 'Inscription'}
                 </button>
               </div>
+
+              {/* Info confirmation email (seulement en mode inscription) */}
+              {authMode === 'signup' && (
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-lg">
+                  <div className="flex items-start">
+                    <span className="text-blue-500 mr-2">📧</span>
+                    <div className="text-sm text-blue-700">
+                      <p className="font-semibold mb-1">
+                        {t('login.emailConfirmationRequired') || 'Vérifiez votre boîte mail pour activer votre compte'}
+                      </p>
+                      <p className="text-xs text-blue-600">
+                        {t('login.checkSpamFolder') || 'Pensez à vérifier vos spams/courrier indésirable'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Email */}
               <div>
