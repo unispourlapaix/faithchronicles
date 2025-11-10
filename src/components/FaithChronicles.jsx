@@ -8,6 +8,7 @@ import { supabase, isSupabaseConfigured } from '../lib/supabase.js';
 import { useTranslation } from '../hooks/useTranslation.js';
 
 import LoginScreen from './screens/LoginScreenSimple';
+import PasswordResetScreen from './screens/PasswordResetScreen';
 import PseudoSetupScreen from './screens/PseudoSetupScreen';
 import MenuScreen from './screens/MenuScreen';
 import LevelSelectScreen from './screens/LevelSelectScreen';
@@ -91,6 +92,17 @@ const FaithChronicles = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({title: '', content: ''});
   const [questionsAnswered, setQuestionsAnswered] = useState(0);
+
+  // Détecter si on arrive depuis un lien de réinitialisation de mot de passe
+  useEffect(() => {
+    const hashParams = new URLSearchParams(window.location.hash.substring(1));
+    const type = hashParams.get('type');
+    
+    if (type === 'recovery') {
+      console.log('🔑 Lien de réinitialisation de mot de passe détecté');
+      setCurrentScreen('password-reset');
+    }
+  }, []);
 
   // Gérer la connexion utilisateur
   const handleAnonymousLogin = async (pseudo) => {
@@ -566,6 +578,11 @@ const FaithChronicles = () => {
             onSignup={signUpWithPassword}
             onResetPassword={resetPassword}
             audio={audio}
+          />
+        )}
+        {currentScreen === 'password-reset' && (
+          <PasswordResetScreen
+            onResetComplete={() => setCurrentScreen('login')}
           />
         )}
         {currentScreen === 'pseudo-setup' && (
