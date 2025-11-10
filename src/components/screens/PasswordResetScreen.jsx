@@ -16,13 +16,31 @@ const PasswordResetScreen = ({ onResetComplete }) => {
   useEffect(() => {
     // Vérifier si on a un token de réinitialisation valide
     const checkSession = async () => {
+      // Vérifier d'abord si on a une erreur dans l'URL
+      const hashParams = new URLSearchParams(window.location.hash.substring(1));
+      const error = hashParams.get('error');
+      const errorDescription = hashParams.get('error_description');
+      
+      if (error) {
+        setIsValidSession(false);
+        if (errorDescription?.includes('expired')) {
+          setMessage(t('login.resetLinkExpired') || '❌ Ce lien de réinitialisation a expiré. Veuillez en demander un nouveau.');
+        } else {
+          setMessage(t('login.resetLinkExpired') || '❌ Lien de réinitialisation invalide');
+        }
+        setMessageType('error');
+        console.log('❌ Erreur URL:', error, errorDescription);
+        return;
+      }
+
+      // Sinon, vérifier la session
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
         setIsValidSession(true);
         console.log('✅ Session de réinitialisation valide');
       } else {
         setIsValidSession(false);
-        setMessage(t('login.resetLinkExpired') || '❌ Lien de réinitialisation expiré ou invalide');
+        setMessage(t('login.resetLinkExpired') || '❌ Ce lien de réinitialisation a expiré. Veuillez en demander un nouveau.');
         setMessageType('error');
         console.log('❌ Pas de session de réinitialisation');
       }
@@ -89,16 +107,29 @@ const PasswordResetScreen = ({ onResetComplete }) => {
                 <Lock className="text-white" size={32} />
               </div>
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                {t('login.resetLinkExpired') || 'Lien Expiré'}
+                {t('login.resetLinkExpired') || '⏰ Lien Expiré'}
               </h2>
-              <p className="text-gray-600 mb-6">
-                {message}
+              <p className="text-gray-600 mb-4">
+                Ce lien de réinitialisation a expiré ou est invalide.
               </p>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 text-left">
+                <p className="text-sm text-gray-700">
+                  <strong>💡 Solution :</strong>
+                  <br />
+                  1. Retournez à l'écran de connexion
+                  <br />
+                  2. Cliquez sur "Mot de passe oublié ?"
+                  <br />
+                  3. Demandez un nouveau lien
+                  <br />
+                  4. Utilisez-le dans les 15 minutes
+                </p>
+              </div>
               <button
                 onClick={() => onResetComplete && onResetComplete()}
                 className="w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl active:scale-95 transition-all"
               >
-                {t('login.backToSignin') || 'Retour à la connexion'}
+                {t('login.backToSignin') || '← Retour à la connexion'}
               </button>
             </div>
           </div>

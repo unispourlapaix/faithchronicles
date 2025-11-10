@@ -97,8 +97,19 @@ const FaithChronicles = () => {
   useEffect(() => {
     const hashParams = new URLSearchParams(window.location.hash.substring(1));
     const type = hashParams.get('type');
+    const error = hashParams.get('error');
+    const errorDescription = hashParams.get('error_description');
     
-    if (type === 'recovery') {
+    if (error) {
+      console.warn('⚠️ Erreur dans l\'URL:', error, errorDescription);
+      
+      if (error === 'access_denied' && errorDescription?.includes('expired')) {
+        console.log('🔑 Lien de réinitialisation expiré - Affichage du message d\'erreur');
+        setCurrentScreen('password-reset');
+      } else {
+        console.error('❌ Erreur d\'authentification:', error);
+      }
+    } else if (type === 'recovery') {
       console.log('🔑 Lien de réinitialisation de mot de passe détecté');
       setCurrentScreen('password-reset');
     }
