@@ -7,7 +7,7 @@ import { debounce } from '../utils/retryHelper.js';
 import { supabase, isSupabaseConfigured } from '../lib/supabase.js';
 import { useTranslation } from '../hooks/useTranslation.js';
 
-import LoginScreen from './screens/LoginScreen';
+import LoginScreen from './screens/LoginScreenSimple';
 import PseudoSetupScreen from './screens/PseudoSetupScreen';
 import MenuScreen from './screens/MenuScreen';
 import LevelSelectScreen from './screens/LevelSelectScreen';
@@ -561,11 +561,8 @@ const FaithChronicles = () => {
 
         {currentScreen === 'login' && (
           <LoginScreen
-            onAnonymous={handleAnonymousLogin}
-            onLogin={handleEmailLogin}
             onLoginWithPassword={signInWithPassword}
             onSignup={signUpWithPassword}
-            importSessionFromProduction={importSessionFromProduction}
             audio={audio}
           />
         )}

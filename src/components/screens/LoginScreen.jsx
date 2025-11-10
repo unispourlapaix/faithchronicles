@@ -5,15 +5,14 @@ import { getLanguage, getLanguageList } from '../../data/translations/languages.
 
 const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, importSessionFromProduction, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
-  const [mode, setMode] = useState(null); // null, 'anonymous', 'email', 'password'
   const [authMode, setAuthMode] = useState('signin'); // 'signin' ou 'signup'
-  const [pseudo, setPseudo] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
 
   const suggestedPseudos = [
     'CHRONICLES', 'faith', 'UNITY', 'Hope', 'Grace', 'Light', 
@@ -155,11 +154,10 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
     }
   };
 
-  // Écran de choix initial
-  if (!mode) {
-    return (
-      <div className="h-full bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 flex flex-col items-center justify-center p-6">
-        {/* Sélecteur de langue en haut à droite */}
+  // Interface de connexion unique (email + mot de passe)
+  return (
+    <div className="h-full bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 flex flex-col items-center justify-center p-6">
+      {/* Sélecteur de langue en haut à droite */}
         <div className="absolute top-4 right-4 z-50">
           <button
             onClick={() => {
