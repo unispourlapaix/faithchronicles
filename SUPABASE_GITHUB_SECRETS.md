@@ -63,9 +63,10 @@ REACT_APP_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    - **Name** : `REACT_APP_SUPABASE_URL`
    - **Secret** : Collez votre URL Supabase
      ```
-     https://dmszyxowetilvsanqsxm.supabase.co
+     https://VOTRE_PROJET.supabase.co
      ```
-     *(Remplacez par votre vraie URL)*
+     *(Remplacez VOTRE_PROJET par votre identifiant de projet Supabase)*
+     *(Format : https://xyz...abc.supabase.co)*
 
 3. Cliquez sur **Add secret**
 
@@ -77,9 +78,10 @@ REACT_APP_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    - **Name** : `REACT_APP_SUPABASE_ANON_KEY`
    - **Secret** : Collez votre clé anon complète
      ```
-     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtc3p5eG93ZXRpbHZzYW5xc3htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3NzM0NDUsImV4cCI6MjA3NTM0OTQ0NX0.EukDYFVt0sCrDb0_V4ZPMv5B4gkD43V8Cw7CEuvl0C8
+     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOi...VOTRE_CLE_ICI
      ```
-     *(Remplacez par votre vraie clé)*
+     *(Commence par `eyJ` et fait environ 200 caractères)*
+     *(Récupérez-la depuis Supabase Dashboard → Settings → API)*
 
 3. Cliquez sur **Add secret**
 
