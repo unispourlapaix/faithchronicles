@@ -643,19 +643,32 @@
                 margin-top: 2px;
             }
             
-            /* Score en bas sur toute la largeur */
+            /* Score en bas sur toute la largeur avec badges */
             .score-value {
                 grid-column: 1 / 4;
                 grid-row: 3;
                 font-size: 18px;
                 font-weight: 700;
-                color: #3b82f6;
+                color: #2c3e50;
                 text-align: center;
                 margin-top: 6px;
                 padding: 6px 10px;
-                background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+                background: white;
                 border-radius: 8px;
-                border-left: 4px solid #3b82f6;
+                border: 2px solid #d1d5db;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+            
+            /* Badges intégrés dans le score sur mobile */
+            .table-row .badges {
+                grid-column: auto;
+                grid-row: auto;
+                position: static;
+                margin: 0;
+                order: 1;
             }
             
             .progress-container {
@@ -1286,15 +1299,17 @@
                 }
 
                 const badges = getBadges({ sagesse, niveau_atteint: niveau }, globalRank === 1, enigmes);
-                const badgesHtml = badges.join(' ');
+                const badgesHtml = badges.length > 0 ? `<span class="badges">${badges.join(' ')}</span>` : '';
+                
+                // Score avec badges intégrés
+                const scoreDisplay = `💎 ${score.toLocaleString()} ${badgesHtml}`;
 
                 html += `
                     <div class="${rowClass}" data-rank="${medal}">
                         <div class="rank ${rankClass}">${medal}</div>
                         <div class="avatar">${avatar}</div>
                         <div>${levelInfo}</div>
-                        <div class="badges">${badgesHtml}</div>
-                        <div class="score-value">${score.toLocaleString()}</div>
+                        <div class="score-value">${scoreDisplay}</div>
                     </div>
                 `;
             });
