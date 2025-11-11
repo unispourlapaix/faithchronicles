@@ -417,6 +417,36 @@
             color: #7f8c8d;
             margin-top: 3px;
         }
+        
+        .progress-container {
+            margin-top: 5px;
+            background: #ecf0f1;
+            border-radius: 10px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-info {
+            font-size: 10px;
+            color: #95a5a6;
+            margin-top: 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .next-rank {
+            font-weight: 600;
+            color: #667eea;
+        }
 
         .badges {
             display: flex;
@@ -535,30 +565,41 @@
             }
 
             .table-header {
-                grid-template-columns: 40px 40px 1fr 70px;
-                gap: 8px;
+                grid-template-columns: 50px 50px 1fr 100px;
+                gap: 10px;
                 font-size: 11px;
-                padding: 10px 12px;
+                padding: 12px 15px;
             }
 
             .table-row {
-                grid-template-columns: 40px 40px 1fr 70px;
-                gap: 8px;
-                font-size: 11px;
-                padding: 10px 12px;
+                grid-template-columns: 50px 50px 1fr 100px;
+                gap: 10px;
+                font-size: 12px;
+                padding: 12px 15px;
+            }
+            
+            .table-header div:nth-child(4),
+            .table-row div:nth-child(4) {
+                display: none;
             }
 
             .player-level,
             .badges {
                 display: none !important;
             }
+            
+            .progress-container,
+            .progress-info {
+                display: none !important;
+            }
 
             .player-name {
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .score-value {
-                font-size: 14px;
+                font-size: 15px;
+                font-weight: 700;
             }
 
             .pagination {
@@ -698,17 +739,32 @@
 
         // Niveaux de sagesse
         const niveauxSagesse = [
-            { min: 0, max: 99, titre: 'Débutant', icone: '🌱' },
-            { min: 100, max: 299, titre: 'Apprenti', icone: '🌿' },
-            { min: 300, max: 599, titre: 'Adepte', icone: '🍀' },
-            { min: 600, max: 999, titre: 'Sage', icone: '✨' },
-            { min: 1000, max: 1499, titre: 'Maître', icone: '🌟' },
-            { min: 1500, max: 2099, titre: 'Éveillé', icone: '💫' },
-            { min: 2100, max: 9999, titre: 'Illuminé', icone: '🔮' }
+            { min: 0, max: 499, titre: 'Seeker', icone: '🌱', next: 500 },
+            { min: 500, max: 1499, titre: 'Disciple', icone: '📖', next: 1500 },
+            { min: 1500, max: 2999, titre: 'Éveillé', icone: '💫', next: 3000 },
+            { min: 3000, max: 4999, titre: 'Fidèle', icone: '🙏', next: 5000 },
+            { min: 5000, max: 7999, titre: 'Sage', icone: '📜', next: 8000 },
+            { min: 8000, max: 11999, titre: 'Prophète', icone: '�️', next: 12000 },
+            { min: 12000, max: 999999, titre: 'Saint', icone: '�', next: null }
         ];
 
         function getNiveauSagesse(sagesse) {
             return niveauxSagesse.find(n => sagesse >= n.min && sagesse <= n.max) || niveauxSagesse[0];
+        }
+        
+        function getProgressToNextRank(sagesse) {
+            const currentRank = getNiveauSagesse(sagesse);
+            if (!currentRank.next) return { percent: 100, remaining: 0, next: null };
+            
+            const rangeSize = currentRank.next - currentRank.min;
+            const progress = sagesse - currentRank.min;
+            const percent = Math.min(100, Math.floor((progress / rangeSize) * 100));
+            const remaining = currentRank.next - sagesse;
+            
+            const nextRankIndex = niveauxSagesse.findIndex(n => n.min === currentRank.next);
+            const nextRank = nextRankIndex >= 0 ? niveauxSagesse[nextRankIndex] : null;
+            
+            return { percent, remaining, next: nextRank };
         }
 
         function getBadges(donnees, isFirst, enigmes) {
@@ -1123,11 +1179,37 @@
                 let levelInfo = '';
                 if (sagesse > 0) {
                     const niveauSagesse = getNiveauSagesse(sagesse);
+                    const progression = getProgressToNextRank(sagesse);
                     const enigmesInfo = enigmes > 0 ? ` • ${enigmes}/18🧩` : '';
                     const niveauInfo = niveau > 1 ? ` • Ch.${niveau}` : '';
+                    
+                    let progressBarHtml = '';
+                    if (progression.next) {
+                        progressBarHtml = `
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: ${progression.percent}%"></div>
+                            </div>
+                            <div class="progress-info">
+                                <span>${progression.percent}%</span>
+                                <span class="next-rank">→ ${progression.next.icone} ${progression.next.titre}</span>
+                                <span>-${progression.remaining.toLocaleString()} pts</span>
+                            </div>
+                        `;
+                    } else {
+                        progressBarHtml = `
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="progress-info">
+                                <span style="color: #f39c12; font-weight: 700;">✨ Rang Maximum Atteint! ✨</span>
+                            </div>
+                        `;
+                    }
+                    
                     levelInfo = `
                         <div class="player-name">${pseudo}</div>
                         <div class="player-level">${niveauSagesse.icone} ${niveauSagesse.titre}${niveauInfo}${enigmesInfo}</div>
+                        ${progressBarHtml}
                     `;
                 } else {
                     levelInfo = `
