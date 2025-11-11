@@ -127,22 +127,77 @@
       background: #f093fb;
     }
     
+    .download-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
     .download-btn {
-      width: 100%;
+      flex: 1;
       padding: 15px;
       background: linear-gradient(135deg, #667eea, #764ba2);
       border: none;
       border-radius: 12px;
       color: white;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.95rem;
       cursor: pointer;
       transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
     
     .download-btn:hover {
       transform: scale(1.02);
       box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+    }
+    
+    .download-btn.jpg {
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+    }
+    
+    .caption-box {
+      background: #1a1a2e;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 10px;
+      border-left: 4px solid #667eea;
+    }
+    
+    .caption-box h4 {
+      color: #f093fb;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .caption-text {
+      color: #ccc;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    
+    .copy-caption-btn {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #667eea;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .copy-caption-btn:hover {
+      background: #764ba2;
+      transform: scale(1.05);
     }
     
     .hashtags-section {
@@ -205,9 +260,21 @@
           <canvas id="instagram-canvas" width="1080" height="1080"></canvas>
         </div>
         <div class="language-selector" id="instagram-langs"></div>
-        <button class="download-btn" onclick="downloadFormat('instagram')">
-          📥 Télécharger Instagram Post
-        </button>
+        <div class="download-buttons">
+          <button class="download-btn" onclick="downloadFormat('instagram', 'png')">
+            �️ PNG
+          </button>
+          <button class="download-btn jpg" onclick="downloadFormat('instagram', 'jpg')">
+            📷 JPG
+          </button>
+        </div>
+        <div class="caption-box">
+          <h4>✍️ Texte d'accroche</h4>
+          <div class="caption-text" id="instagram-caption"></div>
+          <button class="copy-caption-btn" onclick="copyCaptions('instagram')">
+            📋 Copier le texte
+          </button>
+        </div>
       </div>
 
       <!-- Instagram Story -->
@@ -218,9 +285,21 @@
           <canvas id="story-canvas" width="1080" height="1920"></canvas>
         </div>
         <div class="language-selector" id="story-langs"></div>
-        <button class="download-btn" onclick="downloadFormat('story')">
-          📥 Télécharger Instagram Story
-        </button>
+        <div class="download-buttons">
+          <button class="download-btn" onclick="downloadFormat('story', 'png')">
+            �️ PNG
+          </button>
+          <button class="download-btn jpg" onclick="downloadFormat('story', 'jpg')">
+            📷 JPG
+          </button>
+        </div>
+        <div class="caption-box">
+          <h4>✍️ Texte d'accroche</h4>
+          <div class="caption-text" id="story-caption"></div>
+          <button class="copy-caption-btn" onclick="copyCaptions('story')">
+            📋 Copier le texte
+          </button>
+        </div>
       </div>
 
       <!-- Twitter/X -->
@@ -231,9 +310,21 @@
           <canvas id="twitter-canvas" width="1200" height="675"></canvas>
         </div>
         <div class="language-selector" id="twitter-langs"></div>
-        <button class="download-btn" onclick="downloadFormat('twitter')">
-          📥 Télécharger Twitter Post
-        </button>
+        <div class="download-buttons">
+          <button class="download-btn" onclick="downloadFormat('twitter', 'png')">
+            �️ PNG
+          </button>
+          <button class="download-btn jpg" onclick="downloadFormat('twitter', 'jpg')">
+            📷 JPG
+          </button>
+        </div>
+        <div class="caption-box">
+          <h4>✍️ Texte d'accroche</h4>
+          <div class="caption-text" id="twitter-caption"></div>
+          <button class="copy-caption-btn" onclick="copyCaptions('twitter')">
+            📋 Copier le texte
+          </button>
+        </div>
       </div>
 
       <!-- Facebook -->
@@ -244,9 +335,21 @@
           <canvas id="facebook-canvas" width="1200" height="630"></canvas>
         </div>
         <div class="language-selector" id="facebook-langs"></div>
-        <button class="download-btn" onclick="downloadFormat('facebook')">
-          📥 Télécharger Facebook Post
-        </button>
+        <div class="download-buttons">
+          <button class="download-btn" onclick="downloadFormat('facebook', 'png')">
+            �️ PNG
+          </button>
+          <button class="download-btn jpg" onclick="downloadFormat('facebook', 'jpg')">
+            📷 JPG
+          </button>
+        </div>
+        <div class="caption-box">
+          <h4>✍️ Texte d'accroche</h4>
+          <div class="caption-text" id="facebook-caption"></div>
+          <button class="copy-caption-btn" onclick="copyCaptions('facebook')">
+            📋 Copier le texte
+          </button>
+        </div>
       </div>
     </div>
 
@@ -300,103 +403,120 @@
         title: "FaithChronicles",
         subtitle: "Chronicles of Love",
         quote: "L'unité qui produit la paix",
-        hashtag: "#UnityQuestCOL #Peace #Love"
+        hashtag: "#UnityQuestCOL #Peace #Love",
+        caption: "🙏 Découvrez FaithChronicles, un jeu biblique interactif qui célèbre l'unité et la paix à travers la foi.\n\n✨ Testez vos connaissances avec 91 questions couvrant toute la Bible\n📖 Explorez l'Évangile de Jean avec concordance Strong\n🌍 Disponible en 17 langues\n\n💜 Parce que l'unité produit la paix\n\n🎮 Jouez maintenant : unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       en: {
         title: "FaithChronicles",
         subtitle: "Chronicles of Love",
         quote: "Unity that produces peace",
-        hashtag: "#UnityQuestCOL #Peace #Love"
+        hashtag: "#UnityQuestCOL #Peace #Love",
+        caption: "🙏 Discover FaithChronicles, an interactive biblical game celebrating unity and peace through faith.\n\n✨ Test your knowledge with 91 questions covering the entire Bible\n📖 Explore the Gospel of John with Strong's Concordance\n🌍 Available in 17 languages\n\n💜 Because unity produces peace\n\n🎮 Play now: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       es: {
         title: "FaithChronicles",
         subtitle: "Crónicas del Amor",
         quote: "La unidad que produce la paz",
-        hashtag: "#UnityQuestCOL #Paz #Amor"
+        hashtag: "#UnityQuestCOL #Paz #Amor",
+        caption: "🙏 Descubre FaithChronicles, un juego bíblico interactivo que celebra la unidad y la paz a través de la fe.\n\n✨ Pon a prueba tus conocimientos con 91 preguntas de toda la Biblia\n📖 Explora el Evangelio de Juan con concordancia Strong\n🌍 Disponible en 17 idiomas\n\n💜 Porque la unidad produce paz\n\n🎮 Juega ahora: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       de: {
         title: "FaithChronicles",
         subtitle: "Chroniken der Liebe",
         quote: "Einheit, die Frieden schafft",
-        hashtag: "#UnityQuestCOL #Frieden #Liebe"
+        hashtag: "#UnityQuestCOL #Frieden #Liebe",
+        caption: "🙏 Entdecke FaithChronicles, ein interaktives Bibelspiel, das Einheit und Frieden durch Glauben feiert.\n\n✨ Teste dein Wissen mit 91 Fragen zur gesamten Bibel\n📖 Erkunde das Johannes-Evangelium mit Strong-Konkordanz\n🌍 Verfügbar in 17 Sprachen\n\n💜 Weil Einheit Frieden schafft\n\n🎮 Jetzt spielen: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       it: {
         title: "FaithChronicles",
         subtitle: "Cronache d'Amore",
         quote: "L'unità che produce pace",
-        hashtag: "#UnityQuestCOL #Pace #Amore"
+        hashtag: "#UnityQuestCOL #Pace #Amore",
+        caption: "🙏 Scopri FaithChronicles, un gioco biblico interattivo che celebra l'unità e la pace attraverso la fede.\n\n✨ Metti alla prova le tue conoscenze con 91 domande su tutta la Bibbia\n📖 Esplora il Vangelo di Giovanni con concordanza Strong\n🌍 Disponibile in 17 lingue\n\n💜 Perché l'unità produce pace\n\n🎮 Gioca ora: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       pt: {
         title: "FaithChronicles",
         subtitle: "Crônicas do Amor",
         quote: "A unidade que produz paz",
-        hashtag: "#UnityQuestCOL #Paz #Amor"
+        hashtag: "#UnityQuestCOL #Paz #Amor",
+        caption: "🙏 Descubra FaithChronicles, um jogo bíblico interativo que celebra a unidade e a paz através da fé.\n\n✨ Teste seus conhecimentos com 91 perguntas cobrindo toda a Bíblia\n📖 Explore o Evangelho de João com concordância Strong\n🌍 Disponível em 17 idiomas\n\n💜 Porque a unidade produz paz\n\n🎮 Jogue agora: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       ru: {
         title: "FaithChronicles",
         subtitle: "Хроники Любви",
         quote: "Единство, рождающее мир",
-        hashtag: "#UnityQuestCOL #Мир #Любовь"
+        hashtag: "#UnityQuestCOL #Мир #Любовь",
+        caption: "🙏 Откройте для себя FaithChronicles, интерактивную библейскую игру, прославляющую единство и мир через веру.\n\n✨ Проверьте свои знания с 91 вопросом по всей Библии\n📖 Изучите Евангелие от Иоанна с симфонией Стронга\n🌍 Доступно на 17 языках\n\n💜 Потому что единство рождает мир\n\n🎮 Играйте сейчас: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       uk: {
         title: "FaithChronicles",
         subtitle: "Хроніки Кохання",
         quote: "Єдність, що породжує мир",
-        hashtag: "#UnityQuestCOL #Мир #Любов"
+        hashtag: "#UnityQuestCOL #Мир #Любов",
+        caption: "🙏 Відкрийте для себе FaithChronicles, інтерактивну біблійну гру, що прославляє єдність і мир через віру.\n\n✨ Перевірте свої знання з 91 питанням по всій Біблії\n📖 Вивчайте Євангеліє від Іоана з симфонією Стронга\n🌍 Доступно 17 мовами\n\n💜 Тому що єдність породжує мир\n\n🎮 Грайте зараз: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       zh: {
         title: "FaithChronicles",
         subtitle: "爱的编年史",
         quote: "产生和平的团结",
-        hashtag: "#UnityQuestCOL #和平 #爱"
+        hashtag: "#UnityQuestCOL #和平 #爱",
+        caption: "🙏 发现FaithChronicles，一个通过信仰庆祝团结与和平的互动圣经游戏。\n\n✨ 通过91个涵盖整本圣经的问题测试您的知识\n📖 使用Strong词典探索约翰福音\n🌍 支持17种语言\n\n💜 因为团结产生和平\n\n🎮 现在玩: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       ar: {
         title: "FaithChronicles",
         subtitle: "سجلات الحب",
         quote: "الوحدة التي تنتج السلام",
-        hashtag: "#UnityQuestCOL #السلام #الحب"
+        hashtag: "#UnityQuestCOL #السلام #الحب",
+        caption: "🙏 اكتشف FaithChronicles، لعبة كتابية تفاعلية تحتفل بالوحدة والسلام من خلال الإيمان.\n\n✨ اختبر معرفتك مع 91 سؤالاً يغطي الكتاب المقدس بأكمله\n📖 استكشف إنجيل يوحنا مع قاموس سترونج\n🌍 متاح بـ 17 لغة\n\n💜 لأن الوحدة تنتج السلام\n\n🎮 العب الآن: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       he: {
         title: "FaithChronicles",
         subtitle: "דברי הימים של אהבה",
         quote: "האחדות היוצרת שלום",
-        hashtag: "#UnityQuestCOL #שלום #אהבה"
+        hashtag: "#UnityQuestCOL #שלום #אהבה",
+        caption: "🙏 גלה את FaithChronicles, משחק תנ\"כי אינטראקטיבי החוגג אחדות ושלום דרך אמונה.\n\n✨ בדוק את הידע שלך עם 91 שאלות המכסות את כל התנ\"ך\n📖 חקור את בשורת יוחנן עם קונקורדנציה של סטרונג\n🌍 זמין ב-17 שפות\n\n💜 כי אחדות יוצרת שלום\n\n🎮 שחק עכשיו: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       jp: {
         title: "FaithChronicles",
         subtitle: "愛の年代記",
         quote: "平和を生み出す統一",
-        hashtag: "#UnityQuestCOL #平和 #愛"
+        hashtag: "#UnityQuestCOL #平和 #愛",
+        caption: "🙏 信仰を通じて統一と平和を祝うインタラクティブな聖書ゲーム、FaithChroniclesを発見してください。\n\n✨ 聖書全体をカバーする91の質問で知識をテスト\n📖 ストロング辞典でヨハネの福音書を探索\n🌍 17言語で利用可能\n\n💜 統一が平和を生み出すから\n\n🎮 今すぐプレイ: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       ko: {
         title: "FaithChronicles",
         subtitle: "사랑의 연대기",
         quote: "평화를 만드는 통일",
-        hashtag: "#UnityQuestCOL #평화 #사랑"
+        hashtag: "#UnityQuestCOL #평화 #사랑",
+        caption: "🙏 믿음을 통해 통일과 평화를 축하하는 인터랙티브 성경 게임, FaithChronicles를 발견하세요.\n\n✨ 전체 성경을 다루는 91개의 질문으로 지식을 테스트\n📖 스트롱 사전으로 요한복음 탐색\n🌍 17개 언어로 이용 가능\n\n💜 통일이 평화를 만들기 때문에\n\n🎮 지금 플레이: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       hi: {
         title: "FaithChronicles",
         subtitle: "प्रेम का इतिहास",
         quote: "एकता जो शांति उत्पन्न करती है",
-        hashtag: "#UnityQuestCOL #शांति #प्रेम"
+        hashtag: "#UnityQuestCOL #शांति #प्रेम",
+        caption: "🙏 FaithChronicles की खोज करें, एक इंटरैक्टिव बाइबिल गेम जो विश्वास के माध्यम से एकता और शांति का जश्न मनाता है।\n\n✨ संपूर्ण बाइबिल को कवर करने वाले 91 प्रश्नों के साथ अपने ज्ञान का परीक्षण करें\n📖 स्ट्रॉन्ग कॉनकॉर्डेंस के साथ यूहन्ना के सुसमाचार का अन्वेषण करें\n🌍 17 भाषाओं में उपलब्ध\n\n💜 क्योंकि एकता शांति उत्पन्न करती है\n\n🎮 अभी खेलें: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       sw: {
         title: "FaithChronicles",
         subtitle: "Historia ya Upendo",
         quote: "Umoja unao zaa amani",
-        hashtag: "#UnityQuestCOL #Amani #Upendo"
+        hashtag: "#UnityQuestCOL #Amani #Upendo",
+        caption: "🙏 Gundua FaithChronicles, mchezo wa interaktivo wa Biblia unaosherehekea umoja na amani kupitia imani.\n\n✨ Jaribu maarifa yako na maswali 91 yanayoshughulikia Biblia nzima\n📖 Chunguza Injili ya Yohana na Strong's Concordance\n🌍 Inapatikana kwa lugha 17\n\n💜 Kwa sababu umoja unazaa amani\n\n🎮 Cheza sasa: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       pl: {
         title: "FaithChronicles",
         subtitle: "Kroniki Miłości",
         quote: "Jedność rodząca pokój",
-        hashtag: "#UnityQuestCOL #Pokój #Miłość"
+        hashtag: "#UnityQuestCOL #Pokój #Miłość",
+        caption: "🙏 Odkryj FaithChronicles, interaktywną grę biblijną celebrującą jedność i pokój przez wiarę.\n\n✨ Sprawdź swoją wiedzę z 91 pytaniami obejmującymi całą Biblię\n📖 Poznaj Ewangelię Jana z konkordancją Stronga\n🌍 Dostępna w 17 językach\n\n💜 Bo jedność rodzi pokój\n\n🎮 Zagraj teraz: unispourlapaix.github.io/unityquest-chronicles-of-love"
       },
       rc: {
         title: "FaithChronicles",
         subtitle: "Makambu ya Bolingo",
         quote: "Lisángá oyo ebimisaka kimya",
-        hashtag: "#UnityQuestCOL #Kimya #Bolingo"
+        hashtag: "#UnityQuestCOL #Kimya #Bolingo",
+        caption: "🙏 Yeba FaithChronicles, lisano ya interaktif ya Biblia oyo esepelaka na lisángá mpe kimya na nzela ya kondima.\n\n✨ Meka boyebi na yo na mituna 91 oyo ezali kolobela Biblia mobimba\n📖 Luká Nsango Malamu ya Yoane na Strong's Concordance\n🌍 Ezali na bilóko 17\n\n💜 Mpo lisángá ebimisaka kimya\n\n🎮 Sakana sik'oyo: unispourlapaix.github.io/unityquest-chronicles-of-love"
       }
     };
 
@@ -444,6 +564,35 @@
       
       // Redessiner le canvas
       drawFormat(format);
+      
+      // Mettre à jour le caption
+      updateCaption(format);
+    }
+    
+    // Mettre à jour le caption
+    function updateCaption(format) {
+      const lang = currentLang[format];
+      const trans = philosophyTranslations[lang];
+      const captionElement = document.getElementById(`${format}-caption`);
+      
+      if (captionElement) {
+        // Formater le caption avec emoji et hashtags
+        const formattedCaption = trans.caption.replace(/\n\n/g, '\n\n');
+        captionElement.textContent = formattedCaption;
+      }
+    }
+    
+    // Copier le caption dans le presse-papier
+    function copyCaptions(format) {
+      const lang = currentLang[format];
+      const trans = philosophyTranslations[lang];
+      
+      navigator.clipboard.writeText(trans.caption + '\n\n' + trans.hashtag).then(() => {
+        alert(`✅ Texte copié dans le presse-papier!\n\nLangue: ${lang.toUpperCase()}\n\nVous pouvez maintenant le coller dans votre post ${format} 📱`);
+      }).catch(err => {
+        console.error('Erreur copie:', err);
+        alert('❌ Erreur lors de la copie. Sélectionnez manuellement le texte.');
+      });
     }
 
     // Dessiner le logo avec texte
@@ -616,20 +765,35 @@
     }
 
     // Télécharger un format
-    function downloadFormat(format) {
+    function downloadFormat(format, imageFormat = 'png') {
       const canvas = document.getElementById(`${format}-canvas`);
-      const link = document.createElement('a');
       const lang = currentLang[format];
-      link.download = `faithchronicles-${format}-${lang}.png`;
-      link.href = canvas.toDataURL('image/png');
+      
+      // Définir le type MIME et l'extension
+      const mimeType = imageFormat === 'jpg' ? 'image/jpeg' : 'image/png';
+      const extension = imageFormat === 'jpg' ? 'jpg' : 'png';
+      const quality = imageFormat === 'jpg' ? 0.95 : undefined; // Qualité JPG haute
+      
+      // Créer le lien de téléchargement
+      const link = document.createElement('a');
+      link.download = `faithchronicles-${format}-${lang}.${extension}`;
+      link.href = canvas.toDataURL(mimeType, quality);
       link.click();
       
-      alert(`✅ Image téléchargée!\n\nFormat: ${format}\nLangue: ${lang}\n\nPartagez avec: ${philosophyTranslations[lang].hashtag}`);
+      // Message avec emoji selon le format d'image
+      const formatEmoji = imageFormat === 'jpg' ? '📷' : '🖼️';
+      const formatName = imageFormat.toUpperCase();
+      const trans = philosophyTranslations[lang];
+      
+      alert(`✅ Image téléchargée!\n\n${formatEmoji} Format: ${formatName}\n📱 Réseau: ${format}\n🌍 Langue: ${lang.toUpperCase()}\n\n💡 N'oubliez pas d'ajouter le texte d'accroche et:\n${trans.hashtag}`);
     }
 
     // Initialiser
     initLanguageButtons();
-    ['instagram', 'story', 'twitter', 'facebook'].forEach(drawFormat);
+    ['instagram', 'story', 'twitter', 'facebook'].forEach(format => {
+      drawFormat(format);
+      updateCaption(format);
+    });
   </script>
 </body>
 </html>
