@@ -118,27 +118,13 @@ const FaithChronicles = () => {
   // Gérer la connexion utilisateur
   const handleAnonymousLogin = async (pseudo) => {
     try {
-      if (!isSupabaseConfigured()) {
-        // Mode hors-ligne
-        localStorage.setItem('faithChronicles_pseudo', pseudo);
-        localStorage.setItem('faithChronicles_mode', 'anonymous');
-        setIsAnonymousMode(true);
-        setCurrentScreen('menu');
-        return { data: { pseudo }, error: null };
-      }
-
-      // Mode en ligne avec Supabase
-      const result = await signInAnonymously();
-      if (result.error) {
-        console.error('❌ Erreur connexion anonyme:', result.error);
-        return result;
-      }
-
+      // Mode anonyme = TOUJOURS local, pas de Supabase
+      console.log('🎮 Mode anonyme - Sauvegarde locale uniquement');
       localStorage.setItem('faithChronicles_pseudo', pseudo);
       localStorage.setItem('faithChronicles_mode', 'anonymous');
       setIsAnonymousMode(true);
       setCurrentScreen('menu');
-      return result;
+      return { data: { pseudo }, error: null };
     } catch (error) {
       console.error('❌ Erreur handleAnonymousLogin:', error);
       return { data: null, error };

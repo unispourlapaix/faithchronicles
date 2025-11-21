@@ -112,12 +112,21 @@ export const useAuth = () => {
     return () => subscription.unsubscribe();
   }, []);
 
-  // Connexion anonyme (pour jouer sans compte)
+  // Connexion anonyme (pour jouer sans compte - MODE LOCAL UNIQUEMENT)
   const signInAnonymously = async () => {
     try {
-      const { data, error } = await supabase.auth.signInAnonymously();
-      if (error) throw error;
-      return { data, error: null };
+      // Mode anonyme = pas de connexion Supabase, juste localStorage
+      console.log('🎮 Connexion anonyme locale (pas de Supabase)');
+      
+      // Pas d'appel à Supabase, on retourne juste un succès
+      // L'utilisateur sera géré uniquement en local
+      return { 
+        data: { 
+          user: null, // Pas d'utilisateur Supabase
+          session: null 
+        }, 
+        error: null 
+      };
     } catch (error) {
       console.error('Erreur connexion anonyme:', error);
       return { data: null, error };
