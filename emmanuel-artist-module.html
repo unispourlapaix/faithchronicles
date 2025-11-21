@@ -824,19 +824,43 @@
         let connectionRetries = 0;
         const MAX_RETRIES = 2;
 
-        // Niveaux de sagesse
+        // Niveaux de sagesse avec clés pour traduction
         const niveauxSagesse = [
-            { min: 0, max: 499, titre: 'Seeker', icone: '🌱', next: 500 },
-            { min: 500, max: 1499, titre: 'Disciple', icone: '📖', next: 1500 },
-            { min: 1500, max: 2999, titre: 'Éveillé', icone: '💫', next: 3000 },
-            { min: 3000, max: 4999, titre: 'Fidèle', icone: '🙏', next: 5000 },
-            { min: 5000, max: 7999, titre: 'Sage', icone: '📜', next: 8000 },
-            { min: 8000, max: 11999, titre: 'Prophète', icone: '�️', next: 12000 },
-            { min: 12000, max: 999999, titre: 'Saint', icone: '�', next: null }
+            { min: 0, max: 499, key: 'seeker', icone: '🌱', next: 500 },
+            { min: 500, max: 1499, key: 'disciple', icone: '📖', next: 1500 },
+            { min: 1500, max: 2999, key: 'believer', icone: '💫', next: 3000 },
+            { min: 3000, max: 4999, key: 'faithful', icone: '🙏', next: 5000 },
+            { min: 5000, max: 7999, key: 'wise', icone: '📜', next: 8000 },
+            { min: 8000, max: 11999, key: 'prophet', icone: '🔮', next: 12000 },
+            { min: 12000, max: 999999, key: 'saint', icone: '✨', next: null }
         ];
+        
+        // 🌍 Traductions des rangs (sync avec src/data/translations/*/ui.js)
+        const rankTranslations = {
+            fr: { seeker: 'Chercheur', disciple: 'Disciple', believer: 'Éveillé', faithful: 'Fidèle', wise: 'Sage', prophet: 'Prophète', saint: 'Saint' },
+            en: { seeker: 'Seeker', disciple: 'Disciple', believer: 'The Awakened', faithful: 'Faithful', wise: 'Wise', prophet: 'Prophet', saint: 'Saint' },
+            es: { seeker: 'Buscador', disciple: 'Discípulo', believer: 'El Despierto', faithful: 'Fiel', wise: 'Sabio', prophet: 'Profeta', saint: 'Santo' },
+            de: { seeker: 'Suchender', disciple: 'Jünger', believer: 'Der Erwachte', faithful: 'Treu', wise: 'Weise', prophet: 'Prophet', saint: 'Heiliger' },
+            it: { seeker: 'Cercatore', disciple: 'Discepolo', believer: 'Il Risvegliato', faithful: 'Fedele', wise: 'Saggio', prophet: 'Profeta', saint: 'Santo' },
+            pt: { seeker: 'Buscador', disciple: 'Discípulo', believer: 'O Desperto', faithful: 'Fiel', wise: 'Sábio', prophet: 'Profeta', saint: 'Santo' },
+            ru: { seeker: 'Искатель', disciple: 'Ученик', believer: 'Пробуждённый', faithful: 'Верный', wise: 'Мудрый', prophet: 'Пророк', saint: 'Святой' },
+            ar: { seeker: 'الباحث', disciple: 'التلميذ', believer: 'المستيقظ', faithful: 'المؤمن', wise: 'الحكيم', prophet: 'النبي', saint: 'القديس' },
+            zh: { seeker: '寻求者', disciple: '门徒', believer: '觉醒者', faithful: '忠实者', wise: '智者', prophet: '先知', saint: '圣人' },
+            jp: { seeker: '探求者', disciple: '弟子', believer: '目覚めし者', faithful: '忠実な者', wise: '賢者', prophet: '預言者', saint: '聖人' },
+            ko: { seeker: '구도자', disciple: '제자', believer: '각성자', faithful: '충실한자', wise: '현자', prophet: '예언자', saint: '성인' },
+            hi: { seeker: 'खोजी', disciple: 'शिष्य', believer: 'जागृत', faithful: 'विश्वासी', wise: 'बुद्धिमान', prophet: 'संदेष्टा', saint: 'संत' },
+            he: { seeker: 'מחפש', disciple: 'תלמיד', believer: 'המתעורר', faithful: 'נאמן', wise: 'חכם', prophet: 'נביא', saint: 'קדוש' },
+            uk: { seeker: 'Шукач', disciple: 'Учень', believer: 'Пробуджений', faithful: 'Вірний', wise: 'Мудрий', prophet: 'Пророк', saint: 'Святий' },
+            sw: { seeker: 'Mtafutaji', disciple: 'Mwanafunzi', believer: 'Aliyeamka', faithful: 'Mwaminifu', wise: 'Mwenye Hekima', prophet: 'Nabii', saint: 'Mtakatifu' },
+            pl: { seeker: 'Poszukujący', disciple: 'Uczeń', believer: 'Przebudzony', faithful: 'Wierny', wise: 'Mądry', prophet: 'Prorok', saint: 'Święty' },
+            rc: { seeker: 'Kенако', disciple: 'Мушози', believer: 'Умувуканьи', faithful: 'Умвізерwa', wise: 'Umupfumu', prophet: 'Umuhanuzi', saint: 'Umutagatifu' }
+        };
 
         function getNiveauSagesse(sagesse) {
-            return niveauxSagesse.find(n => sagesse >= n.min && sagesse <= n.max) || niveauxSagesse[0];
+            const rank = niveauxSagesse.find(n => sagesse >= n.min && sagesse <= n.max) || niveauxSagesse[0];
+            const lang = window.currentLanguage || 'en';
+            const translations = rankTranslations[lang] || rankTranslations.en;
+            return { ...rank, titre: translations[rank.key] };
         }
         
         function getProgressToNextRank(sagesse) {
