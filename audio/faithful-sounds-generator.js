@@ -1,7 +1,7 @@
 // 🎵 Générateur de Sons Temporaires pour Faith Chronicles
 // Utilise Web Audio API pour créer des sons doux et relaxants
 
-console.log('🎵 Chargement du générateur de sons Faith Chronicles...');
+// // console.log('🎵 Chargement du générateur de sons Faith Chronicles...');
 
 // Configuration Audio
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -72,7 +72,7 @@ const faithSounds = {
                 { ratio: 1.5, volume: 0.1, type: 'sine' }    // Sol
             ]
         });
-        console.log('🎶 Son de bonne réponse joué');
+        // // console.log('🎶 Son de bonne réponse joué');
     },
 
     // ❌ Son de mauvaise réponse - Ton doux et respectueux
@@ -84,7 +84,7 @@ const faithSounds = {
             volume: 0.2,
             fadeOut: 0.4
         });
-        console.log('🎵 Son de mauvaise réponse joué');
+        // // console.log('🎵 Son de mauvaise réponse joué');
     },
 
     // ⭐ Son d'étoile gagnée - Scintillement magique
@@ -102,7 +102,7 @@ const faithSounds = {
                 });
             }, index * 150);
         });
-        console.log('⭐ Son d\'étoile joué');
+        // // console.log('⭐ Son d\'étoile joué');
     },
 
     // 🏆 Son de fin de niveau - Fanfare douce
@@ -119,7 +119,7 @@ const faithSounds = {
                 });
             }, index * 200);
         });
-        console.log('🏆 Son de fin de niveau joué');
+        // // console.log('🏆 Son de fin de niveau joué');
     },
 
     // 🔔 Son de notification - Cloche douce
@@ -135,7 +135,7 @@ const faithSounds = {
                 { ratio: 3, volume: 0.05, type: 'sine' }
             ]
         });
-        console.log('🔔 Son de notification joué');
+        // // console.log('🔔 Son de notification joué');
     },
 
     // 🔘 Son de clic de bouton - Subtil
@@ -147,7 +147,7 @@ const faithSounds = {
             volume: 0.15,
             fadeOut: 0.05
         });
-        console.log('🔘 Son de clic joué');
+        // // console.log('🔘 Son de clic joué');
     }
 };
 
@@ -155,27 +155,27 @@ const faithSounds = {
 window.faithSounds = faithSounds;
 
 // Interface de test
-console.log('🎮 Sons disponibles pour Faith Chronicles:');
-console.log('  faithSounds.correctAnswer() - ✅ Bonne réponse');
-console.log('  faithSounds.wrongAnswer() - ❌ Mauvaise réponse');
-console.log('  faithSounds.starEarned() - ⭐ Étoile gagnée');
-console.log('  faithSounds.levelComplete() - 🏆 Fin de niveau');
-console.log('  faithSounds.notification() - 🔔 Notification');
-console.log('  faithSounds.buttonClick() - 🔘 Clic bouton');
+// // console.log('🎮 Sons disponibles pour Faith Chronicles:');
+// // console.log('  faithSounds.correctAnswer() - ✅ Bonne réponse');
+// // console.log('  faithSounds.wrongAnswer() - ❌ Mauvaise réponse');
+// // console.log('  faithSounds.starEarned() - ⭐ Étoile gagnée');
+// // console.log('  faithSounds.levelComplete() - 🏆 Fin de niveau');
+// // console.log('  faithSounds.notification() - 🔔 Notification');
+// // console.log('  faithSounds.buttonClick() - 🔘 Clic bouton');
 
 // Test automatique (optionnel)
 window.testAllSounds = () => {
-    console.log('🎵 Test de tous les sons...');
+    // // console.log('🎵 Test de tous les sons...');
     const sounds = Object.keys(faithSounds);
     sounds.forEach((soundName, index) => {
         setTimeout(() => {
-            console.log(`🎶 Test: ${soundName}`);
+            // // console.log(`🎶 Test: ${soundName}`);
             faithSounds[soundName]();
         }, index * 2000);
     });
 };
 
-console.log('✨ Générateur de sons prêt ! Tapez "testAllSounds()" pour tester tous les sons.');
+// // console.log('✨ Générateur de sons prêt ! Tapez "testAllSounds()" pour tester tous les sons.');
 
 // Export pour utilisation dans le jeu
 export { faithSounds };

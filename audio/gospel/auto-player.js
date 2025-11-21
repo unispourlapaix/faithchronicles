@@ -46,10 +46,10 @@ class AutoGospelPlayer {
     
     this.audio.play()
       .then(() => {
-        console.log(`🎵 Gospel Auto-Play: ${this.songs[this.currentIndex]}`);
+        // // console.log(`🎵 Gospel Auto-Play: ${this.songs[this.currentIndex]}`);
       })
       .catch(error => {
-        console.log('⚠️ Auto-play bloqué par le navigateur');
+        // // console.log('⚠️ Auto-play bloqué par le navigateur');
         // Essayer la chanson suivante
         this.nextSong();
       });
