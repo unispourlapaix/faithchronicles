@@ -3,7 +3,7 @@ import { Globe, Eye, EyeOff, Mail, Lock } from 'lucide-react';
 import useTranslation from '../../hooks/useTranslation';
 import { getLanguage, getLanguageList } from '../../data/translations/languages.js';
 
-const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, audio }) => {
+const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymousLogin, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
   const [authMode, setAuthMode] = useState('signin'); // 'signin', 'signup', ou 'reset'
   const [email, setEmail] = useState('');
@@ -389,6 +389,22 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, audio }) 
             </p>
           </div>
         </div>
+
+        {/* Bouton mode anonyme */}
+        {onAnonymousLogin && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={() => {
+                audio?.sounds?.buttonClick();
+                const pseudo = `Joueur${Math.floor(Math.random() * 10000)}`;
+                onAnonymousLogin(pseudo);
+              }}
+              className="text-white/90 hover:text-white font-semibold text-sm px-6 py-3 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all border border-white/20"
+            >
+              🎮 {t('login.playWithoutAccount') || 'Jouer sans compte'}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

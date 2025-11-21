@@ -139,6 +139,7 @@ export const uiTranslations = {
     password: "パスワード",
     passwordPlaceholder: "最低6文字",
     passwordMinLength: "最低6文字",
+    playWithoutAccount: "アカウントなしでプレイ",
     forgotPassword: "パスワードを忘れましたか？",
     resetPasswordTitle: "パスワードリセット",
     resetPasswordSubtitle: "リセットリンクを受け取るためにメールアドレスを入力してください",

@@ -135,6 +135,7 @@ export const uiTranslations = {
     password: "Nywila",
     passwordPlaceholder: "Angalau herufi 6",
     passwordMinLength: "Angalau herufi 6",
+    playWithoutAccount: "Cheza bila akaunti",
     forgotPassword: "Umesahau nenosiri?",
     resetPasswordTitle: "Weka Upya Nenosiri",
     resetPasswordSubtitle: "Ingiza barua pepe yako kupokea kiungo cha kuweka upya",

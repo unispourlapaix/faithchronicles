@@ -140,6 +140,7 @@ export const uiTranslations = {
     password: "Пароль",
     passwordPlaceholder: "Мінімум 6 символів",
     passwordMinLength: "Мінімум 6 символів",
+    playWithoutAccount: "Грати без облікового запису",
     forgotPassword: "Забули пароль?",
     resetPasswordTitle: "Скинути Пароль",
     resetPasswordSubtitle: "Введіть email для отримання посилання скидання",

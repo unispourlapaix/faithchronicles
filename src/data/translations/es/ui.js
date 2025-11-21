@@ -138,6 +138,7 @@ export const uiTranslations = {
     password: "Contraseña",
     passwordPlaceholder: "Mínimo 6 caracteres",
     passwordMinLength: "Mínimo 6 caracteres",
+    playWithoutAccount: "Jugar sin cuenta",
     forgotPassword: "¿Olvidaste tu contraseña?",
     resetPasswordTitle: "Restablecer Contraseña",
     resetPasswordSubtitle: "Ingresa tu correo para recibir un enlace de restablecimiento",

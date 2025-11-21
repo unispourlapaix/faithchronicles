@@ -142,6 +142,7 @@ export const uiTranslations = {
     password: "סיסמה",
     passwordPlaceholder: "לפחות 6 תווים",
     passwordMinLength: "לפחות 6 תווים",
+    playWithoutAccount: "שחק ללא חשבון",
     forgotPassword: "שכחת סיסמה?",
     resetPasswordTitle: "איפוס סיסמה",
     resetPasswordSubtitle: "הזן את האימייל שלך כדי לקבל קישור לאיפוס",

@@ -588,6 +588,7 @@ const FaithChronicles = () => {
             onLoginWithPassword={signInWithPassword}
             onSignup={signUpWithPassword}
             onResetPassword={resetPassword}
+            onAnonymousLogin={handleAnonymousLogin}
             audio={audio}
           />
         )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Star, Trophy, Sparkles, Info, Gem, Book, BookOpen, Heart, Cloud } from 'lucide-react';
+import { ChevronRight, Star, Trophy, Sparkles, Info, Gem, Book, BookOpen, Heart } from 'lucide-react';
 import { bibleData, bibleTreasures } from '../../data/bible';
 import ConnectionStatus from '../ConnectionStatus.jsx';
 import LanguageSelector from '../LanguageSelector.jsx';
@@ -413,20 +413,6 @@ const MenuScreen = ({
               </div>
             </div>
           </div>
-          
-          {/* Bouton Connexion Simple pour utilisateurs anonymes */}
-          {isAnonymousMode && onSwitchToLogin && (
-            <button
-              onClick={() => {
-                audio?.sounds?.buttonClick();
-                onSwitchToLogin();
-              }}
-              className="w-full py-3 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 font-semibold"
-            >
-              <Cloud className="w-5 h-5" />
-              {t('login.passwordMode')}
-            </button>
-          )}
         </div>
 
         <div className="space-y-4">

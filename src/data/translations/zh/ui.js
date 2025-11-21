@@ -140,6 +140,7 @@ export const uiTranslations = {
     password: "密码",
     passwordPlaceholder: "至少6个字符",
     passwordMinLength: "至少6个字符",
+    playWithoutAccount: "无需帐户即可玩",
     forgotPassword: "忘记密码？",
     resetPasswordTitle: "重置密码",
     resetPasswordSubtitle: "输入您的电子邮件以接收重置链接",

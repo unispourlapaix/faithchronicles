@@ -135,6 +135,7 @@ export const uiTranslations = {
     password: "비밀번호",
     passwordPlaceholder: "최소 6자",
     passwordMinLength: "최소 6자",
+    playWithoutAccount: "계정 없이 플레이",
     forgotPassword: "비밀번호를 잊으셨나요?",
     resetPasswordTitle: "비밀번호 재설정",
     resetPasswordSubtitle: "재설정 링크를 받으려면 이메일을 입력하세요",

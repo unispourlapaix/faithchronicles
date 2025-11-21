@@ -135,6 +135,7 @@ export const uiTranslations = {
     password: "पासवर्ड",
     passwordPlaceholder: "न्यूनतम 6 वर्ण",
     passwordMinLength: "न्यूनतम 6 वर्ण",
+    playWithoutAccount: "खाते के बिना खेलें",
     forgotPassword: "पासवर्ड भूल गए?",
     resetPasswordTitle: "पासवर्ड रीसेट करें",
     resetPasswordSubtitle: "रीसेट लिंक प्राप्त करने के लिए अपना ईमेल दर्ज करें",
