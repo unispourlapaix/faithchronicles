@@ -26,12 +26,12 @@
       "sizes": "any"
     }
   ],
-  "start_url": ".",
+  "start_url": "/unityquest-chronicles-of-love/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#667eea",
   "background_color": "#ffffff",
   "categories": ["education", "games", "lifestyle"],
-  "scope": "/",
+  "scope": "/unityquest-chronicles-of-love/",
   "prefer_related_applications": false
 }
