@@ -246,13 +246,13 @@ const FaithChronicles = () => {
         try {
           const progress = JSON.parse(savedProgress);
           // console.log('📦 Chargement progression localStorage complète:', {
-            score: progress.score || 0,
-            wisdomPoints: progress.wisdomPoints || 0,
-            revelationPoints: progress.revelationPoints || 0,
-            totalXP: progress.totalXP || 0,
-            niveauxDébloqués: (progress.unlockedLevels || [1]).length,
-            étoiles: Object.keys(progress.levelStars || {}).length
-          });
+          //   score: progress.score || 0,
+          //   wisdomPoints: progress.wisdomPoints || 0,
+          //   revelationPoints: progress.revelationPoints || 0,
+          //   totalXP: progress.totalXP || 0,
+          //   niveauxDébloqués: (progress.unlockedLevels || [1]).length,
+          //   étoiles: Object.keys(progress.levelStars || {}).length
+          // });
           
           // Charger TOUTES les données
           setScore(progress.score || 0);
@@ -278,7 +278,7 @@ const FaithChronicles = () => {
       // Déconnexion Supabase si connecté
       if (user && !isAnonymousMode) {
         const { error } = await supabase.auth.signOut();
-        if (error) // console.error('Erreur déconnexion:', error);
+        // if (error) console.error('Erreur déconnexion:', error);
       }
       
       // Réinitialiser l'état local
@@ -397,13 +397,13 @@ const FaithChronicles = () => {
           setLevelStars(progressData.levelStars || {});
           
           // console.log('✅ Progression complète rechargée depuis localStorage:', {
-            score: progressData.score || 0,
-            wisdomPoints: progressData.wisdomPoints || 0,
-            revelationPoints: progressData.revelationPoints || 0,
-            totalXP: progressData.totalXP || 0,
-            niveauxDébloqués: (progressData.unlockedLevels || [1]).length,
-            étoiles: Object.keys(progressData.levelStars || {}).length
-          });
+          //   score: progressData.score || 0,
+          //   wisdomPoints: progressData.wisdomPoints || 0,
+          //   revelationPoints: progressData.revelationPoints || 0,
+          //   totalXP: progressData.totalXP || 0,
+          //   niveauxDébloqués: (progressData.unlockedLevels || [1]).length,
+          //   étoiles: Object.keys(progressData.levelStars || {}).length
+          // });
         } catch (error) {
           // console.error('❌ Erreur rechargement localStorage:', error);
         }

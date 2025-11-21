@@ -53,10 +53,10 @@ export const useAuth = () => {
       const type = hashParams.get('type');
       
       // console.log('🔍 Vérification hash URL:', { 
-        hasAccessToken: !!accessToken, 
-        hasRefreshToken: !!refreshToken,
-        type 
-      });
+      //   hasAccessToken: !!accessToken, 
+      //   hasRefreshToken: !!refreshToken,
+      //   type 
+      // });
       
       // Magic link détecté - Supabase gère automatiquement avec detectSessionInUrl
       // On nettoie juste le hash de l'URL pour améliorer l'UX

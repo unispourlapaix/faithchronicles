@@ -30,14 +30,14 @@ const QuestionScreen = ({
 
   // Effet pour éliminer une mauvaise réponse avec Courage
   React.useEffect(() => {
-    // // console.log('🔍 [QuestionScreen] Effet eliminateWrong déclenché:', {
-      hasCard: !!selectedCard,
-      cardBonus: selectedCard?.bonus,
-      hasQuestion: !!currentQuestion,
-      questionText: currentQuestion?.question,
-      optionsCount: currentQuestion?.options?.length,
-      correctIndex: currentQuestion?.correct
-    });
+    // console.log('🔍 [QuestionScreen] Effet eliminateWrong déclenché:', {
+    //   hasCard: !!selectedCard,
+    //   cardBonus: selectedCard?.bonus,
+    //   hasQuestion: !!currentQuestion,
+    //   questionText: currentQuestion?.question,
+    //   optionsCount: currentQuestion?.options?.length,
+    //   correctIndex: currentQuestion?.correct
+    // });
     
     if (selectedCard && selectedCard.bonus === 'eliminateWrong' && currentQuestion) {
       const wrongOptions = currentQuestion.options

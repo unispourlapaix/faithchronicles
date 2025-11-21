@@ -57,10 +57,10 @@ const useChapterData = () => {
       }
       
       // console.log(`🔍 [useChapterData] Niveau ${levelId} - Structure:`, {
-        hasQuestions: !!level.questions,
-        easyHint: easyQuestion?.hint,
-        easyOptions: easyQuestion?.options
-      });
+      //   hasQuestions: !!level.questions,
+      //   easyHint: easyQuestion?.hint,
+      //   easyOptions: easyQuestion?.options
+      // });
       
       // Ajouter les réponses correctes depuis le fichier centralisé
       const levelWithCorrectAnswers = {
