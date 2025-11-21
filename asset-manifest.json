@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/unityquest-chronicles-of-love/static/css/main.2525d29b.css",
-    "main.js": "/unityquest-chronicles-of-love/static/js/main.9bc39975.js",
+    "main.css": "/unityquest-chronicles-of-love/static/css/main.59cef9ef.css",
+    "main.js": "/unityquest-chronicles-of-love/static/js/main.1d241efa.js",
     "static/js/4716.ea154d97.chunk.js": "/unityquest-chronicles-of-love/static/js/4716.ea154d97.chunk.js",
     "static/js/2772.1fd20994.chunk.js": "/unityquest-chronicles-of-love/static/js/2772.1fd20994.chunk.js",
     "static/js/4396.41d0aff2.chunk.js": "/unityquest-chronicles-of-love/static/js/4396.41d0aff2.chunk.js",
@@ -383,8 +383,8 @@
     "john-john-21-zh-js.js": "/unityquest-chronicles-of-love/static/js/john-john-21-zh-js.e4f57bff.chunk.js",
     "static/js/6453.f4bbd064.chunk.js": "/unityquest-chronicles-of-love/static/js/6453.f4bbd064.chunk.js",
     "index.html": "/unityquest-chronicles-of-love/index.html",
-    "main.2525d29b.css.map": "/unityquest-chronicles-of-love/static/css/main.2525d29b.css.map",
-    "main.9bc39975.js.map": "/unityquest-chronicles-of-love/static/js/main.9bc39975.js.map",
+    "main.59cef9ef.css.map": "/unityquest-chronicles-of-love/static/css/main.59cef9ef.css.map",
+    "main.1d241efa.js.map": "/unityquest-chronicles-of-love/static/js/main.1d241efa.js.map",
     "4716.ea154d97.chunk.js.map": "/unityquest-chronicles-of-love/static/js/4716.ea154d97.chunk.js.map",
     "2772.1fd20994.chunk.js.map": "/unityquest-chronicles-of-love/static/js/2772.1fd20994.chunk.js.map",
     "4396.41d0aff2.chunk.js.map": "/unityquest-chronicles-of-love/static/js/4396.41d0aff2.chunk.js.map",
@@ -765,7 +765,7 @@
     "6453.f4bbd064.chunk.js.map": "/unityquest-chronicles-of-love/static/js/6453.f4bbd064.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2525d29b.css",
-    "static/js/main.9bc39975.js"
+    "static/css/main.59cef9ef.css",
+    "static/js/main.1d241efa.js"
   ]
 }
