@@ -52,7 +52,7 @@
                 this.setupAutoStart();
             }
             
-            console.log('🎵 Faith Chronicles Gospel Auto-Player initialisé');
+            // // console.log('🎵 Faith Chronicles Gospel Auto-Player initialisé');
         }
 
         setupAutoStart() {
@@ -74,7 +74,7 @@
             
             this.isActive = true;
             this.playCurrentSong();
-            console.log('🎵 Démarrage de la playlist gospel automatique');
+            // // console.log('🎵 Démarrage de la playlist gospel automatique');
         }
 
         playCurrentSong() {
@@ -89,10 +89,10 @@
             this.audio.play()
                 .then(() => {
                     this.fadeIn();
-                    console.log(`🎵 Lecture: ${songFile}`);
+                    // // console.log(`🎵 Lecture: ${songFile}`);
                 })
                 .catch(error => {
-                    console.log(`⚠️ Erreur lecture: ${songFile}`, error);
+                    // // console.log(`⚠️ Erreur lecture: ${songFile}`, error);
                     this.handleError();
                 });
         }
@@ -127,7 +127,7 @@
         }
 
         handleError() {
-            console.log(`❌ Erreur avec: ${GOSPEL_SONGS[this.currentIndex]}`);
+            // // console.log(`❌ Erreur avec: ${GOSPEL_SONGS[this.currentIndex]}`);
             
             // Essayer la chanson suivante après un délai
             setTimeout(() => {
@@ -164,7 +164,7 @@
                 this.audio.pause();
                 this.audio.currentTime = 0;
             }
-            console.log('🛑 Playlist gospel arrêtée');
+            // // console.log('🛑 Playlist gospel arrêtée');
         }
 
         // API publique

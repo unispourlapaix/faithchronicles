@@ -546,7 +546,7 @@ export const bibleData = {
 
       return [...regularPassages, ...allJohnChapters];
     } catch (error) {
-      console.error('Error loading John chapters:', error);
+      // console.error('Error loading John chapters:', error);
       return regularPassages;
     }
   },
@@ -613,8 +613,8 @@ export const bibleData = {
   // Get random John treasure
   async getRandomJohnTreasure() {
     try {
-      console.log('bibleData.getRandomJohnTreasure called');
-      console.log('gospelJohnTreasures:', gospelJohnTreasures);
+      // console.log('bibleData.getRandomJohnTreasure called');
+      // console.log('gospelJohnTreasures:', gospelJohnTreasures);
       
       if (!gospelJohnTreasures) {
         throw new Error('gospelJohnTreasures not imported properly');
@@ -625,17 +625,17 @@ export const bibleData = {
       }
       
       const result = await gospelJohnTreasures.getRandomJohnTreasure();
-      console.log('Result from gospelJohnTreasures.getRandomJohnTreasure:', result);
+      // console.log('Result from gospelJohnTreasures.getRandomJohnTreasure:', result);
       
       // Vérifier que le résultat n'est pas null/undefined
       if (!result) {
-        console.warn('gospelJohnTreasures returned null/undefined, using final fallback');
+        // console.warn('gospelJohnTreasures returned null/undefined, using final fallback');
         return this.getFinalFallbackTreasure();
       }
       
       return result;
     } catch (error) {
-      console.error('Error in bibleData.getRandomJohnTreasure:', error);
+      // console.error('Error in bibleData.getRandomJohnTreasure:', error);
       return this.getFinalFallbackTreasure();
     }
   },

@@ -74,7 +74,7 @@ export class GospelOfJohnParser {
       this.loadedTexts.set(availableLang, parsedGospel);
       return parsedGospel;
     } catch (error) {
-      console.error('Error loading Gospel of John:', error);
+      // console.error('Error loading Gospel of John:', error);
       
       // Fallback to French if available
       if (availableLang !== 'fr') {

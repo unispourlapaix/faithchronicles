@@ -92,7 +92,7 @@ function createAudioWithFadeIn(src) {
     };
     
     const handleError = () => {
-      console.log('🎵 Gospel: Erreur de chargement pour', src);
+      // // console.log('🎵 Gospel: Erreur de chargement pour', src);
       reject(new Error('Impossible de charger: ' + src));
     };
     
@@ -115,7 +115,7 @@ async function playNext() {
   const currentSong = faithGospelConfig.playlist[faithGospelPlayer.currentIndex];
   const fullUrl = faithGospelConfig.baseUrl + currentSong;
   
-  console.log(`🎵 Gospel: Lecture aléatoire (${faithGospelPlayer.currentIndex + 1}/24)`, currentSong);
+  // // console.log(`🎵 Gospel: Lecture aléatoire (${faithGospelPlayer.currentIndex + 1}/24)`, currentSong);
   
   try {
     // Arrêter l'audio précédent
@@ -142,7 +142,7 @@ async function playNext() {
     await faithGospelPlayer.audio.play();
     
   } catch (error) {
-    console.log('🎵 Gospel: Erreur de lecture, passage à la suivante...');
+    // // console.log('🎵 Gospel: Erreur de lecture, passage à la suivante...');
     // En cas d'erreur, passer à la suivante après un délai
     setTimeout(() => {
       faithGospelPlayer.currentIndex = getRandomIndex(); // 🎲 Passage aléatoire
@@ -155,7 +155,7 @@ async function playNext() {
 function startGospelMusic() {
   if (!faithGospelPlayer.userStarted) {
     faithGospelPlayer.userStarted = true;
-    console.log('🎵 Gospel: Démarrage de la playlist automatique');
+    // // console.log('🎵 Gospel: Démarrage de la playlist automatique');
     playNext();
   }
 }
@@ -171,11 +171,11 @@ function toggleGospelMusic() {
     if (faithGospelPlayer.isPlaying) {
       faithGospelPlayer.audio.pause();
       faithGospelPlayer.isPlaying = false;
-      console.log('🎵 Gospel: Musique en pause');
+      // // console.log('🎵 Gospel: Musique en pause');
     } else {
       faithGospelPlayer.audio.play();
       faithGospelPlayer.isPlaying = true;
-      console.log('🎵 Gospel: Musique reprise');
+      // // console.log('🎵 Gospel: Musique reprise');
     }
   }
 }
@@ -188,7 +188,7 @@ function stopGospelMusic() {
   }
   faithGospelPlayer.isPlaying = false;
   faithGospelPlayer.userStarted = false;
-  console.log('🎵 Gospel: Musique arrêtée');
+  // // console.log('🎵 Gospel: Musique arrêtée');
 }
 
 // Exposition des fonctions globalement
@@ -205,4 +205,4 @@ window.faithGospelPlayer = faithGospelPlayer;
 document.addEventListener('click', startGospelMusic, { once: true });
 document.addEventListener('keydown', startGospelMusic, { once: true });
 
-console.log('🎵 Faith Chronicles Gospel Player chargé - Cliquez pour démarrer la musique');
+// // console.log('🎵 Faith Chronicles Gospel Player chargé - Cliquez pour démarrer la musique');

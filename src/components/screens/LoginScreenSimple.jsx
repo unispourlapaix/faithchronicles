@@ -28,7 +28,7 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
       return;
     }
 
-    console.log('🔐 Connexion avec mot de passe pour:', email.trim());
+    // console.log('🔐 Connexion avec mot de passe pour:', email.trim());
     setLoading(true);
     setMessage('');
     setMessageType('');
@@ -36,11 +36,11 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
     try {
       if (authMode === 'signup') {
         // Inscription
-        console.log('📝 Inscription...');
+        // console.log('📝 Inscription...');
         const result = await onSignup(email.trim(), password);
         
         if (result?.error) {
-          console.error('❌ Erreur inscription:', result.error);
+          // console.error('❌ Erreur inscription:', result.error);
           if (result.error.message.includes('already registered')) {
             // L'email existe déjà - suggérer de se connecter
             setMessage(t('login.emailExistsHint') || '✉️ Cet email est déjà enregistré. Essayez de vous connecter ! (Peut-être créé depuis un autre jeu?)');
@@ -56,17 +56,17 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
             setMessageType('error');
           }
         } else {
-          console.log('✅ Inscription réussie - En attente de confirmation email');
+          // console.log('✅ Inscription réussie - En attente de confirmation email');
           setMessage('📧 Compte créé ! Vérifiez votre email pour confirmer votre inscription.');
           setMessageType('success');
         }
       } else {
         // Connexion
-        console.log('🔑 Connexion...');
+        // console.log('🔑 Connexion...');
         const result = await onLoginWithPassword(email.trim(), password);
         
         if (result?.error) {
-          console.error('❌ Erreur connexion:', result.error);
+          // console.error('❌ Erreur connexion:', result.error);
           if (result.error.message.includes('Invalid login credentials')) {
             setMessage(t('login.invalidCredentials') || 'Email ou mot de passe incorrect');
             setMessageType('error');
@@ -78,17 +78,17 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
             setMessageType('error');
           }
         } else {
-          console.log('✅ Connexion réussie');
+          // console.log('✅ Connexion réussie');
           setMessage(t('login.connectionSuccess') || '✅ Connexion réussie !');
           setMessageType('success');
         }
       }
     } catch (error) {
-      console.error('❌ Exception:', error);
+      // console.error('❌ Exception:', error);
       setMessage(t('login.errorConnection'));
       setMessageType('error');
     } finally {
-      console.log('🏁 Fin handlePasswordLogin');
+      // console.log('🏁 Fin handlePasswordLogin');
       setLoading(false);
     }
   };
@@ -101,7 +101,7 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
       return;
     }
 
-    console.log('🔑 Demande de réinitialisation pour:', email.trim());
+    // console.log('🔑 Demande de réinitialisation pour:', email.trim());
     setLoading(true);
     setMessage('');
     setMessageType('');
@@ -110,11 +110,11 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
       const result = await onResetPassword(email.trim());
       
       if (result?.error) {
-        console.error('❌ Erreur réinitialisation:', result.error);
+        // console.error('❌ Erreur réinitialisation:', result.error);
         setMessage(t('login.errorReset') || 'Erreur lors de l\'envoi de l\'email');
         setMessageType('error');
       } else {
-        console.log('✅ Email de réinitialisation envoyé');
+        // console.log('✅ Email de réinitialisation envoyé');
         setMessage(t('login.resetEmailSent') || '� Email de réinitialisation envoyé ! Vérifiez votre boîte mail.');
         setMessageType('success');
         // Revenir au mode connexion après 3 secondes
@@ -125,7 +125,7 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
         }, 3000);
       }
     } catch (error) {
-      console.error('❌ Exception:', error);
+      // console.error('❌ Exception:', error);
       setMessage(t('login.errorReset') || 'Erreur lors de l\'envoi de l\'email');
       setMessageType('error');
     } finally {

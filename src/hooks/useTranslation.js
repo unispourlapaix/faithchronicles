@@ -342,7 +342,7 @@ export const TranslationProvider = ({ children }) => {
     for (const k of keys) {
       value = value?.[k];
       if (!value) {
-        console.warn(`Translation key not found: ${key} for language ${currentLanguage}`);
+        // console.warn(`Translation key not found: ${key} for language ${currentLanguage}`);
         // Fallback vers français si la traduction n'existe pas
         value = UI_TRANSLATIONS[DEFAULT_LANGUAGE];
         for (const k2 of keys) {

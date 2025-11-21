@@ -115,25 +115,25 @@ const QuizMountain = ({
 
     completeChapter(chapterNum) {
       // Termine un chapitre et passe au suivant
-      console.log(`🏔️ Chapitre ${chapterNum} terminé !`);
+      // console.log(`🏔️ Chapitre ${chapterNum} terminé !`);
       return this.updateFromChapter(chapterNum, "progress");
     }
 
     triggerVictory() {
       // Déclenche l'animation de victoire
-      console.log(`🏆 VICTOIRE ! J.C. atteint le sommet !`);
+      // console.log(`🏆 VICTOIRE ! J.C. atteint le sommet !`);
       return this.updateFromChapter(7, "victory");
     }
 
     triggerDefeat() {
       // Déclenche l'animation de défaite
-      console.log(`💔 ${t('console.defeatAnimation')}`);
+      // console.log(`💔 ${t('console.defeatAnimation')}`);
       return this.updateFromChapter(0, "defeat");
     }
 
     unlockChapter8() {
       // Débloque le chapitre bonus avec le point doré
-      console.log(`✨ Chapitre 8 débloqué ! Point doré activé !`);
+      // console.log(`✨ Chapitre 8 débloqué ! Point doré activé !`);
       this.onStateChange({
         points: this.points,
         level: this.level,

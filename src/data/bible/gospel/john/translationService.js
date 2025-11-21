@@ -28,7 +28,7 @@ export class TranslationService {
   async loadTranslation(languageCode) {
     try {
       if (!this.isLanguageAvailable(languageCode)) {
-        console.warn(`Language ${languageCode} not available, using fallback`);
+        // console.warn(`Language ${languageCode} not available, using fallback`);
         return this.getFallbackForLanguage(languageCode);
       }
 
@@ -50,7 +50,7 @@ export class TranslationService {
       };
       
     } catch (error) {
-      console.error(`Error loading translation ${languageCode}:`, error);
+      // console.error(`Error loading translation ${languageCode}:`, error);
       
       // Dernier recours : fallback français
       if (languageCode !== 'fr') {
@@ -68,7 +68,7 @@ export class TranslationService {
     try {
       return await loadJohnChapter(chapterNumber, languageCode);
     } catch (error) {
-      console.error(`Error loading chapter ${chapterNumber} in ${languageCode}:`, error);
+      // console.error(`Error loading chapter ${chapterNumber} in ${languageCode}:`, error);
       
       // Fallback vers français
       if (languageCode !== 'fr') {

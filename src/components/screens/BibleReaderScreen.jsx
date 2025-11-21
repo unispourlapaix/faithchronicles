@@ -37,7 +37,7 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
     try {
       localStorage.setItem('bibleReadPassages', JSON.stringify([...readPassages]));
     } catch (error) {
-      console.error('Erreur sauvegarde Bible passages:', error);
+      // console.error('Erreur sauvegarde Bible passages:', error);
     }
   }, [readPassages]);
 
@@ -54,7 +54,7 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
           setCurrentPassage(passages[0]);
         }
       } catch (error) {
-        console.error('Error loading Bible passages:', error);
+        // console.error('Error loading Bible passages:', error);
         // Fallback to empty state
         setAvailablePassages([]);
       }
@@ -87,7 +87,7 @@ const BibleReaderScreen = ({ setCurrentScreen, totalXP, setTotalXP, audio, bible
       // Masquer l'animation après 2s
       setTimeout(() => setShowXpGain(false), 2000);
       
-      console.log(`📖 Passage lu: ${passageId} - +${READING_XP} XP`);
+      // console.log(`📖 Passage lu: ${passageId} - +${READING_XP} XP`);
     }
   };
 

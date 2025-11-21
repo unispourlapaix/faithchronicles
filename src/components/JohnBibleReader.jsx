@@ -59,7 +59,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
     try {
       localStorage.setItem('johnReadChapters', JSON.stringify([...readChapters]));
     } catch (error) {
-      console.error('Erreur sauvegarde John chapters:', error);
+      // console.error('Erreur sauvegarde John chapters:', error);
     }
   }, [readChapters]);
 
@@ -200,45 +200,45 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
       setLoading(true);
       setError(null);
       
-      console.log(`Loading John chapter ${chapterNumber} in language: ${language}`);
+      // console.log(`Loading John chapter ${chapterNumber} in language: ${language}`);
       
       // Essayer d'abord les traductions avec le nouveau service
       let chapter = null;
       try {
         chapter = await translationService.loadChapter(chapterNumber, language);
-        console.log('Loaded from translation service:', chapter);
+        // console.log('Loaded from translation service:', chapter);
       } catch (serviceError) {
-        console.warn('Failed to load from translation service, trying JS chapters:', serviceError);
+        // console.warn('Failed to load from translation service, trying JS chapters:', serviceError);
       }
       
       // Fallback vers les chapitres JS si .txt échoue
       if (!chapter && typeof bibleData.getJohnChapter === 'function') {
         try {
           chapter = await bibleData.getJohnChapter(chapterNumber);
-          console.log('Loaded from JS chapters:', chapter);
+          // console.log('Loaded from JS chapters:', chapter);
         } catch (jsError) {
-          console.warn('Failed to load from JS chapters:', jsError);
+          // console.warn('Failed to load from JS chapters:', jsError);
         }
       }
       
       // Dernier recours : fallback manuel
       if (!chapter) {
-        console.warn(`Chapter ${chapterNumber} not found, using fallback`);
+        // console.warn(`Chapter ${chapterNumber} not found, using fallback`);
         setChapterData(getFallbackChapter(chapterNumber));
         return;
       }
       
       // Vérifier la structure des données
       if (!chapter.verses || !Array.isArray(chapter.verses)) {
-        console.warn('Invalid chapter structure, using fallback');
+        // console.warn('Invalid chapter structure, using fallback');
         setChapterData(getFallbackChapter(chapterNumber));
         return;
       }
       
-      console.log('Chapter loaded successfully:', chapter);
+      // console.log('Chapter loaded successfully:', chapter);
       setChapterData(chapter);
     } catch (err) {
-      console.error('Error loading chapter:', err);
+      // console.error('Error loading chapter:', err);
       setError(null); // Ne pas afficher l'erreur, utiliser le fallback
       setChapterData(getFallbackChapter(chapterNumber));
     } finally {
@@ -327,17 +327,17 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
     }
 
     try {
-      console.log('Searching for:', text);
+      // console.log('Searching for:', text);
       
       if (typeof bibleData.searchJohnVerses === 'function') {
         const results = await bibleData.searchJohnVerses(text);
         setSearchResults(results || []);
       } else {
-        console.warn('searchJohnVerses not available, using fallback search');
+        // console.warn('searchJohnVerses not available, using fallback search');
         setSearchResults(getFallbackSearchResults(text));
       }
     } catch (err) {
-      console.error('Search error:', err);
+      // console.error('Search error:', err);
       setSearchResults(getFallbackSearchResults(text));
     }
   };
@@ -420,7 +420,7 @@ const JohnBibleReader = ({ onClose, initialChapter = 1, totalXP, setTotalXP, aud
       showToast(t('bible.verseCopied'), 'success');
       audio?.sounds?.tok();
     } catch (err) {
-      console.error(t('bible.copyError'), err);
+      // console.error(t('bible.copyError'), err);
     }
   };
 

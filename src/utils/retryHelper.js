@@ -40,7 +40,7 @@ export const retryWithBackoff = async (fn, options = {}) => {
         }
 
         lastError = result.error;
-        console.warn(`Tentative ${attempt + 1}/${maxRetries} échouée, retry dans ${delay * Math.pow(backoffMultiplier, attempt)}ms...`);
+        // console.warn(`Tentative ${attempt + 1}/${maxRetries} échouée, retry dans ${delay * Math.pow(backoffMultiplier, attempt)}ms...`);
       } else {
         return result; // Succès
       }
@@ -57,7 +57,7 @@ export const retryWithBackoff = async (fn, options = {}) => {
       }
 
       lastError = error;
-      console.warn(`Tentative ${attempt + 1}/${maxRetries} échouée:`, error.message);
+      // console.warn(`Tentative ${attempt + 1}/${maxRetries} échouée:`, error.message);
     }
 
     // Attendre avec backoff exponentiel
@@ -84,7 +84,7 @@ export const retrySave = async (saveFn, operationName = 'sauvegarde') => {
     delay: 1000,
     backoffMultiplier: 1.5, // Plus doux pour les sauvegardes
   }).catch(error => {
-    console.error(`Échec de la ${operationName} après plusieurs tentatives:`, error);
+    // console.error(`Échec de la ${operationName} après plusieurs tentatives:`, error);
     return { data: null, error };
   });
 };
@@ -101,7 +101,7 @@ export const retryLoad = async (loadFn, operationName = 'chargement') => {
     delay: 500,
     backoffMultiplier: 2,
   }).catch(error => {
-    console.warn(`Échec du ${operationName} après plusieurs tentatives:`, error);
+    // console.warn(`Échec du ${operationName} après plusieurs tentatives:`, error);
     return { data: null, error };
   });
 };

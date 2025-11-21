@@ -29,7 +29,7 @@ const JohnTreasuresDisplay = ({ onClose }) => {
   const loadJohnTreasure = async () => {
     try {
       setLoading(true);
-      console.log('Loading John treasure...');
+      // console.log('Loading John treasure...');
       
       // Test d'abord si la méthode existe
       if (typeof bibleData.getRandomJohnTreasure !== 'function') {
@@ -37,7 +37,7 @@ const JohnTreasuresDisplay = ({ onClose }) => {
       }
       
       const treasure = await bibleData.getRandomJohnTreasure();
-      console.log('John treasure loaded:', treasure);
+      // console.log('John treasure loaded:', treasure);
       
       if (!treasure) {
         throw new Error('No treasure returned from getRandomJohnTreasure');
@@ -46,7 +46,7 @@ const JohnTreasuresDisplay = ({ onClose }) => {
       setJohnTreasure(treasure);
       setError(null);
     } catch (err) {
-      console.error('Error loading John treasure:', err);
+      // console.error('Error loading John treasure:', err);
       setError(err.message);
     } finally {
       setLoading(false);
@@ -58,7 +58,7 @@ const JohnTreasuresDisplay = ({ onClose }) => {
       const metadata = await bibleData.getJohnMetadata();
       setJohnMetadata(metadata);
     } catch (err) {
-      console.error('Error loading John metadata:', err);
+      // console.error('Error loading John metadata:', err);
     }
   };
 

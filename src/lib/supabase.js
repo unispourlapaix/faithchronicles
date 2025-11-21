@@ -29,8 +29,8 @@ if (supabaseUrl && supabaseAnonKey && supabaseUrl.includes('supabase.co')) {
     }
   });
 } else {
-  console.warn('⚠️ Supabase non configuré - Mode hors ligne uniquement');
-  console.warn('📖 Pour configurer Supabase, consultez .env.local.example');
+  // console.warn('⚠️ Supabase non configuré - Mode hors ligne uniquement');
+  // console.warn('📖 Pour configurer Supabase, consultez .env.local.example');
 }
 
 export { supabase };
@@ -51,7 +51,7 @@ export const checkSession = async () => {
     if (error) throw error;
     return { session, isAuthenticated: !!session };
   } catch (error) {
-    console.error('Erreur vérification session:', error);
+    // console.error('Erreur vérification session:', error);
     return { session: null, isAuthenticated: false };
   }
 };
@@ -67,7 +67,7 @@ export const refreshSession = async () => {
     if (error) throw error;
     return { session, error: null };
   } catch (error) {
-    console.error('Erreur rafraîchissement session:', error);
+    // console.error('Erreur rafraîchissement session:', error);
     return { session: null, error };
   }
 };

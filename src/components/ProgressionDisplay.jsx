@@ -10,7 +10,7 @@ const ProgressionDisplay = ({ totalXP = 0, compact = false }) => {
 
   // Vérification de sécurité pour éviter les erreurs React
   if (!current || !current.levelNameKey || !current.gradeRoman) {
-    console.error(t('errors.invalidProgressionData'), { current, progression });
+    // console.error(t('errors.invalidProgressionData'), { current, progression });
     return <div>{t('errors.progressionError')}</div>;
   }
 

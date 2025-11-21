@@ -859,13 +859,13 @@
             try {
                 const t = window.translations?.[window.currentLanguage || 'en'] || window.translations.en;
                 document.getElementById('leaderboardContent').innerHTML = `<div class="loading">${t.loading}</div>`;
-                console.log('📡 Tentative de connexion Supabase:', SUPABASE_URL);
+                // console.log('📡 Tentative de connexion Supabase:', SUPABASE_URL);
 
                 // Charger depuis users + faithchronicles_game_progress
                 let data, error, count;
                 
                 try {
-                    console.log('🔍 Chargement données: users + faithchronicles_game_progress (JOIN par email)...');
+                    // console.log('🔍 Chargement données: users + faithchronicles_game_progress (JOIN par email)...');
                     
                     // 1. Récupérer TOUS les utilisateurs de la table users
                     const { data: allUsersData, error: usersError } = await supabase
@@ -875,7 +875,7 @@
                     
                     if (usersError) throw usersError;
                     
-                    console.log('✅ Users chargés:', allUsersData?.length || 0);
+                    // console.log('✅ Users chargés:', allUsersData?.length || 0);
                     
                     // 2. Récupérer TOUTES les progressions (avec email pour JOIN)
                     const { data: allProgressData, error: progressError } = await supabase
@@ -883,18 +883,18 @@
                         .select('*');  // Sélectionner TOUTES les colonnes pour voir ce qui existe
                     
                     if (progressError) {
-                        console.error('❌ ERREUR progression:', progressError);
-                        console.error('   Code:', progressError.code);
-                        console.error('   Message:', progressError.message);
-                        console.error('   Détails:', progressError.details);
+                        // console.error('❌ ERREUR progression:', progressError);
+                        // console.error('   Code:', progressError.code);
+                        // console.error('   Message:', progressError.message);
+                        // console.error('   Détails:', progressError.details);
                     }
                     
-                    console.log('✅ Progressions chargées:', allProgressData?.length || 0);
+                    // console.log('✅ Progressions chargées:', allProgressData?.length || 0);
                     if (allProgressData && allProgressData.length > 0) {
-                        console.log('🔍 Première progression chargée avec succès');
+                        // console.log('🔍 Première progression chargée avec succès');
                     } else {
-                        console.warn('⚠️ Aucune progression trouvée dans faithchronicles_game_progress');
-                        console.warn('💡 Vérifier: La table existe? Elle contient des données? Permissions RLS?');
+                        // console.warn('⚠️ Aucune progression trouvée dans faithchronicles_game_progress');
+                        // console.warn('💡 Vérifier: La table existe? Elle contient des données? Permissions RLS?');
                     }
                     
                     // 3. Créer un mapping email -> progression OU user_id -> progression
@@ -913,12 +913,12 @@
                         });
                     }
                     
-                    console.log('🔗 JOIN ready:', Object.keys(progressByEmail).length, 'progressions avec email,', Object.keys(progressByUserId).length, 'avec user_id');
+                    // console.log('🔗 JOIN ready:', Object.keys(progressByEmail).length, 'progressions avec email,', Object.keys(progressByUserId).length, 'avec user_id');
                     
                     // 4. IMPORTANT: Vérifier si on doit mettre à jour les emails manquants
                     if (Object.keys(progressByEmail).length === 0 && Object.keys(progressByUserId).length > 0) {
-                        console.warn('⚠️ Aucune progression n\'a d\'email! Les progressions utilisent uniquement user_id.');
-                        console.warn('💡 Il faudrait UPDATE la table pour ajouter les emails depuis auth.users');
+                        // console.warn('⚠️ Aucune progression n\'a d\'email! Les progressions utilisent uniquement user_id.');
+                        // console.warn('💡 Il faudrait UPDATE la table pour ajouter les emails depuis auth.users');
                     }
                     
                     // 4. Associer chaque utilisateur avec sa progression par EMAIL ou USER_ID
@@ -967,28 +967,28 @@
                     error = null;
                     count = enrichedData.length;
                     
-                    console.log('✅ Données enrichies:', data.length, '/', count, 'utilisateurs (JOIN par email)');
+                    // console.log('✅ Données enrichies:', data.length, '/', count, 'utilisateurs (JOIN par email)');
                     
                 } catch (loadError) {
-                    console.warn('⚠️ Erreur chargement données:', loadError.message);
+                    // console.warn('⚠️ Erreur chargement données:', loadError.message);
                     data = null;
                     error = loadError;
                 }
 
                 if (error) {
-                    console.error('❌ Erreur Supabase:', error);
+                    // console.error('❌ Erreur Supabase:', error);
                     throw error;
                 }
 
-                console.log('✅ Données Supabase reçues:', data?.length || 0, 'records');
-                console.log('📊 Total count:', count);
-                console.log('🎮 Jeux trouvés:', [...new Set(data?.map(s => s.game_id) || [])]);
+                // console.log('✅ Données Supabase reçues:', data?.length || 0, 'records');
+                // console.log('📊 Total count:', count);
+                // console.log('🎮 Jeux trouvés:', [...new Set(data?.map(s => s.game_id) || [])]);
 
                 allScores = Array.isArray(data) ? data : [];
                 
                 // 💾 AJOUTER LES SCORES LOCAUX
                 const localScores = getLocalScores();
-                console.log('💾 Scores locaux trouvés:', localScores.length);
+                // console.log('💾 Scores locaux trouvés:', localScores.length);
                 allScores = [...allScores, ...localScores];
                 
                 // Trier par score décroissant
@@ -999,14 +999,14 @@
 
                 // Si pas de données, utiliser des données de test
                 if (allScores.length === 0) {
-                    console.warn('⚠️ Aucune donnée trouvée, création de données de test...');
+                    // console.warn('⚠️ Aucune donnée trouvée, création de données de test...');
                     allScores = createTestScores();
                     loadedCount = allScores.length;
                     totalScores = allScores.length;
                 }
 
-                console.log('✅ Scores chargés (Supabase + Local):', loadedCount, 'Total DB:', totalScores);
-                console.log('🏆 Top 3:', allScores.slice(0, 3).map(s => ({ 
+                // console.log('✅ Scores chargés (Supabase + Local):', loadedCount, 'Total DB:', totalScores);
+                // console.log('🏆 Top 3:', allScores.slice(0, 3).map(s => ({ 
                     pseudo: s.users?.pseudo || s.user?.pseudo || s.donnees_extra?.pseudo, 
                     score: s.score,
                     game: s.game_id,
@@ -1016,8 +1016,8 @@
                 updateStats();
                 renderPage();
             } catch (error) {
-                console.error('❌ Erreur complète:', error);
-                console.log('📌 Tentative de chargement scores locaux uniquement...');
+                // console.error('❌ Erreur complète:', error);
+                // console.log('📌 Tentative de chargement scores locaux uniquement...');
                 
                 // 💾 FALLBACK: Utiliser scores locaux + test
                 const localScores = getLocalScores();
@@ -1028,7 +1028,7 @@
                 loadedCount = allScores.length;
                 totalScores = allScores.length;
                 
-                console.log('💾 Mode hors ligne:', loadedCount, 'scores (local + test)');
+                // console.log('💾 Mode hors ligne:', loadedCount, 'scores (local + test)');
                 updateStats();
                 renderPage();
             }
@@ -1069,7 +1069,7 @@
                 
                 return scores;
             } catch (e) {
-                console.error('❌ Erreur lecture localStorage FAITHCHRONICLES:', e);
+                // console.error('❌ Erreur lecture localStorage FAITHCHRONICLES:', e);
                 return [];
             }
         }
@@ -1107,8 +1107,8 @@
                     created_at: new Date(Date.now() - i * 86400000).toISOString()
                 });
             }
-            console.log('🧪 Données de test FAITHCHRONICLES créées:', testScores.length, 'scores (max:', maxTestScore, ')');
-            console.log('📝 Les scores de test sont en secours si Supabase est vide');
+            // console.log('🧪 Données de test FAITHCHRONICLES créées:', testScores.length, 'scores (max:', maxTestScore, ')');
+            // console.log('📝 Les scores de test sont en secours si Supabase est vide');
             return testScores;
         }
 
@@ -1127,7 +1127,7 @@
                 
                 try {
                     // Tentative PRIORITAIRE avec table USERS globale
-                    console.log('🔍 LoadMore - Tentative avec table USERS globale...');
+                    // console.log('🔍 LoadMore - Tentative avec table USERS globale...');
                     
                     const progressResult = await supabase
                         .from('faithchronicles_game_progress')
@@ -1150,13 +1150,13 @@
                             users: { pseudo: `Joueur${progress.user_id.slice(0, 6)}`, avatar: '🎮' }
                         }));
                         error = null;
-                        console.log('✅ LoadMore SIMPLIFIÉ réussi');
+                        // console.log('✅ LoadMore SIMPLIFIÉ réussi');
                     } else {
                         throw new Error('LoadMore: Progressions inaccessibles');
                     }
                     
                 } catch (globalUsersError) {
-                    console.error('⚠️ Erreur LoadMore:', globalUsersError.message);
+                    // console.error('⚠️ Erreur LoadMore:', globalUsersError.message);
                     data = null;
                     error = globalUsersError;
                 }
@@ -1167,10 +1167,10 @@
                 allScores = [...allScores, ...newData];
                 loadedCount = allScores.length;
 
-                console.log('✅ Chargement progressif:', loadedCount, 'scores');
+                // console.log('✅ Chargement progressif:', loadedCount, 'scores');
                 renderPage();
             } catch (error) {
-                console.error('Erreur chargement supplémentaire:', error);
+                // console.error('Erreur chargement supplémentaire:', error);
                 alert('❌ Erreur lors du chargement: ' + error.message);
                 const loadMoreBtn = document.getElementById('loadMoreBtn');
                 if (loadMoreBtn) {
@@ -1497,7 +1497,7 @@
                 if (window.translations) {
                     loadScores();
                 } else {
-                    console.warn('⚠️ Traductions non chargées, réessai...');
+                    // console.warn('⚠️ Traductions non chargées, réessai...');
                     setTimeout(() => loadScores(), 500);
                 }
             }, 100);
@@ -1939,7 +1939,7 @@
                 try {
                     lang = window.opener.window.i18n.getCurrentLanguage();
                 } catch (e) {
-                    console.log('Impossible de récupérer la langue depuis le parent');
+                    // console.log('Impossible de récupérer la langue depuis le parent');
                 }
             }
             
@@ -1981,7 +1981,7 @@
         // Fonction pour changer la langue
         window.changeLanguage = function(lang) {
             if (!window.translations[lang]) {
-                console.error('❌ Langue non supportée:', lang);
+                // console.error('❌ Langue non supportée:', lang);
                 return;
             }
             
@@ -1997,18 +1997,18 @@
             // Appliquer les traductions
             window.applyTranslation(lang);
             
-            console.log('✅ Langue changée:', lang);
+            // console.log('✅ Langue changée:', lang);
         }
 
         // Fonction pour appliquer la traduction
         window.applyTranslation = function(lang) {
             const t = window.translations[lang];
             if (!t) {
-                console.error('❌ Traduction non trouvée pour:', lang);
+                // console.error('❌ Traduction non trouvée pour:', lang);
                 return;
             }
 
-            console.log('🌍 Application des traductions pour:', lang);
+            // console.log('🌍 Application des traductions pour:', lang);
 
             // Éléments statiques à traduire
             const staticElements = {
@@ -2054,13 +2054,13 @@
             document.documentElement.lang = lang;
             document.documentElement.dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
             
-            console.log('✅ Traductions appliquées avec succès');
+            // console.log('✅ Traductions appliquées avec succès');
         }
 
         // Initialiser la langue au chargement
         document.addEventListener('DOMContentLoaded', () => {
             window.currentLanguage = window.detectLanguage();
-            console.log('🔍 Langue détectée:', window.currentLanguage);
+            // console.log('🔍 Langue détectée:', window.currentLanguage);
             
             // Mettre à jour le sélecteur avec la langue détectée
             const select = document.getElementById('languageSelect');

@@ -218,10 +218,10 @@ const ConnectionStatus = ({
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
-                          console.log('Clic sur drapeau, état actuel:', showLanguageMenu);
+                          // console.log('Clic sur drapeau, état actuel:', showLanguageMenu);
                           audio?.sounds?.tick();
                           setShowLanguageMenu(!showLanguageMenu);
-                          console.log('Nouvel état du menu:', !showLanguageMenu);
+                          // console.log('Nouvel état du menu:', !showLanguageMenu);
                         }}
                         className="flex items-center gap-1 px-2 py-1 hover:bg-gray-100 rounded-md transition-all cursor-pointer"
                         title={`Langue: ${getCurrentLanguage().nativeName}`}

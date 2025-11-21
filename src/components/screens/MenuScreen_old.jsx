@@ -65,7 +65,7 @@ const MenuScreen = ({
         try {
           window.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         } catch (error) {
-          console.warn('Web Audio API non supporté');
+          // console.warn('Web Audio API non supporté');
           return;
         }
       }
@@ -127,7 +127,7 @@ const MenuScreen = ({
       G5: 784    // Sol aigu
     };
 
-    console.log('� Jouer "Amazing Grace" version SOUL/Gospel...');
+    // console.log('� Jouer "Amazing Grace" version SOUL/Gospel...');
 
     // Mélodie SOUL avec ornements et blue notes
     const soulMelody = [

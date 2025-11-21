@@ -29,7 +29,7 @@ const PasswordResetScreen = ({ onResetComplete }) => {
           setMessage(t('login.resetLinkExpired') || '❌ Lien de réinitialisation invalide');
         }
         setMessageType('error');
-        console.log('❌ Erreur URL:', error, errorDescription);
+        // console.log('❌ Erreur URL:', error, errorDescription);
         return;
       }
 
@@ -37,12 +37,12 @@ const PasswordResetScreen = ({ onResetComplete }) => {
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
         setIsValidSession(true);
-        console.log('✅ Session de réinitialisation valide');
+        // console.log('✅ Session de réinitialisation valide');
       } else {
         setIsValidSession(false);
         setMessage(t('login.resetLinkExpired') || '❌ Ce lien de réinitialisation a expiré. Veuillez en demander un nouveau.');
         setMessageType('error');
-        console.log('❌ Pas de session de réinitialisation');
+        // console.log('❌ Pas de session de réinitialisation');
       }
     };
     
@@ -62,7 +62,7 @@ const PasswordResetScreen = ({ onResetComplete }) => {
       return;
     }
 
-    console.log('🔐 Mise à jour du mot de passe...');
+    // console.log('🔐 Mise à jour du mot de passe...');
     setLoading(true);
     setMessage('');
     setMessageType('');
@@ -73,11 +73,11 @@ const PasswordResetScreen = ({ onResetComplete }) => {
       });
 
       if (error) {
-        console.error('❌ Erreur mise à jour mot de passe:', error);
+        // console.error('❌ Erreur mise à jour mot de passe:', error);
         setMessage(t('login.errorUpdatePassword') || 'Erreur lors de la mise à jour du mot de passe');
         setMessageType('error');
       } else {
-        console.log('✅ Mot de passe mis à jour avec succès');
+        // console.log('✅ Mot de passe mis à jour avec succès');
         setMessage(t('login.passwordUpdateSuccess') || '✅ Mot de passe mis à jour avec succès !');
         setMessageType('success');
         
@@ -89,7 +89,7 @@ const PasswordResetScreen = ({ onResetComplete }) => {
         }, 2000);
       }
     } catch (error) {
-      console.error('❌ Exception:', error);
+      // console.error('❌ Exception:', error);
       setMessage(t('login.errorUpdatePassword') || 'Erreur lors de la mise à jour du mot de passe');
       setMessageType('error');
     } finally {

@@ -25,7 +25,7 @@ export const loadJohnChapter = async (chapterNumber, languageCode = 'fr') => {
   
   // Vérifier si le chapitre est disponible
   if (!availableChapters.includes(chapterNumber)) {
-    console.warn(`Chapter ${chapterNumber} not available, falling back`);
+    // console.warn(`Chapter ${chapterNumber} not available, falling back`);
     return null;
   }
 
@@ -58,10 +58,10 @@ export const loadJohnChapter = async (chapterNumber, languageCode = 'fr') => {
       return chapterData;
     }
     
-    console.error(`Chapter data not found for ${chapterNumber} in ${languageCode}`);
+    // console.error(`Chapter data not found for ${chapterNumber} in ${languageCode}`);
     return null;
   } catch (error) {
-    console.error(`Error loading chapter ${chapterNumber} (${languageCode}):`, error);
+    // console.error(`Error loading chapter ${chapterNumber} (${languageCode}):`, error);
     return null;
   }
 };

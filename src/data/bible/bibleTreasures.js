@@ -67,7 +67,7 @@ export const bibleTreasures = {
     try {
       return await bibleData.getRandomJohnTreasure();
     } catch (error) {
-      console.error('Error getting John treasure:', error);
+      // console.error('Error getting John treasure:', error);
       return null;
     }
   },

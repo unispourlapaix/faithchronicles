@@ -4,7 +4,7 @@
 (function() {
   'use strict';
   
-  console.log('🎵 Initialisation du générateur de sons Faith Chronicles...');
+  // // console.log('🎵 Initialisation du générateur de sons Faith Chronicles...');
   
   // Contexte audio global
   let audioContext = null;
@@ -15,7 +15,7 @@
   function initAudio() {
     try {
       if (!audioContext) {
-        console.log('🎵 Création du contexte audio...');
+        // // console.log('🎵 Création du contexte audio...');
         // Utiliser la version standard ou webkit
         const AudioContext = window.AudioContext || window.webkitAudioContext;
         if (!AudioContext) {
@@ -26,21 +26,21 @@
         masterGain = audioContext.createGain();
         masterGain.connect(audioContext.destination);
         masterGain.gain.value = 0.7; // Volume par défaut
-        console.log('✅ Contexte audio créé, état:', audioContext.state);
+        // // console.log('✅ Contexte audio créé, état:', audioContext.state);
       }
       
       if (audioContext.state === 'suspended') {
-        console.log('🎵 Reprise du contexte audio...');
+        // // console.log('🎵 Reprise du contexte audio...');
         return audioContext.resume().then(() => {
           isInitialized = true;
-          console.log('✅ Contexte audio activé');
+          // // console.log('✅ Contexte audio activé');
         });
       }
       
       isInitialized = true;
       return Promise.resolve();
     } catch (error) {
-      console.error('❌ Erreur initialisation audio:', error);
+      // // console.error('❌ Erreur initialisation audio:', error);
       return Promise.reject(error);
     }
   }
@@ -48,16 +48,16 @@
   // Fonction spéciale pour créer un son de gong
   function createGongSound() {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour gong');
+      // // console.warn('⚠️ Contexte audio non initialisé pour gong');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour gong:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour gong:', audioContext.state);
       return;
     }
     
-    console.log('🔔 Création son de gong...');
+    // // console.log('🔔 Création son de gong...');
     
     try {
       const startTime = audioContext.currentTime;
@@ -112,9 +112,9 @@
         createGongEcho(startTime + 2.0, fundamental, 0.08);
       }, 2000);
       
-      console.log('✅ Son de gong créé avec succès');
+      // // console.log('✅ Son de gong créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création gong:', error);
+      // // console.error('❌ Erreur création gong:', error);
     }
   }
   
@@ -137,23 +137,23 @@
       oscillator.start(startTime);
       oscillator.stop(startTime + 1.5);
     } catch (error) {
-      console.error('❌ Erreur écho gong:', error);
+      // // console.error('❌ Erreur écho gong:', error);
     }
   }
   
   // Fonction pour créer un son de tick/clock
   function createTickSound() {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour tick');
+      // // console.warn('⚠️ Contexte audio non initialisé pour tick');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour tick:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour tick:', audioContext.state);
       return;
     }
     
-    console.log('⏰ Création son de tick...');
+    // // console.log('⏰ Création son de tick...');
     
     try {
       const startTime = audioContext.currentTime;
@@ -195,25 +195,25 @@
       oscillator2.start(startTime + 0.01);
       oscillator2.stop(startTime + duration);
       
-      console.log('✅ Son de tick créé avec succès');
+      // // console.log('✅ Son de tick créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création tick:', error);
+      // // console.error('❌ Erreur création tick:', error);
     }
   }
   
   // Fonction pour créer un son "reset" - remise à zéro/effacement
   function createResetSound() {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour reset sound');
+      // // console.warn('⚠️ Contexte audio non initialisé pour reset sound');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour reset sound:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour reset sound:', audioContext.state);
       return;
     }
     
-    console.log('🔄 Création son reset (whoosh descendant)...');
+    // // console.log('🔄 Création son reset (whoosh descendant)...');
     
     try {
       const startTime = audioContext.currentTime;
@@ -302,25 +302,25 @@
       clickOsc.start(startTime + duration - 0.02);
       clickOsc.stop(startTime + duration);
       
-      console.log('✅ Son reset créé avec succès');
+      // // console.log('✅ Son reset créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création reset:', error);
+      // // console.error('❌ Erreur création reset:', error);
     }
   }
   
   // Fonction spéciale pour créer un son "groook" de pierre/roche
   function createGroookSound() {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour groook sound');
+      // // console.warn('⚠️ Contexte audio non initialisé pour groook sound');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour groook sound:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour groook sound:', audioContext.state);
       return;
     }
     
-    console.log('🗿 Création son groook (roo..creeeuu...)...');
+    // // console.log('🗿 Création son groook (roo..creeeuu...)...');
     
     try {
       const startTime = audioContext.currentTime;
@@ -397,25 +397,25 @@
       resonanceOsc.start(startTime);
       resonanceOsc.stop(startTime + duration);
       
-      console.log('✅ Son groook (roo..creeeuu...) créé avec succès');
+      // // console.log('✅ Son groook (roo..creeeuu...) créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création groook sound:', error);
+      // // console.error('❌ Erreur création groook sound:', error);
     }
   }
   
   // Fonction spéciale pour créer un son "wrash" de retour
   function createWrashSound() {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour wrash sound');
+      // // console.warn('⚠️ Contexte audio non initialisé pour wrash sound');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour wrash sound:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour wrash sound:', audioContext.state);
       return;
     }
     
-    console.log('💨 Création son wrash...');
+    // // console.log('💨 Création son wrash...');
     
     try {
       const startTime = audioContext.currentTime;
@@ -476,25 +476,25 @@
       noiseSource.start(startTime);
       noiseSource.stop(startTime + duration);
       
-      console.log('✅ Son wrash créé avec succès');
+      // // console.log('✅ Son wrash créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création wrash sound:', error);
+      // // console.error('❌ Erreur création wrash sound:', error);
     }
   }
   
   // Fonction spéciale pour créer des sons "pof" courts et percutants
   function createPofSound(frequency = 200, type = 'basic') {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour pof sound');
+      // // console.warn('⚠️ Contexte audio non initialisé pour pof sound');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour pof sound:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour pof sound:', audioContext.state);
       return;
     }
     
-    console.log(`💥 Création son pof ${type} avec fréquence:`, frequency);
+    // // console.log(`💥 Création son pof ${type} avec fréquence:`, frequency);
     
     try {
       const startTime = audioContext.currentTime;
@@ -532,25 +532,25 @@
       oscillator.start(startTime);
       oscillator.stop(startTime + duration);
       
-      console.log(`✅ Son pof ${type} créé avec succès`);
+      // // console.log(`✅ Son pof ${type} créé avec succès`);
     } catch (error) {
-      console.error('❌ Erreur création pof sound:', error);
+      // // console.error('❌ Erreur création pof sound:', error);
     }
   }
   
   // Fonction spéciale pour créer des sons rock courts et percutants
   function createRockSound(frequencies, duration = 0.6, fadeOut = 0.2) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé pour rock sound');
+      // // console.warn('⚠️ Contexte audio non initialisé pour rock sound');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution pour rock sound:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution pour rock sound:', audioContext.state);
       return;
     }
     
-    console.log('🎸 Création son rock avec fréquences:', frequencies);
+    // // console.log('🎸 Création son rock avec fréquences:', frequencies);
     
     try {
       const startTime = audioContext.currentTime;
@@ -582,16 +582,16 @@
         oscillator.stop(endTime);
       });
       
-      console.log('✅ Son rock créé avec succès');
+      // // console.log('✅ Son rock créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création rock sound:', error);
+      // // console.error('❌ Erreur création rock sound:', error);
     }
   }
   
   // Fonction pour créer des sons "picth" - son cristallin pour étoiles
   function createPicthSound(volume = 0.3) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour picth');
+      // // console.warn('⚠️ AudioContext non initialisé pour picth');
       return;
     }
 
@@ -657,16 +657,16 @@
       echoOsc.start(startTime + 0.03);
       echoOsc.stop(startTime + 0.08);
       
-      console.log('✅ Son picth créé');
+      // // console.log('✅ Son picth créé');
     } catch (error) {
-      console.error('❌ Erreur création picth:', error);
+      // // console.error('❌ Erreur création picth:', error);
     }
   }
   
   // Fonction pour créer des sons "cheube" - son de navigation doux
   function createCheubeSound(volume = 0.3) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour cheube');
+      // // console.warn('⚠️ AudioContext non initialisé pour cheube');
       return;
     }
 
@@ -733,16 +733,16 @@
       delayOsc.start(startTime + 0.06);
       delayOsc.stop(startTime + 0.28);
       
-      console.log('✅ Son cheube créé');
+      // // console.log('✅ Son cheube créé');
     } catch (error) {
-      console.error('❌ Erreur création cheube:', error);
+      // // console.error('❌ Erreur création cheube:', error);
     }
   }
   
   // Fonction pour créer des sons "tok" - percussion sèche et nette
   function createTokSound(volume = 0.3) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour tok');
+      // // console.warn('⚠️ AudioContext non initialisé pour tok');
       return;
     }
 
@@ -810,16 +810,16 @@
       noiseSource.start(startTime);
       noiseSource.stop(startTime + 0.02);
       
-      console.log('✅ Son tok créé');
+      // // console.log('✅ Son tok créé');
     } catch (error) {
-      console.error('❌ Erreur création tok:', error);
+      // // console.error('❌ Erreur création tok:', error);
     }
   }
   
   // Fonction pour créer des sons "paf" - percussions sèches et claquantes
   function createPafSound(volume = 0.3) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour paf');
+      // // console.warn('⚠️ AudioContext non initialisé pour paf');
       return;
     }
 
@@ -870,16 +870,16 @@
       noiseSource.start(startTime);
       noiseSource.stop(startTime + 0.03);
       
-      console.log('✅ Son paf créé');
+      // // console.log('✅ Son paf créé');
     } catch (error) {
-      console.error('❌ Erreur création paf:', error);
+      // // console.error('❌ Erreur création paf:', error);
     }
   }
 
   // Fonction pour créer des sons "pong" - rebonds élastiques
   function createPongSound(volume = 0.3) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour pong');
+      // // console.warn('⚠️ AudioContext non initialisé pour pong');
       return;
     }
 
@@ -924,16 +924,16 @@
       harmOsc.start(startTime);
       harmOsc.stop(startTime + 0.12);
       
-      console.log('✅ Son pong créé');
+      // // console.log('✅ Son pong créé');
     } catch (error) {
-      console.error('❌ Erreur création pong:', error);
+      // // console.error('❌ Erreur création pong:', error);
     }
   }
 
   // Fonction pour créer des sons "boume" - explosions sourdes
   function createBoumeSound(volume = 0.4) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour boume');
+      // // console.warn('⚠️ AudioContext non initialisé pour boume');
       return;
     }
 
@@ -987,16 +987,16 @@
       explosionSource.start(startTime);
       explosionSource.stop(startTime + 0.2);
       
-      console.log('✅ Son boume créé');
+      // // console.log('✅ Son boume créé');
     } catch (error) {
-      console.error('❌ Erreur création boume:', error);
+      // // console.error('❌ Erreur création boume:', error);
     }
   }
   
   // Fonction pour créer des sons de tambour sourd spirituels
   function createDrumSound(baseFreq = 80, duration = 0.8, volume = 0.3, resonance = 'deep') {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ AudioContext non initialisé pour tambour');
+      // // console.warn('⚠️ AudioContext non initialisé pour tambour');
       return;
     }
 
@@ -1111,25 +1111,25 @@
       noiseSource.start(startTime);
       noiseSource.stop(startTime + 0.15);
       
-      console.log(`✅ Tambour ${resonance} créé avec succès`);
+      // // console.log(`✅ Tambour ${resonance} créé avec succès`);
     } catch (error) {
-      console.error('❌ Erreur création tambour:', error);
+      // // console.error('❌ Erreur création tambour:', error);
     }
   }
   
   // Fonction de base pour créer des sons doux et spirituels
   function createGentleSound(frequencies, duration = 0.8, fadeOut = 0.3) {
     if (!audioContext || !isInitialized) {
-      console.warn('⚠️ Contexte audio non initialisé');
+      // // console.warn('⚠️ Contexte audio non initialisé');
       return;
     }
     
     if (audioContext.state !== 'running') {
-      console.warn('⚠️ Contexte audio pas en cours d\'exécution:', audioContext.state);
+      // // console.warn('⚠️ Contexte audio pas en cours d\'exécution:', audioContext.state);
       return;
     }
     
-    console.log(`🎵 Création son avec fréquences:`, frequencies);
+    // // console.log(`🎵 Création son avec fréquences:`, frequencies);
     
     try {
       const startTime = audioContext.currentTime;
@@ -1161,9 +1161,9 @@
         oscillator.stop(endTime);
       });
       
-      console.log('✅ Son créé avec succès');
+      // // console.log('✅ Son créé avec succès');
     } catch (error) {
-      console.error('❌ Erreur création son:', error);
+      // // console.error('❌ Erreur création son:', error);
     }
   }
   
@@ -1171,19 +1171,19 @@
   const faithSounds = {
     // Initialisation forcée
     init: function() {
-      console.log('🎵 Initialisation forcée du système audio...');
+      // // console.log('🎵 Initialisation forcée du système audio...');
       return initAudio().then(() => {
-        console.log('✅ Initialisation forcée réussie');
+        // // console.log('✅ Initialisation forcée réussie');
         return true;
       }).catch(err => {
-        console.error('❌ Initialisation forcée échouée:', err);
+        // // console.error('❌ Initialisation forcée échouée:', err);
         return false;
       });
     },
     
     // Test simple d'abord
     test: function() {
-      console.log('🧪 Test direct du son...');
+      // // console.log('🧪 Test direct du son...');
       try {
         const AudioContext = window.AudioContext || window.webkitAudioContext;
         const tempContext = new AudioContext();
@@ -1199,225 +1199,225 @@
         osc.start();
         osc.stop(tempContext.currentTime + 0.3);
         
-        console.log('✅ Test son réussi');
+        // // console.log('✅ Test son réussi');
       } catch (error) {
-        console.error('❌ Test son échoué:', error);
+        // // console.error('❌ Test son échoué:', error);
       }
     },
     
     // Son de réponse correcte - Accord doux et lumineux
     correctAnswer: function() {
-      console.log('🎵 Déclenchement son correctAnswer...');
+      // // console.log('🎵 Déclenchement son correctAnswer...');
       initAudio().then(() => {
         createGentleSound([523.25, 659.25, 783.99], 0.6, 0.2); // Do-Mi-Sol majeur
-      }).catch(err => console.error('❌ Erreur correctAnswer:', err));
+      }).catch(err => // // console.error('❌ Erreur correctAnswer:', err));
     },
     
     // Son de réponse incorrecte - Ton grave et compatissant
     wrongAnswer: function() {
-      console.log('🎵 Déclenchement son wrongAnswer...');
+      // // console.log('🎵 Déclenchement son wrongAnswer...');
       initAudio().then(() => {
         createGentleSound([220, 196], 0.8, 0.4); // La-Sol grave
-      }).catch(err => console.error('❌ Erreur wrongAnswer:', err));
+      }).catch(err => // // console.error('❌ Erreur wrongAnswer:', err));
     },
     
     // Son d'étoile gagnée - Carillon céleste
     starEarned: function() {
-      console.log('🎵 Déclenchement son starEarned...');
+      // // console.log('🎵 Déclenchement son starEarned...');
       initAudio().then(() => {
         createGentleSound([523.25, 659.25, 783.99, 1046.5], 1.2, 0.5); // Arpège ascendant
-      }).catch(err => console.error('❌ Erreur starEarned:', err));
+      }).catch(err => // // console.error('❌ Erreur starEarned:', err));
     },
     
     // Son de niveau terminé - Fanfare spirituelle
     levelComplete: function() {
-      console.log('🎵 Déclenchement son levelComplete...');
+      // // console.log('🎵 Déclenchement son levelComplete...');
       initAudio().then(() => {
         createGentleSound([392, 523.25, 659.25, 783.99, 1046.5], 1.8, 0.6); // Sol-Do-Mi-Sol-Do
-      }).catch(err => console.error('❌ Erreur levelComplete:', err));
+      }).catch(err => // // console.error('❌ Erreur levelComplete:', err));
     },
     
     // Son de clic de bouton - Note pure et simple
     buttonClick: function() {
-      console.log('🎵 Déclenchement son buttonClick...');
+      // // console.log('🎵 Déclenchement son buttonClick...');
       initAudio().then(() => {
         createGentleSound([800], 0.3, 0.1); // Note claire et brève
-      }).catch(err => console.error('❌ Erreur buttonClick:', err));
+      }).catch(err => // // console.error('❌ Erreur buttonClick:', err));
     },
     
     // Son de victoire de montagne - Gloire majestueuse
     mountainVictory: function() {
-      console.log('🎵 Déclenchement son mountainVictory...');
+      // // console.log('🎵 Déclenchement son mountainVictory...');
       initAudio().then(() => {
         createGentleSound([261.63, 329.63, 392, 523.25, 659.25, 783.99], 2.5, 0.8);
-      }).catch(err => console.error('❌ Erreur mountainVictory:', err));
+      }).catch(err => // // console.error('❌ Erreur mountainVictory:', err));
     },
     
     // Son de gong - Résonnance profonde et spirituelle
     gong: function() {
-      console.log('🎵 Déclenchement son gong...');
+      // // console.log('🎵 Déclenchement son gong...');
       initAudio().then(() => {
         createGongSound();
-      }).catch(err => console.error('❌ Erreur gong:', err));
+      }).catch(err => // // console.error('❌ Erreur gong:', err));
     },
     
     // Son de début de jeu - Fanfare d'encouragement
     gameStart: function() {
-      console.log('🎵 Déclenchement son gameStart...');
+      // // console.log('🎵 Déclenchement son gameStart...');
       initAudio().then(() => {
         createGentleSound([523.25, 659.25, 783.99, 1046.5, 783.99], 1.5, 0.4); // Montée puis redescente
-      }).catch(err => console.error('❌ Erreur gameStart:', err));
+      }).catch(err => // // console.error('❌ Erreur gameStart:', err));
     },
     
     // Son de tick/clock - Clic mécanique doux
     tick: function() {
-      console.log('🎵 Déclenchement son tick...');
+      // // console.log('🎵 Déclenchement son tick...');
       initAudio().then(() => {
         createTickSound();
-      }).catch(err => console.error('❌ Erreur tick:', err));
+      }).catch(err => // // console.error('❌ Erreur tick:', err));
     },
     
     // Son de Foi - Tambour sourd spirituel et lumineux (plus punché)
     faith: function() {
-      console.log('🎵 Déclenchement tambour foi...');
+      // // console.log('🎵 Déclenchement tambour foi...');
       initAudio().then(() => {
         createDrumSound(65, 0.9, 0.45, 'faith'); // Plus grave et plus fort
-      }).catch(err => console.error('❌ Erreur faith:', err));
+      }).catch(err => // // console.error('❌ Erreur faith:', err));
     },
     
     // Son de Courage - Tambour sourd héroïque et puissant (très punché)
     courage: function() {
-      console.log('🎵 Déclenchement tambour courage...');
+      // // console.log('🎵 Déclenchement tambour courage...');
       initAudio().then(() => {
         createDrumSound(55, 0.8, 0.5, 'courage'); // Très grave et très fort
-      }).catch(err => console.error('❌ Erreur courage:', err));
+      }).catch(err => // // console.error('❌ Erreur courage:', err));
     },
     
     // Son de Sagesse - Tambour sourd méditatif et profond (punché mais sage)
     wisdom: function() {
-      console.log('🎵 Déclenchement tambour sagesse...');
+      // // console.log('🎵 Déclenchement tambour sagesse...');
       initAudio().then(() => {
         createDrumSound(60, 1.0, 0.4, 'wisdom'); // Grave, long et impactant
-      }).catch(err => console.error('❌ Erreur wisdom:', err));
+      }).catch(err => // // console.error('❌ Erreur wisdom:', err));
     },
     
     // Son picth - cristallin pour bulles d'étoiles
     picth: function() {
-      console.log('🎵 Déclenchement son picth...');
-      console.log('🔍 createPicthSound disponible:', typeof createPicthSound);
+      // // console.log('🎵 Déclenchement son picth...');
+      // // console.log('🔍 createPicthSound disponible:', typeof createPicthSound);
       initAudio().then(() => {
         createPicthSound(0.35);
-      }).catch(err => console.error('❌ Erreur picth:', err));
+      }).catch(err => // // console.error('❌ Erreur picth:', err));
     },
     
     // Son cheube - navigation douce pour < et >
     cheube: function() {
-      console.log('🎵 Déclenchement son cheube...');
-      console.log('🔍 createCheubeSound disponible:', typeof createCheubeSound);
+      // // console.log('🎵 Déclenchement son cheube...');
+      // // console.log('🔍 createCheubeSound disponible:', typeof createCheubeSound);
       initAudio().then(() => {
         createCheubeSound(0.35);
-      }).catch(err => console.error('❌ Erreur cheube:', err));
+      }).catch(err => // // console.error('❌ Erreur cheube:', err));
     },
     
     // Son tok - percussion sèche pour continuer
     tok: function() {
-      console.log('🎵 Déclenchement son tok...');
-      console.log('🔍 createTokSound disponible:', typeof createTokSound);
+      // // console.log('🎵 Déclenchement son tok...');
+      // // console.log('🔍 createTokSound disponible:', typeof createTokSound);
       initAudio().then(() => {
         createTokSound(0.35);
-      }).catch(err => console.error('❌ Erreur tok:', err));
+      }).catch(err => // // console.error('❌ Erreur tok:', err));
     },
     
     // Nouveaux sons percussifs
     paf: function() {
-      console.log('🎵 Déclenchement son paf...');
-      console.log('🔍 createPafSound disponible:', typeof createPafSound);
+      // // console.log('🎵 Déclenchement son paf...');
+      // // console.log('🔍 createPafSound disponible:', typeof createPafSound);
       initAudio().then(() => {
         createPafSound(0.35);
-      }).catch(err => console.error('❌ Erreur paf:', err));
+      }).catch(err => // // console.error('❌ Erreur paf:', err));
     },
     
     pong: function() {
-      console.log('🎵 Déclenchement son pong...');
-      console.log('🔍 createPongSound disponible:', typeof createPongSound);
+      // // console.log('🎵 Déclenchement son pong...');
+      // // console.log('🔍 createPongSound disponible:', typeof createPongSound);
       initAudio().then(() => {
         createPongSound(0.3);
-      }).catch(err => console.error('❌ Erreur pong:', err));
+      }).catch(err => // // console.error('❌ Erreur pong:', err));
     },
     
     boume: function() {
-      console.log('🎵 Déclenchement son boume...');
-      console.log('🔍 createBoumeSound disponible:', typeof createBoumeSound);
+      // // console.log('🎵 Déclenchement son boume...');
+      // // console.log('🔍 createBoumeSound disponible:', typeof createBoumeSound);
       initAudio().then(() => {
         createBoumeSound(0.4);
-      }).catch(err => console.error('❌ Erreur boume:', err));
+      }).catch(err => // // console.error('❌ Erreur boume:', err));
     },
 
     // Sons "pof" courts et percutants
     pof: function() {
-      console.log('💥 Déclenchement son pof...');
+      // // console.log('💥 Déclenchement son pof...');
       initAudio().then(() => {
         createPofSound(150, 'basic'); // Pof basique
-      }).catch(err => console.error('❌ Erreur pof:', err));
+      }).catch(err => // // console.error('❌ Erreur pof:', err));
     },
     
     pofHigh: function() {
-      console.log('💥 Déclenchement son pofHigh...');
+      // // console.log('💥 Déclenchement son pofHigh...');
       initAudio().then(() => {
         createPofSound(400, 'high'); // Pof aigu
-      }).catch(err => console.error('❌ Erreur pofHigh:', err));
+      }).catch(err => // // console.error('❌ Erreur pofHigh:', err));
     },
     
     pofLow: function() {
-      console.log('💥 Déclenchement son pofLow...');
+      // // console.log('💥 Déclenchement son pofLow...');
       initAudio().then(() => {
         createPofSound(80, 'low'); // Pof grave
-      }).catch(err => console.error('❌ Erreur pofLow:', err));
+      }).catch(err => // // console.error('❌ Erreur pofLow:', err));
     },
     
     // Son "wrash" pour les retours
     wrash: function() {
-      console.log('💨 Déclenchement son wrash...');
+      // // console.log('💨 Déclenchement son wrash...');
       initAudio().then(() => {
         createWrashSound(); // Son de retour/annulation
-      }).catch(err => console.error('❌ Erreur wrash:', err));
+      }).catch(err => // // console.error('❌ Erreur wrash:', err));
     },
     
     // Son "groook" de pierre/roche
     groook: function() {
-      console.log('🗿 Déclenchement son groook...');
+      // // console.log('🗿 Déclenchement son groook...');
       initAudio().then(() => {
         createGroookSound(); // Son de pierre/roche profond
-      }).catch(err => console.error('❌ Erreur groook:', err));
+      }).catch(err => // // console.error('❌ Erreur groook:', err));
     },
     
     // Son "reset" pour remise à zéro
     reset: function() {
-      console.log('🔄 Déclenchement son reset...');
+      // // console.log('🔄 Déclenchement son reset...');
       initAudio().then(() => {
         createResetSound(); // Son de remise à zéro/effacement
-      }).catch(err => console.error('❌ Erreur reset:', err));
+      }).catch(err => // // console.error('❌ Erreur reset:', err));
     }
   };
   
   // Contrôle du volume principal
   faithSounds.setVolume = function(volume) {
-    console.log('🔊 Changement volume:', volume);
+    // // console.log('🔊 Changement volume:', volume);
     if (masterGain) {
       masterGain.gain.value = Math.max(0, Math.min(1, volume));
-      console.log('✅ Volume appliqué:', masterGain.gain.value);
+      // // console.log('✅ Volume appliqué:', masterGain.gain.value);
     } else {
-      console.warn('⚠️ masterGain non disponible pour volume - initialisation du contexte audio...');
+      // // console.warn('⚠️ masterGain non disponible pour volume - initialisation du contexte audio...');
       // Initialiser le contexte audio si nécessaire
       initAudio().then(() => {
         if (masterGain) {
           masterGain.gain.value = Math.max(0, Math.min(1, volume));
-          console.log('✅ Volume appliqué après initialisation:', masterGain.gain.value);
+          // // console.log('✅ Volume appliqué après initialisation:', masterGain.gain.value);
         } else {
-          console.error('❌ Impossible d\'initialiser masterGain');
+          // // console.error('❌ Impossible d\'initialiser masterGain');
         }
       }).catch(err => {
-        console.error('❌ Erreur initialisation audio pour volume:', err);
+        // // console.error('❌ Erreur initialisation audio pour volume:', err);
       });
     }
   };
@@ -1425,8 +1425,8 @@
   // Export global
   window.faithSounds = faithSounds;
   
-  console.log('✅ Faith Chronicles - Système audio spirituel initialisé');
-  console.log('🔧 Methods disponibles:', Object.keys(faithSounds));
+  // // console.log('✅ Faith Chronicles - Système audio spirituel initialisé');
+  // // console.log('🔧 Methods disponibles:', Object.keys(faithSounds));
   
   // Initialisation automatique du contexte audio dès qu'il y a une interaction
   let userInteractionDetected = false;
@@ -1434,11 +1434,11 @@
   function handleFirstUserInteraction() {
     if (!userInteractionDetected) {
       userInteractionDetected = true;
-      console.log('👆 Première interaction utilisateur détectée - initialisation audio...');
+      // // console.log('👆 Première interaction utilisateur détectée - initialisation audio...');
       initAudio().then(() => {
-        console.log('✅ Contexte audio pré-initialisé');
+        // // console.log('✅ Contexte audio pré-initialisé');
       }).catch(err => {
-        console.error('❌ Erreur pré-initialisation audio:', err);
+        // // console.error('❌ Erreur pré-initialisation audio:', err);
       });
       
       // Retirer les listeners après la première interaction
@@ -1455,13 +1455,13 @@
   
   // Test automatique après 2 secondes pour vérifier que tout fonctionne
   setTimeout(() => {
-    console.log('🧪 Test automatique du système audio...');
+    // // console.log('🧪 Test automatique du système audio...');
     window.testFaithSounds = function() {
-      console.log('🧪 Début test sounds...');
+      // // console.log('🧪 Début test sounds...');
       if (window.faithSounds) {
         window.faithSounds.buttonClick();
       } else {
-        console.error('❌ window.faithSounds non disponible');
+        // // console.error('❌ window.faithSounds non disponible');
       }
     };
   }, 2000);

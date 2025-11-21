@@ -23,19 +23,19 @@ export const useGameProgress = (userId) => {
     const timeSinceLastRefresh = now - lastRefreshTime.current;
     
     if (!forceRefresh && timeSinceLastRefresh < 60000 && progress !== null) {
-      console.log('🔄 Cache valide, pas de rechargement nécessaire');
+      // console.log('🔄 Cache valide, pas de rechargement nécessaire');
       setLoading(false);
       return;
     }
 
     try {
       setLoading(true);
-      console.log('🔄 Rafraîchissement des scores...');
+      // console.log('🔄 Rafraîchissement des scores...');
 
       // Vérifier la session active
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
-        console.warn('Aucune session active - progression non chargée');
+        // console.warn('Aucune session active - progression non chargée');
         setLoading(false);
         return;
       }
@@ -53,9 +53,9 @@ export const useGameProgress = (userId) => {
       setProgress(data);
       setError(null);
       lastRefreshTime.current = now;
-      console.log('✅ Scores rafraîchis avec succès');
+      // console.log('✅ Scores rafraîchis avec succès');
     } catch (err) {
-      console.error('Erreur chargement progression:', err);
+      // console.error('Erreur chargement progression:', err);
       setError(err);
     } finally {
       setLoading(false);
@@ -73,7 +73,7 @@ export const useGameProgress = (userId) => {
       // Vérifier la session active avant de sauvegarder
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
-        console.warn('Aucune session active - progression non sauvegardée');
+        // console.warn('Aucune session active - progression non sauvegardée');
         return { error: new Error('Non authentifié') };
       }
 
@@ -112,7 +112,7 @@ export const useGameProgress = (userId) => {
       // Vérifier la session active avant de sauvegarder
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
-        console.warn('Aucune session active - étoiles non sauvegardées');
+        // console.warn('Aucune session active - étoiles non sauvegardées');
         return { error: new Error('Non authentifié') };
       }
 
@@ -144,7 +144,7 @@ export const useGameProgress = (userId) => {
     const timeSinceLastRefresh = now - lastRefreshTime.current;
     
     if (!forceRefresh && timeSinceLastRefresh < 60000) {
-      console.log('⭐ Cache étoiles valide');
+      // console.log('⭐ Cache étoiles valide');
     }
 
     // Utiliser retry automatique pour gérer les erreurs réseau
@@ -152,7 +152,7 @@ export const useGameProgress = (userId) => {
       // Vérifier la session active
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
-        console.warn('Aucune session active - étoiles non chargées');
+        // console.warn('Aucune session active - étoiles non chargées');
         return { data: {}, error: new Error('Non authentifié') };
       }
 
@@ -177,7 +177,7 @@ export const useGameProgress = (userId) => {
     // Éviter de recharger si c'est le même utilisateur
     if (userId && userId !== lastLoadedUserId.current) {
       lastLoadedUserId.current = userId;
-      console.log('🔄 Nouveau utilisateur détecté, chargement progression:', userId);
+      // console.log('🔄 Nouveau utilisateur détecté, chargement progression:', userId);
       loadProgress(true); // Force refresh pour nouveau user
       
       // Configurer rafraîchissement automatique toutes les 60s
@@ -194,7 +194,7 @@ export const useGameProgress = (userId) => {
       }
     } else if (userId === lastLoadedUserId.current && progress === null) {
       // Cas spécial: même utilisateur mais pas de progression chargée (après rafraîchissement)
-      console.log('🔄 Rechargement après rafraîchissement de page pour:', userId);
+      // console.log('🔄 Rechargement après rafraîchissement de page pour:', userId);
       loadProgress(true);
     }
 

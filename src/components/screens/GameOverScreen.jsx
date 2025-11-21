@@ -55,7 +55,7 @@ const GameOverScreen = ({
               currentStatus: "defeat"
             }}
             onLevelChange={(level, waypoint) => {
-              console.log(`Défaite montagne: ${waypoint.label}`);
+              // console.log(`Défaite montagne: ${waypoint.label}`);
             }}
           />
         </div>

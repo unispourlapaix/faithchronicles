@@ -59,10 +59,10 @@ const MountainVictoryScreen = ({
             autoStart={false}
             showStats={true}
             onLevelChange={(level, waypoint) => {
-              console.log(`🏔️ Progression: ${waypoint.label}`);
+              // console.log(`🏔️ Progression: ${waypoint.label}`);
             }}
             onQuizComplete={(stats) => {
-              console.log('🏆 Sommet spirituel atteint!', stats);
+              // console.log('🏆 Sommet spirituel atteint!', stats);
               setAnimationComplete(true);
             }}
           />

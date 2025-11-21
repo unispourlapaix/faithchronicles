@@ -152,7 +152,7 @@ export const getCorrectAnswer = (levelId, difficulty) => {
   const answer = correctAnswers[chapterId]?.[levelId]?.[difficulty];
   
   if (answer === undefined) {
-    console.warn(`⚠️ Réponse correcte non trouvée pour niveau ${levelId}, difficulté ${difficulty}`);
+    // console.warn(`⚠️ Réponse correcte non trouvée pour niveau ${levelId}, difficulté ${difficulty}`);
     return 0; // Fallback
   }
   

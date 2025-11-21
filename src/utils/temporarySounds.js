@@ -45,7 +45,7 @@ const createSoftTone = (frequency, duration, type = 'sine') => {
 
 // Créer et sauvegarder les sons temporaires
 const createTemporarySounds = () => {
-  console.log('🎵 Création des sons temporaires pour Faith Chronicles...');
+  // console.log('🎵 Création des sons temporaires pour Faith Chronicles...');
   
   // Ces sons seront remplacés par de vrais fichiers audio
   const sounds = {
@@ -63,8 +63,8 @@ const createTemporarySounds = () => {
 // Pour utilisation en développement
 if (typeof window !== 'undefined') {
   window.createTemporarySounds = createTemporarySounds;
-  console.log('🛠️ Générateur de sons temporaires disponible.');
-  console.log('💡 Tapez "createTemporarySounds()" dans la console pour générer des sons de test.');
+  // console.log('🛠️ Générateur de sons temporaires disponible.');
+  // console.log('💡 Tapez "createTemporarySounds()" dans la console pour générer des sons de test.');
 }
 
 export { createTemporarySounds, createSoftTone };

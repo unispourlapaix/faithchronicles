@@ -37,10 +37,10 @@ const GospelPlaylist = ({ isActive = true, volume = 0.3 }) => {
         .then(() => {
           setIsPlaying(true);
           setIsLoaded(true);
-          console.log(`🎵 Lecture: ${song.title}`);
+          // console.log(`🎵 Lecture: ${song.title}`);
         })
         .catch(error => {
-          console.log(`❌ Erreur lecture: ${song.title}`, error);
+          // console.log(`❌ Erreur lecture: ${song.title}`, error);
           nextSong();
         });
     }
@@ -71,7 +71,7 @@ const GospelPlaylist = ({ isActive = true, volume = 0.3 }) => {
   };
 
   const handleSongError = () => {
-    console.log(`❌ Erreur chargement: ${gospelSongs[currentSongIndex]?.title}`);
+    // console.log(`❌ Erreur chargement: ${gospelSongs[currentSongIndex]?.title}`);
     nextSong();
   };
 

@@ -70,7 +70,7 @@ const ChallengeScreen = ({
         setCurrentScreen('question');
       }
     } catch (error) {
-      console.error("Erreur chargement questions:", error);
+      // console.error("Erreur chargement questions:", error);
     }
   };
 

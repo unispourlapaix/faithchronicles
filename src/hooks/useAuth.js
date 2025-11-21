@@ -8,12 +8,12 @@ export const useAuth = () => {
 
   useEffect(() => {
     if (!isSupabaseConfigured()) {
-      console.log('⚠️ Supabase non configuré');
+      // console.log('⚠️ Supabase non configuré');
       setLoading(false);
       return;
     }
 
-    console.log('🔐 Initialisation de l\'authentification...');
+    // console.log('🔐 Initialisation de l\'authentification...');
 
     // Fonction pour vérifier et restaurer une session existante
     const checkExistingSession = async () => {
@@ -22,25 +22,25 @@ export const useAuth = () => {
         const { data: { session: currentSession }, error } = await supabase.auth.getSession();
         
         if (currentSession) {
-          console.log('✅ Session active trouvée:', currentSession.user.email);
+          // console.log('✅ Session active trouvée:', currentSession.user.email);
           return currentSession;
         }
         
         // Si pas de session locale, vérifier si on peut en récupérer une depuis l'API
-        console.log('🔍 Pas de session locale, vérification en ligne...');
+        // console.log('🔍 Pas de session locale, vérification en ligne...');
         const { data: { user }, error: userError } = await supabase.auth.getUser();
         
         if (user) {
-          console.log('✅ Session en ligne trouvée et synchronisée:', user.email);
+          // console.log('✅ Session en ligne trouvée et synchronisée:', user.email);
           // Forcer un refresh de session pour synchroniser
           const { data: { session: refreshedSession } } = await supabase.auth.refreshSession();
           return refreshedSession;
         }
         
-        console.log('ℹ️ Aucune session trouvée (en ligne ou locale)');
+        // console.log('ℹ️ Aucune session trouvée (en ligne ou locale)');
         return null;
       } catch (error) {
-        console.error('❌ Erreur vérification session:', error);
+        // console.error('❌ Erreur vérification session:', error);
         return null;
       }
     };
@@ -52,7 +52,7 @@ export const useAuth = () => {
       const refreshToken = hashParams.get('refresh_token');
       const type = hashParams.get('type');
       
-      console.log('🔍 Vérification hash URL:', { 
+      // console.log('🔍 Vérification hash URL:', { 
         hasAccessToken: !!accessToken, 
         hasRefreshToken: !!refreshToken,
         type 
@@ -61,14 +61,14 @@ export const useAuth = () => {
       // Magic link détecté - Supabase gère automatiquement avec detectSessionInUrl
       // On nettoie juste le hash de l'URL pour améliorer l'UX
       if (accessToken && refreshToken) {
-        console.log('🔗 Magic link détecté - Supabase traite automatiquement l\'authentification');
+        // console.log('🔗 Magic link détecté - Supabase traite automatiquement l\'authentification');
         
         // Attendre que Supabase établisse la session (detectSessionInUrl fait le travail)
         await new Promise(resolve => setTimeout(resolve, 1500));
         
         // Vérifier la session
         const { data: { session } } = await supabase.auth.getSession();
-        console.log('✅ Session après magic link:', session ? `User: ${session.user.email}` : 'Non établie');
+        // console.log('✅ Session après magic link:', session ? `User: ${session.user.email}` : 'Non établie');
         
         // Nettoyer le hash de l'URL pour améliorer l'UX
         window.history.replaceState(null, '', window.location.pathname + window.location.search);
@@ -103,7 +103,7 @@ export const useAuth = () => {
 
     // Écouter les changements d'authentification
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      console.log('🔄 Changement auth:', event, session ? `User: ${session.user.email || 'anonymous'}` : 'Aucune session');
+      // console.log('🔄 Changement auth:', event, session ? `User: ${session.user.email || 'anonymous'}` : 'Aucune session');
       setSession(session);
       setUser(session?.user ?? null);
       setLoading(false);
@@ -116,7 +116,7 @@ export const useAuth = () => {
   const signInAnonymously = async () => {
     try {
       // Mode anonyme = pas de connexion Supabase, juste localStorage
-      console.log('🎮 Connexion anonyme locale (pas de Supabase)');
+      // console.log('🎮 Connexion anonyme locale (pas de Supabase)');
       
       // Pas d'appel à Supabase, on retourne juste un succès
       // L'utilisateur sera géré uniquement en local
@@ -128,7 +128,7 @@ export const useAuth = () => {
         error: null 
       };
     } catch (error) {
-      console.error('Erreur connexion anonyme:', error);
+      // console.error('Erreur connexion anonyme:', error);
       return { data: null, error };
     }
   };
@@ -140,7 +140,7 @@ export const useAuth = () => {
       // Cela permet de se connecter aussi bien sur localhost qu'en production
       const redirectUrl = `${window.location.origin}${process.env.PUBLIC_URL || ''}`;
       
-      console.log('📧 emailRedirectTo:', redirectUrl);
+      // console.log('📧 emailRedirectTo:', redirectUrl);
       
       const { data, error } = await supabase.auth.signInWithOtp({
         email,
@@ -151,7 +151,7 @@ export const useAuth = () => {
       if (error) throw error;
       return { data, error: null };
     } catch (error) {
-      console.error('Erreur connexion email:', error);
+      // console.error('Erreur connexion email:', error);
       
       // Détection de l'erreur de rate limiting (15 secondes entre chaque envoi)
       const isRateLimited = error.message && (
@@ -170,7 +170,7 @@ export const useAuth = () => {
   // Connexion avec email + mot de passe (méthode simple et fiable)
   const signInWithPassword = async (email, password) => {
     try {
-      console.log('🔐 Tentative de connexion avec mot de passe:', email);
+      // console.log('🔐 Tentative de connexion avec mot de passe:', email);
       
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
@@ -179,10 +179,10 @@ export const useAuth = () => {
       
       if (error) throw error;
       
-      console.log('✅ Connexion réussie:', data.user.email);
+      // console.log('✅ Connexion réussie:', data.user.email);
       return { data, error: null };
     } catch (error) {
-      console.error('❌ Erreur connexion mot de passe:', error);
+      // console.error('❌ Erreur connexion mot de passe:', error);
       return { data: null, error };
     }
   };
@@ -190,7 +190,7 @@ export const useAuth = () => {
   // Inscription avec email + mot de passe
   const signUpWithPassword = async (email, password) => {
     try {
-      console.log('📝 Tentative d\'inscription:', email);
+      // console.log('📝 Tentative d\'inscription:', email);
       
       const { data, error } = await supabase.auth.signUp({
         email,
@@ -203,10 +203,10 @@ export const useAuth = () => {
       
       if (error) throw error;
       
-      console.log('✅ Inscription réussie:', data.user?.email || 'En attente confirmation');
+      // console.log('✅ Inscription réussie:', data.user?.email || 'En attente confirmation');
       return { data, error: null };
     } catch (error) {
-      console.error('❌ Erreur inscription:', error);
+      // console.error('❌ Erreur inscription:', error);
       return { data: null, error };
     }
   };
@@ -214,7 +214,7 @@ export const useAuth = () => {
   // Réinitialisation de mot de passe (envoie un email avec un lien)
   const resetPassword = async (email) => {
     try {
-      console.log('🔑 Envoi email de réinitialisation:', email);
+      // console.log('🔑 Envoi email de réinitialisation:', email);
       
       const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${window.location.origin}${process.env.PUBLIC_URL || ''}/reset-password`,
@@ -222,10 +222,10 @@ export const useAuth = () => {
       
       if (error) throw error;
       
-      console.log('✅ Email de réinitialisation envoyé');
+      // console.log('✅ Email de réinitialisation envoyé');
       return { data, error: null };
     } catch (error) {
-      console.error('❌ Erreur réinitialisation:', error);
+      // console.error('❌ Erreur réinitialisation:', error);
       return { data: null, error };
     }
   };
@@ -233,7 +233,7 @@ export const useAuth = () => {
   // Mettre à jour le mot de passe (après avoir cliqué sur le lien dans l'email)
   const updatePassword = async (newPassword) => {
     try {
-      console.log('🔐 Mise à jour du mot de passe');
+      // console.log('🔐 Mise à jour du mot de passe');
       
       const { data, error } = await supabase.auth.updateUser({
         password: newPassword
@@ -241,10 +241,10 @@ export const useAuth = () => {
       
       if (error) throw error;
       
-      console.log('✅ Mot de passe mis à jour');
+      // console.log('✅ Mot de passe mis à jour');
       return { data, error: null };
     } catch (error) {
-      console.error('❌ Erreur mise à jour mot de passe:', error);
+      // console.error('❌ Erreur mise à jour mot de passe:', error);
       return { data: null, error };
     }
   };
@@ -256,7 +256,7 @@ export const useAuth = () => {
       if (error) throw error;
       return { error: null };
     } catch (error) {
-      console.error('Erreur déconnexion:', error);
+      // console.error('Erreur déconnexion:', error);
       return { error };
     }
   };

@@ -28,7 +28,7 @@ const LevelSelectScreen = ({
       const data = getChapter(currentChapter);
       setChapterData(data);
     } catch (error) {
-      console.error("Erreur chargement chapitre:", error);
+      // console.error("Erreur chargement chapitre:", error);
     }
   }, [currentChapter, getChapter]);
 
@@ -60,7 +60,7 @@ const LevelSelectScreen = ({
           setCurrentScreen('challenge');
         }
       } catch (error) {
-        console.error("Erreur chargement niveau:", error);
+        // console.error("Erreur chargement niveau:", error);
       }
     } else {
       audio?.sounds?.wrongAnswer(); // Son pour niveau verrouillé

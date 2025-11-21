@@ -121,11 +121,11 @@ const EndCredits = ({ onComplete }) => {
           
           <button
             onClick={() => {
-              console.log('Bouton Continuer cliqué');
+              // console.log('Bouton Continuer cliqué');
               if (onComplete) {
                 onComplete();
               } else {
-                console.error('onComplete non défini');
+                // console.error('onComplete non défini');
               }
             }}
             className="mt-8 px-6 py-3 bg-white text-purple-900 rounded-full font-bold text-base shadow-2xl hover:bg-yellow-100 transition-all transform hover:scale-110 active:scale-95 cursor-pointer relative z-[70]"

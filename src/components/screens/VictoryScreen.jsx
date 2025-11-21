@@ -22,7 +22,7 @@ const VictoryScreen = ({
     
     if (currentLevel >= 91) {
       // Dernier niveau du chapitre 7 = VICTOIRE
-      console.log('🏆 Victoire finale ! Animation au sommet');
+      // console.log('🏆 Victoire finale ! Animation au sommet');
       mountain.triggerVictory();
       processedChapters.current.add(currentChapter);
       
@@ -30,13 +30,13 @@ const VictoryScreen = ({
       const totalStars = Object.values(levelStars).reduce((total, stars) => total + stars, 0);
       if (totalStars >= 273) {
         setTimeout(() => {
-          console.log(`✨ 273 ${t('console.starsUnlocked')} 8`);
+          // console.log(`✨ 273 ${t('console.starsUnlocked')} 8`);
           mountain.unlockChapter8();
         }, 2000); // 2 secondes après la victoire
       }
     } else {
       // Progression normale de chapitre
-      console.log(`🏔️ Chapitre ${currentChapter} terminé`);
+      // console.log(`🏔️ Chapitre ${currentChapter} terminé`);
       mountain.completeChapter(currentChapter);
       processedChapters.current.add(currentChapter);
     }
@@ -95,10 +95,10 @@ const VictoryScreen = ({
               currentLevel: currentLevel // Passer le niveau actuel
             }}
             onLevelChange={(level, waypoint) => {
-              console.log(`Progression montagne: ${waypoint.label}`);
+              // console.log(`Progression montagne: ${waypoint.label}`);
             }}
             onQuizComplete={(stats) => {
-              console.log('🏔️ Sommet atteint!', stats);
+              // console.log('🏔️ Sommet atteint!', stats);
             }}
           />
         </div>

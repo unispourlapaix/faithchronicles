@@ -40,13 +40,13 @@ class ModuleManager {
     }
 
     try {
-      console.log(`📚 Chargement chapitre ${chapterId}...`);
+      // console.log(`📚 Chargement chapitre ${chapterId}...`);
       
       // Utiliser les chapitres pré-chargés au lieu d'imports dynamiques
       let chapterData = this.chapters[chapterId];
       
       if (!chapterData) {
-        console.warn(`Chapitre ${chapterId} pas encore implémenté`);
+        // console.warn(`Chapitre ${chapterId} pas encore implémenté`);
         return null;
       }
 
@@ -57,15 +57,15 @@ class ModuleManager {
         }
       } catch (e) {
         // Pas de traduction disponible - utilisation du français par défaut
-        console.log(`ℹ️ Chapitre ${chapterId}: utilisation de la version française`);
+        // console.log(`ℹ️ Chapitre ${chapterId}: utilisation de la version française`);
       }
 
       this.cache.set(cacheKey, chapterData);
-      console.log(`✅ Chapitre ${chapterId} chargé avec succès`);
+      // console.log(`✅ Chapitre ${chapterId} chargé avec succès`);
       return chapterData;
       
     } catch (error) {
-      console.error(`Erreur chargement chapitre ${chapterId}:`, error);
+      // console.error(`Erreur chargement chapitre ${chapterId}:`, error);
       return null;
     }
   }
@@ -90,8 +90,8 @@ class ModuleManager {
     const level = chapter.levels[levelId];
 
     if (!level) {
-      console.error(`Niveau ${levelId} non trouvé dans chapitre ${chapterId}`);
-      console.log('Niveaux disponibles:', Object.keys(chapter.levels));
+      // console.error(`Niveau ${levelId} non trouvé dans chapitre ${chapterId}`);
+      // console.log('Niveaux disponibles:', Object.keys(chapter.levels));
       return null;
     }
 
@@ -122,7 +122,7 @@ class ModuleManager {
       const response = await import(`../data/translations/${this.currentLanguage}/interface_chapter${chapterId}.js`);
       return response.default;
     } catch (error) {
-      console.log(`⚠️ Traduction pour chapitre ${chapterId} en ${this.currentLanguage} non disponible`);
+      // console.log(`⚠️ Traduction pour chapitre ${chapterId} en ${this.currentLanguage} non disponible`);
       return null;
     }
   }

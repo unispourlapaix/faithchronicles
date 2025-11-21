@@ -37,7 +37,7 @@ const UnityPeaceModule = ({ totalXP, setTotalXP, audio }) => {
     try {
       localStorage.setItem('unityReadCards', JSON.stringify([...readCards]));
     } catch (error) {
-      console.error('Erreur sauvegarde Unity cards:', error);
+      // console.error('Erreur sauvegarde Unity cards:', error);
     }
   }, [readCards]);
 

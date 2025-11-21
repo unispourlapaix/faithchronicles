@@ -30,7 +30,7 @@ const QuestionScreen = ({
 
   // Effet pour éliminer une mauvaise réponse avec Courage
   React.useEffect(() => {
-    console.log('🔍 [QuestionScreen] Effet eliminateWrong déclenché:', {
+    // // console.log('🔍 [QuestionScreen] Effet eliminateWrong déclenché:', {
       hasCard: !!selectedCard,
       cardBonus: selectedCard?.bonus,
       hasQuestion: !!currentQuestion,
@@ -46,7 +46,7 @@ const QuestionScreen = ({
       
       if (wrongOptions.length > 0) {
         const randomWrong = wrongOptions[Math.floor(Math.random() * wrongOptions.length)];
-        console.log('⚔️ [Courage] Option éliminée:', randomWrong, 'Texte:', currentQuestion.options[randomWrong]);
+        // // console.log('⚔️ [Courage] Option éliminée:', randomWrong, 'Texte:', currentQuestion.options[randomWrong]);
         setEliminatedOption(randomWrong);
       }
     } else {
@@ -84,7 +84,7 @@ const QuestionScreen = ({
           timeSpent: timeSpent,
           isFirstTry: true // Vous pouvez ajuster selon votre logique
         });
-        console.log(`💰 XP Calculée: ${earnedXP} (${isCorrect ? 'CORRECT' : 'ERREUR'}, difficulté: ${questionDifficulty}, combo: ${combo})`);
+        // // console.log(`💰 XP Calculée: ${earnedXP} (${isCorrect ? 'CORRECT' : 'ERREUR'}, difficulté: ${questionDifficulty}, combo: ${combo})`);
         setXpGained(earnedXP);
 
         // Protection anti-régression: toujours permettre un minimum d'XP
@@ -197,7 +197,7 @@ const QuestionScreen = ({
         setCurrentScreen('victory');
       }
     } catch (error) {
-      console.error("Erreur chargement question suivante:", error);
+      // // console.error("Erreur chargement question suivante:", error);
     }
   };
 

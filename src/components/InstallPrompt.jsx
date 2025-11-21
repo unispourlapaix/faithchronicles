@@ -23,7 +23,7 @@ const InstallPrompt = () => {
 
     // Écouter l'événement beforeinstallprompt
     const handleBeforeInstallPrompt = (e) => {
-      console.log('📱 PWA installable détecté');
+      // console.log('📱 PWA installable détecté');
       e.preventDefault();
       setDeferredPrompt(e);
       
@@ -37,7 +37,7 @@ const InstallPrompt = () => {
 
     // Écouter l'installation réussie
     window.addEventListener('appinstalled', () => {
-      console.log('✅ PWA installée avec succès');
+      // console.log('✅ PWA installée avec succès');
       setIsInstalled(true);
       setShowPrompt(false);
       setDeferredPrompt(null);
@@ -56,12 +56,12 @@ const InstallPrompt = () => {
 
     // Attendre la réponse de l'utilisateur
     const { outcome } = await deferredPrompt.userChoice;
-    console.log(`📱 Choix utilisateur: ${outcome}`);
+    // console.log(`📱 Choix utilisateur: ${outcome}`);
 
     if (outcome === 'accepted') {
-      console.log('✅ Installation acceptée');
+      // console.log('✅ Installation acceptée');
     } else {
-      console.log('❌ Installation refusée');
+      // console.log('❌ Installation refusée');
     }
 
     setDeferredPrompt(null);

@@ -65,31 +65,31 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
       return;
     }
 
-    console.log('📧 Début envoi email pour:', email.trim());
+    // console.log('📧 Début envoi email pour:', email.trim());
     setLoading(true);
     setMessage('');
 
     try {
-      console.log('📤 Appel de onLogin...');
+      // console.log('📤 Appel de onLogin...');
       const result = await onLogin(email.trim());
-      console.log('📥 Résultat onLogin:', result);
+      // console.log('📥 Résultat onLogin:', result);
       
       // Vérifier si c'est une erreur de rate limiting (15 secondes)
       if (result?.isRateLimited) {
-        console.warn('⏳ Rate limited - attendre 15 secondes');
+        // console.warn('⏳ Rate limited - attendre 15 secondes');
         setMessage(t('login.rateLimited'));
       } else if (result?.error) {
-        console.error('❌ Erreur lors de l\'envoi:', result.error);
+        // console.error('❌ Erreur lors de l\'envoi:', result.error);
         setMessage(t('login.errorSend'));
       } else {
-        console.log('✅ Email envoyé avec succès');
+        // console.log('✅ Email envoyé avec succès');
         setMessage(t('login.checkEmail'));
       }
     } catch (error) {
-      console.error('❌ Exception:', error);
+      // console.error('❌ Exception:', error);
       setMessage(t('login.errorConnection'));
     } finally {
-      console.log('🏁 Fin handleEmailLogin, setLoading(false)');
+      // console.log('🏁 Fin handleEmailLogin, setLoading(false)');
       setLoading(false);
     }
   };
@@ -106,50 +106,50 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
       return;
     }
 
-    console.log('🔐 Connexion avec mot de passe pour:', email.trim());
+    // console.log('🔐 Connexion avec mot de passe pour:', email.trim());
     setLoading(true);
     setMessage('');
 
     try {
       if (authMode === 'signup') {
         // Inscription
-        console.log('📝 Inscription...');
+        // console.log('📝 Inscription...');
         const result = await onSignup(email.trim(), password);
         
         if (result?.error) {
-          console.error('❌ Erreur inscription:', result.error);
+          // console.error('❌ Erreur inscription:', result.error);
           if (result.error.message.includes('already registered')) {
             setMessage(t('login.emailAlreadyExists') || 'Cet email est déjà utilisé');
           } else {
             setMessage(t('login.errorSignup') || 'Erreur lors de l\'inscription');
           }
         } else {
-          console.log('✅ Inscription réussie - En attente de confirmation email');
+          // console.log('✅ Inscription réussie - En attente de confirmation email');
           setMessage('📧 Compte créé ! Vérifiez votre email pour confirmer votre inscription.');
           // Ne pas se connecter automatiquement - attendre la confirmation email
         }
       } else {
         // Connexion
-        console.log('🔑 Connexion...');
+        // console.log('🔑 Connexion...');
         const result = await onLoginWithPassword(email.trim(), password);
         
         if (result?.error) {
-          console.error('❌ Erreur connexion:', result.error);
+          // console.error('❌ Erreur connexion:', result.error);
           if (result.error.message.includes('Invalid login credentials')) {
             setMessage(t('login.invalidCredentials') || 'Email ou mot de passe incorrect');
           } else {
             setMessage(t('login.errorConnection'));
           }
         } else {
-          console.log('✅ Connexion réussie');
+          // console.log('✅ Connexion réussie');
           setMessage(t('login.connectionSuccess') || '✅ Connexion réussie !');
         }
       }
     } catch (error) {
-      console.error('❌ Exception:', error);
+      // console.error('❌ Exception:', error);
       setMessage(t('login.errorConnection'));
     } finally {
-      console.log('🏁 Fin handlePasswordLogin');
+      // console.log('🏁 Fin handlePasswordLogin');
       setLoading(false);
     }
   };

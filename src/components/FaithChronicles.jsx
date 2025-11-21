@@ -47,8 +47,8 @@ const FaithChronicles = () => {
   // Afficher un avertissement si Supabase n'est pas configuré
   useEffect(() => {
     if (!isConfigured) {
-      console.warn('⚠️ Supabase non configuré - Mode hors-ligne uniquement');
-      console.warn('📖 Consultez SUPABASE_QUICKSTART.md pour la configuration');
+      // console.warn('⚠️ Supabase non configuré - Mode hors-ligne uniquement');
+      // console.warn('📖 Consultez SUPABASE_QUICKSTART.md pour la configuration');
     }
   }, [isConfigured]);
 
@@ -58,7 +58,7 @@ const FaithChronicles = () => {
       const saved = localStorage.getItem('faithChroniclesProgress');
       if (saved) return JSON.parse(saved);
     } catch (e) {
-      console.log("Erreur chargement:", e);
+      // console.log("Erreur chargement:", e);
     }
     return {
       score: 0,
@@ -101,16 +101,16 @@ const FaithChronicles = () => {
     const errorDescription = hashParams.get('error_description');
     
     if (error) {
-      console.warn('⚠️ Erreur dans l\'URL:', error, errorDescription);
+      // console.warn('⚠️ Erreur dans l\'URL:', error, errorDescription);
       
       if (error === 'access_denied' && errorDescription?.includes('expired')) {
-        console.log('🔑 Lien de réinitialisation expiré - Affichage du message d\'erreur');
+        // console.log('🔑 Lien de réinitialisation expiré - Affichage du message d\'erreur');
         setCurrentScreen('password-reset');
       } else {
-        console.error('❌ Erreur d\'authentification:', error);
+        // console.error('❌ Erreur d\'authentification:', error);
       }
     } else if (type === 'recovery') {
-      console.log('🔑 Lien de réinitialisation de mot de passe détecté');
+      // console.log('🔑 Lien de réinitialisation de mot de passe détecté');
       setCurrentScreen('password-reset');
     }
   }, []);
@@ -119,14 +119,14 @@ const FaithChronicles = () => {
   const handleAnonymousLogin = async (pseudo) => {
     try {
       // Mode anonyme = TOUJOURS local, pas de Supabase
-      console.log('🎮 Mode anonyme - Sauvegarde locale uniquement');
+      // console.log('🎮 Mode anonyme - Sauvegarde locale uniquement');
       localStorage.setItem('faithChronicles_pseudo', pseudo);
       localStorage.setItem('faithChronicles_mode', 'anonymous');
       setIsAnonymousMode(true);
       setCurrentScreen('menu');
       return { data: { pseudo }, error: null };
     } catch (error) {
-      console.error('❌ Erreur handleAnonymousLogin:', error);
+      // console.error('❌ Erreur handleAnonymousLogin:', error);
       return { data: null, error };
     }
   };
@@ -141,11 +141,11 @@ const FaithChronicles = () => {
   const handlePseudoSetup = async (pseudo) => {
     try {
       localStorage.setItem('faithChronicles_pseudo', pseudo);
-      console.log('✅ Pseudo configuré pour utilisateur connecté:', pseudo);
+      // console.log('✅ Pseudo configuré pour utilisateur connecté:', pseudo);
       
       // ⚠️ IMPORTANT: Ne sauvegarder en ligne QUE si l'utilisateur n'est PAS anonyme
       if (user?.email && isConfigured && !isAnonymousMode) {
-        console.log('💾 Sauvegarde en ligne dans table USERS globale...');
+        // console.log('💾 Sauvegarde en ligne dans table USERS globale...');
         try {
           // STRATÉGIE ROBUSTE: Vérifier si l'utilisateur existe, puis UPDATE ou INSERT
           
@@ -163,7 +163,7 @@ const FaithChronicles = () => {
           
           if (existingUser) {
             // 2. Utilisateur existe → UPDATE
-            console.log('👤 Utilisateur existe, mise à jour du pseudo...');
+            // console.log('👤 Utilisateur existe, mise à jour du pseudo...');
             const { error: updateError } = await supabase
               .from('users')
               .update({ 
@@ -176,11 +176,11 @@ const FaithChronicles = () => {
             if (updateError) {
               throw updateError;
             } else {
-              console.log('✅ Pseudo mis à jour dans table USERS globale');
+              // console.log('✅ Pseudo mis à jour dans table USERS globale');
             }
           } else {
             // 3. Utilisateur n'existe pas → INSERT
-            console.log('➕ Nouvel utilisateur, création...');
+            // console.log('➕ Nouvel utilisateur, création...');
             const { error: insertError } = await supabase
               .from('users')
               .insert({ 
@@ -193,22 +193,22 @@ const FaithChronicles = () => {
             if (insertError) {
               throw insertError;
             } else {
-              console.log('✅ Nouvel utilisateur créé dans table USERS globale');
+              // console.log('✅ Nouvel utilisateur créé dans table USERS globale');
             }
           }
           
         } catch (error) {
-          console.warn('⚠️ Erreur sauvegarde pseudo dans users globale:', error.message);
+          // console.warn('⚠️ Erreur sauvegarde pseudo dans users globale:', error.message);
         }
       } else if (isAnonymousMode) {
-        console.log('🔒 Mode anonyme: sauvegarde uniquement locale (pas de BDD)');
+        // console.log('🔒 Mode anonyme: sauvegarde uniquement locale (pas de BDD)');
       } else {
-        console.log('⚠️ Pas de sauvegarde en ligne: utilisateur non connecté ou Supabase non configuré');
+        // console.log('⚠️ Pas de sauvegarde en ligne: utilisateur non connecté ou Supabase non configuré');
       }
       
       setCurrentScreen('menu');
     } catch (error) {
-      console.error('❌ Erreur configuration pseudo:', error);
+      // console.error('❌ Erreur configuration pseudo:', error);
       throw error;
     }
   };
@@ -235,7 +235,7 @@ const FaithChronicles = () => {
     const savedPseudo = localStorage.getItem('faithChronicles_pseudo');
     const savedProgress = localStorage.getItem('faithChroniclesProgress');
 
-    console.log('🔄 Chargement initial:', { savedMode, savedPseudo, hasProgress: !!savedProgress });
+    // console.log('🔄 Chargement initial:', { savedMode, savedPseudo, hasProgress: !!savedProgress });
 
     if (savedMode === 'anonymous' && savedPseudo) {
       setIsAnonymousMode(true);
@@ -245,7 +245,7 @@ const FaithChronicles = () => {
       if (savedProgress) {
         try {
           const progress = JSON.parse(savedProgress);
-          console.log('📦 Chargement progression localStorage complète:', {
+          // console.log('📦 Chargement progression localStorage complète:', {
             score: progress.score || 0,
             wisdomPoints: progress.wisdomPoints || 0,
             revelationPoints: progress.revelationPoints || 0,
@@ -262,12 +262,12 @@ const FaithChronicles = () => {
           setLevelStars(progress.levelStars || {});
           setTotalXP(progress.totalXP || 0);
         } catch (error) {
-          console.error('Erreur chargement progression localStorage:', error);
+          // console.error('Erreur chargement progression localStorage:', error);
         }
       }
     } else if (user && !isAnonymousMode) {
       // Pour les utilisateurs connectés, forcer un rechargement
-      console.log('🔄 Utilisateur connecté détecté, rechargement progression...');
+      // console.log('🔄 Utilisateur connecté détecté, rechargement progression...');
       setCurrentScreen('menu');
     }
   }, []);
@@ -278,19 +278,19 @@ const FaithChronicles = () => {
       // Déconnexion Supabase si connecté
       if (user && !isAnonymousMode) {
         const { error } = await supabase.auth.signOut();
-        if (error) console.error('Erreur déconnexion:', error);
+        if (error) // console.error('Erreur déconnexion:', error);
       }
       
       // Réinitialiser l'état local
       setCurrentScreen('login');
     } catch (error) {
-      console.error('Erreur lors de la déconnexion:', error);
+      // console.error('Erreur lors de la déconnexion:', error);
     }
   };
 
   // Fonction pour basculer du mode anonyme vers la connexion
   const handleSwitchToLogin = () => {
-    console.log('🔄 Basculement du mode anonyme vers la connexion');
+    // console.log('🔄 Basculement du mode anonyme vers la connexion');
     // Garder la progression actuelle
     const progressData = {
       score,
@@ -311,11 +311,11 @@ const FaithChronicles = () => {
 
   // 🎮 Fonctions de sauvegarde/chargement de jeu
   const handleManualSave = async () => {
-    console.log('🎮 Sauvegarde manuelle demandée');
+    // console.log('🎮 Sauvegarde manuelle demandée');
     
     // ⚠️ IMPORTANT: Vérifier que l'utilisateur n'est PAS anonyme
     if (isAnonymousMode) {
-      console.log('🔒 Mode anonyme: sauvegarde locale uniquement');
+      // console.log('🔒 Mode anonyme: sauvegarde locale uniquement');
       // En mode anonyme, la sauvegarde se fait automatiquement via saveProgressBoth (localStorage)
       const progressData = {
         score,
@@ -327,7 +327,7 @@ const FaithChronicles = () => {
         lastSaveTime: Date.now()
       };
       localStorage.setItem('faithChroniclesProgress', JSON.stringify(progressData));
-      console.log('✅ Partie sauvegardée localement !');
+      // console.log('✅ Partie sauvegardée localement !');
       return;
     }
     
@@ -340,27 +340,27 @@ const FaithChronicles = () => {
         totalXP
       };
       await saveToSupabase(gameData);
-      console.log('✅ Partie sauvegardée avec succès !');
+      // console.log('✅ Partie sauvegardée avec succès !');
     } catch (error) {
-      console.error('❌ Erreur lors de la sauvegarde:', error);
+      // console.error('❌ Erreur lors de la sauvegarde:', error);
       throw error;
     }
   };
 
   const handleLoadSave = async () => {
-    console.log('🎮 Chargement de partie demandé');
+    // console.log('🎮 Chargement de partie demandé');
     try {
       await handleRefresh();
-      console.log('✅ Partie chargée avec succès !');
+      // console.log('✅ Partie chargée avec succès !');
     } catch (error) {
-      console.error('❌ Erreur lors du chargement:', error);
+      // console.error('❌ Erreur lors du chargement:', error);
       throw error;
     }
   };
 
   // Fonction de rechargement manuel
   const handleRefresh = async () => {
-    console.log('🔄 Rechargement manuel de la progression...');
+    // console.log('🔄 Rechargement manuel de la progression...');
     if (user && !isAnonymousMode) {
       // Pour les utilisateurs connectés, utiliser forceRefresh du hook
       if (forceRefresh) {
@@ -371,15 +371,15 @@ const FaithChronicles = () => {
           const { data: starsData } = await loadAllStars();
           if (starsData) {
             setLevelStars(starsData);
-            console.log('⭐ Étoiles rechargées:', Object.keys(starsData).length, 'niveaux');
+            // console.log('⭐ Étoiles rechargées:', Object.keys(starsData).length, 'niveaux');
           }
           
-          console.log('✅ Progression complète rechargée depuis Supabase');
+          // console.log('✅ Progression complète rechargée depuis Supabase');
         } catch (error) {
-          console.error('❌ Erreur rechargement Supabase:', error);
+          // console.error('❌ Erreur rechargement Supabase:', error);
         }
       } else {
-        console.warn('⚠️ Fonction forceRefresh non disponible');
+        // console.warn('⚠️ Fonction forceRefresh non disponible');
       }
     } else if (isAnonymousMode) {
       // Pour les utilisateurs anonymes, recharger depuis localStorage
@@ -396,7 +396,7 @@ const FaithChronicles = () => {
           setUnlockedLevels(progressData.unlockedLevels || [1]);
           setLevelStars(progressData.levelStars || {});
           
-          console.log('✅ Progression complète rechargée depuis localStorage:', {
+          // console.log('✅ Progression complète rechargée depuis localStorage:', {
             score: progressData.score || 0,
             wisdomPoints: progressData.wisdomPoints || 0,
             revelationPoints: progressData.revelationPoints || 0,
@@ -405,10 +405,10 @@ const FaithChronicles = () => {
             étoiles: Object.keys(progressData.levelStars || {}).length
           });
         } catch (error) {
-          console.error('❌ Erreur rechargement localStorage:', error);
+          // console.error('❌ Erreur rechargement localStorage:', error);
         }
       } else {
-        console.warn('⚠️ Aucune progression sauvegardée trouvée');
+        // console.warn('⚠️ Aucune progression sauvegardée trouvée');
       }
     }
   };
@@ -424,7 +424,7 @@ const FaithChronicles = () => {
         totalXP !== (progress.total_xp || 0);
       
       if (hasDataChanged) {
-        console.log('📥 Chargement progression depuis Supabase:', progress);
+        // console.log('📥 Chargement progression depuis Supabase:', progress);
         setScore(progress.score || 0);
         setWisdomPoints(progress.wisdom_points || 0);
         setRevelationPoints(progress.revelation_points || 0);
@@ -436,7 +436,7 @@ const FaithChronicles = () => {
           const localXP = prev || 0;
           const finalXP = Math.max(localXP, remoteXP);
           if (finalXP > remoteXP) {
-            console.log(`🛡️ Protection XP: local ${localXP} > remote ${remoteXP}, gardé ${finalXP}`);
+            // console.log(`🛡️ Protection XP: local ${localXP} > remote ${remoteXP}, gardé ${finalXP}`);
           }
           return finalXP;
         });
@@ -444,19 +444,19 @@ const FaithChronicles = () => {
         // Charger les étoiles une seule fois
         loadAllStars().then(({ data }) => {
           if (data) {
-            console.log('⭐ Chargement étoiles depuis Supabase:', Object.keys(data).length, 'niveaux');
+            // console.log('⭐ Chargement étoiles depuis Supabase:', Object.keys(data).length, 'niveaux');
             setLevelStars(data);
           }
         });
       }
     } else if (user && !isAnonymousMode && progress === null) {
       // Fallback: si pas de données Supabase mais utilisateur connecté, charger depuis localStorage
-      console.log('🔄 Pas de données cloud, fallback localStorage pour utilisateur connecté');
+      // console.log('🔄 Pas de données cloud, fallback localStorage pour utilisateur connecté');
       const savedProgress = localStorage.getItem('faithChroniclesProgress');
       if (savedProgress) {
         try {
           const localData = JSON.parse(savedProgress);
-          console.log('📦 Chargement fallback depuis localStorage:', localData);
+          // console.log('📦 Chargement fallback depuis localStorage:', localData);
           
           setScore(localData.score || 0);
           setWisdomPoints(localData.wisdomPoints || 0);
@@ -465,7 +465,7 @@ const FaithChronicles = () => {
           setLevelStars(localData.levelStars || {});
           setTotalXP(localData.totalXP || 0);
         } catch (error) {
-          console.error('Erreur chargement fallback localStorage:', error);
+          // console.error('Erreur chargement fallback localStorage:', error);
         }
       }
     }
@@ -516,12 +516,12 @@ const FaithChronicles = () => {
       try {
         const result = await saveLevelStars(levelNum, stars);
         if (result?.error) {
-          console.error('❌ Erreur sauvegarde étoiles niveau', levelNum, ':', result.error);
+          // console.error('❌ Erreur sauvegarde étoiles niveau', levelNum, ':', result.error);
         } else {
-          console.log('⭐ Étoiles niveau', levelNum, 'sauvegardées:', stars);
+          // console.log('⭐ Étoiles niveau', levelNum, 'sauvegardées:', stars);
         }
       } catch (error) {
-        console.error('❌ Erreur critique sauvegarde étoiles:', error);
+        // console.error('❌ Erreur critique sauvegarde étoiles:', error);
       }
     }
   };

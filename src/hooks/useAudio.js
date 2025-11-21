@@ -47,10 +47,10 @@ export const useAudio = () => {
     // Attendre un peu que le script soit chargé
     const timer = setTimeout(() => {
       if (window.faithSounds && window.faithSounds.setVolume) {
-        console.log('🔧 Initialisation volume dans useAudio:', volume);
+        // console.log('🔧 Initialisation volume dans useAudio:', volume);
         window.faithSounds.setVolume(volume);
       } else {
-        console.warn('⚠️ faithSounds pas encore disponible dans useAudio');
+        // console.warn('⚠️ faithSounds pas encore disponible dans useAudio');
       }
     }, 1000); // Attendre 1 seconde
     
@@ -66,31 +66,31 @@ export const useAudio = () => {
 
   // Jouer un effet sonore généré
   const playEffect = useCallback((effectName) => {
-    console.log('🔧 playEffect appelé avec:', effectName);
-    console.log('🔧 isEnabled:', isEnabled);
+    // console.log('🔧 playEffect appelé avec:', effectName);
+    // console.log('🔧 isEnabled:', isEnabled);
     
     if (!isEnabled) {
-      console.log('⚠️ Audio désactivé, arrêt');
+      // console.log('⚠️ Audio désactivé, arrêt');
       return;
     }
 
     if (!GENERATED_SOUNDS[effectName]) {
-      console.warn(`⚠️ Effet sonore introuvable: ${effectName}`);
+      // console.warn(`⚠️ Effet sonore introuvable: ${effectName}`);
       return;
     }
 
-    console.log('🔧 window.faithSounds disponible?', !!window.faithSounds);
+    // console.log('🔧 window.faithSounds disponible?', !!window.faithSounds);
     
     // Utiliser directement les sons générés
     if (window.faithSounds && window.faithSounds[effectName]) {
-      console.log(`🎵 Appel window.faithSounds.${effectName}()`);
+      // console.log(`🎵 Appel window.faithSounds.${effectName}()`);
       window.faithSounds[effectName]();
-      console.log(`✅ Son généré joué: ${effectName}`);
+      // console.log(`✅ Son généré joué: ${effectName}`);
     } else {
-      console.warn(`⚠️ Générateur de sons non disponible pour ${effectName}`);
-      console.log('🔧 window.faithSounds:', window.faithSounds);
+      // console.warn(`⚠️ Générateur de sons non disponible pour ${effectName}`);
+      // console.log('🔧 window.faithSounds:', window.faithSounds);
       if (window.faithSounds) {
-        console.log('🔧 Méthodes disponibles:', Object.keys(window.faithSounds));
+        // console.log('🔧 Méthodes disponibles:', Object.keys(window.faithSounds));
       }
     }
   }, [isEnabled]);

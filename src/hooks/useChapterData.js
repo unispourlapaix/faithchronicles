@@ -30,13 +30,13 @@ const useChapterData = () => {
       const chapterData = getChapter(chapterId);
       
       if (!chapterData || !chapterData.levels) {
-        console.warn(`Chapitre ${chapterId} ou niveau ${levelId} non trouvé`);
+        // console.warn(`Chapitre ${chapterId} ou niveau ${levelId} non trouvé`);
         return null;
       }
 
       const level = chapterData.levels[levelId];
       if (!level) {
-        console.warn(`Niveau ${levelId} non trouvé dans chapitre ${chapterId}`);
+        // console.warn(`Niveau ${levelId} non trouvé dans chapitre ${chapterId}`);
         return null;
       }
 
@@ -56,7 +56,7 @@ const useChapterData = () => {
         hardQuestion = level.hard;
       }
       
-      console.log(`🔍 [useChapterData] Niveau ${levelId} - Structure:`, {
+      // console.log(`🔍 [useChapterData] Niveau ${levelId} - Structure:`, {
         hasQuestions: !!level.questions,
         easyHint: easyQuestion?.hint,
         easyOptions: easyQuestion?.options

@@ -19,7 +19,7 @@ export class GospelJohnTreasures {
    */
   clearCache() {
     this.cache.clear();
-    console.log('Gospel John cache cleared');
+    // console.log('Gospel John cache cleared');
   }
 
   /**
@@ -38,7 +38,7 @@ export class GospelJohnTreasures {
    */
   async getGospelMetadata() {
     const lang = this.getCurrentLanguage();
-    console.log('Getting Gospel metadata from JavaScript data');
+    // console.log('Getting Gospel metadata from JavaScript data');
     
     // Utiliser les métadonnées des modules JavaScript
     const metadata = this.johnData.metadata;
@@ -64,24 +64,24 @@ export class GospelJohnTreasures {
     const lang = language || this.getCurrentLanguage();
     const cacheKey = `chapters_${lang}`;
     
-    console.log('getAllJohnChapters called with language:', lang);
+    // console.log('getAllJohnChapters called with language:', lang);
     
     if (this.cache.has(cacheKey)) {
-      console.log('Returning cached chapters for', lang);
+      // console.log('Returning cached chapters for', lang);
       return this.cache.get(cacheKey);
     }
 
     try {
       // Utiliser les données JavaScript directement
       const availableChapters = this.johnData.available || [];
-      console.log('Available chapters from JS data:', availableChapters);
+      // console.log('Available chapters from JS data:', availableChapters);
       
       // Charger tous les chapitres de façon asynchrone
       const chapterPromises = availableChapters.map(async (chapterNum) => {
         try {
           const chapter = await this.johnData.getChapter(chapterNum, lang);
           if (!chapter || !chapter.verses) {
-            console.warn(`Chapter ${chapterNum} not loaded or has no verses`);
+            // console.warn(`Chapter ${chapterNum} not loaded or has no verses`);
             return null;
           }
           
@@ -103,18 +103,18 @@ export class GospelJohnTreasures {
             }
           };
         } catch (error) {
-          console.error(`Error loading chapter ${chapterNum}:`, error);
+          // console.error(`Error loading chapter ${chapterNum}:`, error);
           return null;
         }
       });
       
       const readerChapters = (await Promise.all(chapterPromises)).filter(Boolean);
 
-      console.log('Reader chapters created:', readerChapters.length);
+      // console.log('Reader chapters created:', readerChapters.length);
       this.cache.set(cacheKey, readerChapters);
       return readerChapters;
     } catch (error) {
-      console.error('Error loading John chapters from JS data:', error);
+      // console.error('Error loading John chapters from JS data:', error);
       return [];
     }
   }
@@ -213,15 +213,15 @@ export class GospelJohnTreasures {
     const lang = this.getCurrentLanguage();
     const cacheKey = `famous_${lang}`;
     
-    console.log('getFamousJohnTreasures called with language:', lang);
+    // console.log('getFamousJohnTreasures called with language:', lang);
     
     if (this.cache.has(cacheKey)) {
-      console.log('Returning cached famous treasures');
+      // console.log('Returning cached famous treasures');
       return this.cache.get(cacheKey);
     }
 
     try {
-      console.log('Getting famous verses from JavaScript data');
+      // console.log('Getting famous verses from JavaScript data');
       
       // Utiliser les données JavaScript directement
       const famousVerseRefs = [
@@ -252,10 +252,10 @@ export class GospelJohnTreasures {
         }
       }
       
-      console.log('Famous verses from JS data:', famousVerses);
+      // console.log('Famous verses from JS data:', famousVerses);
       
       if (!famousVerses || famousVerses.length === 0) {
-        console.warn('No famous verses found in JavaScript data');
+        // console.warn('No famous verses found in JavaScript data');
         return [];
       }
       
@@ -272,11 +272,11 @@ export class GospelJohnTreasures {
         reflection: this.getVerseReflection(verse.chapter, verse.number, lang)
       }));
 
-      console.log('Treasures created:', treasures.length);
+      // console.log('Treasures created:', treasures.length);
       this.cache.set(cacheKey, treasures);
       return treasures;
     } catch (error) {
-      console.error('Error loading famous John treasures:', error);
+      // console.error('Error loading famous John treasures:', error);
       return [];
     }
   }
@@ -332,26 +332,26 @@ export class GospelJohnTreasures {
    * Get random John treasure
    */
   async getRandomJohnTreasure() {
-    console.log('getRandomJohnTreasure called');
+    // console.log('getRandomJohnTreasure called');
     
     try {
       const famousVerses = await this.getFamousJohnTreasures();
-      console.log('Famous verses result:', famousVerses, 'length:', famousVerses?.length);
+      // console.log('Famous verses result:', famousVerses, 'length:', famousVerses?.length);
       
       if (!famousVerses || famousVerses.length === 0) {
-        console.warn('No famous verses found, using fallback treasures');
+        // console.warn('No famous verses found, using fallback treasures');
         const fallback = this.getFallbackTreasure();
-        console.log('Fallback treasure:', fallback);
+        // console.log('Fallback treasure:', fallback);
         return fallback;
       }
 
       const randomTreasure = famousVerses[Math.floor(Math.random() * famousVerses.length)];
-      console.log('Random treasure selected:', randomTreasure);
+      // console.log('Random treasure selected:', randomTreasure);
       return randomTreasure;
     } catch (error) {
-      console.error('Error in getRandomJohnTreasure:', error);
+      // console.error('Error in getRandomJohnTreasure:', error);
       const fallback = this.getFallbackTreasure();
-      console.log('Error fallback treasure:', fallback);
+      // console.log('Error fallback treasure:', fallback);
       return fallback;
     }
   }
@@ -360,9 +360,9 @@ export class GospelJohnTreasures {
    * Get fallback treasure when main system fails
    */
   getFallbackTreasure() {
-    console.log('getFallbackTreasure called');
+    // console.log('getFallbackTreasure called');
     const lang = this.getCurrentLanguage();
-    console.log('Current language for fallback:', lang);
+    // console.log('Current language for fallback:', lang);
     
     const fallbackTreasures = {
       fr: [
@@ -433,7 +433,7 @@ export class GospelJohnTreasures {
 
     const treasures = fallbackTreasures[lang] || fallbackTreasures.fr;
     const selectedTreasure = treasures[Math.floor(Math.random() * treasures.length)];
-    console.log('Fallback treasure selected:', selectedTreasure);
+    // console.log('Fallback treasure selected:', selectedTreasure);
     return selectedTreasure;
   }
 
@@ -442,7 +442,7 @@ export class GospelJohnTreasures {
    */
   async searchJohnVerses(searchText) {
     const lang = this.getCurrentLanguage();
-    console.log('Searching John verses in JavaScript data for:', searchText);
+    // console.log('Searching John verses in JavaScript data for:', searchText);
     
     try {
       const searchLower = searchText.toLowerCase();
@@ -469,10 +469,10 @@ export class GospelJohnTreasures {
         }
       }
       
-      console.log(`Found ${results.length} search results`);
+      // console.log(`Found ${results.length} search results`);
       return results;
     } catch (error) {
-      console.error('Error searching John verses:', error);
+      // console.error('Error searching John verses:', error);
       return [];
     }
   }
