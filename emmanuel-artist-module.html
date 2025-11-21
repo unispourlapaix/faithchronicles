@@ -873,7 +873,16 @@
             const remaining = currentRank.next - sagesse;
             
             const nextRankIndex = niveauxSagesse.findIndex(n => n.min === currentRank.next);
-            const nextRank = nextRankIndex >= 0 ? niveauxSagesse[nextRankIndex] : null;
+            if (nextRankIndex < 0) return { percent, remaining, next: null };
+            
+            // 🌍 Traduire le rang suivant aussi
+            const lang = window.currentLanguage || 'en';
+            const translations = rankTranslations[lang] || rankTranslations.en;
+            const nextRankData = niveauxSagesse[nextRankIndex];
+            const nextRank = {
+                ...nextRankData,
+                titre: translations[nextRankData.key]
+            };
             
             return { percent, remaining, next: nextRank };
         }
@@ -1399,11 +1408,7 @@
                     </button>
                 `;
             } else {
-                loadMoreContainer.innerHTML = `
-                    <div style="text-align: center; padding: 20px; color: #7f8c8d; font-size: 14px;">
-                        ✅ Tous les scores chargés (${loadedCount.toLocaleString()} / ${totalScores.toLocaleString()})
-                    </div>
-                `;
+                loadMoreContainer.innerHTML = '';
             }
         }
 
@@ -2037,6 +2042,11 @@
             
             // Appliquer les traductions
             window.applyTranslation(lang);
+            
+            // 🔄 Re-render le leaderboard avec les rangs traduits
+            if (typeof renderPage === 'function' && allScores.length > 0) {
+                renderPage();
+            }
             
             // console.log('✅ Langue changée:', lang);
         }
