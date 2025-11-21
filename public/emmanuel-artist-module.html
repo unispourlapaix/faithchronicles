@@ -1441,9 +1441,6 @@
             html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="window.goToPage(${currentPage + 1})">›</button>`;
             html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="window.goToPage(${totalPages})">»</button>`;
 
-            // Afficher info sur les scores chargés
-            html += `<span style="margin-left: 15px; color: #7f8c8d; font-size: 13px;">${loadedCount.toLocaleString()} scores chargés</span>`;
-
             document.getElementById('pagination').innerHTML = html;
         }
 
