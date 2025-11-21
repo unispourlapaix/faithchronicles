@@ -816,6 +816,13 @@
         let loadedCount = 0;
         const initialLoad = 100;
         const loadMoreIncrement = 200;
+        
+        // 🔄 Cache système (5 min) pour minimiser requêtes Supabase
+        let cachedData = null;
+        let cacheTimestamp = 0;
+        const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+        let connectionRetries = 0;
+        const MAX_RETRIES = 2;
 
         // Niveaux de sagesse
         const niveauxSagesse = [
@@ -854,47 +861,86 @@
             if (donnees.niveau_atteint >= 23) badges.push('🏁');
             return badges;
         }
+        
+        // 🔄 Fonctions de cache optimisées
+        function isCacheValid() {
+            return cachedData && (Date.now() - cacheTimestamp) < CACHE_DURATION;
+        }
+        
+        function saveCache(scores, total) {
+            cachedData = { scores, total };
+            cacheTimestamp = Date.now();
+            try {
+                localStorage.setItem('leaderboard_v2', JSON.stringify({
+                    scores, total, time: cacheTimestamp
+                }));
+            } catch(e) {}
+        }
+        
+        function loadCache() {
+            try {
+                const cached = localStorage.getItem('leaderboard_v2');
+                if (cached) {
+                    const data = JSON.parse(cached);
+                    if (Date.now() - data.time < CACHE_DURATION) {
+                        cachedData = data;
+                        cacheTimestamp = data.time;
+                        return true;
+                    }
+                }
+            } catch(e) {}
+            return false;
+        }
 
         async function loadScores() {
             try {
                 const t = window.translations?.[window.currentLanguage || 'en'] || window.translations.en;
                 document.getElementById('leaderboardContent').innerHTML = `<div class="loading">${t.loading}</div>`;
-                // console.log('📡 Tentative de connexion Supabase:', SUPABASE_URL);
+                
+                // 🔄 Vérifier cache d'abord
+                if (isCacheValid()) {
+                    allScores = cachedData.scores;
+                    totalScores = cachedData.total;
+                    loadedCount = allScores.length;
+                    renderPage();
+                    updateStats();
+                    return;
+                }
+                
+                // 🔄 Essayer cache localStorage
+                if (loadCache() && isCacheValid()) {
+                    allScores = cachedData.scores;
+                    totalScores = cachedData.total;
+                    loadedCount = allScores.length;
+                    renderPage();
+                    updateStats();
+                    return;
+                }
 
-                // Charger depuis users + faithchronicles_game_progress
+                // 📡 Connexion Supabase avec timeout
                 let data, error, count;
                 
                 try {
-                    // console.log('🔍 Chargement données: users + faithchronicles_game_progress (JOIN par email)...');
-                    
-                    // 1. Récupérer TOUS les utilisateurs de la table users
+                    // 1. Récupérer utilisateurs avec limite
                     const { data: allUsersData, error: usersError } = await supabase
                         .from('users')
                         .select('id, email, pseudo, avatar, created_at')
-                        .order('created_at', { ascending: false });
+                        .order('created_at', { ascending: false })
+                        .limit(initialLoad);
                     
                     if (usersError) throw usersError;
                     
                     // console.log('✅ Users chargés:', allUsersData?.length || 0);
                     
-                    // 2. Récupérer TOUTES les progressions (avec email pour JOIN)
+                    // 2. Récupérer TOP progressions (optimisation)
                     const { data: allProgressData, error: progressError } = await supabase
                         .from('faithchronicles_game_progress')
-                        .select('*');  // Sélectionner TOUTES les colonnes pour voir ce qui existe
+                        .select('email, user_id, wisdom_points, total_xp, score, current_level, current_grade, created_at')
+                        .order('wisdom_points', { ascending: false })
+                        .limit(initialLoad);
                     
                     if (progressError) {
                         // console.error('❌ ERREUR progression:', progressError);
-                        // console.error('   Code:', progressError.code);
-                        // console.error('   Message:', progressError.message);
-                        // console.error('   Détails:', progressError.details);
-                    }
-                    
-                    // console.log('✅ Progressions chargées:', allProgressData?.length || 0);
-                    if (allProgressData && allProgressData.length > 0) {
-                        // console.log('🔍 Première progression chargée avec succès');
-                    } else {
-                        // console.warn('⚠️ Aucune progression trouvée dans faithchronicles_game_progress');
-                        // console.warn('💡 Vérifier: La table existe? Elle contient des données? Permissions RLS?');
                     }
                     
                     // 3. Créer un mapping email -> progression OU user_id -> progression
@@ -967,22 +1013,17 @@
                     error = null;
                     count = enrichedData.length;
                     
-                    // console.log('✅ Données enrichies:', data.length, '/', count, 'utilisateurs (JOIN par email)');
+                    // 💾 Sauvegarder dans le cache
+                    saveCache(enrichedData, enrichedData.length);
                     
                 } catch (loadError) {
-                    // console.warn('⚠️ Erreur chargement données:', loadError.message);
                     data = null;
                     error = loadError;
                 }
 
                 if (error) {
-                    // console.error('❌ Erreur Supabase:', error);
                     throw error;
                 }
-
-                // console.log('✅ Données Supabase reçues:', data?.length || 0, 'records');
-                // console.log('📊 Total count:', count);
-                // console.log('🎮 Jeux trouvés:', [...new Set(data?.map(s => s.game_id) || [])]);
 
                 allScores = Array.isArray(data) ? data : [];
                 
@@ -1007,11 +1048,11 @@
 
                 // console.log('✅ Scores chargés (Supabase + Local):', loadedCount, 'Total DB:', totalScores);
                 // console.log('🏆 Top 3:', allScores.slice(0, 3).map(s => ({ 
-                    pseudo: s.users?.pseudo || s.user?.pseudo || s.donnees_extra?.pseudo, 
-                    score: s.score,
-                    game: s.game_id,
-                    local: s._isLocal || false
-                })));
+                //     pseudo: s.users?.pseudo || s.user?.pseudo || s.donnees_extra?.pseudo, 
+                //     score: s.score,
+                //     game: s.game_id,
+                //     local: s._isLocal || false
+                // })));
 
                 updateStats();
                 renderPage();
