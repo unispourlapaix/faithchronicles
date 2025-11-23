@@ -3,10 +3,14 @@
  * Lecteur autonome de musique gospel avec contrôles globaux
  */
 
-// Configuration de la playlist automatique - 24 chansons gospel complètes
+// Configuration de la playlist automatique - 25 chansons gospel complètes
 const faithGospelConfig = {
-  // Détection automatique du chemin de base (GitHub Pages, production ou développement local)
+  // Détection automatique du chemin de base (itch.io, GitHub Pages, production ou développement local)
   baseUrl: (() => {
+    // itch.io (html-classic.itch.zone)
+    if (window.location.hostname.includes('itch.zone') || window.location.hostname.includes('itch.io')) {
+      return './gospel/'; // Chemin relatif pour itch.io
+    }
     // Développement local avec React (localhost) - TOUJOURS utiliser le chemin de base de l'app
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       // En localhost, React sert depuis public/ avec le basePath défini dans package.json
@@ -43,7 +47,8 @@ const faithGospelConfig = {
     'Je_porte_une_paix_qui_brille_dans_la_nuit.mp3',
     'Je_proclame_sur_ma_vie.mp3',
     'J_ai_besoin_de_toi....mp3',
-    'J_ai_poursuivi_la_Paix.mp3'
+    'J_ai_poursuivi_la_Paix.mp3',
+    'La_Parole_est_venue.mp3'
   ],
   volume: 0.15,
   fadeInDuration: 3000, // 3 secondes
@@ -115,7 +120,7 @@ async function playNext() {
   const currentSong = faithGospelConfig.playlist[faithGospelPlayer.currentIndex];
   const fullUrl = faithGospelConfig.baseUrl + currentSong;
   
-  // // console.log(`🎵 Gospel: Lecture aléatoire (${faithGospelPlayer.currentIndex + 1}/24)`, currentSong);
+  // // console.log(`🎵 Gospel: Lecture aléatoire (${faithGospelPlayer.currentIndex + 1}/25)`, currentSong);
   
   try {
     // Arrêter l'audio précédent
