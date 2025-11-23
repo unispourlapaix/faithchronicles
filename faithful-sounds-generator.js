@@ -1210,7 +1210,7 @@
       // // console.log('🎵 Déclenchement son correctAnswer...');
       initAudio().then(() => {
         createGentleSound([523.25, 659.25, 783.99], 0.6, 0.2); // Do-Mi-Sol majeur
-      }).catch(err => // // console.error('❌ Erreur correctAnswer:', err));
+      }).catch(err => {});
     },
     
     // Son de réponse incorrecte - Ton grave et compatissant
@@ -1218,7 +1218,7 @@
       // // console.log('🎵 Déclenchement son wrongAnswer...');
       initAudio().then(() => {
         createGentleSound([220, 196], 0.8, 0.4); // La-Sol grave
-      }).catch(err => // // console.error('❌ Erreur wrongAnswer:', err));
+      }).catch(err => {});
     },
     
     // Son d'étoile gagnée - Carillon céleste
@@ -1226,7 +1226,7 @@
       // // console.log('🎵 Déclenchement son starEarned...');
       initAudio().then(() => {
         createGentleSound([523.25, 659.25, 783.99, 1046.5], 1.2, 0.5); // Arpège ascendant
-      }).catch(err => // // console.error('❌ Erreur starEarned:', err));
+      }).catch(err => {});
     },
     
     // Son de niveau terminé - Fanfare spirituelle
@@ -1234,7 +1234,7 @@
       // // console.log('🎵 Déclenchement son levelComplete...');
       initAudio().then(() => {
         createGentleSound([392, 523.25, 659.25, 783.99, 1046.5], 1.8, 0.6); // Sol-Do-Mi-Sol-Do
-      }).catch(err => // // console.error('❌ Erreur levelComplete:', err));
+      }).catch(err => {});
     },
     
     // Son de clic de bouton - Note pure et simple
@@ -1242,7 +1242,7 @@
       // // console.log('🎵 Déclenchement son buttonClick...');
       initAudio().then(() => {
         createGentleSound([800], 0.3, 0.1); // Note claire et brève
-      }).catch(err => // // console.error('❌ Erreur buttonClick:', err));
+      }).catch(err => {});
     },
     
     // Son de victoire de montagne - Gloire majestueuse
@@ -1250,7 +1250,7 @@
       // // console.log('🎵 Déclenchement son mountainVictory...');
       initAudio().then(() => {
         createGentleSound([261.63, 329.63, 392, 523.25, 659.25, 783.99], 2.5, 0.8);
-      }).catch(err => // // console.error('❌ Erreur mountainVictory:', err));
+      }).catch(err => {});
     },
     
     // Son de gong - Résonnance profonde et spirituelle
@@ -1258,7 +1258,7 @@
       // // console.log('🎵 Déclenchement son gong...');
       initAudio().then(() => {
         createGongSound();
-      }).catch(err => // // console.error('❌ Erreur gong:', err));
+      }).catch(err => {});
     },
     
     // Son de début de jeu - Fanfare d'encouragement
@@ -1266,7 +1266,7 @@
       // // console.log('🎵 Déclenchement son gameStart...');
       initAudio().then(() => {
         createGentleSound([523.25, 659.25, 783.99, 1046.5, 783.99], 1.5, 0.4); // Montée puis redescente
-      }).catch(err => // // console.error('❌ Erreur gameStart:', err));
+      }).catch(err => {});
     },
     
     // Son de tick/clock - Clic mécanique doux
@@ -1274,7 +1274,7 @@
       // // console.log('🎵 Déclenchement son tick...');
       initAudio().then(() => {
         createTickSound();
-      }).catch(err => // // console.error('❌ Erreur tick:', err));
+      }).catch(err => {});
     },
     
     // Son de Foi - Tambour sourd spirituel et lumineux (plus punché)
@@ -1282,7 +1282,7 @@
       // // console.log('🎵 Déclenchement tambour foi...');
       initAudio().then(() => {
         createDrumSound(65, 0.9, 0.45, 'faith'); // Plus grave et plus fort
-      }).catch(err => // // console.error('❌ Erreur faith:', err));
+      }).catch(err => {});
     },
     
     // Son de Courage - Tambour sourd héroïque et puissant (très punché)
@@ -1290,7 +1290,7 @@
       // // console.log('🎵 Déclenchement tambour courage...');
       initAudio().then(() => {
         createDrumSound(55, 0.8, 0.5, 'courage'); // Très grave et très fort
-      }).catch(err => // // console.error('❌ Erreur courage:', err));
+      }).catch(err => {});
     },
     
     // Son de Sagesse - Tambour sourd méditatif et profond (punché mais sage)
@@ -1298,7 +1298,7 @@
       // // console.log('🎵 Déclenchement tambour sagesse...');
       initAudio().then(() => {
         createDrumSound(60, 1.0, 0.4, 'wisdom'); // Grave, long et impactant
-      }).catch(err => // // console.error('❌ Erreur wisdom:', err));
+      }).catch(err => {});
     },
     
     // Son picth - cristallin pour bulles d'étoiles
@@ -1307,7 +1307,7 @@
       // // console.log('🔍 createPicthSound disponible:', typeof createPicthSound);
       initAudio().then(() => {
         createPicthSound(0.35);
-      }).catch(err => // // console.error('❌ Erreur picth:', err));
+      }).catch(err => {});
     },
     
     // Son cheube - navigation douce pour < et >
@@ -1316,7 +1316,7 @@
       // // console.log('🔍 createCheubeSound disponible:', typeof createCheubeSound);
       initAudio().then(() => {
         createCheubeSound(0.35);
-      }).catch(err => // // console.error('❌ Erreur cheube:', err));
+      }).catch(err => {});
     },
     
     // Son tok - percussion sèche pour continuer
@@ -1325,7 +1325,7 @@
       // // console.log('🔍 createTokSound disponible:', typeof createTokSound);
       initAudio().then(() => {
         createTokSound(0.35);
-      }).catch(err => // // console.error('❌ Erreur tok:', err));
+      }).catch(err => {});
     },
     
     // Nouveaux sons percussifs
@@ -1334,7 +1334,7 @@
       // // console.log('🔍 createPafSound disponible:', typeof createPafSound);
       initAudio().then(() => {
         createPafSound(0.35);
-      }).catch(err => // // console.error('❌ Erreur paf:', err));
+      }).catch(err => {});
     },
     
     pong: function() {
@@ -1342,7 +1342,7 @@
       // // console.log('🔍 createPongSound disponible:', typeof createPongSound);
       initAudio().then(() => {
         createPongSound(0.3);
-      }).catch(err => // // console.error('❌ Erreur pong:', err));
+      }).catch(err => {});
     },
     
     boume: function() {
@@ -1350,7 +1350,7 @@
       // // console.log('🔍 createBoumeSound disponible:', typeof createBoumeSound);
       initAudio().then(() => {
         createBoumeSound(0.4);
-      }).catch(err => // // console.error('❌ Erreur boume:', err));
+      }).catch(err => {});
     },
 
     // Sons "pof" courts et percutants
@@ -1358,21 +1358,21 @@
       // // console.log('💥 Déclenchement son pof...');
       initAudio().then(() => {
         createPofSound(150, 'basic'); // Pof basique
-      }).catch(err => // // console.error('❌ Erreur pof:', err));
+      }).catch(err => {});
     },
     
     pofHigh: function() {
       // // console.log('💥 Déclenchement son pofHigh...');
       initAudio().then(() => {
         createPofSound(400, 'high'); // Pof aigu
-      }).catch(err => // // console.error('❌ Erreur pofHigh:', err));
+      }).catch(err => {});
     },
     
     pofLow: function() {
       // // console.log('💥 Déclenchement son pofLow...');
       initAudio().then(() => {
         createPofSound(80, 'low'); // Pof grave
-      }).catch(err => // // console.error('❌ Erreur pofLow:', err));
+      }).catch(err => {});
     },
     
     // Son "wrash" pour les retours
@@ -1380,7 +1380,7 @@
       // // console.log('💨 Déclenchement son wrash...');
       initAudio().then(() => {
         createWrashSound(); // Son de retour/annulation
-      }).catch(err => // // console.error('❌ Erreur wrash:', err));
+      }).catch(err => {});
     },
     
     // Son "groook" de pierre/roche
@@ -1388,7 +1388,7 @@
       // // console.log('🗿 Déclenchement son groook...');
       initAudio().then(() => {
         createGroookSound(); // Son de pierre/roche profond
-      }).catch(err => // // console.error('❌ Erreur groook:', err));
+      }).catch(err => {});
     },
     
     // Son "reset" pour remise à zéro
@@ -1396,7 +1396,7 @@
       // // console.log('🔄 Déclenchement son reset...');
       initAudio().then(() => {
         createResetSound(); // Son de remise à zéro/effacement
-      }).catch(err => // // console.error('❌ Erreur reset:', err));
+      }).catch(err => {});
     }
   };
   
