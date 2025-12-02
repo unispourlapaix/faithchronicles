@@ -6,6 +6,7 @@ import { getLanguage, getLanguageList } from '../../data/translations/languages.
 const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymousLogin, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
   const [authMode, setAuthMode] = useState('signin'); // 'signin', 'signup', ou 'reset'
+  const [pseudo, setPseudo] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -16,6 +17,12 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
 
   // Connexion / Inscription avec mot de passe
   const handlePasswordLogin = async () => {
+    if (!pseudo.trim()) {
+      setMessage(t('login.enterPseudo'));
+      setMessageType('error');
+      return;
+    }
+
     if (!email.trim() || !email.includes('@')) {
       setMessage(t('login.enterEmail'));
       setMessageType('error');
@@ -27,6 +34,9 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
       setMessageType('error');
       return;
     }
+
+    // Sauvegarder le pseudo localement
+    localStorage.setItem('faithChronicles_pseudo', pseudo.trim());
 
     // console.log('🔐 Connexion avec mot de passe pour:', email.trim());
     setLoading(true);
@@ -248,22 +258,31 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
               </div>
             )}
 
-            {/* Info confirmation email (seulement en mode inscription) */}
+            {/* Info confirmation email (compact) */}
             {authMode === 'signup' && (
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-lg">
-                <div className="flex items-start">
-                  <span className="text-blue-500 mr-2">📧</span>
-                  <div className="text-sm text-blue-700">
-                    <p className="font-semibold mb-1">
-                      {t('login.emailConfirmationRequired') || 'Vérifiez votre boîte mail pour activer votre compte'}
-                    </p>
-                    <p className="text-xs text-blue-600">
-                      {t('login.checkSpamFolder') || 'Pensez à vérifier vos spams/courrier indésirable'}
-                    </p>
-                  </div>
-                </div>
+              <div className="bg-blue-50 border-l-2 border-blue-400 px-3 py-2 rounded-lg">
+                <p className="text-xs text-blue-700">
+                  📧 {t('login.emailConfirmationRequired') || 'Vérifiez votre email'} • {t('login.checkSpamFolder') || 'Vérifiez aussi vos spams'}
+                </p>
               </div>
             )}
+
+            {/* Pseudo */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                {t('login.pseudo')}
+              </label>
+              <input
+                type="text"
+                value={pseudo}
+                onChange={(e) => setPseudo(e.target.value)}
+                placeholder={t('login.pseudoPlaceholder')}
+                maxLength={20}
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none transition-colors"
+                disabled={loading}
+                autoFocus
+              />
+            </div>
 
             {/* Email */}
             <div>
@@ -278,7 +297,6 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
                 placeholder={t('login.emailPlaceholder')}
                 className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none transition-colors"
                 disabled={loading}
-                autoFocus
               />
             </div>
 
@@ -354,7 +372,7 @@ const LoginScreen = ({ onLoginWithPassword, onSignup, onResetPassword, onAnonymo
                   handlePasswordLogin();
                 }
               }}
-              disabled={loading || !email.trim() || (authMode !== 'reset' && !password.trim())}
+              disabled={loading || !pseudo.trim() || !email.trim() || (authMode !== 'reset' && !password.trim())}
               className="w-full py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading 

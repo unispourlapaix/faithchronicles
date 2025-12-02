@@ -3,7 +3,7 @@
  * Lecture automatique des chansons gospel
  */
 import React, { useState, useEffect, useRef } from 'react';
-import { gospelSongs } from '../../public/audio/gospel/index.js';
+import { gospelSongs } from '../../public/gospel/index.js';
 
 const GospelPlaylist = ({ isActive = true, volume = 0.3 }) => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -28,7 +28,7 @@ const GospelPlaylist = ({ isActive = true, volume = 0.3 }) => {
   const playCurrentSong = () => {
     if (audioRef.current && gospelSongs[currentSongIndex]) {
       const song = gospelSongs[currentSongIndex];
-      const audioPath = `/audio/gospel/${song.filename}`;
+      const audioPath = `./gospel/${song.filename}`;
       
       audioRef.current.src = audioPath;
       audioRef.current.load();

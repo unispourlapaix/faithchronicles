@@ -131,9 +131,12 @@ const FaithChronicles = () => {
     }
   };
 
-  const handleEmailLogin = async (email) => {
+  const handleEmailLogin = async (email, pseudo = null) => {
     localStorage.setItem('faithChronicles_mode', 'email');
-    const result = await signInWithEmail(email);
+    if (pseudo) {
+      localStorage.setItem('faithChronicles_pseudo', pseudo);
+    }
+    const result = await signInWithEmail(email, pseudo);
     return result;
   };
 

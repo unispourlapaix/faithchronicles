@@ -6,8 +6,10 @@ import { getLanguage, getLanguageList } from '../../data/translations/languages.
 const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, importSessionFromProduction, audio }) => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
   const [authMode, setAuthMode] = useState('signin'); // 'signin' ou 'signup'
+  const [mode, setMode] = useState(null); // null, 'anonymous', 'email', 'password'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [pseudo, setPseudo] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
@@ -60,18 +62,23 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
   };
 
   const handleEmailLogin = async () => {
+    if (!pseudo.trim()) {
+      setMessage(t('login.enterPseudo'));
+      return;
+    }
+    
     if (!email.trim() || !email.includes('@')) {
       setMessage(t('login.enterEmail'));
       return;
     }
 
-    // console.log('📧 Début envoi email pour:', email.trim());
+    // console.log('📧 Début envoi email pour:', email.trim(), 'avec pseudo:', pseudo.trim());
     setLoading(true);
     setMessage('');
 
     try {
       // console.log('📤 Appel de onLogin...');
-      const result = await onLogin(email.trim());
+      const result = await onLogin(email.trim(), pseudo.trim());
       // console.log('📥 Résultat onLogin:', result);
       
       // Vérifier si c'est une erreur de rate limiting (15 secondes)
@@ -154,13 +161,14 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
     }
   };
 
-  // Interface de connexion unique (email + mot de passe)
-  return (
-    <div className="h-full bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 flex flex-col items-center justify-center p-6">
-      {/* Sélecteur de langue en haut à droite */}
-        <div className="absolute top-4 right-4 z-50">
-          <button
-            onClick={() => {
+  // Écran de sélection du mode de connexion
+  if (!mode) {
+    return (
+      <div className="h-full bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 flex flex-col items-center justify-center p-6">
+        {/* Sélecteur de langue en haut à droite */}
+          <div className="absolute top-4 right-4 z-50">
+            <button
+              onClick={() => {
               audio?.sounds?.buttonClick();
               setShowLanguageSelector(!showLanguageSelector);
             }}
@@ -434,6 +442,22 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  {t('login.pseudo')}
+                </label>
+                <input
+                  type="text"
+                  value={pseudo}
+                  onChange={(e) => setPseudo(e.target.value)}
+                  placeholder={t('login.pseudoPlaceholder')}
+                  maxLength={20}
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-indigo-500 focus:outline-none transition-colors"
+                  disabled={loading}
+                  autoFocus
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
                   {t('login.email')}
                 </label>
                 <input
@@ -444,7 +468,6 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
                   placeholder={t('login.emailPlaceholder')}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none transition-colors"
                   disabled={loading}
-                  autoFocus
                 />
               </div>
 
@@ -476,7 +499,7 @@ const LoginScreen = ({ onLogin, onLoginWithPassword, onSignup, onAnonymous, impo
                   audio?.sounds?.buttonClick(); // Son envoi email
                   handleEmailLogin();
                 }}
-                disabled={loading || !email.trim()}
+                disabled={loading || !pseudo.trim() || !email.trim()}
                 className="w-full py-4 bg-gradient-to-r from-blue-500 to-cyan-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? t('login.sending') : t('login.sendLink')}

@@ -134,8 +134,14 @@ export const useAuth = () => {
   };
 
   // Connexion avec email (magic link - pas de mot de passe!)
-  const signInWithEmail = async (email) => {
+  const signInWithEmail = async (email, pseudo = null) => {
     try {
+      // Sauvegarder le pseudo localement si fourni
+      if (pseudo && pseudo.trim()) {
+        localStorage.setItem('faithChronicles_pseudo', pseudo.trim());
+        localStorage.setItem('faithChronicles_pending_pseudo', pseudo.trim());
+      }
+      
       // Utiliser l'origine actuelle pour la redirection
       // Cela permet de se connecter aussi bien sur localhost qu'en production
       const redirectUrl = `${window.location.origin}${process.env.PUBLIC_URL || ''}`;

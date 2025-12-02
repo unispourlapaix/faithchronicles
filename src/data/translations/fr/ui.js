@@ -168,8 +168,8 @@ export const uiTranslations = {
     switchToSignin: "🔑 Passez en mode Connexion avec votre email existant",
     invalidCredentials: "Email ou mot de passe incorrect",
     signupSuccess: "📧 Compte créé ! Vérifiez votre email pour confirmer votre inscription.",
-    emailConfirmationRequired: "Vérifiez votre boîte mail pour activer votre compte",
-    checkSpamFolder: "Pensez à vérifier vos spams/courrier indésirable",
+    emailConfirmationRequired: "Vérifiez votre email",
+    checkSpamFolder: "Vérifiez aussi vos spams",
     connectionSuccess: "✅ Connexion réussie !",
     errorSignup: "Erreur lors de l'inscription"},
   
