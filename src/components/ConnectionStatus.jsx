@@ -82,11 +82,17 @@ const ConnectionStatus = ({
 
   // Récupérer le pseudo à afficher
   const getDisplayName = () => {
+    // Toujours récupérer le pseudo depuis localStorage en priorité
+    const savedPseudo = localStorage.getItem('faithChronicles_pseudo');
+    
+    if (savedPseudo) {
+      return savedPseudo;
+    }
+    
     if (isAnonymousMode) {
-      return localStorage.getItem('faithChronicles_pseudo') || 'Anonyme';
+      return 'Anonyme';
     } else if (user) {
-      // Pour les utilisateurs connectés, on pourrait charger depuis Supabase
-      // mais pour l'instant on utilise l'email
+      // Fallback sur l'email si pas de pseudo
       return user.email?.split('@')[0] || 'Joueur';
     }
     return 'Joueur';
@@ -164,8 +170,8 @@ const ConnectionStatus = ({
           {isExpanded && (
             <div className="flex items-center justify-between flex-1 px-3 py-2 animate-fade-in">
               <div className="flex-1 min-w-0">
-                {/* Mode édition du pseudo */}
-                {isEditingPseudo && isAnonymousMode ? (
+                {/* Mode édition du pseudo (pour tous les utilisateurs) */}
+                {isEditingPseudo ? (
                   <div className="flex items-center gap-1">
                     <input
                       type="text"
@@ -200,19 +206,17 @@ const ConnectionStatus = ({
                     <div className="text-sm font-medium text-gray-800">
                       {status.title}
                     </div>
-                    {/* Bouton éditer pseudo pour mode anonyme */}
-                    {isAnonymousMode && (
-                      <button
-                        onClick={() => {
-                          audio?.sounds?.tick();
-                          handlePseudoEdit();
-                        }}
-                        className="p-0.5 hover:bg-gray-100 rounded transition-colors"
-                        title={t('login.editPseudo')}
-                      >
-                        <Edit2 className="w-3 h-3 text-gray-500" />
-                      </button>
-                    )}
+                    {/* Bouton éditer pseudo (pour tous les utilisateurs) */}
+                    <button
+                      onClick={() => {
+                        audio?.sounds?.tick();
+                        handlePseudoEdit();
+                      }}
+                      className="p-0.5 hover:bg-gray-100 rounded transition-colors"
+                      title={t('login.editPseudo')}
+                    >
+                      <Edit2 className="w-3 h-3 text-gray-500" />
+                    </button>
                     {/* Sélecteur de langue (drapeaux uniquement) */}
                     <div className="relative z-[100]">
                       <button
